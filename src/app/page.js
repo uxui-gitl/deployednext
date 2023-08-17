@@ -8,6 +8,8 @@ import InfotechWeekly from '@/components/infotechWeekly/InfotechWeekly'
 import Intro from '@/components/intro/Intro'
 import Projects from '@/components/projects/Projects'
 import Review from '@/components/review/Review'
+import Robot from '@/components/robot/Robot'
+import RobotDetails from '@/components/robotDetails/RobotDetails'
 import Subscribe from '@/components/subscribe/Subscribe'
 import Testimonial from '@/components/testimonial/Testimonial'
 import Image from 'next/image'
@@ -19,6 +21,7 @@ export default function Home() {
       <Intro/>
       <ClientLogos/>
       <ACT/>
+      <Robot/>
       <Projects/>
       <Testimonial/>
       <Review/>

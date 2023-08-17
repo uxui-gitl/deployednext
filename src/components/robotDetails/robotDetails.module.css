@@ -1,0 +1,11 @@
+h4.ribbon {
+    position: relative;
+    background-color: #4C6FFF;
+    color: white;
+    padding: 0.5em 2em;
+    display: inline-block;
+    
+}
+@media (max-width: 768px) {
+
+}

@@ -1,0 +1,37 @@
+/* .robotWrapper {
+    text-align: left; 
+}
+.robot {
+    width: 30%;
+    max-width: 400px;
+    margin: 1em auto 4em;
+}
+.robot-cta {
+    height: 100vh;display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.detail-text {
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.25em;
+}
+.btn-link { 
+    font-size: 1.3em;
+    border-bottom: 1px solid grey;    align-self: start;
+} */
+
+
+h4.ribbon::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -1em;
+    border-top: 2.25em solid #4C6FFF;
+    border-right: 1em solid transparent;
+    bottom: 0em;
+    overflow: hidden;
+}
