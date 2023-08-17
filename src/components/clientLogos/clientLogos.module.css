@@ -1,0 +1,21 @@
+/* Client  */
+.clientWrap {
+    /* max-width: 1200px; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    display: flex;
+    background-color: #FFF;
+    width: 100%;
+    padding-top: 36px;
+    padding-bottom: 16px;
+}
+.clientImgWrap {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    margin: 1em auto;
+}
