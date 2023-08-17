@@ -1,0 +1,93 @@
+
+
+/* Top Banner - Announcement */
+.top-banner {
+  background: linear-gradient(90deg, #1585BB 0%, #40BBCF 100%);
+  background: #320A53;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  max-height: 500px;
+  position: sticky;
+  top: 0;
+  transition: max-height 0.5s;
+  z-index: 999;
+  position: relative;
+}
+.top-banner span {
+  margin-right: .5em;
+}
+.tb-logo {
+  display: none;
+}
+#tb-close {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.tb-link  {
+  /* text-decoration: underline; */
+  color: #B2C8F8;
+}
+.top-banner .content {
+  padding: 8px 24px;
+}
+.tb-flag-wrap {
+
+}
+.tb-flags button {
+  border: 0;
+} 
+.tb-flags button span{
+  margin-right: 0;
+  padding: 0 0.25em;
+  color: white;
+}
+.tb-flags button::after {
+  border-top: 5px solid #fbfbfb;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 0;
+}
+.tb-flags button[aria-expanded="true"]::after {
+  border-top: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fbfbfb;
+}
+.tb-flags ul {
+  color: #333333;
+  z-index: 999;
+  border: 0;
+}
+
+  @media (min-width: 768px) {
+      .top-banner .content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } 
+  }
+  
+  @media (max-width: 767px) {
+      .top-banner .tb-link {
+          display: none;
+      }
+      .top-banner  {
+        display: none;
+      }
+  }
+  @media (max-width: 600px) {
+      .top-banner .tb-logo {
+          position: relative;
+          top: 3px;
+      }
+      .top-banner  {
+        display: none;
+      }
+  }
