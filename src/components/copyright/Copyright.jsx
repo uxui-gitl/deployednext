@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './copyright.module.css'
 
-const Footer = (props) => {
+const Copyright = (props) => {
 
   return (
     <div className={styles.copyright}>
@@ -13,4 +13,4 @@ const Footer = (props) => {
   )
 }
 
-export default Footer
+export default Copyright

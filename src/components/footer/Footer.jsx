@@ -1,0 +1,302 @@
+import Link from "next/link";
+import React from "react";
+import styles from "./footer.module.css";
+import Image from "next/image";
+
+import Icon, { Stack } from "@mdi/react";
+import { mdiFacebook } from "@mdi/js";
+import { mdiInstagram } from "@mdi/js";
+import { mdiLinkedin } from "@mdi/js";
+import { mdiCircle } from "@mdi/js";
+
+const Footer = () => {
+  return (
+    <div
+      className={`${styles["bg-footer"]} bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
+    >
+      <div
+        className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto p-5`}
+      >
+        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-3`}>
+          {/* Col 1 */}
+          <div className="col-span-2 ">
+            <Image src="/godrejLogoWhite.png"  alt="Godrej Logo" width="150" height="150" />
+            <p className="my-4 text-sm text-[#F5F5F5] leading-5 font-medium">
+              Revolutionize your business operations, save time and boost
+              productivity with our cutting-edge offerings.{" "}
+            </p>
+            <ul className={styles["social-links"]}>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {/* <Icon path={mdiFacebook} style={{marginLeft: '0.5em'}} size={1}/> */}
+
+                  <Stack size={1}>
+                    <Icon path={mdiCircle} color="#07001F" />
+                    <Icon path={mdiFacebook} color="#FFF" />
+                  </Stack>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  <Stack size={1}>
+                    <Icon path={mdiCircle} color="#FFF" />
+                    <Icon path={mdiLinkedin} color="#07001F" />
+                  </Stack>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  <Stack size={1}>
+                    <Icon path={mdiCircle} color="#07001F" />
+                    <Icon path={mdiInstagram} color="#FFF" />
+                  </Stack>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* Col 2 */}
+          <div className="col ">
+            <h3 className=" text-base	leading-6 font-medium mb-2">Services</h3>
+            <ul>
+              <li>
+                <h5 className="uppercase text-[#98A2B3] font-medium text-sm   mt-3 leading-6">
+                  Automation
+                </h5>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Enterprise Suite
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Technology Stack
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Godrej Infotech Products
+                </Link>
+              </li>
+
+              <li>
+                <h5 className="uppercase text-[#98A2B3] font-medium text-sm  mt-3 leading-6">
+                  Cloudification
+                </h5>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Updgrade to Cloud
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Cloud Stack
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Cloud services
+                </Link>
+              </li>
+
+              <li>
+                <h5 className="uppercase text-[#98A2B3] font-medium text-sm mt-3 leading-6">
+                  Transformation
+                </h5>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Intelligent Technologies
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Customer Experience
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Data Insights
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* Col 3 */}
+          <div className="col ">
+            <h3 className=" text-base	leading-6 font-medium mb-2">Services</h3>
+            <ul>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Business Proccess Consulting
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Implementation & Global Roll Out
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Managed Services{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Data & Information Security{" "}
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* Col 4 */}
+          <div className="col ">
+            <h3 className=" text-base	leading-6 font-medium mb-2">
+              Industry Focus
+            </h3>
+            <ul>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Manufacturing{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Retail
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Trading & Distribution{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Project{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  Professional Services{" "}
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* Col 5 */}
+          <div className="col ">
+            <h3 className=" text-base	leading-6 font-medium mb-2">Company</h3>
+            <ul>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  {" "}
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Infotech Weekly
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Career
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/"
+                  className="text-sm text-[#F5F5F5] leading-6 font-medium"
+                >
+                  Contact us
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

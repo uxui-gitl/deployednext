@@ -1,0 +1,73 @@
+/* Subscribe */
+
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  text-align: center; */
+  padding-top: 8em;
+  padding-bottom: 8em;
+  outline: none; 
+  background-size: contain;
+  background-image: url('../../../public/BgGrid100.png');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1.5), transparent), url('../../../public/BgGrid100.png');
+}
+
+.container h3 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #101828;
+  font-weight: bold;
+}
+
+.container h5 {
+  max-width: 80%;
+  margin: 0 auto;
+  color: #101828;
+  margin-top: 0.56em;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+}
+
+.container input[type="email"] {
+  padding: .5em .5em .5em .8em;
+  border: 2px solid #98A2B3;
+  background: #F5F5F5;
+  color: #98A2B3;
+  margin-right: 1.5em;
+  width: 20em;
+  border-radius: 2px;
+  color: #101828;
+}
+.container button[type="submit"] {
+  display: flex;
+}
+.container button {
+  background: #101828;
+  padding: .5em 2.585em;
+  border: 2px solid #101828;
+  font-weight: 400;
+  color: #F5F5F5;
+  border-radius: 2px;
+  transition: 0.2s all;
+}
+
+.container button:hover {
+  background: transparent;
+  color: #101828;
+  font-weight: 500;
+  transition: 0.2s all;
+  scale: 1.05;
+
+}
+
+@media (max-width: 600px) {
+  .container input[type="email"] {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+.container button[type="submit"] {
+  width: 12.5em;
+}
+}

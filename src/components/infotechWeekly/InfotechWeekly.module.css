@@ -1,0 +1,71 @@
+.iw-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 1.25em;
+    gap: 1.25em;
+}
+.iw-card-img-wrap {
+    min-width: 315px;
+    width: 315px;
+    height: 200px;
+}
+.iw-header {
+    margin: 4em 0;
+} 
+.iw-card-content-date {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.iw-card-content-title {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.iw-card-content-pills span {
+    padding: 0.15em 0.5em;
+    border: 1px solid #98A2B3;
+    margin-right: 0.5em;
+    font-weight: 500;
+    border-radius: 2px;
+}
+.iw-card-content-link-wrap {
+    font-weight: 500;
+}
+.iw-cta p {
+    display: flex;
+    font-size: 1.15em;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    font-weight: 500; 
+    padding: 20p;
+    border-bottom: 2px solid #333;
+    width: max-content;
+    margin: 0;
+    padding: 0;
+}
+.iw-card-img-wrap{
+    min-width: 315px;
+    width: 315px;
+    height: 200px;
+    overflow: hidden;
+}
+.iw-card-img-wrap img {
+    transition: transform .75s ease-in-out;
+}
+.iw-card-img-wrap img:hover {
+    transform: scale(1.25);
+}
+
+
+@media (max-width: 768px) {
+    .iw-card-img-wrap{
+        width: 100%;
+        height: auto;
+    }
+    .iw-card-img-wrap img {
+        width: inherit;
+    }
+}
