@@ -1,12 +1,10 @@
 import styles from "./expertise.module.css";
- 
 
 const Expertise = () => {
-   
   return (
     <>
       <div
-        className={`${styles["bg-expertise"]} overflow-clip max-h-[600px]  text-[#DBDBDB]`}
+        className={`${styles["bg-expertise"]} overflow-clip max-h-[600px] py-8  text-[#DBDBDB]`}
       >
         <div
           className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto px-5`}
@@ -51,19 +49,17 @@ const Expertise = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="hidden relative md:flex col">
-              <div
-                className="relative right-[6em] top-[-3em]"
-                id="scene-container"
-                style={{
-                  width: "100%",
-                  height: "700px", // Use viewport height
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                }}
-              ></div>
-            </div> */}
+            <div className="hidden relative md:flex col">
+              <video
+                className="absolute bg-transparent top-0 left-0 w-full h-full object-cover z-0"
+                autoPlay
+                loop
+                muted
+              >
+                <source src="/expert-globe.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
       </div>
