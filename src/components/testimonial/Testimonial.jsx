@@ -193,10 +193,10 @@ const Testimonial = () => {
             </SwiperSlide>
 
             <div className="custom-pagination mx-auto text-center">
-              <div class="swiper-button-prev">
+              <div className="swiper-button-prev">
                 <Icon path={mdiArrowLeft} size={1} />
               </div>
-              <div class="swiper-button-next">
+              <div className="swiper-button-next">
                 <Icon path={mdiArrowRight} size={1} />
               </div>
             </div>
