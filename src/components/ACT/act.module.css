@@ -8,7 +8,7 @@
     padding-bottom: 8em;
     width: 100%;
     outline: none; 
-    background-size: contain;
+    /* background-size: contain; */
     background-image: url('../../../public/BgGrid100.png');
     background-image: linear-gradient(to top, rgba(255, 255, 255, 1.5), transparent), url('../../../public/BgGrid100.png');
     

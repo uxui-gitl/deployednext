@@ -5,7 +5,8 @@ import Icon from '@mdi/react';
 import { mdiArrowRight } from '@mdi/js';
 const Subscribe = () => {
   return (
-    <div className={`${styles['container']} max-w-screen-lg flex justify-center flex-col text-center mx-auto bg-white`}>
+    <div className={`${styles['container']} bg-white`}>
+      <div className={` max-w-screen-lg flex justify-center flex-col text-center mx-auto `}>
       <div className="mx-4 mt-[5em] mb-[2em] flex justify-center flex-col sm:flex-col">
         <h3>Subscribe to our newsletter for all <br /> the latest updates</h3>
         <h5>The latest news, articles, and resources, sent to your inbox weekly.</h5>
@@ -16,6 +17,7 @@ const Subscribe = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   )
 }

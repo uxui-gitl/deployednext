@@ -1,5 +1,5 @@
 /* Subscribe */
-
+ 
 .container {
   /* display: flex;
   justify-content: center;
@@ -8,12 +8,13 @@
   text-align: center; */
   padding-top: 8em;
   padding-bottom: 8em;
+  width: 100%;
   outline: none; 
-  background-size: contain;
+  /* background-size: contain; */
   background-image: url('../../../public/BgGrid100.png');
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1.5), transparent), url('../../../public/BgGrid100.png');
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1.5), transparent), url('../../../public/BgGrid100.png');
+  
 }
-
 .container h3 {
   font-size: 36px;
   line-height: 42px;
