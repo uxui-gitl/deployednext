@@ -1,0 +1,19 @@
+/* .container {
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 6em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #07001f;
+    color: #fff;
+} */
+
+.bg-expertise {
+    background: rgb(49,9,74);
+background: linear-gradient(90deg, rgba(49,9,74,1) 0%, rgba(29,8,69,1) 12%, rgba(14,0,42,1) 100%);
+
+background: rgb(49,9,74);
+background: linear-gradient(90deg, rgba(49,9,74,1) 0%, rgba(29,8,69,1) 15%, rgba(14,0,42,1) 100%);
+}

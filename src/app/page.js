@@ -3,6 +3,7 @@ import ACT from '@/components/ACT/ACT'
 import Announcement from '@/components/announcement/Announcement'
 import ClientLogos from '@/components/clientLogos/ClientLogos'
 import Copyright from '@/components/copyright/Copyright'
+import Expertise from '@/components/expertise/Expertise'
 import Footer from '@/components/footer/Footer'
 import InfotechWeekly from '@/components/infotechWeekly/InfotechWeekly'
 import Intro from '@/components/intro/Intro'
@@ -22,6 +23,7 @@ export default function Home() {
       <ClientLogos/>
       <ACT/>
       <Robot/>
+      <Expertise/>
       <Projects/>
       <Testimonial/>
       <Review/>
