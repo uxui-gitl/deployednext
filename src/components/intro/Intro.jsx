@@ -13,7 +13,7 @@ const Intro = () => {
     <div id="intro" className="text-center">
       <div className="relative w-full h-screen overflow-hidden">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          className="absolute top-0 left-0 w-full h-full object-fill z-0"
           autoPlay
           loop
           muted
