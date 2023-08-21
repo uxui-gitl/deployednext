@@ -18,20 +18,17 @@ const InfotechWeekly = (props) => {
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <h3 className="text-4xl font-bold">
-              Unlocking <br /> Remarkable Results
+            Infotech Weekly
             </h3>
             <p className="font-medium">
-              We bring a wealth of capability and experience together to deliver
-              tailored solutions and services so that businesses can stay ahead
-              of the curve with sustainable expertise and achieve their goals
-              faster and more efficiently.
+            Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies 
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-4">
           {/* Card 1 */}
           <div
-            className={`flex justify-center items-start flex-col md:flex-row w-80p mb-5 gap-5 px-4`}
+            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5 px-4`}
           >
             <div className={`${styles["iw-card-img-wrap"]} relative`}>
               <Image
@@ -50,25 +47,21 @@ const InfotechWeekly = (props) => {
               </div>
             </div>
             <div className={`${styles["iw-card-content"]} py-4`}>
-              <p className={`uppercase  text-[#101828] font-normal`}>
+              <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
                 20 Jan 2023
               </p>
-              <p className={`text-lg font-medium py-2 text-[#101828]`}>
-                Robust Automation for Enhanced Business Efficiency
-              </p>
+              <p className={`text-base font-semibold py-2 text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
               <p
-                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467]`}
+                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm pb-2`}
               >
-                Enabling organizations to optimize cost & enhance business
-                processes with next-gen digital technologies like Robotic
-                Process Automation (RPA), eCommerce & Analytics.
+                Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), eCommerce & Analytics.
               </p>
               <p className={styles["iw-card-content-link-wrap"]}>
                 <Link
                   href="/"
-                  className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3]`}
+                  className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
                 >
-                  Read more
+                  Read article
                 </Link>
               </p>
             </div>
@@ -76,7 +69,7 @@ const InfotechWeekly = (props) => {
 
           {/* Card 2 */}
           <div
-            className={`flex justify-center items-start flex-col md:flex-row w-80p mb-5 gap-5 px-4`}
+            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5 px-4`}
           >
             <div className={`${styles["iw-card-img-wrap"]} relative`}>
               <Image
@@ -95,25 +88,23 @@ const InfotechWeekly = (props) => {
               </div>
             </div>
             <div className={`${styles["iw-card-content"]} py-4`}>
-              <p className={`uppercase  text-[#101828] font-normal`}>
+              <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
                 20 Jan 2023
               </p>
-              <p className={`text-lg font-medium py-2 text-[#101828]`}>
+              <p className={`text-base font-semibold py-2 text-[#101828]`}>
                 Robust Automation for Enhanced Business Efficiency
               </p>
               <p
-                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467]`}
+                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm pb-2`}
               >
-                Enabling organizations to optimize cost & enhance business
-                processes with next-gen digital technologies like Robotic
-                Process Automation (RPA), eCommerce & Analytics.
+                Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), eCommerce & Analytics.
               </p>
               <p className={styles["iw-card-content-link-wrap"]}>
                 <Link
                   href="/"
-                  className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3]`}
+                  className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
                 >
-                  Read more
+                  Read article
                 </Link>
               </p>
             </div>

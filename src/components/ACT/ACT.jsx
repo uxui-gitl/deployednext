@@ -12,7 +12,7 @@ const ACT = () => {
       <div className={`${styles['container']}  bg-[#f2f4f7]`}>
       <div className={`max-w-screen-lg mx-auto`}>
         <div className="mx-auto pt-[4em] pb-[2em] w-4/5">
-          <h2 className="text-[35px] leading-[90px] sm:text-[68px] text-[#101828] font-bold mx-auto">
+          <h2 className="text-[35px] leading-[60px] sm:leading-[90px] sm:text-[68px] text-[#101828] font-bold mx-auto">
             Introducing <span>ACT</span> based approach for building sustainable
             solutions
           </h2>
