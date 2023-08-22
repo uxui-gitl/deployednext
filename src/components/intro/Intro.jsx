@@ -21,7 +21,7 @@ const Intro = () => {
           <source src="/GITLBanner.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="mt-5">
+        <div className="mt-[4rem]">
           <div
             className={`${styles["intro-wrap"]} flex text-white flex-col justify-center align-center max-w-max mx-auto gap-5`}
           >
