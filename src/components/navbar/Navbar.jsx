@@ -44,7 +44,7 @@ const Navbar = () => {
   ]
 
   return (
-    <header className='flex bg-transparent w-full absolute top-0 z-40 py-3 flex-row justify-between items-center px-5'>
+    <header className='sm:hidden flex bg-transparent w-full absolute top-0 z-40 py-3 flex-row justify-between items-center px-5'>
       <Link href='/'>
         <Image src='/godrejLogoWhite.png' alt='godrej logo' width='125' height='45' />
       </Link>

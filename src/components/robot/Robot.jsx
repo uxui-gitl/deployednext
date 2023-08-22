@@ -13,7 +13,7 @@ const Robot = () => {
       className={`bg-[#f5f5f5] `}
     >
       <div
-        className={` max-w-screen-xl md:max-w-screen-lg mx-auto p-5`}
+        className={` max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem] p-5`}
       >
         <div className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-5`}>
           
