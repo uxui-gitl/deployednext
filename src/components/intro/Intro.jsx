@@ -13,7 +13,7 @@ const Intro = () => {
     <div id="intro" className="text-center">
       <div className="relative w-full h-screen overflow-hidden">
         <video
-          className="absolute top-0 left-0 w-full h-full object-fill z-0"
+          className="absolute top-0 left-0 w-full h-full object-none sm:object-fill z-0"
           autoPlay
           loop
           muted
@@ -25,7 +25,7 @@ const Intro = () => {
           <div
             className={`${styles["intro-wrap"]} flex text-white flex-col justify-center align-center max-w-max mx-auto gap-5`}
           >
-            <h1 className="text-[68px] leading-[84px]	text-white font-bold text-center">
+            <h1 className="sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-center">
               Delivering Business Value <br /> with{" "}
               <TypeAnimation
                 className="typewriter-text text-white"
@@ -42,7 +42,7 @@ const Intro = () => {
                 repeat={Infinity}
               />
             </h1>
-            <h4 className="text-white mb-[24px]">
+            <h4 className="text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
               Revolutionize your business operations, save time and boost
               productivity <br /> with our cutting-edge offerings..
             </h4>
