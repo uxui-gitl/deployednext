@@ -111,30 +111,7 @@ textarea:focus, input:focus{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-
-/* Navbar */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em 2em;
-  background-color: #FFFFFF;
-  background-color: transparent;
-  align-items: center;
-  position: sticky; 
-  top: 0;
-  width: 100%;
-} 
-.header nav a {
-  margin-right: 1em;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.header nav a:hover {
-  margin-right: 1em;
-  /* text-decoration: underline; */
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+ 
 
 .progress-bar {
   position: fixed;

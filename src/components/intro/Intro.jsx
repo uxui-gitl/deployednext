@@ -76,7 +76,7 @@ const Intro = () => {
             <div className="flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">
               <a
                 href="/"
-                className="text-[#101828] bg-[#F5F5F5] font-medium sm:font-normal rounded-sm	 capitalize max-w-max px-5 py-[0.55rem] sm:py-2 border flex"
+                className="text-[#101828] bg-[#F5F5F5] font-medium sm:font-normal rounded-sm	 capitalize max-w-max px-[2rem] sm:px-5 py-[0.55rem] sm:py-2 border flex"
               >
                 let&#39;s Connect
                 <span>
@@ -89,7 +89,7 @@ const Intro = () => {
               </a>
               <a
                 href="/"
-                className="text-[#F5F5F5] bg-transparent font-normal capitalize max-w-max pt-[8px] px-5 sm:py-2 underline underline-offset-8 flex"
+                className="text-[#F5F5F5] bg-transparent font-medium sm:font-normal capitalize max-w-max pt-[8px] px-[2rem] sm:px-5 sm:py-2 underline underline-offset-8 flex"
               >
                 <Icon path={mdiPlayCircle} size={1} className="me-2" />{" "}
                 Co-operate Video
