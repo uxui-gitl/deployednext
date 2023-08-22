@@ -44,13 +44,13 @@ const Navbar = () => {
   ]
 
   return (
-    <header className='sm:hidden flex bg-transparent w-full absolute top-0 z-40 py-3 flex-row justify-between items-center px-5'>
+    <header className='sm:hidden flex bg-transparent w-full absolute top-0 z-40 mt-3 py-3 flex-row justify-between items-center px-5'>
       <Link href='/'>
-        <Image src='/godrejLogoWhite.png' alt='godrej logo' width='125' height='45' />
+        <Image src='/godrejLogoWhite.svg' alt='godrej logo' width='125' height='45' />
       </Link>
       
       <Link className='sm:hidden' href='/'>
-          <Icon path={mdiMenu} color='white' size={1} />
+          <Icon path={mdiMenu} color='white' size={1.3} />
       </Link>
       
       <nav className='hidden sm:flex'>
