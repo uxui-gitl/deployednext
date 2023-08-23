@@ -17,8 +17,8 @@ const Footer = () => {
       <div
         className={`${styles.container} max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem]`}
       >
-        <div className="flex justify-center mx-auto ">
-          <div className={`w-1/5 pr-2`}>
+        <div className="flex flex-col md:flex-row justify-center mx-auto  ">
+          <div className={`sm:w-1/5 pr-2 pb-2`}>
             {/* Col 1 */}
             <div className="col">
               <Image src="/godrejLogoWhite.svg"  alt="Godrej Logo" width="150" height="150" />
@@ -65,9 +65,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className={`flex gap-10  px-5`}>
+          <div className={`flex sm:gap-10 gap-6 flex-col md:flex-row sm:px-5`}>
             {/* Col 2 */}
-            <div className="w-54">
+            <div className="sm:w-54">
               <h3 className=" text-base	leading-6 font-medium mb-2">Solutions</h3>
               <ul>
                 <li>
@@ -162,7 +162,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 3 */}
-            <div className="w-48">
+            <div className="sm:w-48">
               <h3 className=" text-base	leading-6 font-medium mb-2">Services</h3>
               <ul>
                 <li>
@@ -204,7 +204,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 4 */}
-            <div className="w-42">
+            <div className="sm:w-42">
               <h3 className=" text-base	leading-6 font-medium mb-2">
                 Industry Focus
               </h3>
@@ -257,7 +257,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 5 */}
-            <div className="w-48">
+            <div className="sm:w-48">
               <h3 className=" text-base	leading-6 font-medium mb-2">Company</h3>
               <ul>
                 <li>
