@@ -17,11 +17,11 @@ const Footer = () => {
       <div
         className={`${styles.container} max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem]`}
       >
-        <div className="flex ">
-          <div className={`grid grid-cols-1 w-1/4`}>
+        <div className="flex justify-center mx-auto ">
+          <div className={`w-1/5 pr-2`}>
             {/* Col 1 */}
             <div className="col">
-              <Image src="/godrejLogoWhite.png"  alt="Godrej Logo" width="150" height="150" />
+              <Image src="/godrejLogoWhite.svg"  alt="Godrej Logo" width="150" height="150" />
               <p className="my-4 text-sm text-[#F5F5F5] leading-5 font-medium">
                 Revolutionize your business operations, save time and boost
                 productivity with our cutting-edge offerings.{" "}
@@ -65,9 +65,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className={`grid grid-cols-1 md:grid-cols-4 gap-10 w-3/4 px-5`}>
+          <div className={`flex gap-10  px-5`}>
             {/* Col 2 */}
-            <div className="col">
+            <div className="w-54">
               <h3 className=" text-base	leading-6 font-medium mb-2">Solutions</h3>
               <ul>
                 <li>
@@ -162,7 +162,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 3 */}
-            <div className="col">
+            <div className="w-48">
               <h3 className=" text-base	leading-6 font-medium mb-2">Services</h3>
               <ul>
                 <li>
@@ -204,7 +204,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 4 */}
-            <div className="col">
+            <div className="w-42">
               <h3 className=" text-base	leading-6 font-medium mb-2">
                 Industry Focus
               </h3>
@@ -257,7 +257,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Col 5 */}
-            <div className="col">
+            <div className="w-48">
               <h3 className=" text-base	leading-6 font-medium mb-2">Company</h3>
               <ul>
                 <li>
