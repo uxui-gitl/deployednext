@@ -12,3 +12,10 @@
 .introVidWrap video {
     /* rotate: 180deg; */
 }
+.btn-transparent-video {
+    border-bottom: 1px solid #fff;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1rem;
+    padding-bottom: 0.25em;
+}
