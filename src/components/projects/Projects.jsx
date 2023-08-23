@@ -15,16 +15,16 @@ const Projects = (props) => {
           Projects
         </h4>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
-          <h3 className="text-4xl font-bold">
+          <h3 className="text-4xl leading-[42px] font-bold">
             Unlocking <br /> Remarkable Results
           </h3>
-          <p className="font-medium">
+          <p className="font-normal leading-[22px]">
             We bring wealth of capability and experience together to deliver
             tailored solutions and services so that businesses
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         <div className={`${styles["iw-card"]}`}>
           <div className={`${styles["iw-card-img-wrap"]} relative`}>
             <Image
@@ -32,12 +32,13 @@ const Projects = (props) => {
               alt="blog post"
               width="315"
               height="200"
+              className="w-full h-auto lg:w-315 lg:h-200"
             />
             <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium ">
                 Microsoft 365
               </p>
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded  font-medium">
                 Case Study
               </p>
             </div>
@@ -48,7 +49,7 @@ const Projects = (props) => {
             <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
                 20 Jan 2023
               </p>
-            <p className={`text-base font-semibold py-2 text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
+            <p className={`text-base font-semibold pt-[14px] pb-2 leading-[22px] text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
             <p
               className={`${styles["iw-card-content-desc"]} text-clip  text-[#475467] text-sm`}
             >
@@ -73,12 +74,14 @@ const Projects = (props) => {
               alt="blog post"
               width="315"
               height="200"
+              className="w-full h-auto lg:w-315 lg:h-200"
+
             />
             <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                 Microsoft 365
               </p>
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                 Case Study
               </p>
             </div>
@@ -114,12 +117,14 @@ const Projects = (props) => {
               alt="blog post"
               width="315"
               height="200"
+              className="w-full h-auto lg:w-315 lg:h-200"
+
             />
             <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                 Microsoft 365
               </p>
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                 Case Study
               </p>
             </div>

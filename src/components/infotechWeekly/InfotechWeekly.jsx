@@ -17,10 +17,10 @@ const InfotechWeekly = (props) => {
             WEEKLY UPDATES
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <h3 className="text-4xl font-bold">
+            <h3 className="text-4xl leading-[42px] font-bold">
             Infotech Weekly
             </h3>
-            <p className="font-medium">
+            <p className="font-normal leading-[22px]">
             Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies 
             </p>
           </div>
@@ -38,21 +38,21 @@ const InfotechWeekly = (props) => {
                 height="200"
               />
               <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                   Microsoft 365
                 </p>
-                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                   Case Study
                 </p>
               </div>
             </div>
-            <div className={`${styles["iw-card-content"]} py-4`}>
+            <div className={`${styles["iw-card-content"]} py-[14px]`}>
               <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
                 20 Jan 2023
               </p>
-              <p className={`text-base font-semibold py-2 text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
+              <p className={`text-base font-semibold pt-[14px] pb-2 leading-[22px] text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
               <p
-                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm pb-2`}
+                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm  pb-[14px]`}
               >
                 Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), eCommerce & Analytics.
               </p>
@@ -79,23 +79,23 @@ const InfotechWeekly = (props) => {
                 height="200"
               />
               <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                   Microsoft 365
                 </p>
-                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded">
+                <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
                   Case Study
                 </p>
               </div>
             </div>
-            <div className={`${styles["iw-card-content"]} py-4`}>
+            <div className={`${styles["iw-card-content"]} py-[14px]`}>
               <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
                 20 Jan 2023
               </p>
-              <p className={`text-base font-semibold py-2 text-[#101828]`}>
+              <p className={`text-base font-semibold pt-[14px] pb-2 leading-[22px] text-[#101828]`}>
                 Robust Automation for Enhanced Business Efficiency
               </p>
               <p
-                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm pb-2`}
+                className={`${styles["iw-card-content-desc"]} text-clip text-[#475467] text-sm pb-[14px]  `}
               >
                 Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), eCommerce & Analytics.
               </p>
