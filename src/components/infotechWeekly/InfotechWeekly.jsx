@@ -9,8 +9,8 @@ import { mdiArrowRight } from "@mdi/js";
 const InfotechWeekly = (props) => {
   return (
     <>
-      <div className="max-w-screen-lg mx-auto bg-white">
-        <div className="mx-4 mt-[5em] mb-[2em]">
+      <div className="max-w-screen-lg mx-auto px-[2rem] bg-white">
+        <div className=" mt-[5em] mb-[2em]">
           <h4
             className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
           >
@@ -28,7 +28,7 @@ const InfotechWeekly = (props) => {
         <div className="grid grid-cols-1 gap-4">
           {/* Card 1 */}
           <div
-            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5 px-4`}
+            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5`}
           >
             <div className={`${styles["iw-card-img-wrap"]} relative`}>
               <Image
@@ -69,7 +69,7 @@ const InfotechWeekly = (props) => {
 
           {/* Card 2 */}
           <div
-            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5 px-4`}
+            className={`flex justify-center items-start flex-col md:flex-row mb-5 gap-5`}
           >
             <div className={`${styles["iw-card-img-wrap"]} relative`}>
               <Image

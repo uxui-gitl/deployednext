@@ -25,7 +25,7 @@ const Intro = () => {
           <div
             className={`${styles["intro-wrap"]} flex text-white flex-col justify-center align-center max-w-max mx-auto gap-5`}
           >
-            <h1 className="hidden sm:block sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-center">
+            <h1 className="hidden sm:block sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-semibold text-center">
               Delivering Business Value <br /> with{" "}
               <TypeAnimation
                 className="typewriter-text text-white"

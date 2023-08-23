@@ -7,8 +7,8 @@ import { mdiArrowRight } from "@mdi/js";
 
 const Projects = (props) => {
   return (
-    <div className={`max-w-screen-lg mx-auto  bg-[#fff]`}>
-      <div className="mx-4 mt-[5em] mb-[2em]">
+    <div className={`max-w-screen-lg mx-auto px-[2rem] bg-[#fff]`}>
+      <div className=" mt-[5em] mb-[2em]">
         <h4
           className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
         >
@@ -25,7 +25,7 @@ const Projects = (props) => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className={`${styles["iw-card"]} px-4`}>
+        <div className={`${styles["iw-card"]}`}>
           <div className={`${styles["iw-card-img-wrap"]} relative`}>
             <Image
               src="/project-1.png"
@@ -66,7 +66,7 @@ const Projects = (props) => {
             </p>
           </div>
         </div>
-        <div className={`${styles["iw-card"]} px-4`}>
+        <div className={`${styles["iw-card"]}`}>
           <div className={`${styles["iw-card-img-wrap"]} relative`}>
             <Image
               src="/project-2.png"
@@ -107,7 +107,7 @@ const Projects = (props) => {
             </p>
           </div>
         </div>
-        <div className={`${styles["iw-card"]} px-4`}>
+        <div className={`${styles["iw-card"]}`}>
           <div className={`${styles["iw-card-img-wrap"]} relative`}>
             <Image
               src="/project-3.png"
@@ -149,26 +149,7 @@ const Projects = (props) => {
           </div>
         </div>
       </div>
-
-      <div className={`${styles["iw-cta"]}`}>
-        <Link
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "1em auto 2em",
-          }}
-          href="/"
-        >
-          <p>
-            Read Article articles{" "}
-            <Icon
-              path={mdiArrowRight}
-              style={{ marginLeft: "0.5em" }}
-              size={1}
-            />
-          </p>
-        </Link>
-      </div>
+ 
     </div>
   );
 };

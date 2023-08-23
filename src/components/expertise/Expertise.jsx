@@ -11,7 +11,7 @@ const Expertise = () => {
         className={`${styles["bg-expertise"]} overflow-clip max-h-[600px] py-8  text-[#DBDBDB]`}
       >
         <div
-          className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto px-5`}
+          className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem]`}
         >
           <div
             className={`grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5`}

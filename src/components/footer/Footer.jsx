@@ -15,7 +15,7 @@ const Footer = () => {
       className={`${styles["bg-footer"]} bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
     >
       <div
-        className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto p-5`}
+        className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto p-5 px-[2rem]`}
       >
         <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-3`}>
           {/* Col 1 */}
