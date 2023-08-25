@@ -4,6 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 const Projects = (props) => {
   return (
@@ -24,11 +45,21 @@ const Projects = (props) => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
-        <div className={`${styles["iw-card"]}`}>
-          <div className={`${styles["iw-card-img-wrap"]} relative`}>
+      <motion.div
+        className="container grid grid-cols-1 md:grid-cols-3 gap-[30px]"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
+        {[0, 1, 2].map((index) => (
+          <motion.div
+            key={index}
+            variants={item}
+            className={`${styles["iw-card"]} item`}
+          >
+<div className={`${styles["iw-card-img-wrap"]} relative`}>
             <Image
-              src="/project-1.png"
+              src={`/project-${index+1}.png`}
               alt="blog post"
               width="315"
               height="200"
@@ -66,95 +97,10 @@ const Projects = (props) => {
               </Link>
             </p>
           </div>
-        </div>
-        <div className={`${styles["iw-card"]}`}>
-          <div className={`${styles["iw-card-img-wrap"]} relative`}>
-            <Image
-              src="/project-2.png"
-              alt="blog post"
-              width="315"
-              height="200"
-              className="w-full h-auto lg:w-315 lg:h-200"
 
-            />
-            <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
-                Microsoft 365
-              </p>
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
-                Case Study
-              </p>
-            </div>
-          </div>
-          {/* Card content for Automation */}
-          <div className={`${styles["iw-card-content"]}`}>
-            {/* <p className={`text-[#98A2B3] font-bold`}>Automation</p> */}
-            <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
-                20 Jan 2023
-              </p>
-            <p className={`text-base font-semibold py-2 text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
-            <p
-              className={`${styles["iw-card-content-desc"]} text-clip  text-[#475467] text-sm`}
-            >
-              Enabling organizations to optimize cost & enhance business
-              processes with next-gen
-            </p>
-
-            <p className={styles["iw-card-content-link-wrap"]}>
-              <Link
-                href="/"
-                className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
-              >
-                Read Article
-              </Link>
-            </p>
-          </div>
-        </div>
-        <div className={`${styles["iw-card"]}`}>
-          <div className={`${styles["iw-card-img-wrap"]} relative`}>
-            <Image
-              src="/project-3.png"
-              alt="blog post"
-              width="315"
-              height="200"
-              className="w-full h-auto lg:w-315 lg:h-200"
-
-            />
-            <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
-                Microsoft 365
-              </p>
-              <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium">
-                Case Study
-              </p>
-            </div>
-          </div>
-          {/* Card content for Transformation */}
-          <div className={`${styles["iw-card-content"]}`}>
-            {/* <p className={`text-[#98A2B3] font-bold`}>Transformation</p> */}
-            <p className={`uppercase  text-[#101828] font-medium text-[12px]`}>
-                20 Jan 2023
-              </p>
-            <p className={`text-base font-semibold py-2 text-[#101828]`}> Robust Automation for Enhanced Business Efficiency </p>
-            <p
-              className={`${styles["iw-card-content-desc"]} text-clip  text-[#475467] text-sm`}
-            >
-              Enabling organizations to optimize cost & enhance business
-              processes with next-gen
-            </p>
-
-            <p className={styles["iw-card-content-link-wrap"]}>
-              <Link
-                href="/"
-                className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
-              >
-                Read Article
-              </Link>
-            </p>
-          </div>
-        </div>
-      </div>
- 
+          </motion.div>
+        ))}
+      </motion.div>
     </div>
   );
 };

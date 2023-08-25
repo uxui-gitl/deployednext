@@ -66,16 +66,7 @@ h4.ribbon-robot::before {
   }
 }
 /* Common CSS */
-.container {
-  /* max-width: 1366px; */
-  max-width: 100%;
-  width: 1366px;
-  /* min-height: 90vh; */
-  margin: 0 auto;
-  padding: 2em 60px;
-  display: flex;
-  flex-direction: column;
-}
+
 #rcc-confirm-button{
   border: 2px solid rgb(76, 111, 255);
 }
