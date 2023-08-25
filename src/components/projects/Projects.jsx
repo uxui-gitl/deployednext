@@ -6,25 +6,21 @@ import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 import { motion } from "framer-motion";
 
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.2,
-    },
-  },
-};
 
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100
   },
-};
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5 * index,
+    }
+  })
+}
+ 
 
 const Projects = (props) => {
   return (
@@ -47,14 +43,18 @@ const Projects = (props) => {
       </div>
       <motion.div
         className="container grid grid-cols-1 md:grid-cols-3 gap-[30px]"
-        variants={container}
-        initial="hidden"
-        animate="visible"
+         
       >
         {[0, 1, 2].map((index) => (
           <motion.div
             key={index}
-            variants={item}
+            variants={fadeInAnimationVariant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
             className={`${styles["iw-card"]} item`}
           >
 <div className={`${styles["iw-card-img-wrap"]} relative`}>
