@@ -16,7 +16,7 @@ const Expertise = () => {
         >
           <div className={`grid grid-cols-1  gap-5`}>
             <div className="md:col-span-2 col sm:col-span-2 flex flex-col justify-center">
-              <div className="mb-[80px]">
+              <div className="mb-[40px] sm:mb-[80px] text-center">
                 <h2 className="text-4xl	font-bold mb-2	text-[#f5f5f5]">
                   {"The Hub of Expertise"}
                 </h2>
@@ -26,8 +26,8 @@ const Expertise = () => {
                   develop better results for businesses across the globe.
                 </p>
               </div>
-              <div className="w-full">
-                <div className="mx-auto text-center flex flex-row justify-around items-start">
+              <div className="w-full mx-auto text-center">
+                <div className="mx-auto text-center flex flex-col sm:flex-row justify-around items-center sm:items-start">
                   <div className="  mb-5 md:mb-0">
                     <h4 className="text-5xl font-bold text-[#f5f5f5]">
                       <CountUp
@@ -105,8 +105,8 @@ export function Cobe() {
     onResize();
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 1000 * 2,
-      height: 1000 * 2,
+      width: 1500 * 2,
+      height: 1500 * 2,
       phi: 0,
       theta: 0.25,
       dark: 1,
@@ -134,7 +134,11 @@ export function Cobe() {
     <div className="App flex items-center justify-center z-[10]">
       <canvas
         ref={canvasRef}
-        style={{ width: '1000px', height: '1000px', maxWidth: '200%', aspectRatio: '1' }}
+        style={{ width: '1500px', height: '1500px', maxWidth: '200%', aspectRatio: '1', top: '1em',
+        position: 'relative',
+        right: '0',
+        left: '-5em',
+        transform: 'translateX(5em)' }}
       />
     </div>
   );
