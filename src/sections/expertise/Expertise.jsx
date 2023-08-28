@@ -26,9 +26,9 @@ const Expertise = () => {
                   develop better results for businesses across the globe.
                 </p>
               </div>
-              <div className="flex flex-col md:flex-row justify-between align-bottom">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                  <div className="col mb-5 md:mb-0">
+              <div className="w-full">
+                <div className="mx-auto text-center flex flex-row justify-around items-start">
+                  <div className="  mb-5 md:mb-0">
                     <h4 className="text-5xl font-bold text-[#f5f5f5]">
                       <CountUp
                         end={50}
@@ -38,11 +38,10 @@ const Expertise = () => {
                       />
                     </h4>
                     <p className="">
-                      <span className="text-[#b2c8f8]">Countries</span> where we
-                      <br /> have trusted clients
+                      <span className="text-[#b2c8f8]">Countries</span> where we have trusted clients
                     </p>
                   </div>
-                  <div className="col mb-5 md:mb-0">
+                  <div className="  mb-5 md:mb-0">
                     <h4 className="text-5xl font-bold text-[#f5f5f5]">
                       <CountUp
                         end={10.31}
@@ -57,7 +56,7 @@ const Expertise = () => {
                       <span className="text-[#b2c8f8]">Revenue</span>
                     </p>
                   </div>
-                  <div className="col mb-5 md:mb-0">
+                  <div className="  mb-5 md:mb-0">
                     <h4 className="text-5xl font-bold text-[#f5f5f5]">
                       <CountUp
                         end={500}
@@ -73,7 +72,7 @@ const Expertise = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden relative md:flex col">
+              <div className="hidden relative sm:block">
                 <Cobe />
               </div>
             </div>
@@ -106,8 +105,8 @@ export function Cobe() {
     onResize();
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 600 * 2,
-      height: 600 * 2,
+      width: 1000 * 2,
+      height: 1000 * 2,
       phi: 0,
       theta: 0.25,
       dark: 1,
@@ -117,8 +116,8 @@ export function Cobe() {
       baseColor: [1, 0.5, 3],
       markerColor: [0.1, 0.8, 1], // Customize marker color here
       glowColor: [1, 1, 2],
-      opacity: 1,
-      offset: [0, 0],
+      opacity:1,
+      offset: [0,0],
       markers: [
         // longitude latitude
       ],
@@ -128,62 +127,14 @@ export function Cobe() {
         state.phi = phi;
         phi += 0.003;
       },
-    });
-    setTimeout(() => (canvasRef.current.style.opacity = "1"));
+    }); 
     return () => globe.destroy();
   }, []);
   return (
-    <div
-      style={{
-        width: "100%",
-        aspectRatio: 1,
-        margin: "auto",
-        position: "relative",
-        top: "-50em",
-        left: "25%",
-        transform: "translateX(-35%)",
-      }}
-    >
+    <div className="App flex items-center justify-center z-[10]">
       <canvas
         ref={canvasRef}
-        onPointerDown={(e) => {
-          pointerInteracting.current =
-            e.clientX - pointerInteractionMovement.current;
-          canvasRef.current.style.cursor = "grabbing";
-        }}
-        onPointerUp={() => {
-          pointerInteracting.current = null;
-          canvasRef.current.style.cursor = "grab";
-        }}
-        onPointerOut={() => {
-          pointerInteracting.current = null;
-          canvasRef.current.style.cursor = "grab";
-        }}
-        onMouseMove={(e) => {
-          if (pointerInteracting.current !== null) {
-            const delta = e.clientX - pointerInteracting.current;
-            pointerInteractionMovement.current = delta;
-            api.start({
-              r: delta / 200,
-            });
-          }
-        }}
-        onTouchMove={(e) => {
-          if (pointerInteracting.current !== null && e.touches[0]) {
-            const delta = e.touches[0].clientX - pointerInteracting.current;
-            pointerInteractionMovement.current = delta;
-            api.start({
-              r: delta / 100,
-            });
-          }
-        }}
-        style={{
-          width: "180%",
-          height: "180%",
-          contain: "layout paint size",
-          opacity: 0,
-          transition: "opacity 1s ease",
-        }}
+        style={{ width: '1000px', height: '1000px', maxWidth: '200%', aspectRatio: '1' }}
       />
     </div>
   );
