@@ -14,15 +14,13 @@ const Expertise = () => {
         <div
           className={`${styles.container} max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem]`}
         >
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5`}
-          >
+          <div className={`grid grid-cols-1  gap-5`}>
             <div className="md:col-span-2 col sm:col-span-2 flex flex-col justify-center">
               <div className="mb-[80px]">
                 <h2 className="text-4xl	font-bold mb-2	text-[#f5f5f5]">
                   {"The Hub of Expertise"}
                 </h2>
-                <p className="max-w-[85%] leading-[22px]">
+                <p className=" leading-[22px]">
                   We are here to build edge and bring technology brilliance with
                   the finest in the industry. Driving the innovation path, we
                   develop better results for businesses across the globe.
@@ -75,10 +73,9 @@ const Expertise = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="hidden relative md:flex col">
-              <Cobe />
+              <div className="hidden relative md:flex col">
+                <Cobe />
+              </div>
             </div>
           </div>
         </div>
@@ -109,28 +106,27 @@ export function Cobe() {
     onResize();
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: width * 2,
-      height: width * 2,
+      width: 600 * 2,
+      height: 600 * 2,
       phi: 0,
-      theta: 0.3,
+      theta: 0.25,
       dark: 1,
-      diffuse: 3,
-      mapSamples: 16000,
-      mapBrightness: 1.2,
-      baseColor: [1, 1, 1],
-      markerColor: [251 / 255, 100 / 255, 21 / 255],
-      glowColor: [1.2, 1.2, 1.2],
-      markers: [],
+      diffuse: 1.2,
+      mapSamples: 30000,
+      mapBrightness: 6,
+      baseColor: [1, 0.5, 3],
+      markerColor: [0.1, 0.8, 1], // Customize marker color here
+      glowColor: [1, 1, 2],
+      opacity: 1,
+      offset: [0, 0],
+      markers: [
+        // longitude latitude
+      ],
       onRender: (state) => {
-        // This prevents rotation while dragging
-        if (!pointerInteracting.current) {
-          // Called on every animation frame.
-          // `state` will be an empty object, return updated params.
-          phi += 0.005;
-        }
-        state.phi = phi + r.get();
-        state.width = width * 2;
-        state.height = width * 2;
+        // Called on every animation frame.
+        // `state` will be an empty object, return updated params.\
+        state.phi = phi;
+        phi += 0.003;
       },
     });
     setTimeout(() => (canvasRef.current.style.opacity = "1"));
@@ -140,10 +136,12 @@ export function Cobe() {
     <div
       style={{
         width: "100%",
-        maxWidth: 600,
         aspectRatio: 1,
         margin: "auto",
         position: "relative",
+        top: "-50em",
+        left: "25%",
+        transform: "translateX(-35%)",
       }}
     >
       <canvas
@@ -180,9 +178,8 @@ export function Cobe() {
           }
         }}
         style={{
-          width: "100%",
-          height: "100%",
-          cursor: "grab",
+          width: "180%",
+          height: "180%",
           contain: "layout paint size",
           opacity: 0,
           transition: "opacity 1s ease",
