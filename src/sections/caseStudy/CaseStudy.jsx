@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Projects.module.css";
+import styles from "./CaseStudy.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@mdi/react";
@@ -20,7 +20,7 @@ const fadeInAnimationVariant = {
   }),
 };
 
-const Projects = (props) => {
+const CaseStudy = (props) => {
   const caseStudies = [
     {
       id: 1,
@@ -47,10 +47,10 @@ const Projects = (props) => {
     },
     {
       id: 3,
-      title: "How Electrical Component Manufactures slashes 30% of....",
+      title: "How Electrical Component Manufactures slashes 30% of  Component Manufactures slashes ",
       thumbnail: "3",
       description:
-        "Enabling organizations to optimize cost & enhance business processes with next-gen",
+        "   ",
       tags: ["Transformation"],
       date: "20 Jan 2023",
       cta: "Read article",
@@ -139,4 +139,4 @@ const Projects = (props) => {
   );
 };
 
-export default Projects;
+export default CaseStudy;

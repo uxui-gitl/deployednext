@@ -7,7 +7,7 @@ import Footer from "@/sections/footer/Footer";
 import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Intro from "@/sections/intro/Intro";
 import Navbar from "@/sections/navbar/Navbar";
-import Projects from "@/sections/projects/Projects";
+import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Review from "@/sections/review/Review";
 import Robot from "@/sections/robot/Robot";
 import RobotDetails from "@/sections/robotDetails/RobotDetails";
@@ -26,7 +26,7 @@ export default function Home() {
       <ACT />
       <Robot />
       <Expertise />
-      <Projects />
+      <CaseStudy/>
       <Testimonial />
       <Review />
       <InfotechWeekly />

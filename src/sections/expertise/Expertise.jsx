@@ -72,9 +72,9 @@ const Expertise = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden relative sm:block">
+              {/* <div className="hidden relative sm:block">
                 <Cobe />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
