@@ -68,7 +68,7 @@ const CaseStudy = (props) => {
         </h4>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
           <h3 className="text-4xl leading-[42px] font-bold">
-            Delivering Results that Matters Results
+            Delivering Results that Matters
           </h3>
           <p className="font-normal leading-[22px]">
             World&apos;s top-notch businesses choose us for our excellent
