@@ -24,10 +24,10 @@ const CaseStudy = (props) => {
   const caseStudies = [
     {
       id: 1,
-      title: "Adhesive Manufacturer cuts open ticket volume by 25% ...",
+      title:
+        "Adhesive Manufacturer cuts open ticket volume by 25% with Managed Services in .NET, SharePoint and PHP",
       thumbnail: "1",
-      description:
-        "Enabling organizations to optimize cost & enhance business processes with next-gen",
+      description: "",
       tags: ["Automation"],
       date: "20 Jan 2023",
       cta: "Read article",
@@ -36,10 +36,9 @@ const CaseStudy = (props) => {
     {
       id: 2,
       title:
-        "KSA based Coffee Brand Distributor enables inventory viability and....",
+        "KSA based Coffee Brand Distributor  minimizes intercompany transaction time with Cloud-based D365 Finance, SCM & Commerce implementation",
       thumbnail: "2",
-      description:
-        "Enabling organizations to optimize cost & enhance business processes with next-gen",
+      description: "",
       tags: ["Cloudification"],
       date: "20 Jan 2023",
       cta: "Read article",
@@ -47,10 +46,10 @@ const CaseStudy = (props) => {
     },
     {
       id: 3,
-      title: "How Electrical Component Manufactures slashes 30% of  Component Manufactures slashes ",
+      title:
+        "How Electrical Component Manufactures slashes 30% of manual effort with Infor LN implementation ",
       thumbnail: "3",
-      description:
-        "   ",
+      description: "",
       tags: ["Transformation"],
       date: "20 Jan 2023",
       cta: "Read article",
@@ -118,7 +117,11 @@ const CaseStudy = (props) => {
                 {`${cases.title}`}{" "}
               </p>
               <p
-                className={`${styles["iw-card-content-desc"]} text-clip  text-[#475467] text-sm`}
+                className={`${
+                  styles["iw-card-content-desc"]
+                } text-clip  text-[#475467] text-sm ${
+                  cases.description.length <= 0 ? "hidden" : "block"
+                }`}
               >
                 {`${cases.description}`}
               </p>
