@@ -26,7 +26,7 @@ export default function Home() {
       <ACT />
       <Robot />
       <Expertise />
-      <CaseStudy data-cursor-magnetic/>
+      <CaseStudy />
       <Testimonial />
       <Review />
       <InfotechWeekly />

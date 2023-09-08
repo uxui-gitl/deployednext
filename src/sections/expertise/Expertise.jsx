@@ -38,7 +38,8 @@ const Expertise = () => {
                       />
                     </h4>
                     <p className="">
-                      <span className="text-[#b2c8f8]">Countries</span> where we have trusted clients
+                      <span className="text-[#b2c8f8]">Countries</span> where we
+                      have trusted clients
                     </p>
                   </div>
                   <div className="  mb-5 md:mb-0">
@@ -72,9 +73,9 @@ const Expertise = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="hidden relative sm:block">
+              <div className="hidden relative sm:block">
                 <Cobe />
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -85,17 +86,6 @@ const Expertise = () => {
 
 export function Cobe() {
   const canvasRef = useRef();
-  const pointerInteracting = useRef(null);
-  const pointerInteractionMovement = useRef(0);
-  const [{ r }, api] = useSpring(() => ({
-    r: 0,
-    config: {
-      mass: 1,
-      tension: 280,
-      friction: 40,
-      precision: 0.001,
-    },
-  }));
   useEffect(() => {
     let phi = 0;
     let width = 0;
@@ -105,40 +95,55 @@ export function Cobe() {
     onResize();
     const globe = createGlobe(canvasRef.current, {
       devicePixelRatio: 2,
-      width: 1500 * 2,
-      height: 1500 * 2,
+      width: width * 2,
+      height: width * 2 * 0.4,
       phi: 0,
-      theta: 0.25,
+      theta: 0.3,
       dark: 1,
-      diffuse: 1.2,
-      mapSamples: 30000,
+      diffuse: 3,
+      mapSamples: 16000,
       mapBrightness: 6,
       baseColor: [1, 0.5, 3],
-      markerColor: [0.1, 0.8, 1], // Customize marker color here
+      markerSize: 0.03,
+      markerColor: [251 / 255, 200 / 255, 21 / 255],
       glowColor: [1, 1, 2],
-      opacity:1,
-      offset: [0,0],
       markers: [
-        // longitude latitude
+        { location: [37.78, -122.412], size: 0.1 },
+        { location: [52.52, 13.405], size: 0.1 },
+        { location: [35.676, 139.65], size: 0.1 },
+        { location: [-34.6, -58.38], size: 0.1 },
       ],
+      opacity: 1,
+      scale: 3,
+      offset: [0, width * 2 * 0.4 * 0.6],
       onRender: (state) => {
-        // Called on every animation frame.
-        // `state` will be an empty object, return updated params.\
         state.phi = phi;
         phi += 0.003;
+        state.width = width * 2;
+        state.height = width * 2 * 0.4;
       },
-    }); 
+    });
+    setTimeout(() => (canvasRef.current.style.opacity = "1"));
     return () => globe.destroy();
   }, []);
   return (
-    <div className="App flex items-center justify-center z-[10]">
+    <div
+      style={{
+        width: "100%",
+        aspectRatio: 1 / 0.4,
+        margin: "auto",
+        position: "relative",
+      }}
+    >
       <canvas
         ref={canvasRef}
-        style={{ width: '1500px', height: '1500px', maxWidth: '200%', aspectRatio: '1', top: '1em',
-        position: 'relative',
-        right: '0',
-        left: '-5em',
-        transform: 'translateX(5em)' }}
+        style={{
+          width: "100%",
+          height: "100%",
+          contain: "layout paint size",
+          opacity: 0,
+          transition: "opacity 1s ease",
+        }}
       />
     </div>
   );
