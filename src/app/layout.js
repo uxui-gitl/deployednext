@@ -5,11 +5,6 @@ import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 const works = Work_Sans({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Godrej Infotech",
-  description: "GITL",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
