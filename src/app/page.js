@@ -15,24 +15,29 @@ import Subscribe from "@/sections/subscribe/Subscribe";
 import Testimonial from "@/sections/testimonial/Testimonial";
 import ACT from "@/sections/ACT/ACT";
 import Image from "next/image";
+import { Cursor } from "react-creative-cursor";
+import "react-creative-cursor/dist/styles.css";
 
 export default function Home() {
   return (
-    <main>
-      <Announcement />
-      <Navbar />
-      <Intro />
-      <ClientLogos />
-      <ACT />
-      <Robot />
-      <Expertise />
-      <CaseStudy />
-      <Testimonial />
-      <Review />
-      <InfotechWeekly />
-      <Subscribe />
-      <Footer />
-      <Copyright />
-    </main>
+    <>
+      <Cursor isGelly={true} />
+      <main data-cursor-size="20px">
+        <Announcement />
+        <Navbar />
+        <Intro />
+        <ClientLogos />
+        <ACT />
+        <Robot />
+        <Expertise />
+        <CaseStudy />
+        <Testimonial />
+        <Review />
+        <InfotechWeekly />
+        <Subscribe />
+        <Footer />
+        <Copyright />
+      </main>
+    </>
   );
 }

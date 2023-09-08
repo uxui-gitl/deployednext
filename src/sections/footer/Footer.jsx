@@ -12,6 +12,7 @@ import { mdiCircle } from "@mdi/js";
 const Footer = () => {
   return (
     <div
+      data-cursor-color="#61dbfb"
       className={`${styles["bg-footer"]} bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
     >
       <div
@@ -21,7 +22,12 @@ const Footer = () => {
           <div className={`sm:w-1/5 pr-2 pb-2`}>
             {/* Col 1 */}
             <div className="col">
-              <Image src="/godrejLogoWhite.svg"  alt="Godrej Logo" width="150" height="150" />
+              <Image
+                src="/godrejLogoWhite.svg"
+                alt="Godrej Logo"
+                width="150"
+                height="150"
+              />
               <p className="my-4 text-sm text-[#F5F5F5] leading-5 font-medium">
                 Revolutionize your business operations, save time and boost
                 productivity with our cutting-edge offerings.{" "}
@@ -30,6 +36,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {/* <Icon path={mdiFacebook} style={{marginLeft: '0.5em'}} size={1}/> */}
@@ -43,6 +50,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     <Stack size={1}>
@@ -54,6 +62,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     <Stack size={1}>
@@ -68,7 +77,9 @@ const Footer = () => {
           <div className={`flex sm:gap-10 gap-6 flex-col md:flex-row sm:px-5`}>
             {/* Col 2 */}
             <div className="sm:w-54">
-              <h3 className=" text-base	leading-6 font-medium mb-2">Solutions</h3>
+              <h3 className=" text-base	leading-6 font-medium mb-2">
+                Solutions
+              </h3>
               <ul>
                 <li>
                   <h5 className="uppercase text-[#98A2B3] font-medium text-sm   mt-3 leading-6">
@@ -78,6 +89,8 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
+                    sizeAnimationDuration="0.5"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Enterprise Suite
@@ -86,6 +99,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Technology Stack
@@ -94,6 +108,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Godrej Infotech Products
@@ -108,6 +123,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Updgrade to Cloud
@@ -116,6 +132,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Cloud Stack
@@ -124,6 +141,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Cloud services
@@ -138,6 +156,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Intelligent Technologies
@@ -146,6 +165,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Customer Experience
@@ -154,6 +174,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Data Insights
@@ -168,6 +189,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -177,6 +199,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -186,6 +209,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -195,6 +219,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -212,6 +237,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -221,6 +247,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -230,6 +257,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -239,6 +267,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -248,6 +277,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -263,6 +293,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     {" "}
@@ -272,6 +303,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Infotech Weekly
@@ -280,6 +312,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Career
@@ -289,6 +322,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
+                    data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Contact us

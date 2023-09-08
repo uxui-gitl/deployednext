@@ -22,6 +22,9 @@ const Review = () => {
   return (
     <>
       <Swiper
+        data-cursor-color="#61dbfb"
+        data-cursor-text="Drag"
+        data-cursor-size="100px"
         className={styles.reviewWrap}
         scrollbar={{
           hide: true,

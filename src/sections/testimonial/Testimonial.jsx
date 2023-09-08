@@ -1,23 +1,25 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-import styles from './testimonial.module.css';
+import styles from "./testimonial.module.css";
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 
 import Icon from "@mdi/react";
 import { motion } from "framer-motion";
 
-import { mdiDomain } from '@mdi/js';
+import { mdiDomain } from "@mdi/js";
+import { Cursor } from "react-creative-cursor";
 
+import "react-creative-cursor/dist/styles.css";
 
 const Testimonials = () => {
   const clientTestimonials = [
@@ -80,14 +82,12 @@ const Testimonials = () => {
         "Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise  and project management abilities by achieving highly challenging deadline.",
       category: "static",
       link: "/",
-    }
-
+    },
   ];
 
-
   return (
-
     <>
+      <Cursor isGelly={true} />
       {/* <div className='w-screen-lg px-[2rem] mx-auto lg:px-0 lg:max-w-screen bg-[#F2F2F2]'>
         <div class="grid grid-cols-14 gap-4">
           <div class="col-start-3 col-span-4 ml-[30px] bg-[#f20]">
@@ -172,9 +172,7 @@ const Testimonials = () => {
         <div className="pt-[5em] pb-[2em]">
           <div className="grid lg:grid-cols-7 grid-cols-1 gap-4">
             <div className="col-span-1 col-start-1 col-end-2 lg:col-start-2 lg:col-end-4 ">
-              <h4
-                className={` font-medium text-[#0745D3] uppercase ribbon`}
-              >
+              <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
                 CLIENT TESTIMONIALS
               </h4>
               <div className="flex flex-col gap-4">
@@ -182,13 +180,18 @@ const Testimonials = () => {
                   What Experts think About us
                 </h3>
                 <p className="font-normal leading-[22px]">
-                  Discover how we have helped our clients to realize tangible outcomes aligned with their business goals.
+                  Discover how we have helped our clients to realize tangible
+                  outcomes aligned with their business goals.
                 </p>
               </div>
             </div>
 
             {/* Slider Section */}
-            <div className="col-span-1 col-start-1 col-end-2 lg:col-start-4 lg:col-span-4 ">
+            <div
+              data-cursor-text="Drag"
+              data-cursor-size="100px"
+              className="col-span-1 col-start-1 col-end-2 lg:col-start-4 lg:col-span-4 hover:cursor-grab"
+            >
               <Swiper
                 className={`mySwiper pb-8`}
                 slidesPerView={1}
@@ -216,36 +219,40 @@ const Testimonials = () => {
                 }}
                 modules={[Autoplay, Pagination]}
               >
-                {
-                  clientTestimonials.map((ct, index) => (
-                    <SwiperSlide key={ct.id} className='min-w-[300px] pb-8'>
-                      <div className=''>
-                        <div>
-                          <Image src={`/testimonial-${ct.id}.png`}
-                            alt="blog post"
-                            width="315"
-                            height="200" />
+                {clientTestimonials.map((ct, index) => (
+                  <SwiperSlide key={ct.id} className="min-w-[300px] pb-8">
+                    <div className="">
+                      <div>
+                        <Image
+                          src={`/testimonial-${ct.id}.png`}
+                          alt="blog post"
+                          width="315"
+                          height="200"
+                        />
+                      </div>
+                      <div className="">
+                        <p
+                          className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
+                        >
+                          {`“${ct.description}”`}
+                        </p>
+                      </div>
+                      <div className="flex flex-row justify-start items-start">
+                        <div className="mr-4">
+                          <Icon path={mdiDomain} size={1} />
                         </div>
-                        <div className=''>
-                          <p
-                            className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
-                          >
-                            {`“${ct.description}”`}
+                        <div>
+                          <p className="text-base font-medium text-[#101828] leading-[22px]">
+                            {ct.clientName}
+                          </p>
+                          <p className="text-sm font-normal text-[#101828] leading-[22px]">
+                            {ct.clientDesignation}
                           </p>
                         </div>
-                        <div className='flex flex-row justify-start items-start'>
-                          <div className='mr-4'>
-                            <Icon path={mdiDomain} size={1} />
-                          </div>
-                          <div>
-                            <p className='text-base font-medium text-[#101828] leading-[22px]'>{ct.clientName}</p>
-                            <p className='text-sm font-normal text-[#101828] leading-[22px]'>{ct.clientDesignation}</p>
-                          </div>
-                        </div>
                       </div>
-                    </SwiperSlide>
-                  ))
-                }
+                    </div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
