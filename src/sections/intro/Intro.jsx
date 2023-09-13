@@ -7,6 +7,7 @@ import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 
 import { mdiPlayCircle } from "@mdi/js";
+import Link from "next/link";
 
 const Intro = () => {
   return (
@@ -43,8 +44,9 @@ const Intro = () => {
               />
             </h1>
 
-            <h1 className="sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-center"> 
-              Delivering Business <br /> Value with <br />  <TypeAnimation
+            <h1 className="sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-center">
+              Delivering Business <br /> Value with <br />{" "}
+              <TypeAnimation
                 className="typewriter-text text-white"
                 style={{ fontSize: "1em!important" }}
                 speed={{ type: "keyStrokeDelayInMs", value: 180 }}
@@ -57,21 +59,18 @@ const Intro = () => {
                   1000,
                 ]}
                 repeat={Infinity}
-              /> 
+              />
             </h1>
-
 
             <h4 className="hidden sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
               Revolutionize your business operations, save time and boost
               productivity <br /> with our cutting-edge offerings..
             </h4>
 
-
             <h4 className="sm:hidden text-white text-[14px] sm:text-[16px] px-7 leading-[22px] mb-[24px]">
               Revolutionize your business operations, save time and boost
-              productivity  with our cutting-edge offerings..
+              productivity with our cutting-edge offerings..
             </h4>
-
 
             <div className="flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">
               <a
@@ -87,13 +86,13 @@ const Intro = () => {
                   />
                 </span>
               </a>
-              <a
+              <Link
                 href="/"
-                className={`${styles['btn-transparent-video']} text-[#F5F5F5] bg-transparent font-medium sm:font-normal capitalize max-w-max pt-[8px] px-[2rem] sm:px-5 sm:py-2 border-[#fff] border-b-1 flex border-b-1 pl-0 pr-0 m-4`}
+                className={`${styles["btn-transparent-video"]} text-[#F5F5F5] bg-transparent font-medium sm:font-normal capitalize max-w-max pt-[8px] px-[2rem] sm:px-5 sm:py-2 border-[#fff] border-b-1 flex border-b-1 pl-0 pr-0 m-4`}
               >
                 <Icon path={mdiPlayCircle} size={1} className="inline me-2" />{" "}
                 Co-operate Video
-              </a>
+              </Link>
             </div>
           </div>
         </div>

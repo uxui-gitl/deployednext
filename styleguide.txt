@@ -1,0 +1,18 @@
+fs -
+    72 - text-7xl
+    68 -
+    48 - text-5xl
+    42 -
+    36 - text-4xl
+    22 -
+    18 - text-lg
+    16 - text-base
+         by default
+    14 - text-sm
+    12 - text-xs
+
+fWeight -
+    regular -
+    medium - font-medium
+    semibold -
+    bold -
