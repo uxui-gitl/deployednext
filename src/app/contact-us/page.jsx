@@ -10,6 +10,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./page.module.css";
 import EmployeeExperience from "@/sections/employeeExperience/EmployeeExperience";
+import JobList from "@/sections/jobList/JobList";
 
 const ContactUs = () => {
   return (
@@ -19,6 +20,7 @@ const ContactUs = () => {
       <Awards />
       <InfotechWeekly />
       <EmployeeExperience />
+      <JobList />
       <>
         <div className={`${styles["container"]} bg-white mt-24 py-24`}>
           <div className="flex justify-center items-center flex-col">
