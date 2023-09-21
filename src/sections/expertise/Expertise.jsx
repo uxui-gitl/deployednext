@@ -9,7 +9,6 @@ const Expertise = () => {
   return (
     <>
       <div
-        data-cursor-color="#61dbfb"
         className={`${styles["bg-expertise"]} overflow-clip max-h-[700px] py-[80px]  text-[#DBDBDB]`}
       >
         <div

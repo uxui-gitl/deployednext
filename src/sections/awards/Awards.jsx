@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 const Awards = () => {
   return (
     <>
-      <div className={` w-full bg-[#f2f4f7] `}>
+      <div className={` w-full bg-[#f2f4f7] py-32`}>
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
           <div className="bg-blue-50">
             <h4
@@ -27,8 +27,8 @@ const Awards = () => {
               performance.
             </p>
           </div>
-          <div className="bg-yellow-50">
-            <Marquee>
+          <div className=" ">
+            <Marquee pauseOnHover={true}>
               <Image
                 src={award1}
                 placeholder="blur"
@@ -36,8 +36,13 @@ const Awards = () => {
                 sizes="100vw"
                 width={0}
                 height={0}
-                style={{ height: "376px", width: "100%", objectFit: "cover" }}
-                alt="ajay p."
+                style={{
+                  height: "376px",
+                  width: "100%",
+                  objectFit: "cover",
+                  marginTop: "4rem",
+                }}
+                alt="award"
               />
               <Image
                 src={award2}
@@ -47,7 +52,7 @@ const Awards = () => {
                 width={0}
                 height={0}
                 style={{ height: "376px", width: "100%", objectFit: "cover" }}
-                alt="ajay p."
+                alt="award"
               />
               <Image
                 src={award1}
@@ -56,8 +61,13 @@ const Awards = () => {
                 sizes="100vw"
                 width={0}
                 height={0}
-                style={{ height: "376px", width: "100%", objectFit: "cover" }}
-                alt="ajay p."
+                style={{
+                  height: "376px",
+                  width: "100%",
+                  objectFit: "cover",
+                  marginTop: "4rem",
+                }}
+                alt="award"
               />
               <Image
                 src={award2}
@@ -67,7 +77,7 @@ const Awards = () => {
                 width={0}
                 height={0}
                 style={{ height: "376px", width: "100%", objectFit: "cover" }}
-                alt="ajay p."
+                alt="award"
               />
             </Marquee>
           </div>

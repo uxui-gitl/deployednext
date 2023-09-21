@@ -87,7 +87,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <Cursor isGelly={true} />
+      {/* <Cursor isGelly={true} /> */}
       {/* <div className='w-screen-lg px-[2rem] mx-auto lg:px-0 lg:max-w-screen bg-[#F2F2F2]'>
         <div class="grid grid-cols-14 gap-4">
           <div class="col-start-3 col-span-4 ml-[30px] bg-[#f20]">

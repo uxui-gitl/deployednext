@@ -21,8 +21,8 @@ import "react-creative-cursor/dist/styles.css";
 export default function Home() {
   return (
     <>
-      <Cursor isGelly={true} />
-      <main data-cursor-size="20px">
+      {/* <Cursor isGelly={true} /> */}
+      <main>
         <Announcement />
         <Navbar />
         <Intro />
