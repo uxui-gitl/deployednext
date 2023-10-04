@@ -42,7 +42,7 @@ const Review = () => {
       >
         {/* Offset */}
         <div
-          className="w-[13.5%] invisible md:visible lg:w-[24%]"
+          className="w-[13.5%] hidden invisible md:visible lg:w-[24%]"
           style={{
             background: "#07001f",
             position: "absolute",

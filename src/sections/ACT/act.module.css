@@ -1,15 +1,88 @@
 .container {
-    /* display: flex;
+  position: relative;
+  /* display: flex;
     justify-content: center;
     align-items: center;
     height: max-content;
     text-align: center; */
-    padding-top: 8em;
-    padding-bottom: 8em;
-    width: 100%;
-    outline: none; 
-    /* background-size: contain; */
-    background-image: url('../../../public/bg.png');
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 1.5), transparent), url('../../../public/bg.png');
-    
+  padding-top: 8em;
+  padding-bottom: 8em;
+  width: 100%;
+  outline: none;
+  /* background-size: contain; */
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  background-image: url("../../../public/bg.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1.5),
+      transparent
+    ),
+    url("../../../public/bg.png");
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+.container::before {
+  position: absolute;
+  background: var(--third-glow);
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vh;
+  margin-left: -29%;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 2);
+  left: calc(50vw);
+}
+
+.container::after {
+  position: absolute;
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 500px;
+  height: 700px;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 2);
+  left: calc(50vw - 50vw / 2);
+}
+@keyframes animateBefore {
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(200px) scale(0.8);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateAfter {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-250px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.container::before {
+  /*...previous props*/
+  animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+.container::after {
+  /*...previous props*/
+  animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}

@@ -1,51 +1,168 @@
 import Announcement from "@/sections/announcement/Announcement";
-import Awards from "@/sections/awards/Awards";
 import Copyright from "@/sections/copyright/Copyright";
 import Footer from "@/sections/footer/Footer";
-import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Review from "@/sections/review/Review";
-import { mdiArrowRight } from "@mdi/js";
-import Icon from "@mdi/react";
 import Link from "next/link";
 import React from "react";
-import styles from "./page.module.css";
-import EmployeeExperience from "@/sections/employeeExperience/EmployeeExperience";
-import JobList from "@/sections/jobList/JobList";
 
 const ContactUs = () => {
+  const locations = [
+    {
+      id: 1,
+      loc: "Mumbai",
+      loc2: "India",
+      desc: "Godrej Infotech Ltd. Plant 10, Pirojshanagar, Vikhroli (West), Mumbai- 400 079, India.",
+      phone: "+91 226 796 4086",
+      phone2: "+91 226 796 4084",
+      extension: "4087",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 2,
+      loc: "Delhi",
+      loc2: "India",
+      desc: "Godrej Infotech Ltd. C/O Awfis, Plot No. A-24/9, Mohan Co-operative Industrial Area, New Delhi - 110044, India.",
+      phone: "",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 3,
+      loc: "Kolkata",
+      loc2: "India",
+      desc: "Godrej Infotech Ltd. Block GN, Plot No. 30, Sector-V, Salt Lake City, Kolkata - 700 091, India.",
+      phone: "+91 336 601 3500",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 4,
+      loc: "Mumbai",
+      loc2: "India",
+      desc: "Godrej Infotech Ltd. Workenstein Collaborative Spaces Pvt Ltd, Workafella, 150, 1, Infantry Rd, Opp. Commissioner Office, Shivaji Nagar, Bengaluru, Karnataka 560001",
+      phone: "",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 5,
+      loc: "UAE",
+      loc2: "",
+      desc: "Godrej Infotech Ltd. Executive Suite Z-61, PO Box 121806, Sharjah, UAE.",
+      phone: "+971 655 798 39",
+      phone2: "+971 655 708 66",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 6,
+      loc: "Belgium",
+      loc2: "",
+      desc: "LVD Godrej Infotech nv. Hondschotestraat 112, B-8560, Wevelgem (Gullegem)",
+      phone: "",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@lvdgi.be",
+    },
+    {
+      id: 7,
+      loc: "Singapore",
+      loc2: "",
+      desc: "Godrej Infotech Singapore Pte Ltd. 105 Cecil Street, The Octagon, Singapore-069534",
+      phone: "+65 846 816 94",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 8,
+      loc: "Singapore",
+      loc2: "",
+      desc: "Godrej Infotech Singapore Pte Ltd. 11 Lok yang way, Singapore-628632",
+      phone: "",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+    {
+      id: 9,
+      loc: "Saudi Arabia",
+      loc2: "",
+      desc: "",
+      phone: "+966 546 416 385",
+      phone2: "",
+      extension: "",
+      extension2: "",
+      email: "infotech@godrej.com",
+    },
+  ];
+
   return (
     <>
       <Announcement />
-      <Review />
-      <Awards />
-      <InfotechWeekly />
-      <EmployeeExperience />
-      <JobList />
+      {/* Global Locations */}
       <>
-        <div className={`${styles["container"]} bg-white mt-24 py-24`}>
-          <div className="flex justify-center items-center flex-col">
-            <h3 className="text-4xl leading-[42px] font-bold">
-              Want to join the tech revolution?
-            </h3>
-            <p className="font-normal leading-[22px] pt-3 pb-8 text-center">
-              Discover exciting opportunities here and become an <br /> integral
-              part of our Tech Movement
-            </p>
+        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+          <div className=" mt-[5em] mb-[2em]">
+            <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
+              OUR LOCATIONS
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                Our Global Footprint
+              </h3>
+            </div>
+          </div>
 
-            <Link
-              href={"/"}
-              className="flex bg-[#101828] py-2 px-10 border-2 border-[#101828] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
-            >
-              Explore Your Opportunity{" "}
-              <Icon
-                path={mdiArrowRight}
-                style={{ marginLeft: "0.5em" }}
-                size={1}
-              />
-            </Link>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-3 mb-[5em] gap-0 sm:gap-10">
+            {locations.map((add) => {
+              return (
+                <>
+                  <div className="my-5">
+                    <p className="font-bold">
+                      {add.loc},{" "}
+                      <span className="text-[#98A2B3]">{add.loc2}</span>
+                    </p>
+                    <p className="font-medium my-2">{add.desc}</p>
+                    {add.phone && (
+                      <p>
+                        Phone:{" "}
+                        <Link href={`tel:${add.phone}`}>{add.phone}</Link>
+                        {add.extension && <span> / {add.extension}</span>}
+                      </p>
+                    )}
+                    {add.phone2 && (
+                      <p>
+                        Phone:{" "}
+                        <Link href={`tel:${add.phone2}`}>{add.phone2}</Link>
+                        {add.extension2 && <span> / {add.extension2}</span>}
+                      </p>
+                    )}
+                    <p>
+                      Email:{" "}
+                      <span className="text-[#0745D3]">
+                        <Link href={`mailto:${add.email}`}>{add.email}</Link>
+                      </span>
+                    </p>
+                  </div>
+                </>
+              );
+            })}
           </div>
         </div>
       </>
+      <Review />
       <Footer />
       <Copyright />
     </>

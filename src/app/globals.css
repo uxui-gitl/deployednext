@@ -6,6 +6,24 @@
   /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
+
+  --secondary-glow: conic-gradient(
+    from 10deg at 50% 50%,
+    #a42ed3 0deg,
+    #ae77b2 55deg,
+    #092444 120deg,
+    #0099ca 160deg,
+    transparent 360deg
+  );
+
+  --third-glow: conic-gradient(
+    from 90deg at 50% 50%,
+    #6c05f1 0deg,
+    #e24e6b 160deg,
+    #7ed2da 120deg,
+    #8bdce0 55deg,
+    transparent 360deg
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,9 +43,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    /* background: #F2F4F7; */
+  /* background: #F2F4F7; */
 }
-h1, h2, h3{
+h1,
+h2,
+h3 {
   padding: 0px;
   margin: 0px;
 }
@@ -35,52 +55,52 @@ h1, h2, h3{
 /* slanting H4 CSS */
 h4.ribbon {
   position: relative;
-    background-color: #4C6FFF;
-    color: white;
-    padding: 0.5em 2em;
-    display: inline-block;
-    margin-bottom: 1em;
+  background-color: #4c6fff;
+  color: white;
+  padding: 0.5em 2em;
+  display: inline-block;
+  margin-bottom: 1em;
 }
 h4.ribbon::before {
   content: "";
   position: absolute;
   top: 0px;
   right: -1em;
-  border-top: 2.5em solid #4C6FFF;
+  border-top: 2.5em solid #4c6fff;
   border-right: 1em solid transparent;
   bottom: 0em;
   overflow: hidden;
 }
 h4.ribbon-robot {
-  padding: 0.2em .75em;
+  padding: 0.2em 0.75em;
   margin-bottom: 12px;
 }
 h4.ribbon-robot::before {
-  border-top: 2.2em solid #4C6FFF;
-  border-top: 1.5em solid #4C6FFF;
+  border-top: 2.2em solid #4c6fff;
+  border-top: 1.5em solid #4c6fff;
 }
 @media (max-width: 768px) {
   h4.ribbon-robot::before {
-    border-top: 2.3em solid #4C6FFF;
-    border-top: 2.25em solid #4C6FFF;
+    border-top: 2.3em solid #4c6fff;
+    border-top: 2.25em solid #4c6fff;
   }
 }
 /* Common CSS */
 
-#rcc-confirm-button{
+#rcc-confirm-button {
   border: 2px solid rgb(76, 111, 255);
 }
 #rcc-confirm-button:hover {
-  background: transparent!important;
-  transition: .1s all;
+  background: transparent !important;
+  transition: 0.1s all;
   padding: 0.5em 2.585em;
   border: 2px solid rgb(76, 111, 255);
   /* scale: 1.10; */
-  color: rgb(76, 111, 255)!important;
+  color: rgb(76, 111, 255) !important;
 }
 
-
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
   outline: none;
 }
 
@@ -90,19 +110,18 @@ textarea:focus, input:focus{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
- 
 
 .progress-bar {
   position: fixed;
@@ -113,18 +132,18 @@ textarea:focus, input:focus{
   background: #320a53;
   transform-origin: 0%;
 }
-.contact-link{
-  border: 1px solid #F5F5F5;
+.contact-link {
+  border: 1px solid #f5f5f5;
   padding: 0.5em 1em;
   border-radius: 2px;
 }
-.contact-link:hover{
-  border: 1px solid #F5F5F5;
+.contact-link:hover {
+  border: 1px solid #f5f5f5;
   border-radius: 2px;
   background-color: #f5f5f5;
   color: #000;
 }
-.contact-link-dark{
+.contact-link-dark {
   border: 1px solid #000000;
   padding: 0.5em 1em;
   border-radius: 2px;
@@ -134,15 +153,16 @@ textarea:focus, input:focus{
   border: 1px solid #000000;
   background-color: #000000;
   color: #f5f5f5;
-
 }
 
-.link, .darkLink {
-  text-decoration: none;  
+.link,
+.darkLink {
+  text-decoration: none;
   vertical-align: top;
   position: relative;
 }
-.link::before, .darkLink::before {
+.link::before,
+.darkLink::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -161,11 +181,11 @@ textarea:focus, input:focus{
   transform: scaleX(1);
 }
 .darkLink::before {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .back-to-top span {
-  color: #4C6FFF;
+  color: #4c6fff;
 }
 .back-to-top svg circle {
   border: none;
@@ -173,7 +193,7 @@ textarea:focus, input:focus{
   /* stroke: #320a53; */
   /* stroke-width: 2px; */
   /* color: #320a53; */
-  stroke: #4C6FFF
+  stroke: #4c6fff;
 }
 
 .back-to-top svg circle:first-child {

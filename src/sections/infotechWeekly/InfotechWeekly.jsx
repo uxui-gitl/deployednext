@@ -27,7 +27,7 @@ const fadeInAnimationVariant = {
 const InfotechWeekly = (props) => {
   return (
     <>
-      <div className="max-w-screen-lg mx-auto px-[2rem] bg-white">
+      <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
         <div className=" mt-[5em] mb-[2em]">
           <h4
             className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}

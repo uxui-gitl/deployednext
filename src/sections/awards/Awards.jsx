@@ -9,7 +9,7 @@ const Awards = () => {
   return (
     <>
       <div className={` w-full bg-[#f2f4f7] py-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
+        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
           <div className="bg-blue-50">
             <h4
               className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}

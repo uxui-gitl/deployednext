@@ -106,7 +106,7 @@ const InfotechWeeklyAlt = (props) => {
     <>
       <div className={` w-full bg-[#f2f4f7] py-32`}>
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
-          <div className="bg-blue-50">
+          <div className="bg-blue-50 flex items-start flex-col justify-around">
             <div>
               <h4
                 className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
@@ -122,8 +122,8 @@ const InfotechWeeklyAlt = (props) => {
               </p>
             </div>
 
-            <div>
-              <p className="font-medium leading-[22px] md:w-[90%] ">
+            <div className="">
+              <p className="font-medium leading-[22px] md:w-[90%] mb-4">
                 The latest news, articles, and resources, sent to your inbox
                 weekly.
               </p>
