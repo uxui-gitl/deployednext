@@ -21,7 +21,7 @@ const AboutUs = () => {
       <Announcement />
       <Navbar />
       <AboutIntro />
-      {/* <Timeline /> */}
+      <Timeline />
       <ClientLogos />
       <>
         <div className={`${styles.visionWrap} `}>
