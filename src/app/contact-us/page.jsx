@@ -1,6 +1,3 @@
-import Announcement from "@/sections/announcement/Announcement";
-import Copyright from "@/sections/copyright/Copyright";
-import Footer from "@/sections/footer/Footer";
 import Review from "@/sections/review/Review";
 import Link from "next/link";
 import React from "react";

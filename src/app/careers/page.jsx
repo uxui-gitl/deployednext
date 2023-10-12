@@ -1,7 +1,4 @@
-import Announcement from "@/sections/announcement/Announcement";
 import Awards from "@/sections/awards/Awards";
-import Copyright from "@/sections/copyright/Copyright";
-import Footer from "@/sections/footer/Footer";
 import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Review from "@/sections/review/Review";
 import { mdiArrowRight } from "@mdi/js";

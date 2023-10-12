@@ -1,13 +1,8 @@
-import Announcement from "@/sections/announcement/Announcement";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
-import Copyright from "@/sections/copyright/Copyright";
-import Footer from "@/sections/footer/Footer";
-import Navbar from "@/sections/navbar/Navbar";
+
 import TeamProfile from "@/sections/teamProfile/TeamProfile";
-import Timeline from "@/sections/timeline/Timeline";
 import styles from "./page.module.css";
 import React from "react";
-import Image from "next/image";
 
 import Icon from "@mdi/react";
 import { mdiEyeOutline } from "@mdi/js";
@@ -19,7 +14,6 @@ const AboutUs = () => {
   return (
     <>
       <AboutIntro />
-      <Timeline />
       <ClientLogos />
       <>
         <div className={`${styles.visionWrap} `}>
