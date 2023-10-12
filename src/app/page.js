@@ -6,7 +6,6 @@ import Expertise from "@/sections/expertise/Expertise";
 import Footer from "@/sections/footer/Footer";
 import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Intro from "@/sections/intro/Intro";
-import Navbar from "@/sections/navbar/Navbar";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Review from "@/sections/review/Review";
 import Robot from "@/sections/robot/Robot";
@@ -17,14 +16,13 @@ import ACT from "@/sections/ACT/ACT";
 import Image from "next/image";
 import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
       <main>
-        <Announcement />
-        <Navbar />
         <Intro />
         <ClientLogos />
         <ACT />
@@ -35,8 +33,6 @@ export default function Home() {
         <Review />
         <InfotechWeekly />
         <Subscribe />
-        <Footer />
-        <Copyright />
       </main>
     </>
   );

@@ -1,21 +1,21 @@
 .intro-wrap {
-    position: relative; 
-    height: 100vh; 
-    /* background-image: url('../../../../public/GITLBanner.mp4'); */
-     /* height: calc(100vh - 90px); */
-     height: calc(100vh - 98px);
+  position: relative;
+  height: calc(100vh - 37px);
+  /* background-image: url('../../../../public/GITLBanner.mp4'); */
+  /* height: calc(100vh - 90px); */
+  height: calc(100vh - 98px);
 }
 .introVidWrap {
-    bottom: -5em!important;
-    position: absolute!important;
+  bottom: -5em !important;
+  position: absolute !important;
 }
 .introVidWrap video {
-    /* rotate: 180deg; */
+  /* rotate: 180deg; */
 }
 .btn-transparent-video {
-    border-bottom: 1px solid #fff;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 1rem;
-    padding-bottom: 0.25em;
+  border-bottom: 1px solid #fff;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 1rem;
+  padding-bottom: 0.25em;
 }

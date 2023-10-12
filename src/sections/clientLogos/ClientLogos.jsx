@@ -1,50 +1,59 @@
-import React from 'react'
-import styles from './clientLogos.module.css'
-import Image from 'next/image'
+import React from "react";
+import styles from "./clientLogos.module.css";
+import Image from "next/image";
 
 const ClientLogos = () => {
-
   const clients = [
     {
       id: 1,
-      title: 'Emma',
-      url: '/client/emma.png'
+      title: "Emma",
+      url: "/client/emma.png",
     },
     {
       id: 2,
-      title: 'Pocl',
-      url: '/client/pocl.png'
+      title: "Pocl",
+      url: "/client/pocl.png",
     },
     {
       id: 3,
-      title: 'Boskalis',
-      url: '/client/boskalis.png'
+      title: "Boskalis",
+      url: "/client/boskalis.png",
     },
     {
       id: 4,
-      title: 'Cii',
-      url: '/client/cii.png'
-    }
-  ]
+      title: "Cii",
+      url: "/client/cii.png",
+    },
+  ];
 
   return (
-    <div className="max-w-screen-lg mx-auto bg-white">
+    <div className="w-full bg-white">
+      <div className="max-w-screen-lg mx-auto bg-white">
         <div className="mx-4 mt-11 mb-[2em]">
-        <p className='text-center'>500 + organizations trust our exceptional expertise. Join them today!</p>
-        <div>
-        <div className={styles.clientImgWrap}>
-          {
-            clients.map((client)=>{
-              return <div key={client.id}><Image src={client.url}   alt={client.title} width='125' height='45'/></div>
-            })
-          }
+          <p className="text-center">
+            500 + organizations trust our exceptional expertise. Join them
+            today!
+          </p>
+          <div>
+            <div className={styles.clientImgWrap}>
+              {clients.map((client) => {
+                return (
+                  <div key={client.id}>
+                    <Image
+                      src={client.url}
+                      alt={client.title}
+                      width="125"
+                      height="45"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
- 
       </div>
-      </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default ClientLogos
+export default ClientLogos;

@@ -18,8 +18,6 @@ import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 const AboutUs = () => {
   return (
     <>
-      <Announcement />
-      <Navbar />
       <AboutIntro />
       <Timeline />
       <ClientLogos />
@@ -72,8 +70,6 @@ const AboutUs = () => {
       <Awards />
       <TeamProfile />
       <InfotechWeeklyAlt />
-      <Footer />
-      <Copyright />
     </>
   );
 };

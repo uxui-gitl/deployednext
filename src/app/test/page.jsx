@@ -6,7 +6,6 @@ import Expertise from "@/sections/expertise/Expertise";
 import Footer from "@/sections/footer/Footer";
 import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Intro from "@/sections/intro/Intro";
-import Navbar from "@/sections/navbar/Navbar";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Review from "@/sections/review/Review";
 import Robot from "@/sections/robot/Robot";
@@ -19,6 +18,7 @@ import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 import Spline from "@splinetool/react-spline";
 import { Chrono } from "react-chrono";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const items = [
@@ -45,8 +45,6 @@ export default function Home() {
     <>
       {/* <Cursor isGelly={true} /> */}
       <main>
-        <Announcement />
-
         {/* Timeline */}
         <>
           <div className="mx-auto">
@@ -61,7 +59,6 @@ export default function Home() {
               allowDynamicUpdate
               lineWidth={1}
               fontSizes={80}
-              cardWidth={500}
             />
           </div>
         </>
@@ -77,8 +74,6 @@ export default function Home() {
         <Review />
         <InfotechWeekly />
         <Subscribe />
-        <Footer />
-        <Copyright />
       </main>
     </>
   );

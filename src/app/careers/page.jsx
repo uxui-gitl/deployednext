@@ -15,7 +15,6 @@ import JobList from "@/sections/jobList/JobList";
 const Careers = () => {
   return (
     <>
-      <Announcement />
       <Review />
       <Awards />
       <InfotechWeekly />
@@ -46,8 +45,6 @@ const Careers = () => {
           </div>
         </div>
       </>
-      <Footer />
-      <Copyright />
     </>
   );
 };

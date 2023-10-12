@@ -110,7 +110,6 @@ const ContactUs = () => {
 
   return (
     <>
-      <Announcement />
       {/* Global Locations */}
       <>
         <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -163,8 +162,6 @@ const ContactUs = () => {
         </div>
       </>
       <Review />
-      <Footer />
-      <Copyright />
     </>
   );
 };
