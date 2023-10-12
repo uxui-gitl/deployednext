@@ -1,8 +1,21 @@
+"use client";
 import Review from "@/sections/review/Review";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import Image from "next/image";
+import gmap from "../../../public/contact/map.png";
+import styles from "./page.module.css";
+import { mdiArrowRight } from "@mdi/js";
+import Icon from "@mdi/react";
+import ReactFlagsSelect from "react-flags-select";
 
 const ContactUs = () => {
+  const [selected, setSelected] = useState("IN");
+
+  const handleCountrySelect = (code) => {
+    setSelected(code);
+  };
+
   const locations = [
     {
       id: 1,
@@ -111,6 +124,94 @@ const ContactUs = () => {
       <>
         <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
           <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-rows-1 grid-cols-2">
+              <div>
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  How can we help you?
+                </h3>
+                <p className="text-[#98A2B3]">
+                  We enable global businesses to Automate, Cloud & Transform for
+                  a sustainable and inclusive future.
+                </p>
+                <form
+                  className={`${styles["container"]} w-full pe-8 my-3 bg-white`}
+                  method="POST"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    className="w-full mb-5 "
+                    placeholder="Full Name"
+                  />
+
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    className="w-full mb-5 "
+                    placeholder="Email Address"
+                  />
+
+                  <div className="flex justify-between gap-5 mb-5">
+                    <ReactFlagsSelect
+                      className={styles["tb-flags"]}
+                      fullWidth={false}
+                      searchable
+                      selected={selected}
+                      onSelect={handleCountrySelect}
+                    />
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      customLabels={{
+                        BE: "BEL",
+                        SG: "SGP",
+                        US: "USA",
+                        IN: "+91",
+                      }}
+                      className={`${styles.tel} w-full mr-0 `}
+                      placeholder="9820839348"
+                    />
+                  </div>
+
+                  <textarea
+                    name="message"
+                    className="mb-5"
+                    placeholder="We would like to leverage our business potential and accelerate the growth"
+                  ></textarea>
+
+                  <label className="flex justify-start items-start gap-3 mb-5">
+                    <input type="checkbox" class="default:ring-2" />
+                    <p>
+                      I consent to the processing of my personal data by Godrej
+                      Infotech in accordance with the{" "}
+                      <Link href={"/"} className="text-blue-600">
+                        Privacy Notice
+                      </Link>
+                    </p>
+                  </label>
+
+                  <button type="submit" className="flex bg-blue-300">
+                    Send Message{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </button>
+                </form>
+              </div>
+              <div>
+                <Image src={gmap} alt="contact map" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+          <div className=" mt-[5em] mb-[2em]">
             <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
               OUR LOCATIONS
             </h4>
@@ -159,6 +260,31 @@ const ContactUs = () => {
         </div>
       </>
       <Review />
+      <>
+        <div className={`${styles["container"]} bg-white mt-24 py-24`}>
+          <div className="flex justify-center items-center flex-col">
+            <h3 className="text-4xl leading-[42px] font-bold">
+              Want to join the tech revolution?
+            </h3>
+            <p className="font-normal leading-[22px] pt-3 pb-8 text-center">
+              Discover exciting opportunities here and become an <br /> integral
+              part of our Tech Movement
+            </p>
+
+            <Link
+              href={"/"}
+              className="flex bg-[#101828] py-2 px-10 border-2 border-[#101828] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+            >
+              Explore Your Opportunity{" "}
+              <Icon
+                path={mdiArrowRight}
+                style={{ marginLeft: "0.5em" }}
+                size={1}
+              />
+            </Link>
+          </div>
+        </div>
+      </>
     </>
   );
 };
