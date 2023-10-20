@@ -7,22 +7,19 @@ import styles from "./robot.module.css";
 import Link from "next/link";
 import RobotDetails from "../robotDetails/RobotDetails";
 
-const Robot = () => {
+const Robot = ({ bg }) => {
   return (
-    <div
-      className={`bg-[#f5f5f5] `}
-    >
+    <div className={`bg-[#f5f5f5] `}>
       <div
         className={` max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem] p-5`}
       >
         <div className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-5`}>
-          
           <div className={`${styles.robot} w-2/5 mx-auto`}>
             <Lottie animationData={robotAnimation} />
           </div>
 
           <>
-            <RobotDetails  />
+            <RobotDetails />
           </>
         </div>
       </div>

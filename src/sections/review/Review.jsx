@@ -160,9 +160,10 @@ const Review = () => {
         >
           <div className={styles.reviewCard}>
             <h3>
-              We believe in creating a world of Goodness & are involved in many
-              <span> CSR initiatives</span> related to environment conservation
-              & sponsoring of vocational training
+              We believe in creating a world of Goodness <br /> & are involved
+              in many
+              <span> CSR initiatives</span> <br /> related to environment
+              conservation & <br /> sponsoring of vocational training
             </h3>
             <Link href="#" className={styles.reviewLink}>
               Know more <Icon path={mdiArrowTopRight} />

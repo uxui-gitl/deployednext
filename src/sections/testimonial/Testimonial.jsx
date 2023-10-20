@@ -177,7 +177,7 @@ const Testimonials = () => {
               </h4>
               <div className="flex flex-col gap-4">
                 <h3 className="text-4xl leading-[42px] font-bold">
-                  What Experts think About us
+                  Delighted customers share their success experience
                 </h3>
                 <p className="font-normal leading-[22px]">
                   Discover how we have helped our clients to realize tangible

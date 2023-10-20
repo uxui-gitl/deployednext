@@ -201,3 +201,7 @@ input:focus {
   stroke: none;
   stroke-width: 0px;
 }
+
+.swiper-slide {
+  /* width: max-content !important; */
+}
