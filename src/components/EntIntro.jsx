@@ -4,7 +4,11 @@ import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
 import Link from "next/link";
+<<<<<<< HEAD
 const EntIntro = ({ title, desc, cta, width, video }) => {
+=======
+const EntIntro = () => {
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
   return (
     <div className="text-center">
       <div className="relative w-full h-[90vh] overflow-hidden px-20">
@@ -14,13 +18,18 @@ const EntIntro = ({ title, desc, cta, width, video }) => {
           loop
           muted
         >
+<<<<<<< HEAD
           <source src={video} type="video/mp4" />
+=======
+          <source src="/EntSolution/EntBanner.mp4" type="video/mp4" />
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
           Your browser does not support the video tag.
         </video>
         <div className="flex justify-start items-center h-[100vh] sm:h-[90vh]">
           <div
             className={` flex text-white flex-col justify-start items-start max-w-max gap-5`}
           >
+<<<<<<< HEAD
             <h1
               className={`w-[${width}] z-50 hidden sm:block sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-semibold text-left`}
             >
@@ -29,6 +38,16 @@ const EntIntro = ({ title, desc, cta, width, video }) => {
 
             <h1 className="z-50 sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-left">
               {title}
+=======
+            <h1 className="z-50 hidden sm:block sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-semibold text-left">
+              Bridging Transformation with <br />
+              Enterprise Agility
+            </h1>
+
+            <h1 className="z-50 sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-left">
+              Bridging Transformation with <br />
+              Enterprise Agility
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
             </h1>
 
             <h4 className="z-50 hidden text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
@@ -37,7 +56,12 @@ const EntIntro = ({ title, desc, cta, width, video }) => {
             </h4>
 
             <h4 className="z-50 sm:hidden text-left text-white text-[14px] sm:text-[16px] px-7 leading-[22px] mb-[24px]">
+<<<<<<< HEAD
               {desc}
+=======
+              We drive digital business revolution for tangible results, <br />
+              optimized bottom line and a dynamic digital edge
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
             </h4>
 
             <div className="z-50 flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">
@@ -45,7 +69,11 @@ const EntIntro = ({ title, desc, cta, width, video }) => {
                 href={"/"}
                 className="min-w-max flex bg-[#F5F5F5] py-2 px-10 border-2 border-[#F5F5F5] font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
               >
+<<<<<<< HEAD
                 {cta}
+=======
+                Let&apos;s Connect
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
                 <Icon
                   path={mdiArrowTopRight}
                   style={{ marginLeft: "0.5em" }}

@@ -13,11 +13,19 @@
   width: 100%;
   outline: none;
   /* background-size: contain; */
+<<<<<<< HEAD
   background-image: url(" ../../../public/BgGrid100.png");
+=======
+  background-image: url("../../../../public/BgGrid100.png");
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 1.5),
       transparent
     ),
+<<<<<<< HEAD
     url(" ../../../public/BgGrid100.png");
+=======
+    url("../../../../public/BgGrid100.png");
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
 }

@@ -30,6 +30,7 @@ export default function Home() {
       {/* <Cursor isGelly={true} /> */}
       <main>
         {/* <Intro /> */}
+<<<<<<< HEAD
         <EntIntro
           title="Bridging Transformation
           with Enterprise Agility"
@@ -38,6 +39,9 @@ export default function Home() {
           width="60%"
           video="/EntSolution/EntBanner.mp4"
         />
+=======
+        <EntIntro />
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
 
         {/* Infographics */}
         <>
@@ -85,11 +89,20 @@ export default function Home() {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <>
             <CardSwiper />
           </>
         </div>
 
+=======
+        </div>
+
+        <>
+          <CardSwiper />
+        </>
+
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
         <StrategySub />
         <InfotechWeeklyAlt />
       </main>

@@ -7,9 +7,15 @@ import Link from "next/link";
 const StrategySub = () => {
   return (
     <>
+<<<<<<< HEAD
       <div className={` w-full bg-white py-32`}>
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
           <div className="bg-white flex items-start flex-col justify-start">
+=======
+      <div className={` w-full bg-[#f2f4f7] py-32`}>
+        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
+          <div className="bg-blue-50 flex items-start flex-col justify-around">
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
             <div>
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[60%]">
                 <span className="text-[#0745D3]">Free 30-Minutes</span> Strategy
@@ -21,6 +27,7 @@ const StrategySub = () => {
               </p>
             </div>
           </div>
+<<<<<<< HEAD
           <div>
             <form>
               <div className="mb-6">
@@ -92,6 +99,16 @@ const StrategySub = () => {
                 </label>
               </div>
 
+=======
+          <div className=" ">
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+              placeat fuga assumenda odio hic corporis. Voluptatem consectetur
+              similique, natus quaerat placeat, facere sunt ratione
+              necessitatibus mollitia iste nemo explicabo cum!
+            </div>
+            <div className="z-50 flex gap-4 flex-col sm:flex-row justify-start items-center align-middle">
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
               <div className="max-w-max flex justify-start items-center my-5">
                 <Link
                   href={"/"}
@@ -99,13 +116,21 @@ const StrategySub = () => {
                 >
                   Send Message
                   <Icon
+<<<<<<< HEAD
                     path={mdiArrowRight}
+=======
+                    path={mdiArrowTopRight}
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
                     style={{ marginLeft: "0.5em" }}
                     size={1}
                   />
                 </Link>
               </div>
+<<<<<<< HEAD
             </form>
+=======
+            </div>
+>>>>>>> fa5d34ca00b2347c65d71074c91f8c40f0846fc9
           </div>
         </div>
       </div>
