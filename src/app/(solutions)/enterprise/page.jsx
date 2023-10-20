@@ -36,7 +36,7 @@ export default function Home() {
           desc="We drive digital business revolution for tangible results, optimized bottom line and a dynamic digital edge"
           cta="Let's Connect"
           width="60%"
-          video="/EntSolution/EntBanner.mp4"
+          video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
 
         {/* Infographics */}

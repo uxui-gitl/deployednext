@@ -20,7 +20,7 @@ export default function Home() {
           desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
           cta="Modernize your Business with Upgrade Cloud Services"
           width="70%"
-          video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
+          video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner.mp4"
         />
 
         {/* Solutions Robot */}
