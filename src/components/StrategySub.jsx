@@ -8,10 +8,10 @@ const StrategySub = () => {
   return (
     <>
       <div className={` w-full bg-white py-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
+        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-0">
           <div className="bg-white flex items-start flex-col justify-start">
             <div>
-              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[60%]">
+              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[60%]">
                 <span className="text-[#0745D3]">Free 30-Minutes</span> Strategy
                 Session with our Consultant
               </h3>

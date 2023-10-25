@@ -1,6 +1,4 @@
 import React from "react";
-import Lottie from "lottie-react";
-import robotAnimation from "../../assets/robot.json";
 import Icon from "@mdi/react";
 import { mdiArrowUp } from "@mdi/js";
 import styles from "./act.module.css";

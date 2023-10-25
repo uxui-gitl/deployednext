@@ -1,33 +1,19 @@
 "use client";
-import Announcement from "@/sections/announcement/Announcement";
-import ClientLogos from "@/sections/clientLogos/ClientLogos";
-import Copyright from "@/sections/copyright/Copyright";
-import Expertise from "@/sections/expertise/Expertise";
-import Footer from "@/sections/footer/Footer";
-import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
-import Intro from "@/sections/intro/Intro";
-import CaseStudy from "@/sections/caseStudy/CaseStudy";
-import Review from "@/sections/review/Review";
-import Robot from "@/sections/robot/Robot";
-import RobotDetails from "@/sections/robotDetails/RobotDetails";
-import Subscribe from "@/sections/subscribe/Subscribe";
-import Testimonial from "@/sections/testimonial/Testimonial";
-import ACT from "@/sections/ACT/ACT";
-import Image from "next/image";
-import { Cursor } from "react-creative-cursor";
+
 import "react-creative-cursor/dist/styles.css";
-import Navbar from "@/components/Navbar";
 import EntIntro from "@/components/EntIntro";
 import Infographics from "@/components/Infographics";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 import SME from "@/components/SME";
 import CardSwiper from "@/components/CardSwiper";
 import StrategySub from "@/components/StrategySub";
+import Image from "next/image";
+import handShake from "../../../../public/handShake.png";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
-      {/* <Cursor isGelly={true} /> */}
       <main>
         {/* <Intro /> */}
         <EntIntro
@@ -38,6 +24,33 @@ export default function Home() {
           width="60%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
+
+        {/* transformation */}
+        <>
+          <div className="max-w-screen-xl mx-auto px-[2rem] bg-transparent z-30 relative">
+            <div className=" mt-[5em] mb-[2em]">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+                <h3 className="text-[42px] leading-[54px] w-[80%] mx-auto font-bold">
+                  Your capable partner for{" "}
+                  <span className="text-[#0745D3]">
+                    Enterprise Transformation
+                  </span>{" "}
+                  Success
+                </h3>
+                <p className="font-normal leading-[22px] w-[70%] mx-auto">
+                  Collaborating with top- tier application providers, we
+                  recognise and deliver right technology for your business to
+                  bring forth scalable transformation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className={`${styles["container"]} absolute z-10 left-0 right-0 -top-96 bg-[#f2f4f7] w-full`}
+          >
+            <Image src={handShake} className="w-[100vw] -top-20" alt="hands" />
+          </div>
+        </>
 
         {/* Infographics */}
         <>
