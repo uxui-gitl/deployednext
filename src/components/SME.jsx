@@ -9,9 +9,9 @@ const SME = () => {
   return (
     <>
       <div className={` w-full bg-[#f2f4f7]  py-32`}>
-        <div className="text-left flex max-w-screen-xl md:max-w-screen-2xl  mx-auto bg-white ">
+        <div className="text-left flex flex-col sm:flex-row max-w-screen-xl md:max-w-screen-2xl py-10 sm:py-0 mx-auto bg-white ">
           {/* Left */}
-          <div className="flex-none">
+          <div className="sm:flex-none mx-auto sm:m-0 mb-5">
             <>
               <Image src={SMEIMG} alt="SME" />
             </>

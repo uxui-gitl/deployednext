@@ -10,14 +10,33 @@ import icon from "../../../../public/icon.png";
 import microsoft from "../../../../public/upgradeCloud/microsoft.png";
 import azure from "../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../public/upgradeCloud/checkout.png";
+import curiousPerson from "../../../../public/upgradeCloud/curiousPerson.png";
+import cloud from "../../../../public/upgradeCloud/cloud.png";
+import cloudArrows from "../../../../public/upgradeCloud/cloudArrows.png";
 
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Icon from "@mdi/react";
 import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
+
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5 * index,
+    },
+  }),
+};
+
 export default function Home() {
   const lists = [
     {
@@ -140,7 +159,7 @@ export default function Home() {
         {/* Upgrade to Cloud */}
         <>
           <div className={` w-full bg-white py-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
+            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
                   <h4
@@ -303,7 +322,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid  sm:grid-rows-2 gap-10 grid-flow-col-dense mx-auto px-20 sm:px-[8rem]">
+            <div className="grid  sm:grid-rows-2 gap-10 sm:grid-flow-col-dense mx-auto px-20 sm:px-[8rem]">
               {aglity.map((item) => {
                 return (
                   <div key={item._id} className=" p-8 bg-[#EDF1FF] h-full">
@@ -320,11 +339,11 @@ export default function Home() {
 
         {/* why godrej infotech */}
         <>
-          <div className={` w-full bg-[#F2F4F7] py-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className={` w-full bg-[#F2F4F7] pt-32`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
-              <div className="bg-[#F2F4F7] flex items-start flex-col justify-start">
-                <div>
+              <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+                <div className="">
                   <h4
                     className={` font-medium text-[#0745D3] uppercase ribbon`}
                   >
@@ -340,38 +359,86 @@ export default function Home() {
                     to market and cost. Our time-tested delivery framework
                     enables businesses
                   </p>
+                  <div className="  mt-[20rem]">
+                    <Image
+                      className="absolute bottom-0 z-20"
+                      src={cloudArrows}
+                      alt="cloud Arrows"
+                    />
+                    <Image
+                      className="absolute left-5 bottom-10 z-30"
+                      src={cloud}
+                      alt="cloud"
+                    />
+                    <Image
+                      className="absolute bottom-0 z-20"
+                      src={curiousPerson}
+                      alt="curious Person"
+                    />
+                  </div>
                 </div>
               </div>
               {/* right */}
               <div>
                 <div>
                   <div className="relative">
-                    <div className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5">
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </div>
-                    <div className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]">
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </div>
-                    <div className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]">
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </div>
+                    <AnimatePresence>
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={1}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          One of the most dedicated and{" "}
+                          <span className="text-[#4C6FFF]">
+                            reliable partners
+                          </span>{" "}
+                          for Azure Migration Services and Managed Cloud Service
+                          across{" "}
+                        </p>
+                      </motion.div>
+
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={2}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
+                          Unfailing Cloud Hosting availability managing{" "}
+                          <span className="text-[#4C6FFF]">40000+</span> VMs
+                        </p>
+                      </motion.div>
+
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={3}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          <span className="text-[#4C6FFF]">25000+</span> Apps
+                          and Databases migrated
+                        </p>
+                      </motion.div>
+                    </AnimatePresence>
                   </div>
                 </div>
               </div>
@@ -395,7 +462,7 @@ export default function Home() {
                     excellence.
                   </p>
                 </div>
-                <div className="flex justify-center items-center mx-auto gap-5">
+                <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">
                   <div>
                     <Image src={azure} alt="azure" />
                   </div>

@@ -19,6 +19,7 @@ import "react-creative-cursor/dist/styles.css";
 import Spline from "@splinetool/react-spline";
 import { Chrono } from "react-chrono";
 import Navbar from "@/components/Navbar";
+import Explore from "@/components/Explore";
 
 export default function Home() {
   const items = [
@@ -46,7 +47,7 @@ export default function Home() {
       {/* <Cursor isGelly={true} /> */}
       <main>
         {/* Timeline */}
-        <>
+        {/* <>
           <div className="mx-auto">
             <Chrono
               items={items}
@@ -73,7 +74,9 @@ export default function Home() {
         <Testimonial />
         <Review />
         <InfotechWeekly />
-        <Subscribe />
+        <Subscribe /> */}
+
+        <Explore />
       </main>
     </>
   );
