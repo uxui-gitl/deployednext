@@ -35,6 +35,7 @@ import { Pagination } from "swiper/modules";
 import JoinExpTeam from "@/components/JoinExpTeam";
 import { useState } from "react";
 import Link from "next/link";
+import SectionNav from "@/components/SectionNav";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -108,7 +109,7 @@ export default function Home() {
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
-
+        <SectionNav />
         {/* Solutions Robot */}
         <>
           <div className={` w-full bg-white py-32`}>
