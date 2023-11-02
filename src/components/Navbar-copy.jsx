@@ -55,6 +55,10 @@ const Navbar = () => {
               height="45"
             />
           </Link>
+          {/*
+      <Link className="hidden " href="/">
+        <Icon path={mdiMenu} color="white" size={1.3} />
+      </Link> */}
 
           <nav className=" sm:flex">
             {links.map((link) => {

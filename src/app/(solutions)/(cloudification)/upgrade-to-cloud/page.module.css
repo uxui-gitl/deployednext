@@ -13,13 +13,13 @@
   width: 100%;
   outline: none;
   /* background-size: contain; */
-  background-image: url("../../../../public/BgGrid100.png");
+  background-image: url("../../../../../public/BgGrid100.png");
   background-image: linear-gradient(
       to top,
       rgba(255, 255, 255, 1.5),
       transparent
     ),
-    url("../../../../public/BgGrid100.png");
+    url("../../../../../public/BgGrid100.png");
 }
 .container input[type="text"],
 .container input[type="email"],

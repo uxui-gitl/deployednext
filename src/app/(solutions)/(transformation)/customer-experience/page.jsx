@@ -8,7 +8,7 @@ import SME from "@/components/SME";
 import CardSwiper from "@/components/CardSwiper";
 import StrategySub from "@/components/StrategySub";
 import Image from "next/image";
-import handShake from "../../../../public/handShake.png";
+import handShake from "../../../../../public/handShake.png";
 import styles from "./page.module.css";
 
 export default function Home() {

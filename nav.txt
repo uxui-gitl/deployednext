@@ -1,0 +1,41 @@
+
+# Solutions
+	# Automation
+		- Intelligent Technologies
+			- AI & ML
+			- RPA
+			- IIOT
+		- Technology Stack
+		- Data Insights
+		- Data Information and Security
+	# Cloudification
+		- Upgrade to Cloud
+		- Cloud Stack & Services
+	# Transformation
+		- Enterprise Suite
+			- Infor
+				- Infor WMS
+				- Infor LN
+				- Infor CloudSuite
+				- HxnEAM
+			- Microsoft Dynamics
+				- Business Central
+				- F&O
+				- Commerce
+			- Oracle
+		- Customer Experience
+			- Infor CRM
+			- Microsoft CRM
+			- Salesforce CRM
+			- Magento - E com
+			- LS Retail
+# Our Services
+	- Business Consulting
+	- Implementation & Global Rollout
+	- Managed Services
+# Industries
+	- Manufacturing
+	- Retail
+	- Trading and Distribution
+	- Project
+	- Professional Services

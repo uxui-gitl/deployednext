@@ -20,6 +20,8 @@ import Spline from "@splinetool/react-spline";
 import { Chrono } from "react-chrono";
 import Navbar from "@/components/Navbar";
 import Explore from "@/components/Explore";
+import NavLoop from "@/components/NavLoop";
+import NavTest from "@/components/NavTest";
 
 export default function Home() {
   const items = [
@@ -44,7 +46,7 @@ export default function Home() {
 
   return (
     <>
-      {/* <Cursor isGelly={true} /> */}
+      <NavLoop />
       <main>
         {/* Timeline */}
         {/* <>
@@ -64,17 +66,10 @@ export default function Home() {
           </div>
         </>
 
-        <ClientLogos />
-        <ACT />
+
         <>
           <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
-        </>
-        <Expertise />
-        <CaseStudy />
-        <Testimonial />
-        <Review />
-        <InfotechWeekly />
-        <Subscribe /> */}
+        </>  */}
 
         <Explore />
       </main>
