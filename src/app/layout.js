@@ -11,7 +11,7 @@ const works = Work_Sans({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={works.className}>
+      <body className={`${works.className} antialiased`}>
         <Announcement />
         <Navbar />
         {children}

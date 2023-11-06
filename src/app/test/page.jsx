@@ -18,7 +18,6 @@ import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 import Spline from "@splinetool/react-spline";
 import { Chrono } from "react-chrono";
-import Navbar from "@/components/Navbar";
 import Explore from "@/components/Explore";
 import NavLoop from "@/components/NavLoop";
 import NavTest from "@/components/NavTest";
@@ -46,7 +45,8 @@ export default function Home() {
 
   return (
     <>
-      <NavLoop />
+      {/* <NavLoop /> */}
+      {/* <Navbar /> */}
       <main>
         {/* Timeline */}
         {/* <>

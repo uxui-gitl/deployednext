@@ -14,32 +14,32 @@ const Navbar = () => {
     {
       id: 2,
       title: "Solutions",
-      url: "/solutions",
+      url: "/Sitemap",
     },
     {
       id: 3,
       title: "Industry Focus",
-      url: "/industry-focus",
+      url: "/Sitemap",
     },
     {
       id: 4,
       title: "About Us",
-      url: "/about-us",
+      url: "/Sitemap",
     },
     {
       id: 5,
       title: "Careers",
-      url: "/careers",
+      url: "/Sitemap",
     },
     {
       id: 6,
       title: "Insights",
-      url: "/insights",
+      url: "/Sitemap",
     },
     {
       id: 7,
       title: "Contact Us",
-      url: "/contact-us",
+      url: "/Sitemap",
     },
   ];
 
