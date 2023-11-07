@@ -18,7 +18,7 @@ const page = () => {
                       className=" block pb-1 hover:underline py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
-                      Intelligent Technologies
+                      ✅ Intelligent Technologies
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -92,7 +92,7 @@ const page = () => {
                       className="block pb-1 hover:underline"
                       href={"/Solutions/Upgrade-to-Cloud"}
                     >
-                      Upgrade to Cloud
+                      ✅ Upgrade to Cloud
                     </Link>
                   </li>
                   <li>
@@ -101,7 +101,7 @@ const page = () => {
                       className="block pb-1 hover:underline"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
-                      Cloud Stack & Services
+                      ✅Cloud Stack & Services
                     </Link>
                   </li>
                 </ul>
@@ -115,9 +115,9 @@ const page = () => {
                     <Link
                       target="_blank"
                       className="block pb-1 hover:underline"
-                      href={"/Enterprise-Suite"}
+                      href={"/Solutions/Enterprise-Suite"}
                     >
-                      Enterprise Suite
+                      ✅ Enterprise Suite
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -125,7 +125,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Enterprise-Suite/Infor"}
+                            href={"/Solutions/Enterprise-Suite/Infor"}
                           >
                             Infor
                           </Link>
@@ -135,7 +135,7 @@ const page = () => {
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline"
-                                  href={"/Enterprise-Suite/Infor-WMS"}
+                                  href={"/Solutions/Enterprise-Suite/Infor-WMS"}
                                 >
                                   Infor WMS
                                 </Link>
@@ -144,7 +144,7 @@ const page = () => {
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline"
-                                  href={"/Enterprise-Suite/Infor-LN"}
+                                  href={"/Solutions/Enterprise-Suite/Infor-LN"}
                                 >
                                   Infor LN
                                 </Link>
@@ -152,7 +152,9 @@ const page = () => {
                               <li>
                                 <Link
                                   className="block pb-1 hover:underline"
-                                  href={"/Enterprise-Suite/Infor-Cloudsuite"}
+                                  href={
+                                    "/Solutions/Enterprise-Suite/Infor-Cloudsuite"
+                                  }
                                 >
                                   Infor CloudSuite
                                 </Link>
@@ -161,7 +163,7 @@ const page = () => {
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline"
-                                  href={"/Enterprise-Suite/HxnEAM"}
+                                  href={"/Solutions/Enterprise-Suite/HxnEAM"}
                                 >
                                   HxnEAM
                                 </Link>
@@ -173,7 +175,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Microsoft-Dynamics"}
+                            href={"/Solutions/Microsoft-Dynamics"}
                           >
                             Microsoft Dynamics
                           </Link>
@@ -182,7 +184,7 @@ const page = () => {
                               <li>
                                 <Link
                                   href={
-                                    "/Enterprise-Suite/Microsoft-Dynamics/Business-Central"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Business-Central"
                                   }
                                 >
                                   Business Central
@@ -193,7 +195,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline"
                                   href={
-                                    "/Enterprise-Suite/Microsoft-Dynamics/F&O"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/F&O"
                                   }
                                 >
                                   F&O
@@ -204,7 +206,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline"
                                   href={
-                                    "/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
                                   }
                                 >
                                   eCommerce
@@ -217,7 +219,9 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Enterprise-Suite/Microsoft-Dynamics/Oracle"}
+                            href={
+                              "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Oracle"
+                            }
                           >
                             Oracle
                           </Link>
@@ -229,9 +233,9 @@ const page = () => {
                     <Link
                       target="_blank"
                       className="block pb-1 hover:underline"
-                      href={"/Customer-Experience"}
+                      href={"/Solutions/Customer-Experience"}
                     >
-                      Customer Experience
+                      ✅ Customer Experience
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -239,7 +243,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Customer-Experience/Infor-CRM"}
+                            href={"/Solutions/Customer-Experience/Infor-CRM"}
                           >
                             Infor CRM
                           </Link>
@@ -248,7 +252,9 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Customer-Experience/Microsoft-CRM"}
+                            href={
+                              "/Solutions/Customer-Experience/Microsoft-CRM"
+                            }
                           >
                             Microsoft CRM
                           </Link>
@@ -257,7 +263,9 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Customer-Experience/Salesforce-CRM"}
+                            href={
+                              "/Solutions/Customer-Experience/Salesforce-CRM"
+                            }
                           >
                             Salesforce CRM
                           </Link>
@@ -266,7 +274,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Customer-Experience/Magento-Ecom"}
+                            href={"/Solutions/Customer-Experience/Magento-Ecom"}
                           >
                             Magento - E com
                           </Link>
@@ -275,7 +283,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline"
-                            href={"/Customer-Experience/LS-Retail"}
+                            href={"/Solutions/Customer-Experience/LS-Retail"}
                           >
                             LS Retail
                           </Link>
@@ -375,7 +383,7 @@ const page = () => {
               target="_blank"
               href={"/About-Us"}
             >
-              About Us
+              ✅ About Us
             </Link>
             <Link
               className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
@@ -391,7 +399,7 @@ const page = () => {
                 target="_blank"
                 href={"/Careers"}
               >
-                Careers
+                ✅ Careers
               </Link>
               <ul className=" ml-12">
                 <li className="mb-4 mt-2">
@@ -400,7 +408,7 @@ const page = () => {
                     className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
                     href={"/We-Are-Hiring"}
                   >
-                    We Are Hiring
+                    ✅ We Are Hiring
                   </Link>
                 </li>
               </ul>
@@ -410,7 +418,7 @@ const page = () => {
               target="_blank"
               href={"/Contact-Us"}
             >
-              Contact Us
+              ✅ Contact Us
             </Link>
             <Link
               className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
