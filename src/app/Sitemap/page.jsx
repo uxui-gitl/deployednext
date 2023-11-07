@@ -9,14 +9,13 @@ const page = () => {
           <p className="font-bold text-2xl"># Solutions</p>
           <div className="flex flex-row gap-10 py-3 justify-between">
             <div>
-              <p className="font-medium text-lg ml-4 underline underline-offset-2 mb-2">
-                # Automation
-              </p>
+              <p className="font-medium text-lg ml-4  mb-2"># Automation</p>
               <div className=" ml-12">
                 <ul className="">
                   <li>
                     <Link
                       target="_blank"
+                      className=" block pb-1 hover:underline py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
                       Intelligent Technologies
@@ -25,6 +24,7 @@ const page = () => {
                       <ul>
                         <li>
                           <Link
+                            className=" block pb-1 hover:underline"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/AI-ML"}
                           >
@@ -33,6 +33,7 @@ const page = () => {
                         </li>
                         <li>
                           <Link
+                            className=" block pb-1 hover:underline"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/IIOT"}
                           >
@@ -41,6 +42,7 @@ const page = () => {
                         </li>
                         <li>
                           <Link
+                            className=" block pb-1 hover:underline"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/RPA"}
                           >
@@ -51,17 +53,26 @@ const page = () => {
                     </div>
                   </li>
                   <li>
-                    <Link target="_blank" href={"/Solutions/Technology-Stack"}>
+                    <Link
+                      target="_blank"
+                      className="block pb-1 hover:underline"
+                      href={"/Solutions/Technology-Stack"}
+                    >
                       Technology Stack
                     </Link>
                   </li>
                   <li>
-                    <Link target="_blank" href={"/Solutions/Data-Insights"}>
+                    <Link
+                      target="_blank"
+                      className="block pb-1 hover:underline"
+                      href={"/Solutions/Data-Insights"}
+                    >
                       Data Insights
                     </Link>
                   </li>
                   <li>
                     <Link
+                      className="block pb-1 hover:underline"
                       target="_blank"
                       href={"/Solutions/Data-Information-and-Security"}
                     >
@@ -72,19 +83,22 @@ const page = () => {
               </div>
             </div>
             <div>
-              <p className="font-medium text-lg ml-4 underline underline-offset-2 mb-2">
-                # Cloudification
-              </p>
+              <p className="font-medium text-lg ml-4 mb-2"># Cloudification</p>
               <div className=" ml-12">
                 <ul className="">
                   <li>
-                    <Link target="_blank" href={"/Solutions/Upgrade-to-Cloud"}>
+                    <Link
+                      target="_blank"
+                      className="block pb-1 hover:underline"
+                      href={"/Solutions/Upgrade-to-Cloud"}
+                    >
                       Upgrade to Cloud
                     </Link>
                   </li>
                   <li>
                     <Link
                       target="_blank"
+                      className="block pb-1 hover:underline"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
                       Cloud Stack & Services
@@ -94,13 +108,15 @@ const page = () => {
               </div>
             </div>
             <div>
-              <p className="font-medium text-lg ml-4 underline underline-offset-2 mb-2">
-                # Transformation
-              </p>
+              <p className="font-medium text-lg ml-4 mb-2"># Transformation</p>
               <div className=" ml-12">
                 <ul className="">
                   <li>
-                    <Link target="_blank" href={"/Enterprise-Suite"}>
+                    <Link
+                      target="_blank"
+                      className="block pb-1 hover:underline"
+                      href={"/Enterprise-Suite"}
+                    >
                       Enterprise Suite
                     </Link>
                     <div className="ml-12">
@@ -108,6 +124,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Enterprise-Suite/Infor"}
                           >
                             Infor
@@ -117,6 +134,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
+                                  className="block pb-1 hover:underline"
                                   href={"/Enterprise-Suite/Infor-WMS"}
                                 >
                                   Infor WMS
@@ -125,6 +143,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
+                                  className="block pb-1 hover:underline"
                                   href={"/Enterprise-Suite/Infor-LN"}
                                 >
                                   Infor LN
@@ -132,6 +151,7 @@ const page = () => {
                               </li>
                               <li>
                                 <Link
+                                  className="block pb-1 hover:underline"
                                   href={"/Enterprise-Suite/Infor-Cloudsuite"}
                                 >
                                   Infor CloudSuite
@@ -140,6 +160,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
+                                  className="block pb-1 hover:underline"
                                   href={"/Enterprise-Suite/HxnEAM"}
                                 >
                                   HxnEAM
@@ -149,7 +170,11 @@ const page = () => {
                           </div>
                         </li>
                         <li>
-                          <Link target="_blank" href={"/Microsoft-Dynamics"}>
+                          <Link
+                            target="_blank"
+                            className="block pb-1 hover:underline"
+                            href={"/Microsoft-Dynamics"}
+                          >
                             Microsoft Dynamics
                           </Link>
                           <div className="ml-12">
@@ -166,6 +191,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
+                                  className="block pb-1 hover:underline"
                                   href={
                                     "/Enterprise-Suite/Microsoft-Dynamics/F&O"
                                   }
@@ -176,6 +202,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
+                                  className="block pb-1 hover:underline"
                                   href={
                                     "/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
                                   }
@@ -189,6 +216,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Enterprise-Suite/Microsoft-Dynamics/Oracle"}
                           >
                             Oracle
@@ -198,7 +226,11 @@ const page = () => {
                     </div>
                   </li>{" "}
                   <li>
-                    <Link target="_blank" href={"/Customer-Experience"}>
+                    <Link
+                      target="_blank"
+                      className="block pb-1 hover:underline"
+                      href={"/Customer-Experience"}
+                    >
                       Customer Experience
                     </Link>
                     <div className="ml-12">
@@ -206,6 +238,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Customer-Experience/Infor-CRM"}
                           >
                             Infor CRM
@@ -214,6 +247,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Customer-Experience/Microsoft-CRM"}
                           >
                             Microsoft CRM
@@ -222,6 +256,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Customer-Experience/Salesforce-CRM"}
                           >
                             Salesforce CRM
@@ -230,6 +265,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Customer-Experience/Magento-Ecom"}
                           >
                             Magento - E com
@@ -238,6 +274,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
+                            className="block pb-1 hover:underline"
                             href={"/Customer-Experience/LS-Retail"}
                           >
                             LS Retail
@@ -258,7 +295,7 @@ const page = () => {
           <p className="font-bold text-2xl "># Our Services</p>
           <div className="flex flex-col py-3">
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Our-Services/Business-Consulting"}
             >
@@ -266,7 +303,7 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Our-Services/Implementation-&-Global-Rollout"}
             >
@@ -274,7 +311,7 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Our-Services/Managed-Services"}
             >
@@ -285,11 +322,11 @@ const page = () => {
 
         {/* Industries Focus */}
 
-        <div>
+        <div className="mb-10">
           <p className="font-bold text-2xl"># Industry Focus</p>
           <div className="flex flex-col  py-3">
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Manufacturing"}
             >
@@ -297,7 +334,7 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Retail"}
             >
@@ -305,21 +342,78 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Trading-and-Distribution"}
             >
               Trading and Distribution
             </Link>
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Project"}
             >
               Project
             </Link>
             <Link
-              className="font-medium text-lg ml-4 underline underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              target="_blank"
+              href={"/Industries/Professional-Services"}
+            >
+              Professional Services
+            </Link>
+          </div>
+        </div>
+
+        {/* Company */}
+
+        <div className="mb-10">
+          <p className="font-bold text-2xl"># Company</p>
+          <div className="flex flex-col  py-3">
+            <Link
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              target="_blank"
+              href={"/About-Us"}
+            >
+              About Us
+            </Link>
+            <Link
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              target="_blank"
+              href={"/Infotech-Weekly"}
+            >
+              Infotech Weekly
+            </Link>
+
+            <div className="">
+              <Link
+                className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+                target="_blank"
+                href={"/Careers"}
+              >
+                Careers
+              </Link>
+              <ul className=" ml-12">
+                <li className="mb-4 mt-2">
+                  <Link
+                    target="_blank"
+                    className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+                    href={"/We-Are-Hiring"}
+                  >
+                    We Are Hiring
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <Link
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              target="_blank"
+              href={"/Contact-Us"}
+            >
+              Contact Us
+            </Link>
+            <Link
+              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Professional-Services"}
             >
