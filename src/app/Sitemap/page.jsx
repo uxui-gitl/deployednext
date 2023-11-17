@@ -15,7 +15,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className=" block pb-1 hover:underline py-2"
+                      className=" block pb-1 hover:underline w-fit py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
                       ✅ Intelligent Technologies
@@ -24,7 +24,7 @@ const page = () => {
                       <ul>
                         <li>
                           <Link
-                            className=" block pb-1 hover:underline"
+                            className=" block pb-1 hover:underline w-fit"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/AI-ML"}
                           >
@@ -33,7 +33,7 @@ const page = () => {
                         </li>
                         <li>
                           <Link
-                            className=" block pb-1 hover:underline"
+                            className=" block pb-1 hover:underline w-fit"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/IIOT"}
                           >
@@ -42,7 +42,7 @@ const page = () => {
                         </li>
                         <li>
                           <Link
-                            className=" block pb-1 hover:underline"
+                            className=" block pb-1 hover:underline w-fit"
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/RPA"}
                           >
@@ -55,7 +55,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Technology-Stack"}
                     >
                       Technology Stack
@@ -64,15 +64,15 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Data-Insights"}
                     >
-                      Data Insights
+                      ✅ Data Insights
                     </Link>
                   </li>
                   <li>
                     <Link
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       target="_blank"
                       href={"/Solutions/Data-Information-and-Security"}
                     >
@@ -89,7 +89,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Upgrade-to-Cloud"}
                     >
                       ✅ Upgrade to Cloud
@@ -98,7 +98,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
                       ✅Cloud Stack & Services
@@ -114,7 +114,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Enterprise-Suite"}
                     >
                       ✅ Enterprise Suite
@@ -124,17 +124,17 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Infor"}
                           >
-                            Infor
+                            ✅ Infor
                           </Link>
                           <div className="ml-12">
                             <ul>
                               <li>
                                 <Link
                                   target="_blank"
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={"/Solutions/Enterprise-Suite/Infor-WMS"}
                                 >
                                   Infor WMS
@@ -143,7 +143,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={"/Solutions/Enterprise-Suite/Infor-LN"}
                                 >
                                   Infor LN
@@ -151,7 +151,7 @@ const page = () => {
                               </li>
                               <li>
                                 <Link
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={
                                     "/Solutions/Enterprise-Suite/Infor-Cloudsuite"
                                   }
@@ -162,7 +162,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={"/Solutions/Enterprise-Suite/HxnEAM"}
                                 >
                                   HxnEAM
@@ -174,7 +174,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Microsoft-Dynamics"}
                           >
                             Microsoft Dynamics
@@ -193,7 +193,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={
                                     "/Solutions/Enterprise-Suite/Microsoft-Dynamics/F&O"
                                   }
@@ -204,7 +204,7 @@ const page = () => {
                               <li>
                                 <Link
                                   target="_blank"
-                                  className="block pb-1 hover:underline"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={
                                     "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
                                   }
@@ -218,7 +218,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={
                               "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Oracle"
                             }
@@ -232,7 +232,7 @@ const page = () => {
                   <li>
                     <Link
                       target="_blank"
-                      className="block pb-1 hover:underline"
+                      className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Customer-Experience"}
                     >
                       ✅ Customer Experience
@@ -242,7 +242,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Infor-CRM"}
                           >
                             Infor CRM
@@ -251,7 +251,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={
                               "/Solutions/Customer-Experience/Microsoft-CRM"
                             }
@@ -262,7 +262,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={
                               "/Solutions/Customer-Experience/Salesforce-CRM"
                             }
@@ -273,7 +273,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Magento-Ecom"}
                           >
                             Magento - E com
@@ -282,7 +282,7 @@ const page = () => {
                         <li>
                           <Link
                             target="_blank"
-                            className="block pb-1 hover:underline"
+                            className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/LS-Retail"}
                           >
                             LS Retail
@@ -303,23 +303,23 @@ const page = () => {
           <p className="font-bold text-2xl "># Our Services</p>
           <div className="flex flex-col py-3">
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Our-Services/Business-Consulting"}
             >
-              Business Consulting
+              ✅ Business Consulting
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
-              href={"/Our-Services/Implementation-&-Global-Rollout"}
+              href={"/Our-Services/Implementation-and-Global-Rollout"}
             >
               Implementation & Global Rollout
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Our-Services/Managed-Services"}
             >
@@ -334,7 +334,7 @@ const page = () => {
           <p className="font-bold text-2xl"># Industry Focus</p>
           <div className="flex flex-col  py-3">
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Manufacturing"}
             >
@@ -342,7 +342,7 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Retail"}
             >
@@ -350,21 +350,21 @@ const page = () => {
             </Link>
 
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Trading-and-Distribution"}
             >
               Trading and Distribution
             </Link>
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Project"}
             >
               Project
             </Link>
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Professional-Services"}
             >
@@ -379,14 +379,14 @@ const page = () => {
           <p className="font-bold text-2xl"># Company</p>
           <div className="flex flex-col  py-3">
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/About-Us"}
             >
               ✅ About Us
             </Link>
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Infotech-Weekly"}
             >
@@ -395,7 +395,7 @@ const page = () => {
 
             <div className="">
               <Link
-                className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+                className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
                 target="_blank"
                 href={"/Careers"}
               >
@@ -405,7 +405,7 @@ const page = () => {
                 <li className="mb-4 mt-2">
                   <Link
                     target="_blank"
-                    className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+                    className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
                     href={"/We-Are-Hiring"}
                   >
                     ✅ We Are Hiring
@@ -414,14 +414,14 @@ const page = () => {
               </ul>
             </div>
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Contact-Us"}
             >
               ✅ Contact Us
             </Link>
             <Link
-              className="font-medium text-lg ml-4 hover:underline hover:underline-offset-2 mb-2"
+              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
               target="_blank"
               href={"/Industries/Professional-Services"}
             >

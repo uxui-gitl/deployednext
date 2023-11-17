@@ -117,6 +117,48 @@ const ContactUs = () => {
       email: "infotech@godrej.com",
     },
   ];
+  const [formData, setFormData] = useState({
+    Name: "",
+    Phoneno: "",
+    Email: "",
+    Country: "",
+    Query: "",
+    Consent: "Y",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send the POST request to the API endpoint
+      const response = await fetch(
+        "https://mailer.godrej.com/godrejinfotechapi/SendEnquiry/SaveEnquiry",
+        {
+          mode: "no-cors",
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // Handle the response as needed
+      if (response.ok) {
+        console.log("Enquiry saved successfully!");
+        // Additional logic or redirection can be added here
+      } else {
+        console.error("Error saving enquiry:", response.statusText);
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
 
   return (
     <>
@@ -134,21 +176,25 @@ const ContactUs = () => {
                   a sustainable and inclusive future.
                 </p>
                 <form
+                  onSubmit={handleSubmit}
                   className={`${styles["container"]} w-full pe-8 my-3 bg-white`}
-                  method="POST"
                 >
                   <input
-                    type="text"
-                    name="name"
                     id="name"
+                    type="text"
+                    name="Name"
+                    value={formData.Name}
+                    onChange={handleChange}
                     className="w-full mb-5 "
                     placeholder="Full Name"
                   />
 
                   <input
-                    type="text"
-                    name="email"
                     id="email"
+                    type="text"
+                    name="Email"
+                    value={formData.Email}
+                    onChange={handleChange}
                     className="w-full mb-5 "
                     placeholder="Email Address"
                   />
@@ -160,11 +206,17 @@ const ContactUs = () => {
                       searchable
                       selected={selected}
                       onSelect={handleCountrySelect}
+                      type="text"
+                      name="Country"
+                      value={formData.Country}
+                      onChange={handleChange}
                     />
                     <input
-                      type="tel"
-                      name="tel"
                       id="tel"
+                      type="text"
+                      name="Phoneno"
+                      value={formData.Phoneno}
+                      onChange={handleChange}
                       customLabels={{
                         BE: "BEL",
                         SG: "SGP",
@@ -172,18 +224,27 @@ const ContactUs = () => {
                         IN: "+91",
                       }}
                       className={`${styles.tel} w-full mr-0 `}
-                      placeholder="9820839348"
+                      placeholder="999999999"
                     />
                   </div>
 
                   <textarea
-                    name="message"
                     className="mb-5"
+                    type="text"
+                    name="Query"
+                    value={formData.Query}
+                    onChange={handleChange}
                     placeholder="We would like to leverage our business potential and accelerate the growth"
                   ></textarea>
 
                   <label className="flex justify-start items-start gap-3 mb-5">
-                    <input type="checkbox" class="default:ring-2" />
+                    <input
+                      type="checkbox"
+                      name="Consent"
+                      value={formData.Consent}
+                      onChange={handleChange}
+                      class="default:ring-2"
+                    />
                     <p>
                       I consent to the processing of my personal data by Godrej
                       Infotech in accordance with the{" "}

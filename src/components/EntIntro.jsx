@@ -4,7 +4,7 @@ import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
 import Link from "next/link";
-const EntIntro = ({ title, desc, cta, width, video }) => {
+const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
   return (
     <div className="text-center">
       <div className="relative w-full h-[90vh] overflow-hidden px-20">
@@ -22,18 +22,17 @@ const EntIntro = ({ title, desc, cta, width, video }) => {
             className={` flex text-white flex-col justify-start items-start max-w-max gap-5`}
           >
             <h1
-              className={`w-[${width}] z-50 hidden sm:block sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-semibold text-left`}
+              className={`w-[${width}] z-50 hidden sm:block sm:text-[68px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[84px]	text-white font-semibold text-left`}
             >
               {title}
             </h1>
 
-            <h1 className="z-50 sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-left">
+            <h1 className="z-50 sm:hidden   text-[34px] leading-[44px] 	text-white font-bold text-left">
               {title}
             </h1>
 
             <h4 className="z-50 hidden text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
-              We drive digital business revolution for tangible results, <br />
-              optimized bottom line and a dynamic digital edge
+              {desc}
             </h4>
 
             <h4 className="z-50 sm:hidden text-left text-white text-[14px] sm:text-[16px] px-7 leading-[22px] mb-[24px]">

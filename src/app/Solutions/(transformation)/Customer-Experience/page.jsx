@@ -305,7 +305,7 @@ const page = () => {
 
       {/* Stats TO BE CREATED  Data Insights Metrics*/}
 
-      {/* About Section */}
+      {/* Customer experience Service */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">

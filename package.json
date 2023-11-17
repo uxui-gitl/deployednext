@@ -13,6 +13,7 @@
     "@mdi/react": "^1.6.1",
     "@splinetool/react-spline": "^2.2.6",
     "autoprefixer": "10.4.15",
+    "clsx": "^2.0.0",
     "cobe": "^0.6.3",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.17",

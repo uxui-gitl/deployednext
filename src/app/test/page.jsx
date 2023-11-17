@@ -21,6 +21,7 @@ import { Chrono } from "react-chrono";
 import Explore from "@/components/Explore";
 import NavLoop from "@/components/NavLoop";
 import NavTest from "@/components/NavTest";
+import NavNav from "@/components/NavNav";
 
 export default function Home() {
   const items = [
@@ -71,6 +72,7 @@ export default function Home() {
           <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
         </>  */}
 
+        <NavNav />
         <Explore />
       </main>
     </>
