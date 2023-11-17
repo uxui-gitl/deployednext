@@ -38,6 +38,7 @@ import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
+import Subscription from "@/components/Subscription";
 const smartTools = [
   {
     _id: 1,
@@ -470,7 +471,13 @@ const page = () => {
 
       <SME />
 
-      <StrategySub />
+      {/* Subscription */}
+      <Subscription
+        title="Ready for Transformation with"
+        blue="AI and ML?"
+        title2=""
+        desc="Let's embark on your journey together aligned with your business goals."
+      />
       <InfotechWeeklyAlt />
     </>
   );

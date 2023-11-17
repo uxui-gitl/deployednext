@@ -4,7 +4,7 @@ import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import Image from "next/image";
 import Link from "next/link";
-const StrategySub = ({ title, blue, title2, desc }) => {
+const Subscription = ({ title, blue, title2, desc }) => {
   return (
     <>
       <div className={` w-full bg-white py-32`}>
@@ -130,4 +130,4 @@ const StrategySub = ({ title, blue, title2, desc }) => {
   );
 };
 
-export default StrategySub;
+export default Subscription;

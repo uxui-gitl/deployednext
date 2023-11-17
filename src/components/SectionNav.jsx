@@ -70,7 +70,7 @@ const SectionNav = () => {
 
   return (
     <>
-      <div className="py-5  mx-auto bg-[#F2F4F7] sticky top-0 z-50 border-b-2">
+      <div className="py-5 hidden sm:block  mx-auto bg-[#F2F4F7] sticky top-0 z-50 border-b-2">
         <ul className="flex justify-center gap-10">
           {navLinks.map((item) => {
             return (

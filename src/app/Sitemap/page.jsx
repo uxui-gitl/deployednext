@@ -18,7 +18,7 @@ const page = () => {
                       className=" block pb-1 hover:underline w-fit py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
-                      ✅ Intelligent Technologies
+                      ✅ Intelligent Technologies [2]
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -28,16 +28,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/AI-ML"}
                           >
-                            AI & ML
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            className=" block pb-1 hover:underline w-fit"
-                            target="_blank"
-                            href={"/Solutions/Intelligent-Technologies/IIOT"}
-                          >
-                            RPA
+                            ✅ AI & ML [2]
                           </Link>
                         </li>
                         <li>
@@ -46,7 +37,16 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/RPA"}
                           >
-                            IIOT
+                            ✅ RPA [3]
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            className=" block pb-1 hover:underline w-fit"
+                            target="_blank"
+                            href={"/Solutions/Intelligent-Technologies/IIOT"}
+                          >
+                            ✅ IIOT [Not Found]
                           </Link>
                         </li>
                       </ul>
@@ -58,7 +58,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Technology-Stack"}
                     >
-                      Technology Stack
+                      ✅ Technology Stack [2]
                     </Link>
                   </li>
                   <li>
@@ -67,7 +67,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Data-Insights"}
                     >
-                      ✅ Data Insights
+                      ✅ Data Insights [2]
                     </Link>
                   </li>
                   <li>
@@ -76,7 +76,7 @@ const page = () => {
                       target="_blank"
                       href={"/Solutions/Data-Information-and-Security"}
                     >
-                      Data Information and Security
+                      ✅ Data Information and Security [Not Found]
                     </Link>
                   </li>
                 </ul>
@@ -92,7 +92,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Upgrade-to-Cloud"}
                     >
-                      ✅ Upgrade to Cloud
+                      ✅ Upgrade to Cloud [3]
                     </Link>
                   </li>
                   <li>
@@ -101,7 +101,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
-                      ✅Cloud Stack & Services
+                      ✅ Cloud Stack & Services [3]
                     </Link>
                   </li>
                 </ul>
@@ -117,7 +117,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Enterprise-Suite"}
                     >
-                      ✅ Enterprise Suite
+                      ✅ Enterprise Suite [5]
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -127,7 +127,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Infor"}
                           >
-                            ✅ Infor
+                            ✅ Infor [3]
                           </Link>
                           <div className="ml-12">
                             <ul>
@@ -135,16 +135,20 @@ const page = () => {
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
-                                  href={"/Solutions/Enterprise-Suite/Infor-WMS"}
+                                  href={
+                                    "/Solutions/Enterprise-Suite/Infor/Infor-WMS"
+                                  }
                                 >
-                                  Infor WMS
+                                  ✅ Infor WMS [4]
                                 </Link>
                               </li>
                               <li>
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
-                                  href={"/Solutions/Enterprise-Suite/Infor-LN"}
+                                  href={
+                                    "/Solutions/Enterprise-Suite/Infor/Infor-LN"
+                                  }
                                 >
                                   Infor LN
                                 </Link>
@@ -153,7 +157,7 @@ const page = () => {
                                 <Link
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Infor-Cloudsuite"
+                                    "/Solutions/Enterprise-Suite/Infor/Infor-Cloudsuite"
                                   }
                                 >
                                   Infor CloudSuite
@@ -163,7 +167,9 @@ const page = () => {
                                 <Link
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
-                                  href={"/Solutions/Enterprise-Suite/HxnEAM"}
+                                  href={
+                                    "/Solutions/Enterprise-Suite/Infor/HxnEAM"
+                                  }
                                 >
                                   HxnEAM
                                 </Link>
@@ -409,6 +415,15 @@ const page = () => {
                     href={"/We-Are-Hiring"}
                   >
                     ✅ We Are Hiring
+                  </Link>
+                </li>
+                <li className="mb-4 mt-2">
+                  <Link
+                    target="_blank"
+                    className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
+                    href={"/Job-Description"}
+                  >
+                    ✅ Job Description
                   </Link>
                 </li>
               </ul>

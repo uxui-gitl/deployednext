@@ -22,6 +22,7 @@ import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
+import clsx from "clsx";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -76,7 +77,7 @@ export default function Home() {
       desc: "Upgrade AX to D365 F&O to Revitalize Your Business Performance",
       cta: "Know more",
       link: "/",
-      bg: "",
+      bg: "/gradient-1.png",
     },
     {
       _id: 2,
@@ -84,7 +85,7 @@ export default function Home() {
       desc: "Unlock Maximum Modern Benefits with Business Central Upgrade",
       cta: "Know more",
       link: "/",
-      bg: "",
+      bg: "/gradient-1.png",
     },
     {
       _id: 3,
@@ -92,7 +93,7 @@ export default function Home() {
       desc: "Future proof your business growth with Upgrade to Infor LN Cloud",
       cta: "Know more",
       link: "/",
-      bg: "",
+      bg: "/gradient-1.png",
     },
     {
       _id: 4,
@@ -100,7 +101,7 @@ export default function Home() {
       desc: "Migrate your Application to Cloud to Unleash Modernisation",
       cta: "Know more",
       link: "/",
-      bg: "",
+      bg: "/gradient-1.png",
     },
     {
       _id: 5,
@@ -108,7 +109,7 @@ export default function Home() {
       desc: "We aim for a more efficient and collaborative communication environment that will improve efficiency and streamline communication with minimum disruption to your everyday operations",
       cta: "Know more",
       link: "/",
-      bg: "",
+      bg: "/gradient-1.png",
     },
   ];
 
@@ -258,7 +259,15 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-5 sm:gap-10 mx-auto px-20 sm:px-[8rem]">
               {upgradeCloud.map((item, i) => {
                 return (
-                  <div key={i} className="col bg-orange-300 px-14 py-16">
+                  <div
+                    key={i}
+                    className={clsx(`col px-14 py-16 text-white`, {
+                      "bg-[#344CA9]": item._id === 2,
+                      " bg-[#320A53]": item._id === 4 || item._id === 5,
+                      " bg-[url('/gradient-1.png')]": item._id === 1,
+                      " bg-[url('/gradient-2.png')]": item._id === 3,
+                    })}
+                  >
                     <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                       {item.title}
                     </h4>
@@ -285,8 +294,8 @@ export default function Home() {
                   </div>
                 );
               })}
-              <div className="col flex flex-col sm:flex-row gap-5 sm:gap-10  ">
-                <div className=" bg-orange-300 px-10 py-10">
+              <div className="col text-white flex flex-col sm:flex-row gap-5 sm:gap-10  ">
+                <div className=" bg-[#344CA9] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                     Upgrade Infrastructure to Cloud
                   </h4>
@@ -295,7 +304,7 @@ export default function Home() {
                     we enhance your IT infrastructure in the cloud era
                   </p>
                 </div>
-                <div className=" bg-orange-300 px-10 py-10">
+                <div className=" bg-[#320A53] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                     Lift and Shift to Azure{" "}
                   </h4>
