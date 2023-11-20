@@ -150,7 +150,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/Infor-LN"
                                   }
                                 >
-                                  Infor LN
+                                  ✅ Infor LN [4]
                                 </Link>
                               </li>
                               <li>
@@ -160,7 +160,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/Infor-Cloudsuite"
                                   }
                                 >
-                                  Infor CloudSuite
+                                  ✅ Infor CloudSuite [2]
                                 </Link>
                               </li>
                               <li>
@@ -171,7 +171,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/HxnEAM"
                                   }
                                 >
-                                  HxnEAM
+                                  ✅ HxnEAM [4]
                                 </Link>
                               </li>
                             </ul>
@@ -181,19 +181,23 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={"/Solutions/Microsoft-Dynamics"}
+                            href={
+                              "/Solutions//Enterprise-Suite/Microsoft-Dynamics"
+                            }
                           >
-                            Microsoft Dynamics
+                            ✅ Microsoft Dynamics [Not Found]
                           </Link>
                           <div className="ml-12">
                             <ul>
                               <li>
                                 <Link
+                                  target="_blank"
+                                  className="block pb-1 hover:underline w-fit"
                                   href={
                                     "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Business-Central"
                                   }
                                 >
-                                  Business Central
+                                  ✅ Business Central [4]
                                 </Link>
                               </li>
                               <li>
@@ -204,7 +208,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Microsoft-Dynamics/F&O"
                                   }
                                 >
-                                  F&O
+                                  ✅ F&O [4]
                                 </Link>
                               </li>
                               <li>
@@ -215,7 +219,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
                                   }
                                 >
-                                  eCommerce
+                                  ✅ eCommerce [5]
                                 </Link>
                               </li>
                             </ul>
@@ -229,7 +233,7 @@ const page = () => {
                               "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Oracle"
                             }
                           >
-                            Oracle
+                            ✅ Oracle [5]
                           </Link>
                         </li>
                       </ul>
@@ -241,7 +245,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Customer-Experience"}
                     >
-                      ✅ Customer Experience
+                      ✅ Customer Experience [4]
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -251,7 +255,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Infor-CRM"}
                           >
-                            Infor CRM
+                            ✅ Infor CRM [3]
                           </Link>
                         </li>
                         <li>
@@ -262,7 +266,7 @@ const page = () => {
                               "/Solutions/Customer-Experience/Microsoft-CRM"
                             }
                           >
-                            Microsoft CRM
+                            ✅ Microsoft CRM [3]
                           </Link>
                         </li>
                         <li>
@@ -273,7 +277,7 @@ const page = () => {
                               "/Solutions/Customer-Experience/Salesforce-CRM"
                             }
                           >
-                            Salesforce CRM
+                            ✅ Salesforce CRM [Not Found]
                           </Link>
                         </li>
                         <li>
@@ -282,7 +286,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Magento-Ecom"}
                           >
-                            Magento - E com
+                            ✅ Magento - E com [3]
                           </Link>
                         </li>
                         <li>
@@ -291,7 +295,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/LS-Retail"}
                           >
-                            LS Retail
+                            ✅ LS Retail [3]
                           </Link>
                         </li>
                       </ul>
@@ -313,7 +317,7 @@ const page = () => {
               target="_blank"
               href={"/Our-Services/Business-Consulting"}
             >
-              ✅ Business Consulting
+              ✅ Business Consulting [4]
             </Link>
 
             <Link
@@ -321,7 +325,7 @@ const page = () => {
               target="_blank"
               href={"/Our-Services/Implementation-and-Global-Rollout"}
             >
-              Implementation & Global Rollout
+              ✅ Implementation & Global Rollout [4]
             </Link>
 
             <Link
@@ -329,7 +333,7 @@ const page = () => {
               target="_blank"
               href={"/Our-Services/Managed-Services"}
             >
-              Managed Services
+              ✅ Managed Services [4]
             </Link>
           </div>
         </div>

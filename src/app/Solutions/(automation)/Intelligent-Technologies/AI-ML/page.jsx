@@ -66,7 +66,8 @@ const page = () => {
                   With our pragmatic approach and AI and ML capabilities, we
                   optimize business parameters ensuring rise in your business
                   efficiency. Join us in embracing the power of AI and ML, and
-                  let's start journey together towards innovation and success.
+                  let&apos;s start journey together towards innovation and
+                  success.
                 </p>
               </div>
             </div>
