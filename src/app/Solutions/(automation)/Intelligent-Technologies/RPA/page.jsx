@@ -118,13 +118,13 @@ const page = () => {
                   <Image src={inforCloudSuite} alt="Infor" />
                 </div>
                 <div>
-                  <Image src={Oracle} alt="Infor" />
+                  <Image src={Oracle} alt="Oracle" />
                 </div>
                 <div>
-                  <Image src={Dynamic365} alt="Infor" />
+                  <Image src={Dynamic365} alt="Dynamic365" />
                 </div>
                 <div>
-                  <Image src={Azure} alt="Infor" />
+                  <Image src={Azure} alt="Azure" />
                 </div>
               </div>
             </div>

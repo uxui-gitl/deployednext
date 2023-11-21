@@ -74,9 +74,9 @@ const page = () => {
                     <Link
                       className="block pb-1 hover:underline w-fit"
                       target="_blank"
-                      href={"/Solutions/Data-Information-and-Security"}
+                      href={"/Solutions/Cyber-Security"}
                     >
-                      ✅ Data Information and Security [Not Found]
+                      ✅ Cyber Security [Not Created]
                     </Link>
                   </li>
                 </ul>
@@ -182,10 +182,10 @@ const page = () => {
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
                             href={
-                              "/Solutions//Enterprise-Suite/Microsoft-Dynamics"
+                              "/Solutions/Enterprise-Suite/Microsoft-Practises"
                             }
                           >
-                            ✅ Microsoft Dynamics [Not Found]
+                            Microsoft Practises [Not created]
                           </Link>
                           <div className="ml-12">
                             <ul>
@@ -194,7 +194,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Business-Central"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/Business-Central"
                                   }
                                 >
                                   ✅ Business Central [4]
@@ -205,7 +205,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/F&O"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/F&O"
                                   }
                                 >
                                   ✅ F&O [4]
@@ -216,7 +216,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Ecommerce"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/Ecommerce"
                                   }
                                 >
                                   ✅ eCommerce [5]
@@ -230,7 +230,7 @@ const page = () => {
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
                             href={
-                              "/Solutions/Enterprise-Suite/Microsoft-Dynamics/Oracle"
+                              "/Solutions/Enterprise-Suite/Microsoft-Practises/Oracle"
                             }
                           >
                             ✅ Oracle [5]
@@ -438,13 +438,6 @@ const page = () => {
               href={"/Contact-Us"}
             >
               ✅ Contact Us
-            </Link>
-            <Link
-              className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
-              target="_blank"
-              href={"/Industries/Professional-Services"}
-            >
-              Professional Services
             </Link>
           </div>
         </div>
