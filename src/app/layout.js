@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${works.className} antialiased`}>
         <Announcement />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
         <Copyright />

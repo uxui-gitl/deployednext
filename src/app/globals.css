@@ -265,3 +265,18 @@ input:focus {
 .nested-dropdown:hover .nested-dropdown-content {
   display: block;
 }
+
+#benefits-slide .swiper-slide {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 90% !important;
+}
+#benefits-slide .swiper-slide-active {
+  width: 110% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#benefits-slide .swiper-pagination {
+  display: none !important;
+}

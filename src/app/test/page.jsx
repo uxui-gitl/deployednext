@@ -22,7 +22,9 @@ import Explore from "@/components/Explore";
 import NavLoop from "@/components/NavLoop";
 import NavTest from "@/components/NavTest";
 import NavNav from "@/components/NavNav";
-
+import Benefits from "@/components/Benefits";
+import Navbar from "@/components/Navbar/Navbar";
+import EntIntro from "@/components/EntIntro";
 export default function Home() {
   const items = [
     {
@@ -72,8 +74,26 @@ export default function Home() {
           <Spline scene="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" />
         </>  */}
 
-        <NavNav />
-        <Explore />
+        {/* <NavNav />
+
+        <Explore /> */}
+        <div className="relative z-[500]">
+          <div className="absolute w-full">
+            <Navbar />
+          </div>
+        </div>
+        <EntIntro
+          title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
+          desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
+          cta="Modernize your Business with Upgrade Cloud Services"
+          width="70%"
+          video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
+        />
+        <Benefits
+          ribbon="Tech stack Benefits "
+          title="Benefits of Application Development with Our Technology Stack Expertise"
+          desc=""
+        ></Benefits>
       </main>
     </>
   );

@@ -139,7 +139,14 @@ const ContactUs = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({
+            Name: formData.Name,
+            Phoneno: formData.Phoneno,
+            Email: formData.Email,
+            Country: formData.Country,
+            Query: formData.Query,
+            Consent: formData.Consent,
+          }),
         }
       );
 
