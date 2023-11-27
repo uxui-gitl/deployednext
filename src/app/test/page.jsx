@@ -25,6 +25,8 @@ import NavNav from "@/components/NavNav";
 import Benefits from "@/components/Benefits";
 import Navbar from "@/components/Navbar/Navbar";
 import EntIntro from "@/components/EntIntro";
+import Dialog from "@/components/Dialog";
+import { useState } from "react";
 export default function Home() {
   const items = [
     {
@@ -45,7 +47,16 @@ export default function Home() {
       cardDetailedText: "This is the third event on the timeline.",
     },
   ];
+  const [showDialog, setShowDialog] = useState(true);
 
+  const onClose = () => {
+    setShowDialog(false);
+  };
+
+  const onOk = () => {
+    // Handle OK button click logic
+    setShowDialog(false);
+  };
   return (
     <>
       {/* <NavLoop /> */}
@@ -77,11 +88,11 @@ export default function Home() {
         {/* <NavNav />
 
         <Explore /> */}
-        <div className="relative z-[500]">
+        {/* <div className="relative z-[500]">
           <div className="absolute w-full">
             <Navbar />
           </div>
-        </div>
+        </div> */}
         <EntIntro
           title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
           desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
@@ -89,11 +100,24 @@ export default function Home() {
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
-        <Benefits
+        {/* <Benefits
           ribbon="Tech stack Benefits "
           title="Benefits of Application Development with Our Technology Stack Expertise"
           desc=""
-        ></Benefits>
+        ></Benefits> */}
+
+        <>
+          {showDialog && (
+            <Dialog title="Example Modal" onClose={onClose} onOk={onOk}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                eligendi odio ipsa nostrum dolores voluptas architecto tempore
+                nulla voluptatibus vel, placeat explicabo exercitationem id
+                officia laborum doloremque blanditiis earum accusamus.
+              </p>
+            </Dialog>
+          )}
+        </>
       </main>
     </>
   );

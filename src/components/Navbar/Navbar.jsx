@@ -8,6 +8,8 @@ import Link from "next/link";
 import IndustryFocusNav from "./IndustryFocusNav";
 import ServicesNav from "./ServicesNav";
 import SolutionsNav from "./SolutionsNav";
+import InsightsNav from "./InsightsNav";
+import CareersNav from "./CareersNav";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -65,43 +67,29 @@ const Navbar = () => {
                   <IndustryFocusNav />
                   <li>
                     <Link
-                      href={"/"}
-                      className="max-lg:font-semibold w-fit flex items-center p-1 hover:text-neutral-300"
+                      href={"/About-Us"}
+                      className="  font-normal w-fit flex items-center p-1 hover:text-neutral-300"
                     >
                       About Us
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      href={"/"}
-                      className="max-lg:font-semibold w-fit flex items-center p-1 hover:text-neutral-300"
-                    >
-                      Careers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={"/"}
-                      className="max-lg:font-semibold w-fit flex items-center p-1 hover:text-neutral-300"
-                    >
-                      Insights
-                    </Link>
-                  </li>
+                  <CareersNav />
+                  <InsightsNav />
                 </ul>
               </nav>
               {/* Mobile */}
               <div className="lg:flex items-center max-lg:flex-col lg:px-0 px-3 mb-3 lg:mb-0 text-left lg:space-x-4">
                 <div className="lg:hidden max-lg:flex justify-center max-lg:border-[1px] max-lg:mr-4 rounded-md max-lg:bg-neutral-800">
                   <Link
-                    href=""
-                    className="hover:text-neutral-400 max-lg:py-2 max-lg:text-[16px] max-lg:font-semibold "
+                    href="/Contact-Us"
+                    className="hover:text-neutral-400 max-lg:py-2 font-medium max-lg:text-[16px] max-lg:font-semibold "
                   >
                     Contact Us
                   </Link>
                 </div>
                 <Link
-                  href=""
-                  className="max-lg:hidden px-2 py-[5px] border-[1px] rounded-md hover:text-neutral-400 "
+                  href="/Contact-Us"
+                  className="max-lg:hidden px-8 py-[5px] border-[1px] font-medium rounded-sm hover:text-neutral-400 "
                 >
                   Contact Us
                 </Link>

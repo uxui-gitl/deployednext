@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-const IndustryFocusNav = () => {
+const InsightsNav = () => {
   const [show, setShow] = useState(false);
   const handleOnclick = () => {
     if (window.innerWidth < 1024) {
@@ -34,7 +34,7 @@ const IndustryFocusNav = () => {
           show ? "lg:text-neutral-300" : ""
         }`}
       >
-        Industry Focus
+        Insights
         <svg
           opacity="0.5"
           aria-hidden="true"
@@ -58,46 +58,19 @@ const IndustryFocusNav = () => {
           show ? "opacity-100 visible" : "opacity-0 hidden"
         }`}
       >
-        <div className="  w-full">
-          <ul className="text-sm text-[#101828] font-semibold  w-full">
+        <div className=" w-full">
+          <ul className="text-sm text-[#101828] font-semibold w-full">
             <li>
               <Link
-                href="/Industries/Manufacturing"
+                href="/Infotech-Weekly"
                 className="block py-2 hover:text-blue-600"
               >
-                Manufacturing
+                Infotech Weekly
               </Link>
             </li>
             <li>
-              <Link
-                href="/Industries/Retail"
-                className="block py-2 hover:text-blue-600"
-              >
-                Retail
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/Industries/Trading-and-Distribution"
-                className="block py-2 hover:text-blue-600"
-              >
-                Trading and Distribution
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/Industries/Project"
-                className="block py-2 hover:text-blue-600"
-              >
-                Project
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/Industries/Professional-Services"
-                className="block py-2 hover:text-blue-600"
-              >
-                Professional Services
+              <Link href="/Partners" className="block py-2 hover:text-blue-600">
+                Partners
               </Link>
             </li>
           </ul>
@@ -107,4 +80,4 @@ const IndustryFocusNav = () => {
   );
 };
 
-export default IndustryFocusNav;
+export default InsightsNav;

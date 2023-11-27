@@ -91,7 +91,7 @@ const Intro = () => {
                 className={`${styles["btn-transparent-video"]} text-[#F5F5F5] bg-transparent font-medium sm:font-normal capitalize max-w-max pt-[8px] px-[2rem] sm:px-5 sm:py-2 border-[#fff] border-b-1 flex border-b-1 pl-0 pr-0 m-4`}
               >
                 <Icon path={mdiPlayCircle} size={1} className="inline me-2" />{" "}
-                Co-operate Video
+                Corporate Video
               </Link>
             </div>
           </div>

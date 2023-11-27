@@ -14,6 +14,7 @@ const ContactUs = () => {
 
   const handleCountrySelect = (code) => {
     setSelected(code);
+    handleChange();
   };
 
   const locations = [

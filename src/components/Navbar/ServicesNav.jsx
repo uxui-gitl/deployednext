@@ -27,7 +27,7 @@ const ServicesNav = () => {
       <button
         onClick={handleOnclick}
         type="button"
-        className={`flex max-lg:font-semibold  items-center p-1 max-lg:justify-between max-lg:w-full ${
+        className={`flex font-normal  items-center p-1 max-lg:justify-between max-lg:w-full ${
           show ? "lg:text-neutral-300" : ""
         }`}
       >
@@ -53,23 +53,29 @@ const ServicesNav = () => {
           show ? "opacity-100 " : "opacity-0 hidden top-[2000px]"
         }`}
       >
-        <div className=" pb-4 pt-4 w-full">
-          <span className="text-neutral-800 font-semibold text-base">
-            Our Services
-          </span>
-          <ul className="text-sm text-neutral-500 mt-1 w-full">
+        <div className="  w-full">
+          <ul className="text-sm font-semibold text-[#101828]  w-full">
             <li>
-              <Link href="" className="block py-2 hover:text-blue-600">
+              <Link
+                href="/Our-Services/Business-Consulting"
+                className="block py-2 hover:text-blue-600"
+              >
                 Business Consulting
               </Link>
             </li>
             <li>
-              <Link href="" className="block py-2 hover:text-blue-600">
+              <Link
+                href="/Our-Services/Implementation-and-Global-Rollout"
+                className="block py-2 hover:text-blue-600"
+              >
                 Implementation & Global Rollout
               </Link>
             </li>
             <li>
-              <Link href="" className="block py-2 hover:text-blue-600">
+              <Link
+                href="/Our-Services/Managed-Services"
+                className="block py-2 hover:text-blue-600"
+              >
                 Managed Services
               </Link>
             </li>

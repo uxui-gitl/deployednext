@@ -215,6 +215,7 @@ input:focus {
   padding: 1rem;
   position: sticky;
   top: 0;
+  background-color: transparent !important;
   z-index: 100;
 }
 

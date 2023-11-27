@@ -29,7 +29,7 @@ const SolutionsNav = () => {
       <button
         onClick={() => setShow(!show)}
         type="button"
-        className={`flex items-center p-1 max-lg:font-semibold  transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
+        className={`flex items-center p-1 font-normal transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
           show ? "lg:text-neutral-300 " : ""
         }`}
       >
@@ -51,7 +51,7 @@ const SolutionsNav = () => {
         </svg>
       </button>
       <div
-        className={`relative lg:absolute lg:flex -ml-5 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
+        className={`relative lg:absolute lg:flex lg:-ml-80 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
           show ? "opacity-100 " : "opacity-0 invisible max-lg:hidden"
         }`}
       >
@@ -83,45 +83,65 @@ const SolutionsNav = () => {
             </li>
           </ul>
         </div>
-        <div className="lg:px-8 lg:border-r-[1px] lg:pr-20 py-2 max-lg:pl-6">
-          <li className="text-neutral-500 hover:text-blue-500 py-2">
-            <Link href="#">
-              <span className="my-1 text-neutral-800 font-semibold hover:text-blue-500">
+
+        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
+          <li className="text-[#101828] hover:text-blue-500 pt-2">
+            <Link href="/Solutions/Intelligent-Technologies">
+              <span className="  text-neutral-800 font-semibold hover:text-blue-500">
                 Intelligent Technologies
               </span>
             </Link>
           </li>
 
-          <ul className="text-sm">
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">AI & ML</Link>
+          <ul className="text-sm ml-5 text-[#101828] font-semibold mt-1 w-full">
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/AI-ML">
+                AI & ML
+              </Link>
             </li>
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">RPA</Link>
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/RPA">RPA</Link>
             </li>
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">IIOT</Link>
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/IIOT">IIOT</Link>
             </li>
           </ul>
         </div>
-        <div className="lg:px-8 lg:border-r-[1px] lg:pr-20 py-2 max-lg:pl-6">
-          <li className="text-neutral-500 hover:text-blue-500 py-2">
-            <Link href="#">
-              <span className="my-1 text-neutral-800 font-semibold hover:text-blue-500">
-                Intelligent Technologies
+        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
+          <li className="text-[#101828] hover:text-blue-500 pt-2">
+            <Link href="/Solutions/Data-Insights">
+              <span className="  text-neutral-800 font-semibold hover:text-blue-500">
+                Data Insights
               </span>
             </Link>
           </li>
 
-          <ul className="text-sm">
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">AI & ML</Link>
+          <ul className="text-sm ml-5">
+            <li className="text-[#101828] font-semibold hover:text-blue-500 py-2">
+              <Link href="/Solutions/Cyber-Security">Cyber Security</Link>
             </li>
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">RPA</Link>
+          </ul>
+        </div>
+        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
+          <li className="text-[#101828] hover:text-blue-500 pt-2">
+            <Link href="#">
+              <span className="  text-[#101828] font-semibold hover:text-blue-500">
+                Technology Stack
+              </span>
+            </Link>
+          </li>
+
+          <ul className="text-sm hidden ml-3">
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/AI-ML">
+                AI & ML
+              </Link>
             </li>
-            <li className="text-neutral-500 hover:text-blue-500 py-2">
-              <Link href="#">IIOT</Link>
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/RPA">RPA</Link>
+            </li>
+            <li className="text-[#101828] hover:text-blue-500 py-2">
+              <Link href="/Solutions/Intelligent-Technologies/IIOT">IIOT</Link>
             </li>
           </ul>
         </div>
