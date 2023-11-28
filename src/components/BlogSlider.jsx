@@ -25,7 +25,7 @@ const BlogSlider = () => {
               <>
                 <SwiperSlide key={index}>
                   <div className="bg-white flex items-start flex-col-reverse sm:flex-row justify-start mb-10">
-                    <div className="text-left">
+                    <div className="text-left w-1/2">
                       <h4
                         className={` font-medium text-[#0745D3] uppercase ribbon`}
                       >

@@ -168,7 +168,7 @@ const Testimonials = () => {
         </div>
       </div> */}
 
-      <div className="w-screen-lg mx-auto pl-[2rem] lg:px-0 lg:max-w-screen bg-[#F5F5F5]">
+      <div className="w-screen-lg mx-auto px-[2rem]  lg:px-0 lg:max-w-screen bg-[#F5F5F5]">
         <div className="pt-[5em] pb-[2em]">
           <div className="grid lg:grid-cols-7 grid-cols-1 gap-4">
             <div className="col-span-1 col-start-1 col-end-2 lg:col-start-2 lg:col-end-4 ">

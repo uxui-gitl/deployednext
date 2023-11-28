@@ -105,8 +105,8 @@ const InfotechWeeklyAlt = (props) => {
   return (
     <>
       <div className={` w-full bg-[#f2f4f7] py-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
-          <div className="bg-blue-50 flex items-start flex-col justify-around">
+        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 ">
+          <div className="bg-blue-50 flex items-start flex-col justify-around ">
             <div>
               <h4
                 className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
@@ -128,11 +128,11 @@ const InfotechWeeklyAlt = (props) => {
                 weekly.
               </p>
               <div
-                className={`${styles["containerx"]} flex justify-start text-left `}
+                className={`${styles["containerx"]}  flex justify-start text-left `}
               >
                 <form
                   action=""
-                  className="containerx flex justify-center flex-col sm:flex-row items-center"
+                  className="containerx flex justify-center w-full sm:w-auto my-4 flex-col sm:flex-row items-center"
                 >
                   <input
                     type="email"
@@ -140,7 +140,7 @@ const InfotechWeeklyAlt = (props) => {
                     id=""
                     placeholder="Email Address"
                   />
-                  <button type="submit" className="flex">
+                  <button type="submit" className="flex w-auto mt-4">
                     Join{" "}
                     <Icon
                       path={mdiArrowRight}

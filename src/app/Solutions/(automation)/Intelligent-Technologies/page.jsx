@@ -30,6 +30,9 @@ import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
 
 import styles from "./page.module.css";
+import WhySection from "@/components/WhySection";
+import Benefits from "@/components/Benefits";
+import Expertise from "@/components/Expertise";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -119,34 +122,27 @@ const page = () => {
     },
   ];
 
-  const aglity = [
+  const AdvancedSolutions = [
     {
       _id: 1,
-      title: "Database Migration",
+      title: "Machine Learning",
+      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      cta: "Know More",
+      link: "/",
     },
     {
       _id: 2,
-      title: "Infrastructure Migration ",
+      title: "Artificial Intelligence ",
+      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      cta: "Know More",
+      link: "/",
     },
     {
       _id: 3,
-      title: "Enterprise Platforms Migration",
-    },
-    {
-      _id: 4,
-      title: "Cloud Microservices",
-    },
-    {
-      _id: 5,
-      title: "Disaster Recovery and Enterprise Backup Service",
-    },
-    {
-      _id: 6,
-      title: "Application Migration and Modernization",
-    },
-    {
-      _id: 7,
-      title: "Cloud Monitoring and Reporting ",
+      title: "Robotic Process Automation",
+      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      cta: "Know More",
+      link: "/",
     },
   ];
 
@@ -190,26 +186,28 @@ const page = () => {
       </>
 
       <>
-        <div className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}>
-          <div className="flex flex-col sm:flex-row gap-y-10 justify-center">
-            {[0, 1, 2].map((item, index) => {
+        <div
+          className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}
+          id="productivity"
+        >
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+            {AdvancedSolutions.map((item, index) => {
               return (
-                <div key={index} className="mx-5 bg-white ">
+                <div key={item._id} className="mx-2 bg-white ">
                   <div className="p-5 w-fit ">
                     <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      Machine Learning
+                      {item.title}
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                      With our ability in constructing, training and deploying
-                      ML models, we assure an effective implementation process.
+                      {item.desc}
                     </p>
                   </div>
                   <div className=" w-full bg-[#0745D3] p-5">
                     <Link
-                      href={"/"}
+                      href={item.link}
                       className="text-white  flex transition-all hover:opacity-75  "
                     >
-                      Know More{" "}
+                      {item.cta}{" "}
                       <Icon
                         path={mdiArrowRight}
                         style={{ marginLeft: "0.5em" }}
@@ -226,116 +224,118 @@ const page = () => {
 
       <BlogSlider />
 
+      <Benefits
+        ribbon="Business Benefits "
+        title="Intelli-Tech Advantages of Transforming Business Landscape"
+        desc=""
+        arr={[
+          "Gain competitive edge ",
+          "Streamline operations",
+          "Boost brand value  ",
+          "Gain competitive edge ",
+          "Streamline operations",
+          "Boost brand value  ",
+        ]}
+      ></Benefits>
+
       {/* Business Benefits TO BE CREATED  */}
       <SME />
 
       {/* Why Infotech */}
       <>
-        <div className={` w-full bg-[#F2F4F7] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
+        <WhySection
+          title="Why Godrej Infotech?"
+          desc="Embark on cloud upgradation journey by harnessing our credible
                   assessment process, strategic resources and fluent data
                   migration practice to minimise your business risk, time to
                   market and cost. Our time-tested delivery framework enables
-                  businesses
-                </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* right */}
+                  businesses"
+          ribbon="Spend LESS, GROW MORE"
+        >
+          <div>
             <div>
-              <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </motion.div>
+              <div className="relative">
+                <AnimatePresence>
+                  <motion.div
+                    initial="initial"
+                    whileInView="animate"
+                    custom={1}
+                    viewport={{
+                      once: true,
+                    }}
+                    className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
+                    variants={fadeInAnimationVariant}
+                  >
+                    <Image src={checkout} alt="checkout" />
+                    <p className="text-base font-medium leading-[22px]">
+                      One of the most dedicated and{" "}
+                      <span className="text-[#4C6FFF]">reliable partners</span>{" "}
+                      for Azure Migration Services and Managed Cloud Service
+                      across{" "}
+                    </p>
+                  </motion.div>
 
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
+                  <motion.div
+                    initial="initial"
+                    whileInView="animate"
+                    custom={2}
+                    viewport={{
+                      once: true,
+                    }}
+                    className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
+                    variants={fadeInAnimationVariant}
+                  >
+                    <Image src={checkout} alt="checkout" />
+                    <p className="text-base font-medium leading-[22px]">
+                      <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
+                      Unfailing Cloud Hosting availability managing{" "}
+                      <span className="text-[#4C6FFF]">40000+</span> VMs
+                    </p>
+                  </motion.div>
 
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
+                  <motion.div
+                    initial="initial"
+                    whileInView="animate"
+                    custom={3}
+                    viewport={{
+                      once: true,
+                    }}
+                    className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                    variants={fadeInAnimationVariant}
+                  >
+                    <Image src={checkout} alt="checkout" />
+                    <p className="text-base font-medium leading-[22px]">
+                      <span className="text-[#4C6FFF]">25000+</span> Apps and
+                      Databases migrated
+                    </p>
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
           </div>
-        </div>
+        </WhySection>
       </>
 
+      {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise "
+        title="Future Outlook with Intelligent Technologies  "
+        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "85%",
+            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+          },
+          {
+            title: "$200B",
+            desc: "Forbes forecasts size for AI market by 2026 ",
+          },
+          {
+            title: "$6.6T",
+            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+          },
+        ]}
+      ></Expertise>
       {/* Stats TO BE CREATED */}
       <Testimonials />
 

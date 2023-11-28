@@ -41,7 +41,7 @@ const Review = () => {
         }}
       >
         {/* Offset */}
-        <div
+        {/* <div
           className="w-[13.5%] hidden invisible md:visible lg:w-[24%]"
           style={{
             background: "#07001f",
@@ -52,7 +52,7 @@ const Review = () => {
             zIndex: "99",
             width: "13.4%",
           }}
-        ></div>
+        ></div> */}
         {/* Glassdoor Awards */}
         <SwiperSlide className={`${styles.reviewCardWrap}`}>
           <div

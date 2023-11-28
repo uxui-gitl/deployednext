@@ -122,7 +122,7 @@ const ContactUs = () => {
     Name: "",
     Phoneno: "",
     Email: "",
-    Country: "",
+    Country: "IN",
     Query: "",
     Consent: "Y",
   });

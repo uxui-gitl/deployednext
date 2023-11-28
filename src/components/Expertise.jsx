@@ -18,11 +18,11 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
-const Benefits = ({ ribbon, title, desc, arr, children }) => {
+const Expertise = ({ ribbon, title, desc, arr, children }) => {
   return (
     <>
       <div
-        className={` w-full bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
+        className={`bg-expertise w-full bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
       >
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto   pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
@@ -53,7 +53,7 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
           {/* right */}
           <div
             className=" min-h-48 max-h-[75vh] overflow-hidden"
-            id="benefits-slide"
+            id="expertise-slide"
           >
             <Swiper
               spaceBetween={30}
@@ -75,17 +75,17 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
                 // when window width is >= 320px
                 320: {
                   slidesPerView: 2,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 // when window width is >= 480px
                 480: {
                   slidesPerView: 3,
-                  spaceBetween: 30,
+                  spaceBetween: 20,
                 },
                 // when window width is >= 640px
                 640: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 30,
                 },
               }}
               effect={"creative"}
@@ -105,15 +105,13 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
               {arr.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#EDF1FF] border-r-4 p-20 rounded-sm text-[#101828] min-h-fit max-h-60"
+                  className=" px-20 py-5 rounded-sm text-[#EDF1FF] min-h-fit max-h-60"
                 >
                   <div>
-                    <div className="mr-4">
-                      <Icon path={mdiDomain} size={3} />
-                    </div>
-                    <p className="text-[26px] font-bold leading-[36px]">
-                      {item}
+                    <p className="text-[36px] item-title font-bold leading-[46px]">
+                      {item.title}
                     </p>
+                    <p className="item-desc">{item.desc}</p>
                   </div>
                 </SwiperSlide>
               ))}{" "}
@@ -125,4 +123,4 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
   );
 };
 
-export default Benefits;
+export default Expertise;

@@ -9,7 +9,7 @@ const Navlist = ({ main, submain, path, path2 }) => {
       href="#"
       onMouseEnter={() => setFocus(true)}
       onMouseLeave={() => setFocus(false)}
-      className="py-3 flex items-center space-x-3 cursor-pointer"
+      className="py-3 flex items-center space-x-3  cursor-pointer"
     >
       <svg
         aria-hidden="true"
@@ -32,7 +32,7 @@ const Navlist = ({ main, submain, path, path2 }) => {
         } transition ease-in duration-100   text-[14px]`}
       >
         <div
-          className={`font-semibold transition ease-in duration-100  ${
+          className={`font-semibold  transition ease-in duration-100  ${
             focus ? "text-blue-600" : "text-neutral-800"
           } text-base leading-5`}
         >

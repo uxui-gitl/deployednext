@@ -7,7 +7,7 @@ import Link from "next/link";
 const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
   return (
     <div className="text-center">
-      <div className="relative w-full h-[90vh] overflow-hidden px-20">
+      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden px-[2rem] sm:px-20">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover sm:object-fill z-0"
           autoPlay
@@ -17,25 +17,17 @@ const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="flex justify-start items-center h-[100vh] sm:h-[90vh]">
+        <div className="flex justify-start items-center h-[100vh]  sm:h-[90vh]">
           <div
-            className={` flex text-white flex-col justify-start items-start max-w-max gap-5`}
+            className={` flex text-white flex-col justify-start items-start w-full sm:max-w-max gap-5`}
           >
             <h1
-              className={`w-[${width}] z-50 hidden sm:block sm:text-[68px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[84px]	text-white font-semibold text-left`}
+              className={`sm:w-[${width}] w-full z-50 sm:block sm:text-[42px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[52px]	text-white font-bold sm:font-semibold text-left`}
             >
               {title}
             </h1>
 
-            <h1 className="z-50 sm:hidden   text-[34px] leading-[44px] 	text-white font-bold text-left">
-              {title}
-            </h1>
-
-            <h4 className="z-50 hidden text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
-              {desc}
-            </h4>
-
-            <h4 className="z-50 sm:hidden text-left text-white text-[14px] sm:text-[16px] px-7 leading-[22px] mb-[24px]">
+            <h4 className="z-50 text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
               {desc}
             </h4>
 

@@ -99,7 +99,7 @@
   transition: 0.2s all;
   scale: 1.05;
 }
-
+/*
 @media (max-width: 600px) {
   .containerx input[type="email"] {
     margin-right: 0;
@@ -108,4 +108,4 @@
   .containerx button[type="submit"] {
     width: 12.5em;
   }
-}
+} */

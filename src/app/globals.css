@@ -281,3 +281,39 @@ input:focus {
 #benefits-slide .swiper-pagination {
   display: none !important;
 }
+
+/* Expertise slider */
+#expertise-slide .swiper-slide {
+  width: 90%;
+}
+#expertise-slide .swiper-slide-active {
+  width: 100%;
+}
+#expertise-slide .swiper-slide .item-title {
+  font-size: 36px !important;
+  line-height: 46px !important;
+  opacity: 0.25;
+}
+#expertise-slide .swiper-slide .item-desc {
+  opacity: 0.25;
+}
+#expertise-slide .swiper-slide-active .item-title {
+  font-size: 90px !important;
+  line-height: 106px !important;
+  font-weight: bold !important;
+  opacity: 1;
+}
+#expertise-slide .swiper-slide-active .item-desc {
+  opacity: 1;
+}
+
+#expertise-slide .swiper-pagination {
+  display: none !important;
+}
+
+.bg-expertise {
+  background-image: url("../../public/expertiseBg.png");
+  background-color: #31094a;
+  background-size: cover;
+  background-position: center;
+}

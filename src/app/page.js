@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
-      <main>
+      <main className=" overflow-hidden">
         <Intro />
         <ClientLogos />
         <ACT />
