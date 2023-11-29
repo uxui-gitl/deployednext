@@ -140,7 +140,7 @@ const InfotechWeeklyAlt = (props) => {
                     id=""
                     placeholder="Email Address"
                   />
-                  <button type="submit" className="flex w-auto mt-4">
+                  <button type="submit" className="flex w-auto mt-4 sm:mt-0">
                     Join{" "}
                     <Icon
                       path={mdiArrowRight}

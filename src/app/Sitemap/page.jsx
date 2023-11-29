@@ -18,7 +18,7 @@ const page = () => {
                       className=" block pb-1 hover:underline w-fit py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
-                      ✅ Intelligent Technologies [2]
+                      ✔️ Intelligent Technologies
                     </Link>
                     <div className="ml-12">
                       <ul>
@@ -28,7 +28,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/AI-ML"}
                           >
-                            ✅ AI & ML [2]
+                            ✔️ AI & ML
                           </Link>
                         </li>
                         <li>

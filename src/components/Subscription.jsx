@@ -43,7 +43,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
               <div className="mb-6">
                 <label
                   htmlFor="fullname"
-                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#f2f4f7] z-20"
+                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Full Name
                 </label>
@@ -55,13 +55,13 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                   disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                   invalid:border-pink-500 invalid:text-pink-600
-                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#f2f4f7] rounded-sm relative"
+                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#fff] rounded-sm relative"
                 />
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="email"
-                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#f2f4f7] z-20"
+                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Email Address
                 </label>
@@ -73,13 +73,13 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                   disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                   invalid:border-pink-500 invalid:text-pink-600
-                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#f2f4f7] rounded-sm relative"
+                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#fff] rounded-sm relative"
                 />
               </div>
               <div className="mb-6">
                 <label
                   htmlFor="message"
-                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#f2f4f7] z-20"
+                  className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Message (Optional)
                 </label>
@@ -92,7 +92,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                   disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                   invalid:border-pink-500 invalid:text-pink-600
-                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#f2f4f7] rounded-sm relative"
+                  focus:invalid:border-pink-500 focus:invalid:ring-pink-500 p-3 border-2 border-[#98A2B3] bg-[#fff] rounded-sm relative"
                 ></textarea>
               </div>
 

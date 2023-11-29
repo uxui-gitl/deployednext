@@ -18,6 +18,7 @@ import MLExpertise from "../../../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
+import Benefits from "@/components/Benefits";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -31,6 +32,102 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+const AIOfferings = [
+  {
+    _id: 1,
+    title: "Computer Vision ",
+    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Real-time Object Detection",
+        url: "/",
+      },
+      {
+        title: "Data Labelling",
+        url: "/",
+      },
+      {
+        title: "Security Solution",
+        url: "/",
+      },
+      {
+        title: "Equipment Monitoring",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 2,
+    title: "Speech &  Language ",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Transcription Services",
+        url: "/",
+      },
+      {
+        title: "Speech recognition",
+        url: "/",
+      },
+      {
+        title: "Language translation",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 3,
+    title: "Document  Understanding",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Optical Character Recognition (OCR)",
+        url: "/",
+      },
+      {
+        title: "Text extraction",
+        url: "/",
+      },
+      {
+        title: "Optical Character Recognition - PDF",
+        url: "/",
+      },
+      {
+        title: "AP Automation ",
+        url: "/",
+      },
+    ],
+  },
+
+  {
+    _id: 4,
+    title: "Conversational AI",
+    desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Document processing",
+        url: "/",
+      },
+      {
+        title: "Sentiment analysis",
+        url: "/",
+      },
+      {
+        title: "Chatbots and Virtual Assistants",
+        url: "/",
+      },
+    ],
+  },
+];
 
 const page = () => {
   return (
@@ -98,64 +195,45 @@ const page = () => {
             </div>
           </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-4">
-            {[0, 1, 2, 3].map((item, index) => (
-              <div className="bg-[#EDF1FF] p-5" key={index}>
-                <div className="p-4 pb-0">
-                  <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
-                    Computer Vision
-                  </p>
-                  <p className="text-[#101828] text-[12px] font-normal my-4 leading-[18px]">
-                    We specialize in custom video and image analysis tool
-                    development for computer vision and machine vision systems.
-                    Our expert team leverages advanced technologies like OpenCV
-                    to optimize existing computer vision algorithms or develop
-                    entirely new algorithms based on mathematical models
-                  </p>
-                  <ul className="my-8">
-                    <li className=" border-b-2 border-[#DBDBDB] py-2 ">
-                      <Link
-                        href={"/"}
-                        className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                      >
-                        Real-time Object Detection
-                      </Link>
-                    </li>
-                    <li className=" border-b-2 border-[#DBDBDB] py-2 ">
-                      <Link
-                        href={"/"}
-                        className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                      >
-                        Data Labelling
-                      </Link>
-                    </li>
-                    <li className=" border-b-2 border-[#DBDBDB] py-2 ">
-                      <Link
-                        href={"/"}
-                        className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                      >
-                        Security Solution
-                      </Link>
-                    </li>
-                    <li className=" border-b-2 border-[#DBDBDB] py-2 ">
-                      <Link
-                        href={"/"}
-                        className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                      >
-                        Equipment Monitoring
-                      </Link>
-                    </li>
-                  </ul>
-                  <Link
-                    href={"/"}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    Explore Service{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
+            {AIOfferings.map((item, index) => (
+              <div className="bg-[#EDF1FF] p-5" key={item._id}>
+                <div className="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
+                      {item.title}
+                    </p>
+                    <p className="text-[#101828] text-[12px] font-normal my-4 leading-[18px]">
+                      {item.desc}
+                    </p>
+                  </div>
+                  <div>
+                    <ul className="my-8">
+                      {item.links.map((list, index) => (
+                        <li
+                          key={index}
+                          className=" border-b-2 border-[#DBDBDB] py-2 "
+                        >
+                          <Link
+                            href={list.url}
+                            className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                          >
+                            {list.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={item.ctaUrl}
+                      className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
@@ -252,6 +330,19 @@ const page = () => {
       </>
 
       {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        title="Benefits of AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
+        arr={[
+          "Process and analyze vast volumes of data",
+          "Ensure Uniformity in Financial Information",
+          "Boost brand value  ",
+          "Process and analyze vast volumes of data",
+          "Ensure Uniformity in Financial Information",
+          "Boost brand value  ",
+        ]}
+      ></Benefits>
       {/* Industry Spotlight Slider */}
 
       {/* Why choose gitl and ai and ml */}
@@ -273,9 +364,10 @@ const page = () => {
           >
             <Image src={checkout} alt="checkout" />
             <p className="text-base font-medium leading-[22px]">
-              One of the most dedicated and{" "}
-              <span className="text-[#4C6FFF]">reliable partners</span> for
-              Azure Migration Services and Managed Cloud Service across{" "}
+              <span className="text-[#4C6FFF]">
+                Exceed customer expectations
+              </span>
+              and deliver AI and ML solutions in most effective way
             </p>
           </motion.div>
 
@@ -291,9 +383,10 @@ const page = () => {
           >
             <Image src={checkout} alt="checkout" />
             <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">1 Billion+</span> Unfailing Cloud
-              Hosting availability managing{" "}
-              <span className="text-[#4C6FFF]">40000+</span> VMs
+              Fully signed Non-Disclosure Agreement (NDA) to
+              <span className="text-[#4C6FFF]">
+                protect your sensitive information
+              </span>
             </p>
           </motion.div>
 
@@ -309,8 +402,11 @@ const page = () => {
           >
             <Image src={checkout} alt="checkout" />
             <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">25000+</span> Apps and Databases
-              migrated
+              <span className="text-[#4C6FFF]">
+                Deep understanding of your specific business domain
+              </span>{" "}
+              is crucial for creating AI and ML solutions that truly meet your
+              needs
             </p>
           </motion.div>
         </AnimatePresence>

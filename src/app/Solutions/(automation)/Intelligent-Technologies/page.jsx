@@ -184,7 +184,6 @@ const page = () => {
           </div>
         </div>
       </>
-
       <>
         <div
           className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}

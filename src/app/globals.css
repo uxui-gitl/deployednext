@@ -317,3 +317,10 @@ input:focus {
   background-size: cover;
   background-position: center;
 }
+
+.bg-rpa {
+  background-image: url("../../public/bgEcomScreen.png");
+  background-color: #31094a;
+  background-size: cover;
+  background-position: center;
+}

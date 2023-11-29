@@ -9,6 +9,7 @@ import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
+import { mdiCheckboxMultipleMarked } from "@mdi/js";
 
 import inforCloudSuite from "../../../../../../public/inforCloudSuite.png";
 import Dynamic365 from "../../../../../../public/Dynamic365.png";
@@ -17,6 +18,12 @@ import Azure from "../../../../../../public/azure.png";
 import RPAPlaceholder from "../../../../../../public/RPAPlaceholder.png";
 
 import MLExpertise from "../../../../../../public/MLExpertise.png";
+import scalable1 from "../../../../../../public/scalable1.png";
+import scalable2 from "../../../../../../public/scalable2.png";
+import scalable3 from "../../../../../../public/scalable3.png";
+import scalable4 from "../../../../../../public/scalable4.png";
+import scalable5 from "../../../../../../public/scalable5.png";
+import scalable6 from "../../../../../../public/scalable6.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
@@ -33,6 +40,154 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+const RPAServiceOfferings = [
+  {
+    _id: 1,
+    title: "Deep Learning",
+    desc: "Our deep learning expertise is about making data come to life. We use these cutting-edge practices to create solutions that automate complex tasks data-driven",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "MLExpertise",
+  },
+  {
+    _id: 2,
+    title: "Feasibility Check Services ",
+    desc: "A comprehensive platform for restaurants, pubs, cafes, food-halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "MLExpertise",
+  },
+  {
+    _id: 3,
+    title: "RPA Deployment ",
+    desc: "A seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "MLExpertise",
+  },
+  {
+    _id: 4,
+    title: "RPA Managed Services ",
+    desc: "A comprehensive platform for restaurants, pubs, cafes, food-halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "MLExpertise",
+  },
+];
+
+const ConsiderRPA = [
+  {
+    _id: 1,
+    title: "Extensive Customization",
+    desc: "Comprehensive customization options that are tailored to explicit demands, workflows and processes, delivering a more competent and personalized CRM experience",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 2,
+    title: "Effortless Integration",
+    desc: " Seamless integration capability with Microsoft Outlook and Infor CloudSuite ERP systems, facilitating organizations to have an integrated view of customer information, minimizing data silos and augmenting collaboration through distinct structures",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+];
+
+const UseCases = [
+  {
+    _id: 1,
+    title: "Incident Management Tickets ",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 2,
+    title: "Employee Access Creation ",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 3,
+    title: "Workflow Automation",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 4,
+    title: "Document Management",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 5,
+    title: "Team and Territory Management",
+    cta: "Know More",
+    link: "/",
+  },
+];
+
+const RPACards = [
+  {
+    _id: 1,
+    title: "Infrastructure Setup ",
+    keyword: "Enable",
+    color: "032573",
+    bgcolor1: "7491D4",
+    bgcolor2: "EDF1FF",
+    bgcolor3: "0745D3",
+    icon: "scalable1",
+  },
+  {
+    _id: 2,
+    title: "Project Governance ",
+    keyword: "Prepare",
+    color: "806113",
+    bgcolor1: "F5D687",
+    bgcolor2: "FFF8E5",
+    bgcolor3: "F4C447",
+    icon: "scalable2",
+  },
+  {
+    _id: 3,
+    title: "Workflow Design ",
+    keyword: "Design",
+    color: "224D37",
+    bgcolor1: "6D917F",
+    bgcolor2: "E5F8EE",
+    bgcolor3: "429268",
+    icon: "scalable3",
+  },
+  {
+    _id: 4,
+    title: "Workflow  Development ",
+    keyword: "Build",
+    color: "4E6EF2",
+    bgcolor1: "8CA3FF",
+    bgcolor2: "EDF1FF",
+    bgcolor3: "4C6FFF",
+    icon: "scalable4",
+  },
+  {
+    _id: 5,
+    title: "Quality  Assurance ",
+    keyword: "Sustain",
+    color: "732822",
+    bgcolor1: "B56964",
+    bgcolor2: "FEEDED",
+    bgcolor3: "B42318",
+    icon: "scalable6",
+  },
+  {
+    _id: 6,
+    title: "Hyper Care ",
+    keyword: "Sustain",
+    color: "DDDDDE",
+    bgcolor1: "575D66",
+    bgcolor2: "F5F5F5",
+    bgcolor3: "475467",
+    icon: "scalable6",
+  },
+];
 
 const page = () => {
   return (
@@ -61,27 +216,28 @@ const page = () => {
             </div>
           </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
-            {[0, 1].map((item, index) => (
-              <div className="flex flex-col sm:flex-row  bg-white" key={index}>
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
                 <Image
                   src={RPAPlaceholder}
                   className="w-[100%] sm:w-fit"
                   alt="ML Expertise"
                 />
-                <div className="p-4 pb-0">
+                <div className="p-8">
                   <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
-                    Extensive Customization
+                    {item.title}
                   </p>
                   <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    Comprehensive customization options that are tailored to
-                    explicit demands, workflows and processes, delivering a more
-                    competent and personalized CRM experience
+                    {item.desc}
                   </p>
                   <Link
-                    href={"/"}
+                    href={item.ctaUrl}
                     className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
-                    Know More{" "}
+                    {item.cta}{" "}
                     <Icon
                       path={mdiArrowRight}
                       style={{ marginLeft: "0.5em" }}
@@ -145,8 +301,8 @@ const page = () => {
             </div>
           </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {[0, 1, 2, 3].map((item, index) => (
-              <div className="" key={index}>
+            {RPAServiceOfferings.map((item, index) => (
+              <div className="" key={item._id}>
                 <Image
                   src={MLExpertise}
                   className="w-[100%]"
@@ -154,18 +310,16 @@ const page = () => {
                 />
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    Deep Learning
+                    {item.title}
                   </p>
                   <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    Our deep learning expertise is about making data come to
-                    life. We use these cutting-edge practices to create
-                    solutions that automate complex tasks data-driven
+                    {item.desc}
                   </p>
                   <Link
-                    href={"/"}
+                    href={item.ctaUrl}
                     className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
-                    Know More{" "}
+                    {item.cta}{" "}
                     <Icon
                       path={mdiArrowRight}
                       style={{ marginLeft: "0.5em" }}
@@ -181,7 +335,121 @@ const page = () => {
 
       {/* Industry Spotlight */}
       {/* RPA UseCases */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Godrej Infotech RPA Use Cases
+                </h3>
+              </div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  We endeavor to build actual business impact of Robotic Process
+                  Automation (RPA) reforming industries, improving output and
+                  leading digital transformation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+      <>
+        <div className={`bg-rpa w-full pt-48 pb-12 `} id="productivity">
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+            {UseCases.map((item, index) => {
+              return (
+                <div
+                  key={item._id}
+                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                >
+                  <div className="p-5 w-fit ">
+                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div className=" w-full bg-[#0745D3] p-5">
+                    <Link
+                      href={item.link}
+                      className="text-white  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
+
       {/* GITL RPA Cards */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold  ">
+                  GITL RPA
+                </h3>
+              </div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  From inception to upheld brilliance, every stage of our
+                  project lifecycle is precisely devised to optimize your
+                  business processes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+      <>
+        <div className={` w-full pt-48 pb-12 `}>
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+            {RPACards.map((item) => {
+              return (
+                <div
+                  key={item._id}
+                  className={`mx-2  sm:w-[320px] w-fit flex flex-col justify-between`}
+                >
+                  <div
+                    className={`w-full text-2xl font-bold bg-[#${item.bgcolor1}] text-[#${item.color}] p-5`}
+                  >
+                    {item.keyword}
+                  </div>
+                  <div className={`p-5 w-full h-full bg-[#${item.bgcolor2}]`}>
+                    <Image
+                      src={`/${item.icon}.png`}
+                      width={56}
+                      height={56}
+                      alt="scalable"
+                    />
+                    <h4 className={`text-2xl font-bold my-2 text-[#101828]`}>
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div className={`w-full bg-[#${item.bgcolor3}] p-2`}></div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
 
       {/* Subscription */}
       <Subscription
