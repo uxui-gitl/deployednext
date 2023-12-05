@@ -135,7 +135,6 @@ const ContactUs = () => {
       const response = await fetch(
         "https://mailer.godrej.com/godrejinfotechapi/SendEnquiry/SaveEnquiry",
         {
-          mode: "no-cors",
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -151,10 +150,8 @@ const ContactUs = () => {
         }
       );
 
-      // Handle the response as needed
       if (response.ok) {
         console.log("Enquiry saved successfully!");
-        // Additional logic or redirection can be added here
       } else {
         console.error("Error saving enquiry:", response.statusText);
       }

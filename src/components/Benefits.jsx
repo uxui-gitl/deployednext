@@ -112,7 +112,7 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
                       <Icon path={mdiDomain} size={3} />
                     </div>
                     <p className="text-[26px] font-bold leading-[36px]">
-                      {item}
+                      {item.title}
                     </p>
                   </div>
                 </SwiperSlide>

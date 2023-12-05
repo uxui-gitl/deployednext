@@ -27,6 +27,7 @@ import scalable6 from "../../../../../../public/scalable6.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
+import IndustryExpertise from "@/components/IndustryExpertise";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -123,6 +124,29 @@ const UseCases = [
     title: "Team and Territory Management",
     cta: "Know More",
     link: "/",
+  },
+];
+
+const IndustryExperts = [
+  {
+    _id: 1,
+    title: "Manufacturing",
+    image: "manufacturing",
+  },
+  {
+    _id: 2,
+    title: "Accounts and Finance",
+    image: "finance",
+  },
+  {
+    _id: 3,
+    title: "HR",
+    image: "hr",
+  },
+  {
+    _id: 4,
+    title: "IT Infra",
+    image: "itinfra",
   },
 ];
 
@@ -393,6 +417,15 @@ const page = () => {
         </div>
       </>
 
+      {/* Industry Expertise Slider */}
+      <IndustryExpertise
+        heading="Industry Expertise"
+        desc="Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector"
+        list={IndustryExperts}
+      />
+
       {/* GITL RPA Cards */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
@@ -419,7 +452,7 @@ const page = () => {
         </div>
       </>
       <>
-        <div className={` w-full pt-48 pb-12 `}>
+        <div className={` w-full pb-12 `}>
           <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
             {RPACards.map((item) => {
               return (

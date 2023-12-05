@@ -5,7 +5,7 @@ import React from "react";
 import styles from "./JobList.module.css";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 import { motion } from "framer-motion";
@@ -25,6 +25,39 @@ const fadeInAnimationVariant = {
 };
 
 const JobList = (props) => {
+  const [vacancies, setVacancies] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              Location: "PLANT-10",
+              // Your request payload
+            }),
+          }
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          setVacancies(data);
+        } else {
+          console.error("Failed to fetch data");
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -41,7 +74,7 @@ const JobList = (props) => {
           </div>
         </div>
         <motion.div className="container grid grid-cols-1 gap-4">
-          {[0, 1, 2].map((index) => (
+          {vacancies.map((vacancy, index) => (
             <motion.div
               key={index}
               variants={fadeInAnimationVariant}

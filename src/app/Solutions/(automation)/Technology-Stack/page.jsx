@@ -28,6 +28,7 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
 import InsightSlider from "@/components/InsightSlider";
+import Benefits from "@/components/Benefits";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -41,6 +42,90 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+const TechStackOfferings = [
+  {
+    _id: 1,
+    title: "Custom Application Development",
+    image: "CustomApplicationDevelopment",
+    desc: "With our extensive experience in the global marketplace, we understand necessitating a bespoke software solution that goes beyond off-the-shelf offerings. We ensure a truly tailored experience for our valued clientele",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 2,
+    title: "Legacy Modernisation",
+    image: "LegacyModernisation",
+    desc: "From effectively optimizing system uptime to impeccably transiting from a colossal architecture to a microservices-based environment, we redesign and rebuild your existing application with accuracy and adeptness",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 3,
+    title: "Application managed services",
+    image: "Applicationmanagedservices",
+    desc: "We offer instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results that align seamlessly with your IT and business objectives",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 4,
+    title: "Application Testing Services",
+    image: "ApplicationTestingServices",
+    desc: "With On-site, Off-shore and Hybrid catering, we conduct rigorous testing and validation across multiple scopes such as functionality, security, integration, compatibility, performance, data migration and UI/UX, trailed by user acceptance testing",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 5,
+    title: "Mobile Application ",
+    image: "MobileApplication",
+    desc: "We deliver every solution to our clients that is needed on fingertips. Experience uniform connectivity and enriched user engagement with our comprehensive cycle of mobile app development services",
+    cta: "Know More",
+    link: "/",
+  },
+  {
+    _id: 6,
+    title: "Enterprise Application Integration ",
+    image: "EnterpriseApplicationIntegration",
+    desc: "We foster business growth and drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications",
+    cta: "Know More",
+    link: "/",
+  },
+];
+
+const BenefitsData = [
+  {
+    _id: 1,
+    icon: "",
+    title: "Process and analyze vast volumes of data",
+  },
+  {
+    _id: 2,
+    icon: "",
+    title: "Ensure Uniformity in Financial Information",
+  },
+  {
+    _id: 3,
+    icon: "",
+    title: "Boost brand value",
+  },
+  {
+    _id: 4,
+    icon: "",
+    title: "Process and analyze vast volumes of data",
+  },
+  {
+    _id: 5,
+    icon: "",
+    title: "Ensure Uniformity in Financial Information",
+  },
+  {
+    _id: 6,
+    icon: "",
+    title: "Boost brand value",
+  },
+];
 
 const page = () => {
   return (
@@ -105,27 +190,28 @@ const page = () => {
             </div>
           </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-3">
-            {[0, 1, 2, 3, 4, 5].map((item, index) => (
-              <div className="" key={index}>
-                <Image
-                  src={techStack1}
-                  className="w-[100%]"
-                  alt="ML Expertise"
-                />
+            {TechStackOfferings.map((item) => (
+              <div className="" key={item._id}>
+                <div className="min-w-[200px] min-h-[315px] relative">
+                  <Image
+                    className="w-[100%]"
+                    src={`/solutions/technology-stack/${item.image}.png`}
+                    fill={true}
+                    alt={item.image}
+                  />
+                </div>
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    Custom Application Development
+                    {item.title}
                   </p>
                   <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    With our extensive experience in the global marketplace, we
-                    understand necessitating a bespoke software solution that
-                    goes beyond
+                    {item.desc}
                   </p>
                   <Link
-                    href={"/"}
+                    href={item.link}
                     className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
-                    Know More{" "}
+                    {item.cta}
                     <Icon
                       path={mdiArrowRight}
                       style={{ marginLeft: "0.5em" }}
@@ -143,6 +229,14 @@ const page = () => {
       <InsightSlider />
 
       {/* Tech Stack Benefit Vertical Slider */}
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Tech stack Benefits"
+        title="Benefits of Application Development with Our Technology Stack Expertise "
+        desc=""
+        arr={BenefitsData}
+      ></Benefits>
+
       {/* Engg. with our Methodology */}
 
       {/* WhySection GITL */}

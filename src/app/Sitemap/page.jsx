@@ -37,7 +37,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/RPA"}
                           >
-                            ✅ RPA [3]
+                            ✔️ RPA
                           </Link>
                         </li>
                         <li>
