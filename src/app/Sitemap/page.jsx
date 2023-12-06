@@ -58,7 +58,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Technology-Stack"}
                     >
-                      ✅ Technology Stack [2]
+                      ✔️ Technology Stack [1 - Methodology]
                     </Link>
                   </li>
                   <li>

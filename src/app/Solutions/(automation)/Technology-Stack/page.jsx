@@ -97,32 +97,32 @@ const TechStackOfferings = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "",
+    icon: "gear",
     title: "Process and analyze vast volumes of data",
   },
   {
     _id: 2,
-    icon: "",
+    icon: "diamond",
     title: "Ensure Uniformity in Financial Information",
   },
   {
     _id: 3,
-    icon: "",
+    icon: "eyeGear",
     title: "Boost brand value",
   },
   {
     _id: 4,
-    icon: "",
+    icon: "gear",
     title: "Process and analyze vast volumes of data",
   },
   {
     _id: 5,
-    icon: "",
+    icon: "diamond",
     title: "Ensure Uniformity in Financial Information",
   },
   {
     _id: 6,
-    icon: "",
+    icon: "eyeGear",
     title: "Boost brand value",
   },
 ];

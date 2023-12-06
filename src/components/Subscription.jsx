@@ -1,10 +1,71 @@
-import React from "react";
+"use client";
+
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import Image from "next/image";
+import React, { useState } from "react";
 import Link from "next/link";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 const Subscription = ({ title, blue, title2, desc }) => {
+  const [formData, setFormData] = useState({
+    Name: "",
+    Email: "",
+    Query: "",
+    Consent: "Y",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Send the POST request to the API endpoint
+      const response = await fetch(
+        "https://mailer.godrej.com/godrejinfotechapi/SendEnquiry/RegistrationEnquiry",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            Name: formData.Name,
+            Email: formData.Email,
+            Query: formData.Query,
+            Consent: formData.Consent,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        console.log("Enquiry saved successfully!");
+
+        Swal.fire({
+          icon: "success",
+          title: "Enquiry saved successfully!",
+          showConfirmButton: false,
+          timer: 1500, // Automatically close after 1.5 seconds
+        });
+        setFormData({
+          Name: "",
+          Email: "",
+          Query: "",
+          Consent: "",
+        });
+      } else {
+        console.error("Error saving enquiry:", response.statusText);
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
   return (
     <>
       <div className={` w-full bg-white py-32`}>
@@ -39,17 +100,20 @@ const Subscription = ({ title, blue, title2, desc }) => {
             </div>
           </div>
           <div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label
-                  htmlFor="fullname"
+                  htmlFor="name"
                   className="absolute px-2 py-0 ml-4 -mt-[0.55rem] hover:text-blue-500 focus:text-blue-500 active:text-blue-500 text-[12px] bg-[#fff] z-20"
                 >
                   Full Name
                 </label>
                 <input
+                  name="Name"
+                  value={formData.Name}
+                  onChange={handleChange}
                   type="text"
-                  id="fullname"
+                  id="name"
                   placeholder="Darshan Sawant"
                   className="mt-1 block w-full px-3 py-2 text-sm shadow-sm placeholder-slate-400
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
@@ -68,6 +132,9 @@ const Subscription = ({ title, blue, title2, desc }) => {
                 <input
                   type="email"
                   id="email"
+                  value={formData.Email}
+                  name="Email"
+                  onChange={handleChange}
                   placeholder="you@company.com"
                   className="mt-1 block w-full px-3 py-2 text-sm shadow-sm placeholder-slate-400
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
@@ -84,6 +151,9 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   Message (Optional)
                 </label>
                 <textarea
+                  name="Query"
+                  value={formData.Query}
+                  onChange={handleChange}
                   type="text"
                   id="message"
                   placeholder="We would like to leverage our business potential
@@ -98,7 +168,13 @@ const Subscription = ({ title, blue, title2, desc }) => {
 
               <div className="mb-6">
                 <label className="flex justify-start items-start gap-3 mb-5">
-                  <input type="checkbox" class="default:ring-2" />
+                  <input
+                    type="checkbox"
+                    class="default:ring-2"
+                    name="Consent"
+                    value={formData.Consent}
+                    onChange={handleChange}
+                  />
                   <p>
                     I consent to the processing of my personal data by Godrej
                     Infotech in accordance with the{" "}
@@ -110,8 +186,8 @@ const Subscription = ({ title, blue, title2, desc }) => {
               </div>
 
               <div className="max-w-max flex justify-start items-center my-5">
-                <Link
-                  href={"/"}
+                <button
+                  type="submit"
                   className="min-w-max flex bg-[#0745D3] py-2 px-10 border-2 border-[#0745D3] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
                 >
                   Send Message
@@ -120,7 +196,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                     style={{ marginLeft: "0.5em" }}
                     size={1}
                   />
-                </Link>
+                </button>
               </div>
             </form>
           </div>

@@ -46,7 +46,8 @@ const JobList = (props) => {
 
         if (response.ok) {
           const data = await response.json();
-          setVacancies(data);
+          console.log(data.model);
+          setVacancies(data.model);
         } else {
           console.error("Failed to fetch data");
         }
@@ -89,7 +90,7 @@ const JobList = (props) => {
               <div className={` shadow-md hover:shadow-xl rounded-md`}>
                 <div className="relative py-5 px-8">
                   <h5 className="text-[20px] font-bold leading-[42px] text-[#101828]">
-                    Experienced Backend Engineer, Music Vertical Platform
+                    {vacancy.designation}
                   </h5>
                   <p className="text-[14px] font-medium leading-[22px] mb-6">
                     We&apos;re on the lookout for the curious, those who think
@@ -98,10 +99,10 @@ const JobList = (props) => {
                   </p>
                   <div className="    flex justify-start items-center">
                     <p className="text-sm bg-[#EDF1FF] text-[#101828] px-2 py-1 rounded font-medium mr-4">
-                      Mumbai
+                      {vacancy.location}
                     </p>
                     <p className="text-sm bg-[#FFF8E5] text-[#101828] px-2 py-1 rounded font-medium mr-4">
-                      Machine Learning
+                      {vacancy.functionsDesc}
                     </p>
                     <p className="text-sm bg-[#E5F8EE] text-[#101828] px-2 py-1 rounded font-medium mr-4">
                       3 years experience

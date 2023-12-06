@@ -8,7 +8,10 @@ import styles from "./page.module.css";
 import { mdiArrowRight } from "@mdi/js";
 import Icon from "@mdi/react";
 import ReactFlagsSelect from "react-flags-select";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
+const MySwal = withReactContent(Swal);
 const ContactUs = () => {
   const [selected, setSelected] = useState("IN");
 
@@ -152,6 +155,20 @@ const ContactUs = () => {
 
       if (response.ok) {
         console.log("Enquiry saved successfully!");
+        Swal.fire({
+          icon: "success",
+          title: "Enquiry saved successfully!",
+          showConfirmButton: false,
+          timer: 1500, // Automatically close after 1.5 seconds
+        });
+        setFormData({
+          Name: "",
+          Phoneno: "",
+          Email: "",
+          Country: "IN",
+          Query: "",
+          Consent: "Y",
+        });
       } else {
         console.error("Error saving enquiry:", response.statusText);
       }

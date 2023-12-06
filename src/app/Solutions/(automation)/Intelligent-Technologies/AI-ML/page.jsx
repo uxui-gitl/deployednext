@@ -129,6 +129,39 @@ const AIOfferings = [
   },
 ];
 
+const BenefitsData = [
+  {
+    _id: 1,
+    icon: "gear",
+    title: "Gain competitive edge",
+  },
+  {
+    _id: 2,
+    icon: "diamond",
+    title: "Streamline operations",
+  },
+  {
+    _id: 3,
+    icon: "eyeGear",
+    title: "Boost brand value",
+  },
+  {
+    _id: 4,
+    icon: "gear",
+    title: "Gain competitive edge",
+  },
+  {
+    _id: 5,
+    icon: "diamond",
+    title: "Streamline operations",
+  },
+  {
+    _id: 6,
+    icon: "eyeGear",
+    title: "Boost brand value",
+  },
+];
+
 const page = () => {
   return (
     <>
@@ -334,14 +367,7 @@ const page = () => {
         ribbon="Benefits "
         title="Benefits of AI&ML "
         desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
-        arr={[
-          "Process and analyze vast volumes of data",
-          "Ensure Uniformity in Financial Information",
-          "Boost brand value  ",
-          "Process and analyze vast volumes of data",
-          "Ensure Uniformity in Financial Information",
-          "Boost brand value  ",
-        ]}
+        arr={BenefitsData}
       ></Benefits>
       {/* Industry Spotlight Slider */}
 

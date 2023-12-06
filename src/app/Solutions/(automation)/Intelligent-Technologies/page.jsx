@@ -33,6 +33,7 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import Benefits from "@/components/Benefits";
 import Expertise from "@/components/Expertise";
+import Subscription from "@/components/Subscription";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -146,6 +147,38 @@ const page = () => {
     },
   ];
 
+  const BenefitsData = [
+    {
+      _id: 1,
+      icon: "gear",
+      title: "Gain competitive edge",
+    },
+    {
+      _id: 2,
+      icon: "diamond",
+      title: "Streamline operations",
+    },
+    {
+      _id: 3,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+    {
+      _id: 4,
+      icon: "gear",
+      title: "Gain competitive edge",
+    },
+    {
+      _id: 5,
+      icon: "diamond",
+      title: "Streamline operations",
+    },
+    {
+      _id: 6,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+  ];
   return (
     <>
       <EntIntro
@@ -227,14 +260,7 @@ const page = () => {
         ribbon="Business Benefits "
         title="Intelli-Tech Advantages of Transforming Business Landscape"
         desc=""
-        arr={[
-          "Gain competitive edge ",
-          "Streamline operations",
-          "Boost brand value  ",
-          "Gain competitive edge ",
-          "Streamline operations",
-          "Boost brand value  ",
-        ]}
+        arr={BenefitsData}
       ></Benefits>
 
       {/* Business Benefits TO BE CREATED  */}
@@ -338,7 +364,13 @@ const page = () => {
       {/* Stats TO BE CREATED */}
       <Testimonials />
 
-      <StrategySub />
+      {/* Subscription */}
+      <Subscription
+        title=""
+        blue="Free 30-Minutes"
+        title2="Strategy Session with our Consultant"
+        desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity. "
+      />
       <InfotechWeeklyAlt />
     </>
   );

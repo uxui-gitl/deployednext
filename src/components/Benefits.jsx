@@ -105,11 +105,20 @@ const Benefits = ({ ribbon, title, desc, arr, children }) => {
               {arr.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#EDF1FF] border-r-4 p-20 rounded-sm text-[#101828] min-h-fit max-h-60"
+                  className="bg-[#EDF1FF] border-r-4 px-20 py-10 rounded-sm text-[#101828] min-h-fit max-h-60"
                 >
                   <div>
-                    <div className="mr-4">
-                      <Icon path={mdiDomain} size={3} />
+                    <div className=" -mr-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/icons/${item.icon}.svg`}
+                          width="80"
+                          height="80"
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
                     </div>
                     <p className="text-[26px] font-bold leading-[36px]">
                       {item.title}
