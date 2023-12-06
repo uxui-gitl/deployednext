@@ -31,7 +31,7 @@ const JobList = (props) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL",
+          "https://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL",
           {
             method: "POST",
             headers: {
@@ -46,7 +46,7 @@ const JobList = (props) => {
 
         if (response.ok) {
           const data = await response.json();
-          console.log(data.model);
+          console.log(data);
           setVacancies(data.model);
         } else {
           console.error("Failed to fetch data");
