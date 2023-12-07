@@ -31,14 +31,13 @@ const JobList = (props) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL",
+          "http://gnbnettestapp2.gnb.com/Careerapi/api/SearchVacancy/OpenVacancyGIL",
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              Location: "PLANT-10",
               // Your request payload
             }),
           }
@@ -58,7 +57,9 @@ const JobList = (props) => {
 
     fetchData();
   }, []);
-
+  const formatDate = (dateString) => {
+    return new Date(dateString).toLocaleString();
+  };
   return (
     <>
       <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -88,27 +89,41 @@ const JobList = (props) => {
               className={`flex justify-center items-start flex-col md:flex-col mb-5 gap-5  `}
             >
               <div className={` shadow-md hover:shadow-xl rounded-md`}>
-                <div className="relative py-5 px-8">
-                  <h5 className="text-[20px] font-bold leading-[42px] text-[#101828]">
-                    {vacancy.designation}
-                  </h5>
-                  <p className="text-[14px] font-medium leading-[22px] mb-6">
-                    We&apos;re on the lookout for the curious, those who think
-                    big and want to define the world of tomorrow. At Amazon, you
-                    will grow into the high impact, visionary
-                  </p>
-                  <div className="    flex justify-start items-center">
-                    <p className="text-sm bg-[#EDF1FF] text-[#101828] px-2 py-1 rounded font-medium mr-4">
-                      {vacancy.location}
+                <Link
+                  // href={`https://esptest.godrej.com/ApplEmpQryVac.asp?srNo=${vacancy.srNo}&flag=false&companyCode=GIL`}
+                  href={`/Job-Description/${vacancy.srNo}`}
+                  alt={vacancy.designation}
+                  target="_blank"
+                >
+                  <div className="relative py-5 px-8">
+                    <h5 className="text-[20px] font-bold leading-[42px] text-[#101828]">
+                      {vacancy.designation}
+                    </h5>
+                    <p className="text-[14px] font-medium leading-[22px] mb-6">
+                      We&apos;re on the lookout for the curious, those who think
+                      big and want to define the world of tomorrow. At Godrej
+                      Infotech, you will grow into the high impact, visionary
                     </p>
-                    <p className="text-sm bg-[#FFF8E5] text-[#101828] px-2 py-1 rounded font-medium mr-4">
-                      {vacancy.functionsDesc}
-                    </p>
-                    <p className="text-sm bg-[#E5F8EE] text-[#101828] px-2 py-1 rounded font-medium mr-4">
-                      3 years experience
-                    </p>
+                    <div className="    flex justify-start items-center">
+                      <p className="text-sm bg-[#EDF1FF] text-[#101828] px-2 py-1 rounded font-medium mr-4">
+                        {vacancy.location}
+                      </p>
+                      <p className="text-sm bg-[#FFF8E5] text-[#101828] px-2 py-1 rounded font-medium mr-4">
+                        {vacancy.functionsDesc}
+                      </p>
+                      <p className="text-sm bg-[#E5F8EE] text-[#101828] px-2 py-1 rounded font-medium mr-4">
+                        {vacancy.minExp} - {vacancy.maxExp} Experience
+                      </p>
+                    </div>
                   </div>
-                </div>
+                  <div className="relative pb-5 px-8">
+                    <div className="flex justify-end items-center">
+                      <p className="text-sm text-right italic text-[#101828] px-2 py-1 rounded font-medium ">
+                        Posted on {formatDate(vacancy.lastModifieddate)}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
               </div>
             </motion.div>
           ))}

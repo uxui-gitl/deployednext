@@ -8,10 +8,16 @@ import React from "react";
 import styles from "./page.module.css";
 import EmployeeExperience from "@/sections/employeeExperience/EmployeeExperience";
 import JobList from "@/sections/jobList/JobList";
+import Navbar from "@/components/Navbar";
 
 const Careers = () => {
   return (
     <>
+      <div className={`relative z-[500]`}>
+        <div className={`absolute w-full   `}>
+          <Navbar />
+        </div>
+      </div>
       <Review />
       <Awards />
       <InfotechWeekly />

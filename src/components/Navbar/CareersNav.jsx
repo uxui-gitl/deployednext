@@ -70,7 +70,7 @@ const CareersNav = () => {
             </li>
             <li>
               <Link
-                href="/We-Are-Hiring"
+                href="/Why-Infotech"
                 className="block py-2 hover:text-blue-600"
               >
                 Why Infotech?

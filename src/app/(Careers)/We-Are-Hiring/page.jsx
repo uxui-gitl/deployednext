@@ -54,6 +54,7 @@ const WeAreHiring = () => {
           </div>
         </div>
       </>
+      {/* Job Listing Component */}
       <JobList />
       <>
         <div className={`${styles["container"]} bg-white mt-24 py-24`}>

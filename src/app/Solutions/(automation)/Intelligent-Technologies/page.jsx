@@ -34,6 +34,7 @@ import WhySection from "@/components/WhySection";
 import Benefits from "@/components/Benefits";
 import Expertise from "@/components/Expertise";
 import Subscription from "@/components/Subscription";
+import Navbar from "@/components/Navbar";
 
 const fadeInAnimationVariant = {
   initial: {
