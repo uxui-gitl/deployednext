@@ -10,19 +10,29 @@ import ServicesNav from "./ServicesNav";
 import SolutionsNav from "./SolutionsNav";
 import InsightsNav from "./InsightsNav";
 import CareersNav from "./CareersNav";
+import clsx from "clsx";
 
-const Navbar = () => {
+const Navbar = ({ theme }) => {
   const [showNav, setShowNav] = useState(false);
 
   return (
     <Container>
-      <div className="text-white bg-transparent py-5">
+      {/* <div className={`text-white bg-transparent py-5`}> */}
+      <div
+        className={clsx("py-5", {
+          "text-white": theme !== "dark", // Apply 'text-white' if theme is not dark
+          "text-black": theme === "dark", // Apply 'text-black' if theme is dark
+          "bg-transparent": true, // You can keep common classes outside the object
+        })}
+      >
         <button className="hidden"></button>
         <div className="flex items-center max-lg:justify-between max-lg:flex-row-reverse">
           <div className="flex justify-between items-center max-lg:w-full">
             <Link className="" href="https://deployednext.vercel.app">
               <Image
-                src={"/godrejLogoWhite.svg"}
+                src={
+                  theme !== "dark" ? "/godrejLogoWhite.svg" : "/godrejLogo.svg"
+                }
                 alt="Godrej Infotech Logo"
                 width={163}
                 height={59}
@@ -68,7 +78,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       href={"/About-Us"}
-                      className="  font-normal w-fit flex items-center p-1 hover:text-neutral-300"
+                      className="  font-normal w-fit flex items-center p-1 hover:text-neutral-500"
                     >
                       About Us
                     </Link>
@@ -82,14 +92,14 @@ const Navbar = () => {
                 <div className="lg:hidden max-lg:flex justify-center max-lg:border-[1px] max-lg:mr-4 rounded-md max-lg:bg-neutral-800">
                   <Link
                     href="/Contact-Us"
-                    className="hover:text-neutral-400 max-lg:py-2 font-medium max-lg:text-[16px] max-lg:font-semibold "
+                    className="hover:text-neutral-500 max-lg:py-2 font-medium max-lg:text-[16px] max-lg:font-semibold "
                   >
                     Contact Us
                   </Link>
                 </div>
                 <Link
                   href="/Contact-Us"
-                  className="max-lg:hidden px-8 py-[5px] border-[1px] font-medium rounded-sm hover:text-neutral-400 "
+                  className="max-lg:hidden px-8 py-[5px] border-[1px] font-medium rounded-sm hover:text-neutral-500 "
                 >
                   Contact Us
                 </Link>

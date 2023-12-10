@@ -10,6 +10,7 @@ import Icon from "@mdi/react";
 import ReactFlagsSelect from "react-flags-select";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import Navbar from "@/components/Navbar/Navbar";
 
 const MySwal = withReactContent(Swal);
 const ContactUs = () => {

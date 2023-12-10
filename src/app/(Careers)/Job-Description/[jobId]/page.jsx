@@ -64,50 +64,52 @@ const Jd = ({ params }) => {
             <div className="text-left max-w-screen-2xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2">
               {/* JD summary */}
               <div>
-                <h3 className="text-[42px] leading-[52px] font-bold">
-                  {vacancies[0].designation}
-                </h3>
-                <div className="mb-4">
-                  <h4 className="font-bold text-[20px] leading-[42px]">
-                    Job Summary
-                  </h4>
-                  <p>Essential Qualification: BE/BTech/ME/MTech/MS/MCA</p>
-                  <p>
-                    Essential Experience: {vacancies[0].minExp} -{" "}
-                    {vacancies[0].maxExp}
-                  </p>
-                  <p>
-                    Function : {vacancies[0].functionCode} /{" "}
-                    {vacancies[0].functionsDesc}
-                  </p>
-                </div>
-                <div>
-                  <Image src={Video} alt="Why infotech video" />
-                </div>
-                {/* Apply btn group */}
-                <div className="max-w-max flex justify-start items-center my-5">
-                  <Link
-                    target="_blank"
-                    href={`https://esptest.godrej.com/ApplEmpQryVac.asp?srNo=${vacancies[0].srNo}&flag=false&companyCode=GIL`}
-                    className="min-w-max flex bg-[#0745D3] py-2 px-10 border-2 border-[#0745D3] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
-                  >
-                    Apply Now{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                  <Link
-                    href={"/"}
-                    className="min-w-max flex px-5 font-medium text-base text-[#101828]  transition-all mb-3  hover:opacity-95 hover:scale-105"
-                  >
-                    <Icon
-                      path={mdiShareVariantOutline}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
+                <div className=" fixed">
+                  <h3 className="text-[42px] leading-[52px] font-bold">
+                    {vacancies[0].designation}
+                  </h3>
+                  <div className="mb-4">
+                    <h4 className="font-bold text-[20px] leading-[42px]">
+                      Job Summary
+                    </h4>
+                    <p>Essential Qualification: BE/BTech/ME/MTech/MS/MCA</p>
+                    <p>
+                      Essential Experience: {vacancies[0].minExp} -{" "}
+                      {vacancies[0].maxExp}
+                    </p>
+                    <p>
+                      Function : {vacancies[0].functionCode} /{" "}
+                      {vacancies[0].functionsDesc}
+                    </p>
+                  </div>
+                  <div>
+                    <Image src={Video} alt="Why infotech video" />
+                  </div>
+                  {/* Apply btn group */}
+                  <div className="max-w-max flex justify-start items-center my-5">
+                    <Link
+                      target="_blank"
+                      href={`https://esptest.godrej.com/ApplEmpQryVac.asp?srNo=${vacancies[0].srNo}&flag=false&companyCode=GIL`}
+                      className="min-w-max flex bg-[#0745D3] py-2 px-10 border-2 border-[#0745D3] font-medium text-base text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+                    >
+                      Apply Now{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                    <Link
+                      href={"/"}
+                      className="min-w-max flex px-5 font-medium text-base text-[#101828]  transition-all mb-3  hover:opacity-95 hover:scale-105"
+                    >
+                      <Icon
+                        path={mdiShareVariantOutline}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
                 </div>
               </div>
               {/* JD Desc */}

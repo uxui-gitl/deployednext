@@ -27,6 +27,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import EntIntro from "@/components/EntIntro";
 import Dialog from "@/components/Dialog";
 import { useState } from "react";
+import Capabilities from "@/components/Capabilities";
+import Accordion from "@/components/Accordion";
 export default function Home() {
   const items = [
     {
@@ -47,7 +49,41 @@ export default function Home() {
       cardDetailedText: "This is the third event on the timeline.",
     },
   ];
+
   const [showDialog, setShowDialog] = useState(true);
+
+  const BenefitsData = [
+    {
+      _id: 1,
+      icon: "gear",
+      title: "Process and analyze vast volumes of data",
+    },
+    {
+      _id: 2,
+      icon: "diamond",
+      title: "Ensure Uniformity in Financial Information",
+    },
+    {
+      _id: 3,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+    {
+      _id: 4,
+      icon: "gear",
+      title: "Process and analyze vast volumes of data",
+    },
+    {
+      _id: 5,
+      icon: "diamond",
+      title: "Ensure Uniformity in Financial Information",
+    },
+    {
+      _id: 6,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+  ];
 
   const onClose = () => {
     setShowDialog(false);
@@ -101,10 +137,17 @@ export default function Home() {
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
         {/* <Benefits
-          ribbon="Tech stack Benefits "
-          title="Benefits of Application Development with Our Technology Stack Expertise"
-          desc=""
+          ribbon="Tech stack Benefits"
+  title="Benefits of Application Development with Our Technology Stack Expertise "
+  desc=""
+  arr={BenefitsData}
         ></Benefits> */}
+
+        <Capabilities
+          ribbon="Tech stack Benefits"
+          title="Our Capabilities "
+          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+        />
 
         <>
           {showDialog && (

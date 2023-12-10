@@ -6,7 +6,7 @@ const layout = ({ children }) => {
     <>
       <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
-          <Navbar theme="dark" />
+          <Navbar theme="light" />
         </div>
       </div>
 

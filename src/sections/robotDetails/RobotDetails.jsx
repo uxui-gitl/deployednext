@@ -5,6 +5,7 @@ import Icon from "@mdi/react";
 import { mdiArrowUp } from "@mdi/js";
 import styles from "./robotDetails.module.css";
 import Link from "next/link";
+import { mdiArrowTopRight } from "@mdi/js";
 
 const RobotDetails = () => {
   return (
@@ -21,8 +22,6 @@ const RobotDetails = () => {
           (RPA), eCommerce & Analytics.
         </p>
         <div className="mx-auto pt-[26px] pb-16">
-           
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
             <div className="bg-[#fff] border-[rgb(112 112 112 / 15%)] border">
               <div className="font-semibold text-base pb-2 px-[12px] pt-2 bg-[#f2f4f7]">
@@ -35,6 +34,11 @@ const RobotDetails = () => {
                     className="   text-[#0745d3] hover:underline  "
                   >
                     Microsoft Dynamics 365
+                    <Icon
+                      path={mdiArrowTopRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
                   </Link>
                   <span className="mx-2 text-[#475467]">|</span>
                   <Link
@@ -66,10 +70,7 @@ const RobotDetails = () => {
               </div>
               <div className="bg-[#fff] p-[12px]">
                 <p className="text-base leading-8 ">
-                  <Link
-                    href="/"
-                    className="  text-[#0745d3] hover:underline  "
-                  >
+                  <Link href="/" className="  text-[#0745d3] hover:underline  ">
                     Java
                   </Link>
                   <span className="mx-2 text-[#475467]">|</span>
@@ -95,10 +96,7 @@ const RobotDetails = () => {
               </div>
               <div className="bg-[#fff] p-[12px]">
                 <p className="text-base leading-8 ">
-                  <Link
-                    href="/"
-                    className="  text-[#0745d3] hover:underline  "
-                  >
+                  <Link href="/" className="  text-[#0745d3] hover:underline  ">
                     Payroll D365
                   </Link>
                   <span className="mx-2 text-[#475467]">|</span>
