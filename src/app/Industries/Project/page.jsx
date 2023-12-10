@@ -41,7 +41,7 @@ const AIOfferings = [
     cta: "Explore Service",
     ctaUrl: "/",
     theme: "#E4F8ED",
-    btnTheme: "4F9D73",
+    btnTheme: "#4F9D73",
     links: [
       {
         title: "Project Monitoring Tools ",
@@ -73,7 +73,7 @@ const AIOfferings = [
     cta: "Explore Service",
     ctaUrl: "/",
     theme: "#EDF1FF",
-    btnTheme: "0745D3",
+    btnTheme: "#0745D3",
     links: [
       {
         title: "M365 ",
@@ -112,7 +112,7 @@ const AIOfferings = [
     cta: "Explore Service",
     ctaUrl: "/",
     theme: "#FFF8E5",
-    btnTheme: "D4A73B",
+    btnTheme: "#D4A73B",
     links: [
       {
         title: "Architecture Designing  ",
@@ -272,16 +272,18 @@ const page = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link
-                      href={item.ctaUrl}
-                      className={`text-[#fff] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75  bg-[#${item.btnTheme}]`}
-                    >
-                      {item.cta}{" "}
-                      <Icon
-                        path={mdiArrowTopRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
+                    <Link href={item.ctaUrl}>
+                      <div
+                        className={`text-[#fff] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75`}
+                        style={{ backgroundColor: item.btnTheme }}
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowTopRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </div>
                     </Link>
                   </div>
                 </div>
