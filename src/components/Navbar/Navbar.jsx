@@ -28,7 +28,7 @@ const Navbar = ({ theme }) => {
         <button className="hidden"></button>
         <div className="flex items-center max-lg:justify-between max-lg:flex-row-reverse">
           <div className="flex justify-between items-center max-lg:w-full">
-            <Link className="" href="https://deployednext.vercel.app">
+            <Link className="" href="/">
               <Image
                 src={
                   theme !== "dark" ? "/godrejLogoWhite.svg" : "/godrejLogo.svg"

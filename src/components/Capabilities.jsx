@@ -176,7 +176,7 @@ const accordion = [
 const Capabilities = ({ ribbon, title, desc }) => {
   return (
     <>
-      <div className={` w-full bg-[#F2F4F7]   text-[#101828]`}>
+      <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
         <div className="text-left max-w-screen-xl md:max-w-screen-2xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
           <div className=" flex items-start flex-col justify-start mt-10  relative">

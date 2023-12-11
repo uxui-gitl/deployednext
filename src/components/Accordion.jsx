@@ -19,7 +19,7 @@ const AccordionItem = ({
 }) => (
   <div className={`accordionItem mb-4 bg-[#fff]`}>
     <div
-      className={`accordionHeader cursor-pointer p-8 mb-4 justify-between items-center flex`}
+      className={`accordionHeader cursor-pointer p-4 justify-between items-center flex`}
       onClick={onClick}
     >
       <div className="flex items-center">

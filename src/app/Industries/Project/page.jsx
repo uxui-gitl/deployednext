@@ -19,6 +19,7 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
 import Benefits from "@/components/Benefits";
+import Capabilities from "@/components/Capabilities";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -187,7 +188,6 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <SectionNav />
-
       {/* Overview  */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
@@ -218,7 +218,6 @@ const page = () => {
           </div>
         </div>
       </>
-
       {/* Our Ai Offerings */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
@@ -244,10 +243,13 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left w-full bg-amber-100 mb-5 mx-auto   grid grid-cols-1 sm:grid-cols-3">
+          <div className="text-left w-full bg-amber-100 mb-5 mx-auto   grid grid-cols-1 md:grid-cols-3">
             {AIOfferings.map((item, index) => (
-              <div className={`bg-[${item.theme}] p-5`} key={item._id}>
-                <div className="p-4 h-full flex flex-col justify-between">
+              <div
+                className={`bg-[${item.theme}] py-10 sm:py-20 px-8 sm:px-24`}
+                key={item._id}
+              >
+                <div className="h-full flex flex-col justify-between">
                   <div>
                     <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
                       {item.title}
@@ -292,8 +294,13 @@ const page = () => {
           </div>
         </div>
       </>
-
-      {/* ML Expertise */}
+      {/* Our Capabilities */}
+      <Capabilities
+        ribbon=" "
+        title="Our Capabilities "
+        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+      />
+      ;{/* ML Expertise */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
@@ -346,7 +353,6 @@ const page = () => {
           </div>
         </div>
       </>
-
       {/* AI & ML Partners */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
@@ -380,7 +386,6 @@ const page = () => {
           </div>
         </div>
       </>
-
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Benefits "
@@ -389,7 +394,6 @@ const page = () => {
         arr={BenefitsData}
       ></Benefits>
       {/* Industry Spotlight Slider */}
-
       {/* Why choose gitl and ai and ml */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
@@ -456,10 +460,8 @@ const page = () => {
           </motion.div>
         </AnimatePresence>
       </WhySection>
-
       {/* Testimonials */}
       <Testimonials />
-
       {/* Subscription */}
       <Subscription
         title="Ready for Transformation with"
