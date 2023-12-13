@@ -35,7 +35,7 @@ const Intro = () => {
                 sequence={[
                   "Automation",
                   1000,
-                  "Cloudification", //  Continuing previous Text
+                  "Cloud", //  Continuing previous Text
                   1000,
                   "Transformation",
                   1000,
@@ -53,7 +53,7 @@ const Intro = () => {
                 sequence={[
                   "Automation",
                   1000,
-                  "Cloudification", //  Continuing previous Text
+                  "Cloud", //  Continuing previous Text
                   1000,
                   "Transformation",
                   1000,
@@ -64,12 +64,12 @@ const Intro = () => {
 
             <h4 className="hidden sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
               Revolutionize your business operations, save time and boost
-              productivity <br /> with our cutting-edge offerings..
+              productivity <br /> with our cutting-edge offerings.
             </h4>
 
             <h4 className="sm:hidden text-white text-[14px] sm:text-[16px] px-7 leading-[22px] mb-[24px]">
               Revolutionize your business operations, save time and boost
-              productivity with our cutting-edge offerings..
+              productivity with our cutting-edge offerings.
             </h4>
 
             <div className="flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">
