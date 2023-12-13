@@ -6,7 +6,7 @@ const Copyright = (props) => {
 
   return (
     <div className={styles.copyright}>
-      &copy; 2023 {props.title}. All rights reserved. 
+      &copy; 2024 {props.title}. All rights reserved.
       <span> | </span>
       <Link href="/privacy-policy"> Privacy Notice</Link>
     </div>
