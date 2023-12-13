@@ -45,7 +45,7 @@ const Intro = () => {
             </h1>
 
             <h1 className="sm:hidden sm:text-[68px] text-[34px] leading-[44px] sm:leading-[84px]	text-white font-bold text-center">
-              Delivering Business <br /> Value wit <br />{" "}
+              Delivering Business <br /> Value with <br />{" "}
               <TypeAnimation
                 className="typewriter-text text-white"
                 style={{ fontSize: "1em!important" }}
