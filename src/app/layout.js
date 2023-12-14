@@ -14,11 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${works.className} antialiased`}>
         <Announcement />
-        {/* <div className={`relative z-[500]`}>
-          <div className={`absolute w-full  `}>
-            <Navbar />
-          </div>
-        </div> */}
 
         {children}
         <Footer />

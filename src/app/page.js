@@ -16,13 +16,18 @@ import ACT from "@/sections/ACT/ACT";
 import Image from "next/image";
 import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
       <main className=" overflow-hidden">
+        <div className={`relative z-[500]`}>
+          <div className={`absolute w-full  `}>
+            <Navbar theme="light" />
+          </div>
+        </div>
         <Intro />
         <ClientLogos />
         <ACT />
