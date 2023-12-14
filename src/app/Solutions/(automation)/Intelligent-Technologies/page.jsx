@@ -128,21 +128,21 @@ const page = () => {
     {
       _id: 1,
       title: "Machine Learning",
-      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      desc: "Our ability in constructing, training and deploying ML models assure an effective implementation process.",
       cta: "Know More",
       link: "/",
     },
     {
       _id: 2,
       title: "Artificial Intelligence ",
-      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
       cta: "Know More",
       link: "/",
     },
     {
       _id: 3,
       title: "Robotic Process Automation",
-      desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+      desc: "Dedicate more time to strategic initiatives, enhance productivity and minimizing the time-consuming repetitive tasks.",
       cta: "Know More",
       link: "/",
     },
@@ -152,40 +152,34 @@ const page = () => {
     {
       _id: 1,
       icon: "gear",
-      title: "Gain competitive edge",
+      title: "Dummy",
+      desc: "A high degree of accuracy and consistency in business operations.",
     },
     {
       _id: 2,
       icon: "diamond",
-      title: "Streamline operations",
+      title: "Dummy",
+      desc: "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
     },
     {
       _id: 3,
       icon: "eyeGear",
-      title: "Boost brand value",
+      title: "Dummy",
+      desc: "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 4,
       icon: "gear",
-      title: "Gain competitive edge",
+      title: "Dummy",
+      desc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
-    {
-      _id: 5,
-      icon: "diamond",
-      title: "Streamline operations",
-    },
-    {
-      _id: 6,
-      icon: "eyeGear",
-      title: "Boost brand value",
-    },
+
   ];
   return (
     <>
       <EntIntro
-        title="Step into the Future of
-        Business Success Today"
-        desc="Our core emphasis revolves around tangible and advantageous business outcomes through our business grade intelligent solutions and competency"
+        title="Cognitive Intelligent Solutions to Charge Your Business Value Chain with Ease"
+        desc="Our core emphasis is on advantageous business outcomes through our business grade intelligent competency while concurrently optimizing business performance."
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -211,7 +205,7 @@ const page = () => {
                   Starting precisely where you stand in your digital
                   transformation journey, we seamlessly integrate our teams into
                   your culture, fostering a collaborative environment for
-                  success
+                  success.
                 </p>
               </div>
             </div>
@@ -265,18 +259,23 @@ const page = () => {
       ></Benefits>
 
       {/* Business Benefits TO BE CREATED  */}
-      <SME />
+      <SME
+        imgSrc="/SME-Biju.png"
+        ribbon="Introducing our Enterprise Solutions Leader"
+        desc="We help our clients to reinforce their customer-centric focus,
+                optimize application landscapes and accelerate business results
+                through the standardization, digitalization and automation of
+                their IT infrastructure with enterprise solutions."
+        sme="Biju Thomas"
+        designation="Enterprise Head, Godrej Infotech"
+      />
 
       {/* Why Infotech */}
       <>
         <WhySection
-          title="Why Godrej Infotech?"
-          desc="Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses"
-          ribbon="Spend LESS, GROW MORE"
+          title="Why Choose Godrej Infotech as your preferred innovation partner?"
+          desc="“We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
+          ribbon="Let's Collaborate and Make it Happen"
         >
           <div>
             <div>
@@ -367,10 +366,9 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title=""
-        blue="Free 30-Minutes"
-        title2="Strategy Session with our Consultant"
-        desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity. "
+        title="Tap the faster and simpler way for futuristic seamless business experiences"
+
+        desc="Let’s discuss how intelligent technologies can help you with rapid growth"
       />
       <InfotechWeeklyAlt />
     </>
