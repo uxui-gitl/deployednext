@@ -31,30 +31,14 @@ const Expertise = () => {
                   <div className="  mb-5 md:mb-0">
                     <h4 className="text-5xl font-bold text-[#f5f5f5]">
                       <CountUp
-                        end={50}
+                        end={25}
                         duration={2}
                         separator=" "
                         suffix=" +"
                       />
                     </h4>
                     <p className="">
-                      <span className="text-[#b2c8f8]">Countries</span> where we
-                      have trusted clients
-                    </p>
-                  </div>
-                  <div className="  mb-5 md:mb-0">
-                    <h4 className="text-5xl font-bold text-[#f5f5f5]">
-                      <CountUp
-                        end={10.31}
-                        decimals={2}
-                        duration={2}
-                        separator=" "
-                        suffix=" +"
-                      />
-                    </h4>
-                    <p className="">
-                      Billions in Total{" "}
-                      <span className="text-[#b2c8f8]">Revenue</span>
+                      <span className="text-[#b2c8f8]">Years</span> of Excellence
                     </p>
                   </div>
                   <div className="  mb-5 md:mb-0">
@@ -66,9 +50,22 @@ const Expertise = () => {
                         suffix=" +"
                       />
                     </h4>
+                    <p className="">
+                      Global Reach with{" "}
+                      <span className="text-[#b2c8f8]">Satisfied Customers</span>
+                    </p>
+                  </div>
+                  <div className="mb-5 md:mb-0">
+                    <h4 className="text-5xl font-bold text-[#f5f5f5]">
+                      <CountUp
+                        end={15000}
+                        duration={2}
+                        separator=" "
+                        suffix=" +"
+                      />
+                    </h4>
                     <p className="pr-2">
-                      <span className="text-[#b2c8f8]">Employees</span> all over
-                      the globe
+                      <span className="text-[#b2c8f8]">Man</span> Years of Expertise
                     </p>
                   </div>
                 </div>
