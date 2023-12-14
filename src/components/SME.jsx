@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import SMEIMG from "../../public/EntSolution/SME-Biju.png";
 
-const SME = () => {
+const SME = ({ imgSrc, ribbon, desc, sme, designation }) => {
   return (
     <>
       <div className={` w-full bg-[#f2f4f7]  py-32`}>
@@ -13,28 +13,25 @@ const SME = () => {
           {/* Left */}
           <div className="sm:flex-none mx-auto sm:m-0 mb-5">
             <>
-              <Image src={SMEIMG} alt="SME" />
+              <Image src="/SME-Biju.png" alt={sme} width={458} height={480} />
             </>
           </div>
           {/* right */}
           <div className="grow flex flex-col justify-center px-[4rem]">
             <div>
               <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                Introducing our Enterprise Solutions Leader
+                {ribbon}
               </h4>
               <p className="text-[26px]  leading-[34px] mb-3 font-bold md:w-[90%] ">
-                We help our clients to reinforce their customer-centric focus,
-                optimize application landscapes and accelerate business results
-                through the standardization, digitalization and automation of
-                their IT infrastructure with enterprise solutions.
+                {desc}
               </p>
             </div>
             <div>
               <p className="text-base font-bold leading-[28px] text-[#475467]">
-                Biju Thomas
+                {sme}
               </p>
               <p className="text-base leading-[28px] text-[#475467]">
-                Enterprise Head, Godrej Infotech
+                {designation}
               </p>
             </div>
           </div>

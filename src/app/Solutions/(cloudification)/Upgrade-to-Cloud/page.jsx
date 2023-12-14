@@ -13,10 +13,10 @@ import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
-
+import Expertise from "@/components/Expertise";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Benefits from "@/components/Benefits";
 import Icon from "@mdi/react";
 import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
@@ -70,6 +70,39 @@ export default function Home() {
     },
   ];
 
+  // ex:
+  const BenefitsData = [
+    {
+      _id: 1,
+      icon: "gear",
+      title: "Process and analyze vast volumes of data",
+    },
+    {
+      _id: 2,
+      icon: "diamond",
+      title: "Ensure Uniformity in Financial Information",
+    },
+    {
+      _id: 3,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+    {
+      _id: 4,
+      icon: "gear",
+      title: "Process and analyze vast volumes of data",
+    },
+    {
+      _id: 5,
+      icon: "diamond",
+      title: "Ensure Uniformity in Financial Information",
+    },
+    {
+      _id: 6,
+      icon: "eyeGear",
+      title: "Boost brand value",
+    },
+  ];
   const upgradeCloud = [
     {
       _id: 1,
@@ -156,7 +189,6 @@ export default function Home() {
           width="70%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
-
         {/* Upgrade to Cloud */}
         <>
           <div className={` w-full bg-white py-32`}>
@@ -188,11 +220,8 @@ export default function Home() {
             </div>
           </div>
         </>
-
         <CaseStudy />
-
         {/* On Prem changes*/}
-
         <>
           <div className={` w-full bg-white py-32`}>
             <>
@@ -236,8 +265,27 @@ export default function Home() {
             </div>
           </div>
         </>
-
-        {/* Upgrade Now */}
+        <Expertise
+          ribbon="Our Expertise "
+          ribbonTxtWhite="true"
+          title="Future Outlook with Intelligent Technologies  "
+          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          arr={[
+            {
+              title: "85%",
+              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            },
+            {
+              title: "$200B",
+              desc: "Forbes forecasts size for AI market by 2026 ",
+            },
+            {
+              title: "$6.6T",
+              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+            },
+          ]}
+        ></Expertise>
+        ;{/* Upgrade Now */}
         <>
           <div className={` w-full bg-white py-32`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
@@ -318,7 +366,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
         {/* Unlocking agility */}
         <>
           <div className={` w-full bg-white py-32`}>
@@ -345,7 +392,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
         {/* why godrej infotech */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-32`}>
@@ -454,8 +500,14 @@ export default function Home() {
             </div>
           </div>
         </>
-
-        {/* az cloud services */}
+        <Benefits
+          ribbon="Benefits "
+          ribbonTxtWhite="true"
+          title="Benefits of AI&ML "
+          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
+          arr={BenefitsData}
+        ></Benefits>
+        ;{/* az cloud services */}
         <>
           <div className={` w-full bg-white py-32`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
@@ -483,7 +535,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
         <Testimonials />
         {/* Join the Team */}
         <StrategySub />

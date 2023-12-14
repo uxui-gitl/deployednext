@@ -88,7 +88,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/Solutions/Enterprise-Suite"
                     data-cursor-size="10px"
                     sizeAnimationDuration="0.5"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
@@ -98,7 +98,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="/Solutions/Technology-Stack"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -122,11 +122,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Solutions/Upgrade-to-Cloud"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
-                    Updgrade to Cloud
+                    Upgrade to Cloud
                   </Link>
                 </li>
                 <li>
@@ -140,7 +140,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Solutions/Cloud-Stack-and-Services"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -155,7 +155,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Solutions/Intelligent-Technologies"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -164,7 +164,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Solutions/Customer-Experience"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -173,7 +173,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Solutions/Data-Insights"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -188,7 +188,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Our-Services/Business-Consulting"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -198,7 +198,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Our-Services/Implementation-and-Global-Rollout"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -208,7 +208,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Our-Services/Managed-Services"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -236,7 +236,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Industries/Manufacturing"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -246,7 +246,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Industries/Retail"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -256,7 +256,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Industries/Trading-and-Distribution"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -266,7 +266,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Industries/Project"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -276,7 +276,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Industries/Professional-Services"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -292,7 +292,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/About-Us"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -302,7 +302,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Infotech-Weekly"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -311,7 +311,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Careers"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
@@ -321,7 +321,7 @@ const Footer = () => {
 
                 <li>
                   <Link
-                    href="/"
+                    href="http://localhost:3000/Contact-Us"
                     data-cursor-size="10px"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >

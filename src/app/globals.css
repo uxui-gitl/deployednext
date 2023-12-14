@@ -342,7 +342,7 @@ h4.ribbon {
   color: #4c6fff;
   padding: 0.5em 2em;
   display: inline-block;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 h4.ribbon:before {
