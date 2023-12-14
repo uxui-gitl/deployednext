@@ -17,9 +17,11 @@ import checkout from "../../../../public/checkout.png";
 import MLExpertise from "../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
+import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import { AnimatePresence, motion } from "framer-motion";
 import Benefits from "@/components/Benefits";
 import Capabilities from "@/components/Capabilities";
+import Expertise from "@/components/Expertise";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -300,7 +302,30 @@ const page = () => {
         title="Our Capabilities "
         desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
       />
-      ;{/* ML Expertise */}
+
+      {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise "
+        ribbonTxtWhite="true"
+        title="Future Outlook with Intelligent Technologies  "
+        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "85%",
+            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+          },
+          {
+            title: "$200B",
+            desc: "Forbes forecasts size for AI market by 2026 ",
+          },
+          {
+            title: "$6.6T",
+            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+          },
+        ]}
+      ></Expertise>
+
+      {/* ML Expertise */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
@@ -353,7 +378,10 @@ const page = () => {
           </div>
         </div>
       </>
-      {/* AI & ML Partners */}
+
+      {/* Casestudy */}
+      <CaseStudy isHomepage={false} />
+      {/* Our Partners */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
@@ -361,7 +389,7 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Our AI/ML Partners
+                  Our Partners
                 </h3>
               </div>
               <div>
@@ -386,80 +414,8 @@ const page = () => {
           </div>
         </div>
       </>
-      {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        title="Benefits of AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
-        arr={BenefitsData}
-      ></Benefits>
       {/* Industry Spotlight Slider */}
-      {/* Why choose gitl and ai and ml */}
-      <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-      >
-        <AnimatePresence>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={1}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">
-                Exceed customer expectations
-              </span>
-              and deliver AI and ML solutions in most effective way
-            </p>
-          </motion.div>
 
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={2}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              Fully signed Non-Disclosure Agreement (NDA) to
-              <span className="text-[#4C6FFF]">
-                protect your sensitive information
-              </span>
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={3}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">
-                Deep understanding of your specific business domain
-              </span>{" "}
-              is crucial for creating AI and ML solutions that truly meet your
-              needs
-            </p>
-          </motion.div>
-        </AnimatePresence>
-      </WhySection>
       {/* Testimonials */}
       <Testimonials />
       {/* Subscription */}

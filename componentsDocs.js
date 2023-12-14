@@ -1,11 +1,24 @@
 // ----------------------------
+// Clsx classes //
+// ----------------------------
+<CaseStudy isHomepage={false} />
+const CaseStudy = ({ isHomepage })
+
+className={clsx({
+  "max-w-screen-lg mx-auto px-[2rem] bg-[#fff]": isHomepage,
+  "text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem]":
+    !isHomepage,
+})}
+
+// ----------------------------
 // Benefits Vertical Slider //
 // ----------------------------
 <Benefits
-  ribbon="Tech stack Benefits"
-  title="Benefits of Application Development with Our Technology Stack Expertise "
-  desc=""
-  arr={BenefitsData} // expects an array of icon and titles
+  ribbon="Benefits "
+  ribbonTxtWhite="true"
+  title="Benefits of AI&ML "
+  desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
+  arr={BenefitsData}
 ></Benefits>;
 
 // ex:
@@ -323,3 +336,31 @@ const accordion = [
   title="Our Capabilities "
   desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
 />;
+
+// ----------------------------
+// Expertise //
+// ----------------------------
+
+{
+  /* Expertise */
+}
+<Expertise
+  ribbon="Our Expertise "
+  ribbonTxtWhite="true"
+  title="Future Outlook with Intelligent Technologies  "
+  desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+  arr={[
+    {
+      title: "85%",
+      desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+    },
+    {
+      title: "$200B",
+      desc: "Forbes forecasts size for AI market by 2026 ",
+    },
+    {
+      title: "$6.6T",
+      desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+    },
+  ]}
+></Expertise>;

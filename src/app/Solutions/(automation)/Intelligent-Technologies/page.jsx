@@ -265,7 +265,16 @@ const page = () => {
       ></Benefits>
 
       {/* Business Benefits TO BE CREATED  */}
-      <SME />
+      <SME
+        imgSrc="/SME-Biju.png"
+        ribbon="Introducing our Enterprise Solutions Leader"
+        desc="We help our clients to reinforce their customer-centric focus,
+                optimize application landscapes and accelerate business results
+                through the standardization, digitalization and automation of
+                their IT infrastructure with enterprise solutions."
+        sme="Biju Thomas"
+        designation="Enterprise Head, Godrej Infotech"
+      />
 
       {/* Why Infotech */}
       <>

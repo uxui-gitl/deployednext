@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
-const Expertise = ({ ribbon, title, desc, arr, children }) => {
+const Expertise = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
   return (
     <>
       <div
@@ -28,7 +28,10 @@ const Expertise = ({ ribbon, title, desc, arr, children }) => {
           {/* left */}
           <div className=" flex items-start flex-col justify-center  relative">
             <div className="">
-              <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
+              <h4
+                style={{ color: ribbonTxtWhite && "white" }}
+                className={` font-medium text-[#0745D3] uppercase ribbon`}
+              >
                 {ribbon}
               </h4>
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">

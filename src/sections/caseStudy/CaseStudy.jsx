@@ -5,6 +5,7 @@ import Link from "next/link";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
 import { motion } from "framer-motion";
+import { clsx } from "clsx";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -20,7 +21,7 @@ const fadeInAnimationVariant = {
   }),
 };
 
-const CaseStudy = (props) => {
+const CaseStudy = ({ isHomepage }) => {
   const caseStudies = [
     {
       id: 1,
@@ -53,9 +54,14 @@ const CaseStudy = (props) => {
       link: "/",
     },
   ];
-
   return (
-    <div className={`max-w-screen-lg mx-auto px-[2rem] bg-[#fff]`}>
+    <div
+      className={clsx({
+        "max-w-screen-lg mx-auto px-[2rem] bg-[#fff]": isHomepage,
+        "text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem]":
+          !isHomepage,
+      })}
+    >
       <div className=" mt-[5em] mb-[2em]">
         <h4
           className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
@@ -84,15 +90,22 @@ const CaseStudy = (props) => {
               once: true,
             }}
             custom={index}
-            className={`${styles["iw-card"]} item`}
+            // className={`${styles["iw-card"]} item`}
+            className={clsx({
+              "iw-card item": isHomepage,
+              item: !isHomepage,
+            })}
           >
-            <div className={`${styles["iw-card-img-wrap"]} relative`}>
+            <div
+              className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
+            >
               <Image
                 src={`/project-${cases.thumbnail}.png`}
                 alt={`${cases.tags}`}
+                className="w-[100%]"
                 width="315"
                 height="200"
-                className="w-full h-auto lg:w-315 lg:h-200"
+                // className="w-full h-auto lg:w-315 lg:h-200"
               />
               <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
                 <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium ">
@@ -104,9 +117,7 @@ const CaseStudy = (props) => {
               {/* <p className={`text-[#98A2B3] font-bold`}>Cloudification</p> */}
               <p
                 className={`uppercase  text-[#101828] font-medium text-[12px]`}
-              >
-
-              </p>
+              ></p>
               <p
                 className={`text-base font-normal pt-[14px] pb-2 leading-[22px] text-[#101828]`}
               >
@@ -114,9 +125,11 @@ const CaseStudy = (props) => {
                 {`${cases.title}`}{" "}
               </p>
               <p
-                className={`${styles["iw-card-content-desc"]
-                  } text-clip  text-[#475467] text-sm ${cases.description.length <= 0 ? "hidden" : "block"
-                  }`}
+                className={`${
+                  styles["iw-card-content-desc"]
+                } text-clip  text-[#475467] text-sm ${
+                  cases.description.length <= 0 ? "hidden" : "block"
+                }`}
               >
                 {`${cases.description}`}
               </p>

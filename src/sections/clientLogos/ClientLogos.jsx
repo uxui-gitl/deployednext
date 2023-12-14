@@ -27,8 +27,8 @@ const ClientLogos = () => {
   ];
 
   return (
-    <div className="w-full bg-white">
-      <div className="max-w-screen-lg mx-auto bg-white">
+    <div className="w-full  ">
+      <div className="max-w-screen-lg mx-auto  ">
         <div className="mx-4 mt-11 mb-[2em]">
           <p className="text-center">
             500  + Organizations Trust Our Exceptional Expertise. Join Them Today!

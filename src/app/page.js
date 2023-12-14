@@ -28,7 +28,7 @@ export default function Home() {
         <ACT />
         <Robot />
         <Expertise />
-        <CaseStudy />
+        <CaseStudy isHomepage={true} />
         <Testimonial />
         <Review />
         <InfotechWeekly />
