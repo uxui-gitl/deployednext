@@ -25,33 +25,30 @@ const CaseStudy = (props) => {
     {
       id: 1,
       title:
-        "Adhesive Manufacturer cuts open ticket volume by 25% with Managed Services in .NET, SharePoint and PHP",
+        "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
       thumbnail: "1",
       description: "",
       tags: ["Automation"],
-      date: "20 Jan 2023",
       cta: "Read article",
       link: "/",
     },
     {
       id: 2,
       title:
-        "KSA based Coffee Brand Distributor  minimizes intercompany transaction time with Cloud-based D365 Finance, SCM & Commerce implementation",
+        "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
       thumbnail: "2",
       description: "",
-      tags: ["Cloudification"],
-      date: "20 Jan 2023",
+      tags: ["Cloud"],
       cta: "Read article",
       link: "/",
     },
     {
       id: 3,
       title:
-        "How Electrical Component Manufactures slashes 30% of manual effort with Infor LN implementation ",
+        "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
       thumbnail: "3",
       description: "",
       tags: ["Transformation"],
-      date: "20 Jan 2023",
       cta: "Read article",
       link: "/",
     },
@@ -108,20 +105,18 @@ const CaseStudy = (props) => {
               <p
                 className={`uppercase  text-[#101828] font-medium text-[12px]`}
               >
-                {`${cases.date}`}
+
               </p>
               <p
-                className={`text-base font-semibold pt-[14px] pb-2 leading-[22px] text-[#101828]`}
+                className={`text-base font-normal pt-[14px] pb-2 leading-[22px] text-[#101828]`}
               >
                 {" "}
                 {`${cases.title}`}{" "}
               </p>
               <p
-                className={`${
-                  styles["iw-card-content-desc"]
-                } text-clip  text-[#475467] text-sm ${
-                  cases.description.length <= 0 ? "hidden" : "block"
-                }`}
+                className={`${styles["iw-card-content-desc"]
+                  } text-clip  text-[#475467] text-sm ${cases.description.length <= 0 ? "hidden" : "block"
+                  }`}
               >
                 {`${cases.description}`}
               </p>

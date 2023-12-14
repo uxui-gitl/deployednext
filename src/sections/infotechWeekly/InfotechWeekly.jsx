@@ -32,15 +32,14 @@ const InfotechWeekly = (props) => {
           <h4
             className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
           >
-            WEEKLY UPDATES
+            Never miss a tech beat!
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <h3 className="text-4xl leading-[42px] font-bold">
-              Infotech Weekly
+              Infotech Exclusive
             </h3>
             <p className="font-normal leading-[22px]">
-              Enabling organizations to optimize cost & enhance business
-              processes with next-gen digital technologies
+              Discover why our clients trust us and dive into our insights section. Empower your decision with right knowledge and stay in the vanguard.
             </p>
           </div>
         </div>

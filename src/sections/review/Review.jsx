@@ -53,6 +53,59 @@ const Review = () => {
             width: "13.4%",
           }}
         ></div> */}
+
+        {/* Ambition Box */}
+        <SwiperSlide className={`${styles.reviewCardWrap}`}>
+          <div
+            className={styles.reviewCard}
+            style={{
+              maxWidth: "700px",
+              maxHeight: "400px",
+              marginBottom: "0!important",
+            }}
+          >
+            <div className={styles.reviewCard1}>
+              <div style={{}}>
+                <h3 style={{ color: "#F2F4F7" }}>
+                  Over 250 reviews on Ambition Box
+                </h3>
+                <h6 className="text-sm mt-3" style={{ color: "#F2F4F7" }}>
+                  User reviews have proven to outperform any other assessments
+                  in the consumer world. That&#39;s why we&#39;re proud of what
+                  our reviewers have to say.
+                </h6>
+              </div>
+            </div>
+            <div className={styles.glassdoorRatings}>
+              <div className="flex items-baseline flex-col">
+                <div>
+                  <div className="flex flex-row">
+                    {[...Array(5)].map((_, index) => (
+                      <Image
+                        key={index}
+                        src={index === 4 ? halfStarSrc : starSrc}
+                        width={32}
+                        height={32}
+                        className={styles.reviewStar}
+                        alt="ratings"
+                      />
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-baseline flex-row">
+                  <h2 className="font-bold	m-0 p-0 text-[114px] leading-[0.8]">
+                    4.1
+                  </h2>
+                  <span>out of 5</span>
+                </div>
+              </div>
+              <Link href="#" className={styles.reviewLink}>
+                Here are some Job Listings? <Icon path={mdiArrowTopRight} />
+              </Link>
+            </div>
+          </div>
+        </SwiperSlide>
+
         {/* Glassdoor Awards */}
         <SwiperSlide className={`${styles.reviewCardWrap}`}>
           <div

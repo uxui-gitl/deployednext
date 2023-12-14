@@ -59,6 +59,27 @@ const CardSwiper = () => {
           color: "white",
         }}
       >
+        {/* Great Place to work */}
+        <SwiperSlide
+          className={styles.card}
+          style={{
+            background:
+              "linear-gradient(270deg, rgba(91,98,138,1) 0%, rgba(120,111,192,1) 67%, rgba(148,112,197,1) 100%)",
+          }}
+        >
+          <div className={styles.reviewCard}>
+            <div className="relative">
+              <div className="absolute z-20 bottom-8 left-8">
+                <h4 className="font-bold text-[26px] leading-[34px] text-white">
+                  Dealer Management
+                </h4>
+              </div>
+              <Image src={solution1} alt="Solution 1" />
+            </div>
+          </div>
+        </SwiperSlide>
+
+
         {/* Glassdoor Awards */}
         <SwiperSlide
           className={styles.card}
