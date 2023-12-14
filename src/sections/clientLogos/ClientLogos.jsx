@@ -31,7 +31,7 @@ const ClientLogos = () => {
       <div className="max-w-screen-lg mx-auto bg-white">
         <div className="mx-4 mt-11 mb-[2em]">
           <p className="text-center">
-            500  + Organizations Trust Our Exceptional Expertise. Join Them Today!
+            500 + organizations trust our exceptional expertise. Join them today!
           </p>
           <div>
             <div className={styles.clientImgWrap}>

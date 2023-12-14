@@ -27,7 +27,7 @@ export default function Home() {
         <ClientLogos />
         <ACT />
         <Robot />
-        <Expertise />
+        {/*<Expertise />*/}
         <CaseStudy />
         <Testimonial />
         <Review />
