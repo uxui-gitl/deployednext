@@ -274,7 +274,7 @@ const page = () => {
       <>
         <WhySection
           title="Why Choose Godrej Infotech as your preferred innovation partner?"
-          desc="“We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
+          desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
           ribbon="Let's Collaborate and Make it Happen"
         >
           <div>

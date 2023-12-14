@@ -29,8 +29,7 @@ const StrategySub = ({ title, blue, title2, desc }) => {
               <p className="font-medium leading-[22px] md:w-[90%] ">
                 {desc == null ? (
                   <>
-                    Let&apos;s discuss how Godrej Infotech can help your
-                    business with efficiency and business continuity.
+                    Let's discuss how upgrade to cloud can help you to enhance your business's growth potential.
                   </>
                 ) : (
                   <>{desc}</>
