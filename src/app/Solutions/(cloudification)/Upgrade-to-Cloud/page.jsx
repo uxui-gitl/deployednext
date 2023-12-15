@@ -106,40 +106,40 @@ export default function Home() {
   const upgradeCloud = [
     {
       _id: 1,
-      title: "Upgrade AX to D365 F&O",
-      desc: "Upgrade AX to D365 F&O to Revitalize Your Business Performance",
+      title: "Lift and Shift to Cloud",
+      desc: "We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 2,
-      title: "Upgrade Nav to Business Central ",
-      desc: "Unlock Maximum Modern Benefits with Business Central Upgrade",
+      title: "ERP on Cloud",
+      desc: "We revitalize your business performance delivering more agile, responsive and human-cantered ERP on Cloud.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 3,
-      title: "Upgrade to Infor LN Cloud",
-      desc: "Future proof your business growth with Upgrade to Infor LN Cloud",
+      title: "Application Migration to the Cloud",
+      desc: "With the ability to scale resources on-demand, we specialize in the precise, secure and efficient migration of your applications to the cloud, employing technical expertise for error-free deployment to ensure a seamless transition.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 4,
-      title: "Application Migration",
-      desc: "Migrate your Application to Cloud to Unleash Modernisation",
+      title: "Cloud Backup and Disaster Recovery",
+      desc: "We assure to secure your data and keep your business running, safeguarding your business against unexpected disruptions with scalable solution.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 5,
-      title: "Migrate email to cloud",
-      desc: "We aim for a more efficient and collaborative communication environment that will improve efficiency and streamline communication with minimum disruption to your everyday operations",
+      title: "Cloud Database Migration",
+      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -341,19 +341,19 @@ export default function Home() {
               <div className="col text-white flex flex-col sm:flex-row gap-5 sm:gap-10  ">
                 <div className=" bg-[#344CA9] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                    Upgrade Infrastructure to Cloud
+                    Cloud Monitoring and Reporting
                   </h4>
                   <p className="text-base leading-6 font-semibold">
-                    As a renowned Infrastructure-as-a-Service (IaaS) provider,
-                    we enhance your IT infrastructure in the cloud era
+                    Whether you're overseeing multi-cloud environments or managing a single cloud provider, our solutions provide you
+                    with the transparency and control you need to optimize resource allocation, control costs and enhance overall cloud efficiency.
                   </p>
                 </div>
                 <div className=" bg-[#320A53] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                    Lift and Shift to Cloud{" "}
+                    Cloud Microservices{" "}
                   </h4>
                   <p className="text-base leading-6 font-semibold">
-                    We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.
+                    We transform monolithic apps into agile, deployable microservices. Tailored for specific tasks, our microservices enhance agility, reduce time-to-market and ensure seamless deployment, scaling, resource efficiency and robust fault tolerance.
                   </p>
                 </div>
               </div>
