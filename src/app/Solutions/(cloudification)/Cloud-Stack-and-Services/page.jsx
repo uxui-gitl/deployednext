@@ -156,12 +156,10 @@ export default function Home() {
               <div className="bg-white flex items-start flex-col justify-start">
                 <div className="flex justify-center">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
-                    Maximizing Business Outcomes with Our Cloud Services
+                    Maximizing Your Business Outcomes with Cloud Technology
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our verified proficiency in execution and innovation in
-                    cloud adaptability facilitates business transformation at
-                    each juncture
+                    Our verified proficiency in execution and innovation in cloud adaptability facilitate the process of business transformation at each juncture.
                   </p>
                 </div>
               </div>
@@ -273,8 +271,7 @@ export default function Home() {
                 Ultimate Choice?
               </h3>
               <p className="font-medium leading-[22px] md:w-[80%] ">
-                Serving highest goals of businesses, cloud functions as the
-                urging force of advancement and productivity
+                With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics.
               </p>
             </div>
 

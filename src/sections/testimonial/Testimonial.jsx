@@ -25,64 +25,15 @@ const Testimonials = () => {
   const clientTestimonials = [
     {
       id: 1,
-      clientName: "Mr. Mahmoud Dauk",
-      clientDesignation: "IT Director, Al Mada ",
+      clientName: "",
+      clientDesignation: "IT Manager",
       thumbnail: "1",
       description:
-        "GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+        "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
       category: "static",
       link: "/",
     },
-    {
-      id: 2,
-      clientName: "Mr. Shibu Mathew",
-      clientDesignation: "Principal Manager, JGC Gulf",
-      thumbnail: "2",
-      description:
-        "GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.",
-      category: "video",
-      link: "/video",
-    },
-    {
-      id: 3,
-      clientName: "Rahul Mahajan",
-      clientDesignation: "Head of Operations, TCS",
-      thumbnail: "3",
-      description:
-        "Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise  and project management abilities by achieving highly challenging deadline.",
-      category: "static",
-      link: "/",
-    },
-    {
-      id: 4,
-      clientName: "Mr. Mahmoud Dauk",
-      clientDesignation: "IT Director, Al Mada ",
-      thumbnail: "1",
-      description:
-        "GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
-      category: "static",
-      link: "/",
-    },
-    {
-      id: 5,
-      clientName: "Mr. Shibu Mathew",
-      clientDesignation: "Principal Manager, JGC Gulf",
-      thumbnail: "2",
-      description:
-        "GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.",
-      category: "video",
-      link: "/video",
-    },
-    {
-      id: 6,
-      clientName: "Rahul Mahajan",
-      clientDesignation: "Head of Operations, TCS",
-      thumbnail: "3",
-      description:
-        "Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise  and project management abilities by achieving highly challenging deadline.",
-      category: "static",
-      link: "/",
-    },
+
   ];
 
   return (

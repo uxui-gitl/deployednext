@@ -20,12 +20,12 @@ const AboutIntro = () => {
       <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2 gap-16">
         <div className="flex flex-col justify-center items-start ">
           <h3 className="leading-[52px] text-[42px] mb-3 font-bold">
-            We Empower Enterprises with our Legacy of Innovation and Expertise
+            BUILDING ROBUST TOMORROW FOR GLOBAL BUSINESSES WITH THE LEGACY OF INNOVATION
           </h3>
-          <p className="font-medium leading-[22px] text-base md:w-[90%] mt-4 mb-10 ">
+          {/*<p className="font-medium leading-[22px] text-base md:w-[90%] mt-4 mb-10 ">
             Revolutionize your business operations, save time and boost
             productivity with our cutting-edge offerings.
-          </p>
+  </p>*/}
           <div>
             <a
               href="/"

@@ -106,40 +106,40 @@ export default function Home() {
   const upgradeCloud = [
     {
       _id: 1,
-      title: "Upgrade AX to D365 F&O",
-      desc: "Upgrade AX to D365 F&O to Revitalize Your Business Performance",
+      title: "Lift and Shift to Cloud",
+      desc: "We smoothly relocate your IT to Azure Cloud without redesigning applications and with minimal disruption in your workflows.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 2,
-      title: "Upgrade Nav to Business Central ",
-      desc: "Unlock Maximum Modern Benefits with Business Central Upgrade",
+      title: "ERP on Cloud",
+      desc: "We revitalize your business performance delivering more agile, responsive and human-cantered ERP on Cloud.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 3,
-      title: "Upgrade to Infor LN Cloud",
-      desc: "Future proof your business growth with Upgrade to Infor LN Cloud",
+      title: "Application Migration to the Cloud",
+      desc: "With the ability to scale resources on-demand, we specialize in the precise, secure and efficient migration of your applications to the cloud, employing technical expertise for error-free deployment to ensure a seamless transition.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 4,
-      title: "Application Migration",
-      desc: "Migrate your Application to Cloud to Unleash Modernisation",
+      title: "Cloud Backup and Disaster Recovery",
+      desc: "We assure to secure your data and keep your business running, safeguarding your business against unexpected disruptions with scalable solution.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 5,
-      title: "Migrate email to cloud",
-      desc: "We aim for a more efficient and collaborative communication environment that will improve efficiency and streamline communication with minimum disruption to your everyday operations",
+      title: "Cloud Database Migration",
+      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -295,11 +295,7 @@ export default function Home() {
                     Upgrade Now?
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                    We revamp your core business application with cloud-native
-                    development so that you can win a competitive threshold in
-                    the marketplace. Our adept hyper-scaler team can help
-                    rearchitect your business operations with an efficient
-                    approach
+                    We revamp your core business application with cloud-native development so that you can win a competitive threshold in the marketplace. Our adept hyper-scaler team can help rearchitect your business operations with an efficient approach.
                   </p>
                 </div>
               </div>
@@ -345,21 +341,19 @@ export default function Home() {
               <div className="col text-white flex flex-col sm:flex-row gap-5 sm:gap-10  ">
                 <div className=" bg-[#344CA9] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                    Upgrade Infrastructure to Cloud
+                    Cloud Monitoring and Reporting
                   </h4>
                   <p className="text-base leading-6 font-semibold">
-                    As a renowned Infrastructure-as-a-Service (IaaS) provider,
-                    we enhance your IT infrastructure in the cloud era
+                    Whether you're overseeing multi-cloud environments or managing a single cloud provider, our solutions provide you
+                    with the transparency and control you need to optimize resource allocation, control costs and enhance overall cloud efficiency.
                   </p>
                 </div>
                 <div className=" bg-[#320A53] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                    Lift and Shift to Azure{" "}
+                    Cloud Microservices{" "}
                   </h4>
                   <p className="text-base leading-6 font-semibold">
-                    We smoothly relocate your IT to Azure Cloud without
-                    redesigning applications and with minimal disruption in your
-                    workflows
+                    We transform monolithic apps into agile, deployable microservices. Tailored for specific tasks, our microservices enhance agility, reduce time-to-market and ensure seamless deployment, scaling, resource efficiency and robust fault tolerance.
                   </p>
                 </div>
               </div>
@@ -402,17 +396,13 @@ export default function Home() {
                   <h4
                     className={` font-medium text-[#0745D3] uppercase ribbon`}
                   >
-                    Spend LESS, GROW MORE
+                    Let's Collaborate and Make it Happen
                   </h4>
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                     Why Godrej Infotech ?
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Embark on cloud upgradation journey by harnessing our
-                    credible assessment process, strategic resources and fluent
-                    data migration practice to minimise your business risk, time
-                    to market and cost. Our time-tested delivery framework
-                    enables businesses
+                    Embark on cloud upgradation journey by harnessing our credible assessment process, delivery framework, strategic resources and fluent data migration practice to minimise your business risk, time to market and cost while ensuring pinnacle of performance.
                   </p>
                   <div className="  mt-[20rem]">
                     <Image
@@ -450,12 +440,7 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          One of the most dedicated and{" "}
-                          <span className="text-[#4C6FFF]">
-                            reliable partners
-                          </span>{" "}
-                          for Azure Migration Services and Managed Cloud Service
-                          across{" "}
+                          Dedicated and reliable partner for Azure Migration Services and Managed Cloud Service across Europe, APAC, ME and America
                         </p>
                       </motion.div>
 
@@ -471,9 +456,7 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                          Unfailing Cloud Hosting availability managing{" "}
-                          <span className="text-[#4C6FFF]">40000+</span> VMs
+                          Business Continuity 99.95%, on – demand scalability, best uptime performance in Industry.
                         </p>
                       </motion.div>
 
@@ -489,8 +472,39 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          <span className="text-[#4C6FFF]">25000+</span> Apps
-                          and Databases migrated
+                          Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)
+                        </p>
+                      </motion.div>
+
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={4}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          Frictionless cloud upgradation delivery
+                        </p>
+                      </motion.div>
+
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={5}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          Cost-efficient and consumption-based model under single SLA.
                         </p>
                       </motion.div>
                     </AnimatePresence>
@@ -514,13 +528,10 @@ export default function Home() {
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                    We are Trained and Accredited in Azure Cloud Services
+                    We are Trained and Accredited in Cloud Services
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                    Being certified Microsoft Solutions Partner, we undergo
-                    demanding assessment and authorisation to guarantee that our
-                    expertise and practices fulfil highest standards of
-                    excellence.
+                    We undergo demanding assessment and authorisation to guarantee that our expertise and practices fulfil highest standards of excellence.
                   </p>
                 </div>
                 <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">

@@ -18,10 +18,15 @@ const AboutUs = () => {
       <>
         <div className={`${styles.visionWrap} `}>
           <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
-            <h3 className="mt-[3em] mb-[2em] text-7xl font-bold leading-[90px]">
-              Our team is the driving force behind our mission, and their
-              passion and expertise make it possible.
-            </h3>
+            <div className="mt-[3em] mb-[12em]">
+              <h3 className=" text-7xl font-bold leading-[90px]">
+                The Guiding Principles We Live By
+
+              </h3>
+              <p className="text-base font-regular">
+                Every day, we endeavour to create a meaningful impact, driven by our core principles and essence, reaching beyond our industry to positively touch every association we encounter.
+              </p>
+            </div>
           </div>
         </div>
       </>
