@@ -23,6 +23,7 @@ import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import clsx from "clsx";
+import ClientLogos from "@/sections/clientLogos/ClientLogos";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -108,32 +109,47 @@ export default function Home() {
     {
       _id: 1,
       icon: "gear",
-      title: "Process and analyze vast volumes of data",
+      title: "Minimize operational expenses of IT portfolio",
     },
     {
       _id: 2,
       icon: "diamond",
-      title: "Ensure Uniformity in Financial Information",
+      title: "Enable user concurrency to support large-scale workload",
     },
     {
       _id: 3,
       icon: "eyeGear",
-      title: "Boost brand value",
+      title: "Enhanced collaboration through cross-device accessibility to information",
     },
     {
       _id: 4,
       icon: "gear",
-      title: "Process and analyze vast volumes of data",
+      title: "Advanced data management solutions, modernized process and cloud services",
     },
     {
       _id: 5,
       icon: "diamond",
-      title: "Ensure Uniformity in Financial Information",
+      title: "Aptitude to respond to shifting business requirements",
     },
     {
       _id: 6,
       icon: "eyeGear",
-      title: "Boost brand value",
+      title: "Integrate Big Data Analytics into business processes for data-driven decision-making",
+    },
+    {
+      _id: 7,
+      icon: "eyeGear",
+      title: "Securely stores confidential business information",
+    },
+    {
+      _id: 8,
+      icon: "eyeGear",
+      title: "Enhance system performance and user experience by scaling up the system",
+    },
+    {
+      _id: 9,
+      icon: "eyeGear",
+      title: "Accelerate transformation, integrate open innovation and smart workflows",
     },
   ];
   const upgradeCloud = [
@@ -216,9 +232,9 @@ export default function Home() {
       <main>
         {/* <Intro /> */}
         <EntIntro
-          title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
-          desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
-          cta="Modernize your Business with Upgrade Cloud Services"
+          title="Seamless Upgrade to Cloud"
+          desc="Minimizing Cost and Strengthening Agility with Better Security"
+          cta="Schedule a call with our Cloud Expert"
           width="70%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
@@ -238,12 +254,7 @@ export default function Home() {
                     <span className="text-[#0745D3]"> Better Security</span>{" "}
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    We help enterprises to foster resilience by entailing
-                    bespoke and inclusive cloud upgradation roadmap. Our cloud
-                    experts ensure migration of intricate IT environments to
-                    advanced cloud platform without causing any interruption or
-                    data loss while providing agility and scalability for
-                    sustainable growth of our customers.
+                    We help enterprises to foster resilience by entailing bespoke and inclusive cloud upgradation roadmap. Our cloud experts ensure migration of intricate IT environments to advanced cloud platform without causing any interruption or data loss while providing agility and scalability for sustainable growth of our customers.
                   </p>
                 </div>
               </div>
@@ -253,6 +264,7 @@ export default function Home() {
             </div>
           </div>
         </>
+        <ClientLogos />
         <CaseStudy />
         {/* On Prem changes*/}
         <>
@@ -299,23 +311,24 @@ export default function Home() {
           </div>
         </>
         <Expertise
-          ribbon="Our Expertise "
+          ribbon="Acing your Business Objectives"
           ribbonTxtWhite="true"
-          title="Future Outlook with Intelligent Technologies  "
-          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
           arr={[
             {
-              title: "85%",
-              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+              title: "15+",
+              desc: "Cloud Certified Professionals",
             },
             {
-              title: "$200B",
-              desc: "Forbes forecasts size for AI market by 2026 ",
+              title: "50+",
+              desc: "Cloud Deployments",
             },
             {
-              title: "$6.6T",
-              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+              title: "50+",
+              desc: "Cloud Deployments",
             },
+
           ]}
         ></Expertise>
         ;{/* Upgrade Now */}
@@ -405,31 +418,7 @@ export default function Home() {
           </div>
         </>
         {/* Unlocking agility */}
-        <>
-          <div className={` w-full bg-white py-32`}>
-            <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] justify-center flex">
-              <div className="bg-white ">
-                <div>
-                  <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                    Unlocking Agility and Intelligent Cloud Performance
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="grid  sm:grid-rows-2 gap-10 sm:grid-flow-col-dense mx-auto px-20 sm:px-[8rem]">
-              {aglity.map((item) => {
-                return (
-                  <div key={item._id} className=" p-8 bg-[#EDF1FF] h-full">
-                    <Image src={icon} alt="icon" className="mb-5" />
-                    <p className="text-[22px] font-bold leading-[30px]">
-                      {item.title}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </>
+
         {/* why godrej infotech */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-32`}>
@@ -570,8 +559,8 @@ export default function Home() {
         <Benefits
           ribbon="Benefits "
           ribbonTxtWhite="true"
-          title="Benefits of AI&ML "
-          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
+          title="Upgrade to Cloud Benefits"
+          desc="Experience business performance surge with cloud"
           arr={BenefitsData}
         ></Benefits>
         ;{/* az cloud services */}

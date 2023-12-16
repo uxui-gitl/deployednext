@@ -35,9 +35,9 @@ const BlogSlider = () => {
                         Migrate your IT Infrastructure to the Cloud
                       </h3>
                       <p className="font-medium leading-[22px] md:w-[80%] ">
-                        Holistic and future- ready solutions to re-engineer
-                        business and drive maximum Return on Investments (RoI)
-                        with our proven implementation methodologies
+                        In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device.
+
+                        Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.
                       </p>
                       <Link
                         href={"#"}

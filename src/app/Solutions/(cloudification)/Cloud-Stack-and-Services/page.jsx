@@ -52,28 +52,66 @@ const fadeInAnimationVariant = {
   }),
 };
 
+const ChoiceSlider = [
+  {
+    _id: 1,
+    desc: "Scalability according to evolving business needs",
+
+  },
+  {
+    _id: 2,
+    desc: "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+
+  },
+  {
+    _id: 3,
+    desc: "Drive business agility and improved ROI with automation",
+
+  },
+  {
+    _id: 4,
+    desc: "Highest levels of security and privacy, ensuring data is safeguarded",
+
+  },
+  {
+    _id: 5,
+    desc: "Streamline delivery pipeline with all the essential tools covered under one umbrella",
+
+  },
+  {
+    _id: 6,
+    desc: "Effortless integration with data solutions and Big Data",
+
+  },
+  {
+    _id: 7,
+    desc: "Built-in reliable disaster recovery capabilities and integrated development framework",
+
+  },
+];
+
 const front = [
   {
     _id: 1,
     steps: 1,
-    title: "consulting",
-    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment",
+    title: "Advisory and Consulting",
+    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment and maximize the benefits of cloud computing.",
     link: "/",
     isExpanded: true,
   },
   {
     _id: 2,
     steps: 2,
-    title: "Strategy Building",
-    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment",
+    title: "Strategy and Roadmap",
+    desc: "Actionable plan with multi-phased approach that ensures business is adequately equipped for the challenges and opportunities of cloud adoption.",
     link: "/",
     isExpanded: false,
   },
   {
     _id: 3,
     steps: 3,
-    title: "Architecture Development",
-    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment",
+    title: "Architecture and Planning",
+    desc: "Address the obstacles of cloud adoption & optimization and develop infrastructure and platform strategies aligned with business operations that improves management models.",
     link: "/",
     isExpanded: false,
   },
@@ -81,7 +119,7 @@ const front = [
     _id: 4,
     steps: 4,
     title: "Operations & Management ",
-    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment",
+    desc: "Comprehensive management of cloud infrastructure and business application ecosystem for 360-degree visibility that fosters business performance and reduced IT costs.",
     link: "/",
     isExpanded: false,
   },
@@ -89,7 +127,7 @@ const front = [
     _id: 5,
     steps: 5,
     title: "Cloud Security",
-    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment",
+    desc: "Detection of security gaps, formation of risk-allied structural design and a blueprint for baseline cloud security and automate the deployment of security guardrails for cloud native services.",
     link: "/",
     isExpanded: false,
   },
@@ -104,12 +142,13 @@ export default function Home() {
       <main>
         {/* <Intro /> */}
         <EntIntro
-          title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
-          desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
+          title="Reimagine Your Business Capabilities with Our Intelligent Edge Cloud Stack and Services"
+          desc=""
           cta="Modernize your Business with Upgrade Cloud Services"
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
+
         <SectionNav />
         {/* Solutions Robot */}
         <>
@@ -122,13 +161,7 @@ export default function Home() {
                     <span className="text-[#0745D3]">Cloud Technology </span>{" "}
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    With acute expertise in delivering cloud-based solutions and
-                    services that cater to diverse industries, we work closely
-                    with our clients to devise and execute robust cloud systems
-                    that generate predictable outcomes. Our track record of
-                    delivering 200+ cloud projects showcase our proficiency
-                    enabling clients to draw true benefits from their
-                    investments.
+                    With acute expertise in delivering cloud-based solutions and services that cater to diverse industries, we work closely with our clients to devise and execute reliable cloud systems that recalibrate your business, deliver greater business value and refine your user experience.
                   </p>
                 </div>
               </div>
@@ -285,17 +318,16 @@ export default function Home() {
                 modules={[Pagination]}
                 className="mySwiper"
               >
-                {[0, 1, 2, 0, 1].map((item, index) => (
+                {ChoiceSlider.map((item) => (
                   <>
-                    <SwiperSlide key={index} className="w-fit max-w-md">
+                    <SwiperSlide key={item._id} className="w-fit max-w-md">
                       <div className="bg-[#EDF1FF]  p-5 mb-10">
                         <div className="text-left ">
                           <p className=" gap-4 mb-5 pb-3 text-base leading-[22px]  ">
                             <Image src={icon} alt="icon" className="mb-5" />
                           </p>
                           <h3 className="text-[22px] w-fit leading-[30px] font-bold mb-5 ">
-                            Streamlining delivery pipeline with all the
-                            essential tools covered under one umbrella
+                            {item.desc}
                           </h3>
                         </div>
                       </div>
@@ -371,7 +403,13 @@ export default function Home() {
             </div>
           </div>
         </>
-        <SME />
+        <SME
+          imgSrc="/SME-Biju.png"
+          ribbon="Introducing Our Cloud Leader"
+          desc="We fast track the cloud incorporation process to drive impactful business results and value creation on global scale through advance cloud transformation capability"
+          sme="Zubin Bharucha"
+          designation="Cloud Head, Godrej Infotech"
+        />
         {/* why godrej infotech */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-32`}>
@@ -430,12 +468,7 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          One of the most dedicated and{" "}
-                          <span className="text-[#4C6FFF]">
-                            reliable partners
-                          </span>{" "}
-                          for Azure Migration Services and Managed Cloud Service
-                          across{" "}
+                          Comprehensive access to our cloud services across worldwide
                         </p>
                       </motion.div>
 
@@ -451,9 +484,7 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                          Unfailing Cloud Hosting availability managing{" "}
-                          <span className="text-[#4C6FFF]">40000+</span> VMs
+                          Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications
                         </p>
                       </motion.div>
 
@@ -469,8 +500,38 @@ export default function Home() {
                       >
                         <Image src={checkout} alt="checkout" />
                         <p className="text-base font-medium leading-[22px]">
-                          <span className="text-[#4C6FFF]">25000+</span> Apps
-                          and Databases migrated
+                          Holistic approach including resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks.
+                        </p>
+                      </motion.div>
+
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={3}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          End-to-end strategic cloud services for complete cloud journey.
+                        </p>
+                      </motion.div>
+                      <motion.div
+                        initial="initial"
+                        whileInView="animate"
+                        custom={3}
+                        viewport={{
+                          once: true,
+                        }}
+                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                        variants={fadeInAnimationVariant}
+                      >
+                        <Image src={checkout} alt="checkout" />
+                        <p className="text-base font-medium leading-[22px]">
+                          Cloud expertise that offers business growth and localized requirements support.
                         </p>
                       </motion.div>
                     </AnimatePresence>
@@ -490,9 +551,7 @@ export default function Home() {
                     Synergetic Partnership
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                    Our expansive worldwide network of a multitude of market
-                    innovators enables us to embrace breakthrough technologies
-                    and confront business roadblocks effectively
+                    Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row my-5 justify-center items-center mx-auto gap-10 sm:gap-16">
