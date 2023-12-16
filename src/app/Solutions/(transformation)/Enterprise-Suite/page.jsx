@@ -17,9 +17,8 @@ export default function Home() {
       <main>
         {/* <Intro /> */}
         <EntIntro
-          title="Bridging Transformation
-          with Enterprise Agility"
-          desc="We drive digital business revolution for tangible results, optimized bottom line and a dynamic digital edge"
+          title="Bridging Transformation with Enterprise Agility"
+          desc=""
           cta="Let's Connect"
           width="60%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -38,9 +37,7 @@ export default function Home() {
                   Success
                 </h3>
                 <p className="font-normal leading-[22px] w-[70%] mx-auto">
-                  Collaborating with top- tier application providers, we
-                  recognise and deliver right technology for your business to
-                  bring forth scalable transformation
+                  Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation. Our goal is to drive your digital business revolution for tangible results, optimized bottom line and a dynamic digital edge.
                 </p>
               </div>
             </div>

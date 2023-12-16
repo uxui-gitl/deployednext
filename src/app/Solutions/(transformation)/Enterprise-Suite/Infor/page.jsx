@@ -39,6 +39,7 @@ import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
+import Expertise from "@/components/Expertise";
 const smartTools = [
   {
     _id: 1,
@@ -140,52 +141,80 @@ const page = () => {
     {
       _id: 1,
       title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
-      cta: "Know more",
-      link: "/",
+      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
     {
       _id: 2,
       title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
-      cta: "Know more",
-      link: "/",
+      desc: "Experience seamless and transformative migration with data integrity for your business.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
     {
       _id: 3,
       title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
-      cta: "Know more",
-      link: "/",
+      desc: "Get access to enhanced innovation, business preferences and value.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
     {
       _id: 4,
       title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
-      cta: "Know more",
-      link: "/",
+      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
     {
       _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
-      cta: "Know more",
-      link: "/",
+      title: "Managed Services",
+      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
     {
       _id: 6,
       title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
-      cta: "Know more",
-      link: "/",
+      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes.",
+      cta: "",
+      link: "",
       bg: "/gradient-1.png",
     },
   ];
+
+  const InforDrivers = [
+    {
+      _id: 1,
+      title: "InsightEdge+",
+      desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
+    },
+    {
+      _id: 2,
+      title: "DataMasterX / DataSwiftPro",
+      desc: "Godrej Infotech Data Conversion Utility Tool offers data migration utilities facilitating faster & structured data upload and managing source & target systems, table structures, field mapping and data download/upload scripts.",
+    },
+    {
+      _id: 3,
+      title: "VertiNexus Catalyst",
+      desc: "Industry vertical focused accelerator offering Pre-Configured Business Process Mapping and Pre-Built Industry required Customization. ",
+    },
+    {
+      _id: 4,
+      title: "Cloud Navigator / Cloud Co-Pilot",
+      desc: "Infor Cloud Migration Planner addressing critical factors like data migration strategies, application compatibility, network architecture and security protocols to assure steady and effectual transition to the Infor cloud environment.",
+    },
+    {
+      _id: 5,
+      title: "Prosoft 2.0",
+      desc: "Robust project management solution and inventory controls are designed to streamline operations in on-site project management. PS2.0 is integrated with the Infor platform, ensuring an efficient project management experience.",
+    },
+  ]
 
   const aglity = [
     {
@@ -221,8 +250,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future  of Business Efficiency with Infor "
-        desc="We assist your organization to respond to the most important stakeholder’s expectations with agility and accuracy. Encompassing all business units, we collaborate with you to drive transformation throughout the entire customer journey.  We deliver solution"
+        title="Embrace the Digital Future of Business Efficiency with Infor"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -241,17 +270,14 @@ const page = () => {
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
+                  Let's Collaborate and Make it Happen
                 </h4>
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                   Why Godrej Infotech ?
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
+
+                  Your satisfaction is paramount to us. Godrej Infotech prioritizes client feedback and collaboration, ensuring the final solution not only meets but exceeds your expectations.
                 </p>
                 <div className="  mt-[20rem]">
                   <Image
@@ -289,12 +315,7 @@ const page = () => {
                     >
                       <Image src={checkout} alt="checkout" />
                       <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
+                        Proven excellence of 20 + years and 200+ successful implementations, rollouts and migrations
                       </p>
                     </motion.div>
 
@@ -310,9 +331,7 @@ const page = () => {
                     >
                       <Image src={checkout} alt="checkout" />
                       <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
+                        Comprehensive in-house product ecosystem delivering unified functionality and operational effectiveness.
                       </p>
                     </motion.div>
 
@@ -328,8 +347,37 @@ const page = () => {
                     >
                       <Image src={checkout} alt="checkout" />
                       <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
+                        Being a subsidiary of the globally renowned Godrej conglomerate, worth $4.1Bn, we leverage our synergies of business and IT solutions to deliver holistic solutions.
+                      </p>
+                    </motion.div>
+                    <motion.div
+                      initial="initial"
+                      whileInView="animate"
+                      custom={3}
+                      viewport={{
+                        once: true,
+                      }}
+                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                      variants={fadeInAnimationVariant}
+                    >
+                      <Image src={checkout} alt="checkout" />
+                      <p className="text-base font-medium leading-[22px]">
+                        Strategic partnership as Infor's Centre of Excellence and Co-development Partner enables us to deliver innovative and industry-specific solutions.
+                      </p>
+                    </motion.div>
+                    <motion.div
+                      initial="initial"
+                      whileInView="animate"
+                      custom={3}
+                      viewport={{
+                        once: true,
+                      }}
+                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
+                      variants={fadeInAnimationVariant}
+                    >
+                      <Image src={checkout} alt="checkout" />
+                      <p className="text-base font-medium leading-[22px]">
+                        Repository of ready-to-use use-cases guarantees swift implementation and seamless integration, driving enhanced productivity.
                       </p>
                     </motion.div>
                   </AnimatePresence>
@@ -353,10 +401,7 @@ const page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  We revamp your core business application with cloud-native
-                  development so that you can win a competitive threshold in the
-                  marketplace. Our adept hyper-scaler team can help rearchitect
-                  your business operations with an efficient approach
+                  Our commitment to your project's success drives our ownership and determination to go above and beyond. This steadfast dedication has positioned us as a trusted long-term collaborator in our industry.
                 </p>
               </div>
             </div>
@@ -384,7 +429,7 @@ const page = () => {
                         {item.desc}
                       </p>
                     </div>
-                    <Link
+                    {/*<Link
                       href={item.link}
                       className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
                     >
@@ -400,7 +445,7 @@ const page = () => {
                           className="cta-know-more"
                         />
                       </span>
-                    </Link>
+                        </Link>*/}
                   </div>
                 );
               })}
@@ -426,7 +471,7 @@ const page = () => {
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
+                  enhancements for enhancement of business productivity.
                 </p>
               </div>
             </div>
@@ -434,22 +479,18 @@ const page = () => {
         </div>
         <div className={` ${styles["bg-img"]} w-full py-32 `}>
           <div className=" grid grid-cols-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
-            {[0, 1, 2, 3].map((item, index) => {
+            {InforDrivers.map((item, i) => {
               return (
-                <div key={index} className="mx-5 bg-white ">
+                <div key={i} className="mx-5 bg-white ">
                   <div className="p-5  w-full ">
                     <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      DataSwift Pro
+                      {item.title}
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                      Godrej Infotech Data Conversion Utility Tool offers data
-                      migration utilities facilitating faster & structured data
-                      upload and managing source & target systems, table
-                      structures, field mapping and data download/upload
-                      scripts.
+                      {item.desc}
                     </p>
                   </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
+                  {/*<div className=" w-full bg-[#0745D3] p-5">
                     <Link
                       href={"/"}
                       className="text-white  flex transition-all hover:opacity-75  "
@@ -461,7 +502,8 @@ const page = () => {
                         size={1}
                       />
                     </Link>
-                  </div>
+              </div>*/}
+
                 </div>
               );
             })}
@@ -469,14 +511,43 @@ const page = () => {
         </div>
       </>
 
-      <SME />
+      <Expertise
+        ribbon="Quantifying Our Infor Impact"
+        ribbonTxtWhite="true"
+        title="From Enhanced operations to Measurable growth"
+        desc="Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "1500+",
+            desc: "Infor Users",
+          },
+          {
+            title: "10+",
+            desc: "Countries Opted Infor Applications",
+          },
+          {
+            title: "55+",
+            desc: "Infor Implementations",
+          },
+
+        ]}
+      ></Expertise>
+
+      <SME
+        imgSrc="/SME-Biju.png"
+        ribbon="Introducing Infor Practice Leader"
+        title="Right intelligence, background and abilities to ensure your 360-degree business progress"
+        desc="Godrej Infotech has been at the forefront of building compelling business cases that enable organizations to attain last-mile functionality with Infor. Through our proven record of success in process transformation, we push innovation boundaries with Infor, charting a path toward sustained growth."
+        sme="Ranjeet Kumar"
+        designation=""
+      />
 
       {/* Subscription */}
       <Subscription
         title="Ready for Transformation with"
-        blue="AI and ML?"
+        blue="Infor"
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Let's start a conversation about your business optimization - we're eager to pave the way for your business wins. Whether it's optimizing your supply chain or implementing industry-specific enhancements, our team is ready to guide you towards measurable business growth."
       />
       <InfotechWeeklyAlt />
     </>
