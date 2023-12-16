@@ -420,7 +420,7 @@ export default function Home() {
                   <h4
                     className={` font-medium text-[#0745D3] uppercase ribbon`}
                   >
-                    Spend LESS, GROW MORE
+                    Let's Collaborate and Make it Happen
                   </h4>
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                     Why Godrej Infotech ?

@@ -46,9 +46,9 @@ const fadeInAnimationVariant = {
 const TechStackOfferings = [
   {
     _id: 1,
-    title: "Custom Application Development",
+    title: "Custom Application Development ",
     image: "CustomApplicationDevelopment",
-    desc: "With our extensive experience in the global marketplace, we understand necessitating a bespoke software solution that goes beyond off-the-shelf offerings. We ensure a truly tailored experience for our valued clientele",
+    desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
     cta: "Know More",
     link: "/",
   },
@@ -56,7 +56,7 @@ const TechStackOfferings = [
     _id: 2,
     title: "Legacy Modernisation",
     image: "LegacyModernisation",
-    desc: "From effectively optimizing system uptime to impeccably transiting from a colossal architecture to a microservices-based environment, we redesign and rebuild your existing application with accuracy and adeptness",
+    desc: "We expertly enhance your application, optimizing system uptime and seamlessly transitioning from large architectures to microservices.",
     cta: "Know More",
     link: "/",
   },
@@ -64,34 +64,27 @@ const TechStackOfferings = [
     _id: 3,
     title: "Application managed services",
     image: "Applicationmanagedservices",
-    desc: "We offer instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results that align seamlessly with your IT and business objectives",
+    desc: "Instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 4,
-    title: "Application Testing Services",
+    title: "Mobile Application",
     image: "ApplicationTestingServices",
-    desc: "With On-site, Off-shore and Hybrid catering, we conduct rigorous testing and validation across multiple scopes such as functionality, security, integration, compatibility, performance, data migration and UI/UX, trailed by user acceptance testing",
+    desc: "Experience uniform connectivity and enriched user engagement on fingertips with our comprehensive mobile app development services.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 5,
-    title: "Mobile Application ",
+    title: "Enterprise Application Integration",
     image: "MobileApplication",
-    desc: "We deliver every solution to our clients that is needed on fingertips. Experience uniform connectivity and enriched user engagement with our comprehensive cycle of mobile app development services",
+    desc: "We drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications. ",
     cta: "Know More",
     link: "/",
   },
-  {
-    _id: 6,
-    title: "Enterprise Application Integration ",
-    image: "EnterpriseApplicationIntegration",
-    desc: "We foster business growth and drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications",
-    cta: "Know More",
-    link: "/",
-  },
+
 ];
 
 const BenefitsData = [
@@ -241,9 +234,9 @@ const page = () => {
 
       {/* WhySection GITL */}
       <WhySection
-        ribbon="Spend LESS, GROW MORE"
+        ribbon="Let's Collaborate and Make it Happen"
         title="Why Godrej Infotech ?"
-        desc="We aim for business faster growth with our extensive client collaboration, and to achieve this, we seek to convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements."
+        desc="We understand the intricacies of diverse technology stack and leverage our capability and experience to deliver solutions that ally exquisitely with your business ambitions."
       >
         <AnimatePresence>
           <motion.div
@@ -303,10 +296,8 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Let Us Transform Your"
-        blue="Vision into Reality"
-        title2=""
-        desc="Complete the Form to Begin"
+        title="Free 30 Minutes Strategy Session with Tech Expert "
+        desc="Let's discuss how technology can help you with innovation. Please select a preferred time to call. "
       />
 
       {/* Infotech Weekly Updates */}
