@@ -119,12 +119,7 @@ const Jd = ({ params }) => {
                     Key Responsibilities
                   </h4>
                   <p className="text-[14px] leading-[22px]">
-                    1. Troubleshooting, resolving the problem tickets, incidents
-                    on Salesforce{" "}
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    2. Design, development, testing of enhancements, new
-                    requirements on Salesforce using best practices
+                    {vacancies[0].desiredProf}
                   </p>
                 </div>
                 <div className={`jd-set mb-4`}>
@@ -132,10 +127,7 @@ const Jd = ({ params }) => {
                     Job Description
                   </h4>
                   <p className="text-[14px] leading-[22px]">
-                    Salesforce technical consultant with solid experience in
-                    Admin, Configuration and Customization. Working knowledge of
-                    Conga Contract Lifecycle Management (CLM) would be a big
-                    plus
+                    {vacancies[0].desiredProf}
                   </p>
                 </div>
                 <div className={`jd-set mb-4`}>
@@ -154,35 +146,11 @@ const Jd = ({ params }) => {
                     Experience Details
                   </h4>
                   <p className="text-[14px] leading-[22px]">
-                    Essential Experience:
+                    Essential Experience: {vacancies[0].minExp} -{" "}
+                    {vacancies[0].maxExp}
                   </p>
                   <p className="text-[14px] leading-[22px]">
-                    1. 3 years of hands on experience as Salesforce Admin,
-                    Technical Consultant
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    2. Proficient in Apex Triggers, Lightning Web Components,
-                    Flow, Process Builder, Test classes
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    3. Fair understanding of configuration, build and release
-                    management Preferred Experience: 1. 3 years of hands on
-                    experience as Salesforce Admin, Technical Consultant
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    4. Proficient in Apex Triggers, Lightning Web Components,
-                    Flow, Process Builder, Test classes
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    5. Fair understanding of configuration, build and release
-                    management
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    6. Prior experience of working on integration, Data
-                    migration
-                  </p>
-                  <p className="text-[14px] leading-[22px]">
-                    7. Working knowledge of Conga CLM
+                    {vacancies[0].desiredProf}
                   </p>
                 </div>
                 <div className={`jd-set mb-4`}>

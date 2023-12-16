@@ -88,8 +88,9 @@ const JobList = (props) => {
               custom={index}
               className={`flex justify-center items-start flex-col md:flex-col mb-5 gap-5  `}
             >
-              <div className={` shadow-md hover:shadow-xl rounded-md`}>
+              <div className={` shadow-md hover:shadow-xl rounded-md w-full`}>
                 <Link
+                  // https://esptest.godrej.com/ApplEmpQryVac.asp?srNo=${vacancies[0].srNo}&flag=false&companyCode=GIL
                   // href={`https://esptest.godrej.com/ApplEmpQryVac.asp?srNo=${vacancy.srNo}&flag=false&companyCode=GIL`}
                   href={`/Job-Description/${vacancy.srNo}`}
                   alt={vacancy.designation}
@@ -100,9 +101,7 @@ const JobList = (props) => {
                       {vacancy.designation}
                     </h5>
                     <p className="text-[14px] font-medium leading-[22px] mb-6">
-                      We&apos;re on the lookout for the curious, those who think
-                      big and want to define the world of tomorrow. At Godrej
-                      Infotech, you will grow into the high impact, visionary
+                      {vacancy.desiredProf}
                     </p>
                     <div className="    flex justify-start items-center">
                       <p className="text-sm bg-[#EDF1FF] text-[#101828] px-2 py-1 rounded font-medium mr-4">

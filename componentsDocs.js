@@ -156,7 +156,7 @@ const IndustryExperts = [
 ];
 
 // ----------------------------
-// Subscription //
+// Subscription //  <StrategySub  />
 // ----------------------------
 <Subscription
   title="Let Us Transform Your"
@@ -364,3 +364,51 @@ const accordion = [
     },
   ]}
 ></Expertise>;
+
+
+// ----------------------------
+// Client Testimonials //
+// ----------------------------
+
+
+
+const TestimonialsData = [
+  {
+    id: 1,
+    clientName: "",
+    clientDesignation: "IT Manager",
+    thumbnail: "1",
+    description:
+      "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+    category: "static",
+    link: "/",
+  },
+  {
+    id: 2,
+    clientName: "",
+    clientDesignation: "IT Manager",
+    thumbnail: "1",
+    description:
+      "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+    category: "static",
+    link: "/",
+  },
+  {
+    id: 3,
+    clientName: "",
+    clientDesignation: "IT Manager",
+    thumbnail: "1",
+    description:
+      "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+    category: "static",
+    link: "/",
+  },
+];
+
+
+<Testimonials
+          ribbon="CLIENT TESTIMONIALS"
+          title="Delighted customers share their success experience "
+          desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+          arr={TestimonialsData}
+        />
