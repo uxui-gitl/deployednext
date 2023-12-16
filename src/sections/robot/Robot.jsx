@@ -14,7 +14,7 @@ const Robot = ({ bg }) => {
         className={` max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem] p-5`}
       >
         <div className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-5`}>
-          <div className={`${styles.robot} w-2/5 mx-auto`}>
+          <div className={`${styles.robot} w-2/5 sm:w-2/4  mx-auto`}>
             <Lottie animationData={robotAnimation} />
           </div>
 

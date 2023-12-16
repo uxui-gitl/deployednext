@@ -5,12 +5,30 @@ import checkout from "../../public/checkout.png";
 import curiousPerson from "../../public/curiousPerson.png";
 import cloud from "../../public/cloud.png";
 import cloudArrows from "../../public/cloudArrows.png";
-
-const WhySection = ({ ribbon, title, desc, children }) => {
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5 * index,
+    },
+  }),
+};
+const WhySection = ({
+  ribbon,
+  title,
+  desc,
+  arr,
+  renderInlineSpans = false,
+}) => {
   return (
     <>
       <div className={` w-full overflow-hidden bg-[#F2F4F7] pt-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="text-left overflow-hidden max-w-screen-xl md:max-w-screen-2xl   mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
           <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
             <div className="">
@@ -41,10 +59,44 @@ const WhySection = ({ ribbon, title, desc, children }) => {
             </div>
           </div>
           {/* right */}
-          <div className="">
-            <div>
-              <div className="relative">{children}</div>
-            </div>
+          {/* <div className="relative">{children}</div> */}
+          <div className="relative">
+            <AnimatePresence>
+              {arr.map((item) => (
+                <motion.div
+                  key={item._id}
+                  initial="initial"
+                  whileInView="animate"
+                  custom={item._id}
+                  viewport={{
+                    once: true,
+                  }}
+                  // className={`flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-${item._id} w-[100%]`}
+                  // variants={fadeInAnimationVariant}
+                  // style={{ marginLeft: `${2.5 * item._id}rem` }}
+
+                  className={`flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 ${
+                    item._id > 0 ? "sm:ml-" + 2.5 * item._id + "rem" : "" // Apply margin only for desktop
+                  }`}
+                  // style={
+                  //   item._id > 0 ? { marginLeft: `${2.5 * item._id}rem` } : {}
+                  // }
+                  variants={fadeInAnimationVariant}
+                >
+                  <Image src={checkout} alt="checkout" />
+                  {/* <p className="text-base font-medium leading-[22px]">
+                    {item.desc}
+                  </p> */}
+                  <p className="text-base font-medium leading-[22px]">
+                    {renderInlineSpans ? (
+                      <span dangerouslySetInnerHTML={{ __html: item.desc }} />
+                    ) : (
+                      item.desc
+                    )}
+                  </p>
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
         </div>
       </div>

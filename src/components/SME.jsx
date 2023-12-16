@@ -17,7 +17,7 @@ const SME = ({ imgSrc, ribbon, desc, sme, designation }) => {
             </>
           </div>
           {/* right */}
-          <div className="grow flex flex-col justify-center px-[4rem]">
+          <div className="grow flex flex-col justify-center px-[2rem] sm:px-[4rem]">
             <div>
               <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
                 {ribbon}

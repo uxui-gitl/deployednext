@@ -4,20 +4,37 @@ import "./globals.css";
 import { Work_Sans } from "next/font/google";
 import Footer from "@/sections/footer/Footer";
 import Copyright from "@/sections/copyright/Copyright";
-import Navbar from "@/components/Navbar/Navbar";
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import SplashScreen from "@/components/SplashScreen";
+import { usePathname } from "next/navigation";
 
 const works = Work_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  const [isLoading, setIsLoading] = useState(isHome);
+
+  useEffect(() => {
+    if (isLoading) return;
+  }, [isLoading]);
+
   return (
     <html lang="en">
       <body className={`${works.className} antialiased`}>
-        <Announcement />
+        {isLoading && isHome ? (
+          <SplashScreen finishLoading={() => setIsLoading(false)} />
+        ) : (
+          <>
+            <Announcement />
 
-        {children}
-        <Footer />
-        <Copyright />
+            {children}
+            <Footer />
+            <Copyright />
+          </>
+        )}
       </body>
     </html>
   );

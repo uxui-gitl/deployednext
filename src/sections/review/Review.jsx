@@ -32,7 +32,21 @@ const Review = () => {
         }}
         modules={[Scrollbar]}
         autoHeight={false}
-        slidesPerView={2}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        }}
         centeredSlides={true}
         spaceBetween={60}
         grabCursor={true}
@@ -40,22 +54,11 @@ const Review = () => {
           clickable: true,
         }}
       >
-        {/* Offset */}
-        {/* <div
-          className="w-[13.5%] hidden invisible md:visible lg:w-[24%]"
-          style={{
-            background: "#07001f",
-            position: "absolute",
-            left: 0,
-            height: "100%",
-            top: 0,
-            zIndex: "99",
-            width: "13.4%",
-          }}
-        ></div> */}
-
         {/* Ambition Box */}
-        <SwiperSlide className={`${styles.reviewCardWrap}`}>
+        <SwiperSlide
+          className={`${styles.reviewCardWrap}`}
+          style={{ width: "700px" }}
+        >
           <div
             className={styles.reviewCard}
             style={{
@@ -65,19 +68,25 @@ const Review = () => {
             }}
           >
             <div className={styles.reviewCard1}>
-              <div style={{}}>
+              <div>
                 <h3 style={{ color: "#F2F4F7" }}>
                   Over 250 reviews on Ambition Box
                 </h3>
-                <h6 className="text-sm mt-3" style={{ color: "#F2F4F7" }}>
+                <h6
+                  className="text-sm mt-3 w-fit break-words"
+                  style={{ color: "#F2F4F7" }}
+                >
                   User reviews have proven to outperform any other assessments
                   in the consumer world. That&#39;s why we&#39;re proud of what
                   our reviewers have to say.
                 </h6>
               </div>
             </div>
-            <div className={styles.glassdoorRatings}>
-              <div className="flex items-baseline flex-col">
+
+            <div
+              className={`flex flex-col sm:flex-row justify-between w-full items-start sm:items-end`}
+            >
+              <div className="flex items-baseline  flex-col">
                 <div>
                   <div className="flex flex-row">
                     {[...Array(5)].map((_, index) => (
@@ -92,7 +101,7 @@ const Review = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex items-baseline flex-row">
+                <div className="flex sm:items-baseline flex-col items-start sm:flex-row">
                   <h2 className="font-bold	m-0 p-0 text-[114px] leading-[0.8]">
                     4.1
                   </h2>
@@ -107,7 +116,10 @@ const Review = () => {
         </SwiperSlide>
 
         {/* Glassdoor Awards */}
-        <SwiperSlide className={`${styles.reviewCardWrap}`}>
+        <SwiperSlide
+          className={`${styles.reviewCardWrap}`}
+          style={{ width: "700px" }}
+        >
           <div
             className={styles.reviewCard}
             style={{
@@ -128,7 +140,9 @@ const Review = () => {
                 </h6>
               </div>
             </div>
-            <div className={styles.glassdoorRatings}>
+            <div
+              className={`flex flex-col sm:flex-row justify-between w-full items-start sm:items-end`}
+            >
               <div className="flex items-baseline flex-col">
                 <div>
                   <div className="flex flex-row">
@@ -158,13 +172,18 @@ const Review = () => {
           </div>
         </SwiperSlide>
         {/* Great Place to work */}
-        <SwiperSlide className={`${styles.reviewCardWrap} justify-end`}>
+        <SwiperSlide
+          className={`${styles.reviewCardWrap} justify-end`}
+          style={{ width: "700px" }}
+        >
           <div className={styles.reviewCard}>
             <div className={styles.reviewCard2}>
               <div className={styles.imageOverlay}>
-                <img
-                  src="greatPlaceToWork.png"
+                <Image
+                  src="/greatPlaceToWork.png"
                   alt="Overlay"
+                  height={200}
+                  width={117}
                   className={styles.overlayImage}
                 />
               </div>

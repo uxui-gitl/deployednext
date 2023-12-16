@@ -8,6 +8,7 @@ import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
+import Testimonial from "@/sections/testimonial/Testimonial";
 
 import inforCloudSuite from "../../../../public/inforCloudSuite.png";
 import Testimonials from "@/sections/testimonial/Testimonial";
@@ -380,7 +381,44 @@ const page = () => {
       </>
 
       {/* Casestudy */}
-      <CaseStudy isHomepage={false} />
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Delivering Results that Matters "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+            thumbnail: "1",
+            description: "",
+            tags: ["Automation"],
+            cta: "Read article",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+            thumbnail: "2",
+            description: "",
+            tags: ["Cloud"],
+            cta: "Read article",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+            thumbnail: "3",
+            description: "",
+            tags: ["Transformation"],
+            cta: "Read article",
+            link: "/",
+          },
+        ]}
+      />
       {/* Our Partners */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
@@ -416,8 +454,25 @@ const page = () => {
       </>
       {/* Industry Spotlight Slider */}
 
-      {/* Testimonials */}
-      <Testimonials />
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
       {/* Subscription */}
       <Subscription
         title="Ready for Transformation with"

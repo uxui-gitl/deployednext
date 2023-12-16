@@ -3,10 +3,12 @@
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Image from "next/image";
 import "react-creative-cursor/dist/styles.css";
+import Subscription from "@/components/Subscription";
 import EntIntro from "@/components/EntIntro";
 import SME from "@/components/SME";
 import StrategySub from "@/components/StrategySub";
-import Testimonials from "@/sections/testimonial/Testimonial";
+import WhySection from "@/components/WhySection";
+import Testimonial from "@/sections/testimonial/Testimonial";
 import Lottie from "lottie-react";
 // import robotAnimation from "../../../../assets/robot.json";
 import robotAnimation from "@/assets/robot.json";
@@ -56,40 +58,62 @@ const ChoiceSlider = [
   {
     _id: 1,
     desc: "Scalability according to evolving business needs",
-
   },
   {
     _id: 2,
     desc: "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
-
   },
   {
     _id: 3,
     desc: "Drive business agility and improved ROI with automation",
-
   },
   {
     _id: 4,
     desc: "Highest levels of security and privacy, ensuring data is safeguarded",
-
   },
   {
     _id: 5,
     desc: "Streamline delivery pipeline with all the essential tools covered under one umbrella",
-
   },
   {
     _id: 6,
     desc: "Effortless integration with data solutions and Big Data",
-
   },
   {
     _id: 7,
     desc: "Built-in reliable disaster recovery capabilities and integrated development framework",
-
   },
 ];
 
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 2,
+    ribbon: "News",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 3,
+    ribbon: "blog",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+];
 const front = [
   {
     _id: 1,
@@ -148,11 +172,10 @@ export default function Home() {
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
-
         <SectionNav />
         {/* Solutions Robot */}
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div className={` w-full bg-white py-16`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
@@ -161,18 +184,22 @@ export default function Home() {
                     <span className="text-[#0745D3]">Cloud Technology </span>{" "}
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    With acute expertise in delivering cloud-based solutions and services that cater to diverse industries, we work closely with our clients to devise and execute reliable cloud systems that recalibrate your business, deliver greater business value and refine your user experience.
+                    With acute expertise in delivering cloud-based solutions and
+                    services that cater to diverse industries, we work closely
+                    with our clients to devise and execute reliable cloud
+                    systems that recalibrate your business, deliver greater
+                    business value and refine your user experience.
                   </p>
                 </div>
               </div>
-              <div className={`bg-[#f5f5f5] `}>
+              <div className={` `}>
                 <div
                   className={` max-w-screen-xl md:max-w-screen-lg mx-auto px-[2rem] p-5`}
                 >
                   <div
                     className={`grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-5`}
                   >
-                    <div className={`  w-2/5 mx-auto`}>
+                    <div className={`w-2/3 mx-auto`}>
                       <Lottie animationData={robotAnimation} />
                     </div>
                   </div>
@@ -181,10 +208,9 @@ export default function Home() {
             </div>
           </div>
         </>
-
         {/* Maximize business output / Vertical Slider */}
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div className={` w-full bg-white py-16`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] flex">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div className="flex justify-center">
@@ -192,7 +218,9 @@ export default function Home() {
                     Maximizing Your Business Outcomes with Cloud Technology
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our verified proficiency in execution and innovation in cloud adaptability facilitate the process of business transformation at each juncture.
+                    Our verified proficiency in execution and innovation in
+                    cloud adaptability facilitate the process of business
+                    transformation at each juncture.
                   </p>
                 </div>
               </div>
@@ -294,7 +322,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
         {/* Why Cloud is your Ultimate Choice? */}
         <>
           <div className={` w-full bg-white py-32`}>
@@ -304,7 +331,9 @@ export default function Home() {
                 Ultimate Choice?
               </h3>
               <p className="font-medium leading-[22px] md:w-[80%] ">
-                With a fault-tolerant architecture and a global network of data centers, cloud empowers you to expand your infrastructure and leverage advanced analytics.
+                With a fault-tolerant architecture and a global network of data
+                centers, cloud empowers you to expand your infrastructure and
+                leverage advanced analytics.
               </p>
             </div>
 
@@ -339,7 +368,9 @@ export default function Home() {
           </div>
         </>
 
-        <BlogSlider />
+        {/* Blog */}
+        <BlogSlider arr={blogData} />
+
         {/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth */}
         <>
           <div className={` w-full bg-[#F2F4F7] py-32`}>
@@ -403,6 +434,7 @@ export default function Home() {
             </div>
           </div>
         </>
+        {/* SME Experts */}
         <SME
           imgSrc="/SME-Biju.png"
           ribbon="Introducing Our Cloud Leader"
@@ -411,137 +443,41 @@ export default function Home() {
           designation="Cloud Head, Godrej Infotech"
         />
         {/* why godrej infotech */}
-        <>
-          <div className={` w-full bg-[#F2F4F7] pt-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h4
-                    className={` font-medium text-[#0745D3] uppercase ribbon`}
-                  >
-                    Spend LESS, GROW MORE
-                  </h4>
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                    Why Godrej Infotech ?
-                  </h3>
-                  <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Embark on cloud upgradation journey by harnessing our
-                    credible assessment process, strategic resources and fluent
-                    data migration practice to minimise your business risk, time
-                    to market and cost. Our time-tested delivery framework
-                    enables businesses
-                  </p>
-                  <div className=" mt-[20rem]">
-                    <Image
-                      className="absolute bottom-0 z-20"
-                      src={cloudArrows}
-                      alt="cloud Arrows"
-                    />
-                    <Image
-                      className="absolute left-5 bottom-10 z-30"
-                      src={cloud}
-                      alt="cloud"
-                    />
-                    <Image
-                      className="absolute bottom-0 z-20"
-                      src={curiousPerson}
-                      alt="curious Person"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div>
-                  <div className="relative">
-                    <AnimatePresence>
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={1}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Comprehensive access to our cloud services across worldwide
-                        </p>
-                      </motion.div>
 
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={2}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications
-                        </p>
-                      </motion.div>
+        <WhySection
+          ribbon="Spend LESS, GROW MORE"
+          title="Why Godrej Infotech ?"
+          desc="We aim for business faster growth with our extensive client collaboration, and to achieve this, we seek to convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements."
+          arr={[
+            {
+              _id: 1,
+              desc: "Comprehensive access to our cloud services across worldwide ",
+              icon: "",
+            },
+            {
+              _id: 2,
+              desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications ",
+              icon: "",
+            },
+            {
+              _id: 3,
+              desc: "Holistic approach including resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks. ",
+              icon: "",
+            },
+            {
+              _id: 4,
+              desc: "End-to-end strategic cloud services for complete cloud journey. ",
+              icon: "",
+            },
+            {
+              _id: 5,
+              desc: "Cloud expertise that offers business growth and localized requirements support. ",
+              icon: "",
+            },
+          ]}
+        ></WhySection>
 
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={3}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Holistic approach including resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks.
-                        </p>
-                      </motion.div>
-
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={3}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          End-to-end strategic cloud services for complete cloud journey.
-                        </p>
-                      </motion.div>
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={3}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Cloud expertise that offers business growth and localized requirements support.
-                        </p>
-                      </motion.div>
-                    </AnimatePresence>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-        {/* logos */}
+        {/* client logos */}
         <>
           <div className={` w-full bg-white py-32`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
@@ -551,7 +487,9 @@ export default function Home() {
                     Synergetic Partnership
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                    Our expansive worldwide network of market innovators enables us to embrace breakthrough technologies and confront business roadblocks effectively.
+                    Our expansive worldwide network of market innovators enables
+                    us to embrace breakthrough technologies and confront
+                    business roadblocks effectively.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row my-5 justify-center items-center mx-auto gap-10 sm:gap-16">
@@ -574,12 +512,73 @@ export default function Home() {
           </div>
         </>
 
-        <CaseStudy />
-        <Testimonials />
+        {/* Casestudy */}
+        <CaseStudy
+          ribbon="CASE STUDY "
+          title="Delivering Results that Matters "
+          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+          isHomepage={false}
+          arr={[
+            {
+              id: 1,
+              title:
+                "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+              thumbnail: "1",
+              description: "",
+              tags: ["Automation"],
+              cta: "Read article",
+              link: "/",
+            },
+            {
+              id: 2,
+              title:
+                "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+              thumbnail: "2",
+              description: "",
+              tags: ["Cloud"],
+              cta: "Read article",
+              link: "/",
+            },
+            {
+              id: 3,
+              title:
+                "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+              thumbnail: "3",
+              description: "",
+              tags: ["Transformation"],
+              cta: "Read article",
+              link: "/",
+            },
+          ]}
+        />
 
+        {/* Testimonial */}
+        <Testimonial
+          ribbon="Testimonials "
+          title="What Experts Think About Us "
+          desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+          arr={[
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation: "IT Manager",
+              thumbnail: "1",
+              description:
+                "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              category: "static",
+              link: "/",
+            },
+          ]}
+        />
         {/* Join the Team */}
         <JoinExpTeam />
-        <StrategySub />
+        <Subscription
+          title="Ready for Transformation with"
+          blue="AI and ML?"
+          title2=""
+          desc="Let's embark on your journey together aligned with your business goals."
+        />
       </main>
     </>
   );

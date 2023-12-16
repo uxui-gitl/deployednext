@@ -83,7 +83,7 @@ const Testimonials = ({ ribbon, title, desc, arr }) => {
                 }}
                 modules={[Autoplay, Pagination]}
               >
-                {arr.map((ct) => (
+                {clientTestimonials.map((ct) => (
                   <SwiperSlide key={ct.id} className="min-w-[300px] pb-8">
                     <div className="">
                       <div>

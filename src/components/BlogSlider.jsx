@@ -10,7 +10,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const BlogSlider = () => {
+const BlogSlider = ({ arr }) => {
   return (
     <>
       <div className={` w-full bg-white py-32`}>
@@ -21,29 +21,27 @@ const BlogSlider = () => {
             pagination={true}
             modules={[Pagination]}
           >
-            {[0, 1, 2].map((item, index) => (
+            {arr.map((item) => (
               <>
-                <SwiperSlide key={index}>
+                <SwiperSlide key={item._id}>
                   <div className="bg-white flex items-start flex-col-reverse sm:flex-row justify-start mb-10">
                     <div className="text-left w-1/2">
                       <h4
                         className={` font-medium text-[#0745D3] uppercase ribbon`}
                       >
-                        Blogs
+                        {item.ribbon}
                       </h4>
                       <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                        Migrate your IT Infrastructure to the Cloud
+                        {item.title}
                       </h3>
                       <p className="font-medium leading-[22px] md:w-[80%] ">
-                        In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device.
-
-                        Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.
+                        {item.desc}
                       </p>
                       <Link
-                        href={"#"}
+                        href={item.link}
                         className="flex text-[14px] text-[#0745D3] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
                       >
-                        Know More
+                        {item.cta}
                         <span>
                           <Icon
                             path={mdiArrowRight}
