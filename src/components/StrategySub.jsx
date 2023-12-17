@@ -29,7 +29,8 @@ const StrategySub = ({ title, blue, title2, desc }) => {
               <p className="font-medium leading-[22px] md:w-[90%] ">
                 {desc == null ? (
                   <>
-                    Let's discuss how upgrade to cloud can help you to enhance your business's growth potential.
+                    Let&apos;s discuss how upgrade to cloud can help you to
+                    enhance your business&apos;s growth potential.
                   </>
                 ) : (
                   <>{desc}</>

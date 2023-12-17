@@ -178,25 +178,16 @@ const Review = () => {
         >
           <div className={styles.reviewCard}>
             <div className={styles.reviewCard2}>
-              <div className={styles.imageOverlay}>
+              <div className={`sm:absolute top-0 left-0 w-full h-full z-[1]`}>
                 <Image
                   src="/greatPlaceToWork.png"
                   alt="Overlay"
                   height={200}
                   width={117}
-                  className={styles.overlayImage}
+                  className={` object-cover right-12 absolute top-0`}
                 />
               </div>
-              <div
-                style={{
-                  position: "absolute",
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "flex-start",
-                  flexDirection: "column",
-                  bottom: "6em",
-                }}
-              >
+              <div className="absolute flex justify-end items-start flex-col sm:bottom-24">
                 <div className="flex flex-row">
                   {[...Array(5)].map((_, index) => (
                     <Image
