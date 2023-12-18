@@ -94,7 +94,7 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                   {`${cases.description}`}
                 </p>
                 <p
-                  className={`text-base font-normal  pb-2 leading-[22px] text-[#101828]`}
+                  className={`text-base mt-4 font-normal  pb-2 leading-[22px] text-[#101828]`}
                 >
                   {" "}
                   {`${cases.title}`}{" "}

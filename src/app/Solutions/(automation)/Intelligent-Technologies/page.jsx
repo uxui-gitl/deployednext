@@ -182,26 +182,30 @@ const page = () => {
     {
       _id: 1,
       icon: "gear",
-      title: "Dummy",
-      desc: "A high degree of accuracy and consistency in business operations.",
+      title: "",
+      cardDesc:
+        "A high degree of accuracy and consistency in business operations.",
     },
     {
       _id: 2,
       icon: "diamond",
-      title: "Dummy",
-      desc: "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
+      title: "",
+      cardDesc:
+        "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
     },
     {
       _id: 3,
       icon: "eyeGear",
-      title: "Dummy",
-      desc: "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
+      title: "",
+      cardDesc:
+        "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 4,
       icon: "gear",
-      title: "Dummy",
-      desc: "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+      title: "",
+      cardDesc:
+        "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
   ];
   return (
@@ -231,7 +235,7 @@ const page = () => {
               {/* right */}
               <div>
                 <div>
-                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                  <p className="font-normal leading-[22px] md:w-[90%] ">
                     Starting precisely where you stand in your digital
                     transformation journey, we seamlessly integrate our teams
                     into your culture, fostering a collaborative environment for
@@ -258,7 +262,7 @@ const page = () => {
                       <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
                         {item.title}
                       </h4>
-                      <p className="text-[14px] leading-[22px] text-[#475467]">
+                      <p className="text-[14px] leading-[22px] text-[#101828]">
                         {item.desc}
                       </p>
                     </div>
@@ -297,12 +301,9 @@ const page = () => {
       {/* Business Benefits TO BE CREATED  */}
       <SME
         imgSrc="/SME-Biju.png"
-        ribbon="Introducing our Enterprise Solutions Leader"
-        desc="We help our clients to reinforce their customer-centric focus,
-                optimize application landscapes and accelerate business results
-                through the standardization, digitalization and automation of
-                their IT infrastructure with enterprise solutions."
-        sme="Biju Thomas"
+        ribbon="Introducing our Intelligent Solutions Leader  "
+        desc="The immense potential of automation plays a pivotal role in sculpting the future of enterprises and empower us to solve the most intricate challenges, thus laying the cornerstone for further revolutionary advancements."
+        sme="Avinash Hegde"
         designation="Enterprise Head, Godrej Infotech"
       />
 

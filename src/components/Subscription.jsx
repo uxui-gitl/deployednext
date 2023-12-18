@@ -87,7 +87,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   </>
                 )}
               </h3>
-              <p className="font-medium leading-[22px] md:w-[90%] ">
+              <p className="font-normal leading-[22px] md:w-[90%] ">
                 {desc == null ? (
                   <>
                     Let&apos;s discuss how Godrej Infotech can help your

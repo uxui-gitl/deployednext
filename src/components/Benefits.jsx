@@ -126,6 +126,9 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                     <p className="text-[26px] font-bold leading-[36px]">
                       {item.title}
                     </p>
+                    <p className="text-[18px] font-semibold leading-[22px]">
+                      {item.cardDesc}
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}{" "}

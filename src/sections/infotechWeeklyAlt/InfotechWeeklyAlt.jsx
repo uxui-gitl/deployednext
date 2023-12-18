@@ -208,12 +208,12 @@ const InfotechWeeklyAlt = (props) => {
                       <div className={`${styles["iw-card-content"]}`}>
                         {/* <p className={`text-[#98A2B3] font-bold`}>Cloudification</p> */}
                         <p
-                          className={`uppercase  text-[#101828] font-medium text-[12px]`}
+                          className={`uppercase hidden text-[#101828] font-medium text-[12px]`}
                         >
                           {`${cs.date}`}
                         </p>
                         <p
-                          className={`text-base font-semibold pt-[14px] pb-2 leading-[22px] text-[#101828]`}
+                          className={`text-base font-normal pt-[14px] pb-2 leading-[22px] text-[#101828]`}
                         >
                           {" "}
                           {`${cs.title}`}{" "}

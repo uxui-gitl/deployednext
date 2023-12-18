@@ -38,7 +38,7 @@ const WhySection = ({
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                 {title}
               </h3>
-              <p className="font-medium leading-[22px] md:w-[90%] ">{desc}</p>
+              <p className="font-normal leading-[22px] md:w-[90%] ">{desc}</p>
               <div className="  mt-[20rem]">
                 <Image
                   className="absolute bottom-0 z-20"

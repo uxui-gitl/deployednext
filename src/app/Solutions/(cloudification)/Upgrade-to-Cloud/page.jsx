@@ -6,6 +6,7 @@ import StrategySub from "@/components/StrategySub";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import shield from "../../../../../public/upgradeCloud/sheild.png";
 import puzzle from "../../../../../public/upgradeCloud/puzzle.png";
+import Subscription from "@/components/Subscription";
 import icon from "../../../../../public/icon.png";
 import microsoft from "../../../../../public/upgradeCloud/microsoft.png";
 import azure from "../../../../../public/upgradeCloud/azure.png";
@@ -16,6 +17,7 @@ import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
 import Expertise from "@/components/Expertise";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import WhySection from "@/components/WhySection";
 import Benefits from "@/components/Benefits";
 import Icon from "@mdi/react";
 import { mdiBullseyeArrow } from "@mdi/js";
@@ -75,30 +77,22 @@ export default function Home() {
     {
       id: 1,
       clientName: "",
-      clientDesignation: "IT Manager",
+      clientDesignation:
+        "ERP and Business Intelligence Head, Fast food service chain  ",
       thumbnail: "1",
       description:
-        "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
       category: "static",
       link: "/",
     },
     {
       id: 2,
       clientName: "",
-      clientDesignation: "IT Manager",
+      clientDesignation:
+        "Manager IT, India's leading Energy Management System and Solutions provider ",
       thumbnail: "1",
       description:
-        "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-      category: "static",
-      link: "/",
-    },
-    {
-      id: 3,
-      clientName: "",
-      clientDesignation: "IT Manager",
-      thumbnail: "1",
-      description:
-        "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+        "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
       category: "static",
       link: "/",
     },
@@ -468,160 +462,64 @@ export default function Home() {
           ]}
         ></Expertise>
         {/* Unlocking agility */}
-        {/* why godrej infotech */}
+
         <>
-          <div className={` w-full bg-[#F2F4F7] pt-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h4
-                    className={` font-medium text-[#0745D3] uppercase ribbon`}
-                  >
-                    Let&apos;s Collaborate and Make it Happen
-                  </h4>
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                    Why Godrej Infotech ?
-                  </h3>
-                  <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Embark on cloud upgradation journey by harnessing our
-                    credible assessment process, delivery framework, strategic
-                    resources and fluent data migration practice to minimise
-                    your business risk, time to market and cost while ensuring
-                    pinnacle of performance.
-                  </p>
-                  <div className="  mt-[20rem]">
-                    <Image
-                      className="absolute bottom-0 z-20"
-                      src={cloudArrows}
-                      alt="cloud Arrows"
-                    />
-                    <Image
-                      className="absolute left-5 bottom-10 z-30"
-                      src={cloud}
-                      alt="cloud"
-                    />
-                    <Image
-                      className="absolute bottom-0 z-20"
-                      src={curiousPerson}
-                      alt="curious Person"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div>
-                  <div className="relative">
-                    <AnimatePresence>
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={1}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Dedicated and reliable partner for Azure Migration
-                          Services and Managed Cloud Service across Europe,
-                          APAC, ME and America
-                        </p>
-                      </motion.div>
+          {/* Why Infotech */}
 
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={2}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Business Continuity 99.95%, on – demand scalability,
-                          best uptime performance in Industry.
-                        </p>
-                      </motion.div>
+          <WhySection
+            title="Why Godrej Infotech? "
+            desc="Embark on cloud upgradation journey by harnessing our credible assessment process, delivery framework, strategic resources and fluent data migration practice to minimise your business risk, time to market and cost while ensuring pinnacle of performance. "
+            ribbon="Let's Collaborate and Make it Happen"
+            arr={[
+              {
+                _id: 1,
+                desc: "Dedicated and reliable partner for Azure Migration Services and Managed Cloud Service across Europe, APAC, ME and America ",
+                icon: "",
+              },
+              {
+                _id: 2,
+                desc: "Business Continuity 99.95%, on – demand scalability, best uptime performance in Industry. ",
+                icon: "",
+              },
+              {
+                _id: 3,
+                desc: "Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)  ",
+                icon: "",
+              },
 
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={3}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Seamless upgradation to cloud platforms such as
-                          Microsoft Azure and Amazon Web Services (AWS)
-                        </p>
-                      </motion.div>
+              {
+                _id: 4,
+                desc: "Frictionless cloud upgradation delivery ",
+                icon: "",
+              },
 
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={4}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Frictionless cloud upgradation delivery
-                        </p>
-                      </motion.div>
-
-                      <motion.div
-                        initial="initial"
-                        whileInView="animate"
-                        custom={5}
-                        viewport={{
-                          once: true,
-                        }}
-                        className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                        variants={fadeInAnimationVariant}
-                      >
-                        <Image src={checkout} alt="checkout" />
-                        <p className="text-base font-medium leading-[22px]">
-                          Cost-efficient and consumption-based model under
-                          single SLA.
-                        </p>
-                      </motion.div>
-                    </AnimatePresence>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              {
+                _id: 5,
+                desc: "Cost-efficient and consumption-based model under single SLA. ",
+                icon: "",
+              },
+            ]}
+            renderInlineSpans={true}
+          ></WhySection>
         </>
+
         <Benefits
-          ribbon="Benefits "
+          ribbon="Upgrade to Cloud Benefits   "
           ribbonTxtWhite="true"
-          title="Upgrade to Cloud Benefits"
-          desc="Experience business performance surge with cloud"
+          title="Experience business performance surge with cloud   "
+          desc=""
           arr={BenefitsData}
         ></Benefits>
 
         <>
           <div className={` w-full bg-white mx-auto text-center py-24`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
-              <div className="bg-white flex items-start flex-col justify-start">
+              <div className="mx-auto text-center bg-white flex items-center flex-row flex-col justify-center">
                 <div className="mx-auto text-center">
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
                     We are Trained and Accredited in Cloud Services
                   </h3>
-                  <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
+                  <p className="font-normal leading-[22px] md:w-[80%] mx-auto">
                     We undergo demanding assessment and authorisation to
                     guarantee that our expertise and practices fulfil highest
                     standards of excellence.
@@ -645,8 +543,13 @@ export default function Home() {
           desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
           arr={TestimonialsData}
         />
-        {/* Join the Team */}
-        <StrategySub />
+        {/* Subscription */}
+        <Subscription
+          title="Lets discuss how upgrade to cloud can help you to enhance your business's growth potential. "
+          blue=""
+          title2=""
+          desc="Please select a preferred time to call "
+        />
       </main>
     </>
   );
