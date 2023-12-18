@@ -3,6 +3,7 @@ import EntIntro from "@/components/EntIntro";
 import StrategySub from "@/components/StrategySub";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import shield from "../../../../../public/upgradeCloud/sheild.png";
+import Subscription from "@/components/Subscription";
 import puzzle from "../../../../../public/upgradeCloud/puzzle.png";
 import icon from "../../../../../public/icon.png";
 import microsoft from "../../../../../public/upgradeCloud/microsoft.png";
@@ -311,7 +312,10 @@ To be added Data Insights Metrics
 */}
       <Testimonials />
 
-      <StrategySub />
+      <Subscription
+        title="Tap the faster and simpler way for futuristic seamless business experiences"
+        desc="Let's discuss how intelligent technologies can help you with rapid growth"
+      />
       <InfotechWeeklyAlt />
     </>
   );
