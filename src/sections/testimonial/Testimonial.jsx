@@ -20,6 +20,7 @@ import { mdiDomain } from "@mdi/js";
 import { Cursor } from "react-creative-cursor";
 
 import "react-creative-cursor/dist/styles.css";
+import Container from "@/components/Container";
 
 const Testimonials = ({ ribbon, title, desc, arr }) => {
   const clientTestimonials = [

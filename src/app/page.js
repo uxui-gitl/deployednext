@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
-      <main className=" overflow-hidden">
+      <main className=" overflow-hidden ">
         <div className={`relative z-[500]`}>
           <div className={`absolute w-full  `}>
             <Navbar theme="light" />
@@ -32,12 +32,12 @@ export default function Home() {
         <ClientLogos />
         <ACT />
         <Robot />
-        {/* <Expertise /> */}
+        <Expertise />
         <CaseStudy
           ribbon="CASE STUDY "
           title="Delivering Results that Matters "
           desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-          isHomepage={true}
+          isHomepage={false}
           arr={[
             {
               id: 1,

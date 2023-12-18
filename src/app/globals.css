@@ -355,3 +355,104 @@ h4.ribbon:before {
   transform-origin: top;
   transform: skewX(-20deg); /* control the slant */
 }
+
+/* Robot cards act */
+.cardContainer {
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: sticky;
+
+  top: 0px;
+}
+.cardContainer.card {
+  display: flex;
+
+  flex-direction: column;
+
+  position: relative;
+
+  height: 500px;
+
+  width: 1000px;
+
+  border-radius: 25px;
+
+  padding: 50px;
+
+  transform-origin: top;
+}
+.cardContainer h2 {
+  text-align: center;
+
+  margin: 0px;
+
+  font-size: 28px;
+}
+
+.cardContainer .body {
+  display: flex;
+
+  height: 100%;
+
+  margin-top: 50px;
+
+  gap: 50px;
+}
+.cardContainer .description {
+  width: 40%;
+
+  position: relative;
+
+  top: 10%;
+}
+.cardContainer p {
+  font-size: 16px;
+}
+
+.cardContainer p &::first-letter {
+  font-size: 28px;
+
+  font-family: "Title";
+}
+
+.cardContainerspan {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+.cardContainer a {
+  font-size: 12px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.cardContainer .imageContainer {
+  position: relative;
+
+  width: 60%;
+
+  height: 100%;
+
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+.cardContainer .inner {
+  width: 100%;
+
+  height: 100%;
+}
+
+.cardContainer img {
+  object-fit: cover;
+}

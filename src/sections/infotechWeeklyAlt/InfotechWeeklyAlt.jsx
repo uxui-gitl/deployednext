@@ -105,7 +105,10 @@ const InfotechWeeklyAlt = (props) => {
   return (
     <>
       <div className={` w-full bg-[#f2f4f7] py-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 ">
+        <div
+          // className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 "
+          className={`text-left max-w-screen-xl  mb-5 mx-auto p-5 grid grid-cols-1 sm:grid-cols-2  px-[2rem]`}
+        >
           <div className="bg-blue-50 flex items-start flex-col justify-around ">
             <div>
               <h4

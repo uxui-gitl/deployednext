@@ -217,65 +217,70 @@ const page = () => {
 
       {/* About Section */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Advance Solutions for Business Future Readiness
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Starting precisely where you stand in your digital
-                  transformation journey, we seamlessly integrate our teams into
-                  your culture, fostering a collaborative environment for
-                  success.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-      <>
-        <div
-          className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}
-          id="productivity"
-        >
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {AdvancedSolutions.map((item, index) => {
-              return (
-                <div key={item._id} className="mx-2 bg-white ">
-                  <div className="p-5 w-fit ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                    <p className="text-[14px] leading-[22px] text-[#475467]">
-                      {item.desc}
-                    </p>
-                  </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
-                    <Link
-                      href={item.link}
-                      className="text-white  flex transition-all hover:opacity-75  "
-                    >
-                      {item.cta}{" "}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
+        <>
+          <div className={` w-full bg-[#FFF] pt-32`}>
+            <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+              {/* left */}
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                    Advance Solutions for Business Future Readiness
+                  </h3>
                 </div>
-              );
-            })}
+              </div>
+              {/* right */}
+              <div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                    Starting precisely where you stand in your digital
+                    transformation journey, we seamlessly integrate our teams
+                    into your culture, fostering a collaborative environment for
+                    success.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </>
+        <>
+          <div
+            className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}
+            id="productivity"
+          >
+            <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+              {AdvancedSolutions.map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/3 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <p className="text-[14px] leading-[22px] text-[#475467]">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </>
       </>
 
       {/* Blog */}

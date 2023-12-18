@@ -69,7 +69,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
   return (
     <>
       <div className={` w-full bg-white py-32`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-0">
+        <div className="  mb-5  sm:gap-0 text-left  max-w-screen-xl    mx-auto p-5        pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div className="bg-white flex items-start flex-col justify-start">
             <div>
               {/* <span className="text-[#0745D3]">Free 30-Minutes</span> Strategy
@@ -170,7 +170,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                 <label className="flex justify-start items-start gap-3 mb-5">
                   <input
                     type="checkbox"
-                    class="default:ring-2"
+                    class="default:ring-2 mt-[6px]"
                     name="Consent"
                     value={formData.Consent}
                     onChange={handleChange}

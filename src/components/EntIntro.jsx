@@ -4,10 +4,12 @@ import { mdiArrowRight } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
 import Link from "next/link";
+import Balancer from "react-wrap-balancer";
+
 const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
   return (
     <div className="text-center">
-      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden px-[2rem] sm:px-20">
+      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden px-[2rem] sm:px-20 ">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover sm:object-fill z-0"
           autoPlay
@@ -19,16 +21,20 @@ const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
         </video>
         <div className="flex justify-start items-center h-[100vh]  sm:h-[90vh]">
           <div
-            className={` flex text-white flex-col justify-start items-start w-full sm:max-w-max gap-5`}
+            className={` flex text-white flex-col justify-start items-start w-full sm:max-w-max gap-5 px-[4.5rem]`}
           >
             <h1
               className={`sm:w-[${width}] w-full z-50 sm:block sm:text-[42px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[52px]	text-white font-bold sm:font-semibold text-left`}
+              style={{ width: width }}
             >
-              {title}
+              <Balancer>{title}</Balancer>
             </h1>
 
-            <h4 className="z-50 text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]">
-              {desc}
+            <h4
+              style={{ width: width }}
+              className="z-50 text-left sm:block text-white text-[14px] sm:text-[16px] leading-[22px] mb-[24px]"
+            >
+              <Balancer>{desc}</Balancer>
             </h4>
 
             <div className="z-50 flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">

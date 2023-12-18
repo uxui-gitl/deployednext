@@ -119,12 +119,14 @@ export default function Home() {
     {
       _id: 3,
       icon: "eyeGear",
-      title: "Enhanced collaboration through cross-device accessibility to information",
+      title:
+        "Enhanced collaboration through cross-device accessibility to information",
     },
     {
       _id: 4,
       icon: "gear",
-      title: "Advanced data management solutions, modernized process and cloud services",
+      title:
+        "Advanced data management solutions, modernized process and cloud services",
     },
     {
       _id: 5,
@@ -134,7 +136,8 @@ export default function Home() {
     {
       _id: 6,
       icon: "eyeGear",
-      title: "Integrate Big Data Analytics into business processes for data-driven decision-making",
+      title:
+        "Integrate Big Data Analytics into business processes for data-driven decision-making",
     },
     {
       _id: 7,
@@ -144,12 +147,14 @@ export default function Home() {
     {
       _id: 8,
       icon: "eyeGear",
-      title: "Enhance system performance and user experience by scaling up the system",
+      title:
+        "Enhance system performance and user experience by scaling up the system",
     },
     {
       _id: 9,
       icon: "eyeGear",
-      title: "Accelerate transformation, integrate open innovation and smart workflows",
+      title:
+        "Accelerate transformation, integrate open innovation and smart workflows",
     },
   ];
   const upgradeCloud = [
@@ -235,13 +240,13 @@ export default function Home() {
           title="Seamless Upgrade to Cloud"
           desc="Minimizing Cost and Strengthening Agility with Better Security"
           cta="Schedule a call with our Cloud Expert"
-          width="70%"
+          width="100%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
         {/* Upgrade to Cloud */}
         <>
-          <div className={` w-full bg-white py-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
+          <div className={` w-full bg-white pt-24`}>
+            <div className="text-left   max-w-screen-xl  mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
                   <h4
@@ -254,7 +259,12 @@ export default function Home() {
                     <span className="text-[#0745D3]"> Better Security</span>{" "}
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    We help enterprises to foster resilience by entailing bespoke and inclusive cloud upgradation roadmap. Our cloud experts ensure migration of intricate IT environments to advanced cloud platform without causing any interruption or data loss while providing agility and scalability for sustainable growth of our customers.
+                    We help enterprises to foster resilience by entailing
+                    bespoke and inclusive cloud upgradation roadmap. Our cloud
+                    experts ensure migration of intricate IT environments to
+                    advanced cloud platform without causing any interruption or
+                    data loss while providing agility and scalability for
+                    sustainable growth of our customers.
                   </p>
                 </div>
               </div>
@@ -265,23 +275,22 @@ export default function Home() {
           </div>
         </>
         <ClientLogos />
-        <CaseStudy />
-        {/* On Prem changes*/}
+        {/* On premises Challenges*/}
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div className={` w-full bg-[#f2f4f7] py-24`}>
             <>
-              <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-                <div className=" mt-[5em] mb-[2rem]">
+              <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
+                <div className="  ">
                   <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
-                    <h3 className="text-4xl leading-[42px] font-bold">
-                      On-premises Infrastructure Challenges
+                    <h3 className="text-left text-4xl leading-[42px] font-bold">
+                      On-premises <br /> Infrastructure Challenges
                     </h3>
                   </div>
                 </div>
               </div>
             </>
             <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
-              <div className="bg-white flex items-start flex-col justify-start">
+              <div className="bg-[#f2f4f7] flex items-start flex-col justify-start">
                 <div className="mx-auto">
                   <Image src={puzzle} alt="puzzle" />
                 </div>
@@ -292,7 +301,7 @@ export default function Home() {
                     {lists.map((list) => (
                       <li key={list.id}>
                         {" "}
-                        <p className="flex gap-4 mb-6 border-dashed border-b-2 pb-3 text-base leading-[22px]">
+                        <p className="flex gap-4 mb-4 border-dashed border-b-2 pb-3 text-base leading-[22px]">
                           <span className="">
                             <Icon
                               path={mdiBullseyeArrow}
@@ -310,30 +319,9 @@ export default function Home() {
             </div>
           </div>
         </>
-        <Expertise
-          ribbon="Acing your Business Objectives"
-          ribbonTxtWhite="true"
-          title="The Hub of Expertise"
-          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-          arr={[
-            {
-              title: "15+",
-              desc: "Cloud Certified Professionals",
-            },
-            {
-              title: "50+",
-              desc: "Cloud Deployments",
-            },
-            {
-              title: "50+",
-              desc: "Cloud Deployments",
-            },
-
-          ]}
-        ></Expertise>
-        ;{/* Upgrade Now */}
+        {/* Upgrade Now */}
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div className={` w-full bg-white py-24`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
@@ -365,7 +353,7 @@ export default function Home() {
                     <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                       {item.title}
                     </h4>
-                    <p className="text-base leading-6 font-semibold">
+                    <p className="text-base leading-6 font-medium">
                       {item.desc}
                     </p>
                     <Link
@@ -393,7 +381,7 @@ export default function Home() {
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                     Cloud Monitoring and Reporting
                   </h4>
-                  <p className="text-base leading-6 font-semibold">
+                  <p className="text-base leading-6 font-medium">
                     Whether you&apos;re overseeing multi-cloud environments or
                     managing a single cloud provider, our solutions provide you
                     with the transparency and control you need to optimize
@@ -405,7 +393,7 @@ export default function Home() {
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                     Cloud Microservices{" "}
                   </h4>
-                  <p className="text-base leading-6 font-semibold">
+                  <p className="text-base leading-6 font-medium">
                     We transform monolithic apps into agile, deployable
                     microservices. Tailored for specific tasks, our
                     microservices enhance agility, reduce time-to-market and
@@ -417,8 +405,69 @@ export default function Home() {
             </div>
           </div>
         </>
-        {/* Unlocking agility */}
+        <CaseStudy
+          ribbon="CASE STUDY "
+          title="Elevating Customer Experience with Cloud  "
+          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+          isHomepage={false}
+          arr={[
+            {
+              id: 1,
+              title:
+                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              thumbnail: "1",
 
+              description: "Non-government Association of Indian Industries ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 2,
+              title:
+                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              thumbnail: "2",
+
+              description:
+                " Middle East-based Electrical Products Manufacturer ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 3,
+              title:
+                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              thumbnail: "3",
+
+              description: "Coffee Brand Distributor in Egypt and Middle East",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+          ]}
+        />
+        <Expertise
+          ribbon="Acing your Business Objectives"
+          ribbonTxtWhite="true"
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+          arr={[
+            {
+              title: "15+",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50+",
+              desc: "Cloud Deployments",
+            },
+            {
+              title: "50+",
+              desc: "Cloud Deployments",
+            },
+          ]}
+        ></Expertise>
+        {/* Unlocking agility */}
         {/* why godrej infotech */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-32`}>
@@ -563,12 +612,12 @@ export default function Home() {
           desc="Experience business performance surge with cloud"
           arr={BenefitsData}
         ></Benefits>
-        ;{/* az cloud services */}
+
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div className={` w-full bg-white mx-auto text-center py-24`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
               <div className="bg-white flex items-start flex-col justify-start">
-                <div>
+                <div className="mx-auto text-center">
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
                     We are Trained and Accredited in Cloud Services
                   </h3>

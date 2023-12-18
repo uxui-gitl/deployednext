@@ -14,7 +14,7 @@ const BlogSlider = ({ arr }) => {
   return (
     <>
       <div className={` w-full bg-white py-32`}>
-        <div className="  max-w-screen-2xl md:max-w-screen-2xl mb-5 mx-auto p-5  text-center flex justify-center">
+        <div className="  text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]   flex justify-center">
           <Swiper
             slidesPerView={1}
             spaceBetween={200}
@@ -24,7 +24,7 @@ const BlogSlider = ({ arr }) => {
             {arr.map((item) => (
               <>
                 <SwiperSlide key={item._id}>
-                  <div className="bg-white flex items-start flex-col-reverse sm:flex-row justify-start mb-10">
+                  <div className="bg-white flex items-center flex-col-reverse sm:flex-row justify-start mb-10">
                     <div className="text-left w-1/2">
                       <h4
                         className={` font-medium text-[#0745D3] uppercase ribbon`}

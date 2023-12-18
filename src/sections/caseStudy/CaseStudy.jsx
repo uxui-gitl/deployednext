@@ -21,13 +21,12 @@ const fadeInAnimationVariant = {
   }),
 };
 
-const CaseStudy = ({ ribbon, title, desc, isHomepage, arr }) => {
+const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
   return (
     <div
       className={clsx({
         "max-w-screen-lg mx-auto px-[2rem] bg-[#fff]": isHomepage,
-        "text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem]":
-          !isHomepage,
+        "text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]": !isHomepage,
       })}
     >
       <div className=" mt-[5em] mb-[2em]">
@@ -71,7 +70,11 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, arr }) => {
                   // className="w-full h-auto lg:w-315 lg:h-200"
                 />
                 <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-                  <p className="text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium ">
+                  <p
+                    className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
+                      cases.tags == "" ? "hidden" : "block"
+                    } `}
+                  >
                     {`${cases.tags}`}
                   </p>
                 </div>
@@ -82,19 +85,19 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, arr }) => {
                   className={`uppercase  text-[#101828] font-medium text-[12px]`}
                 ></p>
                 <p
-                  className={`text-base font-normal pt-[14px] pb-2 leading-[22px] text-[#101828]`}
-                >
-                  {" "}
-                  {`${cases.title}`}{" "}
-                </p>
-                <p
                   className={`${
-                    styles["iw-card-content-desc"]
-                  } text-clip  text-[#475467] text-sm ${
+                    styles["iw-card-content-desc "]
+                  } text-clip  text-[#101828] mt-4 mb-3 font-semibold text-sm ${
                     cases.description.length <= 0 ? "hidden" : "block"
                   }`}
                 >
                   {`${cases.description}`}
+                </p>
+                <p
+                  className={`text-base font-normal  pb-2 leading-[22px] text-[#101828]`}
+                >
+                  {" "}
+                  {`${cases.title}`}{" "}
                 </p>
 
                 <p className={styles["iw-card-content-link-wrap"]}>

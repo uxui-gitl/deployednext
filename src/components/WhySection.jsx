@@ -28,7 +28,7 @@ const WhySection = ({
   return (
     <>
       <div className={` w-full overflow-hidden bg-[#F2F4F7] pt-32`}>
-        <div className="text-left overflow-hidden max-w-screen-xl md:max-w-screen-2xl   mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className=" overflow-hidden items-center pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl    mx-auto p-5   px-[2rem]">
           {/* left */}
           <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
             <div className="">

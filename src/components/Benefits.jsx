@@ -22,9 +22,9 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
   return (
     <>
       <div
-        className={` w-full bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
+        className={` w-full  bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]`}
       >
-        <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto   pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="text-left  max-w-screen-xl    mx-auto p-5        pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           {/* left */}
           <div className=" flex items-start flex-col justify-center  relative">
             <div className="">
