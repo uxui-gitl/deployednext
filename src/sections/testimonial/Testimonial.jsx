@@ -23,18 +23,18 @@ import "react-creative-cursor/dist/styles.css";
 import Container from "@/components/Container";
 
 const Testimonials = ({ ribbon, title, desc, arr }) => {
-  const clientTestimonials = [
-    {
-      id: 1,
-      clientName: "",
-      clientDesignation: "IT Manager",
-      thumbnail: "1",
-      description:
-        "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-      category: "static",
-      link: "/",
-    },
-  ];
+  // const clientTestimonials = [
+  //   {
+  //     id: 1,
+  //     clientName: "",
+  //     clientDesignation: "IT Manager",
+  //     thumbnail: "1",
+  //     description:
+  //       "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+  //     category: "static",
+  //     link: "/",
+  //   },
+  // ];
 
   return (
     <>
@@ -84,41 +84,42 @@ const Testimonials = ({ ribbon, title, desc, arr }) => {
                 }}
                 modules={[Autoplay, Pagination]}
               >
-                {arr.map((ct) => (
-                  <SwiperSlide key={ct.id} className="min-w-[300px] pb-8">
-                    <div className="">
-                      <div>
-                        <Image
-                          src={`/testimonial-${ct.id}.png`}
-                          alt="blog post"
-                          width="315"
-                          height="200"
-                          className="w-[100%]"
-                        />
-                      </div>
+                {arr &&
+                  arr.map((ct) => (
+                    <SwiperSlide key={ct.id} className="min-w-[300px] pb-8">
                       <div className="">
-                        <p
-                          className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
-                        >
-                          {`“${ct.description}”`}
-                        </p>
-                      </div>
-                      <div className="flex flex-row justify-start items-start">
-                        <div className="mr-4">
-                          <Icon path={mdiDomain} size={1} />
-                        </div>
                         <div>
-                          <p className="text-base font-medium text-[#101828] leading-[22px]">
-                            {ct.clientName}
-                          </p>
-                          <p className="text-sm font-normal text-[#101828] leading-[22px]">
-                            {ct.clientDesignation}
+                          <Image
+                            src={`/testimonial-${ct.id}.png`}
+                            alt="blog post"
+                            width="315"
+                            height="200"
+                            className="w-[100%]"
+                          />
+                        </div>
+                        <div className="">
+                          <p
+                            className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
+                          >
+                            {`"${ct.description}"`}
                           </p>
                         </div>
+                        <div className="flex flex-row justify-start items-start">
+                          <div className="mr-4">
+                            <Icon path={mdiDomain} size={1} />
+                          </div>
+                          <div>
+                            <p className="text-base font-medium text-[#101828] leading-[22px]">
+                              {ct.clientName}
+                            </p>
+                            <p className="text-sm font-normal text-[#101828] leading-[22px]">
+                              {ct.clientDesignation}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
+                    </SwiperSlide>
+                  ))}
               </Swiper>
             </div>
           </div>

@@ -71,22 +71,12 @@ const WhySection = ({
                   viewport={{
                     once: true,
                   }}
-                  // className={`flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-${item._id} w-[100%]`}
-                  // variants={fadeInAnimationVariant}
-                  // style={{ marginLeft: `${2.5 * item._id}rem` }}
-
                   className={`flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 ${
                     item._id > 0 ? "sm:ml-" + 2.5 * item._id + "rem" : "" // Apply margin only for desktop
                   }`}
-                  // style={
-                  //   item._id > 0 ? { marginLeft: `${2.5 * item._id}rem` } : {}
-                  // }
                   variants={fadeInAnimationVariant}
                 >
                   <Image src={checkout} alt="checkout" />
-                  {/* <p className="text-base font-medium leading-[22px]">
-                    {item.desc}
-                  </p> */}
                   <p className="text-base font-medium leading-[22px]">
                     {renderInlineSpans ? (
                       <span dangerouslySetInnerHTML={{ __html: item.desc }} />
