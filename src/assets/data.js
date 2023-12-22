@@ -1,26 +1,106 @@
 export const projects = [
   {
-    title: "Matthias Leidinger",
+    ribbon: "Embrace Tomorrow with Automation",
     description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
-    src: "rock.jpg",
-    link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
+      "Enabling organizations to optimize cost & enhance business processes with next-gen digital technologies like Robotic Process Automation (RPA), IoT & Analytics. ",
+    data: [
+      {
+        _id: 1,
+        subcategory: "Intuitive/ Intelligent Technologies",
+        sublinks: [
+          { title: "Artificial Intelligence & Machine Learning ", url: "/" },
+          { title: "IoT", url: "/" },
+          { title: "Robotic Process Automation", url: "/" },
+        ],
+      },
+      {
+        _id: 2,
+        subcategory: "Technology Suite",
+        sublinks: [
+          { title: "Java", url: "/" },
+          { title: ".Net, Share Point", url: "/" },
+          { title: "Low code application development", url: "/" },
+        ],
+      },
+      {
+        _id: 3,
+        subcategory: "Data Insights",
+        sublinks: [
+          { title: "Power BI and Power Apps", url: "/" },
+          { title: "Birst", url: "/" },
+          { title: "Tableau", url: "/" },
+          { title: "Azure and AWS Data Management", url: "/" },
+        ],
+      },
+    ],
     color: "#e9e6e7",
   },
   {
-    title: "Clément Chapillon",
+    ribbon: "Experience New Business Dimensions with Cloud ",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for 'The tawny rocks').",
-    src: "tree.jpg",
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
+      "We are committed to provide, secure, cost-effective & scalable cloud implementation, cloud migration & cloud support services to our customers. ",
+    data: [
+      {
+        _id: 1,
+        subcategory: "Upgrade to Cloud ",
+        sublinks: [
+          { title: "Dynamics AX Upgrade ", url: "/" },
+          { title: "Dynamics NAV Upgrade", url: "/" },
+          { title: "Upgrade to Infor LN Cloud ", url: "/" },
+          { title: "Migrate Application to Cloud ", url: "/" },
+          { title: "Lift and Shift to Cloud ", url: "/" },
+        ],
+      },
+      {
+        _id: 2,
+        subcategory: "Cloud Solutions and Services ",
+        sublinks: [
+          { title: "Cloud Infrastructure ", url: "/" },
+          { title: "Business Apps on Cloud ", url: "/" },
+          { title: "M365 Services", url: "/" },
+          { title: "Data Analytics ", url: "/" },
+        ],
+      },
+    ],
     color: "#ffe4d0",
   },
   {
-    title: "Zissou",
+    ribbon: "Leverage Key Driver of Growth with Transformation ",
     description:
-      "Though he views photography as a medium for storytelling, Zissou's images don't insist on a narrative. Both crisp and ethereal, they're encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
-    src: "water.jpg",
-    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
+      "We implement digital solutions that modernize and enhance user experience, ultimately leading to a digitally- sound businesses.",
+    data: [
+      {
+        _id: 1,
+        subcategory: "Enterprise Suite",
+        sublinks: [
+          { title: "Microsoft Dynamics 365", url: "/" },
+          { title: "Infor ", url: "/" },
+          { title: "Oracle ", url: "/" },
+          { title: "HxGN EAM ", url: "/" },
+        ],
+      },
+      {
+        _id: 2,
+        subcategory: "Customer Experience",
+        sublinks: [
+          { title: " Microsoft CRM", url: "/" },
+          { title: " Infor CRM ", url: "/" },
+          { title: " Salesforce CRM ", url: "/" },
+          { title: " LS Retail", url: "/" },
+          { title: " Magento Ecommerce ", url: "/" },
+        ],
+      },
+      {
+        _id: 3,
+        subcategory: "GITL Products ",
+        sublinks: [
+          { title: " Payroll D365", url: "/" },
+          { title: " eNcompass ", url: "/" },
+          { title: " Payroll Nav  ", url: "/" },
+          { title: " Dealer Management ", url: "/" },
+        ],
+      },
+    ],
     color: "#edecec",
   },
 ];

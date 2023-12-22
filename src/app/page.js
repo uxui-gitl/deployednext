@@ -1,24 +1,39 @@
 "use client";
-import Announcement from "@/sections/announcement/Announcement";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
-import Copyright from "@/sections/copyright/Copyright";
 import Expertise from "@/sections/expertise/Expertise";
-import Footer from "@/sections/footer/Footer";
 import InfotechWeekly from "@/sections/infotechWeekly/InfotechWeekly";
 import Intro from "@/sections/intro/Intro";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Review from "@/sections/review/Review";
 import Robot from "@/sections/robot/Robot";
-import RobotDetails from "@/sections/robotDetails/RobotDetails";
 import Subscribe from "@/sections/subscribe/Subscribe";
 import ACT from "@/sections/ACT/ACT";
-import Image from "next/image";
-import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Testimonial from "@/sections/testimonial/Testimonial";
 
+import ACTCard from "@/sections/ACTCard/ACTCard";
+import { useScroll } from "framer-motion";
+import { projects } from "../assets/data";
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
 export default function Home() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
@@ -32,6 +47,25 @@ export default function Home() {
         <ClientLogos />
         <ACT />
         <Robot />
+        <>
+          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+            <div ref={container} className={`relative mt-[20vh]`}>
+              {projects.map((project, i) => {
+                const targetScale = 1 - (projects.length - i) * 0.05;
+                return (
+                  <ACTCard
+                    key={`p_${i}`}
+                    i={i}
+                    {...project}
+                    progress={scrollYProgress}
+                    range={[i * 0.25, 1]}
+                    targetScale={targetScale}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </>
         <Expertise />
         <CaseStudy
           ribbon="CASE STUDY "

@@ -35,21 +35,26 @@ export default function Home() {
         />
 
         <>
-          <main ref={container} className={`relative mt-[50vh]`}>
-            {projects.map((project, i) => {
-              const targetScale = 1 - (projects.length - i) * 0.05;
-              return (
-                <ACTCard
-                  key={`p_${i}`}
-                  i={i}
-                  {...project}
-                  progress={scrollYProgress}
-                  range={[i * 0.25, 1]}
-                  targetScale={targetScale}
-                />
-              );
-            })}
-          </main>
+          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+            <main ref={container} className={`relative mt-[20vh]`}>
+              {projects.map((project, i) => {
+                const targetScale = 1 - (projects.length - i) * 0.05;
+                return (
+                  console.log(targetScale),
+                  (
+                    <ACTCard
+                      key={`p_${i}`}
+                      i={i}
+                      {...project}
+                      progress={scrollYProgress}
+                      range={[i * 0.25, 1]}
+                      targetScale={targetScale}
+                    />
+                  )
+                );
+              })}
+            </main>
+          </div>
         </>
       </main>
     </>

@@ -357,7 +357,7 @@ h4.ribbon:before {
 }
 
 /* Robot cards act */
-.cardContainer {
+/* .cardContainer {
   height: 100vh;
 
   display: flex;
@@ -455,4 +455,4 @@ h4.ribbon:before {
 
 .cardContainer img {
   object-fit: cover;
-}
+} */

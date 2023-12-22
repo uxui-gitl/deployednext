@@ -10,10 +10,9 @@ import { mdiArrowUp } from "@mdi/js";
 import { mdiArrowTopRight } from "@mdi/js";
 const ACTCard = ({
   i,
-  title,
+  ribbon,
   description,
-  src,
-  url,
+  data,
   color,
   progress,
   range,
@@ -25,8 +24,8 @@ const ACTCard = ({
     offset: ["start end", "start start"],
   });
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
-  const scale = useTransform(progress, range, [1, targetScale]);
+  // const scale = useTransform(progress, range, [1, targetScale]);
+  // const scale = useTransform(scrollYProgress, [0, 0.2], [0.95, 0.85]);
 
   const CardStack = [
     {
@@ -66,8 +65,11 @@ const ACTCard = ({
       </div>
       <div className="bg-[#fff] p-4">
         {sublinks.map((link, index) => (
-          <span key={index} className="text-base leading-8  inline">
-            <span className="text-[#0745d3]  inline ">
+          <span key={index} className="  inline">
+            <span
+              className="text-[#0745D3] text-[14px]  leading-[30px] inline "
+              style={{ textDecoration: "none" }}
+            >
               <Link
                 href={link.url}
                 target="_blank"
@@ -89,6 +91,7 @@ const ACTCard = ({
       </div>
     </div>
   );
+
   return (
     <div
       ref={container}
@@ -97,26 +100,24 @@ const ACTCard = ({
       <motion.div
         style={{
           backgroundColor: color,
-          scale,
-          top: `calc(-5vh + ${i * 25}px)`,
+          width: "100%",
+          top: `calc(-5vh + ${i * 50}px)`,
         }}
-        className={`card flex flex-col relative top-[-25%] h-500 w-1000 rounded-2xl p-16 transform origin-top`}
+        className={`card flex flex-col relative top-[-25%] h-fit w-[full] rounded-2xl p-12 transform origin-top`}
       >
         <>
           <div>
             <h4
-              className={`  undefined font-medium text-[#0745D3] uppercase ribbon text-2xl sm:text-4xl leading-[42px] ribbon ribbon-robot`}
+              className={` mb-6 font-bold text-[#0A002F] text-2xl sm:text-4xl leading-[42px]  `}
             >
-              Automate for the Future
+              {ribbon}
             </h4>
             <p className="font-normal text-base leading-[22px]">
-              Enabling organizations to optimize cost & enhance business
-              processes with next-gen digital technologies like Robotic Process
-              Automation (RPA), eCommerce & Analytics.
+              {description}
             </p>
-            <div className="mx-auto pt-[26px] pb-16">
+            <div className="mx-auto pt-[26px] ">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
-                {CardStack.map((cardCategory) => (
+                {data.map((cardCategory) => (
                   <Card
                     key={cardCategory._id}
                     title={cardCategory.subcategory}
