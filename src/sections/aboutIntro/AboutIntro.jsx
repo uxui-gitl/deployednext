@@ -17,7 +17,7 @@ const AboutIntro = () => {
     <div
       className={`${styles.visionWrap} relative w-full h-[90vh] overflow-hidden px-[2rem] flex justify-center flex-row items-center`}
     >
-      <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2 gap-16">
+      <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2 gap-16">
         <div className="flex flex-col justify-center items-start ">
           <h3 className="leading-[52px] text-[42px] mb-3 font-bold">
             Building Robust Tomorrow For Global Businesses With The Legacy Of

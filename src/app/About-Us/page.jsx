@@ -1,3 +1,4 @@
+"use client";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
 
 import TeamProfile from "@/sections/teamProfile/TeamProfile";
@@ -9,7 +10,9 @@ import { mdiEyeOutline } from "@mdi/js";
 import Awards from "@/sections/awards/Awards";
 import AboutIntro from "@/sections/aboutIntro/AboutIntro";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
+import Balancer from "react-wrap-balancer";
 import Navbar from "@/components/Navbar/Navbar";
+import Timeline from "@/components/Timeline";
 
 const AboutUs = () => {
   return (
@@ -21,6 +24,9 @@ const AboutUs = () => {
       </div>
       <AboutIntro />
       <ClientLogos />
+      <>
+        <Timeline />
+      </>
       <>
         <div className={`${styles.visionWrap} `}>
           <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
