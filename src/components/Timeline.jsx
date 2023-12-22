@@ -11,6 +11,76 @@ const Timeline = () => {
     backgroundImage:
       "linear-gradient(to top, rgba(255, 255, 255, 1.5), transparent), url('./bg.png')",
   };
+  const timelineData = [
+    {
+      _id: 1,
+      title: "Sustaining Holistic Excellence",
+      year: "2021 - Present",
+      list: [
+        "Great Place to Work Certified ",
+        "Partnership with UiPath India.",
+        " Partnership with Automation, Anywhere, Inc, 2021. ",
+        "Partnership with SFDC in 2022.",
+        "ET Future-ready Organization 2023. ",
+        " Microsoft Solution Partner for Business Applications 2023. ",
+      ],
+    },
+    {
+      _id: 2,
+      title: "Multi-faceted Accomplishments",
+      year: "2016 - 2020",
+      list: [
+        "LS Retail Diamond Partner.",
+        "Gold Competency for MS Cloud.",
+        "Oracle Gold Partner.",
+        "Co-Development Engagement with Infor.",
+        "Influential Partner of the year by Infor, 2020.",
+      ],
+    },
+    {
+      _id: 3,
+      title: "A Triumphant Year ",
+      year: "2011 - 2015",
+      list: [
+        "Dynamic Partner of the year by Microsoft",
+        "Best Partner for LS Retail",
+        "Microsoft dynamics Reseller of the year 2011, India",
+        "Best partner for Discrete Manufacturing by Microsoft.",
+        "Award for Microsoft President Club Member",
+        "Microsoft dynamics Reseller of the year 2012 India, Inclusion of New Product.",
+        "Business Operations started in KSA.",
+        "Dynamic partner of the year, West 2013.",
+        "Infor-Winner of Golden Deal of the Year.",
+        "Formation of GISPL (Singapore)",
+        "Formation of GIA (Godrej Infotech Americas)",
+        "LS Retail Platinum Partner.",
+      ],
+    },
+    {
+      _id: 4,
+      title: "Prominent Honors",
+      year: "2005 - 2010 ",
+      list: [
+        "Great Place to Work Certified ",
+        "Partnership with UiPath India.",
+        " Partnership with Automation, Anywhere, Inc, 2021. ",
+        "Partnership with SFDC in 2022.",
+        "ET Future-ready Organization 2023. ",
+        " Microsoft Solution Partner for Business Applications 2023. ",
+      ],
+    },
+    {
+      _id: 5,
+      title:
+        "Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering ",
+      year: "1999 - 2004",
+      list: [
+        "Godrej Infotech Establishment.",
+        "Partnership with Infor",
+        "Best Partner Award for Infor",
+      ],
+    },
+  ];
 
   return (
     <>
@@ -27,106 +97,65 @@ const Timeline = () => {
             </div>
           </div>
           <>
-            <Chrono
-              theme={{
-                cardBgColor: "transparent",
-                titleColor: "#101828",
-                titleColorActive: "#101828",
-              }}
-              mode="VERTICAL"
-              slideShow
-              slideItemDuration={4000}
-              scrollable={{ scrollbar: false }}
-              borderLessCards
-              hideControls
-              items={[
-                {
-                  title: "1999",
-                },
-                {
-                  title: "1999",
-                },
-                {
-                  title: "1999",
-                },
-                {
-                  title: "1999",
-                },
-                {
-                  title: "1999",
-                },
-              ]}
-            >
-              <div className="flex justify-start flex-col items-start">
-                <div>
-                  <h3>Sustaining Holistic Excellence</h3>
-                </div>
-                <div>
-                  <ul>
-                    <li>Great Place to Work Certified </li>
-                    <li>Partnership with UiPath India.</li>
-                    <li>Partnership with Automation, Anywhere, Inc, 2021. </li>
-                    <li>Partnership with SFDC in 2022.</li>
-                    <li>ET Future-ready Organization 2023. </li>
-                    <li>
-                      Microsoft Solution Partner for Business Applications,
-                      2023.{" "}
-                    </li>
-                  </ul>
-                </div>
+            <div className=" w-2/3 mx-auto h-fit">
+              <div className="w-full h-full">
+                <Chrono
+                  theme={{
+                    cardBgColor: "transparent",
+                    titleColor: "#101828",
+                    titleColorActive: "#101828",
+                  }}
+                  mode="VERTICAL"
+                  slideShow
+                  slideItemDuration={4000}
+                  scrollable={{ scrollbar: false }}
+                  borderLessCards
+                  hideControls
+                  items={[
+                    {
+                      title: "2021 - Present ",
+                    },
+                    {
+                      title: "2016 - 2020",
+                    },
+                    {
+                      title: "2011 - 2015",
+                    },
+                    {
+                      title: "2005 - 2010 ",
+                    },
+                    {
+                      title: "1999 - 2004",
+                    },
+                  ]}
+                >
+                  {timelineData.map((item) => (
+                    <div
+                      key={item._id}
+                      className="flex items-start justify-center w-full flex-col gap-4"
+                    >
+                      <div>
+                        <h3 className="text-[22px] font-bold leading-[42px]">
+                          {item.title}
+                        </h3>
+                      </div>
+                      <div>
+                        <ul className="list-disc pl-4">
+                          {item.list.map((i, index) => (
+                            <li
+                              className="text-base font-medium mb-2 "
+                              key={index}
+                            >
+                              {i}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ))}
+                </Chrono>
               </div>
-              <div>
-                <h3>Multi-faceted Accomplishments</h3>
-                <ul>
-                  <li>LS Retail Diamond Partner.</li>
-                  <li>Gold Competency for MS Cloud.</li>
-                  <li>Oracle Gold Partner.</li>
-                  <li>Co-Development Engagement with Infor.</li>
-                  <li>Influential Partner of the year by Infor, 2020.</li>
-                </ul>
-              </div>
-              <div>
-                <h3>A Triumphant Year</h3>
-                <ul>
-                  <li>Dynamic Partner of the year by Microsoft</li>
-                  <li>Best Partner for LS Retail</li>
-                  <li>Microsoft dynamics Reseller of the year 2011, India</li>
-                  <li>Best partner for Discrete Manufacturing by Microsoft.</li>
-                  <li>Award for Microsoft President Club Member</li>
-                  <li>
-                    Microsoft dynamics Reseller of the year 2012 India,
-                    Inclusion of New Product.
-                  </li>
-                  <li>Business Operations started in KSA.</li>
-                  <li>Dynamic partner of the year, West 2013.</li>
-                  <li>Infor-Winner of Golden Deal of the Year.</li>
-                  <li>Formation of GISPL (Singapore)</li>
-                  <li>Formation of GIA (Godrej Infotech Americas)</li>
-                  <li>LS Retail Platinum Partner.</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Prominent Honors</h3>
-                <ul>
-                  <li>Best Partner Award for Infor in Asia Pacific</li>
-                  <li>Award for Microsoft President Club Member</li>
-                  <li>Opened Office in Sharjah.</li>
-                  <li>Partnership with LS Retail.</li>
-                  <li>Best partner for Discrete Manufacturing by Microsoft.</li>
-                </ul>
-              </div>
-              <div>
-                <h3>
-                  Inception of a Technology Powerhouse, Strategic Partnership
-                  and Award Garnering
-                </h3>
-                <ul>
-                  <li>Godrej Infotech Establishment.</li>
-                  <li>Partnership with Infor</li>
-                  <li>Best Partner Award for Infor </li>
-                </ul>
-              </div>
-            </Chrono>
+            </div>
           </>
         </div>
       </div>
