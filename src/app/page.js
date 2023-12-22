@@ -46,7 +46,7 @@ export default function Home() {
               thumbnail: "1",
               description: "",
               tags: ["Automation"],
-              cta: "Read article",
+              cta: "Read more",
               link: "/",
             },
             {
@@ -56,7 +56,7 @@ export default function Home() {
               thumbnail: "2",
               description: "",
               tags: ["Cloud"],
-              cta: "Read article",
+              cta: "Read more",
               link: "/",
             },
             {
@@ -66,7 +66,7 @@ export default function Home() {
               thumbnail: "3",
               description: "",
               tags: ["Transformation"],
-              cta: "Read article",
+              cta: "Read more",
               link: "/",
             },
           ]}
@@ -80,10 +80,33 @@ export default function Home() {
             {
               id: 1,
               clientName: "",
-              clientDesignation: "IT Manager",
+              clientDesignation:
+                "IT Director, Cooling Facility Management Company",
               thumbnail: "1",
               description:
-                "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+                "GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation:
+                "IT Director, Saudi Arabia's Leading Engineering & Construction Service Provider ",
+              thumbnail: "2",
+              description:
+                "GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 3,
+              clientName: "",
+              clientDesignation:
+                "Operations Head, India's Security Solutions Company",
+              thumbnail: "3",
+              description:
+                "Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise  and project management abilities by achieving highly challenging deadline.",
               category: "static",
               link: "/",
             },

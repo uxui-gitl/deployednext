@@ -412,3 +412,15 @@ const TestimonialsData = [
           desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
           arr={TestimonialsData}
         />
+
+
+
+// ----------------------------
+// Navbar //
+// ----------------------------
+
+        <div className={`relative z-[500]`}>
+        <div className={`absolute w-full  `}>
+          <Navbar theme="dark" />
+        </div>
+      </div>

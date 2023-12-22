@@ -6,8 +6,8 @@ const RobotDetails = () => {
   return (
     <div
       style={{
-        marginTop: "50vh",
-        marginBottom: "50vh",
+        marginTop: "20vh",
+        marginBottom: "20vh",
       }}
     >
       {projects.map((project, i) => {
