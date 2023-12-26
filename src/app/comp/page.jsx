@@ -7,12 +7,7 @@ import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../../assets/data";
 import { useEffect, useRef } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Lenis from "@studio-freight/lenis";
-
-import Icon from "@mdi/react";
-import Link from "next/link";
-import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -32,7 +27,8 @@ export default function Home() {
   });
   return (
     <>
-      <main>
+      <>
+        {/* Intro Section */}
         <EntIntro
           title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
           desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
@@ -41,85 +37,28 @@ export default function Home() {
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
 
-        {/* React Tabs */}
-
-        <>
-          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-            <Tabs>
-              <TabList>
-                <Tab>Statutory Report</Tab>
-                <Tab>Corporate Policies</Tab>
-                <Tab>CSR Updates</Tab>
-                <Tab>Statutory Updates</Tab>
-              </TabList>
-
-              <TabPanel>
-                <>
-                  <div className="grid grid-rows-2 grid-cols-3 gap-8">
-                    {/* card */}
-                    {[0, 1, 2, 3, 4, 5].map((i, index) => (
-                      <>
-                        <div key={index} className=" border w-full">
-                          <div className="p-5">
-                            <h5 className="text-[26px] font-bold leading-[36px]">
-                              FY 2022-2023
-                            </h5>
-                          </div>
-                          <div>
-                            <Link href="/">
-                              <div
-                                className={`text-[#fff] bg-blue-400 text-[14px] font-medium leading-[22px] w-full py-2 px-8 flex transition-all hover:opacity-75`}
-                              >
-                                Know More
-                                <Icon
-                                  path={mdiArrowRight}
-                                  style={{ marginLeft: "0.5em" }}
-                                  size={1}
-                                />
-                              </div>
-                            </Link>
-                          </div>
-                        </div>
-                      </>
-                    ))}
-                  </div>
-                </>
-              </TabPanel>
-              <TabPanel>
-                <h2> content tab 2</h2>
-              </TabPanel>
-              <TabPanel>
-                <h2> content tab 3</h2>
-              </TabPanel>
-              <TabPanel>
-                <h2> content tab 4</h2>
-              </TabPanel>
-            </Tabs>
-          </div>
-        </>
-
-        {/* ACT cards vertical slider */}
         <>
           <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
             <main ref={container} className={`relative mt-[20vh]`}>
               {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return (
-                  <ACTCard
-                    key={`p_${i}`}
-                    i={i}
-                    {...project}
-                    progress={scrollYProgress}
-                    range={[i * 0.25, 1]}
-                    targetScale={targetScale}
-                  />
+                  console.log(targetScale),
+                  (
+                    <ACTCard
+                      key={`p_${i}`}
+                      i={i}
+                      {...project}
+                      progress={scrollYProgress}
+                      range={[i * 0.25, 1]}
+                      targetScale={targetScale}
+                    />
+                  )
                 );
               })}
             </main>
           </div>
         </>
-
-        {/* Employee Speak slider */}
 
         <>
           <EmployeeExp
@@ -177,7 +116,7 @@ export default function Home() {
             ]}
           />
         </>
-      </main>
+      </>
     </>
   );
 }
