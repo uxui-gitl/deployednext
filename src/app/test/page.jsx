@@ -1,14 +1,18 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import EmployeeExp from "@/components/EmployeeExp";
-
-import { useState } from "react";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import React, { useState } from "react";
 import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../../assets/data";
 import { useEffect, useRef } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Lenis from "@studio-freight/lenis";
+import Image from "next/image";
+import gmap from "../../../public/contact/map.png";
+
+import Spotlight from "@/components/Spotlight";
 
 import Icon from "@mdi/react";
 import Link from "next/link";
@@ -30,6 +34,36 @@ export default function Home() {
 
     requestAnimationFrame(raf);
   });
+  const containerStyle = {
+    width: "100%",
+    height: "400px",
+  };
+
+  // Set the default center location (San Francisco, CA in this case)
+  const center = {
+    lat: 37.7749,
+    lng: -122.4194,
+  };
+
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: "AIzaSyDG18Tve3ll06G12C9fUK6l_0-Mg0NsF8Y",
+  });
+
+  const [map, setMap] = React.useState(null);
+
+  const onLoad = React.useCallback(function callback(map) {
+    // This is just an example of getting and using the map instance!!! don't just blindly copy!
+    const bounds = new window.google.maps.LatLngBounds(center);
+    map.fitBounds(bounds);
+
+    setMap(map);
+  }, []);
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null);
+  }, []);
+
   return (
     <>
       <main>
@@ -96,6 +130,26 @@ export default function Home() {
               </TabPanel>
             </Tabs>
           </div>
+        </>
+
+        {/* Contact us Google Map */}
+        <>
+          {isLoaded ? (
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={10}
+              onLoad={onLoad}
+              onUnmount={onUnmount}
+            >
+              {/* Child components, such as markers, info windows, etc. */}
+              <></>
+            </GoogleMap>
+          ) : (
+            <>
+              <Image src={gmap} alt="contact map" />
+            </>
+          )}
         </>
 
         {/* ACT cards vertical slider */}
@@ -177,6 +231,13 @@ export default function Home() {
             ]}
           />
         </>
+
+        {/* Spotlight test */}
+
+        <div>
+          <h1>Your Next.js App</h1>
+          <Spotlight />
+        </div>
       </main>
     </>
   );
