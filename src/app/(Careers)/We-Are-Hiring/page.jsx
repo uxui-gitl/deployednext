@@ -6,6 +6,7 @@ import React from "react";
 import styles from "./page.module.css";
 import JobList from "@/sections/jobList/JobList";
 import Select from "react-select";
+import Navbar from "@/components/Navbar/Navbar";
 const options = [
   { value: "uiux", label: "UI/UX" },
   { value: "hr", label: "Sr. Recruitment Associate" },
@@ -16,6 +17,11 @@ const options = [
 const WeAreHiring = () => {
   return (
     <>
+      <div className={`relative z-[500]`}>
+        <div className={`absolute w-full  `}>
+          <Navbar theme="dark" />
+        </div>
+      </div>
       <>
         <div className={`${styles["container"]} bg-white mt-24 py-24`}>
           <div className="flex justify-center items-center flex-col">

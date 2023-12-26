@@ -5,8 +5,8 @@ import styles from "./announcement.module.css";
 import Link from "next/link";
 
 import ReactFlagsSelect from "react-flags-select";
-const Announcement = () => {
-  const content = [
+const Announcement = ({ content }) => {
+  const defaultData = [
     {
       _id: 1,
       title:
@@ -64,6 +64,8 @@ const Announcement = () => {
       link: "/",
     },
   ];
+
+  const announcements = content || defaultData;
   const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
 
   const [selected, setSelected] = useState("IN");
@@ -94,15 +96,15 @@ const Announcement = () => {
     // Set up an interval to switch to the next announcement every 5 seconds (5000 milliseconds)
     const intervalId = setInterval(() => {
       setCurrentAnnouncementIndex(
-        (prevIndex) => (prevIndex + 1) % content.length
+        (prevIndex) => (prevIndex + 1) % announcements.length
       );
     }, 5000);
 
     // Clear the interval when the component is unmounted or if you navigate away
     return () => clearInterval(intervalId);
-  }, [content.length]);
+  }, [announcements.length]);
 
-  const currentAnnouncement = content[currentAnnouncementIndex];
+  const currentAnnouncement = announcements[currentAnnouncementIndex];
 
   return (
     <div className={styles["top-banner"]}>

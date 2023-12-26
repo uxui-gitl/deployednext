@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
           <>
-            <Announcement />
+            {/* <Announcement /> */}
 
             {children}
             <Footer />
