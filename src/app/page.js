@@ -11,6 +11,7 @@ import ACT from "@/sections/ACT/ACT";
 import "react-creative-cursor/dist/styles.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Testimonial from "@/sections/testimonial/Testimonial";
+import Announcement from "@/sections/announcement/Announcement";
 
 import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
@@ -38,6 +39,8 @@ export default function Home() {
     <>
       {/* <Cursor isGelly={true} /> */}
       <main className=" overflow-hidden ">
+        <Announcement />
+
         <div className={`relative z-[500]`}>
           <div className={`absolute w-full  `}>
             <Navbar theme="light" />
@@ -48,8 +51,11 @@ export default function Home() {
         <ACT />
         <Robot />
         <>
-          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-            <div ref={container} className={`relative mt-[20vh]`}>
+          <div
+            id="actCards"
+            className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+          >
+            <main ref={container} className={`relative mt-[20vh]`}>
               {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return (
@@ -63,7 +69,7 @@ export default function Home() {
                   />
                 );
               })}
-            </div>
+            </main>
           </div>
         </>
         <Expertise />
@@ -148,7 +154,11 @@ export default function Home() {
         />
         <Review />
         <InfotechWeekly />
-        <Subscribe />
+        <Subscribe
+          title="Subscribe NOW for Updates!"
+          formCta="Subscribe"
+          form={true}
+        />
       </main>
     </>
   );

@@ -48,18 +48,17 @@ const SplashScreen = ({ finishLoading }) => {
 
   return (
     <>
-      <div
-        className="flex h-screen items-center justify-center"
-        isMounted={isMounted}
-      >
-        <Image
-          id="splashlogo"
-          src="/godrejLogo.svg"
-          alt=""
-          width={163}
-          height={59}
-        />
-      </div>
+      {isMounted && (
+        <div className="flex h-screen items-center justify-center">
+          <Image
+            id="splashlogo"
+            src="/godrejLogo.svg"
+            alt=""
+            width={163}
+            height={59}
+          />
+        </div>
+      )}
     </>
   );
 };

@@ -1,9 +1,13 @@
 "use client";
+
+// Our methodology section
+
 import EntIntro from "@/components/EntIntro";
 import Subscription from "@/components/Subscription";
 
 import Image from "next/image";
-
+import BlogSlider from "@/components/BlogSlider";
+import Spotlight from "@/components/Spotlight";
 import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
@@ -28,6 +32,9 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
 import InsightSlider from "@/components/InsightSlider";
+
+import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
+
 import Benefits from "@/components/Benefits";
 const fadeInAnimationVariant = {
   initial: {
@@ -42,7 +49,35 @@ const fadeInAnimationVariant = {
     },
   }),
 };
-
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 2,
+    ribbon: "News",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 3,
+    ribbon: "blog",
+    title: "Migrate your IT Infrastructure to the Cloud",
+    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+];
 const TechStackOfferings = [
   {
     _id: 1,
@@ -126,6 +161,28 @@ const BenefitsData = [
     title: "Boost brand value",
   },
 ];
+const navLinks = [
+  {
+    _id: 1,
+    title: "Enterprise suite",
+    link: "#about",
+  },
+  {
+    _id: 2,
+    title: "Act Cards",
+    link: "#actCards",
+  },
+  {
+    _id: 3,
+    title: "Employee Experience",
+    link: "#empExp",
+  },
+  {
+    _id: 4,
+    title: "Spotlight",
+    link: "#spotlight",
+  },
+];
 
 const page = () => {
   return (
@@ -139,8 +196,9 @@ const page = () => {
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <SectionNav />
-
+      <>
+        <SectionNav arr={navLinks} />
+      </>
       {/* Tech Stack Platform Expertise Logos */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
@@ -179,127 +237,120 @@ const page = () => {
 
       {/* Tech Stack Service Offerings */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold text-center ">
-                  Service Offerings
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-3">
-            {TechStackOfferings.map((item) => (
-              <div className="" key={item._id}>
-                <div className="min-w-[200px] min-h-[315px] relative">
-                  <Image
-                    className="w-[100%]"
-                    src={`/solutions/technology-stack/${item.image}.png`}
-                    fill={true}
-                    alt={item.image}
-                  />
-                </div>
-                <div className="p-4 pb-0">
-                  <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.link}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    {item.cta}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ServiceOfferingGrid
+          title="Service Offerings"
+          arr={TechStackOfferings}
+        />
       </>
 
       {/* Insights */}
-      <InsightSlider />
+      <BlogSlider arr={blogData} />
 
       {/* Tech Stack Benefit Vertical Slider */}
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Tech stack Benefits"
+        ribbonTxtWhite="Tech stack Benefits"
         title="Benefits of Application Development with Our Technology Stack Expertise "
         desc=""
         arr={BenefitsData}
       ></Benefits>
 
       {/* Engg. with our Methodology */}
+      <div id="spotlight">
+        <>
+          <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+              <div className="bg-[#F2F4F7] text-left">
+                <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                  Services for successful results
+                </h4>
+                <div className="flex flex-col md:flex-row gap-8 ">
+                  <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                    Accomplishing Your Goals at Every stage
+                  </h3>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                    Enabling you to thrive in digital era, we prepare your
+                    organisation with scaling growth for sustainable tomorrow
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+        <div className={`w-full bg-[#F2F4F7] text-left `}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem] ">
+            <Spotlight
+              arr={[
+                {
+                  label: "01",
+                  expandedLabel: "Step 01",
+                  title: "Infrastructure and  Data Evaluation",
+                  expandedTitle: "Current Infrastructure and  Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                  image: "/Spotlight/card1.png",
+                },
+                {
+                  label: "02",
+                  expandedLabel: "Step 02",
+                  title: "Strategy  Designing ",
+                  expandedTitle: "Current Infrastructure and  Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                  image: "/Spotlight/card1.png",
+                },
+                {
+                  label: "03",
+                  expandedLabel: "Step 03",
+                  title: "Establishing Readiness",
+                  expandedTitle: "Current Infrastructure and  Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                  image: "/Spotlight/card1.png",
+                },
+                {
+                  label: "04",
+                  expandedLabel: "Step 04",
+                  title: "Upgradation and Execution",
+                  expandedTitle: "Current Infrastructure and  Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                  image: "/Spotlight/card1.png",
+                },
+                {
+                  label: "05",
+                  expandedLabel: "Step 05",
+                  title: "Management and Control",
+                  expandedTitle: "Current Infrastructure and  Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                  image: "/Spotlight/card1.png",
+                },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
 
-      {/* WhySection GITL */}
       <WhySection
-        ribbon="Spend LESS, GROW MORE"
-        title="Why Godrej Infotech ?"
-        desc="We aim for business faster growth with our extensive client collaboration, and to achieve this, we seek to convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements."
-      >
-        <AnimatePresence>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={1}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              One of the most dedicated and{" "}
-              <span className="text-[#4C6FFF]">reliable partners</span> for
-              Azure Migration Services and Managed Cloud Service across{" "}
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={2}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">1 Billion+</span> Unfailing Cloud
-              Hosting availability managing{" "}
-              <span className="text-[#4C6FFF]">40000+</span> VMs
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={3}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">25000+</span> Apps and Databases
-              migrated
-            </p>
-          </motion.div>
-        </AnimatePresence>
-      </WhySection>
+        title="Why Choose Godrej Infotech as your preferred innovation partner?"
+        desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
+        ribbon="Let's Collaborate and Make it Happen"
+        arr={[
+          {
+            _id: 1,
+            desc: "One of the most dedicated and <span style='color: #4C6FFF;'>reliable partners</span> for Azure Migration Services and Managed Cloud Service across",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
       {/* Subscription */}
       <Subscription

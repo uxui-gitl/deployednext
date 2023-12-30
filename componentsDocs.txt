@@ -424,3 +424,75 @@ const TestimonialsData = [
           <Navbar theme="dark" />
         </div>
       </div>
+
+
+// ----------------------------
+// Balancer //
+// ----------------------------
+
+import Balancer from "react-wrap-balancer";
+
+<Balancer>
+  An Act Based Approach Of Building Future Ready Solutions
+</Balancer>
+
+
+// ----------------------------
+// Subscribe //
+// ----------------------------
+
+
+<Subscribe
+          title="Subscribe NOW for Updates!"
+          formCta="Subscribe"
+          form={true}
+        />
+
+// ----------------------------
+// Subscribe //
+// ----------------------------
+
+
+
+
+// ----------------------------
+// Section Nav //
+// ----------------------------
+ <>
+          <SectionNav arr={navLinks} />
+        </>
+        const navLinks = [
+    {
+      _id: 1,
+      title: "Enterprise suite",
+      link: "#about",
+    },
+    {
+      _id: 2,
+      title: "Act Cards",
+      link: "#actCards",
+    },
+    {
+      _id: 3,
+      title: "Employee Experience",
+      link: "#empExp",
+    },
+    {
+      _id: 4,
+      title: "Spotlight",
+      link: "#spotlight",
+    },
+  ];
+
+
+// ----------------------------
+// Zoomed in Images //
+// ----------------------------
+  <div className="min-w-[315px] max-w-[100%] min-h-[200px] overflow-hidden relative group">
+                  <Image
+                    className="w-[100%] transition-transform duration-750 ease-in-out group-hover:scale-125"
+                    src={`/solutions/technology-stack/${item.image}.png`}
+                    fill={true}
+                    alt={item.image}
+                  />
+                </div>

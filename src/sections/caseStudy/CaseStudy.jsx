@@ -31,13 +31,16 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
     >
       <div className=" mt-[5em] mb-[2em]">
         <h4
-          className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
+          className={`${styles.subHead} text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
         >
           {ribbon}
         </h4>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
-          <h3 className="text-4xl leading-[42px] font-bold">{title}</h3>
-          <p className="font-normal leading-[22px]">{desc}</p>
+          <h3 className="text-4xl leading-[42px] font-bold">
+            {title && title}
+          </h3>
+
+          <p className="font-normal leading-[22px]">{desc && desc}</p>
         </div>
       </div>
       <motion.div className="container grid grid-cols-1 md:grid-cols-3 gap-[30px]">
@@ -58,11 +61,46 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                 item: !isHomepage,
               })}
             >
+              {/* <div
+                className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
+              >
+                <Image
+                  src={
+                    cases.thumbnail
+                      ? `/project-${cases.thumbnail}.png`
+                      : `/project-placeholder.png`
+                  }
+                  alt={`${cases.tags}`}
+                  className="w-[100%]"
+                  width="315"
+                  height="200"
+                />
+                <div className="  flex justify-start items-center space-x-2">
+                  {cases.subtitle && (
+                    <h5 className="text-base font-semibold leading-[22px] mt-4">
+                      {cases.subtitle}
+                    </h5>
+                  )}
+
+                  <p
+                    className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
+                      cases.tags == "" ? "hidden" : "block"
+                    } `}
+                  >
+                    {`${cases.tags}`}
+                  </p>
+                </div>
+              </div> */}
               <div
                 className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
               >
                 <Image
-                  src={`/project-${cases.thumbnail}.png`}
+                  // src={`/project-${cases.thumbnail}.png`}
+                  src={
+                    cases.thumbnail
+                      ? `/project-${cases.thumbnail}.png`
+                      : `/project-placeholder.png`
+                  }
                   alt={`${cases.tags}`}
                   className="w-[100%]"
                   width="315"
@@ -80,21 +118,24 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                 </div>
               </div>
               <div className={`${styles["iw-card-content"]}`}>
-                {/* <p className={`text-[#98A2B3] font-bold`}>Cloudification</p> */}
-                <p
-                  className={`uppercase  text-[#101828] font-medium text-[12px]`}
-                ></p>
+                {cases.subtitle && (
+                  <p
+                    className={`my-2  text-[#101828] font-semibold leading-[22px] text-[16px]`}
+                  >
+                    {cases.subtitle}
+                  </p>
+                )}
                 <p
                   className={`${
                     styles["iw-card-content-desc "]
-                  } text-clip  text-[#101828] mt-4 mb-3 font-semibold text-sm ${
+                  } text-clip  text-[#101828]  mb-3 font-semibold text-sm ${
                     cases.description.length <= 0 ? "hidden" : "block"
                   }`}
                 >
                   {`${cases.description}`}
                 </p>
                 <p
-                  className={`text-base mt-4 font-normal  pb-2 leading-[22px] text-[#101828]`}
+                  className={`text-base mt-2 font-normal  pb-2 leading-[22px] text-[#101828]`}
                 >
                   {" "}
                   {`${cases.title}`}{" "}

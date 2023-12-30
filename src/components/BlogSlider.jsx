@@ -28,7 +28,7 @@ const BlogSlider = ({ arr }) => {
             {arr.map((item) => (
               <SwiperSlide key={item._id}>
                 <div className="bg-white flex items-center flex-col-reverse sm:flex-row justify-start mb-10">
-                  <div className="text-left w-1/2">
+                  <div className="text-left w-full md:w-1/2">
                     <h4
                       className={` font-medium text-[#0745D3] uppercase ribbon`}
                     >

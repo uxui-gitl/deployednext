@@ -467,35 +467,23 @@ export default function Home() {
           {/* Why Infotech */}
 
           <WhySection
-            title="Why Godrej Infotech? "
-            desc="Embark on cloud upgradation journey by harnessing our credible assessment process, delivery framework, strategic resources and fluent data migration practice to minimise your business risk, time to market and cost while ensuring pinnacle of performance. "
+            title="Why Choose Godrej Infotech as your preferred innovation partner?"
+            desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
             ribbon="Let's Collaborate and Make it Happen"
             arr={[
               {
                 _id: 1,
-                desc: "Dedicated and reliable partner for Azure Migration Services and Managed Cloud Service across Europe, APAC, ME and America ",
+                desc: "One of the most dedicated and <span style='color: #4C6FFF;'>reliable partners</span> for Azure Migration Services and Managed Cloud Service across",
                 icon: "",
               },
               {
                 _id: 2,
-                desc: "Business Continuity 99.95%, on – demand scalability, best uptime performance in Industry. ",
+                desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
                 icon: "",
               },
               {
                 _id: 3,
-                desc: "Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)  ",
-                icon: "",
-              },
-
-              {
-                _id: 4,
-                desc: "Frictionless cloud upgradation delivery ",
-                icon: "",
-              },
-
-              {
-                _id: 5,
-                desc: "Cost-efficient and consumption-based model under single SLA. ",
+                desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
                 icon: "",
               },
             ]}

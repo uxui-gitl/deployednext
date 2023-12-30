@@ -11,12 +11,14 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Lenis from "@studio-freight/lenis";
 import Image from "next/image";
 import gmap from "../../../public/contact/map.png";
+import CAT from "../../../public/Capabilities---Application-transformation.jpg";
 
 import Spotlight from "@/components/Spotlight";
 
 import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
+import SectionNav from "@/components/SectionNav";
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -64,9 +66,36 @@ export default function Home() {
     setMap(null);
   }, []);
 
+  const navLinks = [
+    {
+      _id: 1,
+      title: "Enterprise suite",
+      link: "#about",
+    },
+    {
+      _id: 2,
+      title: "Act Cards",
+      link: "#actCards",
+    },
+    {
+      _id: 3,
+      title: "Employee Experience",
+      link: "#empExp",
+    },
+    {
+      _id: 4,
+      title: "Spotlight",
+      link: "#spotlight",
+    },
+  ];
+
   return (
     <>
       <main>
+        <>
+          <Image src={CAT} alt="CAT" />
+        </>
+
         <EntIntro
           title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
           desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
@@ -78,7 +107,10 @@ export default function Home() {
         {/* React Tabs */}
 
         <>
-          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+          <div
+            id="about"
+            className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+          >
             <Tabs>
               <TabList>
                 <Tab>Statutory Report</Tab>
@@ -132,6 +164,12 @@ export default function Home() {
           </div>
         </>
 
+        {/* Section Nav Test */}
+
+        <>
+          <SectionNav arr={navLinks} />
+        </>
+
         {/* Contact us Google Map */}
         <>
           {isLoaded ? (
@@ -154,7 +192,10 @@ export default function Home() {
 
         {/* ACT cards vertical slider */}
         <>
-          <div className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+          <div
+            id="actCards"
+            className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+          >
             <main ref={container} className={`relative mt-[20vh]`}>
               {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
@@ -176,67 +217,92 @@ export default function Home() {
         {/* Employee Speak slider */}
 
         <>
-          <EmployeeExp
-            ribbon="Unleashing Joy at Work"
-            heading="Employees Share Their Happy Experiences"
-            desc="Discover the heartwarming stories of our employees as they reveal
+          <div id="empExp">
+            <EmployeeExp
+              ribbon="Unleashing Joy at Work"
+              heading="Employees Share Their Happy Experiences"
+              desc="Discover the heartwarming stories of our employees as they reveal
             their joyful experiences at work. From moments of triumph to
             instances of camaraderie, their testimonials showcase a workplace
             where happiness is unleashed and celebrated. Learn how fostering a
             positive environment can lead to a truly fulfilling and successful
             team dynamic."
-            arr={[
-              {
-                _id: 1,
-                name: "Yazdi Navalmanek",
-                designation: "Associate Manager",
-                avatar: "avatar1",
-                desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
-              },
-              {
-                _id: 2,
-                name: "Jaseem Aboo",
-                designation: "Regional Sales Director for the Middle East ",
-                avatar: "avatar2",
-                desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
-              },
-              {
-                _id: 3,
-                name: "Yazdi Navalmanek",
-                designation: "Associate Manager",
-                avatar: "avatar1",
-                desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
-              },
-              {
-                _id: 4,
-                name: "Jaseem Aboo",
-                designation: "Regional Sales Director for the Middle East ",
-                avatar: "avatar2",
-                desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
-              },
-              {
-                _id: 5,
-                name: "Yazdi Navalmanek",
-                designation: "Associate Manager",
-                avatar: "avatar1",
-                desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
-              },
-              {
-                _id: 6,
-                name: "Jaseem Aboo",
-                designation: "Regional Sales Director for the Middle East ",
-                avatar: "avatar2",
-                desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
-              },
-            ]}
-          />
+              arr={[
+                {
+                  _id: 1,
+                  name: "Yazdi Navalmanek",
+                  designation: "Associate Manager",
+                  avatar: "avatar1",
+                  desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
+                },
+                {
+                  _id: 2,
+                  name: "Jaseem Aboo",
+                  designation: "Regional Sales Director for the Middle East ",
+                  avatar: "avatar2",
+                  desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
+                },
+                {
+                  _id: 3,
+                  name: "Yazdi Navalmanek",
+                  designation: "Associate Manager",
+                  avatar: "avatar1",
+                  desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
+                },
+                {
+                  _id: 4,
+                  name: "Jaseem Aboo",
+                  designation: "Regional Sales Director for the Middle East ",
+                  avatar: "avatar2",
+                  desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
+                },
+                {
+                  _id: 5,
+                  name: "Yazdi Navalmanek",
+                  designation: "Associate Manager",
+                  avatar: "avatar1",
+                  desc: "I have been associated with Godrej Infotech for almost two decades, acquiring a wealth of knowledge and valuable experience. What I admire most is that this organization has always prioritized human values.  Plus, the company is growing tremendously - from relying on revenue from its parent company to becoming a diversified business with operations spanning Asia, Middle East & Europe. I am currently enjoying my work in the Human Resources Department and feel privileged to contribute to the company's success.",
+                },
+                {
+                  _id: 6,
+                  name: "Jaseem Aboo",
+                  designation: "Regional Sales Director for the Middle East ",
+                  avatar: "avatar2",
+                  desc: "I am proud to work with this dynamic organization for a decade. I always have had the opportunity to work with remarkable clients, recommending and implementing innovative technology solutions. Supportive senior management, excellent work culture, exposure to next-generation technologies and industry-standard business practices - all these aspects together have made my journey incredible. There is enthusiasm and positivity in the work environment of Godrej Infotech. I wholeheartedly recommend Godrej Infotech to anyone seeking a career in the technology consulting and services space. ",
+                },
+              ]}
+            />
+          </div>
         </>
 
         {/* Spotlight test */}
 
-        <div>
-          <h1>Your Next.js App</h1>
-          <Spotlight />
+        <div id="spotlight">
+          <>
+            <div className={`w-full text-left pt-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
+                <div className="bg-[#fff] text-left">
+                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                    Services for successful results
+                  </h4>
+                  <div className="flex flex-col md:flex-row gap-8 ">
+                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                      Accomplishing Your Goals at Every stage
+                    </h3>
+                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                      Enabling you to thrive in digital era, we prepare your
+                      organisation with scaling growth for sustainable tomorrow
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className={`w-full text-left `}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
+              <Spotlight />
+            </div>
+          </div>
         </div>
       </main>
     </>

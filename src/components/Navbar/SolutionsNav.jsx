@@ -92,13 +92,15 @@ const SolutionsNav = () => {
         </div>
 
         <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
-          <li className="text-[#101828] hover:text-blue-500 pt-2">
-            <Link href="/Solutions/Intelligent-Technologies">
-              <span className="  text-neutral-800 font-semibold hover:text-blue-500">
-                Intelligent Technologies
-              </span>
-            </Link>
-          </li>
+          <ul>
+            <li className="text-[#101828] hover:text-blue-500 pt-2">
+              <Link href="/Solutions/Intelligent-Technologies">
+                <span className="  text-neutral-800 font-semibold hover:text-blue-500">
+                  Intelligent Technologies
+                </span>
+              </Link>
+            </li>
+          </ul>
 
           <ul className="text-sm ml-5 text-[#101828] font-semibold mt-1 w-full">
             <li className="text-[#101828] hover:text-blue-500 py-2">
@@ -115,13 +117,15 @@ const SolutionsNav = () => {
           </ul>
         </div>
         <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
-          <li className="text-[#101828] hover:text-blue-500 pt-2">
-            <Link href="/Solutions/Data-Insights">
-              <span className="  text-neutral-800 font-semibold hover:text-blue-500">
-                Data Insights
-              </span>
-            </Link>
-          </li>
+          <ul>
+            <li className="text-[#101828] hover:text-blue-500 pt-2">
+              <Link href="/Solutions/Data-Insights">
+                <span className="  text-neutral-800 font-semibold hover:text-blue-500">
+                  Data Insights
+                </span>
+              </Link>
+            </li>
+          </ul>
 
           <ul className="text-sm ml-5">
             <li className="text-[#101828] font-semibold hover:text-blue-500 py-2">
@@ -130,13 +134,15 @@ const SolutionsNav = () => {
           </ul>
         </div>
         <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
-          <li className="text-[#101828] hover:text-blue-500 pt-2">
-            <Link href="#">
-              <span className="  text-[#101828] font-semibold hover:text-blue-500">
-                Technology Stack
-              </span>
-            </Link>
-          </li>
+          <ul>
+            <li className="text-[#101828] hover:text-blue-500 pt-2">
+              <Link href="#">
+                <span className="  text-[#101828] font-semibold hover:text-blue-500">
+                  Technology Stack
+                </span>
+              </Link>
+            </li>
+          </ul>
 
           <ul className="text-sm hidden ml-3">
             <li className="text-[#101828] hover:text-blue-500 py-2">

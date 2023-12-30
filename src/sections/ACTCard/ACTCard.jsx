@@ -91,7 +91,6 @@ const ACTCard = ({
       </div>
     </div>
   );
-
   return (
     <div
       ref={container}

@@ -36,6 +36,7 @@ const Navbar = ({ theme }) => {
                 alt="Godrej Infotech Logo"
                 width={163}
                 height={59}
+                priority={true}
               />
             </Link>
             <button

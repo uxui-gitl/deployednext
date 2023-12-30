@@ -61,23 +61,17 @@ const CareersNav = () => {
         <div className=" w-full">
           <ul className="text-sm text-[#101828] font-semibold  w-full">
             <li>
-              <Link
-                href="/We-Are-Hiring"
-                className="block py-2 hover:text-blue-600"
-              >
+              <Link href="/Careers" className="block py-2 hover:text-blue-600">
                 We are hiring
               </Link>
             </li>
             <li>
-              <Link
-                href="/Why-Infotech"
-                className="block py-2 hover:text-blue-600"
-              >
+              <Link href="/Careers" className="block py-2 hover:text-blue-600">
                 Why Infotech?
               </Link>
             </li>
             <li>
-              <Link href="/login" className="block py-2 hover:text-blue-600">
+              <Link href="/Careers" className="block py-2 hover:text-blue-600">
                 Login
               </Link>
             </li>

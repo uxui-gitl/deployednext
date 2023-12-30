@@ -25,7 +25,6 @@ import Testimonial from "@/sections/testimonial/Testimonial";
 
 import BlogSlider from "@/components/BlogSlider";
 import SME from "@/components/SME";
-import WhyInfotech from "@/components/WhyInfotech";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 import { mdiArrowTopRight } from "@mdi/js";
@@ -208,6 +207,29 @@ const page = () => {
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
     },
   ];
+
+  const navLinks = [
+    {
+      _id: 1,
+      title: "Enterprise suite",
+      link: "#about",
+    },
+    {
+      _id: 2,
+      title: "Act Cards",
+      link: "#actCards",
+    },
+    {
+      _id: 3,
+      title: "Employee Experience",
+      link: "#empExp",
+    },
+    {
+      _id: 4,
+      title: "Spotlight",
+      link: "#spotlight",
+    },
+  ];
   return (
     <>
       <EntIntro
@@ -217,7 +239,11 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <SectionNav />
+
+      {/* Section Nav */}
+      <>
+        <SectionNav arr={navLinks} />
+      </>
 
       {/* About Section */}
       <>
@@ -298,14 +324,14 @@ const page = () => {
         arr={BenefitsData}
       ></Benefits>
 
-      {/* Business Benefits TO BE CREATED  */}
-      <SME
+      {/* SME  */}
+      {/* <SME
         imgSrc="/SME-Biju.png"
         ribbon="Introducing our Intelligent Solutions Leader  "
         desc="The immense potential of automation plays a pivotal role in sculpting the future of enterprises and empower us to solve the most intricate challenges, thus laying the cornerstone for further revolutionary advancements."
         sme="Avinash Hegde"
         designation="Enterprise Head, Godrej Infotech"
-      />
+      /> */}
 
       {/* Why Infotech */}
 

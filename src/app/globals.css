@@ -73,7 +73,7 @@ h4.ribbon::before {
 } */
 
 h4.ribbon-robot {
-  padding: 0.2em 0.75em;
+  padding: 0.25em 1.5em 0.25em 1em;
   margin-bottom: 12px;
 }
 h4.ribbon-robot::before {

@@ -1,5 +1,4 @@
 "use client";
-import Announcement from "@/sections/announcement/Announcement";
 import "./globals.css";
 import { Work_Sans } from "next/font/google";
 import Footer from "@/sections/footer/Footer";
@@ -28,8 +27,6 @@ export default function RootLayout({ children }) {
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
           <>
-            {/* <Announcement /> */}
-
             {children}
             <Footer />
             <Copyright />

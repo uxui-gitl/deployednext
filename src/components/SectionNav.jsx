@@ -1,93 +1,66 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import {
+  Link as ScrollLink,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
 
-const SectionNav = () => {
-  const navLinks = [
-    {
-      _id: 1,
-      name: "Enterprise Solutions",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: true,
-    },
-    {
-      _id: 2,
-      name: "Industry Spotlight",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-    {
-      _id: 3,
-      name: "Hub of Expertise",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-    {
-      _id: 4,
-      name: "Partners",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-    {
-      _id: 5,
-      name: "Goals",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-    {
-      _id: 6,
-      name: "Infotech Solutions",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-    {
-      _id: 7,
-      name: "Resources",
-      href: "/",
-      primaryLink: true,
-      subLink: false,
-      target: "_self",
-      isActive: false,
-    },
-  ];
+const SectionNav = ({ arr }) => {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollOffset = window.scrollY || window.pageYOffset;
+
+      arr.forEach((item) => {
+        const targetElement = document.querySelector(item.link);
+        if (targetElement) {
+          const targetOffset = targetElement.offsetTop;
+          const targetHeight = targetElement.offsetHeight;
+
+          if (
+            scrollOffset >= targetOffset &&
+            scrollOffset < targetOffset + targetHeight
+          ) {
+            setActiveSection(item.link.substring(1));
+          }
+        }
+      });
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [arr]);
 
   return (
     <>
-      <div className="py-5 hidden sm:block  mx-auto bg-[#F2F4F7] sticky top-0 z-50 border-b-2">
+      <div className=" hidden sm:block mx-auto bg-[#F2F4F7] sticky top-0 z-50 border-b-2">
         <ul className="flex justify-center gap-10">
-          {navLinks.map((item) => {
-            return (
-              <li key={item._id}>
-                <Link
-                  href={item.href}
-                  className={
-                    item.isActive
-                      ? "font-medium border-b-4 border-b-[#0745D3] pb-[1.25rem] text-base text-[#0745D3] "
-                      : "font-medium text-[#101828] text-base"
-                  }
-                >
-                  {item.name}
-                </Link>
-              </li>
-            );
-          })}
+          {arr.map((item) => (
+            <li key={item._id} className="py-5 cursor-pointer">
+              <ScrollLink
+                to={item.link.substring(1)}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={`font-medium py-5 text-base ${
+                  activeSection === item.link.substring(1)
+                    ? "text-blue-500 border-b-2 border-blue-500"
+                    : "text-gray-700"
+                }`}
+              >
+                {item.title}
+              </ScrollLink>
+            </li>
+          ))}
         </ul>
       </div>
     </>
