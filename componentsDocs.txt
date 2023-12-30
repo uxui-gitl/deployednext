@@ -579,3 +579,83 @@ import Balancer from "react-wrap-balancer";
       </>
 
 
+// ----------------------------
+// Spotlight //
+// ----------------------------
+
+{/* Spotlight test */}
+        <div id="spotlight">
+          <>
+            <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+                <div className="bg-[#f2f4f7] text-left">
+                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                    Services for successful results
+                  </h4>
+                  <div className="flex flex-col md:flex-row gap-8 ">
+                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                      Accomplishing Your Goals at Every stage
+                    </h3>
+                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                      Enabling you to thrive in digital era, we prepare your
+                      organisation with scaling growth for sustainable tomorrow
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className={`w-full bg-[#f2f4f7] text-left `}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+              <Spotlight
+                arr={[
+                  {
+                    label: "01",
+                    expandedLabel: "Step 01",
+                    title: "Infrastructure and  Data Evaluation",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "02",
+                    expandedLabel: "Step 02",
+                    title: "Strategy  Designing ",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "03",
+                    expandedLabel: "Step 03",
+                    title: "Establishing Readiness",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "04",
+                    expandedLabel: "Step 04",
+                    title: "Upgradation and Execution",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "05",
+                    expandedLabel: "Step 05",
+                    title: "Management and Control",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>

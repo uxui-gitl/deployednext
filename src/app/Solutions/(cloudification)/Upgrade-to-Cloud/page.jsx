@@ -27,6 +27,7 @@ import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import clsx from "clsx";
 import SectionNav from "@/components/SectionNav";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
+import Spotlight from "@/components/Spotlight";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -298,7 +299,73 @@ export default function Home() {
             </div>
           </div>
         </>
-        <ClientLogos />
+        {/* <ClientLogos /> */}
+
+        {/* Expertise */}
+        <Expertise
+          ribbon="Our Expertise "
+          ribbonTxtWhite="true"
+          title="Future Outlook with Intelligent Technologies  "
+          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          arr={[
+            {
+              title: "85%",
+              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            },
+            {
+              title: "$200B",
+              desc: "Forbes forecasts size for AI market by 2026 ",
+            },
+            {
+              title: "$6.6T",
+              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+            },
+          ]}
+        ></Expertise>
+
+        <CaseStudy
+          ribbon="CASE STUDY "
+          title="Elevating Customer Experience with Cloud  "
+          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+          isHomepage={false}
+          arr={[
+            {
+              id: 1,
+              title:
+                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              thumbnail: "1",
+
+              description: "Non-government Association of Indian Industries ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 2,
+              title:
+                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              thumbnail: "2",
+
+              description:
+                " Middle East-based Electrical Products Manufacturer ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 3,
+              title:
+                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              thumbnail: "3",
+
+              description: "Coffee Brand Distributor in Egypt and Middle East",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+          ]}
+        />
+
         {/* On premises Challenges*/}
         <>
           <div className={` w-full bg-[#f2f4f7] py-24`}>
@@ -343,6 +410,7 @@ export default function Home() {
             </div>
           </div>
         </>
+
         {/* Upgrade Now */}
         <>
           <div className={` w-full bg-white py-24`}>
@@ -362,7 +430,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-5 sm:gap-10 mx-auto px-20 sm:px-[8rem]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-5 sm:gap-10 mx-auto px-[2rem] md:px-20 sm:px-[8rem]">
               {upgradeCloud.map((item, i) => {
                 return (
                   <div
@@ -400,7 +468,7 @@ export default function Home() {
                   </div>
                 );
               })}
-              <div className="col text-white flex flex-col sm:flex-row gap-5 sm:gap-10  ">
+              <div className="col text-[#fff] flex flex-col sm:flex-row gap-5 sm:gap-10  ">
                 <div className=" bg-[#344CA9] px-10 py-10">
                   <h4 className="text-[30px] font-bold leading-[42px] mb-3">
                     Cloud Monitoring and Reporting
@@ -429,68 +497,125 @@ export default function Home() {
             </div>
           </div>
         </>
-        <CaseStudy
-          ribbon="CASE STUDY "
-          title="Elevating Customer Experience with Cloud  "
-          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-          isHomepage={false}
-          arr={[
-            {
-              id: 1,
-              title:
-                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-              thumbnail: "1",
 
-              description: "Non-government Association of Indian Industries ",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-            {
-              id: 2,
-              title:
-                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-              thumbnail: "2",
+        {/* Spotlight test */}
+        <div id="spotlight">
+          <>
+            <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+                <div className="bg-[#f2f4f7] text-left">
+                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                    Services for successful results
+                  </h4>
+                  <div className="flex flex-col md:flex-row gap-8 ">
+                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                      Accomplishing Your Goals at Every stage
+                    </h3>
+                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                      Enabling you to thrive in digital era, we prepare your
+                      organisation with scaling growth for sustainable tomorrow
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className={`w-full bg-[#f2f4f7] text-left `}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+              <Spotlight
+                arr={[
+                  {
+                    label: "01",
+                    expandedLabel: "Step 01",
+                    title: "Infrastructure and  Data Evaluation",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "02",
+                    expandedLabel: "Step 02",
+                    title: "Strategy  Designing ",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "03",
+                    expandedLabel: "Step 03",
+                    title: "Establishing Readiness",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "04",
+                    expandedLabel: "Step 04",
+                    title: "Upgradation and Execution",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "05",
+                    expandedLabel: "Step 05",
+                    title: "Management and Control",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
 
-              description:
-                " Middle East-based Electrical Products Manufacturer ",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-            {
-              id: 3,
-              title:
-                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-              thumbnail: "3",
+        {/* Benefits */}
 
-              description: "Coffee Brand Distributor in Egypt and Middle East",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-          ]}
-        />
-        <Expertise
-          ribbon="Acing your Business Objectives"
+        <Benefits
+          ribbon="Upgrade to Cloud Benefits "
           ribbonTxtWhite="true"
-          title="The Hub of Expertise"
-          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+          title="Experience business performance surge with cloud"
+          desc=""
           arr={[
             {
-              title: "15+",
-              desc: "Cloud Certified Professionals",
+              _id: 1,
+              icon: "gear",
+              title: "Gain competitive edge",
             },
             {
-              title: "50+",
-              desc: "Cloud Deployments",
+              _id: 2,
+              icon: "diamond",
+              title: "Streamline operations",
             },
             {
-              title: "50+",
-              desc: "Cloud Deployments",
+              _id: 3,
+              icon: "eyeGear",
+              title: "Boost brand value",
+            },
+            {
+              _id: 4,
+              icon: "gear",
+              title: "Gain competitive edge",
+            },
+            {
+              _id: 5,
+              icon: "diamond",
+              title: "Streamline operations",
+            },
+            {
+              _id: 6,
+              icon: "eyeGear",
+              title: "Boost brand value",
             },
           ]}
-        ></Expertise>
+        ></Benefits>
+
         {/* Unlocking agility */}
 
         <>
@@ -521,18 +646,10 @@ export default function Home() {
           ></WhySection>
         </>
 
-        <Benefits
-          ribbon="Upgrade to Cloud Benefits   "
-          ribbonTxtWhite="true"
-          title="Experience business performance surge with cloud   "
-          desc=""
-          arr={BenefitsData}
-        ></Benefits>
-
         <>
           <div className={` w-full bg-white mx-auto text-center py-24`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
-              <div className="mx-auto text-center bg-white flex items-center flex-row flex-col justify-center">
+              <div className="mx-auto text-center bg-white flex items-center  flex-col justify-center">
                 <div className="mx-auto text-center">
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
                     We are Trained and Accredited in Cloud Services

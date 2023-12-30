@@ -19,6 +19,11 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
 import Benefits from "@/components/Benefits";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -128,7 +133,38 @@ const AIOfferings = [
     ],
   },
 ];
-
+const ChoiceSlider = [
+  {
+    _id: 1,
+    desc: "Healthcare",
+    imgUrl: "1",
+    url: "/",
+  },
+  {
+    _id: 2,
+    desc: "Automotive",
+    imgUrl: "2",
+    url: "/",
+  },
+  {
+    _id: 3,
+    desc: "Logistic",
+    imgUrl: "3",
+    url: "/",
+  },
+  {
+    _id: 4,
+    desc: "Retail",
+    imgUrl: "4",
+    url: "/",
+  },
+  {
+    _id: 5,
+    desc: "Manufacturing",
+    imgUrl: "5",
+    url: "/",
+  },
+];
 const BenefitsData = [
   {
     _id: 1,
@@ -204,7 +240,7 @@ const page = () => {
       {/* Overview  */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div>
                 <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
@@ -233,7 +269,7 @@ const page = () => {
       {/* Our Ai Offerings */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -302,7 +338,7 @@ const page = () => {
       {/* ML Expertise */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-2 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -318,7 +354,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
             {[0, 1, 2, 3].map((item, index) => (
               <div className="" key={index}>
                 <Image
@@ -356,7 +392,7 @@ const page = () => {
       {/* AI & ML Partners */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -390,78 +426,93 @@ const page = () => {
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Benefits "
+        ribbonTxtWhite="true"
         title="Benefits of AI&ML "
         desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
         arr={BenefitsData}
       ></Benefits>
+
       {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industries Spotlight
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    spaceBetween={30}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide key={item._id} className=" ">
+                          <div className="text-left w-[283px]">
+                            <p className=" w-[283px] text-base leading-[22px] ">
+                              <Image
+                                src={`/industrySpotlight/${item.imgUrl}.png`}
+                                height={350}
+                                width={283}
+                                alt="icon"
+                                className="mb-5"
+                              />
+                            </p>
+                            <h3 className="text-[22px] w-fit leading-[30px] font-bold mb-5 ">
+                              {item.title}
+                            </h3>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
 
       {/* Why choose gitl and ai and ml */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
         title="Why Choose GITL for AI and ML"
         desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-      >
-        <AnimatePresence>
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={1}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">
-                Exceed customer expectations
-              </span>
-              and deliver AI and ML solutions in most effective way
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={2}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              Fully signed Non-Disclosure Agreement (NDA) to
-              <span className="text-[#4C6FFF]">
-                protect your sensitive information
-              </span>
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial="initial"
-            whileInView="animate"
-            custom={3}
-            viewport={{
-              once: true,
-            }}
-            className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-            variants={fadeInAnimationVariant}
-          >
-            <Image src={checkout} alt="checkout" />
-            <p className="text-base font-medium leading-[22px]">
-              <span className="text-[#4C6FFF]">
-                Deep understanding of your specific business domain
-              </span>{" "}
-              is crucial for creating AI and ML solutions that truly meet your
-              needs
-            </p>
-          </motion.div>
-        </AnimatePresence>
-      </WhySection>
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations </span> and deliver AI and ML solutions in most effective way",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information  </span>",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
       {/* Subscription */}
       <Subscription

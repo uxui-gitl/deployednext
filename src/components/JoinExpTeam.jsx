@@ -11,7 +11,7 @@ const JoinExpTeam = () => {
     <div
       className={` w-full bg-[#31094a] bg-gradient-to-r from-[#31094a] via-[#1d0845]  to-[#0e002a]  text-[#DBDBDB]  `}
     >
-      <div className="text-left max-w-screen-xl md:max-w-screen-2xl  mx-auto   pb-0 py-[2rem] sm:py-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+      <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto   pb-0 py-[2rem] sm:py-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
         {/* left */}
         <div className=" flex flex-col justify-center text-[#F5F5F5] relative">
           <div className="">

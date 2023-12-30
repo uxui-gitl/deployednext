@@ -54,13 +54,16 @@ export default function Home() {
 
   const [map, setMap] = React.useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+  const onLoad = React.useCallback(
+    function callback(map) {
+      // This is just an example of getting and using the map instance!!! don't just blindly copy!
+      const bounds = new window.google.maps.LatLngBounds(center);
+      map.fitBounds(bounds);
 
-    setMap(map);
-  }, []);
+      setMap(map);
+    },
+    [center]
+  );
 
   const onUnmount = React.useCallback(function callback(map) {
     setMap(null);
@@ -272,7 +275,6 @@ export default function Home() {
         </>
 
         {/* Spotlight test */}
-
         <div id="spotlight">
           <>
             <div className={`w-full text-left pt-32`}>

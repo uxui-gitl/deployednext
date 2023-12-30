@@ -108,7 +108,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
-                      Cloud Stack & Services
+                      ✔️ Cloud Stack & Services
                     </Link>
                   </li>
                 </ul>
