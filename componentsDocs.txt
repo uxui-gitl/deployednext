@@ -449,11 +449,15 @@ import Balancer from "react-wrap-balancer";
         />
 
 // ----------------------------
-// Subscribe //
+// Subscription //
 // ----------------------------
 
 
-
+{/* Subscription */}
+      <Subscription
+        title="Tap the faster and simpler way for futuristic seamless business experiences"
+        desc="Let's discuss how intelligent technologies can help you with rapid growth"
+      />
 
 // ----------------------------
 // Section Nav //
@@ -496,3 +500,82 @@ import Balancer from "react-wrap-balancer";
                     alt={item.image}
                   />
                 </div>
+
+// ----------------------------
+// ServiceOfferingGrid 6 grid //
+// ----------------------------
+
+                <ServiceOfferingGrid
+          title="Smart Tools and Technologies"
+          desc="Starting precisely where you stand in your digital
+          transformation journey, we seamlessly integrate our teams
+          into your culture, fostering a collaborative environment for
+          success"
+          ctaDesc="Let's Connect for a Walkthrough"
+          cta="Let's Connect"
+          arr={[
+            {
+              _id: 1,
+              type: "box",
+              title: "Power BI",
+              theme: "light",
+              bg: "transparent",
+              desc: "With Power BI integration - a highly scalable analytics platform that accommodates both individual users",
+              icon: "Power-BI-Logo.png",
+              cta: "Know More",
+            },
+            {
+              _id: 2,
+              type: "box",
+              title: "Power Apps",
+              theme: "dark",
+              bg: "#4C6FFF",
+              desc: "We help you to efficiently develop low-code applications in a fraction of the time with Power Apps",
+              icon: "Power-App.png",
+              cta: "Know More",
+            },
+            {
+              _id: 3,
+              type: "box",
+              title: "Birst ",
+              theme: "dark",
+              bg: "#07001F",
+              desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
+              icon: "Birst-logo.png",
+              cta: "Know More",
+            },
+            {
+              _id: 4,
+              type: "box",
+              title: "Big Data ",
+              theme: "dark",
+              bg: "#07001F",
+              desc: "Extracting insights from tapped and  untapped data assets, we help you understand customer behaviour",
+              icon: "dummy.png",
+              cta: "Know More",
+            },
+            {
+              _id: 5,
+              type: "box",
+              title: "Data Lake",
+              theme: "light",
+              bg: "transparent",
+              desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
+              icon: "dummy.png",
+              cta: "Know More",
+            },
+            {
+              _id: 6,
+              type: "box",
+              title: "Tableau",
+              theme: "dark",
+              bg: "#4C6FFF",
+              desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways ",
+              icon: "Power-App.png",
+              cta: "Know More",
+            },
+          ]}
+        />
+      </>
+
+

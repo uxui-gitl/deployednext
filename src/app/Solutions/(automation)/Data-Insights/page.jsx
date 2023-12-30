@@ -1,7 +1,7 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import StrategySub from "@/components/StrategySub";
-import Testimonials from "@/sections/testimonial/Testimonial";
+import Testimonial from "@/sections/testimonial/Testimonial";
 import shield from "../../../../../public/upgradeCloud/sheild.png";
 import Subscription from "@/components/Subscription";
 import puzzle from "../../../../../public/upgradeCloud/puzzle.png";
@@ -12,11 +12,13 @@ import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
+import Capabilities from "@/components/Capabilities";
 
 import PowerBI from "../../../../../public/Power-BI-Logo.png";
 import PowerApp from "../../../../../public/Power-App.png";
 import Birst from "../../../../../public/Birst-logo.png";
 import dummy from "../../../../../public/dummy.png";
+import Expertise from "@/components/Expertise";
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,7 +31,6 @@ import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
 import BlogSlider from "@/components/BlogSlider";
 import SME from "@/components/SME";
-import WhyInfotech from "@/components/WhyInfotech";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 import { mdiArrowTopRight } from "@mdi/js";
@@ -37,6 +38,7 @@ import { mdiPlayCircle } from "@mdi/js";
 
 import styles from "./page.module.css";
 import Awards from "@/sections/awards/Awards";
+import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -208,8 +210,39 @@ const page = () => {
       icon: "dummy.png",
       cta: "Know More",
     },
+    {
+      _id: 6,
+      type: "box",
+      title: "Data Lake",
+      theme: "light",
+      bg: "transparent",
+      desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
+      icon: "dummy.png",
+      cta: "Know More",
+    },
   ];
-
+  const navLinks = [
+    {
+      _id: 1,
+      title: "Enterprise suite",
+      link: "#about",
+    },
+    {
+      _id: 2,
+      title: "Act Cards",
+      link: "#actCards",
+    },
+    {
+      _id: 3,
+      title: "Employee Experience",
+      link: "#empExp",
+    },
+    {
+      _id: 4,
+      title: "Spotlight",
+      link: "#spotlight",
+    },
+  ];
   return (
     <>
       <EntIntro
@@ -220,97 +253,137 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <SectionNav />
 
-      {/* About Section */}
+      {/* Section Nav */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Smart Tools and Technologies
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Starting precisely where you stand in your digital
-                  transformation journey, we seamlessly integrate our teams into
-                  your culture, fostering a collaborative environment for
-                  success
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SectionNav arr={navLinks} />
       </>
-      {/* About Smart Tools grid */}
+
+      {/* Smart Tools Dynamic */}
       <>
-        <div
-          className={` py-12 max-w-screen-xl px-[2rem] md:max-w-screen-2xl mb-5 mx-auto `}
-        >
-          <div className="flex flex-col sm:flex-row gap-10 justify-start flex-wrap">
-            {smartTools.map((item, index) => (
-              <div
-                key={item._id}
-                className={`  p-8 w-[400px] max-w-1/4 border border-[#707070] `}
-              >
-                <Image
-                  src={`/${item.icon}`}
-                  height="48"
-                  width="48"
-                  alt="PowerBI"
-                />
-                <h4 className="text-[26px] leading-[32px] my-5 font-bold text-[#101828]">
-                  {item.title}
-                </h4>
-                <p className="text-[#475467] text-[14px] font-normal leading-[22px] ">
-                  {item.desc}
-                </p>
-                <Link
-                  href={"/"}
-                  className=" flex transition-all mt-5 font-medium hover:opacity-75 border-b-2 w-fit border-[#101828] "
-                >
-                  {item.cta}
-                  <Icon
-                    path={mdiArrowTopRight}
-                    style={{ marginLeft: "0.5em" }}
-                    size={1}
-                  />
-                </Link>
-              </div>
-            ))}
-            <div className="p-8 w-[400px] max-w-1/4 ">
-              <h4 className="text-[26px] leading-[32px] my-5 font-bold text-[#101828]">
-                Let&apos;s Connect for a Walkthrough
-              </h4>
-              <Link
-                href={"/"}
-                className="min-w-max w-fit flex bg-[#0A002F] py-2 px-10 border-2 border-[#0A002F] font-medium text-base text-[#FFF] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
-              >
-                Let&apos; Connect
-                <Icon
-                  path={mdiArrowTopRight}
-                  style={{ marginLeft: "0.5em" }}
-                  size={1}
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ServiceOfferingGrid
+          title="Smart Tools and Technologies"
+          desc="Starting precisely where you stand in your digital
+          transformation journey, we seamlessly integrate our teams
+          into your culture, fostering a collaborative environment for
+          success"
+          ctaDesc="Let's Connect for a Walkthrough"
+          cta="Let's Connect"
+          arr={[
+            {
+              _id: 1,
+              type: "box",
+              title: "Power BI",
+              theme: "light",
+              bg: "transparent",
+              desc: "With Power BI integration - a highly scalable analytics platform that accommodates both individual users",
+              icon: "Power-BI-Logo.png",
+              cta: "Know More",
+            },
+            {
+              _id: 2,
+              type: "box",
+              title: "Power Apps",
+              theme: "dark",
+              bg: "#4C6FFF",
+              desc: "We help you to efficiently develop low-code applications in a fraction of the time with Power Apps",
+              icon: "Power-App.png",
+              cta: "Know More",
+            },
+            {
+              _id: 3,
+              type: "box",
+              title: "Birst ",
+              theme: "dark",
+              bg: "#07001F",
+              desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
+              icon: "Birst-logo.png",
+              cta: "Know More",
+            },
+            {
+              _id: 4,
+              type: "box",
+              title: "Big Data ",
+              theme: "dark",
+              bg: "#07001F",
+              desc: "Extracting insights from tapped and  untapped data assets, we help you understand customer behaviour",
+              icon: "dummy.png",
+              cta: "Know More",
+            },
+            {
+              _id: 5,
+              type: "box",
+              title: "Data Lake",
+              theme: "light",
+              bg: "transparent",
+              desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
+              icon: "dummy.png",
+              cta: "Know More",
+            },
+            {
+              _id: 6,
+              type: "box",
+              title: "Tableau",
+              theme: "dark",
+              bg: "#4C6FFF",
+              desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways ",
+              icon: "Power-App.png",
+              cta: "Know More",
+            },
+          ]}
+        />
       </>
-      {/*
-To be added Our Capabilities
-*/}
+
+      {/* Capabilites */}
+      <Capabilities
+        ribbon=" "
+        title="Our Capabilities "
+        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+      />
+
       <Awards />
-      {/*
-To be added Data Insights Metrics
-*/}
-      <Testimonials />
+
+      {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise "
+        ribbonTxtWhite="true"
+        title="Future Outlook with Intelligent Technologies  "
+        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "85%",
+            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+          },
+          {
+            title: "$200B",
+            desc: "Forbes forecasts size for AI market by 2026 ",
+          },
+          {
+            title: "$6.6T",
+            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
 
       <Subscription
         title="Tap the faster and simpler way for futuristic seamless business experiences"

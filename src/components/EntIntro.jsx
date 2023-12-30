@@ -9,7 +9,7 @@ import Balancer from "react-wrap-balancer";
 const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
   return (
     <div className="text-center">
-      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden px-[2rem] sm:px-20 ">
+      <div className="relative w-full h-[100vh] sm:h-[90vh] overflow-hidden md:px-20 ">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover sm:object-fill z-0"
           autoPlay
@@ -21,11 +21,11 @@ const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
         </video>
         <div className="flex justify-start items-center h-[100vh]  sm:h-[90vh]">
           <div
-            className={` flex text-white flex-col justify-start items-start w-full sm:max-w-max gap-5 px-[4.5rem]`}
+            className={` flex text-white flex-col justify-start items-start w-full sm:max-w-max gap-5 px-[2rem] md:px-[4.5rem]`}
           >
             <h1
-              className={`sm:w-[${width}] w-full z-50 sm:block sm:text-[42px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[52px]	text-white font-bold sm:font-semibold text-left`}
-              style={{ width: width }}
+              className={`sm:w-[${width}] w-full z-50 sm:block sm:text-[42px] sm-[${fs}] text-[34px] leading-[44px] sm:leading-[${leading}] sm:leading-[52px] text-white font-bold sm:font-semibold text-left`}
+              style={{ width: "100%", maxWidth: width }}
             >
               <Balancer>{title}</Balancer>
             </h1>
