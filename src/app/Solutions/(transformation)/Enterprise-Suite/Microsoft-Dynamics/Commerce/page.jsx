@@ -27,7 +27,7 @@ import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
 import BlogSlider from "@/components/BlogSlider";
 import SME from "@/components/SME";
-import WhyInfotech from "@/components/WhyInfotech";
+// import WhyInfotech from "@/components/WhyInfotech";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 import { mdiArrowTopRight } from "@mdi/js";

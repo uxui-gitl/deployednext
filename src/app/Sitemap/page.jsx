@@ -74,7 +74,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Data-Insights"}
                     >
-                      Data Insights
+                      ✔️ Data Insights
                     </Link>
                   </li>
                   <li>
