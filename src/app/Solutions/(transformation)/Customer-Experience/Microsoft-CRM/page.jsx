@@ -91,7 +91,32 @@ const page = () => {
         fs="42px"
         leading="52px"
       />
-      <SectionNav />
+      <>
+        <SectionNav
+          arr={[
+            {
+              _id: 1,
+              title: "Enterprise suite",
+              link: "#about",
+            },
+            {
+              _id: 2,
+              title: "Act Cards",
+              link: "#actCards",
+            },
+            {
+              _id: 3,
+              title: "Employee Experience",
+              link: "#empExp",
+            },
+            {
+              _id: 4,
+              title: "Spotlight",
+              link: "#spotlight",
+            },
+          ]}
+        />
+      </>
       {/* Knocking Business
 Challenges  */}
       <>

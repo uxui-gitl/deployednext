@@ -197,7 +197,30 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <>
-        <SectionNav arr={navLinks} />
+        <SectionNav
+          arr={[
+            {
+              _id: 1,
+              title: "Enterprise suite",
+              link: "#about",
+            },
+            {
+              _id: 2,
+              title: "Act Cards",
+              link: "#actCards",
+            },
+            {
+              _id: 3,
+              title: "Employee Experience",
+              link: "#empExp",
+            },
+            {
+              _id: 4,
+              title: "Spotlight",
+              link: "#spotlight",
+            },
+          ]}
+        />
       </>
       {/* Tech Stack Platform Expertise Logos */}
       <>

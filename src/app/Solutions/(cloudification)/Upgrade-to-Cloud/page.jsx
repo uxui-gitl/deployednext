@@ -25,6 +25,7 @@ import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import clsx from "clsx";
+import SectionNav from "@/components/SectionNav";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
 
 const fadeInAnimationVariant = {
@@ -237,6 +238,35 @@ export default function Home() {
           width="100%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
+
+        {/* Section Nav */}
+        <>
+          <SectionNav
+            arr={[
+              {
+                _id: 1,
+                title: "Enterprise suite",
+                link: "#about",
+              },
+              {
+                _id: 2,
+                title: "Act Cards",
+                link: "#actCards",
+              },
+              {
+                _id: 3,
+                title: "Employee Experience",
+                link: "#empExp",
+              },
+              {
+                _id: 4,
+                title: "Spotlight",
+                link: "#spotlight",
+              },
+            ]}
+          />
+        </>
+
         {/* Upgrade to Cloud */}
         <>
           <div className={` w-full bg-white pt-24`}>

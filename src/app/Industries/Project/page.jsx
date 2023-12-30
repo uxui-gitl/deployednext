@@ -190,7 +190,32 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-      <SectionNav />
+      <>
+        <SectionNav
+          arr={[
+            {
+              _id: 1,
+              title: "Enterprise suite",
+              link: "#about",
+            },
+            {
+              _id: 2,
+              title: "Act Cards",
+              link: "#actCards",
+            },
+            {
+              _id: 3,
+              title: "Employee Experience",
+              link: "#empExp",
+            },
+            {
+              _id: 4,
+              title: "Spotlight",
+              link: "#spotlight",
+            },
+          ]}
+        />
+      </>
       {/* Overview  */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>

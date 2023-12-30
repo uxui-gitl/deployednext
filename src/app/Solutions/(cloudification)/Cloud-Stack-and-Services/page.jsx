@@ -172,7 +172,32 @@ export default function Home() {
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
-        <SectionNav />
+        <>
+          <SectionNav
+            arr={[
+              {
+                _id: 1,
+                title: "Enterprise suite",
+                link: "#about",
+              },
+              {
+                _id: 2,
+                title: "Act Cards",
+                link: "#actCards",
+              },
+              {
+                _id: 3,
+                title: "Employee Experience",
+                link: "#empExp",
+              },
+              {
+                _id: 4,
+                title: "Spotlight",
+                link: "#spotlight",
+              },
+            ]}
+          />
+        </>
         {/* Solutions Robot */}
         <>
           <div className={` w-full bg-white py-16`}>
