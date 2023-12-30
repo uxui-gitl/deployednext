@@ -92,10 +92,6 @@ export default function Home() {
   return (
     <>
       <main>
-        <>
-          <Image src={CAT} alt="CAT" />
-        </>
-
         <EntIntro
           title="Reimagine Your Business Capabilities with Our Intelligent Edge-Enabled Cloud Stack & Services"
           desc="We leverage the power of the cloud to recalibrate our business, derive greater business value and refine your user experience"
@@ -300,7 +296,55 @@ export default function Home() {
           </>
           <div className={`w-full text-left `}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
-              <Spotlight />
+              <Spotlight
+                arr={[
+                  {
+                    label: "01",
+                    expandedLabel: "Step 01",
+                    title: "Infrastructure and  Data Evaluation",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "02",
+                    expandedLabel: "Step 02",
+                    title: "Strategy  Designing ",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "03",
+                    expandedLabel: "Step 03",
+                    title: "Establishing Readiness",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "04",
+                    expandedLabel: "Step 04",
+                    title: "Upgradation and Execution",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                  {
+                    label: "05",
+                    expandedLabel: "Step 05",
+                    title: "Management and Control",
+                    expandedTitle:
+                      "Current Infrastructure and  Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/card1.png",
+                  },
+                ]}
+              />
             </div>
           </div>
         </div>

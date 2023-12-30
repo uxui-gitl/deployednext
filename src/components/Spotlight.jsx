@@ -5,48 +5,48 @@ import Balancer from "react-wrap-balancer";
 const Spotlight = ({ arr }) => {
   const [activeCard, setActiveCard] = useState(0);
 
-  // const cards = [
-  //   {
-  //     label: "01",
-  //     expandedLabel: "Step 01",
-  //     title: "Infrastructure and  Data Evaluation",
-  //     expandedTitle: "Current Infrastructure and  Data Evaluation",
-  //     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-  //     image: "/Spotlight/card1.png",
-  //   },
-  //   {
-  //     label: "02",
-  //     expandedLabel: "Step 02",
-  //     title: "Strategy  Designing ",
-  //     expandedTitle: "Current Infrastructure and  Data Evaluation",
-  //     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-  //     image: "/Spotlight/card1.png",
-  //   },
-  //   {
-  //     label: "03",
-  //     expandedLabel: "Step 03",
-  //     title: "Establishing Readiness",
-  //     expandedTitle: "Current Infrastructure and  Data Evaluation",
-  //     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-  //     image: "/Spotlight/card1.png",
-  //   },
-  //   {
-  //     label: "04",
-  //     expandedLabel: "Step 04",
-  //     title: "Upgradation and Execution",
-  //     expandedTitle: "Current Infrastructure and  Data Evaluation",
-  //     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-  //     image: "/Spotlight/card1.png",
-  //   },
-  //   {
-  //     label: "05",
-  //     expandedLabel: "Step 05",
-  //     title: "Management and Control",
-  //     expandedTitle: "Current Infrastructure and  Data Evaluation",
-  //     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-  //     image: "/Spotlight/card1.png",
-  //   },
-  // ];
+  const cardsArray = arr || [
+    {
+      label: "01",
+      expandedLabel: "Step 01",
+      title: "Infrastructure and  Data Evaluation",
+      expandedTitle: "Current Infrastructure and  Data Evaluation",
+      desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+      image: "/Spotlight/card1.png",
+    },
+    {
+      label: "02",
+      expandedLabel: "Step 02",
+      title: "Strategy  Designing ",
+      expandedTitle: "Current Infrastructure and  Data Evaluation",
+      desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+      image: "/Spotlight/card1.png",
+    },
+    {
+      label: "03",
+      expandedLabel: "Step 03",
+      title: "Establishing Readiness",
+      expandedTitle: "Current Infrastructure and  Data Evaluation",
+      desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+      image: "/Spotlight/card1.png",
+    },
+    {
+      label: "04",
+      expandedLabel: "Step 04",
+      title: "Upgradation and Execution",
+      expandedTitle: "Current Infrastructure and  Data Evaluation",
+      desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+      image: "/Spotlight/card1.png",
+    },
+    {
+      label: "05",
+      expandedLabel: "Step 05",
+      title: "Management and Control",
+      expandedTitle: "Current Infrastructure and  Data Evaluation",
+      desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+      image: "/Spotlight/card1.png",
+    },
+  ];
 
   const handleCardClick = (index) => {
     // Check if the clicked card is already active, if yes, do nothing
@@ -60,7 +60,7 @@ const Spotlight = ({ arr }) => {
   return (
     <>
       <div className="flex flex-col gap-4 md:flex-row md:gap-4">
-        {arr.map((card, index) => (
+        {cardsArray.map((card, index) => (
           <div
             key={index}
             className={`  bg-[#fff] cursor-pointer min-w-full md:min-w-[155px] md:h-[320px] md:max-w-1/5 w-fit transition-transform mb-4 overflow-hidden ${
