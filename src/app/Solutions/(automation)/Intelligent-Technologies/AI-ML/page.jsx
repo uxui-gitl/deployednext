@@ -136,31 +136,31 @@ const AIOfferings = [
 const ChoiceSlider = [
   {
     _id: 1,
-    desc: "Healthcare",
+    title: "Healthcare",
     imgUrl: "1",
     url: "/",
   },
   {
     _id: 2,
-    desc: "Automotive",
+    title: "Automotive",
     imgUrl: "2",
     url: "/",
   },
   {
     _id: 3,
-    desc: "Logistic",
+    title: "Logistic",
     imgUrl: "3",
     url: "/",
   },
   {
     _id: 4,
-    desc: "Retail",
+    title: "Retail",
     imgUrl: "4",
     url: "/",
   },
   {
     _id: 5,
-    desc: "Manufacturing",
+    title: "Manufacturing",
     imgUrl: "5",
     url: "/",
   },
@@ -454,7 +454,6 @@ const page = () => {
                 <div>
                   <Swiper
                     slidesPerView={"auto"}
-                    spaceBetween={30}
                     pagination={{
                       clickable: true,
                     }}
@@ -463,20 +462,23 @@ const page = () => {
                   >
                     {ChoiceSlider.map((item) => (
                       <>
-                        <SwiperSlide key={item._id} className=" ">
-                          <div className="text-left w-[283px]">
-                            <p className=" w-[283px] text-base leading-[22px] ">
-                              <Image
-                                src={`/industrySpotlight/${item.imgUrl}.png`}
-                                height={350}
-                                width={283}
-                                alt="icon"
-                                className="mb-5"
-                              />
-                            </p>
-                            <h3 className="text-[22px] w-fit leading-[30px] font-bold mb-5 ">
-                              {item.title}
-                            </h3>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
                           </div>
                         </SwiperSlide>
                       </>

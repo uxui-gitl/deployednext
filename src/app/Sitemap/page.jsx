@@ -35,7 +35,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/AI-ML"}
                           >
-                            AI & ML
+                            ✔️ AI & ML
                           </Link>
                         </li>
                         <li>
