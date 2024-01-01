@@ -26,6 +26,11 @@ import scalable5 from "../../../../../../public/scalable5.png";
 import scalable6 from "../../../../../../public/scalable6.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
 const fadeInAnimationVariant = {
@@ -155,61 +160,87 @@ const RPACards = [
     _id: 1,
     title: "Infrastructure Setup ",
     keyword: "Enable",
-    color: "032573",
-    bgcolor1: "7491D4",
-    bgcolor2: "EDF1FF",
-    bgcolor3: "0745D3",
+    color: "#032573",
+    bgcolor1: "#7491D4",
+    bgcolor2: "#EDF1FF",
+    bgcolor3: "#0745D3",
     icon: "scalable1",
   },
   {
     _id: 2,
     title: "Project Governance ",
     keyword: "Prepare",
-    color: "806113",
-    bgcolor1: "F5D687",
-    bgcolor2: "FFF8E5",
-    bgcolor3: "F4C447",
+    color: "#806113",
+    bgcolor1: "#F5D687",
+    bgcolor2: "#FFF8E5",
+    bgcolor3: "#F4C447",
     icon: "scalable2",
   },
   {
     _id: 3,
     title: "Workflow Design ",
     keyword: "Design",
-    color: "224D37",
-    bgcolor1: "6D917F",
-    bgcolor2: "E5F8EE",
-    bgcolor3: "429268",
+    color: "#224D37",
+    bgcolor1: "#6D917F",
+    bgcolor2: "#E5F8EE",
+    bgcolor3: "#429268",
     icon: "scalable3",
   },
   {
     _id: 4,
     title: "Workflow  Development ",
     keyword: "Build",
-    color: "4E6EF2",
-    bgcolor1: "8CA3FF",
-    bgcolor2: "EDF1FF",
-    bgcolor3: "4C6FFF",
+    color: "#4E6EF2",
+    bgcolor1: "#8CA3FF",
+    bgcolor2: "#EDF1FF",
+    bgcolor3: "#4C6FFF",
     icon: "scalable4",
   },
   {
     _id: 5,
     title: "Quality  Assurance ",
     keyword: "Sustain",
-    color: "732822",
-    bgcolor1: "B56964",
-    bgcolor2: "FEEDED",
-    bgcolor3: "B42318",
+    color: "#732822",
+    bgcolor1: "#B56964",
+    bgcolor2: "#FEEDED",
+    bgcolor3: "#B42318",
     icon: "scalable6",
   },
   {
     _id: 6,
     title: "Hyper Care ",
     keyword: "Sustain",
-    color: "DDDDDE",
-    bgcolor1: "575D66",
-    bgcolor2: "F5F5F5",
-    bgcolor3: "475467",
+    color: "#DDDDDE",
+    bgcolor1: "#575D66",
+    bgcolor2: "#F5F5F5",
+    bgcolor3: "#475467",
     icon: "scalable6",
+  },
+];
+const ChoiceSlider = [
+  {
+    _id: 1,
+    title: "Healthcare",
+    imgUrl: "1",
+    url: "/",
+  },
+  {
+    _id: 2,
+    title: "Automotive",
+    imgUrl: "2",
+    url: "/",
+  },
+  {
+    _id: 3,
+    title: "Logistic",
+    imgUrl: "3",
+    url: "/",
+  },
+  {
+    _id: 4,
+    title: "Retail",
+    imgUrl: "4",
+    url: "/",
   },
 ];
 
@@ -255,7 +286,7 @@ const page = () => {
       {/* Why consider RPA for Your Business */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -264,7 +295,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
             {ConsiderRPA.map((item, index) => (
               <div
                 className="flex flex-col sm:flex-row  bg-white"
@@ -303,7 +334,7 @@ const page = () => {
       {/* RPA Platform Expertise Logos */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -340,7 +371,7 @@ const page = () => {
       {/* RPA Service Offerings */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold text-center ">
@@ -349,7 +380,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
             {RPAServiceOfferings.map((item, index) => (
               <div className="" key={item._id}>
                 <Image
@@ -382,11 +413,69 @@ const page = () => {
         </div>
       </>
 
-      {/* Industry Spotlight */}
+      {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Expertise
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
       {/* RPA UseCases */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -443,18 +532,18 @@ const page = () => {
       </>
 
       {/* Industry Expertise Slider */}
-      <IndustryExpertise
+      {/* <IndustryExpertise
         heading="Industry Expertise"
         desc="Being preferred partner of leading industries, we help in
                   shaping specific technology prerequisites and deliver
                   brilliant value driven solutions tailored to your sector"
         list={IndustryExperts}
-      />
+      /> */}
 
       {/* GITL RPA Cards */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -486,11 +575,20 @@ const page = () => {
                   className={`mx-2  sm:w-[320px] w-fit flex flex-col justify-between`}
                 >
                   <div
-                    className={`w-full text-2xl font-bold bg-[#${item.bgcolor1}] text-[#${item.color}] p-5`}
+                    className={`w-full text-2xl font-bold  p-5`}
+                    style={{
+                      backgroundColor: item.bgcolor1,
+                      color: item.color,
+                    }}
                   >
                     {item.keyword}
                   </div>
-                  <div className={`p-5 w-full h-full bg-[#${item.bgcolor2}]`}>
+                  <div
+                    className={`p-5 w-full h-full `}
+                    style={{
+                      backgroundColor: item.bgcolor2,
+                    }}
+                  >
                     <Image
                       src={`/${item.icon}.png`}
                       width={56}
@@ -501,7 +599,12 @@ const page = () => {
                       {item.title}
                     </h4>
                   </div>
-                  <div className={`w-full bg-[#${item.bgcolor3}] p-2`}></div>
+                  <div
+                    className={`w-full p-2`}
+                    style={{
+                      backgroundColor: item.bgcolor3,
+                    }}
+                  ></div>
                 </div>
               );
             })}

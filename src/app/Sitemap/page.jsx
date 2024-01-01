@@ -44,7 +44,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/RPA"}
                           >
-                            RPA
+                            ✔️ RPA
                           </Link>
                         </li>
                         <li>
@@ -83,7 +83,7 @@ const page = () => {
                       target="_blank"
                       href={"/Solutions/Cyber-Security"}
                     >
-                      Cyber Security
+                      ✔️ Cyber Security
                     </Link>
                   </li>
                 </ul>
