@@ -4,15 +4,40 @@ import Navlist from "./NavUtils/Navlist.jsx";
 import Navlist2 from "./NavUtils/Navlist2.jsx";
 import Link from "next/link.js";
 
+const SubNavList = ({ links }) => (
+  <div className="flex flex-row gap-x-8  lg:px-8  lg:pr-10 py-2 max-lg:pl-6">
+    {links.map((section, index) => (
+      <div key={index} className="lg:border-r-[1px] pr-8">
+        <ul>
+          <li className="text-[#101828] hover:text-blue-500 pt-2">
+            <Link href={section.sectionHref}>
+              <span className="text-neutral-800 font-semibold hover:text-blue-500">
+                {section.sectionLabel}
+              </span>
+            </Link>
+          </li>
+        </ul>
+
+        {section.subLinks && (
+          <ul className="text-sm ml-5 text-[#101828] font-semibold mt-1 w-full">
+            {section.subLinks.map((subLink, subIndex) => (
+              <li
+                key={subIndex}
+                className="text-[#101828] hover:text-blue-500 py-2"
+              >
+                <Link href={subLink.href}>{subLink.label}</Link>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    ))}
+  </div>
+);
+
 const SolutionsNav = () => {
   const [show, setShow] = useState(false);
   const [currentCategory, setCurrentCategory] = useState(null);
-
-  const handleOnclick = () => {
-    if (window.innerWidth < 1024) {
-      setShow(!show);
-    }
-  };
 
   const handleMouseEnter = (category) => {
     if (window.innerWidth > 1024) {
@@ -23,18 +48,20 @@ const SolutionsNav = () => {
 
   const handleMouseLeave = () => {
     if (window.innerWidth > 1024) {
-      setCurrentCategory(null);
+      setCurrentCategory("Automation");
       setShow(false);
     }
   };
 
   return (
     <li
-      onMouseEnter={() => handleMouseEnter("solutions")}
+      onMouseEnter={() => {
+        handleMouseEnter("solutions");
+        setCurrentCategory("Automation");
+      }}
       onMouseLeave={handleMouseLeave}
     >
       <button
-        onClick={() => setShow(!show)}
         type="button"
         className={`flex items-center p-1 font-normal transition ease-in duration-150 max-lg:justify-between max-lg:w-full ${
           show ? "lg:text-neutral-300 " : ""
@@ -61,10 +88,15 @@ const SolutionsNav = () => {
         className={`relative lg:absolute lg:flex lg:-ml-80 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
           show ? "opacity-100 " : "opacity-0 invisible max-lg:hidden"
         }`}
+        onMouseEnter={() => handleMouseEnter("solutions")} // Ensure to handle mouse enter on the dropdown as well
+        onMouseLeave={handleMouseLeave}
       >
         <div className="lg:px-4 lg:border-r-[1px] mb-4 lg:mb-0 lg:pr-10">
           <ul className="max-lg:pl-6">
-            <li className="">
+            <li
+              className=""
+              onMouseEnter={() => setCurrentCategory("Automation")}
+            >
               <Navlist
                 main="Automation"
                 submain="Automate any workflow"
@@ -72,7 +104,10 @@ const SolutionsNav = () => {
                 path="M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z"
               />
             </li>
-            <li className="">
+            <li
+              className=""
+              onMouseEnter={() => setCurrentCategory("Cloudification")}
+            >
               <Navlist
                 main="Cloudification"
                 submain="Host and manage packages"
@@ -80,7 +115,10 @@ const SolutionsNav = () => {
                 path="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"
               />
             </li>
-            <li className="">
+            <li
+              className=""
+              onMouseEnter={() => setCurrentCategory("Transformation")}
+            >
               <Navlist
                 main="Transformation"
                 submain="Find and fix vulnerability"
@@ -90,8 +128,168 @@ const SolutionsNav = () => {
             </li>
           </ul>
         </div>
+        {/* Second level dropdowns */}
+        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6 z-50">
+          {currentCategory === "Automation" && (
+            <SubNavList
+              links={[
+                {
+                  sectionLabel: "Intelligent Technologies",
+                  sectionHref: "/Solutions/Intelligent-Technologies",
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Solutions/Intelligent-Technologies/AI-ML",
+                    },
+                    {
+                      label: "RPA",
+                      href: "/Solutions/Intelligent-Technologies/RPA",
+                    },
+                    {
+                      label: "IIOT",
+                      href: "/Solutions/Intelligent-Technologies/IIOT",
+                    },
+                  ],
+                },
+                {
+                  sectionLabel: "Data Insights",
+                  sectionHref: "/Solutions/Data-Insights",
+                  subLinks: [
+                    {
+                      label: "Cyber Security",
+                      href: "/Solutions/Cyber-Security",
+                    },
+                    // Add more sub-links as needed
+                  ],
+                },
+                {
+                  sectionLabel: "Technology Stack",
+                  sectionHref: "#", // Replace with the actual href
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Solutions/Technology-Stack/AI-ML",
+                    },
+                    { label: "RPA", href: "/Solutions/Technology-Stack/RPA" },
+                    { label: "IIOT", href: "/Solutions/Technology-Stack/IIOT" },
+                    // Add more sub-links as needed
+                  ],
+                },
+              ]}
+            />
+          )}
 
-        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
+          {currentCategory === "Cloudification" && (
+            <SubNavList
+              links={[
+                {
+                  sectionLabel: "Cloudification",
+                  sectionHref: "/Cloudification/Intelligent-Technologies",
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Cloudification/Intelligent-Technologies/AI-ML",
+                    },
+                    {
+                      label: "RPA",
+                      href: "/Cloudification/Intelligent-Technologies/RPA",
+                    },
+                    {
+                      label: "IIOT",
+                      href: "/Cloudification/Intelligent-Technologies/IIOT",
+                    },
+                  ],
+                },
+                {
+                  sectionLabel: "Data Insights",
+                  sectionHref: "/Cloudification/Data-Insights",
+                  subLinks: [
+                    {
+                      label: "Cyber Security",
+                      href: "/Cloudification/Cyber-Security",
+                    },
+                    // Add more sub-links as needed
+                  ],
+                },
+                {
+                  sectionLabel: "Technology Stack",
+                  sectionHref: "#", // Replace with the actual href
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Cloudification/Technology-Stack/AI-ML",
+                    },
+                    {
+                      label: "RPA",
+                      href: "/Cloudification/Technology-Stack/RPA",
+                    },
+                    {
+                      label: "IIOT",
+                      href: "/Cloudification/Technology-Stack/IIOT",
+                    },
+                    // Add more sub-links as needed
+                  ],
+                },
+              ]}
+            />
+          )}
+
+          {currentCategory === "Transformation" && (
+            <SubNavList
+              links={[
+                {
+                  sectionLabel: "Transformation",
+                  sectionHref: "/Transformation/Intelligent-Technologies",
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Transformation/Intelligent-Technologies/AI-ML",
+                    },
+                    {
+                      label: "RPA",
+                      href: "/Transformation/Intelligent-Technologies/RPA",
+                    },
+                    {
+                      label: "IIOT",
+                      href: "/Transformation/Intelligent-Technologies/IIOT",
+                    },
+                  ],
+                },
+                {
+                  sectionLabel: "Data Insights",
+                  sectionHref: "/Transformation/Data-Insights",
+                  subLinks: [
+                    {
+                      label: "Cyber Security",
+                      href: "/Transformation/Cyber-Security",
+                    },
+                    // Add more sub-links as needed
+                  ],
+                },
+                {
+                  sectionLabel: "Technology Stack",
+                  sectionHref: "#", // Replace with the actual href
+                  subLinks: [
+                    {
+                      label: "AI & ML",
+                      href: "/Transformation/Technology-Stack/AI-ML",
+                    },
+                    {
+                      label: "RPA",
+                      href: "/Transformation/Technology-Stack/RPA",
+                    },
+                    {
+                      label: "IIOT",
+                      href: "/Transformation/Technology-Stack/IIOT",
+                    },
+                    // Add more sub-links as needed
+                  ],
+                },
+              ]}
+            />
+          )}
+        </div>
+        {/* <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6">
           <ul>
             <li className="text-[#101828] hover:text-blue-500 pt-2">
               <Link href="/Solutions/Intelligent-Technologies">
@@ -157,7 +355,7 @@ const SolutionsNav = () => {
               <Link href="/Solutions/Intelligent-Technologies/IIOT">IIOT</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </li>
   );
