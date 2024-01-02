@@ -21,6 +21,7 @@ import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import RPAPlaceholder from "../../../../../public/RPAPlaceholder.png";
 
 import MLExpertise from "../../../../../public/MLExpertise.png";
+
 import scalable1 from "../../../../../public/scalable1.png";
 import scalable2 from "../../../../../public/scalable2.png";
 import scalable3 from "../../../../../public/scalable3.png";
@@ -36,6 +37,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
+import OfferingsSlider from "@/components/OfferingsSlider";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -249,8 +251,8 @@ const ChoiceSlider = [
 const AIOfferings = [
   {
     _id: 1,
-    title: "Business Consulting",
-    desc: "Empower your stores with personalization, loyalty management, and measurement for a great customer experience by modernizing your stores",
+    title: "Computer Vision ",
+    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -321,6 +323,27 @@ const AIOfferings = [
 
   {
     _id: 4,
+    title: "Conversational AI",
+    desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Document processing",
+        url: "/",
+      },
+      {
+        title: "Sentiment analysis",
+        url: "/",
+      },
+      {
+        title: "Chatbots and Virtual Assistants",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 5,
     title: "Conversational AI",
     desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
     cta: "Explore Service",
@@ -469,6 +492,10 @@ const page = () => {
             ))}
           </div>
         </div>
+      </>
+
+      <>
+        <OfferingsSlider arr={AIOfferings} />
       </>
 
       {/* Industry Spotlight Slider */}

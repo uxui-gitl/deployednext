@@ -659,3 +659,11 @@ import Balancer from "react-wrap-balancer";
             </div>
           </div>
         </div>
+
+
+// ----------------------------
+// Icons Import example //
+// ----------------------------
+import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/AutomationRepetitiveTasks.svg";
+
+<Image src={RealTimeProblemSolvingCapabilities} alt="RealTimeProblemSolvingCapabilities" />
