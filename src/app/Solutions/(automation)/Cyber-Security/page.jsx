@@ -246,7 +246,101 @@ const ChoiceSlider = [
     url: "/",
   },
 ];
+const AIOfferings = [
+  {
+    _id: 1,
+    title: "Business Consulting",
+    desc: "Empower your stores with personalization, loyalty management, and measurement for a great customer experience by modernizing your stores",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Real-time Object Detection",
+        url: "/",
+      },
+      {
+        title: "Data Labelling",
+        url: "/",
+      },
+      {
+        title: "Security Solution",
+        url: "/",
+      },
+      {
+        title: "Equipment Monitoring",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 2,
+    title: "Speech &  Language ",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Transcription Services",
+        url: "/",
+      },
+      {
+        title: "Speech recognition",
+        url: "/",
+      },
+      {
+        title: "Language translation",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 3,
+    title: "Document  Understanding",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Optical Character Recognition (OCR)",
+        url: "/",
+      },
+      {
+        title: "Text extraction",
+        url: "/",
+      },
+      {
+        title: "Optical Character Recognition - PDF",
+        url: "/",
+      },
+      {
+        title: "AP Automation ",
+        url: "/",
+      },
+    ],
+  },
 
+  {
+    _id: 4,
+    title: "Conversational AI",
+    desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+    cta: "Explore Service",
+    ctaUrl: "/",
+    links: [
+      {
+        title: "Document processing",
+        url: "/",
+      },
+      {
+        title: "Sentiment analysis",
+        url: "/",
+      },
+      {
+        title: "Chatbots and Virtual Assistants",
+        url: "/",
+      },
+    ],
+  },
+];
 const page = () => {
   return (
     <>
@@ -317,7 +411,65 @@ const page = () => {
         </div>
       </>
 
-      {/* INsert AI ML Card Slider  */}
+      {/*  Card Slider Offerings */}
+      <>
+        <div className={` w-full bg-[#FFF] py-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Proposed GITL Offerings
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-4">
+            {AIOfferings.map((item, index) => (
+              <div className="bg-[#EDF1FF] p-5" key={item._id}>
+                <div className="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
+                      {item.title}
+                    </p>
+                    <p className="text-[#101828] text-[12px] font-normal my-4 leading-[18px]">
+                      {item.desc}
+                    </p>
+                  </div>
+                  <div>
+                    <ul className="my-8">
+                      {item.links.map((list, index) => (
+                        <li
+                          key={index}
+                          className=" border-b-2 border-[#DBDBDB] py-2 "
+                        >
+                          <Link
+                            href={list.url}
+                            className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                          >
+                            {list.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={item.ctaUrl}
+                      className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
 
       {/* Industry Spotlight Slider */}
       <>

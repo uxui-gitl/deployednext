@@ -36,6 +36,7 @@ import InsightSlider from "@/components/InsightSlider";
 import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
 
 import Benefits from "@/components/Benefits";
+import OfferingsGrid from "@/components/OfferingsGrid";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -259,12 +260,21 @@ const page = () => {
       </>
 
       {/* Tech Stack Service Offerings */}
-      <>
+      {/* <>
         <ServiceOfferingGrid
           title="Service Offerings"
           arr={TechStackOfferings}
         />
-      </>
+      </> */}
+
+      {/* Offerings 3 col grid */}
+      <OfferingsGrid
+        title="Service Offerings"
+        titleOnly={true}
+        desc=""
+        columns="3"
+        arr={TechStackOfferings}
+      />
 
       {/* Insights */}
       <BlogSlider arr={blogData} />
