@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const OfferingsSlider = ({ arr }) => {
   return (
@@ -22,11 +23,28 @@ const OfferingsSlider = ({ arr }) => {
             </div>
           </div>
         </div>
-        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-4">
+        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-3 overflow-hidden">
           <Swiper
             slidesPerView={"auto"}
             pagination={{
               clickable: true,
+            }}
+            breakpoints={{
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              // when window width is >= 480px
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // when window width is >= 640px
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
             }}
             modules={[Pagination]}
             className="mySwiper"
@@ -34,11 +52,20 @@ const OfferingsSlider = ({ arr }) => {
             {arr.map((item, index) => (
               <SwiperSlide
                 key={item._id}
-                className="w-1/4 max-w-[283px] mr-4  relative group"
+                className="w-1/3 max-w-[500px] mr-4  relative group"
               >
-                <div className="bg-[#EDF1FF] p-5" key={item._id}>
-                  <div className="p-4 h-full flex flex-col justify-between">
-                    <div>
+                <div className="bg-[#EDF1FF] h-full  " key={item._id}>
+                  <div className=" h-full flex flex-col justify-between">
+                    <div className="w-full mb-4">
+                      <Image
+                        className="w-full"
+                        src={`/${item.image}`}
+                        height={200}
+                        width={290}
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-4">
                       <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
                         {item.title}
                       </p>
@@ -46,8 +73,8 @@ const OfferingsSlider = ({ arr }) => {
                         {item.desc}
                       </p>
                     </div>
-                    <div>
-                      <ul className="my-8">
+                    <div className="p-4">
+                      <ul className="my-4">
                         {item.links.map((list, index) => (
                           <li
                             key={index}
@@ -62,9 +89,11 @@ const OfferingsSlider = ({ arr }) => {
                           </li>
                         ))}
                       </ul>
+                    </div>
+                    <div className="bg-[#0745D3]   p-4">
                       <Link
                         href={item.ctaUrl}
-                        className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                        className="text-[#fff] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                       >
                         {item.cta}{" "}
                         <Icon
