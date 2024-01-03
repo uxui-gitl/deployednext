@@ -173,7 +173,7 @@ const accordion = [
   },
   // Add more items as needed
 ];
-const Capabilities = ({ ribbon, title, desc }) => {
+const Capabilities = ({ ribbon, title, desc, arr }) => {
   return (
     <>
       <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
@@ -190,7 +190,7 @@ const Capabilities = ({ ribbon, title, desc }) => {
           {/* right */}
           <div className=" min-h-48  ">
             <div>
-              <Accordion items={accordion} />
+              <Accordion items={arr && arr ? arr : accordion} />
             </div>
           </div>
         </div>

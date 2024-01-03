@@ -1,6 +1,5 @@
 - 4 grid image in RPA and AI ML page make image zoom
 
 
-
-
-
+# Solutions/Cyber-Security
+- Slider Faq in one card only

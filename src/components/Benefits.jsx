@@ -114,9 +114,10 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                     <div className=" -mr-4">
                       {item.icon !== "" ? (
                         <Image
-                          src={`/icon/${item.icon}.svg`}
-                          width="45"
-                          height="45"
+ 
+                          src={`/icon/benefisIntelligentTechnologies/${item.icon}.svg`}
+                          width="48"
+                          height="48" 
                           alt={item.icon}
                         />
                       ) : (

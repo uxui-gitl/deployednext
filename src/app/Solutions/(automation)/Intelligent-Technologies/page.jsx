@@ -11,6 +11,10 @@ import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
+import AutomationRepetitiveTasks from "../../../../../public/icon/benefisIntelligentTechnologies/AutomationRepetitiveTasks.svg"
+import highDegreeAccuracyConsistency from "../../../../../public/icon/benefisIntelligentTechnologies/highDegreeAccuracyConsistency.svg"
+import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg"
+import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg"
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -180,28 +184,28 @@ const page = () => {
   const BenefitsData = [
     {
       _id: 1,
-      icon: "gear",
+      icon: "highDegreeAccuracyConsistency",
       title: "",
       cardDesc:
         "A high degree of accuracy and consistency in business operations.",
     },
     {
       _id: 2,
-      icon: "diamond",
+      icon: "InformedDecisionMaking",
       title: "",
       cardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
     },
     {
       _id: 3,
-      icon: "eyeGear",
+      icon: "RealTimeProblemSolvingCapabilities",
       title: "",
       cardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 4,
-      icon: "gear",
+      icon: "AutomationRepetitiveTasks",
       title: "",
       cardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
