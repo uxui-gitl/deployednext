@@ -28,6 +28,14 @@ import clsx from "clsx";
 import SectionNav from "@/components/SectionNav";
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
 import Spotlight from "@/components/Spotlight";
+import MinimizeOperationalExpenses from "../../../../../public/icon/Benefits-upgradeCloud/MinimizeOperationalExpenses.svg";
+import EnableUserConcurrency from "../../../../../public/icon/Benefits-upgradeCloud/EnableUserConcurrency.svg";
+import EnhancedCollaboration from "../../../../../public/icon/Benefits-upgradeCloud/EnhancedCollaboration.svg";
+import AdvancedDataManagement from "../../../../../public/icon/Benefits-upgradeCloud/AdvancedDataManagement.svg";
+import AptitudeToRespond from "../../../../../public/icon/Benefits-upgradeCloud/AptitudeToRespond.svg";
+import IntegrateBigDataAnalytics from "../../../../../public/icon/Benefits-upgradeCloud/IntegrateBigDataAnalytics.svg";
+import SecurelyStores from "../../../../../public/icon/Benefits-upgradeCloud/SecurelyStores.svg";
+import EnhanceSystemPerformance from "../../../../../public/icon/Benefits-upgradeCloud/EnhanceSystemPerformance.svg";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -101,58 +109,7 @@ export default function Home() {
   ];
 
   // ex:
-  const BenefitsData = [
-    {
-      _id: 1,
-      icon: "gear",
-      title: "Minimize operational expenses of IT portfolio",
-    },
-    {
-      _id: 2,
-      icon: "diamond",
-      title: "Enable user concurrency to support large-scale workload",
-    },
-    {
-      _id: 3,
-      icon: "eyeGear",
-      title:
-        "Enhanced collaboration through cross-device accessibility to information",
-    },
-    {
-      _id: 4,
-      icon: "gear",
-      title:
-        "Advanced data management solutions, modernized process and cloud services",
-    },
-    {
-      _id: 5,
-      icon: "diamond",
-      title: "Aptitude to respond to shifting business requirements",
-    },
-    {
-      _id: 6,
-      icon: "eyeGear",
-      title:
-        "Integrate Big Data Analytics into business processes for data-driven decision-making",
-    },
-    {
-      _id: 7,
-      icon: "eyeGear",
-      title: "Securely stores confidential business information",
-    },
-    {
-      _id: 8,
-      icon: "eyeGear",
-      title:
-        "Enhance system performance and user experience by scaling up the system",
-    },
-    {
-      _id: 9,
-      icon: "eyeGear",
-      title:
-        "Accelerate transformation, integrate open innovation and smart workflows",
-    },
-  ];
+   
   const upgradeCloud = [
     {
       _id: 1,
@@ -303,22 +260,26 @@ export default function Home() {
 
         {/* Expertise */}
         <Expertise
-          ribbon="Our Expertise "
+          ribbon="Acing your Business Objectives"
           ribbonTxtWhite="true"
-          title="Future Outlook with Intelligent Technologies  "
-          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
           arr={[
             {
-              title: "85%",
-              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
             },
             {
-              title: "$200B",
-              desc: "Forbes forecasts size for AI market by 2026 ",
+              title: "50 +",
+              desc: "Cloud Deployments",
             },
             {
-              title: "$6.6T",
-              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50 +",
+              desc: "Cloud Deployments",
             },
           ]}
         ></Expertise>
@@ -509,11 +470,10 @@ export default function Home() {
                   </h4>
                   <div className="flex flex-col md:flex-row gap-8 ">
                     <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                      Accomplishing Your Goals at Every stage
+                      Streamline Cloud Upgrade Service with Our Process Map
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                      Enabling you to thrive in digital era, we prepare your
-                      organisation with scaling growth for sustainable tomorrow
+                      
                     </p>
                   </div>
                 </div>
@@ -527,47 +487,56 @@ export default function Home() {
                   {
                     label: "01",
                     expandedLabel: "Step 01",
-                    title: "Infrastructure and  Data Evaluation",
+                    title: "Current Infrastructure and Data Evaluation",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Current Infrastructure and Data Evaluation",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action.",
+                    image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                   },
                   {
                     label: "02",
                     expandedLabel: "Step 02",
-                    title: "Strategy  Designing ",
+                    title: "Strategy Designing",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Strategy Designing",
+                    desc: "Aligning business needs and goals, we set KPIs and devise strategy which is documented & communicated for smooth cloud adoption.",
+                    image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                   },
                   {
                     label: "03",
                     expandedLabel: "Step 03",
-                    title: "Establishing Readiness",
+                    title: "Milestone Blueprint Development",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Milestone Blueprint Development",
+                    desc: "Define and prioritize tasks, align assets, establish iterations and timelines for a journey blueprint.",
+                    image: "/upgradeCloud/Services-Milestone-Blueprint-Development.jpg",
                   },
                   {
                     label: "04",
                     expandedLabel: "Step 04",
-                    title: "Upgradation and Execution",
+                    title: "Establishing Readiness",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Establishing Readiness",
+                    desc: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.",
+                    image: "/upgradeCloud/Services-Establishing-Readiness.jpg",
                   },
                   {
                     label: "05",
                     expandedLabel: "Step 05",
-                    title: "Management and Control",
+                    title: "Upgradation and Execution",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Upgradation and Execution",
+                    desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                    image: "/upgradeCloud/Services-Upgradation-and-Execution.jpg",
+                  },
+                  {
+                    label: "06",
+                    expandedLabel: "Step 06",
+                    title: "Management and Contro",
+                    expandedTitle:
+                      "Management and Controon",
+                    desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                    image: "/upgradeCloud/Services-Management-and-Control.jpg",
                   },
                 ]}
               />
@@ -585,34 +554,45 @@ export default function Home() {
           arr={[
             {
               _id: 1,
-              icon: "gear",
-              title: "Gain competitive edge",
+              icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
+              title: "Minimize operational expenses of IT portfolio",
             },
             {
               _id: 2,
-              icon: "diamond",
-              title: "Streamline operations",
+              icon: "Benefits-upgradeCloud/EnableUserConcurrency",
+              title: "Enable user concurrency to support large-scale workloads",
             },
             {
               _id: 3,
-              icon: "eyeGear",
-              title: "Boost brand value",
+              icon: "Benefits-upgradeCloud/EnhancedCollaboration",
+              title: "Enhanced collaboration through cross-device accessibility to information",
             },
             {
               _id: 4,
-              icon: "gear",
-              title: "Gain competitive edge",
+              icon: "Benefits-upgradeCloud/AdvancedDataManagement",
+              title: "Advanced data management solutions, modernized process and cloud services",
             },
             {
               _id: 5,
-              icon: "diamond",
-              title: "Streamline operations",
+              icon: "Benefits-upgradeCloud/AptitudeToRespond",
+              title: "Aptitude to respond to shifting business requirements",
             },
             {
               _id: 6,
-              icon: "eyeGear",
-              title: "Boost brand value",
+              icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
+              title: "Integrate Big Data Analytics into business processes for data-driven decision-making",
             },
+             {
+              _id: 7,
+              icon: "Benefits-upgradeCloud/SecurelyStores",
+              title: "Securely stores confidential business information",
+            },
+            {
+              _id: 8,
+              icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              title: "Enhance system performance and user experience by scaling up the system",
+            },
+           
           ]}
         ></Benefits>
 
@@ -622,23 +602,33 @@ export default function Home() {
           {/* Why Infotech */}
 
           <WhySection
-            title="Why Choose Godrej Infotech as your preferred innovation partner?"
-            desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
-            ribbon="Let's Collaborate and Make it Happen"
+            title="Let's Collaborate and Make it Happen"
+            desc="Embark on cloud upgradation journey by harnessing our credible assessment process, delivery framework, strategic resources and fluent data migration practice to minimise your business risk, time to market and cost while ensuring pinnacle of performance."
+            ribbon="Why Godrej Infotech?"
             arr={[
               {
                 _id: 1,
-                desc: "One of the most dedicated and <span style='color: #4C6FFF;'>reliable partners</span> for Azure Migration Services and Managed Cloud Service across",
+                desc: "Dedicated and reliable partner for Azure Migration Services and Managed Cloud Service across Europe, APAC, ME and America.",
                 icon: "",
               },
               {
                 _id: 2,
-                desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+                desc: "Business Continuity 99.95%, on - demand scalability, best uptime performance in Industry.",
                 icon: "",
               },
               {
                 _id: 3,
-                desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+                desc: "Seamless upgradation to cloud platforms such as Microsoft Azure and Amazon Web Services (AWS)",
+                icon: "",
+              },
+              {
+                _id: 4,
+                desc: "Frictionless cloud upgradation delivery",
+                icon: "",
+              },
+              {
+                _id: 5,
+                desc: "Cost-efficient and consumption-based model under single SLA.",
                 icon: "",
               },
             ]}
