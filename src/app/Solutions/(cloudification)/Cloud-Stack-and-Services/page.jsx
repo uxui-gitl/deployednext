@@ -45,6 +45,15 @@ import SectionNav from "@/components/SectionNav";
 import SpotlightImageGrid from "@/components/SpotlightImageGrid";
 import Spotlight from "@/components/Spotlight";
 
+import scalabilityAccording from "../../../../../public/icon/cloudStackServices/scalabilityAccording.svg"
+import Fasterdevelopment from "../../../../../public/icon/cloudStackServices/Fasterdevelopment.svg"
+import Drivebusiness from "../../../../../public/icon/cloudStackServices/Drivebusiness.svg"
+import Highestlevels from "../../../../../public/icon/cloudStackServices/Highestlevels.svg"
+import StreamlineDelivery from "../../../../../public/icon/cloudStackServices/StreamlineDelivery.svg"
+import Effortlessintegration from "../../../../../public/icon/cloudStackServices/Effortlessintegration.svg"
+import BuiltInreliable from "../../../../../public/icon/cloudStackServices/BuiltInreliable.svg"
+
+
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -63,30 +72,37 @@ const ChoiceSlider = [
   {
     _id: 1,
     desc: "Scalability according to evolving business needs",
+    icon: "cloudStackServices/scalabilityAccording",
   },
   {
     _id: 2,
     desc: "Faster development cycles with pay-as-you-go model offering cost effectiveness and business agility",
+    icon: "cloudStackServices/Fasterdevelopment",
   },
   {
     _id: 3,
     desc: "Drive business agility and improved ROI with automation",
+    icon: "cloudStackServices/Drivebusiness",
   },
   {
     _id: 4,
     desc: "Highest levels of security and privacy, ensuring data is safeguarded",
+     icon: "cloudStackServices/Highestlevels",
   },
   {
     _id: 5,
     desc: "Streamline delivery pipeline with all the essential tools covered under one umbrella",
+    icon: "cloudStackServices/StreamlineDelivery",
   },
   {
     _id: 6,
     desc: "Effortless integration with data solutions and Big Data",
+    icon: "cloudStackServices/Effortlessintegration",
   },
   {
     _id: 7,
     desc: "Built-in reliable disaster recovery capabilities and integrated development framework",
+  icon: "cloudStackServices/BuiltInreliable",
   },
 ];
 
@@ -100,24 +116,7 @@ const blogData = [
     link: "/",
     imgUrl: "",
   },
-  {
-    _id: 2,
-    ribbon: "News",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
-  {
-    _id: 3,
-    ribbon: "blog",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
+  
 ];
 const front = [
   {
@@ -265,29 +264,49 @@ export default function Home() {
                 arr={[
                   {
                     _id: 1,
-                    title: "Business Applications",
-                    expandedTitle: "Business Applications On Cloud",
+                    title: "Infrastructure",
+                    expandedTitle: "Infrastructure",
                     bgImg: "bg1",
                     bgColor: "",
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Microsoft Dynamics 365",
+                        title: "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Infor",
+                        title: "Platform as a Service(PAAS)",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Oracle",
+                        title: "Disaster Recovery as a Service(DrAAS)",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "LS Retail",
+                        title: "Database as a Service(DBaaS",
+                        url: "/",
+                      },
+                      {
+                        _id: 5,
+                        title: "BaaS: Backup as a Service(BaaS)",
+                        url: "/",
+                      },
+                      {
+                        _id: 6,
+                        title: "Azure IoT",
+                        url: "/",
+                      },
+                      {
+                        _id: 7,
+                        title: "DevOps and Bespoke Applications",
+                        url: "/",
+                      },
+                      {
+                        _id: 8,
+                        title: "Hybrid and Multicloud Managed Services",
                         url: "/",
                       },
                     ],
@@ -298,29 +317,34 @@ export default function Home() {
                   },
                   {
                     _id: 2,
-                    title: "Business Applications",
-                    expandedTitle: "Business Applications On Cloud",
+                    title: "M365",
+                    expandedTitle: "M365",
                     bgImg: "",
                     bgColor: "#101828",
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Microsoft Dynamics 365",
+                        title: "Office apps and services",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Infor",
+                        title: "Collaboration Tools",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Oracle",
+                        title: "Cloud storage",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "LS Retail",
+                        title: "Device Security and Access Management",
+                        url: "/",
+                      },
+                      {
+                        _id: 5,
+                        title: "Lowcode Application Development",
                         url: "/",
                       },
                     ],
@@ -332,7 +356,7 @@ export default function Home() {
                   {
                     _id: 3,
                     title: "Business Applications",
-                    expandedTitle: "Business Applications On Cloud",
+                    expandedTitle: "Business Applications",
                     bgImg: "bg3",
                     bgColor: "",
                     linksArr: [
@@ -362,39 +386,7 @@ export default function Home() {
                     ctaUrl: "/",
                     cta: "Know More",
                   },
-                  {
-                    _id: 4,
-                    title: "Business Applications",
-                    expandedTitle: "Business Applications On Cloud",
-                    bgImg: "",
-                    bgColor: "#320A53",
-                    linksArr: [
-                      {
-                        _id: 1,
-                        title: "Microsoft Dynamics 365",
-                        url: "/",
-                      },
-                      {
-                        _id: 2,
-                        title: "Infor",
-                        url: "/",
-                      },
-                      {
-                        _id: 3,
-                        title: "Oracle",
-                        url: "/",
-                      },
-                      {
-                        _id: 4,
-                        title: "LS Retail",
-                        url: "/",
-                      },
-                    ],
-
-                    ctaBtn: false,
-                    ctaUrl: "/",
-                    cta: "Know More",
-                  },
+                  
                 ]}
               />
             </div>
@@ -472,15 +464,10 @@ export default function Home() {
                 <div className="bg-[#f2f4f7] text-center">
                   <div>
                     <h3 className="text-4xl leading-[42px] font-bold mb-5 w-[60%] mx-auto">
-                      Leading Forefront with Our Cloud Capabilities to Fuel Your
-                      Growth
+                      Leading Forefront with Our Cloud Services to Fuel Growth
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                      We aim to foster growth of your business with our
-                      extensive client collaboration, and to achieve this, we
-                      seek to convert effective pilot initiatives into
-                      enterprise-scale implementation, while comprehensively
-                      addressing all technical and business requirements
+                      We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements.
                     </p>
                   </div>
                 </div>
@@ -510,27 +497,20 @@ export default function Home() {
                   {
                     label: "03",
                     expandedLabel: "Step 03",
-                    expandedTitle: "Architecture and Planning",
-                    title: "Architecture and Planning",
+                    expandedTitle: "Operations and Management",
+                    title: "Operations and Management",
                     desc: "Address the obstacles of cloud adoption & optimization and develop infrastructure and platform strategies aligned with business operations that improves management models.",
                     image: "/Spotlight/card1.png",
                   },
                   {
                     label: "04",
                     expandedLabel: "Step 04",
-                    expandedTitle: "Operations & Management ",
-                    title: "Operations & Management ",
-                    desc: "Comprehensive management of cloud infrastructure and business application ecosystem for 360-degree visibility that fosters business performance and reduced IT costs.",
-                    image: "/Spotlight/card1.png",
-                  },
-                  {
-                    label: "05",
-                    expandedLabel: "Step 05",
                     expandedTitle: "Cloud Security",
                     title: "Cloud Security",
                     desc: "Detection of security gaps, formation of risk-allied structural design and a blueprint for baseline cloud security and automate the deployment of security guardrails for cloud native services.",
                     image: "/Spotlight/card1.png",
                   },
+                  
                 ]}
               />
             </div>
