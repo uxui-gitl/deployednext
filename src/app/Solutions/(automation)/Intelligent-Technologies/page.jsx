@@ -11,10 +11,6 @@ import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
-import AutomationRepetitiveTasks from "../../../../../public/icon/benefisIntelligentTechnologies/AutomationRepetitiveTasks.svg"
-import highDegreeAccuracyConsistency from "../../../../../public/icon/benefisIntelligentTechnologies/highDegreeAccuracyConsistency.svg"
-import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg"
-import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg"
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -184,28 +180,28 @@ const page = () => {
   const BenefitsData = [
     {
       _id: 1,
-      icon: "highDegreeAccuracyConsistency",
+      icon: "gear",
       title: "",
       cardDesc:
         "A high degree of accuracy and consistency in business operations.",
     },
     {
       _id: 2,
-      icon: "InformedDecisionMaking",
+      icon: "diamond",
       title: "",
       cardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
     },
     {
       _id: 3,
-      icon: "RealTimeProblemSolvingCapabilities",
+      icon: "eyeGear",
       title: "",
       cardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 4,
-      icon: "AutomationRepetitiveTasks",
+      icon: "gear",
       title: "",
       cardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
@@ -246,7 +242,30 @@ const page = () => {
 
       {/* Section Nav */}
       <>
-        <SectionNav arr={navLinks} />
+        <SectionNav
+          arr={[
+            {
+              _id: 1,
+              title: "Enterprise suite",
+              link: "#about",
+            },
+            {
+              _id: 2,
+              title: "Act Cards",
+              link: "#actCards",
+            },
+            {
+              _id: 3,
+              title: "Employee Experience",
+              link: "#empExp",
+            },
+            {
+              _id: 4,
+              title: "Spotlight",
+              link: "#spotlight",
+            },
+          ]}
+        />
       </>
 
       {/* About Section */}

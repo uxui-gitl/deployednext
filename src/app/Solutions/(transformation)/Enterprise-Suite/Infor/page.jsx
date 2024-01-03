@@ -3,6 +3,9 @@ import EntIntro from "@/components/EntIntro";
 import StrategySub from "@/components/StrategySub";
 import shield from "../../../../../../public/upgradeCloud/sheild.png";
 import puzzle from "../../../../../../public/upgradeCloud/puzzle.png";
+import Testimonial from "@/sections/testimonial/Testimonial";
+import Expertise from "@/components/Expertise";
+import WhySection from "@/components/WhySection";
 import icon from "../../../../../../public/icon.png";
 import microsoft from "../../../../../../public/upgradeCloud/microsoft.png";
 import azure from "../../../../../../public/upgradeCloud/azure.png";
@@ -18,7 +21,11 @@ import PowerBI from "../../../../../../public/Power-BI-Logo.png";
 import PowerApp from "../../../../../../public/Power-App.png";
 import Birst from "../../../../../../public/Birst-logo.png";
 import dummy from "../../../../../../public/dummy.png";
-
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 import Icon from "@mdi/react";
 import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
@@ -89,6 +96,38 @@ const smartTools = [
     desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
     icon: "dummy.png",
     cta: "Know More",
+  },
+];
+const ChoiceSlider = [
+  {
+    _id: 1,
+    title: "Healthcare",
+    imgUrl: "1",
+    url: "/",
+  },
+  {
+    _id: 2,
+    title: "Automotive",
+    imgUrl: "2",
+    url: "/",
+  },
+  {
+    _id: 3,
+    title: "Logistic",
+    imgUrl: "3",
+    url: "/",
+  },
+  {
+    _id: 4,
+    title: "Retail",
+    imgUrl: "4",
+    url: "/",
+  },
+  {
+    _id: 5,
+    title: "Manufacturing",
+    imgUrl: "5",
+    url: "/",
   },
 ];
 const fadeInAnimationVariant = {
@@ -227,6 +266,7 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
+      {/* Section Nav */}
       <>
         <SectionNav
           arr={[
@@ -254,110 +294,209 @@ const page = () => {
         />
       </>
 
-      <CaseStudy />
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
 
-      {/* Data Metrics Insights to be created */}
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
 
-      {/* Why Infotech */}
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise "
+        ribbonTxtWhite="true"
+        title="Future Outlook with Intelligent Technologies  "
+        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "85%",
+            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+          },
+          {
+            title: "$200B",
+            desc: "Forbes forecasts size for AI market by 2026 ",
+          },
+          {
+            title: "$6.6T",
+            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Grid */}
       <>
-        <div className={` w-full bg-[#F2F4F7] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Globally Trusted Core Infor expertise
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
+                <p>
+                  We deliver high-performing services for a comprehensive suite
+                  Microsoft ecosystem, devised to elevate growth and
+                  productivity and build stronger stakeholder connections
                 </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
-                </div>
               </div>
             </div>
-            {/* right */}
-            <div>
+          </div>
+        </div>
+        <div className={`  w-full py-32 `}>
+          <div className=" grid grid-cols-6 grid-rows-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
+            <div className=" row-span-2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium minima eum tenetur expedita quasi iste optio
+              laboriosam pariatur quos, ab ad id?
+            </div>
+            {[0, 1, 2, 3, 4, 0, 1, 2, 3, 4].map((i, index) => (
+              <div key={index}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium minima eum tenetur expedita quasi iste optio
+                laboriosam pariatur quos, ab ad id?
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Spend LESS, GROW MORE"
+        title="Why Godrej Infotech ?"
+        desc="Embark on cloud upgradation journey by harnessing our credible
+        assessment process, strategic resources and fluent data
+        migration practice to minimise your business risk, time to
+        market and cost. Our time-tested delivery framework enables
+        businesses"
+        arr={[
+          {
+            _id: 1,
+            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industries Spotlight
+                </h3>
+              </div>
               <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
             </div>
@@ -365,13 +504,13 @@ const page = () => {
         </div>
       </>
 
-      <Testimonials />
+      {/* Awards */}
       <Awards />
 
       {/* Infor service grid */}
       <>
         <div className={` w-full bg-white py-32`}>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
+          <div className=" max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
@@ -437,7 +576,7 @@ const page = () => {
       {/* Innovative Infor Drivers */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -493,8 +632,6 @@ const page = () => {
           </div>
         </div>
       </>
-
-      <SME />
 
       {/* Subscription */}
       <Subscription

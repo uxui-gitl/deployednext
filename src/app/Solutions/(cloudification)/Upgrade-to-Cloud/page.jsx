@@ -585,33 +585,47 @@ export default function Home() {
           arr={[
             {
               _id: 1,
-              icon: "gear",
-              title: "Gain competitive edge",
+              icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
+              title: "Minimize operational expenses of IT portfolio",
             },
             {
               _id: 2,
-              icon: "diamond",
-              title: "Streamline operations",
+              icon: "Benefits-upgradeCloud/EnableUserConcurrency",
+              title: "Enable user concurrency to support large-scale workloads",
             },
             {
               _id: 3,
-              icon: "eyeGear",
-              title: "Boost brand value",
+              icon: "Benefits-upgradeCloud/EnhancedCollaboration",
+              title:
+                "Enhanced collaboration through cross-device accessibility to information",
             },
             {
               _id: 4,
-              icon: "gear",
-              title: "Gain competitive edge",
+              icon: "Benefits-upgradeCloud/AdvancedDataManagement",
+              title:
+                "Advanced data management solutions, modernized process and cloud services",
             },
             {
               _id: 5,
-              icon: "diamond",
-              title: "Streamline operations",
+              icon: "Benefits-upgradeCloud/AptitudeToRespond",
+              title: "Aptitude to respond to shifting business requirements",
             },
             {
               _id: 6,
-              icon: "eyeGear",
-              title: "Boost brand value",
+              icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
+              title:
+                "Integrate Big Data Analytics into business processes for data-driven decision-making",
+            },
+            {
+              _id: 7,
+              icon: "Benefits-upgradeCloud/SecurelyStores",
+              title: "Securely stores confidential business information",
+            },
+            {
+              _id: 8,
+              icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              title:
+                "Enhance system performance and user experience by scaling up the system",
             },
           ]}
         ></Benefits>

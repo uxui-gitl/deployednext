@@ -5,7 +5,7 @@ import Navlist2 from "./NavUtils/Navlist2.jsx";
 import Link from "next/link.js";
 
 const SubNavList = ({ links }) => (
-  <div className="flex flex-row gap-x-8  lg:px-8  lg:pr-10 py-2 max-lg:pl-6">
+  <div className="flex flex-row gap-x-8 lg:px-8 lg:pr-10 py-2 max-lg:pl-6">
     {links.map((section, index) => (
       <div key={index} className="lg:border-r-[1px] pr-8">
         <ul>
@@ -18,16 +18,31 @@ const SubNavList = ({ links }) => (
           </li>
         </ul>
 
-        {section.subLinks && (
+        {(section.subLinks || section.level3Links) && (
           <ul className="text-sm ml-5 text-[#101828] font-semibold mt-1 w-full">
-            {section.subLinks.map((subLink, subIndex) => (
-              <li
-                key={subIndex}
-                className="text-[#101828] hover:text-blue-500 py-2"
-              >
-                <Link href={subLink.href}>{subLink.label}</Link>
-              </li>
-            ))}
+            {section.subLinks &&
+              section.subLinks.map((subLink, subIndex) => (
+                <li
+                  key={subIndex}
+                  className="text-[#101828] hover:text-blue-500 py-2"
+                >
+                  <Link href={subLink.href}>{subLink.label}</Link>
+
+                  {/* Check for level3Links and render them if available */}
+                  {subLink.level3Links && (
+                    <ul className="text-sm ml-5 text-[#101828] font-semibold mt-1 w-full">
+                      {subLink.level3Links.map((level3Link, level3Index) => (
+                        <li
+                          key={level3Index}
+                          className="text-[#101828] hover:text-blue-500 py-2"
+                        >
+                          <Link href={level3Link.href}>{level3Link.label}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
           </ul>
         )}
       </div>
@@ -164,7 +179,7 @@ const SolutionsNav = () => {
                 },
                 {
                   sectionLabel: "Technology Stack",
-                  sectionHref: "#", // Replace with the actual href
+                  sectionHref: "/Solutions/Technology-Stack",
                   subLinks: [
                     {
                       label: "AI & ML",
@@ -172,7 +187,6 @@ const SolutionsNav = () => {
                     },
                     { label: "RPA", href: "/Solutions/Technology-Stack/RPA" },
                     { label: "IIOT", href: "/Solutions/Technology-Stack/IIOT" },
-                    // Add more sub-links as needed
                   ],
                 },
               ]}
@@ -183,51 +197,17 @@ const SolutionsNav = () => {
             <SubNavList
               links={[
                 {
-                  sectionLabel: "Cloudification",
-                  sectionHref: "/Cloudification/Intelligent-Technologies",
+                  sectionLabel: "",
+                  sectionHref: "",
                   subLinks: [
                     {
-                      label: "AI & ML",
-                      href: "/Cloudification/Intelligent-Technologies/AI-ML",
+                      label: "Upgrade to Cloud",
+                      href: "/Solutions/Intelligent-Technologies/AI-ML",
                     },
                     {
-                      label: "RPA",
-                      href: "/Cloudification/Intelligent-Technologies/RPA",
+                      label: "Cloud Stack & Services",
+                      href: "/Solutions/Intelligent-Technologies/RPA",
                     },
-                    {
-                      label: "IIOT",
-                      href: "/Cloudification/Intelligent-Technologies/IIOT",
-                    },
-                  ],
-                },
-                {
-                  sectionLabel: "Data Insights",
-                  sectionHref: "/Cloudification/Data-Insights",
-                  subLinks: [
-                    {
-                      label: "Cyber Security",
-                      href: "/Cloudification/Cyber-Security",
-                    },
-                    // Add more sub-links as needed
-                  ],
-                },
-                {
-                  sectionLabel: "Technology Stack",
-                  sectionHref: "#", // Replace with the actual href
-                  subLinks: [
-                    {
-                      label: "AI & ML",
-                      href: "/Cloudification/Technology-Stack/AI-ML",
-                    },
-                    {
-                      label: "RPA",
-                      href: "/Cloudification/Technology-Stack/RPA",
-                    },
-                    {
-                      label: "IIOT",
-                      href: "/Cloudification/Technology-Stack/IIOT",
-                    },
-                    // Add more sub-links as needed
                   ],
                 },
               ]}
@@ -238,51 +218,79 @@ const SolutionsNav = () => {
             <SubNavList
               links={[
                 {
-                  sectionLabel: "Transformation",
-                  sectionHref: "/Transformation/Intelligent-Technologies",
+                  sectionLabel: "Enterprise Suite		",
+                  sectionHref: "/Solutions/Enterprise-Suite",
                   subLinks: [
                     {
-                      label: "AI & ML",
-                      href: "/Transformation/Intelligent-Technologies/AI-ML",
+                      label: "Infor",
+                      href: "/Solutions/Enterprise-Suite/Infor",
+                      level3Links: [
+                        {
+                          label: "Infor WMS",
+                          href: "/Solutions/Enterprise-Suite/Infor/Infor-WMS",
+                        },
+                        {
+                          label: "Infor LN",
+                          href: "/Solutions/Enterprise-Suite/Infor/Infor-LN",
+                        },
+                        {
+                          label: "Infor CloudSuite",
+                          href: "/Solutions/Enterprise-Suite/Infor/Infor-CloudSuite",
+                        },
+                        {
+                          label: "HxnEAM",
+                          href: "/Solutions/Enterprise-Suite/Infor/HxnEAM",
+                        },
+                      ],
                     },
                     {
-                      label: "RPA",
-                      href: "/Transformation/Intelligent-Technologies/RPA",
+                      label: "Microsoft Dynamics",
+                      href: "/Solutions/Enterprise-Suite/Microsoft-Practises",
+                      level3Links: [
+                        {
+                          label: "Business Central",
+                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/Business-Central",
+                        },
+                        {
+                          label: "F&O",
+                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/FnO",
+                        },
+                        {
+                          label: "Commerce",
+                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/Commerce",
+                        },
+                      ],
                     },
                     {
-                      label: "IIOT",
-                      href: "/Transformation/Intelligent-Technologies/IIOT",
+                      label: "Oracle",
+                      href: "/Solutions/Enterprise-Suite/Oracle",
                     },
                   ],
                 },
                 {
-                  sectionLabel: "Data Insights",
-                  sectionHref: "/Transformation/Data-Insights",
+                  sectionLabel: "Customer Experience",
+                  sectionHref: "/Solutions/Data-Insights",
                   subLinks: [
                     {
-                      label: "Cyber Security",
-                      href: "/Transformation/Cyber-Security",
-                    },
-                    // Add more sub-links as needed
-                  ],
-                },
-                {
-                  sectionLabel: "Technology Stack",
-                  sectionHref: "#", // Replace with the actual href
-                  subLinks: [
-                    {
-                      label: "AI & ML",
-                      href: "/Transformation/Technology-Stack/AI-ML",
+                      label: "Infor CRM",
+                      href: "/Solutions/Cyber-Security",
                     },
                     {
-                      label: "RPA",
-                      href: "/Transformation/Technology-Stack/RPA",
+                      label: "Microsoft CRM",
+                      href: "/Solutions/Cyber-Security",
                     },
                     {
-                      label: "IIOT",
-                      href: "/Transformation/Technology-Stack/IIOT",
+                      label: "Salesforce CRM",
+                      href: "/Solutions/Cyber-Security",
                     },
-                    // Add more sub-links as needed
+                    {
+                      label: "Magento - E com",
+                      href: "/Solutions/Cyber-Security",
+                    },
+                    {
+                      label: "LS Retail",
+                      href: "/Solutions/Cyber-Security",
+                    },
                   ],
                 },
               ]}
