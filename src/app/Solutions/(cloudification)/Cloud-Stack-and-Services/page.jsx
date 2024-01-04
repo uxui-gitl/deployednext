@@ -241,9 +241,9 @@ export default function Home() {
 
         <div id="spotlightGrid">
           <>
-            <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
+            <div className={`w-full text-left bg-[#fff] pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
-                <div className="bg-[#f2f4f7] text-left">
+                <div className="bg-[#fff] text-left">
                   <div className="flex flex-col md:flex-row gap-8 ">
                     <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
                       Maximizing Your Business Outcomes with Cloud Technology
@@ -258,7 +258,7 @@ export default function Home() {
               </div>
             </div>
           </>
-          <div className={`w-full bg-[#f2f4f7] text-left  `}>
+          <div className={`w-full bg-[#fff] text-left  `}>
             <div className="  max-w-screen  md:max-w-screen  mx-auto pt-5   ">
               <SpotlightImageGrid
                 arr={[
@@ -437,7 +437,7 @@ export default function Home() {
                       <div className="bg-[#EDF1FF]  p-5 mb-10">
                         <div className="text-left ">
                           <p className=" gap-4 mb-5 pb-3 text-base leading-[22px]  ">
-                            <Image src={icon} alt="icon" className="mb-5" />
+                            <Image src={`/icon/${item.icon}.svg`} width={45} height={45} alt="icon" className="mb-5" />
                           </p>
                           <h3 className="text-[22px] w-fit leading-[30px] font-bold mb-5 ">
                             {item.desc}
@@ -528,7 +528,7 @@ export default function Home() {
 
         {/* Benefits */}
 
-        <Benefits
+        {/* <Benefits
           ribbon="Upgrade to Cloud Benefits "
           ribbonTxtWhite="true"
           title="Experience business performance surge with cloud"
@@ -565,13 +565,13 @@ export default function Home() {
               title: "Boost brand value",
             },
           ]}
-        ></Benefits>
+        ></Benefits> */}
 
         {/* why godrej infotech */}
         <WhySection
-          ribbon="Spend LESS, GROW MORE"
-          title="Why Godrej Infotech ?"
-          desc="We aim for business faster growth with our extensive client collaboration, and to achieve this, we seek to convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements."
+          ribbon="LET'S COLLABORATE AND MAKE IT HAPPEN"
+          title="Why Godrej Infotech?"
+          // desc="With emphasis on change management, our professionals steer your business towards lasting success"
           arr={[
             {
               _id: 1,
@@ -646,31 +646,31 @@ export default function Home() {
             {
               id: 1,
               title:
-                "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+                "Greater scalability and cost-effectiveness with integration of Dynamics 365 F&O and Dynamics CRM on Cloud",
               thumbnail: "1",
-              description: "",
-              tags: ["Automation"],
-              cta: "Read article",
+              description: "KSA's Leading Distributor of Electrical Components",
+              tags: ["Electric House"],
+              cta: "Know More",
               link: "/",
             },
             {
               id: 2,
               title:
-                "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+                "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
               thumbnail: "2",
-              description: "",
-              tags: ["Cloud"],
-              cta: "Read article",
+              description: "India's Leading Wildlife & Nature Conservation Organization",
+              tags: ["WWF"],
+              cta: "Know More",
               link: "/",
             },
             {
               id: 3,
               title:
-                "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+                "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
               thumbnail: "3",
-              description: "",
-              tags: ["Transformation"],
-              cta: "Read article",
+              description: "Leading Distributor of Fruits & Vegetables in the Philippines",
+              tags: [""],
+              cta: "Know More",
               link: "/",
             },
           ]}
@@ -698,10 +698,10 @@ export default function Home() {
         {/* Join the Team */}
         <JoinExpTeam />
         <Subscription
-          title="Ready for Transformation with"
-          blue="AI and ML?"
+          title="Free 30-Minute Strategy Session with our Cloud Expert?"
+          //blue="AI and ML?"
           title2=""
-          desc="Let's embark on your journey together aligned with your business goals."
+          desc="Let's discuss how cloud can help you with open innovation and business continuity."
         />
       </main>
     </>
