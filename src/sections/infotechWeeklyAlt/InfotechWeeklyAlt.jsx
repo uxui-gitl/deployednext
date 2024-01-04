@@ -114,21 +114,19 @@ const InfotechWeeklyAlt = (props) => {
               <h4
                 className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
               >
-                WEEKLY UPDATES
+                Never miss a tech beat! 
               </h4>
               <h3 className="text-4xl  leading-[42px] mb-3 font-bold">
                 Infotech Exclusive
               </h3>
               <p className="font-medium leading-[22px] md:w-[90%] ">
-                Enabling organizations to optimize cost & enhance business
-                processes with next-gen digital technologies
+              Discover why our clients trust us and dive into our insights section. Empower your decision with right knowledge and stay in the vanguard.
               </p>
             </div>
 
             <div className="">
               <p className="font-medium leading-[22px] md:w-[90%] mb-4">
-                The latest news, articles, and resources, sent to your inbox
-                weekly.
+              Subscribe NOW for Updates! 
               </p>
               <div
                 className={`${styles["containerx"]}  flex justify-start text-left `}

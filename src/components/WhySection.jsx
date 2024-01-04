@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import checkout from "../../public/checkout.png";
+import checkout from "../../public/icon/whygitl/WhyGITL.svg";
 import curiousPerson from "../../public/curiousPerson.png";
 import cloud from "../../public/cloud.png";
 import cloudArrows from "../../public/cloudArrows.png";

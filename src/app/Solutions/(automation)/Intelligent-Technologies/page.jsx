@@ -23,6 +23,7 @@ import HighDegreeAccuracyConsistency from "../../../../../public/icon/benefisInt
 import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg";
 import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg";
 
+
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -191,28 +192,28 @@ const page = () => {
   const BenefitsData = [
     {
       _id: 1,
-      icon: "AutomationRepetitiveTasks",
+      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
       cardDesc:
         "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
     },
     {
       _id: 2,
-      icon: "RealTimeProblemSolvingCapabilities",
+      icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
       cardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
       _id: 3,
-      icon: "InformedDecisionMaking",
+      icon: "benefisIntelligentTechnologies/InformedDecisionMaking",
       title: "",
       cardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
     },
     {
       _id: 4,
-      icon: "highDegreeAccuracyConsistency",
+      icon: "benefisIntelligentTechnologies/HighDegreeAccuracyConsistency",
       title: "",
       cardDesc:
         "A high degree of accuracy and consistency in business operations. ",
@@ -359,7 +360,7 @@ const page = () => {
           {
             _id: 2,
             desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
-            icon: "",
+            icon:"",
           },
           {
             _id: 3,
