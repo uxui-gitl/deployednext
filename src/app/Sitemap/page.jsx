@@ -146,7 +146,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/Infor-WMS"
                                   }
                                 >
-                                  Infor WMS
+                                  ☑️ Infor WMS
                                 </Link>
                               </li>
                               <li>
@@ -157,7 +157,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/Infor-LN"
                                   }
                                 >
-                                  Infor LN
+                                  ☑️ Infor LN
                                 </Link>
                               </li>
                               <li>
