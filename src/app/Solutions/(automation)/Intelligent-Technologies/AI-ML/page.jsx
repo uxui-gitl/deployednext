@@ -16,11 +16,14 @@ import Oracle from "../../../../../../public/Oracle.png";
 import checkout from "../../../../../../public/checkout.png";
 import MLExpertise from "../../../../../../public/MLExpertise.png";
 /**
+ * Sandeep Rana
  * Imported logos
  */
 import MSAzure from "../../../../../../public/ai-ml/ms-azure.png";
 import GoogleAI from "../../../../../../public/ai-ml/google-ai-logo.png";
 import TensorFlow from "../../../../../../public/ai-ml/tensorflow-logo.png";
+
+import anticipatefuture from "../../../../../../public/icon/benefits-ai-ml/anticipate-future.svg";
 
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
@@ -49,7 +52,7 @@ const AIOfferings = [
   {
     _id: 1,
     title: "Computer Vision ",
-    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
+    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. We use advanced technologies like OpenCV to optimize existing computer vision algorithms or develop new ones.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -74,7 +77,7 @@ const AIOfferings = [
   {
     _id: 2,
     title: "Speech &  Language ",
-    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences and stand tall in competition.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -95,7 +98,7 @@ const AIOfferings = [
   {
     _id: 3,
     title: "Document  Understanding",
-    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -175,28 +178,28 @@ const ChoiceSlider = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "gear",
-    title: "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+    icon: "benefits-ai-ml/process-analyse",
+    cardDesc: "Process and analyse vast volumes of data and round-the-clock assistance to customers",
   },
   {
     _id: 2,
-    icon: "diamond",
-    title: "Anticipate future outcomes based on historical data, making informed decisions",
+    icon: "benefits-ai-ml/anticipate-future",
+    cardDesc: "Anticipate future outcomes based on historical data, making informed decisions",
   },
   {
     _id: 3,
-    icon: "eyeGear",
-    title: "Effortless communication and efficient information retrieval through Natural Language Processing",
+    icon: "benefits-ai-ml/effortless-communicate",
+    cardDesc: "Effortless communication and efficient information retrieval through Natural Language Processing",
   },
   {
     _id: 4,
-    icon: "gear",
-    title: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+    icon: "benefits-ai-ml/optimise-supply-chain",
+    cardDesc: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
   },
   {
     _id: 5,
-    icon: "diamond",
-    title: "Revolutionising Healthcare with medical image analysis",
+    icon: "benefits-ai-ml/healthcare",
+    cardDesc: "Revolutionising Healthcare with medical image analysis",
   }
 ];
 
@@ -204,7 +207,7 @@ const MLData = [{
   _id:1,
   imgURL: MLExpertise,
   title:"Deep Learning",
-  subTitle:"Our deep learning creates solutions that automate complex tasks data-drive",
+  subTitle:"Our deep learning creates solutions that automate complex tasks data-driven decision-making, especially when it comes to forecasting your business's future.",
   ctaURL:""
 },{
   _id:2,
@@ -308,9 +311,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are committed to bringing the power of AI to your business
-                  operations, providing tailored solutions that drive efficiency
-                  and growth for your data driven future
+                We are committed to bringing the power of AI to your business operations, providing tailored solutions that drives business proficiency. 
                 </p>
               </div>
             </div>
