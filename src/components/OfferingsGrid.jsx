@@ -50,9 +50,11 @@ const OfferingsGrid = ({ title, titleOnly, desc, columns, arr }) => {
           {arr.map((item, index) => (
             <div className="" key={item._id}>
               <Image
-                src={MLExpertise}
+                src={item.image}
                 className="w-[100%]"
                 alt="ML Expertise"
+                width={200}
+                height={200}
               />
               <div className="p-4 pb-0">
                 <p className="text-[#101828] font-medium text-base leading-[22px]">

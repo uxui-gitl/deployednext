@@ -168,31 +168,31 @@ const ChoiceSlider = [
   {
     _id: 1,
     title: "Healthcare",
-    imgUrl: "1",
+    imgUrl: "/ai-ml/Industry-served_Healthcare.jpg",
     url: "/",
   },
   {
     _id: 2,
     title: "Automotive",
-    imgUrl: "2",
+    imgUrl: "/ai-ml/Industry-served_Automotive.jpg",
     url: "/",
   },
   {
     _id: 3,
     title: "Logistic",
-    imgUrl: "3",
+    imgUrl: "/ai-ml/Industry-served_Logistic.jpg",
     url: "/",
   },
   {
     _id: 4,
     title: "Retail",
-    imgUrl: "4",
+    imgUrl: "/ai-ml/Industry-served_Retail.jpg",
     url: "/",
   },
   {
     _id: 5,
     title: "Manufacturing",
-    imgUrl: "5",
+    imgUrl: "/ai-ml/Industry-served_Manufacturing.jpg",
     url: "/",
   },
 ];
@@ -226,25 +226,25 @@ const BenefitsData = [
 
 const MLData = [{
   _id:1,
-  imgURL: MLExpertise,
+  imgURL: "/ai-ml/Expertise_Deep-Learning.jpg",
   title:"Deep Learning",
   subTitle:"Our deep learning creates solutions that automate complex tasks data-driven decision-making, especially when it comes to forecasting your business's future.",
   ctaURL:""
 },{
   _id:2,
-  imgURL: MLExpertise,
+  imgURL:"/ai-ml/Expertise_Supervised-Learning.jpg",
   title:"Supervised Learning",
   subTitle:"We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
   ctaURL:""
 },{
   _id:3,
-  imgURL: MLExpertise,
+  imgURL: "/ai-ml/Expertise_Unsupervised-Learning.jpg",
   title:"Unsupervised Learning",
   subTitle:"With our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
   ctaURL:""
 },{
   _id:4,
-  imgURL: MLExpertise,
+  imgURL: "/ai-ml/Expertise_Reinforcement-Learning.jpg",
   title:"Reinforcement Learning",
   subTitle:"Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
   ctaURL:""
@@ -410,6 +410,8 @@ const page = () => {
                   src={item.imgURL}
                   className="w-[100%]"
                   alt="ML Expertise"
+                  width={100}
+                  height={100}
                 />
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
@@ -511,7 +513,7 @@ const page = () => {
                         >
                           <div className="relative overflow-hidden">
                             <Image
-                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              src={item.imgUrl}
                               height={350}
                               width={283}
                               alt="icon"

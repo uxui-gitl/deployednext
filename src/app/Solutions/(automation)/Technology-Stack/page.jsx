@@ -27,6 +27,12 @@ import techStack5 from "../../../../../public/techStack5.png";
 import techStack6 from "../../../../../public/techStack6.png";
 import checkout from "../../../../../public/checkout.png";
 
+/**
+ * * Sandeep Rana
+ * ! Images Import
+ */
+
+
 import MLExpertise from "../../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
@@ -37,6 +43,7 @@ import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
 
 import Benefits from "@/components/Benefits";
 import OfferingsGrid from "@/components/OfferingsGrid";
+import { fromJSON } from "postcss";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -54,28 +61,28 @@ const blogData = [
   {
     _id: 1,
     ribbon: "blog",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    title: "Legacy Modernization in Manufacturing Industry",
+    desc: "The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. The current pandemic situation has further exacerbated the situation with hackers looking at vulnerabilities for exploitation in the Industry Infrastructure. ",
     cta: "Know More",
-    link: "/",
+    link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=8",
     imgUrl: "",
   },
   {
     _id: 2,
-    ribbon: "News",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    ribbon: "blog",
+    title: "ASP.Net-A popular choice for Web development ",
+    desc: "Most enterprises are in the process of migration from legacy systems to new, user-friendly dynamic and robust web applications. In this crowded market of different technologies such as PHP, HTML5, WordPress, Magento and several others, Microsoft’s ASP.NET has proved to be ‘the popular choice’.",
     cta: "Know More",
-    link: "/",
+    link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=4 ",
     imgUrl: "",
   },
   {
     _id: 3,
     ribbon: "blog",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    title: "Application Modernization – Proven Growth Strategy for Progressive Organizations",
+    desc: "The IT Industry has seen various phases of evolution of application development & maintenance. In the earlier days, there used to be monolithic applications that used to be deployed on physical servers. Waterfall methodology was used wherein analysis, design, development & deployment phases were done in a sequential manner one after the other, and each succeeding phase could not be started before the preceding phase was completed.",
     cta: "Know More",
-    link: "/",
+    link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=16 ",
     imgUrl: "",
   },
 ];
@@ -83,48 +90,40 @@ const TechStackOfferings = [
   {
     _id: 1,
     title: "Custom Application Development",
-    image: "CustomApplicationDevelopment",
-    desc: "With our extensive experience in the global marketplace, we understand necessitating a bespoke software solution that goes beyond off-the-shelf offerings. We ensure a truly tailored experience for our valued clientele",
+    image: "/technology-stack/Service-Offerings_Custom-Application-Development.jpg",
+    desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 2,
     title: "Legacy Modernisation",
-    image: "LegacyModernisation",
-    desc: "From effectively optimizing system uptime to impeccably transiting from a colossal architecture to a microservices-based environment, we redesign and rebuild your existing application with accuracy and adeptness",
+    image: "/technology-stack/Service-Offerings_Legacy-Modernisation.jpg",
+    desc: "We expertly enhance your application, optimizing system uptime and seamlessly transitioning from large architectures to microservices.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 3,
     title: "Application managed services",
-    image: "Applicationmanagedservices",
-    desc: "We offer instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results that align seamlessly with your IT and business objectives",
+    image: "/technology-stack/Service-Offerings_Application-Managed-Services.jpg",
+    desc: "Instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 4,
-    title: "Application Testing Services",
-    image: "ApplicationTestingServices",
-    desc: "With On-site, Off-shore and Hybrid catering, we conduct rigorous testing and validation across multiple scopes such as functionality, security, integration, compatibility, performance, data migration and UI/UX, trailed by user acceptance testing",
+    title: "Mobile Application ",
+    image: "/technology-stack/Service-Offerings_Mobile-Application.jpg",
+    desc: "Experience uniform connectivity and enriched user engagement on fingertips with our comprehensive mobile app development services.",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 5,
-    title: "Mobile Application ",
-    image: "MobileApplication",
-    desc: "We deliver every solution to our clients that is needed on fingertips. Experience uniform connectivity and enriched user engagement with our comprehensive cycle of mobile app development services",
-    cta: "Know More",
-    link: "/",
-  },
-  {
-    _id: 6,
     title: "Enterprise Application Integration ",
-    image: "EnterpriseApplicationIntegration",
-    desc: "We foster business growth and drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications",
+    image: "/technology-stack/Service-Offerings_Enterprise-Application-Integration.jpg",
+    desc: "We drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications.",
     cta: "Know More",
     link: "/",
   },
@@ -133,34 +132,29 @@ const TechStackOfferings = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "gear",
+    icon: "benefits-technology-stack/process-analyze",
     title: "Process and analyze vast volumes of data",
   },
   {
     _id: 2,
-    icon: "diamond",
+    icon: "benefits-technology-stack/ensure-uniformity",
     title: "Ensure Uniformity in Financial Information",
   },
   {
     _id: 3,
-    icon: "eyeGear",
+    icon: "benefits-technology-stack/boost-brand-value",
     title: "Boost brand value",
   },
   {
     _id: 4,
-    icon: "gear",
+    icon: "benefits-technology-stack/process-analyze",
     title: "Process and analyze vast volumes of data",
   },
   {
     _id: 5,
-    icon: "diamond",
+    icon: "benefits-technology-stack/ensure-uniformity",
     title: "Ensure Uniformity in Financial Information",
-  },
-  {
-    _id: 6,
-    icon: "eyeGear",
-    title: "Boost brand value",
-  },
+  }
 ];
 const navLinks = [
   {
@@ -192,7 +186,7 @@ const page = () => {
         title="Your Trusted Technology Partner
         for Scalable and Customized
         Business Applications "
-        desc="The comprehensive suite of advanced technologies along with our dedicated capability is primed to deliver bespoke applications across various industry domains"
+        desc="Technology being keystone of business success plays an essential role in driving innovation for businesses across diverse industries. Our comprehensive suite of advanced technologies along with our dedicated capability is primed to deliver bespoke applications across various industry domains."
         cta="Let's Connect"
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
