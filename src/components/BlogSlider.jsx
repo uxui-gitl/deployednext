@@ -34,7 +34,7 @@ const BlogSlider = ({ arr }) => {
                     >
                       {item.ribbon}
                     </h4>
-                    <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                    <h3 className="text-4xl leading-[42px] font-bold mt-5 mb-5">
                       {item.title}
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[80%] ">
