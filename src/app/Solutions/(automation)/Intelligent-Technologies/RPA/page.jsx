@@ -17,6 +17,15 @@ import Oracle from "../../../../../../public/Oracle.png";
 import Azure from "../../../../../../public/azure.png";
 import RPAPlaceholder from "../../../../../../public/RPAPlaceholder.png";
 
+/**
+ * * Sandeep Rana
+ * Logos
+ */
+
+import uiPath from "../../../../../../public/logos/rpa/uiPath.svg";
+import automationAnywhere from "../../../../../../public/logos/rpa/automation-anywhere.svg";
+import powerAutomate from "../../../../../../public/logos/rpa/microsoft-power-automate-logo.jpg";
+
 import MLExpertise from "../../../../../../public/MLExpertise.png";
 import scalable1 from "../../../../../../public/scalable1.png";
 import scalable2 from "../../../../../../public/scalable2.png";
@@ -50,16 +59,16 @@ const fadeInAnimationVariant = {
 const RPAServiceOfferings = [
   {
     _id: 1,
-    title: "Deep Learning",
-    desc: "Our deep learning expertise is about making data come to life. We use these cutting-edge practices to create solutions that automate complex tasks data-driven",
+    title: "Consultation Services",
+    desc: "We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.",
     cta: "Know More",
     ctaUrl: "/",
     image: "MLExpertise",
   },
   {
     _id: 2,
-    title: "Feasibility Check Services ",
-    desc: "A comprehensive platform for restaurants, pubs, cafes, food-halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more",
+    title: "Feasibility Check Services",
+    desc: "Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.",
     cta: "Know More",
     ctaUrl: "/",
     image: "MLExpertise",
@@ -67,7 +76,7 @@ const RPAServiceOfferings = [
   {
     _id: 3,
     title: "RPA Deployment ",
-    desc: "A seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations",
+    desc: "We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA processes and carefully document the code.",
     cta: "Know More",
     ctaUrl: "/",
     image: "MLExpertise",
@@ -75,7 +84,7 @@ const RPAServiceOfferings = [
   {
     _id: 4,
     title: "RPA Managed Services ",
-    desc: "A comprehensive platform for restaurants, pubs, cafes, food-halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more",
+    desc: "We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement, ensuring efficient operations.",
     cta: "Know More",
     ctaUrl: "/",
     image: "MLExpertise",
@@ -85,18 +94,61 @@ const RPAServiceOfferings = [
 const ConsiderRPA = [
   {
     _id: 1,
-    title: "Extensive Customization",
-    desc: "Comprehensive customization options that are tailored to explicit demands, workflows and processes, delivering a more competent and personalized CRM experience",
+    title: "Increased Productivity",
+    desc: "Lift up your team's productivity and speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
     cta: "Know More",
     ctaUrl: "/",
   },
   {
     _id: 2,
-    title: "Effortless Integration",
-    desc: " Seamless integration capability with Microsoft Outlook and Infor CloudSuite ERP systems, facilitating organizations to have an integrated view of customer information, minimizing data silos and augmenting collaboration through distinct structures",
+    title: "Assured Outcomes",
+    desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
     cta: "Know More",
     ctaUrl: "/",
   },
+  {
+    _id: 3,
+    title: "Compliance and Consistency",
+    desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 4,
+    title: "Resource Optimization/ Optimize FTE Cost",
+    desc: "Enable employees to focus on more meaningful and strategic endeavours, helping them to deliver attentive experience to customers. ",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 5,
+    title:"Optimize FTE Cost",
+    desc: "Cut down the requirement for additional full-time employees (FTEs), leading to major cost savings of salaries, benefits, and allied overheads.",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 6,
+    title: "Enhance Flexibility",
+    desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 7,
+    title:"Reduce AHT (Average Handling Time)",
+    desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+  {
+    _id: 8,
+    title:"Strengthen Accuracy",
+    desc: "Bots execute tasks with accuracy, leading to decreased rework.",
+    cta: "Know More",
+    ctaUrl: "/",
+  },
+
 ];
 
 const UseCases = [
@@ -114,19 +166,19 @@ const UseCases = [
   },
   {
     _id: 3,
-    title: "Workflow Automation",
+    title: "Account Payable and Receivable Process",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 4,
-    title: "Document Management",
+    title: "Vendor Onboarding Process",
     cta: "Know More",
     link: "/",
   },
   {
     _id: 5,
-    title: "Team and Territory Management",
+    title: "Customer Onboarding Process",
     cta: "Know More",
     link: "/",
   },
@@ -158,7 +210,7 @@ const IndustryExperts = [
 const RPACards = [
   {
     _id: 1,
-    title: "Infrastructure Setup ",
+    title: "Infrastructure",
     keyword: "Enable",
     color: "#032573",
     bgcolor1: "#7491D4",
@@ -178,7 +230,7 @@ const RPACards = [
   },
   {
     _id: 3,
-    title: "Workflow Design ",
+    title: "Workflow ",
     keyword: "Design",
     color: "#224D37",
     bgcolor1: "#6D917F",
@@ -199,7 +251,7 @@ const RPACards = [
   {
     _id: 5,
     title: "Quality  Assurance ",
-    keyword: "Sustain",
+    keyword: "Test",
     color: "#732822",
     bgcolor1: "#B56964",
     bgcolor2: "#FEEDED",
@@ -220,25 +272,25 @@ const RPACards = [
 const ChoiceSlider = [
   {
     _id: 1,
-    title: "Healthcare",
+    title: "Manufacturing",
     imgUrl: "1",
     url: "/",
   },
   {
     _id: 2,
-    title: "Automotive",
+    title: "Accounts and Finance",
     imgUrl: "2",
     url: "/",
   },
   {
     _id: 3,
-    title: "Logistic",
+    title: "HR",
     imgUrl: "3",
     url: "/",
   },
   {
     _id: 4,
-    title: "Retail",
+    title: "IT Infra",
     imgUrl: "4",
     url: "/",
   },
@@ -251,7 +303,7 @@ const page = () => {
         title="Automate operation efforts to multiply
         business efficiency and ROI with our RPA
         solutions and services"
-        desc="Microsoft Solutions such as cloud, workplace & business applications infused with our capability enables businesses to adapt, innovate and transform operations for excellence and better customer satisfaction"
+        desc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by cutting down time requirements with precise results."
         cta="Let's Connect"
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -344,24 +396,20 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are your trusted RPA partner, and our experience extends to
-                  industry-leading RPA platforms and expertise to customize
-                  solutions that fulfil your exclusive business needs
+                We are your trusted RPA partner, and our experience extends to industry-leading RPA platforms and expertise to customize solutions that fulfil your exclusive business needs. 
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
                 <div>
-                  <Image src={inforCloudSuite} alt="Infor" />
+                  <Image src={uiPath} alt="uiPath" width={200} />
                 </div>
                 <div>
-                  <Image src={Oracle} alt="Oracle" />
+                  <Image src={powerAutomate} alt="powerAutomate" width={320} />
                 </div>
                 <div>
-                  <Image src={Dynamic365} alt="Dynamic365" />
+                  <Image src={automationAnywhere} alt="automationAnywhere" width={200}/>
                 </div>
-                <div>
-                  <Image src={Azure} alt="Azure" />
-                </div>
+             
               </div>
             </div>
           </div>
@@ -421,14 +469,12 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Expertise
+                Elevating RPA Domain Advantage - Industry
                 </h3>
               </div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector
+                <p className="font-medium leading-[22px] md:w-[90%] pb-4">
+                We deliver innovative RPA solutions backed by our extensive experience and commitment to excellence. 
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -548,17 +594,19 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold  ">
-                  GITL RPA
+                GITL RPA Project Lifecycle
                 </h3>
+                
               </div>
             </div>
             {/* right */}
             <div>
               <div>
+              <p className="font-medium leading-[22px] md:w-[90%] mb-2 ">The journey towards efficiency and competency </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   From inception to upheld brilliance, every stage of our
                   project lifecycle is precisely devised to optimize your
-                  business processes
+                  business processes.
                 </p>
               </div>
             </div>

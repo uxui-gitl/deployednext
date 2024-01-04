@@ -97,14 +97,7 @@ const Testimonials = ({ ribbon, title, desc, arr }) => {
                             className="w-[100%]"
                           />
                         </div>
-                        <div className="">
-                          <p
-                            className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
-                          >
-                            {`"${ct.description}"`}
-                          </p>
-                        </div>
-                        <div className="flex flex-row justify-start items-start">
+                        <div className="flex flex-row justify-start items-start py-4">
                           <div className="mr-4">
                             <Icon path={mdiDomain} size={1} />
                           </div>
@@ -112,11 +105,22 @@ const Testimonials = ({ ribbon, title, desc, arr }) => {
                             <p className="text-base font-medium text-[#101828] leading-[22px]">
                               {ct.clientName}
                             </p>
-                            <p className="text-sm font-normal text-[#101828] leading-[22px]">
-                              {ct.clientDesignation}
-                            </p>
+                          
                           </div>
                         </div>
+                        <div className="">
+                          <p
+                            className={` text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]`}
+                          >
+                            {`"${ct.description}"`}
+                          </p>
+                        </div>
+                        <div>
+                        <p className="text-sm font-normal text-[#101828] leading-[22px]">
+                              {ct.clientDesignation}
+                            </p>
+                        </div>
+                    
                       </div>
                     </SwiperSlide>
                   ))}

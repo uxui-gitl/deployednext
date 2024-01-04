@@ -339,6 +339,160 @@ const page = () => {
         ribbon=" "
         title="Our Capabilities "
         desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+        arr={[
+          {
+            _id: 1,
+            icon: "gear",
+            title: "Future of Projects  ",
+            desc: "",
+            cta: "Know More",
+            ctaUrl: "/",
+            list: [
+              {
+                title: "External integration with project monitoring tools  ",
+                url: "/",
+              },
+              {
+                title: "Mobile applications for task assignment",
+                url: "/",
+              },
+              {
+                title: "After sales service",
+                url: "/",
+              },
+              {
+                title: "Data Security & Digital Documentation ",
+                url: "/",
+              },
+              {
+                title: "Multi site management  ",
+                url: "/",
+              },
+              {
+                title: "Project Task Assignment & Management  ",
+                url: "/",
+              },
+              {
+                title: "Remote Work and Cost Accuracy   ",
+                url: "/",
+              },
+            ],
+          },
+          {
+            _id: 2,
+            icon: "gear",
+            title: "IoT Enabled Products ",
+            desc: "",
+            cta: "Know More",
+            ctaUrl: "/",
+            list: [
+              {
+                title: "External integration with project monitoring tools  ",
+                url: "/",
+              },
+              {
+                title: "Mobile applications for task assignment",
+                url: "/",
+              },
+              {
+                title: "After sales service",
+                url: "/",
+              },
+              {
+                title: "Data Security & Digital Documentation ",
+                url: "/",
+              },
+              {
+                title: "Multi site management  ",
+                url: "/",
+              },
+              {
+                title: "Project Task Assignment & Management  ",
+                url: "/",
+              },
+              {
+                title: "Remote Work and Cost Accuracy   ",
+                url: "/",
+              },
+            ],
+          },
+          {
+            _id: 3,
+            icon: "gear",
+            title: "Supply Chain Management  ",
+            desc: "",
+            cta: "Know More",
+            ctaUrl: "/",
+            list: [
+              {
+                title: "External integration with project monitoring tools  ",
+                url: "/",
+              },
+              {
+                title: "Mobile applications for task assignment",
+                url: "/",
+              },
+              {
+                title: "After sales service",
+                url: "/",
+              },
+              {
+                title: "Data Security & Digital Documentation ",
+                url: "/",
+              },
+              {
+                title: "Multi site management  ",
+                url: "/",
+              },
+              {
+                title: "Project Task Assignment & Management  ",
+                url: "/",
+              },
+              {
+                title: "Remote Work and Cost Accuracy   ",
+                url: "/",
+              },
+            ],
+          },
+          {
+            _id: 4,
+            icon: "gear",
+            title: "Performance Management ",
+            desc: "",
+            cta: "Know More",
+            ctaUrl: "/",
+            list: [
+              {
+                title: "External integration with project monitoring tools  ",
+                url: "/",
+              },
+              {
+                title: "Mobile applications for task assignment",
+                url: "/",
+              },
+              {
+                title: "After sales service",
+                url: "/",
+              },
+              {
+                title: "Data Security & Digital Documentation ",
+                url: "/",
+              },
+              {
+                title: "Multi site management  ",
+                url: "/",
+              },
+              {
+                title: "Project Task Assignment & Management  ",
+                url: "/",
+              },
+              {
+                title: "Remote Work and Cost Accuracy   ",
+                url: "/",
+              },
+            ],
+          },
+        ]}
       />
 
       <Awards />

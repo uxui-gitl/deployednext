@@ -12,6 +12,18 @@ import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png"
 import cloud from "../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../public/upgradeCloud/cloudArrows.png";
 
+/**
+ * * Sandeep Rana
+ * * 05/09/2022
+ * Icons
+ */
+
+import AutomationRepetitiveTasks from "../../../../../public/icon/benefisIntelligentTechnologies/AutomationRepetitiveTasks.svg";
+import HighDegreeAccuracyConsistency from "../../../../../public/icon/benefisIntelligentTechnologies/highDegreeAccuracyConsistency.svg";
+import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg";
+import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg";
+
+
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -180,31 +192,31 @@ const page = () => {
   const BenefitsData = [
     {
       _id: 1,
-      icon: "gear",
+      icon: "benefisIntelligentTechnologies/AutomationRepetitiveTasks",
       title: "",
       cardDesc:
-        "A high degree of accuracy and consistency in business operations.",
+        "Automation of repetitive tasks, resulting in increased operational efficiency and productivity. ",
     },
     {
       _id: 2,
-      icon: "diamond",
-      title: "",
-      cardDesc:
-        "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
-    },
-    {
-      _id: 3,
-      icon: "eyeGear",
+      icon: "benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities",
       title: "",
       cardDesc:
         "Real-time problem-solving capabilities enables rapid identification and resolution of issues, minimizing disruptions and ensuring uninterrupted business operations.",
     },
     {
-      _id: 4,
-      icon: "gear",
+      _id: 3,
+      icon: "benefisIntelligentTechnologies/InformedDecisionMaking",
       title: "",
       cardDesc:
-        "Automation of repetitive tasks, resulting in increased operational efficiency and productivity.",
+        "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
+    },
+    {
+      _id: 4,
+      icon: "benefisIntelligentTechnologies/HighDegreeAccuracyConsistency",
+      title: "",
+      cardDesc:
+        "A high degree of accuracy and consistency in business operations. ",
     },
   ];
 
@@ -248,7 +260,7 @@ const page = () => {
       {/* About Section */}
       <>
         <>
-          <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className={` w-full bg-[#FFF] py-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
               {/* left */}
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -336,7 +348,7 @@ const page = () => {
       {/* Why Infotech */}
 
       <WhySection
-        title="Why Choose Godrej Infotech as your preferred innovation partner?"
+        title="Why choose GITL as your preferred innovation partner?"
         desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
         ribbon="Let's Collaborate and Make it Happen"
         arr={[
@@ -348,7 +360,7 @@ const page = () => {
           {
             _id: 2,
             desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
-            icon: "",
+            icon:"",
           },
           {
             _id: 3,
@@ -390,7 +402,7 @@ const page = () => {
         arr={[
           {
             id: 1,
-            clientName: "",
+            clientName: "Leading Cooling Services Provider in the Middle East",
             clientDesignation: "IT Manager",
             thumbnail: "1",
             description:

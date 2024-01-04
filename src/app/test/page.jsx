@@ -19,6 +19,7 @@ import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
+import Dropdown from "@/components/Dropdown";
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -102,6 +103,11 @@ export default function Home() {
           width="70%"
           video="https://godrej-gitl.s3.ap-south-1.amazonaws.com/videos/banner.mp4"
         />
+
+        {/* Nav Test */}
+        <>
+          <Dropdown />
+        </>
 
         {/* React Tabs */}
 

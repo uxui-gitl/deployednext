@@ -252,6 +252,7 @@ const OfferingsSliderData = [
   {
     _id: 1,
     title: "Computer Vision ",
+    subArr: false,
     image: "OfferingsSlider.png",
     desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
     cta: "Explore Service",
@@ -279,6 +280,43 @@ const OfferingsSliderData = [
     _id: 2,
     title: "Speech &  Language ",
     desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+    subArr: true,
+    subArrLinks: [
+      {
+        title: "Perimeter Security ",
+        links: [
+          {
+            title: "Next Generation Firewall (NGFW) ",
+            url: "/",
+          },
+          {
+            title: "Next Generation Firewall (NGFW) ",
+            url: "/",
+          },
+          {
+            title: "Next Generation Firewall (NGFW) ",
+            url: "/",
+          },
+          {
+            title: "Next Generation Firewall (NGFW) ",
+            url: "/",
+          },
+          {
+            title: "Next Generation Firewall (NGFW) ",
+            url: "/",
+          },
+        ],
+      },
+      {
+        title: "Web Security Gateways ",
+        links: [
+          {
+            title: "Network Security  ",
+            url: "/",
+          },
+        ],
+      },
+    ],
     cta: "Explore Service",
     image: "OfferingsSlider.png",
     ctaUrl: "/",

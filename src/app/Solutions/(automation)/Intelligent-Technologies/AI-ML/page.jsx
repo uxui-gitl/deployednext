@@ -15,6 +15,16 @@ import Dynamic365 from "../../../../../../public/Dynamic365.png";
 import Oracle from "../../../../../../public/Oracle.png";
 import checkout from "../../../../../../public/checkout.png";
 import MLExpertise from "../../../../../../public/MLExpertise.png";
+/**
+ * Sandeep Rana
+ * Imported logos
+ */
+import MSAzure from "../../../../../../public/ai-ml/ms-azure.png";
+import GoogleAI from "../../../../../../public/ai-ml/google-ai-logo.png";
+import TensorFlow from "../../../../../../public/ai-ml/tensorflow-logo.png";
+
+import anticipatefuture from "../../../../../../public/icon/benefits-ai-ml/anticipate-future.svg";
+
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import { AnimatePresence, motion } from "framer-motion";
@@ -24,6 +34,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import BlogSlider from "@/components/BlogSlider";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -37,12 +48,32 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Voice Assistant Challenges in 2023",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 2,
+    ribbon: "blog",
+    title: "Hyper automation trends in 2023",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  }
+];
 
 const AIOfferings = [
   {
     _id: 1,
     title: "Computer Vision ",
-    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
+    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. We use advanced technologies like OpenCV to optimize existing computer vision algorithms or develop new ones.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -67,7 +98,7 @@ const AIOfferings = [
   {
     _id: 2,
     title: "Speech &  Language ",
-    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences and stand tall in competition.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -88,7 +119,7 @@ const AIOfferings = [
   {
     _id: 3,
     title: "Document  Understanding",
-    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -105,7 +136,7 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "AP Automation ",
+        title: "Account Payable, Bank Reconciliation, Invoice matching, Data Scraping ",
         url: "/",
       },
     ],
@@ -114,7 +145,7 @@ const AIOfferings = [
   {
     _id: 4,
     title: "Conversational AI",
-    desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+    desc: "Ensuring a more human-centric engagement with data, we provide solutions that facilitate smarter, customer-centric decision-making.",
     cta: "Explore Service",
     ctaUrl: "/",
     links: [
@@ -168,36 +199,56 @@ const ChoiceSlider = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "gear",
-    title: "Gain competitive edge",
+    icon: "benefits-ai-ml/process-analyse",
+    cardDesc: "Process and analyse vast volumes of data and round-the-clock assistance to customers",
   },
   {
     _id: 2,
-    icon: "diamond",
-    title: "Streamline operations",
+    icon: "benefits-ai-ml/anticipate-future",
+    cardDesc: "Anticipate future outcomes based on historical data, making informed decisions",
   },
   {
     _id: 3,
-    icon: "eyeGear",
-    title: "Boost brand value",
+    icon: "benefits-ai-ml/effortless-communicate",
+    cardDesc: "Effortless communication and efficient information retrieval through Natural Language Processing",
   },
   {
     _id: 4,
-    icon: "gear",
-    title: "Gain competitive edge",
+    icon: "benefits-ai-ml/optimise-supply-chain",
+    cardDesc: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
   },
   {
     _id: 5,
-    icon: "diamond",
-    title: "Streamline operations",
-  },
-  {
-    _id: 6,
-    icon: "eyeGear",
-    title: "Boost brand value",
-  },
+    icon: "benefits-ai-ml/healthcare",
+    cardDesc: "Revolutionising Healthcare with medical image analysis",
+  }
 ];
 
+const MLData = [{
+  _id:1,
+  imgURL: MLExpertise,
+  title:"Deep Learning",
+  subTitle:"Our deep learning creates solutions that automate complex tasks data-driven decision-making, especially when it comes to forecasting your business's future.",
+  ctaURL:""
+},{
+  _id:2,
+  imgURL: MLExpertise,
+  title:"Supervised Learning",
+  subTitle:"We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
+  ctaURL:""
+},{
+  _id:3,
+  imgURL: MLExpertise,
+  title:"Unsupervised Learning",
+  subTitle:"With our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
+  ctaURL:""
+},{
+  _id:4,
+  imgURL: MLExpertise,
+  title:"Reinforcement Learning",
+  subTitle:"Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
+  ctaURL:""
+}]
 const page = () => {
   return (
     <>
@@ -281,9 +332,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are committed to bringing the power of AI to your business
-                  operations, providing tailored solutions that drive efficiency
-                  and growth for your data driven future
+                We are committed to bringing the power of AI to your business operations, providing tailored solutions that drives business proficiency. 
                 </p>
               </div>
             </div>
@@ -348,31 +397,29 @@ const page = () => {
               <div>
                 <p className="font-medium leading-[22px] ">
                   We specialize in developing algorithms to make your operations
-                  smarter, faster and more reliable
+                  smarter, faster and more reliable.
                 </p>
               </div>
             </div>
           </div>
 
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {[0, 1, 2, 3].map((item, index) => (
+            {MLData.map((item, index) => (
               <div className="" key={index}>
                 <Image
-                  src={MLExpertise}
+                  src={item.imgURL}
                   className="w-[100%]"
                   alt="ML Expertise"
                 />
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    Deep Learning
+                    {item.title}
                   </p>
                   <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    Our deep learning expertise is about making data come to
-                    life. We use these cutting-edge practices to create
-                    solutions that automate complex tasks data-driven
+                    {item.subTitle}
                   </p>
                   <Link
-                    href={"/"}
+                    href={item.ctaURL}
                     className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
                     Know More{" "}
@@ -397,25 +444,23 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Our AI/ML Partners
+                AI/ML Platforms 
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are your trusted RPA partner, and our experience extends to
-                  industry-leading RPA platforms and expertise to customize
-                  solutions that fulfil your exclusive business needs
+                Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.  
                 </p>
               </div>
-              <div className="flex justify-center items-center gap-20">
+              <div className="flex justify-center items-center gap-20 p-5 mb-5">
                 <div>
-                  <Image src={inforCloudSuite} alt="Infor" />
+                  <Image src={MSAzure} alt="Microsoft Azure"/>
                 </div>
                 <div>
-                  <Image src={Oracle} alt="Infor" />
+                  <Image src={GoogleAI} alt="Google AI" />
                 </div>
                 <div>
-                  <Image src={Dynamic365} alt="Infor" />
+                  <Image src={TensorFlow} alt="TensorFlow" />
                 </div>
               </div>
             </div>
@@ -427,8 +472,8 @@ const page = () => {
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="Benefits of AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
         arr={BenefitsData}
       ></Benefits>
 
@@ -444,10 +489,8 @@ const page = () => {
                 </h3>
               </div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector
+                <p className="font-medium leading-[22px] md:w-[90%] p-5 ">
+                We help in shaping technology prerequisites and deliver value to customers, catering to diverse industries across the spectrum. 
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -491,25 +534,32 @@ const page = () => {
         </div>
       </>
 
+
+      <BlogSlider arr={blogData}/>
       {/* Why choose gitl and ai and ml */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML"
+        title="Why Choose GITL for AI and ML?"
         desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations </span> and deliver AI and ML solutions in most effective way",
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
             icon: "",
           },
           {
             _id: 2,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information  </span>",
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
             icon: "",
           },
           {
             _id: 3,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
             icon: "",
           },
         ]}
