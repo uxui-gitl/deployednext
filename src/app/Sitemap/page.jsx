@@ -134,7 +134,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Infor"}
                           >
-                            Infor
+                            ☑️ Infor
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>

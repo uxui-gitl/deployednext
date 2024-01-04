@@ -4,6 +4,8 @@ import StrategySub from "@/components/StrategySub";
 import shield from "../../../../../../../public/upgradeCloud/sheild.png";
 import puzzle from "../../../../../../../public/upgradeCloud/puzzle.png";
 import icon from "../../../../../../../public/icon.png";
+import WhySection from "@/components/WhySection";
+import Expertise from "@/components/Expertise";
 import microsoft from "../../../../../../../public/upgradeCloud/microsoft.png";
 import azure from "../../../../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../../../../public/upgradeCloud/checkout.png";
@@ -26,17 +28,25 @@ import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
 import BlogSlider from "@/components/BlogSlider";
+import Benefits from "@/components/Benefits";
 import SME from "@/components/SME";
 // import WhyInfotech from "@/components/WhyInfotech";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
-
+import MinimizeOperationalExpenses from "../../../../../../../public/icon/Benefits-upgradeCloud/MinimizeOperationalExpenses.svg";
+import EnableUserConcurrency from "../../../../../../../public/icon/Benefits-upgradeCloud/EnableUserConcurrency.svg";
+import EnhancedCollaboration from "../../../../../../../public/icon/Benefits-upgradeCloud/EnhancedCollaboration.svg";
+import AdvancedDataManagement from "../../../../../../../public/icon/Benefits-upgradeCloud/AdvancedDataManagement.svg";
+import AptitudeToRespond from "../../../../../../../public/icon/Benefits-upgradeCloud/AptitudeToRespond.svg";
+import IntegrateBigDataAnalytics from "../../../../../../../public/icon/Benefits-upgradeCloud/IntegrateBigDataAnalytics.svg";
+import SecurelyStores from "../../../../../../../public/icon/Benefits-upgradeCloud/SecurelyStores.svg";
+import EnhanceSystemPerformance from "../../../../../../../public/icon/Benefits-upgradeCloud/EnhanceSystemPerformance.svg";
+import Testimonial from "@/sections/testimonial/Testimonial";
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
 
 import styles from "./page.module.css";
 import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
-import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 const smartTools = [
@@ -190,6 +200,7 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
+      {/* Section Nav */}
       <>
         <SectionNav
           arr={[
@@ -297,10 +308,42 @@ const page = () => {
       </>
 
       {/* Supply System */}
+      <>
+        <div className={` w-full  pt-32`}></div>
+        <div
+          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
+        >
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Infor Intelligent Supply System
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Infor proudly presents the most extensive suite of global
+                  supply chain solutions, including the world&apos;s largest
+                  single-instance, multi-enterprise business network and
+                  comprehensive CloudSuite capabilities. These capabilities
+                  optimize supply chains from end to end, covering planning,
+                  procurement, orchestration and fulfillment. Infor WMS is a
+                  cloud-based Tier-1 solution, reshaping warehouse operations
+                  through advanced functionalities ensuring efficient
+                  fulfillment in a dynamic business landscape. With Infor WMS,
+                  enterprises gain a competitive edge, ready to tackle the
+                  ever-evolving demands of the modern market.
+                </p>
+              </div>
+            </div>
+            {/* right */}
+          </div>
+        </div>
+      </>
+
       {/* Infor WMS Key Highlights */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -354,118 +397,278 @@ const page = () => {
         </div>
       </>
 
-      <CaseStudy />
-
-      {/* Data Metrics Insights to be created */}
-
-      {/* Why Infotech */}
+      {/* Infor WMS Industry solutions */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className={` w-full bg-[#FFF] py-10`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
+                  Infor WMS Industry Solutions
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
-                </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
-                </div>
               </div>
             </div>
             {/* right */}
             <div>
               <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  We endeavor to build actual business impact of Robotic Process
+                  Automation (RPA) reforming industries, improving output and
+                  leading digital transformation
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <div
+          className={`w-full pt-48 pb-12 relative bg-cover`}
+          style={{ backgroundImage: `url('/bgEcomScreen.png')` }}
+        >
+          {/* Overlay for background image */}
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
+            {[
+              {
+                _id: 1,
+                title: "Retail",
+                list: [
+                  {
+                    _id: 1,
+                    title: "Digital stores & connected associates",
+                    url: "/",
+                  },
+                  {
+                    _id: 2,
+                    title: "Point-of-Sale (POS) modernization",
+                    url: "/",
+                  },
+                  {
+                    _id: 3,
+                    title: "Client Eling, Assisted sales",
+                    url: "/",
+                  },
+                  {
+                    _id: 4,
+                    title:
+                      "Customer experience (CX) transformation & measurement",
+                    url: "/",
+                  },
+                ],
+                cta: "Let's Connect",
+                ctaUrl: "#contact",
+              },
+              {
+                _id: 2,
+                title: "3 PL Logistics",
+                list: [
+                  {
+                    _id: 1,
+                    title: "Digital stores & connected associates",
+                    url: "/",
+                  },
+                  {
+                    _id: 2,
+                    title: "Point-of-Sale (POS) modernization",
+                    url: "/",
+                  },
+                  {
+                    _id: 3,
+                    title: "Client Eling, Assisted sales",
+                    url: "/",
+                  },
+                  {
+                    _id: 4,
+                    title:
+                      "Customer experience (CX) transformation & measurement",
+                    url: "/",
+                  },
+                ],
+                cta: "Know More",
+                ctaUrl: "#contact",
+              },
+            ].map((item, index) => {
+              return (
+                <div key={item._id} className="mx-5 text-white relative">
+                  <div className=" w-fit relative z-10">
+                    <h4 className="text-[22px] font-bold  leading-[28px] text-[#fff]">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div>
+                    <ul className="my-4">
+                      {item.list.map((listItem) => (
+                        <li
+                          key={listItem._id}
+                          className="border-b-2 w-fit border-[#DBDBDB] py-2"
+                        >
+                          <Link
+                            href={listItem.url}
+                            className="text-[#fff] text-[14px] font-medium leading-[16px] w-fit flex transition-all hover:opacity-75"
+                          >
+                            {listItem.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={item.ctaUrl}
+                      className="text-[#101828] bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}
+                      <Icon
+                        path={mdiArrowTopRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </>
 
-      <Testimonials />
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Benefits */}
+
+      <Benefits
+        ribbon="Upgrade to Cloud Benefits "
+        ribbonTxtWhite="true"
+        title="Experience business performance surge with cloud"
+        desc=""
+        arr={[
+          {
+            _id: 1,
+            icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
+            title: "Minimize operational expenses of IT portfolio",
+          },
+          {
+            _id: 2,
+            icon: "Benefits-upgradeCloud/EnableUserConcurrency",
+            title: "Enable user concurrency to support large-scale workloads",
+          },
+          {
+            _id: 3,
+            icon: "Benefits-upgradeCloud/EnhancedCollaboration",
+            title:
+              "Enhanced collaboration through cross-device accessibility to information",
+          },
+          {
+            _id: 4,
+            icon: "Benefits-upgradeCloud/AdvancedDataManagement",
+            title:
+              "Advanced data management solutions, modernized process and cloud services",
+          },
+          {
+            _id: 5,
+            icon: "Benefits-upgradeCloud/AptitudeToRespond",
+            title: "Aptitude to respond to shifting business requirements",
+          },
+          {
+            _id: 6,
+            icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
+            title:
+              "Integrate Big Data Analytics into business processes for data-driven decision-making",
+          },
+          {
+            _id: 7,
+            icon: "Benefits-upgradeCloud/SecurelyStores",
+            title: "Securely stores confidential business information",
+          },
+          {
+            _id: 8,
+            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+            title:
+              "Enhance system performance and user experience by scaling up the system",
+          },
+        ]}
+      ></Benefits>
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise "
+        ribbonTxtWhite="true"
+        title="Future Outlook with Intelligent Technologies  "
+        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        arr={[
+          {
+            title: "85%",
+            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+          },
+          {
+            title: "$200B",
+            desc: "Forbes forecasts size for AI market by 2026 ",
+          },
+          {
+            title: "$6.6T",
+            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+          },
+        ]}
+      ></Expertise>
 
       {/* Subscription */}
       <Subscription
