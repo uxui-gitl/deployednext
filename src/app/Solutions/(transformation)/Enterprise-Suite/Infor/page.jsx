@@ -130,6 +130,60 @@ const ChoiceSlider = [
     url: "/",
   },
 ];
+
+const InforGrid = [
+  {
+    _id: 1,
+    title: "Infor LN",
+    icon: "dummy",
+  },
+  {
+    _id: 2,
+    title: "Infor d/EPM",
+    icon: "dummy",
+  },
+  {
+    _id: 3,
+    title: "Infor OS",
+    icon: "dummy",
+  },
+  {
+    _id: 4,
+    title: "Infor CPQ",
+    icon: "dummy",
+  },
+  {
+    _id: 5,
+    title: "Infor HCM ",
+    icon: "dummy",
+  },
+  {
+    _id: 6,
+    title: "Infor WMS",
+    icon: "dummy",
+  },
+  {
+    _id: 7,
+    title: "HxGN EAM",
+    icon: "dummy",
+  },
+  {
+    _id: 8,
+    title: "Infor XM",
+    icon: "dummy",
+  },
+
+  {
+    _id: 9,
+    title: "Infor CRM",
+    icon: "dummy",
+  },
+  {
+    _id: 10,
+    title: "Infor Birst",
+    icon: "dummy",
+  },
+];
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -257,6 +311,108 @@ const page = () => {
     },
   ];
 
+  const ul = [
+    {
+      _id: 1,
+      title: "Business Applications",
+      expandedTitle: "Business Applications On Cloud",
+      bgImg: "bg1",
+      bgColor: "",
+      linksArr: [
+        {
+          _id: 1,
+          title: "Microsoft Dynamics 365",
+          url: "/",
+        },
+        {
+          _id: 2,
+          title: "Infor",
+          url: "/",
+        },
+        {
+          _id: 3,
+          title: "Oracle",
+          url: "/",
+        },
+        {
+          _id: 4,
+          title: "LS Retail",
+          url: "/",
+        },
+      ],
+
+      ctaBtn: false,
+      ctaUrl: "/",
+      cta: "Know More",
+    },
+    {
+      _id: 2,
+      title: "Business Applications",
+      expandedTitle: "Business Applications On Cloud",
+      bgImg: "",
+      bgColor: "#101828",
+      linksArr: [
+        {
+          _id: 1,
+          title: "Microsoft Dynamics 365",
+          url: "/",
+        },
+        {
+          _id: 2,
+          title: "Infor",
+          url: "/",
+        },
+        {
+          _id: 3,
+          title: "Oracle",
+          url: "/",
+        },
+        {
+          _id: 4,
+          title: "LS Retail",
+          url: "/",
+        },
+      ],
+
+      ctaBtn: true,
+      ctaUrl: "/",
+      cta: "Know More",
+    },
+    {
+      _id: 3,
+      title: "Business Applications",
+      expandedTitle: "Business Applications On Cloud",
+      bgImg: "bg3",
+      bgColor: "",
+      linksArr: [
+        {
+          _id: 1,
+          title: "Microsoft Dynamics 365",
+          url: "/",
+        },
+        {
+          _id: 2,
+          title: "Infor",
+          url: "/",
+        },
+        {
+          _id: 3,
+          title: "Oracle",
+          url: "/",
+        },
+        {
+          _id: 4,
+          title: "LS Retail",
+          url: "/",
+        },
+      ],
+
+      ctaBtn: false,
+      ctaUrl: "/",
+      cta: "Know More",
+    },
+  ];
+
   return (
     <>
       <EntIntro
@@ -359,10 +515,10 @@ const page = () => {
         ]}
       ></Expertise>
 
-      {/* Grid */}
+      {/* Infor Grid */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
+          <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -378,19 +534,77 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className={`  w-full py-32 `}>
-          <div className=" grid grid-cols-6 grid-rows-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
-            <div className=" row-span-2">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusantium minima eum tenetur expedita quasi iste optio
-              laboriosam pariatur quos, ab ad id?
-            </div>
-            {[0, 1, 2, 3, 4, 0, 1, 2, 3, 4].map((i, index) => (
-              <div key={index}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Accusantium minima eum tenetur expedita quasi iste optio
-                laboriosam pariatur quos, ab ad id?
+        <div className={`w-full  `}>
+          <div className="  sm:flex-row h-full justify-center grid grid-cols-1 grid-rows-1 sm:grid-cols-7 sm:grid-rows-2 gap-0">
+            <div className="bg-[#feeded] py-20 px-8 h-full row-span-1 sm:row-span-2 w-full   sm:flex-grow col-span-1 sm:col-span-2  ">
+              <div className=" ">
+                <Image
+                  src={`/infor/infor.png`}
+                  width={116}
+                  height={68}
+                  alt="infor.png"
+                />
               </div>
+              <h3 className="text-[#101828] text-[30px]   leading-[42px] w-fit  flex transition-all hover:opacity-75  font-bold ">
+                Infor Cloudsuite
+              </h3>
+              <div>
+                <ul className="my-4">
+                  <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
+                    <Link
+                      href={"/"}
+                      className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      Industrial Enterprise
+                    </Link>
+                  </li>
+                  <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
+                    <Link
+                      href={"/"}
+                      className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      Automotive
+                    </Link>
+                  </li>
+                  <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
+                    <Link
+                      href={"/"}
+                      className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      Aerospace & Defense
+                    </Link>
+                  </li>
+                </ul>
+                <Link href={"/"} className="mb-4">
+                  <div
+                    className={`text-[#fff] bg-[#B42318] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75`}
+                  >
+                    Explore Solution
+                    <Icon
+                      path={mdiArrowTopRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </div>
+                </Link>
+              </div>
+            </div>
+            {InforGrid.map((item, index) => (
+              <Link href={"/"} key={index}>
+                <div className="    col-span-1 row-span-1 flex border-[1px] flex-col justify-start sm:justify-center items-start sm:items-center h-full px-[2rem] p-4">
+                  <div className=" ">
+                    <Image
+                      src={`/${item.icon}.png`}
+                      height={36}
+                      width={36}
+                      alt="dummy"
+                    />
+                    <p className="text-[26px] font-bold leading-[34px]">
+                      {item.title}
+                    </p>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
