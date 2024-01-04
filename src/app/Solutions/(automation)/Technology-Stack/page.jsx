@@ -294,11 +294,10 @@ const page = () => {
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                    Accomplishing Your Goals at Every stage
+                  Engineering Success with Our Methodology
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                    Enabling you to thrive in digital era, we prepare your
-                    organisation with scaling growth for sustainable tomorrow
+                  This approach helps us to adeptly manage software development projects involving complexity levels.
                   </p>
                 </div>
               </div>
@@ -312,42 +311,58 @@ const page = () => {
                 {
                   label: "01",
                   expandedLabel: "Step 01",
-                  title: "Infrastructure and  Data Evaluation",
-                  expandedTitle: "Current Infrastructure and  Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                  image: "/Spotlight/card1.png",
+                  title: "Application Planning",
+                  expandedTitle: "Application Planning",
+                  desc: "Bridging the vision and projected application result with precision",
+                  image: "/technologyStack/Application-Planning.jpg"
                 },
                 {
                   label: "02",
                   expandedLabel: "Step 02",
-                  title: "Strategy  Designing ",
-                  expandedTitle: "Current Infrastructure and  Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                  image: "/Spotlight/card1.png",
+                  title: "Application Designing",
+                  expandedTitle: "Application Designing",
+                  desc: "Architecting solution design through the strategic approach",
+                  image: "/technologyStack/Application-Designing.jpg",
                 },
                 {
                   label: "03",
                   expandedLabel: "Step 03",
-                  title: "Establishing Readiness",
-                  expandedTitle: "Current Infrastructure and  Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                  image: "/Spotlight/card1.png",
+                  title: "Defining technology stack",
+                  expandedTitle: "Defining technology stack",
+                  desc: "Evaluation and selection of frameworks, programming languages, libraries and tools",
+                  image: "/technologyStack/Application-Designing.jpg",
                 },
                 {
                   label: "04",
                   expandedLabel: "Step 04",
-                  title: "Upgradation and Execution",
-                  expandedTitle: "Current Infrastructure and  Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                  image: "/Spotlight/card1.png",
+                  title: "Application Development",
+                  expandedTitle: "Application Development",
+                  desc: "Emphasizing clean code architecture and development of state-of-the-art application",
+                  image: "/technologyStack/Application-Development.jpg",
                 },
                 {
                   label: "05",
                   expandedLabel: "Step 05",
-                  title: "Management and Control",
-                  expandedTitle: "Current Infrastructure and  Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                  image: "/Spotlight/card1.png",
+                  title: "Application Testing",
+                  expandedTitle: "Application Testing",
+                  desc: "Detecting defects, verifying compliance and ensuring seamless functionality and user experience",
+                  image: "/technologyStack/Application-Testing.jpg",
+                },
+                {
+                  label: "06",
+                  expandedLabel: "Step 05",
+                  title: "Application Deployment",
+                  expandedTitle: "Application Deployment",
+                  desc: "Efficient release of application with a focus on automation and DevOps practices",
+                  image: "/technologyStack/Application-Testing.jpg",
+                },
+                {
+                  label: "07",
+                  expandedLabel: "Step 05",
+                  title: "Application Maintenance",
+                  expandedTitle: "Application Maintenance",
+                  desc: "Ensuring long-term stability, reliability and scalability of the application",
+                  image: "/technologyStack/Application-Testing.jpg",
                 },
               ]}
             />
