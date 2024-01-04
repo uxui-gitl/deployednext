@@ -43,7 +43,6 @@ import { mdiPlayCircle } from "@mdi/js";
 import styles from "./page.module.css";
 import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
-import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 const smartTools = [
