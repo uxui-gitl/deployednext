@@ -108,10 +108,10 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
               {arr.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-[#EDF1FF] border-r-4 px-20 py-10 rounded-sm text-[#101828] min-h-fit max-h-60"
+                  className="bg-[#EDF1FF] border-r-4 px-20 py-12 rounded-sm text-[#101828] min-h-fit max-h-60"
                 >
                   <div>
-                    <div className=" -mr-4">
+                    <div className=" -mr-4 py-4">
                       {item.icon !== "" ? (
                         <Image
                           src={`/icon/${item.icon}.svg`}
