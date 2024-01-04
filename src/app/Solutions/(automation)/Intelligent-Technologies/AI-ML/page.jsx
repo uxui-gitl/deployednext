@@ -34,6 +34,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import BlogSlider from "@/components/BlogSlider";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -47,6 +48,26 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Voice Assistant Challenges in 2023",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+  {
+    _id: 2,
+    ribbon: "blog",
+    title: "Hyper automation trends in 2023",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  }
+];
 
 const AIOfferings = [
   {
@@ -513,6 +534,8 @@ const page = () => {
         </div>
       </>
 
+
+      <BlogSlider arr={blogData}/>
       {/* Why choose gitl and ai and ml */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
