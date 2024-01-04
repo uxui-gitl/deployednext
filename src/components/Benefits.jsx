@@ -115,6 +115,7 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                       {item.icon !== "" ? (
                         <Image
                           src={`/icon/${item.icon}.svg`}
+
                           width="48"
                           height="48"
                           alt={item.icon}
