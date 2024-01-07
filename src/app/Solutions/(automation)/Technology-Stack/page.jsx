@@ -32,7 +32,6 @@ import checkout from "../../../../../public/checkout.png";
  * ! Images Import
  */
 
-
 import MLExpertise from "../../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
@@ -71,7 +70,7 @@ const blogData = [
     _id: 2,
     ribbon: "blog",
     title: "ASP.Net-A popular choice for Web development ",
-    desc: "Most enterprises are in the process of migration from legacy systems to new, user-friendly dynamic and robust web applications. In this crowded market of different technologies such as PHP, HTML5, WordPress, Magento and several others, Microsoft’s ASP.NET has proved to be ‘the popular choice’.",
+    desc: "Most enterprises are in the process of migration from legacy systems to new, user-friendly dynamic and robust web applications. In this crowded market of different technologies such as PHP, HTML5, WordPress, Magento and several others, Microsoft's ASP.NET has proved to be 'the popular choice'.",
     cta: "Know More",
     link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=4 ",
     imgUrl: "",
@@ -79,7 +78,8 @@ const blogData = [
   {
     _id: 3,
     ribbon: "blog",
-    title: "Application Modernization – Proven Growth Strategy for Progressive Organizations",
+    title:
+      "Application Modernization - Proven Growth Strategy for Progressive Organizations",
     desc: "The IT Industry has seen various phases of evolution of application development & maintenance. In the earlier days, there used to be monolithic applications that used to be deployed on physical servers. Waterfall methodology was used wherein analysis, design, development & deployment phases were done in a sequential manner one after the other, and each succeeding phase could not be started before the preceding phase was completed.",
     cta: "Know More",
     link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=16 ",
@@ -90,7 +90,8 @@ const TechStackOfferings = [
   {
     _id: 1,
     title: "Custom Application Development",
-    image: "/technology-stack/Service-Offerings_Custom-Application-Development.jpg",
+    image:
+      "/technologyStack/Service-Offerings_Custom-Application-Development.jpg",
     desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
     cta: "Know More",
     link: "/",
@@ -98,7 +99,7 @@ const TechStackOfferings = [
   {
     _id: 2,
     title: "Legacy Modernisation",
-    image: "/technology-stack/Service-Offerings_Legacy-Modernisation.jpg",
+    image: "/technologyStack/Service-Offerings_Legacy-Modernisation.jpg",
     desc: "We expertly enhance your application, optimizing system uptime and seamlessly transitioning from large architectures to microservices.",
     cta: "Know More",
     link: "/",
@@ -106,7 +107,8 @@ const TechStackOfferings = [
   {
     _id: 3,
     title: "Application managed services",
-    image: "/technology-stack/Service-Offerings_Application-Managed-Services.jpg",
+    image:
+      "/technologyStack/Service-Offerings_Application-Managed-Services.jpg",
     desc: "Instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results.",
     cta: "Know More",
     link: "/",
@@ -114,7 +116,7 @@ const TechStackOfferings = [
   {
     _id: 4,
     title: "Mobile Application ",
-    image: "/technology-stack/Service-Offerings_Mobile-Application.jpg",
+    image: "/technologyStack/Service-Offerings_Mobile-Application.jpg",
     desc: "Experience uniform connectivity and enriched user engagement on fingertips with our comprehensive mobile app development services.",
     cta: "Know More",
     link: "/",
@@ -122,7 +124,8 @@ const TechStackOfferings = [
   {
     _id: 5,
     title: "Enterprise Application Integration ",
-    image: "/technology-stack/Service-Offerings_Enterprise-Application-Integration.jpg",
+    image:
+      "/technologyStack/Service-Offerings_Enterprise-Application-Integration.jpg",
     desc: "We drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications.",
     cta: "Know More",
     link: "/",
@@ -154,7 +157,7 @@ const BenefitsData = [
     _id: 5,
     icon: "benefits-technology-stack/ensure-uniformity",
     title: "Ensure Uniformity in Financial Information",
-  }
+  },
 ];
 const navLinks = [
   {
@@ -294,10 +297,11 @@ const page = () => {
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                  Engineering Success with Our Methodology
+                    Engineering Success with Our Methodology
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                  This approach helps us to adeptly manage software development projects involving complexity levels.
+                    This approach helps us to adeptly manage software
+                    development projects involving complexity levels.
                   </p>
                 </div>
               </div>
@@ -314,7 +318,7 @@ const page = () => {
                   title: "Application Planning",
                   expandedTitle: "Application Planning",
                   desc: "Bridging the vision and projected application result with precision",
-                  image: "/technologyStack/Application-Planning.jpg"
+                  image: "/technologyStack/Application-Planning.jpg",
                 },
                 {
                   label: "02",

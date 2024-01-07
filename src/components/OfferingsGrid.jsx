@@ -50,9 +50,9 @@ const OfferingsGrid = ({ title, titleOnly, desc, columns, arr }) => {
           {arr.map((item, index) => (
             <div className="" key={item._id}>
               <Image
-                src={item.image}
+                src={`${item.image}`}
                 className="w-[100%]"
-                alt="ML Expertise"
+                alt={item.title}
                 width={200}
                 height={200}
               />

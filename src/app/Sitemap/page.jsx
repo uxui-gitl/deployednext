@@ -167,7 +167,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/Infor-Cloudsuite"
                                   }
                                 >
-                                  Infor CloudSuite
+                                  ☑️ Infor CloudSuite
                                 </Link>
                               </li>
                               <li>
@@ -178,7 +178,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Infor/HxnEAM"
                                   }
                                 >
-                                  HxnEAM
+                                  ☑️ HxnEAM
                                 </Link>
                               </li>
                             </ul>
