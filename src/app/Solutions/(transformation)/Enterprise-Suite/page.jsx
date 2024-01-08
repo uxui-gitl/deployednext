@@ -22,62 +22,76 @@ import styles from "./page.module.css";
 const ChoiceSlider = [
   {
     _id: 1,
-    imgUrl: "1",
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "Industry-Spotlight-Manufacturing",
+    title: "Manufacturing",
+    desc: "",
     url: "/",
   },
   {
     _id: 2,
-    imgUrl: "2",
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "Industry-Spotlight-Retail",
+    title: "Retail",
+    desc: "",
     url: "/",
   },
   {
     _id: 3,
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "3",
+    title: "Trading and Distribution",
+    desc: "",
+    imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
   {
     _id: 4,
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "4",
+    title: "Healthcare ",
+    desc: "",
+    imgUrl: "Industry-served-Healthcare",
+    url: "/",
+  },
+    {
+    _id: 5,
+    title: "Project ",
+    desc: "",
+    imgUrl: "Industry-Spotlight-Projects",
+    url: "/",
+  },
+  {
+    _id: 6,
+    title: "Professional services",
+    desc: "",
+    imgUrl: "ProfessionalServices",
     url: "/",
   },
 ];
 const expandedCardSlider = [
   {
     _id: 1,
-    imgUrl: "1",
+    imgUrl: "Godrej-Solution-Valve-Management",
     title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
     url: "/",
   },
   {
     _id: 2,
-    imgUrl: "2",
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "Godrej-Solution-Valve-Management",
+    title: "Valve Manufacturing Process Management",
+    desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
   },
   {
     _id: 3,
-    title: "Valve 2 Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "1",
+    title: "Metal Recycling Operations Management",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
   },
-  {
-    _id: 4,
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "2",
-    url: "/",
-  },
+  // {
+  //   _id: 4,
+  //   title: "Dealer Management",
+  //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+  //   imgUrl: "2",
+  //   url: "/",
+  // },
 ];
 export default function Home() {
   return (
@@ -87,7 +101,7 @@ export default function Home() {
         <EntIntro
           title="Bridging Transformation
           with Enterprise Agility"
-          desc="We drive digital business revolution for tangible results, optimized bottom line and a dynamic digital edge"
+          desc=""
           cta="Let's Connect"
           width="60%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -122,9 +136,9 @@ export default function Home() {
 
         <div id="spotlightGrid">
           <>
-            <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
+            <div className={`w-full text-left bg-[#fff] pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
-                <div className="bg-[#f2f4f7] text-left">
+                <div className="bg-[#fff] text-left">
                   <div className="flex flex-col md:flex-row gap-8 ">
                     <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
                       Maximizing Your Business Outcomes with Cloud Technology
@@ -139,7 +153,7 @@ export default function Home() {
               </div>
             </div>
           </>
-          <div className={`w-full bg-[#f2f4f7] text-left `}>
+          <div className={`w-full bg-[#fff] text-left `}>
             <div className=" max-w-screen md:max-w-screen mx-auto pt-5 ">
               <SpotlightLogoGrid
                 arr={[
@@ -155,22 +169,22 @@ export default function Home() {
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Microsoft Dynamics 365",
+                        title: "Dynamics 365 CRM",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Infor",
+                        title: "Dynamics 365 Finance and Operations",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Oracle",
+                        title: "Dynamics 365 Commerce",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "LS Retail",
+                        title: "Dynamics 365 Business Central",
                         url: "/",
                       },
                     ],
@@ -187,22 +201,62 @@ export default function Home() {
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Microsoft Dynamics 365",
+                        title: "Infor CloudSuite",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Infor",
+                        title: "Infor LN(On Prem & On Cloud - MT)",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Oracle",
+                        title: "Infor WMS",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "LS Retail",
+                        title: "Factory Track",
+                        url: "/",
+                      },
+                      {
+                        _id: 5,
+                        title: "HxGN EAM",
+                        url: "/",
+                      },
+                      {
+                        _id: 6,
+                        title: "Infor OS",
+                        url: "/",
+                      },
+                      {
+                        _id: 7,
+                        title: "Infor XM",
+                        url: "/",
+                      },
+                      {
+                        _id: 8,
+                        title: "Infor CPQ",
+                        url: "/",
+                      },
+                      {
+                        _id: 9,
+                        title: "Infor CRM",
+                        url: "/",
+                      },
+                      {
+                        _id: 10,
+                        title: "Infor HCM",
+                        url: "/",
+                      },
+                      {
+                        _id: 11,
+                        title: "Infor d/EPM",
+                        url: "/",
+                      },
+                      {
+                        _id: 12,
+                        title: "Infor Birst",
                         url: "/",
                       },
                     ],
@@ -219,22 +273,22 @@ export default function Home() {
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Microsoft Dynamics 365",
+                        title: "Dummy",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Infor",
+                        title: "Dummy",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Oracle",
+                        title: "Dummy",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "LS Retail",
+                        title: "Dummy",
                         url: "/",
                       },
                     ],
@@ -247,22 +301,34 @@ export default function Home() {
 
         {/* Expertise */}
         <Expertise
-          ribbon="Our Expertise "
+          ribbon="Acing Your Business Objectives"
           ribbonTxtWhite="true"
-          title="Future Outlook with Intelligent Technologies  "
-          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe. "
           arr={[
             {
-              title: "85%",
-              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+              title: "50+",
+              desc: "Countries Spanning our Happy Customers",
             },
             {
-              title: "$200B",
-              desc: "Forbes forecasts size for AI market by 2026 ",
+              title: "10.31",
+              desc: "10.31 Billion Total Revenue",
             },
             {
-              title: "$6.6T",
-              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+              title: "500+",
+              desc: "Employees Worldwide",
+            },
+            {
+              title: "700+",
+              desc: "Implementations",
+            },
+            {
+              title: "2+",
+              desc: "Decades of Experience",
+            },
+            {
+              title: "40000+",
+              desc: "User Licenses Sold",
             },
           ]}
         ></Expertise>
@@ -274,14 +340,12 @@ export default function Home() {
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                    Industry Expertise
+                    Industry Spotlight
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Being preferred partner of leading industries, we help in
-                    shaping specific technology prerequisites and deliver
-                    brilliant value driven solutions tailored to your sector
+                  <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                    Being preferred partner of leading industries, we help in shaping specific technology prerequisites and deliver brilliant value driven solutions tailored to your sector.  
                   </p>
                 </div>
                 <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -302,7 +366,7 @@ export default function Home() {
                           >
                             <div className="relative overflow-hidden">
                               <Image
-                                src={`/industrySpotlight/${item.imgUrl}.png`}
+                                src={`/industrySpotlight/${item.imgUrl}.jpg`}
                                 height={350}
                                 width={283}
                                 alt="icon"
@@ -332,15 +396,14 @@ export default function Home() {
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
                 <div className="bg-[#F2F4F7] text-left">
                   <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                    Services for successful results
+                    People-led and Innovation-empowered Services for Successful results 
                   </h4>
                   <div className="flex flex-col md:flex-row gap-8 ">
                     <h3 className="text-4xl leading-[42px] my-4 font-bold">
                       Accomplishing Your Goals at Every stage
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                      Enabling you to thrive in digital era, we prepare your
-                      organisation with scaling growth for sustainable tomorrow
+                      Enabling you to thrive in digital era, we prepare your organisation with scaling growth for sustainable tomorrow.
                     </p>
                   </div>
                 </div>
@@ -354,48 +417,40 @@ export default function Home() {
                   {
                     label: "01",
                     expandedLabel: "Step 01",
-                    title: "Infrastructure and  Data Evaluation",
+                    title: "Business Situation Analysis for journey mapping",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
+                      "Business Situation Analysis for journey mapping",
                     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                    image: "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
                   },
                   {
                     label: "02",
                     expandedLabel: "Step 02",
-                    title: "Strategy  Designing ",
+                    title: "Development Aimed at Performance Enhancement",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Development Aimed at Performance Enhancement",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
                   },
                   {
                     label: "03",
                     expandedLabel: "Step 03",
-                    title: "Establishing Readiness",
+                    title: "Deployment to Ensure Seamless Transition ",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Deployment to Ensure Seamless Transition ",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Deployment-to-Ensure-Seamless-Transition.jpg",
                   },
                   {
                     label: "04",
                     expandedLabel: "Step 04",
-                    title: "Upgradation and Execution",
+                    title: "Support for System Maintenance",
                     expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
+                      "Support for System Maintenance",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
                   },
-                  {
-                    label: "05",
-                    expandedLabel: "Step 05",
-                    title: "Management and Control",
-                    expandedTitle:
-                      "Current Infrastructure and  Data Evaluation",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/card1.png",
-                  },
+                  
                 ]}
               />
             </div>
@@ -411,10 +466,7 @@ export default function Home() {
                   Helping Enterprises to Succeed
                 </h3>
                 <p className="font-normal leading-[22px] w-[80%] mx-auto">
-                  As your transformation partner, we provide robust enterprise
-                  solutions to enhance stakeholder experiences, strengthen
-                  business resilience and modernize IT environment. Together, we
-                  can redefine success standards globally.
+                  We redefine success standards globally with robust enterprise solutions to enhance stakeholder experiences, strengthen business resilience and modernize IT environment.  
                 </p>
               </div>
             </div>
@@ -460,16 +512,14 @@ export default function Home() {
                         <h4
                           className={`font-medium text-[#0745D3] uppercase ribbon`}
                         >
-                          Services for successful results
+                         Accelerating Business Engineering 
                         </h4>
                         <div className="flex flex-col md:flex-row gap-8 ">
                           <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                            Accomplishing Your Goals at Every stage
+                            Godrej Infotech Solutions
                           </h3>
                           <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                            Enabling you to thrive in digital era, we prepare
-                            your organisation with scaling growth for
-                            sustainable tomorrow
+                             Resolving complex business challenges and seizing growth opportunities through our purpose driven solutions designed by our experts. 
                           </p>
                         </div>
                       </div>
@@ -493,7 +543,7 @@ export default function Home() {
                         >
                           <div className="relative overflow-hidden">
                             <Image
-                              src={`/IndustrySolutionsSlider/${item.imgUrl}.png`}
+                              src={`/IndustrySolutionsSlider/${item.imgUrl}.jpg`}
                               height={313}
                               width={500}
                               alt="icon"
@@ -529,8 +579,8 @@ export default function Home() {
 
         {/* Subscription */}
         <Subscription
-          title="Tap the faster and simpler way for futuristic seamless business experiences"
-          desc="Let's discuss how intelligent technologies can help you with rapid growth"
+          title="Free 30 minutes IT strategy session with our Consultant"
+          desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity."
         />
         <InfotechWeeklyAlt />
       </main>
