@@ -8,7 +8,7 @@ import React, { useEffect, useState } from "react";
 import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const works = Work_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
             <Footer />
             <Copyright />
             <Analytics />
+            <SpeedInsights />
           </>
         )}
       </body>
