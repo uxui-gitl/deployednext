@@ -25,7 +25,7 @@ const page = () => {
                       className=" block pb-1 hover:underline w-fit py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
-                      ✔️ Intelligent Technologies
+                      ✔️💫 Intelligent Technologies
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>
@@ -65,7 +65,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Technology-Stack"}
                     >
-                      ✔️ Technology Stack
+                      ✔️💫 Technology Stack
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Data-Insights"}
                     >
-                      ✔️ Data Insights
+                      ✔️💫 Data Insights
                     </Link>
                   </li>
                   <li>
@@ -83,7 +83,7 @@ const page = () => {
                       target="_blank"
                       href={"/Solutions/Cyber-Security"}
                     >
-                      ✔️ Cyber Security
+                      ✔️💫 Cyber Security
                     </Link>
                   </li>
                 </ul>
@@ -99,7 +99,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Upgrade-to-Cloud"}
                     >
-                      ✔️ Upgrade to Cloud
+                      ✔️ 💫 Upgrade to Cloud
                     </Link>
                   </li>
                   <li>
@@ -108,7 +108,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
-                      ✔️ Cloud Stack & Services
+                      ✔️💫 Cloud Stack & Services
                     </Link>
                   </li>
                 </ul>
@@ -124,7 +124,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Enterprise-Suite"}
                     >
-                      ☑️ Enterprise Suite
+                      ☑️ 💫 Enterprise Suite
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>
@@ -134,7 +134,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Infor"}
                           >
-                            ☑️ Infor
+                            ☑️💫 Infor
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>
@@ -192,7 +192,7 @@ const page = () => {
                               "/Solutions/Enterprise-Suite/Microsoft-Practises"
                             }
                           >
-                            Microsoft Practises
+                            💫 Microsoft Practises
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>

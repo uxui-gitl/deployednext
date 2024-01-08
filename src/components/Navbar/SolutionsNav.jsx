@@ -273,23 +273,23 @@ const SolutionsNav = () => {
                   subLinks: [
                     {
                       label: "Infor CRM",
-                      href: "/Solutions/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/Cyber-Security",
                     },
                     {
                       label: "Microsoft CRM",
-                      href: "/Solutions/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/Microsoft-CRM",
                     },
                     {
                       label: "Salesforce CRM",
-                      href: "/Solutions/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/Salesforce-CRM",
                     },
                     {
                       label: "Magento - E com",
-                      href: "/Solutions/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/Magento-Ecom",
                     },
                     {
                       label: "LS Retail",
-                      href: "/Solutions/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/LS-Retail",
                     },
                   ],
                 },

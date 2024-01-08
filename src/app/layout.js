@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 
 import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
+import { Analytics } from "@vercel/analytics/react";
 
 const works = Work_Sans({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
             <Copyright />
+            <Analytics />
           </>
         )}
       </body>
