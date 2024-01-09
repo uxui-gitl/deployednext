@@ -39,7 +39,7 @@ const EntIntro = ({ title, desc, cta, width, video, fs, leading }) => {
 
             <div className="z-50 flex gap-4 flex-col sm:flex-row justify-center items-center align-middle">
               <Link
-                href={"/"}
+                href={"#Contact"}
                 className="min-w-max flex bg-[#F5F5F5] py-2 px-10 border-2 border-[#F5F5F5] font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
               >
                 {cta}

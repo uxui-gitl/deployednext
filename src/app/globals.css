@@ -326,6 +326,21 @@ input:focus {
   background-position: center;
 }
 
+.bg-ms-practise {
+  background-image: url("../../public/bgMsPractise.png");
+  background-color: #9199a6;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.bg-card1 {
+  background-image: url("../../public/cardbg1.png");
+  background-color: #31094a;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-grid {
   background-image: url("../../public/BgGrid100.png");
   background-color: white;

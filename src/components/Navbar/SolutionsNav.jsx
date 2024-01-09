@@ -3,13 +3,17 @@ import React, { useState } from "react";
 import Navlist from "./NavUtils/Navlist.jsx";
 import Navlist2 from "./NavUtils/Navlist2.jsx";
 import Link from "next/link.js";
+import clsx from "clsx";
 
 const SubNavList = ({ links }) => (
   <div className="flex flex-row gap-x-8 lg:px-8 lg:pr-10 py-2 max-lg:pl-6">
     {links.map((section, index) => (
-      <div key={index} className="lg:border-r-[1px] pr-8">
+      <div
+        key={index}
+        className={clsx({ "lg:border-r-[1px] pr-8": index < links.length - 1 })}
+      >
         <ul>
-          <li className="text-[#101828] hover:text-blue-500 pt-2">
+          <li className="text-[#101828]  hover:text-blue-500 pt-2">
             <Link href={section.sectionHref}>
               <span className="text-neutral-800 font-semibold hover:text-blue-500">
                 {section.sectionLabel}
@@ -52,7 +56,7 @@ const SubNavList = ({ links }) => (
 
 const SolutionsNav = () => {
   const [show, setShow] = useState(false);
-  const [currentCategory, setCurrentCategory] = useState(null);
+  const [currentCategory, setCurrentCategory] = useState("Automation");
 
   const handleMouseEnter = (category) => {
     if (window.innerWidth > 1024) {
@@ -100,16 +104,16 @@ const SolutionsNav = () => {
         </svg>
       </button>
       <div
-        className={`relative lg:absolute lg:flex lg:-ml-80 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
+        className={`relative lg:absolute lg:flex lg:-ml-40 bg-white rounded-md lg:py-4 py-2 transition ease-in duration-150 ${
           show ? "opacity-100 " : "opacity-0 invisible max-lg:hidden"
         }`}
         onMouseEnter={() => handleMouseEnter("solutions")} // Ensure to handle mouse enter on the dropdown as well
         onMouseLeave={handleMouseLeave}
       >
-        <div className="lg:px-4 lg:border-r-[1px] mb-4 lg:mb-0 lg:pr-10">
+        <div className="lg:px-4 lg:border-r-[1px] mb-4 lg:mb-0">
           <ul className="max-lg:pl-6">
             <li
-              className=""
+              className="border-b-[1px]"
               onMouseEnter={() => setCurrentCategory("Automation")}
             >
               <Navlist
@@ -120,7 +124,7 @@ const SolutionsNav = () => {
               />
             </li>
             <li
-              className=""
+              className="border-b-[1px]"
               onMouseEnter={() => setCurrentCategory("Cloudification")}
             >
               <Navlist
@@ -144,7 +148,10 @@ const SolutionsNav = () => {
           </ul>
         </div>
         {/* Second level dropdowns */}
-        <div className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6 z-50">
+        <div
+          // className="lg:px-8 lg:border-r-[1px] lg:pr-10 py-2 max-lg:pl-6 z-50"
+          className=" py-2 max-lg:pl-6 z-50"
+        >
           {currentCategory === "Automation" && (
             <SubNavList
               links={[

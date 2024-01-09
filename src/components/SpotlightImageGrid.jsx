@@ -5,7 +5,7 @@ import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 import React, { useState } from "react";
 import Balancer from "react-wrap-balancer";
 
-const SpotlightImageGrid = ({ arr }) => {
+const SpotlightImageGrid = ({ expanded, arr }) => {
   const [activeCard, setActiveCard] = useState(0);
 
   const cardsArray = arr || [
@@ -158,6 +158,7 @@ const SpotlightImageGrid = ({ arr }) => {
         {cardsArray.map((card, index) => (
           <div
             key={index}
+            // className={`text-white w-full  md:w-1/4 md:max-h-[500px] h-fit md:h-[400px] md:max-w-1/5 transition-transform mb-4 overflow-hidden`}
             className={` text-white w-full  md:w-1/4 md:max-h-[500px] h-fit md:h-[400px] md:max-w-1/5 transition-transform mb-4 overflow-hidden ${
               activeCard === index ? "w-full md:w-2/3" : "p-4"
             }`}

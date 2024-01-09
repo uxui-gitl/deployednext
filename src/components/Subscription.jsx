@@ -68,7 +68,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
 
   return (
     <>
-      <div className={` w-full bg-white py-32`}>
+      <div className={` w-full bg-white py-32`} id="Contact">
         <div className="  mb-5  sm:gap-0 text-left  max-w-screen-xl    mx-auto p-5        pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div className="bg-white flex items-start flex-col justify-start">
             <div>
