@@ -109,7 +109,7 @@ const InfotechWeeklyAlt = (props) => {
           // className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 "
           className={`text-left max-w-screen-xl  mb-5 mx-auto p-5 grid grid-cols-1 sm:grid-cols-2  px-[2rem]`}
         >
-          <div className="bg-blue-50 flex items-start flex-col justify-around ">
+          <div className="flex items-start flex-col justify-around ">
             <div>
               <h4
                 className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
