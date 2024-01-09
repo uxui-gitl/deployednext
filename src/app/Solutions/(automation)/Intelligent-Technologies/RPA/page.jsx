@@ -42,6 +42,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
+import Abstract from "@/components/Abstract";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -63,7 +64,7 @@ const RPAServiceOfferings = [
     desc: "We conduct process and platform estimations, capture automation requirements, create business cases, process validations and make clear Standard Operating Procedures (SoPs), ensuring your RPA journey aligns perfectly with your business goals.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "MLExpertise",
+    image: "/rpa/Service-offeringConsultation-Services.jpg",
   },
   {
     _id: 2,
@@ -71,15 +72,15 @@ const RPAServiceOfferings = [
     desc: "Our expert team design RPA pilot and build Proof of Concepts (PoCs) taking your RPA vision into consideration.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "MLExpertise",
+    image: "/rpa/Service-offeringFeasibility-Check-Services.jpg",
   },
   {
     _id: 3,
     title: "RPA Deployment ",
-    desc: "We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA processes and carefully document the code.",
+    desc: "We install / configure automation scripts with precision followed by continuous enhancements, run end-to-end testing, manage QA(Quality assurance) processes and carefully document the code.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "MLExpertise",
+    image: "/rpa/Service-offeringRPA-Deployment.jpg",
   },
   {
     _id: 4,
@@ -87,7 +88,7 @@ const RPAServiceOfferings = [
     desc: "We maintain and monitor your RPA application and Bot for their excellent performance, offering ongoing support and driving continuous improvement, ensuring efficient operations.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "MLExpertise",
+    image: "/rpa/Service-offeringRPA-Managed-Services.jpg",
   },
 ];
 
@@ -95,35 +96,35 @@ const ConsiderRPA = [
   {
     _id: 1,
     title: "Increased Productivity",
-    desc: "Lift up your team's productivity and speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+    desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
     cta: "Know More",
     ctaUrl: "/",
   },
   {
     _id: 2,
-    title: "Assured Outcomes",
+    title: "Gain Accurate Outcomes",
     desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
     cta: "Know More",
     ctaUrl: "/",
   },
   {
     _id: 3,
-    title: "Compliance and Consistency",
+    title: "Ensure Compliance and Consistency",
     desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
     cta: "Know More",
     ctaUrl: "/",
   },
   {
     _id: 4,
-    title: "Resource Optimization/ Optimize FTE Cost",
-    desc: "Enable employees to focus on more meaningful and strategic endeavours, helping them to deliver attentive experience to customers. ",
+    title: "Strengthen Potential",
+    desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
     cta: "Know More",
     ctaUrl: "/",
   },
   {
     _id: 5,
     title:"Optimize FTE Cost",
-    desc: "Cut down the requirement for additional full-time employees (FTEs), leading to major cost savings of salaries, benefits, and allied overheads.",
+    desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
     cta: "Know More",
     ctaUrl: "/",
   },
@@ -141,13 +142,7 @@ const ConsiderRPA = [
     cta: "Know More",
     ctaUrl: "/",
   },
-  {
-    _id: 8,
-    title:"Strengthen Accuracy",
-    desc: "Bots execute tasks with accuracy, leading to decreased rework.",
-    cta: "Know More",
-    ctaUrl: "/",
-  },
+ 
 
 ];
 
@@ -156,31 +151,31 @@ const UseCases = [
     _id: 1,
     title: "Incident Management Tickets ",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 2,
     title: "Employee Access Creation ",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 3,
     title: "Account Payable and Receivable Process",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 4,
     title: "Vendor Onboarding Process",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 5,
     title: "Customer Onboarding Process",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
 ];
 
@@ -300,10 +295,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Automate operation efforts to multiply
-        business efficiency and ROI with our RPA
-        solutions and services"
-        desc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by cutting down time requirements with precise results."
+        title="Automate Operations to multiply business efficiency with our RPA solutions and services"
+        desc=""
         cta="Let's Connect"
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -333,7 +326,15 @@ const page = () => {
             },
           ]}
         />
+        
       </>
+      
+            {/* Overview  */}
+      <Abstract
+        abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes.  "
+        >
+
+        </Abstract>
 
       {/* Why consider RPA for Your Business */}
       <>
@@ -382,6 +383,7 @@ const page = () => {
           </div>
         </div>
       </>
+      
 
       {/* RPA Platform Expertise Logos */}
       <>
@@ -432,9 +434,11 @@ const page = () => {
             {RPAServiceOfferings.map((item, index) => (
               <div className="" key={item._id}>
                 <Image
-                  src={MLExpertise}
+                  src={item.image}
                   className="w-[100%]"
                   alt="ML Expertise"
+                  width={500}
+                  height={500}
                 />
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
@@ -462,10 +466,10 @@ const page = () => {
       </>
 
       {/* Industry Spotlight Slider */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
+            
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -516,7 +520,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
       {/* RPA UseCases */}
       <>
@@ -534,9 +538,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We endeavor to build actual business impact of Robotic Process
-                  Automation (RPA) reforming industries, improving output and
-                  leading digital transformation
+                  We endeavor to build actual business impact of Robotic Process Automation (RPA) reforming industries, improving output and leading digital transformation.  
                 </p>
               </div>
             </div>
@@ -662,10 +664,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Let Us Transform Your"
-        blue="Vision into Reality"
+        title="Ready to revolutionize your workflow? "
+        blue="Streamline complexity effortlessly."
         title2=""
-        desc="Complete the Form to Begin"
+        desc="Share your details to upgrade your business future with us!"
       />
 
       {/* Infotech Weekly Updates */}
