@@ -48,6 +48,7 @@ import Benefits from "@/components/Benefits";
 import Expertise from "@/components/Expertise";
 import Subscription from "@/components/Subscription";
 import Navbar from "@/components/Navbar";
+import Abstract from "@/components/Abstract";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -240,26 +241,12 @@ const page = () => {
         <SectionNav arr={navLinks} />
       </>
 
-      {/* Overview  */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Abstract 
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our core emphasis is on advantageous business outcomes through our business grade intelligent competency while concurrently optimizing business performance.  
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+       {/* Overview  */}
+      <Abstract
+        abstractdesc="By mploying a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
+        >
+
+        </Abstract>
 
       {/* About Section */}
       <>
