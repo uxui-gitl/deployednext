@@ -35,6 +35,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import BlogSlider from "@/components/BlogSlider";
+import Abstract from "@/components/Abstract";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -75,7 +76,7 @@ const AIOfferings = [
     title: "Computer Vision ",
     desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. We use advanced technologies like OpenCV to optimize existing computer vision algorithms or develop new ones.",
     cta: "Explore Service",
-    ctaUrl: "/",
+    ctaUrl: "",
     links: [
       {
         title: "Real-time Object Detection",
@@ -100,7 +101,7 @@ const AIOfferings = [
     title: "Speech &  Language ",
     desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences and stand tall in competition.",
     cta: "Explore Service",
-    ctaUrl: "/",
+    ctaUrl: "",
     links: [
       {
         title: "Transcription Services",
@@ -121,7 +122,7 @@ const AIOfferings = [
     title: "Document  Understanding",
     desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos.",
     cta: "Explore Service",
-    ctaUrl: "/",
+    ctaUrl: "",
     links: [
       {
         title: "Optical Character Recognition (OCR)",
@@ -144,10 +145,10 @@ const AIOfferings = [
 
   {
     _id: 4,
-    title: "Conversational AI",
-    desc: "Ensuring a more human-centric engagement with data, we provide solutions that facilitate smarter, customer-centric decision-making.",
+    title: "Conversational AI / Natural Language Processing",
+    desc: "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making.",
     cta: "Explore Service",
-    ctaUrl: "/",
+    ctaUrl: "",
     links: [
       {
         title: "Document processing",
@@ -253,10 +254,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Artificial Intelligence &
-        Machine Learning"
-        desc="Leading Your Success Way with Intelligent and Futuristic
-        Business Solutions"
+        title="Artificial Intelligence & Machine Learning"
+        desc="Leverage Optimized Business Intelligence with Advanced Solutions of Artificial Intelligence and Machine Learning"
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -289,33 +288,12 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div>
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  AI & ML
-                </h4>
-              </div>
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Overview
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  With our pragmatic approach and AI and ML capabilities, we
-                  optimize business parameters ensuring rise in your business
-                  efficiency. Join us in embracing the power of AI and ML, and
-                  let&apos;s start journey together towards innovation and
-                  success.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+      <Abstract
+        abstractdesc="By mploying a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
+        >
+
+        </Abstract>
+      
 
       {/* Our Ai Offerings */}
       <>
@@ -332,7 +310,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                We are committed to bringing the power of AI to your business operations, providing tailored solutions that drives business proficiency. 
+               We are committed to bringing the power of Artificial Intelligence to your business operations, providing tailored solutions that drives business proficiency.
                 </p>
               </div>
             </div>
@@ -396,8 +374,7 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] ">
-                  We specialize in developing algorithms to make your operations
-                  smarter, faster and more reliable.
+                  We specialize in developing algorithms to make your operations smarter, faster and more reliable.
                 </p>
               </div>
             </div>
@@ -412,6 +389,7 @@ const page = () => {
                   alt="ML Expertise"
                   width={100}
                   height={100}
+                  quality={100}
                 />
                 <div className="p-4 pb-0">
                   <p className="text-[#101828] font-medium text-base leading-[22px]">
@@ -446,12 +424,12 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                AI/ML Platforms 
+                Intelligent Technologies Platforms
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.  
+                Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20 p-5 mb-5">
@@ -474,8 +452,8 @@ const page = () => {
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title=""
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
         arr={BenefitsData}
       ></Benefits>
 
