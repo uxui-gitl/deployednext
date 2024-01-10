@@ -387,8 +387,8 @@ const page = () => {
                   src={item.imgURL}
                   className="w-[100%]"
                   alt="ML Expertise"
-                  width={100}
-                  height={100}
+                  width={500}
+                  height={500}
                   quality={100}
                 />
                 <div className="p-4 pb-0">
