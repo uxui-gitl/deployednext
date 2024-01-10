@@ -1,7 +1,7 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import Subscription from "@/components/Subscription";
-
+import React, { useState } from "react";
 import Image from "next/image";
 
 import Icon from "@mdi/react";
@@ -11,6 +11,7 @@ import SectionNav from "@/components/SectionNav";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 import { mdiCheckboxMultipleMarked } from "@mdi/js";
 
+import Capabilities from "@/components/Capabilities";
 import inforCloudSuite from "../../../../../../public/inforCloudSuite.png";
 import Dynamic365 from "../../../../../../public/Dynamic365.png";
 import Oracle from "../../../../../../public/Oracle.png";
@@ -42,7 +43,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
+
 import Abstract from "@/components/Abstract";
+
+
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -125,6 +129,7 @@ const ConsiderRPA = [
     _id: 5,
     title:"Optimize FTE Cost",
     desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
+
     cta: "Know More",
     ctaUrl: "/",
   },
@@ -137,12 +142,11 @@ const ConsiderRPA = [
   },
   {
     _id: 7,
-    title:"Reduce AHT (Average Handling Time)",
+    title: "Reduce AHT (Average Handling Time)",
     desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
     cta: "Know More",
     ctaUrl: "/",
   },
- 
 
 ];
 
@@ -212,6 +216,7 @@ const RPACards = [
     bgcolor2: "#EDF1FF",
     bgcolor3: "#0745D3",
     icon: "scalable1",
+    list: ["Link1", "L2ink2", "Li2nk3"],
   },
   {
     _id: 2,
@@ -222,6 +227,7 @@ const RPACards = [
     bgcolor2: "#FFF8E5",
     bgcolor3: "#F4C447",
     icon: "scalable2",
+    list: ["Link1", "Link2", "Lir4nk3"],
   },
   {
     _id: 3,
@@ -232,6 +238,7 @@ const RPACards = [
     bgcolor2: "#E5F8EE",
     bgcolor3: "#429268",
     icon: "scalable3",
+    list: ["Link1", "Link22", "Link13"],
   },
   {
     _id: 4,
@@ -242,6 +249,7 @@ const RPACards = [
     bgcolor2: "#EDF1FF",
     bgcolor3: "#4C6FFF",
     icon: "scalable4",
+    list: ["Link1", "Link2", "Link3"],
   },
   {
     _id: 5,
@@ -252,6 +260,7 @@ const RPACards = [
     bgcolor2: "#FEEDED",
     bgcolor3: "#B42318",
     icon: "scalable6",
+    list: ["Link1", "Link2", "Link3"],
   },
   {
     _id: 6,
@@ -262,6 +271,7 @@ const RPACards = [
     bgcolor2: "#F5F5F5",
     bgcolor3: "#475467",
     icon: "scalable6",
+    list: ["Link1", "Link2", "Link3"],
   },
 ];
 const ChoiceSlider = [
@@ -292,6 +302,8 @@ const ChoiceSlider = [
 ];
 
 const page = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [hoveredCard, setHoveredCard] = useState(null);
   return (
     <>
       <EntIntro
@@ -348,7 +360,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left hidden max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  grid-cols-1 gap-10 sm:grid-cols-1">
             {ConsiderRPA.map((item, index) => (
               <div
                 className="flex flex-col sm:flex-row  bg-white"
@@ -381,6 +393,170 @@ const page = () => {
               </div>
             ))}
           </div>
+          {/* Capabilites */}
+          <Capabilities
+            ribbon=" "
+            title="Our Capabilities "
+            desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+            arr={[
+              {
+                _id: 1,
+                icon: "gear",
+                title: "Future of Projects  ",
+                desc: "",
+                cta: "Know More",
+                ctaUrl: "/",
+                list: [
+                  {
+                    title:
+                      "External integration with project monitoring tools  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile applications for task assignment",
+                    url: "/",
+                  },
+                  {
+                    title: "After sales service",
+                    url: "/",
+                  },
+                  {
+                    title: "Data Security & Digital Documentation ",
+                    url: "/",
+                  },
+                  {
+                    title: "Multi site management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Project Task Assignment & Management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Remote Work and Cost Accuracy   ",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 2,
+                icon: "gear",
+                title: "IoT Enabled Products ",
+                desc: "",
+                cta: "Know More",
+                ctaUrl: "/",
+                list: [
+                  {
+                    title:
+                      "External integration with project monitoring tools  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile applications for task assignment",
+                    url: "/",
+                  },
+                  {
+                    title: "After sales service",
+                    url: "/",
+                  },
+                  {
+                    title: "Data Security & Digital Documentation ",
+                    url: "/",
+                  },
+                  {
+                    title: "Multi site management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Project Task Assignment & Management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Remote Work and Cost Accuracy   ",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 3,
+                icon: "gear",
+                title: "Supply Chain Management  ",
+                desc: "",
+                cta: "Know More",
+                ctaUrl: "/",
+                list: [
+                  {
+                    title:
+                      "External integration with project monitoring tools  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile applications for task assignment",
+                    url: "/",
+                  },
+                  {
+                    title: "After sales service",
+                    url: "/",
+                  },
+                  {
+                    title: "Data Security & Digital Documentation ",
+                    url: "/",
+                  },
+                  {
+                    title: "Multi site management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Project Task Assignment & Management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Remote Work and Cost Accuracy   ",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 4,
+                icon: "gear",
+                title: "Performance Management ",
+                desc: "",
+                cta: "Know More",
+                ctaUrl: "/",
+                list: [
+                  {
+                    title:
+                      "External integration with project monitoring tools  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile applications for task assignment",
+                    url: "/",
+                  },
+                  {
+                    title: "After sales service",
+                    url: "/",
+                  },
+                  {
+                    title: "Data Security & Digital Documentation ",
+                    url: "/",
+                  },
+                  {
+                    title: "Multi site management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Project Task Assignment & Management  ",
+                    url: "/",
+                  },
+                  {
+                    title: "Remote Work and Cost Accuracy   ",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
       </>
       
@@ -398,7 +574,9 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                We are your trusted RPA partner, and our experience extends to industry-leading RPA platforms and expertise to customize solutions that fulfil your exclusive business needs. 
+                  We are your trusted RPA partner, and our experience extends to
+                  industry-leading RPA platforms and expertise to customize
+                  solutions that fulfil your exclusive business needs.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -409,9 +587,12 @@ const page = () => {
                   <Image src={powerAutomate} alt="powerAutomate" width={320} />
                 </div>
                 <div>
-                  <Image src={automationAnywhere} alt="automationAnywhere" width={200}/>
+                  <Image
+                    src={automationAnywhere}
+                    alt="automationAnywhere"
+                    width={200}
+                  />
                 </div>
-             
               </div>
             </div>
           </div>
@@ -473,12 +654,13 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                Elevating RPA Domain Advantage - Industry
+                  Elevating RPA Domain Advantage - Industry
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] pb-4">
-                We deliver innovative RPA solutions backed by our extensive experience and commitment to excellence. 
+                  We deliver innovative RPA solutions backed by our extensive
+                  experience and commitment to excellence.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -596,15 +778,16 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold  ">
-                GITL RPA Project Lifecycle
+                  GITL RPA Project Lifecycle
                 </h3>
-                
               </div>
             </div>
             {/* right */}
             <div>
               <div>
-              <p className="font-medium leading-[22px] md:w-[90%] mb-2 ">The journey towards efficiency and competency </p>
+                <p className="font-medium leading-[22px] md:w-[90%] mb-2 ">
+                  The journey towards efficiency and competency{" "}
+                </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   From inception to upheld brilliance, every stage of our
                   project lifecycle is precisely devised to optimize your
@@ -615,17 +798,23 @@ const page = () => {
           </div>
         </div>
       </>
+      {/* Rpa Card Backup */}
       <>
         <div className={` w-full pb-12 `}>
           <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
             {RPACards.map((item) => {
+              const isHovered = item._id === hoveredCard;
               return (
                 <div
                   key={item._id}
                   className={`mx-2  sm:w-[320px] w-fit flex flex-col justify-between`}
+                  onMouseOver={() => setHoveredCard(item._id)}
+                  onMouseOut={() => setHoveredCard(null)}
                 >
                   <div
-                    className={`w-full text-2xl font-bold  p-5`}
+                    className={`w-full text-2xl font-bold ${
+                      isHovered ? "hidden" : "block"
+                    }  p-5`}
                     style={{
                       backgroundColor: item.bgcolor1,
                       color: item.color,
@@ -639,16 +828,30 @@ const page = () => {
                       backgroundColor: item.bgcolor2,
                     }}
                   >
-                    <Image
-                      src={`/${item.icon}.png`}
-                      width={56}
-                      height={56}
-                      alt="scalable"
-                    />
+                    <div className="mb-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/${item.icon}.png`}
+                          width={56}
+                          height={56}
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
+                    </div>
                     <h4 className={`text-2xl font-bold my-2 text-[#101828]`}>
                       {item.title}
                     </h4>
+                    <div className={`${isHovered ? "block" : "hidden"} `}>
+                      <ul>
+                        {item.list.map((i, index) => (
+                          <li key={index}>{i}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
+
                   <div
                     className={`w-full p-2`}
                     style={{
@@ -661,6 +864,74 @@ const page = () => {
           </div>
         </div>
       </>
+
+      {/* <>
+        <div className={`w-full pb-12`}>
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5">
+            {RPACards.map((item) => {
+              const isHovered = item._id === hoveredCard;
+
+              return (
+                <div
+                  key={item._id}
+                  className={`mx-2 sm:w-[320px] w-fit flex flex-col justify-between relative ${
+                    isHovered ? "shadow-lg" : ""
+                  }`}
+                  onMouseOver={() => setHoveredCard(item._id)}
+                  onMouseOut={() => setHoveredCard(null)}
+                >
+                  <div
+                    className={`w-full text-2xl font-bold p-5 ${
+                      isHovered ? "block" : "hidden"
+                    }`}
+                    style={{
+                      backgroundColor: item.bgcolor1,
+                      color: item.color,
+                    }}
+                  >
+                    {item.keyword}
+                  </div>
+                  <div
+                    className={`p-5 w-full h-full `}
+                    style={{
+                      backgroundColor: isHovered
+                        ? item.bgcolor2
+                        : item.bgcolor2,
+                    }}
+                  >
+                    {isHovered && (
+                      <>
+                        <Image
+                          src={`/${item.icon}.png`}
+                          width={32}
+                          height={32}
+                          alt="scalable"
+                        />
+                        <h4 className={`text-lg font-bold my-2 text-[#101828]`}>
+                          {item.title}
+                        </h4>
+                        <ul className="list-disc ml-5">
+                          {item.list.map((link, index) => (
+                            <li key={index}>{link}</li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                  </div>
+                  <div
+                    className={`w-full p-2`}
+                    style={{
+                      backgroundColor: isHovered
+                        ? item.bgcolor3
+                        : item.bgcolor3,
+                    }}
+                  ></div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </> */}
 
       {/* Subscription */}
       <Subscription

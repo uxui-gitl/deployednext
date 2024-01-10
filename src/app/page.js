@@ -13,11 +13,17 @@ import Navbar from "@/components/Navbar/Navbar";
 import Testimonial from "@/sections/testimonial/Testimonial";
 import Announcement from "@/sections/announcement/Announcement";
 
+import Image from "next/image";
+
+import Icon from "@mdi/react";
+import Link from "next/link";
+import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../assets/data";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import clsx from "clsx";
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -73,6 +79,203 @@ export default function Home() {
           </div>
         </>
         <Expertise />
+        {/* Maximize business output / Vertical Slider */}
+
+        {/* Our Ai Offerings */}
+        <>
+          <div className={` w-full bg-[#FFF] py-20`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h4
+                    className={` font-medium text-[#0745D3] uppercase ribbon`}
+                  >
+                    GITL Project Solutions Portfolio
+                  </h4>
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Our Offerings
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                    Holistic and future- ready solutions to re-engineer your
+                    business with our proven implementation methodologies for
+                    maximum Return on Investment (RoI)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="text-left w-full bg-amber-100 mb-5 mx-auto   grid grid-cols-1 md:grid-cols-3">
+              {[
+                {
+                  _id: 1,
+                  title: "Automation",
+                  desc: " ",
+                  cta: "Explore Service",
+                  ctaUrl: "/",
+                  theme: "#E4F8ED",
+                  btnTheme: "#4F9D73",
+                  bgImg: "bg-card1",
+                  links: [
+                    {
+                      title: "Project Monitoring Tools ",
+                      url: "/",
+                    },
+                    {
+                      title: "Augmented Intelligence ",
+                      url: "/",
+                    },
+                    {
+                      title: "Budgeting and Forecasting ",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Driven Analytics ",
+                      url: "/",
+                    },
+
+                    {
+                      title: "Quality Control Analysis  ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 2,
+                  title: "Cloud",
+                  desc: "  ",
+                  cta: "Explore Service",
+                  ctaUrl: "/",
+                  theme: "#101828",
+                  bgImg: "",
+                  btnTheme: "#0745D3",
+                  links: [
+                    {
+                      title: "M365 ",
+                      url: "/",
+                    },
+                    {
+                      title: "Cloud Consulting",
+                      url: "/",
+                    },
+                    {
+                      title: "Upgrade/Migrate to cloud",
+                      url: "/",
+                    },
+                    {
+                      title: "ERP on cloud",
+                      url: "/",
+                    },
+                    {
+                      title: "Iot Data management in Cloud",
+                      url: "/",
+                    },
+                    {
+                      title: "DevOps",
+                      url: "/",
+                    },
+                    {
+                      title: "Cloud Security Solutions for Mfg.",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 3,
+                  title: "Transformation",
+                  desc: " ",
+                  cta: "Explore Service",
+                  bgImg: "",
+                  ctaUrl: "/",
+                  theme: "#320A53",
+                  btnTheme: "#D4A73B",
+                  links: [
+                    {
+                      title: "Architecture Designing  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Hierarchy Management ",
+                      url: "/",
+                    },
+                    {
+                      title: "Process Optimization ",
+                      url: "/",
+                    },
+                    {
+                      title: "Stakeholder work/ role assignment ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multiple invoicing modes",
+                      url: "/",
+                    },
+                    {
+                      title: "Customer Experience - CRM and Ecommerce ",
+                      url: "/",
+                    },
+                  ],
+                },
+              ].map((item, index) => (
+                <div
+                  className={clsx(
+                    `bg-[${item.theme}] py-8 sm:py-8 px-8 sm:px-24`,
+                    {
+                      "bg-card1": item.bgImg !== "",
+                    }
+                  )}
+                  key={item._id}
+                >
+                  <div className="h-full flex flex-col justify-between">
+                    <div>
+                      <p className="text-[#fff] font-bold text-[30px] leading-[36px]">
+                        {item.title}
+                      </p>
+                      <p className="text-[#fff] text-[12px] font-normal my-4 leading-[18px]">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <div>
+                      <ul className="my-8">
+                        {item.links.map((list, index) => (
+                          <li
+                            key={index}
+                            className=" border-b-[1px] w-fit border-[#DBDBDB] py-2 "
+                          >
+                            <Link
+                              href={list.url}
+                              className="text-[#fff] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                            >
+                              {list.title}{" "}
+                              <Icon path={mdiArrowTopRight} size={1} />
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                      <Link className="hidden" href={item.ctaUrl}>
+                        <div
+                          className={`text-[#fff] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75`}
+                          style={{ backgroundColor: item.btnTheme }}
+                        >
+                          {item.cta}{" "}
+                          <Icon
+                            path={mdiArrowTopRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+
         <CaseStudy
           ribbon="CASE STUDY "
           title="Delivering Results that Matters "

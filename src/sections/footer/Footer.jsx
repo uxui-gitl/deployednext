@@ -90,7 +90,7 @@ const Footer = () => {
                   <Link
                     href="/Solutions/Enterprise-Suite"
                     data-cursor-size="10px"
-                    sizeAnimationDuration="0.5"
+                    // sizeAnimationDuration="0.5"
                     className="text-sm text-[#F5F5F5] leading-6 font-medium"
                   >
                     Enterprise Suite

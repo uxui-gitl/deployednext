@@ -97,30 +97,13 @@ const page = () => {
     {
       _id: 1,
       ribbon: "blog",
-      title: "Migrate your IT Infrastructure to the Cloud",
-      desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-      cta: "Know More",
-      link: "/",
+      title: "Digitalization with Infor Coleman Artificial Intelligence & Machine Learning",
+      desc: "Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI. Having worked with Infor solutions for many years now, I see that Infor too has evolved its applications by introducing artificial intelligence & machine learning features to meet the needs of these organizations. Let’s take a closer look at these exciting features in Infor Coleman and how organizations can benefit from them.",
+      cta: "Read More",
+      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
       imgUrl: "",
     },
-    {
-      _id: 2,
-      ribbon: "News",
-      title: "Migrate your IT Infrastructure to the Cloud",
-      desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-      cta: "Know More",
-      link: "/",
-      imgUrl: "",
-    },
-    {
-      _id: 3,
-      ribbon: "blog",
-      title: "Migrate your IT Infrastructure to the Cloud",
-      desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-      cta: "Know More",
-      link: "/",
-      imgUrl: "",
-    },
+    
   ];
   const upgradeCloud = [
     {
@@ -169,23 +152,23 @@ const page = () => {
     {
       _id: 1,
       title: "Machine Learning",
-      desc: "Our ability in constructing, training and deploying ML models assure an effective implementation process.",
+      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
       cta: "Know More",
-      link: "/",
+      link: "Solutions/Intelligent-Technologies/AI-ML",
     },
     {
       _id: 2,
       title: "Artificial Intelligence ",
       desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
       cta: "Know More",
-      link: "/",
+      link: "Solutions/Intelligent-Technologies/AI-ML",
     },
     {
       _id: 3,
       title: "Robotic Process Automation",
-      desc: "Dedicate more time to strategic initiatives, enhance productivity and minimizing the time-consuming repetitive tasks.",
+        desc: "Dedicate more time to strategic initiatives, enhance productivity and minimize the time-consuming repetitive tasks.",
       cta: "Know More",
-      link: "/",
+      link: "Solutions/Intelligent-Technologies/RPA",
     },
   ];
 
@@ -209,14 +192,14 @@ const page = () => {
       icon: "benefisIntelligentTechnologies/InformedDecisionMaking",
       title: "",
       cardDesc:
-        "Informed decision-making by extracting valuable insights and identifying patterns, correlation and trends.",
+        "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
     },
     {
       _id: 4,
       icon: "benefisIntelligentTechnologies/HighDegreeAccuracyConsistency",
       title: "",
       cardDesc:
-        "A high degree of accuracy and consistency in business operations. ",
+        "A high degree of accuracy and consistency in business operations.",
     },
   ];
 
@@ -245,8 +228,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Cognitive Intelligent Solutions to Charge Your Business Value Chain with Ease"
-        desc="Our core emphasis is on advantageous business outcomes through our business grade intelligent competency while concurrently optimizing business performance."
+        title="Cognitive Intelligent Solutions to Charge Your Business Value Chain with Ease "
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -255,6 +238,27 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav arr={navLinks} />
+      </>
+
+      {/* Overview  */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Abstract 
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Our core emphasis is on advantageous business outcomes through our business grade intelligent competency while concurrently optimizing business performance.  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </>
 
       {/* About Section */}
@@ -266,7 +270,7 @@ const page = () => {
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                    Advance Solutions for Business Future Readiness
+                    Advance Solutions for Business Future Readiness 
                   </h3>
                 </div>
               </div>
@@ -274,10 +278,7 @@ const page = () => {
               <div>
                 <div>
                   <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Starting precisely where you stand in your digital
-                    transformation journey, we seamlessly integrate our teams
-                    into your culture, fostering a collaborative environment for
-                    success.
+                    Embrace the future and stay ahead in digital era, harnessing the potential of innovative technologies. 
                   </p>
                 </div>
               </div>
@@ -349,22 +350,22 @@ const page = () => {
 
       <WhySection
         title="Why choose GITL as your preferred innovation partner?"
-        desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
+        desc="Experience the positive impact on your business growth being at the forefront of innovative technologies."
         ribbon="Let's Collaborate and Make it Happen"
         arr={[
           {
             _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'>reliable partners</span> for Azure Migration Services and Managed Cloud Service across",
+            desc: "Enable intelligence-driven automation across diverse use cases",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            desc: "Drive rapid and substantial improvements in return on investment (RoI)",
             icon:"",
           },
           {
             _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            desc: "Help businesses achieve high productivity",
             icon: "",
           },
         ]}
@@ -372,7 +373,7 @@ const page = () => {
       ></WhySection>
 
       {/* Expertise */}
-      <Expertise
+      {/* <Expertise
         ribbon="Our Expertise "
         ribbonTxtWhite="true"
         title="Future Outlook with Intelligent Technologies  "
@@ -391,14 +392,13 @@ const page = () => {
             desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
           },
         ]}
-      ></Expertise>
+      ></Expertise> */}
       {/* Stats TO BE CREATED */}
       {/* Testimonial */}
-      <Testimonial
+      {/* <Testimonial
         ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+        title="Delighted Customers share their Experiences"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
@@ -406,17 +406,17 @@ const page = () => {
             clientDesignation: "IT Manager",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with excellent quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
             category: "static",
             link: "/",
           },
         ]}
-      />
+      /> */}
 
       {/* Subscription */}
       <Subscription
         title="Tap the faster and simpler way for futuristic seamless business experiences"
-        desc="Let's discuss how intelligent technologies can help you with rapid growth"
+        desc="Let us discuss how intelligent technologies can help you with rapid growth"
       />
       <InfotechWeeklyAlt />
     </>

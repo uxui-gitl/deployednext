@@ -39,7 +39,7 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
               </h3>
               <p className="font-medium leading-[22px] md:w-[90%] ">{desc}</p>
             </div>
-            <div className="max-w-max flex justify-start items-center my-5">
+            <div className="max-w-max justify-start hidden items-center my-5">
               <Link
                 href={"/"}
                 className="min-w-max flex bg-[#F5F5F5] py-2 px-10 border-2 border-[#F5F5F5] font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
@@ -115,7 +115,6 @@ const Benefits = ({ ribbon, title, desc, arr, ribbonTxtWhite, children }) => {
                       {item.icon !== "" ? (
                         <Image
                           src={`/icon/${item.icon}.svg`}
-
                           width="48"
                           height="48"
                           alt={item.icon}
