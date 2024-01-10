@@ -43,6 +43,7 @@ import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
 import Benefits from "@/components/Benefits";
 import OfferingsGrid from "@/components/OfferingsGrid";
 import { fromJSON } from "postcss";
+import Abstract from "@/components/Abstract";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -61,7 +62,7 @@ const blogData = [
     _id: 1,
     ribbon: "blog",
     title: "Legacy Modernization in Manufacturing Industry",
-    desc: "The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. The current pandemic situation has further exacerbated the situation with hackers looking at vulnerabilities for exploitation in the Industry Infrastructure. ",
+    desc: "The Manufacturing Industry is in midst of transformation with some organizations accelerating to Industry 4.0+ platforms while other organizations struggle with infrastructure which has been built for the past. The current pandemic situation has further exacerbated the situation with hackers looking at vulnerabilities for exploitation in the Industry Infrastructure.",
     cta: "Know More",
     link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=8",
     imgUrl: "",
@@ -94,41 +95,41 @@ const TechStackOfferings = [
       "/technologyStack/Service-Offerings_Custom-Application-Development.jpg",
     desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 2,
     title: "Legacy Modernisation",
     image: "/technologyStack/Service-Offerings_Legacy-Modernisation.jpg",
-    desc: "We expertly enhance your application, optimizing system uptime and seamlessly transitioning from large architectures to microservices.",
+    desc: "Continuously improving on best practices in IT consulting services, our application legacy modernization service helps customers to meet their Triple Aim goals while maximizing Return on Investment (RoI).",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 3,
     title: "Application managed services",
     image:
       "/technologyStack/Service-Offerings_Application-Managed-Services.jpg",
-    desc: "Instrumental assistance to businesses in ascending challenges, thereby enhancing application performance and attaining better business results.",
+    desc: "Providing instrumental assistance to businesses as they face challenges, we deliver enhanced value by placing the right people with the right skills in the right positions. Additionally, we bring tools and methods developed with our experiences across various industry verticals. Our application management approach covers the entire lifecycle: Build, Run and Evolve.",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 4,
     title: "Mobile Application ",
     image: "/technologyStack/Service-Offerings_Mobile-Application.jpg",
-    desc: "Experience uniform connectivity and enriched user engagement on fingertips with our comprehensive mobile app development services.",
+    desc: "Leveraging the strengths of each OS, we develop a powerful backend and a beautiful frontend. We help you to experience most advance mobile application, seamlessly running on any platform.",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
   {
     _id: 5,
     title: "Enterprise Application Integration ",
     image:
       "/technologyStack/Service-Offerings_Enterprise-Application-Integration.jpg",
-    desc: "We drive time-to-market with the adoption of cutting-edge architecture paradigms and seamlessly integrating data, processes and applications.",
+    desc: "We drive time-to-market with the adoption of modern architecture paradigms and seamlessly integrating data, processes and applications.",
     cta: "Know More",
-    link: "/",
+    link: "",
   },
 ];
 
@@ -136,28 +137,24 @@ const BenefitsData = [
   {
     _id: 1,
     icon: "benefits-technology-stack/process-analyze",
-    title: "Process and analyze vast volumes of data",
+    title: "Gain a competitive edge",
   },
   {
     _id: 2,
     icon: "benefits-technology-stack/ensure-uniformity",
-    title: "Ensure Uniformity in Financial Information",
+    title: "Elevate brand value",
   },
   {
     _id: 3,
     icon: "benefits-technology-stack/boost-brand-value",
-    title: "Boost brand value",
+    title: "Reduce training overheads and time investment",
   },
   {
     _id: 4,
     icon: "benefits-technology-stack/process-analyze",
-    title: "Process and analyze vast volumes of data",
+    title: "Ensure seamless performance",
   },
-  {
-    _id: 5,
-    icon: "benefits-technology-stack/ensure-uniformity",
-    title: "Ensure Uniformity in Financial Information",
-  },
+  
 ];
 const navLinks = [
   {
@@ -186,10 +183,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Your Trusted Technology Partner
-        for Scalable and Customized
-        Business Applications "
-        desc="Technology being keystone of business success plays an essential role in driving innovation for businesses across diverse industries. Our comprehensive suite of advanced technologies along with our dedicated capability is primed to deliver bespoke applications across various industry domains."
+        title="Your Trusted Technology Partner for Scalable and Customized Business Applications "
+        desc=""
         cta="Let's Connect"
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -220,9 +215,16 @@ const page = () => {
           ]}
         />
       </>
+
+      <Abstract
+        abstractdesc="As the cornerstone of business success, technology plays a pivotal role in fostering innovation across diverse industries. Our robust suite of advanced technologies, coupled with dedicated expertise, is equipped to deliver tailor-made applications spanning various industry domains. We are committed to providing cutting-edge solutions that align with the unique needs of each sector, ensuring businesses stay at the forefront of innovation, efficiency and adaptability in this rapidly evolving technological landscape."
+        >
+
+        </Abstract>
+
       {/* Tech Stack Platform Expertise Logos */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div className={`w-full bg-[#FFF] py-20`}>
           <div className="text-center max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
@@ -233,8 +235,7 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our focus centers on leveraging cutting-edge emerging
-                  technologies to craft high-performing applications
+                  Our focus centres on leveraging cutting edge and emerging technologies to develop high performing applications.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -375,23 +376,33 @@ const page = () => {
       </div>
 
       <WhySection
-        title="Why Choose Godrej Infotech as your preferred innovation partner?"
-        desc="We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators."
+        title="Why Godrej Infotech"
+        desc="We understand the intricacies of diverse technologies, leverage our capability and experience to deliver solutions that ally exquisitely with your business ambitions."
         ribbon="Let's Collaborate and Make it Happen"
         arr={[
           {
             _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'>reliable partners</span> for Azure Migration Services and Managed Cloud Service across",
+            desc: "Scalable infrastructure support for your business requirements",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            desc: "High agility and elevated user experience delivery while meeting timelines",
             icon: "",
           },
           {
             _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            desc: "Assured continuous support through bug fixing and upgradation",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "100% collaborative approach, quality guidelines & adherence to the right coding standards",
+            icon: "",
+          },
+           {
+            _id: 5,
+            desc: "Comprehensive requirement analysis and scope-of-work documentation before designing",
             icon: "",
           },
         ]}
@@ -400,10 +411,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Let Us Transform Your"
-        blue="Vision into Reality"
+        title="Free 30 Minutes Strategy"
+        blue="Session with Tech Expert "
         title2=""
-        desc="Complete the Form to Begin"
+        desc="Let's discuss how technology can help you with innovation. Please select a preferred time to call."
       />
 
       {/* Infotech Weekly Updates */}
