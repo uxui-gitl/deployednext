@@ -243,7 +243,7 @@ const page = () => {
 
        {/* Overview  */}
       <Abstract
-        abstractdesc="By mploying a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
+        abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
         >
 
         </Abstract>
