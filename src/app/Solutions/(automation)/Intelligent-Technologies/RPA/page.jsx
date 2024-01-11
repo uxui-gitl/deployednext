@@ -214,8 +214,8 @@ const RPACards = [
     bgcolor1: "#7491D4",
     bgcolor2: "#EDF1FF",
     bgcolor3: "#0745D3",
-    icon: "scalable1",
-    list: ["Link1", "L2ink2", "Li2nk3"],
+    icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+    list: ["Designing the server architecture", "Installing and configuring the architecture", "Setting up dev, test & production environments"],
   },
   {
     _id: 2,
@@ -225,8 +225,8 @@ const RPACards = [
     bgcolor1: "#F5D687",
     bgcolor2: "#FFF8E5",
     bgcolor3: "#F4C447",
-    icon: "scalable2",
-    list: ["Link1", "Link2", "Lir4nk3"],
+    icon: "icon/RPA-projectLifestyle/ProjectGovernance",
+    list: ["Project Governance", "Agreeing on the project development approach", "Reviewing the RPA best practices"],
   },
   {
     _id: 3,
@@ -236,8 +236,8 @@ const RPACards = [
     bgcolor1: "#6D917F",
     bgcolor2: "#E5F8EE",
     bgcolor3: "#429268",
-    icon: "scalable3",
-    list: ["Link1", "Link22", "Link13"],
+    icon: "icon/RPA-projectLifestyle/WorkflowDesign",
+    list: ["Filling in the Process Design Document (PDO)", "Creating test cases and data", "Designing the solution"],
   },
   {
     _id: 4,
@@ -247,8 +247,8 @@ const RPACards = [
     bgcolor1: "#8CA3FF",
     bgcolor2: "#EDF1FF",
     bgcolor3: "#4C6FFF",
-    icon: "scalable4",
-    list: ["Link1", "Link2", "Link3"],
+    icon: "icon/RPA-projectLifestyle/WorkflowDevelopment",
+    list: ["Building the workflows", "Performing Unit and Functional testing", "Creating the Development Specification Document (DSD)"],
   },
   {
     _id: 5,
@@ -258,8 +258,8 @@ const RPACards = [
     bgcolor1: "#B56964",
     bgcolor2: "#FEEDED",
     bgcolor3: "#B42318",
-    icon: "scalable6",
-    list: ["Link1", "Link2", "Link3"],
+    icon: "icon/RPA-projectLifestyle/QualityAssurance",
+    list: ["Executing the test cases", "Reporting the results", "Making the Go/NoGo decision"],
   },
   {
     _id: 6,
@@ -269,8 +269,8 @@ const RPACards = [
     bgcolor1: "#575D66",
     bgcolor2: "#F5F5F5",
     bgcolor3: "#475467",
-    icon: "scalable6",
-    list: ["Link1", "Link2", "Link3"],
+    icon: "icon/RPA-projectLifestyle/Hypercare",
+    list: ["Performing workflow support", "Managing Changes and Improvements"],
   },
 ];
 const ChoiceSlider = [
@@ -885,7 +885,7 @@ const page = () => {
                     <div className="mb-4">
                       {item.icon !== "" ? (
                         <Image
-                          src={`/${item.icon}.png`}
+                          src={`/${item.icon}.svg`}
                           width={56}
                           height={56}
                           alt={item.icon}
