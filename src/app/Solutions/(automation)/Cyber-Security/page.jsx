@@ -40,6 +40,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import Abstract from "@/components/Abstract";
+import BlogSlider from "@/components/BlogSlider";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -53,6 +54,19 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+const blogData = [
+    {
+      _id: 1,
+      ribbon: "blog",
+      title: "Cyber Resilience: The Essential Business Strategy ",
+      desc: "Waiting for data.",
+      cta: "Read More",
+      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+      imgUrl: "",
+    },
+    
+  ];
 
 const RPAServiceOfferings = [
   {
@@ -616,47 +630,7 @@ const page = () => {
       /> */}
 
       {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
-
-            description: "Non-government Association of Indian Industries ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 2,
-            title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
-
-            description: " Middle East-based Electrical Products Manufacturer ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-        ]}
-      />
+      <BlogSlider arr={blogData} />
 
       {/* Insert Our Experience number grid */}
 
