@@ -672,7 +672,11 @@ const page = () => {
                   </p>
                   <Link
                     href={item.ctaUrl}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    className={clsx({
+                      "text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit flex transition-all hover:opacity-75":
+                        !(item.ctaUrl === "" || item.ctaUrl === "/"),
+                      hidden: item.ctaUrl === "" || item.ctaUrl === "/",
+                    })}
                   >
                     {item.cta}{" "}
                     <Icon
