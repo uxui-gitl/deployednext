@@ -654,7 +654,49 @@ const page = () => {
       {/* Insert Our Experience number grid */}
 
       <>
-        <NumberGrid />
+        <NumberGrid
+          ribbon="Our Experience"
+          title="Multiyear Cybersecurity Program for company having"
+          desc=""
+          arr={[
+            {
+              _id: 1,
+              title: "90+",
+              desc: "Geo Location",
+              bgColor: "#EDF1FF",
+            },
+            {
+              _id: 2,
+              title: "10k+",
+              desc: "users windows & MAC",
+              bgColor: "#EDF1FF",
+            },
+            {
+              _id: 3,
+              title: "100+",
+              desc: "SQL, DB2, Informix, MySQL",
+              bgColor: "#EDF1FF",
+            },
+            {
+              _id: 4,
+              title: "1k+",
+              desc: "AWS & Azure",
+              bgColor: "#EDF1FF",
+            },
+            {
+              _id: 5,
+              title: "100+",
+              desc: "MPLS and Internet gateways",
+              bgColor: "#EDF1FF",
+            },
+            {
+              _id: 6,
+              title: "1k+",
+              desc: "Server Windows, Linux",
+              bgColor: "#EDF1FF",
+            },
+          ]}
+        />
       </>
 
       {/* Subscription */}

@@ -1,20 +1,37 @@
 import Image from "next/image";
 import React from "react";
+import Balancer from "react-wrap-balancer";
 
-const NumberGrid = () => {
+const NumberGrid = ({ ribbon, title, desc, arr }) => {
   return (
     <>
       <div
-        className={`text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]`}
+        className={`text-left max-w-screen-xl  mb-5 mx-auto p-5 py-32  px-[2rem]`}
       >
-        <div className="grid grid-cols-5 grid-rows-5 gap-8">
-          <div className="bg-[#ededed] col-span-2">1</div>
-          <div className="bg-[#ededed] col-start-3">2</div>
-          <div className="bg-[#ededed] col-start-4">3</div>
-          <div className="bg-[#ededed] row-start-2">4</div>
-          <div className="bg-[#ededed] row-start-2">5</div>
-          <div className="bg-[#ededed] row-start-2">6</div>
-          <div className="bg-[#ededed] row-start-2">7</div>
+        <div className="grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-2 gap-8">
+          <div className="  col-span-1 sm:col-span-2">
+            <h4
+              className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
+            >
+              {ribbon}
+            </h4>
+            <div className={`grid grid-cols-1 md:grid-cols-1 `}>
+              <h3 className="text-4xl leading-[42px] font-bold">
+                <Balancer>{title}</Balancer>
+              </h3>
+            </div>
+          </div>
+
+          {arr.map((item) => (
+            <div key={item._id} className="bg-[#EDF1FF] col-span-1">
+              <div className="p-8">
+                <h4 className="text-[90px] leading-[106px] text-[#0745D3] font-bold">
+                  {item.title}
+                </h4>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>
