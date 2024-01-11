@@ -289,7 +289,7 @@ const page = () => {
 
       {/* Overview  */}
       <Abstract
-        abstractdesc="By mploying a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
+        abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
         >
 
         </Abstract>
@@ -520,11 +520,11 @@ const page = () => {
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
         title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "<span style='color: #4C6FFF;'>Deep understanding of specific business domains  </span>for developing AI and ML solutions that truly meet your needs.",
             icon: "",
           },
           {
