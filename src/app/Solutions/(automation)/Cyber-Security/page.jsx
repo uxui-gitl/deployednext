@@ -38,6 +38,7 @@ import "swiper/css/pagination";
 import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
+import Abstract from "@/components/Abstract";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -411,9 +412,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Cybersecurity Pioneers: Leading the
-        Charge in Digital Protection"
-        desc="Cybersecurity can be viewed in two ways: as a potential vulnerability, risk, and cost – or as a catalyst for transformation. The key distinction lies in the confidence you have in your approach’s resilience."
+        title="Leading Digital Protection with Cybersecurity Services"
+        desc=""
         cta="Let's Connect"
         width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -446,6 +446,13 @@ const page = () => {
           ]}
         />
       </>
+
+            {/* Abstract  */}
+      <Abstract
+        abstractdesc="The escalating threat landscape has led to a rising demand for specialized cybersecurity and risk consulting services, specifically designed to fortify global enterprises and enhance their adaptability. Our cybersecurity services are designed around the customer. We offer robust collaboration to understand the challenges of your environment and design tailored secure solutions. Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
+        >
+
+        </Abstract>
 
       {/* Overview */}
       <>
@@ -484,10 +491,10 @@ const page = () => {
       </>
 
       {/* Industry Spotlight Slider */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
+            {/* left *}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -540,13 +547,13 @@ const page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
       {/* AI & ML Partners */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
+            {/* left /}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -574,26 +581,26 @@ const page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
       {/* Expertise */}
       <Expertise
-        ribbon="Our Expertise "
+        ribbon="Our Expertise"
         ribbonTxtWhite="true"
-        title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        title="Hub of Expertise"
+        desc="We're here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
         arr={[
           {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            title: "20 +",
+            desc: "Years of Managing Global customer for Data Security",
           },
           {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
+            title: "100 +",
+            desc: "Solutions Implemented",
           },
-          {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+              {
+            title: "20 +",
+            desc: "Years of Managing Global customer for Data Security",
           },
         ]}
       ></Expertise>
