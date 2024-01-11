@@ -10,100 +10,42 @@ import checkout from "../../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../../public/upgradeCloud/cloudArrows.png";
+import WhySection from "@/components/WhySection";
+import BlogSlider from "@/components/BlogSlider";
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import CaseStudy from "@/sections/caseStudy/CaseStudy";
+import Capabilities from "@/components/Capabilities";
 
 import PowerBI from "../../../../../../public/Power-BI-Logo.png";
 import PowerApp from "../../../../../../public/Power-App.png";
 import Birst from "../../../../../../public/Birst-logo.png";
 import dummy from "../../../../../../public/dummy.png";
+import Testimonial from "@/sections/testimonial/Testimonial";
 
 import Icon from "@mdi/react";
-import { mdiBullseyeArrow } from "@mdi/js";
+import { mdiBullseyeArrow, mdiTableLarge } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
-import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
-import BlogSlider from "@/components/BlogSlider";
 import SME from "@/components/SME";
 // import WhyInfotech from "@/components/WhyInfotech";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 import { mdiArrowTopRight } from "@mdi/js";
 import { mdiPlayCircle } from "@mdi/js";
-
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./page.module.css";
 import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
-const smartTools = [
-  {
-    _id: 1,
-    type: "box",
-    title: "Infor CRM",
-    theme: "light",
-    bg: "transparent",
-    desc: "With Power BI integration - a highly scalable analytics platform that accommodates both individual users",
-    icon: "Power-BI-Logo.png",
-    cta: "Know More",
-  },
-  {
-    _id: 2,
-    type: "box",
-    title: "Microsoft CRM",
-    theme: "dark",
-    bg: "#4C6FFF",
-    desc: "We help you to efficiently develop low-code applications in a fraction of the time with Power Apps",
-    icon: "Power-App.png",
-    cta: "Know More",
-  },
-  {
-    _id: 3,
-    type: "box",
-    title: "Salesforce ",
-    theme: "dark",
-    bg: "#07001F",
-    desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
-    icon: "Birst-logo.png",
-    cta: "Know More",
-  },
-  {
-    _id: 4,
-    type: "box",
-    title: "Magento",
-    theme: "dark",
-    bg: "transparent",
-    desc: "Extracting insights from tapped and  untapped data assets, we help you understand customer behaviour",
-    icon: "dummy.png",
-    cta: "Know More",
-  },
-  {
-    _id: 5,
-    type: "box",
-    title: "LS Retail",
-    theme: "light",
-    bg: "transparent",
-    desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
-    icon: "dummy.png",
-    cta: "Know More",
-  },
-];
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
+
 const page = () => {
   const lists = [
     {
@@ -135,7 +77,18 @@ const page = () => {
       text: "High Management Costs of IT Infrastructure",
     },
   ];
-
+  const blogData = [
+    {
+      _id: 1,
+      ribbon: "blog",
+      title:
+        "Digitalization with Infor Coleman Artificial Intelligence & Machine Learning",
+      desc: "Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI. Having worked with Infor solutions for many years now, I see that Infor too has evolved its applications by introducing artificial intelligence & machine learning features to meet the needs of these organizations. Let’s take a closer look at these exciting features in Infor Coleman and how organizations can benefit from them.",
+      cta: "Read More",
+      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+      imgUrl: "",
+    },
+  ];
   const upgradeCloud = [
     {
       _id: 1,
@@ -186,7 +139,43 @@ const page = () => {
       bg: "/gradient-1.png",
     },
   ];
-
+  const UseCases = [
+    {
+      _id: 1,
+      title: "Consulting ",
+      cta: "Know More",
+      link: "/",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 2,
+      title: "Employee Access Creation ",
+      cta: "Know More",
+      link: "/",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 3,
+      title: "Account Payable and Receivable Process",
+      cta: "Know More",
+      link: "/",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 4,
+      title: "Vendor Onboarding Process",
+      cta: "Know More",
+      link: "/",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 5,
+      title: "Customer Onboarding Process",
+      cta: "Know More",
+      link: "/",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+  ];
   const aglity = [
     {
       _id: 1,
@@ -217,7 +206,149 @@ const page = () => {
       title: "Cloud Monitoring and Reporting ",
     },
   ];
+  const smartTools = [
+    {
+      _id: 1,
+      type: "box",
+      title: "Infor CRM",
+      theme: "light",
+      bg: "transparent",
+      desc: "With Power BI integration - a highly scalable analytics platform that accommodates both individual users",
+      icon: "Power-BI-Logo.png",
+      cta: "Know More",
+    },
+    {
+      _id: 2,
+      type: "box",
+      title: "Microsoft CRM",
+      theme: "dark",
+      bg: "#4C6FFF",
+      desc: "We help you to efficiently develop low-code applications in a fraction of the time with Power Apps",
+      icon: "Power-App.png",
+      cta: "Know More",
+    },
+    {
+      _id: 3,
+      type: "box",
+      title: "Salesforce ",
+      theme: "dark",
+      bg: "#07001F",
+      desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
+      icon: "Birst-logo.png",
+      cta: "Know More",
+    },
+    {
+      _id: 4,
+      type: "box",
+      title: "Magento",
+      theme: "dark",
+      bg: "transparent",
+      desc: "Extracting insights from tapped and  untapped data assets, we help you understand customer behaviour",
+      icon: "dummy.png",
+      cta: "Know More",
+    },
+    {
+      _id: 5,
+      type: "box",
+      title: "LS Retail",
+      theme: "light",
+      bg: "transparent",
+      desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
+      icon: "dummy.png",
+      cta: "Know More",
+    },
+  ];
+  const fadeInAnimationVariant = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.5 * index,
+      },
+    }),
+  };
 
+  const CoreCapabilitySlider = [
+    {
+      _id: 1,
+      title: "Asset Management",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Record",
+          url: "/",
+        },
+        {
+          title: "Maintain",
+          url: "/",
+        },
+        {
+          title: "Structure",
+          url: "/",
+        },
+        {
+          title: "Standardize asset information",
+          url: "/",
+        },
+      ],
+    },
+    {
+      _id: 2,
+      title: "Asset Management",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Record",
+          url: "/",
+        },
+        {
+          title: "Maintain",
+          url: "/",
+        },
+        {
+          title: "Structure",
+          url: "/",
+        },
+        {
+          title: "Standardize asset information",
+          url: "/",
+        },
+      ],
+    },
+    {
+      _id: 3,
+      title: "Asset Management",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Record",
+          url: "/",
+        },
+        {
+          title: "Maintain",
+          url: "/",
+        },
+        {
+          title: "Structure",
+          url: "/",
+        },
+        {
+          title: "Standardize asset information",
+          url: "/",
+        },
+      ],
+    },
+  ];
   return (
     <>
       <EntIntro
@@ -229,6 +360,8 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
+
+      {/* Section Nav */}
       <>
         <SectionNav
           arr={[
@@ -256,247 +389,192 @@ const page = () => {
         />
       </>
 
-      <CaseStudy />
+      {/* Blog */}
+      <BlogSlider arr={blogData} />
 
-      {/* Data Metrics Insights to be created */}
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Core Capabilities */}
+      <>
+        <div className={` w-full bg-[#FFF] py-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5  ">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="grid grid-cols-1 sm:grid-cols-2">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Core Capabilities
+                </h3>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                    We are committed to bringing the power of AI to your
+                    business operations, providing tailored solutions that
+                    drives business proficiency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={` pt-48 pb-12 bg-[url('/bgEcomScreen.png')] flex justify-center items-center w-full`}
+          >
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl ">
+              <Swiper
+                slidesPerView={"auto"}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper"
+              >
+                {CoreCapabilitySlider.map((item) => (
+                  <>
+                    <SwiperSlide
+                      key={item._id}
+                      className="w-[308px] max-w-[308px] mr-8  relative group"
+                    >
+                      <div className="bg-[#EDF1FF]" key={item._id}>
+                        <div className=" h-full flex flex-col justify-between">
+                          <div className=" p-5">
+                            <div>
+                              <Icon
+                                path={mdiTableLarge}
+                                size={2}
+                                className="mb-4"
+                              />
+                            </div>
+                            <div>
+                              <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
+                                {item.title}
+                              </p>
+                            </div>
+                            <div>
+                              <ul className="mt-4 mb-8">
+                                {item.links.map((list, index) => (
+                                  <li
+                                    key={index}
+                                    className=" border-b-2 border-[#DBDBDB] py-2 "
+                                  >
+                                    <Link
+                                      href={list.url}
+                                      className="text-[#101828]  text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                                    >
+                                      {list.title}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                          <Link
+                            href={item.ctaUrl}
+                            className="text-[#fff] bg-[#0745D3]  p-5 w-full text-[14px] font-medium leading-[22px]  flex transition-all hover:opacity-75  "
+                          >
+                            {item.cta}{" "}
+                            <Icon
+                              path={mdiArrowRight}
+                              style={{ marginLeft: "0.5em" }}
+                              size={1}
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
 
       {/* Why Infotech */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
-                </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      <Testimonials />
-      <Awards />
-
-      {/* Infor service grid */}
-      <>
-        <div className={` w-full bg-white py-32`}>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
-            <div className="bg-white flex items-start flex-col justify-start">
-              <div className="md:flex-row flex-col flex text-left gap-x-10">
-                <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Infor Services with Expert Consulting and Success Delivery
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  We revamp your core business application with cloud-native
-                  development so that you can win a competitive threshold in the
-                  marketplace. Our adept hyper-scaler team can help rearchitect
-                  your business operations with an efficient approach
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-[2rem]">
-            <div className="grid grid-cols-1 grid-rows-1 md:grid-rows-3 md:grid-cols-2 grid-flow-row gap-5 md:gap-10 mx-auto ">
-              {upgradeCloud.map((item, i) => {
-                return (
-                  <div
-                    key={i}
-                    className={clsx(
-                      `col flex justify-between flex-col bg-[#320A53] text-white bg-cover px-14 py-16`,
-                      {
-                        " bg-[#344CA9]": item._id === 2 || item._id === 6,
-                        " bg-[url('/gradient-1.png')]": item._id === 1,
-                        " bg-[url('/gradient-2.png')]": item._id === 3,
-                      }
-                    )}
-                  >
-                    <div>
-                      <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                        {item.title}
-                      </h4>
-                      <p className="text-base leading-6 font-semibold">
-                        {item.desc}
-                      </p>
-                    </div>
-                    <Link
-                      href={item.link}
-                      className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
-                    >
-                      {item.cta}{" "}
-                      <span>
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{
-                            marginLeft: "0.5em",
-                            width: "1rem",
-                            fontSize: "14px",
-                          }}
-                          className="cta-know-more"
-                        />
-                      </span>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Innovative Infor Drivers */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Innovative Infor Drivers
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={` ${styles["bg-img"]} w-full py-32 `}>
-          <div className=" grid grid-cols-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
-            {[0, 1, 2, 3].map((item, index) => {
-              return (
-                <div key={index} className="mx-5 bg-white ">
-                  <div className="p-5  w-full ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      DataSwift Pro
-                    </h4>
-                    <p className="text-[14px] leading-[22px] text-[#475467]">
-                      Godrej Infotech Data Conversion Utility Tool offers data
-                      migration utilities facilitating faster & structured data
-                      upload and managing source & target systems, table
-                      structures, field mapping and data download/upload
-                      scripts.
-                    </p>
-                  </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
-                    <Link
-                      href={"/"}
-                      className="text-white  flex transition-all hover:opacity-75  "
-                    >
-                      Know More{" "}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      <SME />
+      <WhySection
+        ribbon="Spend LESS, GROW MORE"
+        title="Why Godrej Infotech ?"
+        desc="Embark on cloud upgradation journey by harnessing our credible
+        assessment process, strategic resources and fluent data
+        migration practice to minimise your business risk, time to
+        market and cost. Our time-tested delivery framework enables
+        businesses"
+        arr={[
+          {
+            _id: 1,
+            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
       {/* Subscription */}
       <Subscription

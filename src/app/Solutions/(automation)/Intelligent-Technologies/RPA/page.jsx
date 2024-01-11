@@ -3,6 +3,7 @@ import EntIntro from "@/components/EntIntro";
 import Subscription from "@/components/Subscription";
 import React, { useState } from "react";
 import Image from "next/image";
+import clsx from "clsx";
 
 import Icon from "@mdi/react";
 import Link from "next/link";
@@ -45,7 +46,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import IndustryExpertise from "@/components/IndustryExpertise";
 
 import Abstract from "@/components/Abstract";
-
 
 const fadeInAnimationVariant = {
   initial: {
@@ -127,7 +127,7 @@ const ConsiderRPA = [
   },
   {
     _id: 5,
-    title:"Optimize FTE Cost",
+    title: "Optimize FTE Cost",
     desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
 
     cta: "Know More",
@@ -147,7 +147,6 @@ const ConsiderRPA = [
     cta: "Know More",
     ctaUrl: "/",
   },
-
 ];
 
 const UseCases = [
@@ -338,18 +337,13 @@ const page = () => {
             },
           ]}
         />
-        
       </>
-      
-            {/* Overview  */}
-      <Abstract
-        abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes.  "
-        >
 
-        </Abstract>
+      {/* Overview  */}
+      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes.  "></Abstract>
 
       {/* Why consider RPA for Your Business */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
@@ -393,7 +387,6 @@ const page = () => {
               </div>
             ))}
           </div>
-          {/* Capabilites */}
           <Capabilities
             ribbon=" "
             title="Our Capabilities "
@@ -558,8 +551,57 @@ const page = () => {
             ]}
           />
         </div>
+      </> */}
+
+      {/* Old */}
+      <>
+        <div className={` w-full bg-[#F2F4F7] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Why Consider RPA for your business?
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
+                <Image
+                  src={RPAPlaceholder}
+                  height={150}
+                  width={150}
+                  className="w-[100%] sm:w-fit"
+                  alt={item.title}
+                />
+                <div className="p-4 sm:justify-center sm:flex sm:flex-col w-full">
+                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                    {item.title}
+                  </p>
+                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.ctaUrl}
+                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </>
-      
 
       {/* RPA Platform Expertise Logos */}
       <>
@@ -650,7 +692,7 @@ const page = () => {
       {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            
+
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -720,7 +762,9 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We endeavor to build actual business impact of Robotic Process Automation (RPA) reforming industries, improving output and leading digital transformation.  
+                  We endeavor to build actual business impact of Robotic Process
+                  Automation (RPA) reforming industries, improving output and
+                  leading digital transformation.
                 </p>
               </div>
             </div>
@@ -734,19 +778,25 @@ const page = () => {
               return (
                 <div
                   key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                  className=" mx-2 bg-white sm:w-[320px] w-full flex flex-col justify-between"
                 >
                   <div className="p-5 w-fit ">
                     <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
                       {item.title}
                     </h4>
                   </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
+                  <div
+                    // className=" w-full bg-[#0745D3] p-5"
+                    className={clsx({
+                      "w-full bg-[#0745D3] p-5": item.link !== "",
+                      hidden: item.link === "",
+                    })}
+                  >
                     <Link
                       href={item.link}
                       className="text-white  flex transition-all hover:opacity-75  "
                     >
-                      {item.cta}{" "}
+                      {item.cta}
                       <Icon
                         path={mdiArrowRight}
                         style={{ marginLeft: "0.5em" }}
@@ -807,7 +857,7 @@ const page = () => {
               return (
                 <div
                   key={item._id}
-                  className={`mx-2  sm:w-[320px] w-fit flex flex-col justify-between`}
+                  className={` mx-2  sm:w-[320px] w-full flex flex-col justify-between`}
                   onMouseOver={() => setHoveredCard(item._id)}
                   onMouseOut={() => setHoveredCard(null)}
                 >
@@ -844,9 +894,11 @@ const page = () => {
                       {item.title}
                     </h4>
                     <div className={`${isHovered ? "block" : "hidden"} `}>
-                      <ul>
+                      <ul className="  list-disc ml-4">
                         {item.list.map((i, index) => (
-                          <li key={index}>{i}</li>
+                          <li className="text-[14px] mb-2" key={index}>
+                            {i}
+                          </li>
                         ))}
                       </ul>
                     </div>

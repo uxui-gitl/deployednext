@@ -18,6 +18,7 @@ import Dynamic365 from "../../../../../public/Dynamic365.png";
 import Oracle from "../../../../../public/Oracle.png";
 import Azure from "../../../../../public/azure.png";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
+import NumberGrid from "@/components/NumberGrid";
 import RPAPlaceholder from "../../../../../public/RPAPlaceholder.png";
 
 import MLExpertise from "../../../../../public/MLExpertise.png";
@@ -651,6 +652,10 @@ const page = () => {
       />
 
       {/* Insert Our Experience number grid */}
+
+      <>
+        <NumberGrid />
+      </>
 
       {/* Subscription */}
       <Subscription

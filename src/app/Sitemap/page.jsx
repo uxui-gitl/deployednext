@@ -192,7 +192,7 @@ const page = () => {
                               "/Solutions/Enterprise-Suite/Microsoft-Practises"
                             }
                           >
-                            💫 Microsoft Practises
+                            ☑️💫 Microsoft Practises
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>
