@@ -345,7 +345,7 @@ const page = () => {
                     </ul>
                     <Link
                       href={item.ctaUrl}
-                      className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
                       {item.cta}{" "}
                       <Icon
@@ -400,7 +400,7 @@ const page = () => {
                   </p>
                   <Link
                     href={item.ctaURL}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
                     Know More{" "}
                     <Icon
