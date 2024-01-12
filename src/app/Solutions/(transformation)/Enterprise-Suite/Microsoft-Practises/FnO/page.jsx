@@ -39,7 +39,92 @@ import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
+import Expertise from "@/components/Expertise";
+import Benefits from "@/components/Benefits";
+
+import Testimonial from "@/sections/testimonial/Testimonial";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import WhySection from "@/components/WhySection";
+
 import InsightSlider from "@/components/InsightSlider";
+const ChoiceSlider = [
+  {
+    _id: 1,
+    imgUrl: "Industry-Spotlight-Manufacturing",
+    title: "Manufacturing",
+    desc: "",
+    url: "/",
+  },
+  {
+    _id: 2,
+    imgUrl: "Industry-Spotlight-Retail",
+    title: "Retail",
+    desc: "",
+    url: "/",
+  },
+  {
+    _id: 3,
+    title: "Trading and Distribution",
+    desc: "",
+    imgUrl: "Industry-Spotlight-rading-and-Distribution",
+    url: "/",
+  },
+  {
+    _id: 4,
+    title: "Healthcare ",
+    desc: "",
+    imgUrl: "Industry-served-Healthcare",
+    url: "/",
+  },
+  {
+    _id: 5,
+    title: "Project ",
+    desc: "",
+    imgUrl: "Industry-Spotlight-Projects",
+    url: "/",
+  },
+  {
+    _id: 6,
+    title: "Professional services",
+    desc: "",
+    imgUrl: "ProfessionalServices",
+    url: "/",
+  },
+];
+const expandedCardSlider = [
+  {
+    _id: 1,
+    imgUrl: "Godrej-Solution-Valve-Management",
+    title: "Dealer Management",
+    desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
+    url: "/",
+  },
+  {
+    _id: 2,
+    imgUrl: "Godrej-Solution-Valve-Management",
+    title: "Valve Manufacturing Process Management",
+    desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
+    url: "/",
+  },
+  {
+    _id: 3,
+    title: "Metal Recycling Operations Management",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+  // {
+  //   _id: 4,
+  //   title: "Dealer Management",
+  //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+  //   imgUrl: "2",
+  //   url: "/",
+  // },
+];
 const smartTools = [
   {
     _id: 1,
@@ -191,6 +276,8 @@ const page = () => {
         width="75%%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
+
+      {/* Section Nav */}
       <>
         <SectionNav
           arr={[
@@ -217,108 +304,98 @@ const page = () => {
           ]}
         />
       </>
-      <BlogSlider />
-      <CaseStudy />
-      {/* Why Infotech */}
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
+
+      {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Spotlight
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
-                </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
-                </div>
               </div>
-            </div>
-            {/* right */}
-            <div>
               <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper h-[350px]"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden h-[350px]">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
             </div>
@@ -326,7 +403,177 @@ const page = () => {
         </div>
       </>
 
-      <Testimonials />
+      {/* Industry Solutions Slider */}
+      <>
+        <div className={` w-full bg-[#F2F4F7] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mx-auto p-5 pb-0   grid grid-cols-1 ">
+            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+              <>
+                <div className={`w-full bg-[#F2F4F7] text-left`}>
+                  <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5  ">
+                    <div className="bg-[#F2F4F7] text-left">
+                      <h4
+                        className={`font-medium text-[#0745D3] uppercase ribbon`}
+                      >
+                        Accelerating Business Engineering
+                      </h4>
+                      <div className="flex flex-col md:flex-row gap-8 ">
+                        <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                          Godrej Infotech Solutions
+                        </h3>
+                        <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                          Resolving complex business challenges and seizing
+                          growth opportunities through our purpose driven
+                          solutions designed by our experts.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5  ">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {expandedCardSlider.map((item) => (
+                      <SwiperSlide
+                        key={item._id}
+                        className="w-[500px] max-w-[500px] mr-4 relative group"
+                      >
+                        <div className="relative overflow-hidden">
+                          <Image
+                            src={`/IndustrySolutionsSlider/${item.imgUrl}.jpg`}
+                            height={313}
+                            width={500}
+                            alt="icon"
+                            className="transition-transform transform group-hover:scale-105"
+                          />
+
+                          {/* Default overlay */}
+                          <div className="absolute inset-0  flex flex-col justify-end p-4">
+                            <h3 className="text-[22px] text-white font-bold mb-1">
+                              {item.title}
+                            </h3>
+                          </div>
+
+                          {/* Hover overlay */}
+                          <div className="absolute inset-0 bg-[#4c6fff] transition-opacity opacity-0 group-hover:opacity-100 flex flex-col justify-end p-4">
+                            <h3 className="text-[22px] text-white font-bold mb-1">
+                              {item.title}
+                            </h3>
+                            <p className="text-white leading-[20px] mb-5">
+                              {item.desc}
+                            </p>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Let's Collaborate and Make it Happen"
+        title="Why Choose GITL for AI and ML?"
+        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
 
       {/* Subscription */}
       <Subscription

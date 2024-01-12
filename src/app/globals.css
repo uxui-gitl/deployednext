@@ -364,6 +364,7 @@ h4.ribbon {
   color: #4c6fff;
   padding: 0.5em 2em;
   display: inline-block;
+  padding: 0.5em 2em 0.5em 1em;
   /* margin-bottom: 1em; */
 }
 

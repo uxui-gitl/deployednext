@@ -23,7 +23,6 @@ import HighDegreeAccuracyConsistency from "../../../../../public/icon/benefisInt
 import InformedDecisionMaking from "../../../../../public/icon/benefisIntelligentTechnologies/InformedDecisionmaking.svg";
 import RealTimeProblemSolvingCapabilities from "../../../../../public/icon/benefisIntelligentTechnologies/RealTimeProblemSolvingCapabilities.svg";
 
-
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -98,13 +97,13 @@ const page = () => {
     {
       _id: 1,
       ribbon: "blog",
-      title: "Digitalization with Infor Coleman Artificial Intelligence & Machine Learning",
+      title:
+        "Digitalization with Infor Coleman Artificial Intelligence & Machine Learning",
       desc: "Many of the organizations we work with today are looking for ways to optimize business processes, reduce manual work, and enhance customer service by using best-of-breed digital technologies that promise a speedy ROI. Having worked with Infor solutions for many years now, I see that Infor too has evolved its applications by introducing artificial intelligence & machine learning features to meet the needs of these organizations. Let’s take a closer look at these exciting features in Infor Coleman and how organizations can benefit from them.",
       cta: "Read More",
       link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
       imgUrl: "",
     },
-    
   ];
   const upgradeCloud = [
     {
@@ -167,7 +166,7 @@ const page = () => {
     {
       _id: 3,
       title: "Robotic Process Automation",
-        desc: "Dedicate more time to strategic initiatives, enhance productivity and minimize the time-consuming repetitive tasks.",
+      desc: "Dedicate more time to strategic initiatives, enhance productivity and minimize the time-consuming repetitive tasks.",
       cta: "Know More",
       link: "Solutions/Intelligent-Technologies/RPA",
     },
@@ -190,14 +189,14 @@ const page = () => {
     },
     {
       _id: 3,
-      icon: "benefisIntelligentTechnologies/InformedDecisionMaking",
+      icon: "benefisIntelligentTechnologies/InformedDecisionmaking",
       title: "",
       cardDesc:
         "Informed decision-making by extracting valuable insights and identifying patterns, correlation, and trends.",
     },
     {
       _id: 4,
-      icon: "benefisIntelligentTechnologies/HighDegreeAccuracyConsistency",
+      icon: "benefisIntelligentTechnologies/highDegreeAccuracyConsistency",
       title: "",
       cardDesc:
         "A high degree of accuracy and consistency in business operations.",
@@ -241,12 +240,8 @@ const page = () => {
         <SectionNav arr={navLinks} />
       </>
 
-       {/* Overview  */}
-      <Abstract
-        abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
-        >
-
-        </Abstract>
+      {/* Overview  */}
+      <Abstract abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."></Abstract>
 
       {/* About Section */}
       <>
@@ -257,7 +252,7 @@ const page = () => {
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                    Advance Solutions for Business Future Readiness 
+                    Advance Solutions for Business Future Readiness
                   </h3>
                 </div>
               </div>
@@ -265,7 +260,8 @@ const page = () => {
               <div>
                 <div>
                   <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Embrace the future and stay ahead in digital era, harnessing the potential of innovative technologies. 
+                    Embrace the future and stay ahead in digital era, harnessing
+                    the potential of innovative technologies.
                   </p>
                 </div>
               </div>
@@ -348,7 +344,7 @@ const page = () => {
           {
             _id: 2,
             desc: "Drive rapid and substantial improvements in return on investment (RoI)",
-            icon:"",
+            icon: "",
           },
           {
             _id: 3,

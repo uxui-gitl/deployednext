@@ -36,6 +36,7 @@ import AptitudeToRespond from "../../../../../public/icon/Benefits-upgradeCloud/
 import IntegrateBigDataAnalytics from "../../../../../public/icon/Benefits-upgradeCloud/IntegrateBigDataAnalytics.svg";
 import SecurelyStores from "../../../../../public/icon/Benefits-upgradeCloud/SecurelyStores.svg";
 import EnhanceSystemPerformance from "../../../../../public/icon/Benefits-upgradeCloud/EnhanceSystemPerformance.svg";
+import { useState } from "react";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -52,6 +53,17 @@ const fadeInAnimationVariant = {
 };
 
 export default function Home() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [selectedTitle, setSelectedTitle] = useState("");
+
+  const openPopup = (title) => {
+    setSelectedTitle(title);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
   const lists = [
     {
       id: 1,
@@ -145,6 +157,22 @@ export default function Home() {
     },
     {
       _id: 5,
+      title: "Cloud Database Migration",
+      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
+      cta: "Know more",
+      link: "/",
+      bg: "/gradient-1.png",
+    },
+    {
+      _id: 6,
+      title: "Cloud Database Migration",
+      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
+      cta: "Know more",
+      link: "/",
+      bg: "/gradient-1.png",
+    },
+    {
+      _id: 7,
       title: "Cloud Database Migration",
       desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
       cta: "Know more",
@@ -409,8 +437,8 @@ export default function Home() {
                     <p className="text-base leading-6 font-medium">
                       {item.desc}
                     </p>
-                    <Link
-                      href={item.link}
+                    <button
+                      onClick={() => openPopup(item.title)}
                       className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
                     >
                       {item.cta}{" "}
@@ -425,7 +453,7 @@ export default function Home() {
                           className="cta-know-more"
                         />
                       </span>
-                    </Link>
+                    </button>
                   </div>
                 );
               })}
@@ -457,6 +485,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* Popup */}
+          {isPopupOpen && (
+            <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
+              <div className="bg-white p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4">{selectedTitle}</h3>
+                {/* Add more content or components as needed */}
+                <button
+                  onClick={closePopup}
+                  className="text-blue-500 hover:underline"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </>
 
         {/* Spotlight test */}

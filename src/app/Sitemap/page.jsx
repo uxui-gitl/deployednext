@@ -204,7 +204,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Microsoft-Practises/Business-Central"
                                   }
                                 >
-                                  Business Central
+                                  ☑️ Business Central
                                 </Link>
                               </li>
                               <li>
@@ -212,7 +212,7 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/F&O"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/FnO"
                                   }
                                 >
                                   F&O

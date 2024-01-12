@@ -44,10 +44,7 @@ export default function Home() {
   };
 
   // Set the default center location (San Francisco, CA in this case)
-  const center = {
-    lat: 37.7749,
-    lng: -122.4194,
-  };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
