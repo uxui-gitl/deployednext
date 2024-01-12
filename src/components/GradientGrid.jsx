@@ -1,4 +1,8 @@
-import React from "react";
+"use client";
+import { mdiArrowLeft, mdiArrowRight } from "@mdi/js";
+import Icon from "@mdi/react";
+import clsx from "clsx";
+import React, { useState } from "react";
 
 const GradientGrid = () => {
   const upgradeCloud = [
@@ -153,16 +157,34 @@ const GradientGrid = () => {
       </div>
       {/* Popup */}
       {isPopupOpen && (
-        <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">{selectedTitle}</h3>
-            {/* Add more content or components as needed */}
-            <button
-              onClick={closePopup}
-              className="text-blue-500 hover:underline"
-            >
-              Close
-            </button>
+        <div className="fixed  inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white  w-full max-w-screen-xl">
+            <div className="bg-[#F2F4F7] p-8">
+              <button
+                onClick={closePopup}
+                className="text-blue-500 flex flex-row mb-8 gap-2 items-center "
+              >
+                <span>
+                  <Icon
+                    path={mdiArrowLeft}
+                    style={{
+                      width: "1rem",
+                      fontSize: "14px",
+                    }}
+                    className="cta-know-more"
+                  />
+                </span>{" "}
+                Back to solutions
+              </button>
+              <h3 className="text-[36px] font-bold leading-[42px] mb-4">
+                {selectedTitle}
+              </h3>
+              {/* Tab Indicators here */}
+            </div>
+            <div className="bg-[#fff] p-8">
+              <div>tab 1 content</div>
+              <div>tab 2 content</div>
+            </div>
           </div>
         </div>
       )}
