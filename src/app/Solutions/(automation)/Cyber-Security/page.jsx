@@ -56,17 +56,16 @@ const fadeInAnimationVariant = {
 };
 
 const blogData = [
-    {
-      _id: 1,
-      ribbon: "blog",
-      title: "Cyber Resilience: The Essential Business Strategy ",
-      desc: "Waiting for data.",
-      cta: "Read More",
-      link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
-      imgUrl: "",
-    },
-    
-  ];
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Cyber Resilience: The Essential Business Strategy ",
+    desc: "Waiting for data.",
+    cta: "Read More",
+    link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+    imgUrl: "",
+  },
+];
 
 const RPAServiceOfferings = [
   {
@@ -462,12 +461,8 @@ const page = () => {
         />
       </>
 
-            {/* Abstract  */}
-      <Abstract
-        abstractdesc="The escalating threat landscape has led to a rising demand for specialized cybersecurity and risk consulting services, specifically designed to fortify global enterprises and enhance their adaptability. Our cybersecurity services are designed around the customer. We offer robust collaboration to understand the challenges of your environment and design tailored secure solutions. Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."
-        >
-
-        </Abstract>
+      {/* Abstract  */}
+      <Abstract abstractdesc="The escalating threat landscape has led to a rising demand for specialized cybersecurity and risk consulting services, specifically designed to fortify global enterprises and enhance their adaptability. Our cybersecurity services are designed around the customer. We offer robust collaboration to understand the challenges of your environment and design tailored secure solutions. Partner with us to effectively safeguard your business's future in this ever-evolving digital landscape."></Abstract>
 
       {/* Overview */}
       {/* <>
@@ -613,7 +608,7 @@ const page = () => {
             title: "100 +",
             desc: "Solutions Implemented",
           },
-              {
+          {
             title: "20 +",
             desc: "Years of Managing Global customer for Data Security",
           },
@@ -645,25 +640,42 @@ const page = () => {
               title: "90+",
               desc: "Geo Location",
               bgColor: "#EDF1FF",
+              onlyNumber: false,
             },
             {
               _id: 2,
               title: "10k+",
               desc: "users windows & MAC",
               bgColor: "#EDF1FF",
+              onlyNumber: false,
             },
-           
+            {
+              _id: 3,
+              title: "100+",
+              desc: "SQL, DB2, Informix, MySQL",
+              bgColor: "#EDF1FF",
+              onlyNumber: true,
+            },
+            {
+              _id: 4,
+              title: "1k+",
+              desc: "AWS & Azure",
+              bgColor: "#EDF1FF",
+              onlyNumber: true,
+            },
             {
               _id: 5,
               title: "100+",
               desc: "MPLS and Internet gateways",
               bgColor: "#EDF1FF",
+              onlyNumber: false,
             },
             {
               _id: 6,
               title: "1k+",
               desc: "Server Windows, Linux",
               bgColor: "#EDF1FF",
+              onlyNumber: false,
             },
           ]}
         />

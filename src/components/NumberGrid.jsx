@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Balancer from "react-wrap-balancer";
 
-const NumberGrid = ({ ribbon, title, desc, arr }) => {
+const NumberGrid = ({ ribbon, title, desc, onlyNumber, arr }) => {
   return (
     <>
       <div
@@ -24,11 +24,21 @@ const NumberGrid = ({ ribbon, title, desc, arr }) => {
 
           {arr.map((item) => (
             <div key={item._id} className="bg-[#EDF1FF] col-span-1">
-              <div className="p-8">
-                <h4 className="text-[90px] leading-[106px] text-[#0745D3] font-bold">
-                  {item.title}
-                </h4>
-                <p>{item.desc}</p>
+              <div className="p-8 h-full">
+                {item.onlyNumber == false ? (
+                  <>
+                    <h4 className="text-[90px] leading-[106px] text-[#0745D3] font-bold">
+                      {item.title}
+                    </h4>
+                    <p>{item.desc}</p>
+                  </>
+                ) : (
+                  <>
+                    <p className="font-bold text-[18px] text-center align-middle flex justify-center h-full items-center">
+                      {item.desc}
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           ))}
