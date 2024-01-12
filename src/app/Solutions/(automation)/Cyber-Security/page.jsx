@@ -470,7 +470,7 @@ const page = () => {
         </Abstract>
 
       {/* Overview */}
-      <>
+      {/* <>
         <div className={` w-full bg-white pt-24`}>
           <div className="text-left   max-w-screen-xl  mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
             <div className="bg-white flex items-start flex-col justify-start">
@@ -497,7 +497,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
       {/*  Card Slider Offerings */}
 
@@ -652,18 +652,7 @@ const page = () => {
               desc: "users windows & MAC",
               bgColor: "#EDF1FF",
             },
-            {
-              _id: 3,
-              title: "100+",
-              desc: "SQL, DB2, Informix, MySQL",
-              bgColor: "#EDF1FF",
-            },
-            {
-              _id: 4,
-              title: "1k+",
-              desc: "AWS & Azure",
-              bgColor: "#EDF1FF",
-            },
+           
             {
               _id: 5,
               title: "100+",
