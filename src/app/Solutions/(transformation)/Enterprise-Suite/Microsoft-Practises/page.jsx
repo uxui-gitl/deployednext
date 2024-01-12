@@ -32,7 +32,6 @@ import Expertise from "@/components/Expertise";
 import { mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
-import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import SectionNav from "@/components/SectionNav";
 import BlogSlider from "@/components/BlogSlider";
 import SME from "@/components/SME";
