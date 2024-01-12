@@ -250,10 +250,10 @@ const page = () => {
 
       {/* About Section */}
       <>
-        <>
+        {/* <>
           <div className={` w-full bg-[#FFF] py-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-              {/* left */}
+              {/* left *}
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
@@ -261,7 +261,7 @@ const page = () => {
                   </h3>
                 </div>
               </div>
-              {/* right */}
+              {/* right *}
               <div>
                 <div>
                   <p className="font-normal leading-[22px] md:w-[90%] ">
@@ -271,12 +271,20 @@ const page = () => {
               </div>
             </div>
           </div>
-        </>
+        </> */}
         <>
           <div
-            className={` ${styles["bg-img"]} w-full pt-48 pb-12 `}
+            className={` ${styles["bg-img"]} w-full pt-32 pb-12 mt-32`}
             id="productivity"
           >
+             
+            <div className="text-left text-white max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+              <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                    Advance Solutions for Business Future Readiness 
+                  </h3>
+
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
               {AdvancedSolutions.map((item, index) => {
                 return (
