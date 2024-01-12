@@ -274,7 +274,7 @@ const page = () => {
         </> */}
         <>
           <div
-            className={` ${styles["bg-img"]} w-full pt-32 pb-12 `}
+            className={` ${styles["bg-img"]} w-full pt-32 pb-12 mt-32`}
             id="productivity"
           >
              
@@ -283,9 +283,6 @@ const page = () => {
                     Advance Solutions for Business Future Readiness 
                   </h3>
 
-                  <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Embrace the future and stay ahead in digital era, harnessing the potential of innovative technologies. 
-                  </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
