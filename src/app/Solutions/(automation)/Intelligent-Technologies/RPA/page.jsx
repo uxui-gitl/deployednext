@@ -103,6 +103,7 @@ const ConsiderRPA = [
     desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/IncreasedProductivity.jpg",
   },
   {
     _id: 2,
@@ -110,6 +111,7 @@ const ConsiderRPA = [
     desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.jpg",
   },
   {
     _id: 3,
@@ -117,6 +119,7 @@ const ConsiderRPA = [
     desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/EnsureCompliance.jpg",
   },
   {
     _id: 4,
@@ -124,6 +127,7 @@ const ConsiderRPA = [
     desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/StrengthenPotential.jpg",
   },
   {
     _id: 5,
@@ -132,6 +136,7 @@ const ConsiderRPA = [
 
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/OptimizeFTEcost.jpg",
   },
   {
     _id: 6,
@@ -139,6 +144,7 @@ const ConsiderRPA = [
     desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/EnhanceFlexibility.jpg",
   },
   {
     _id: 7,
@@ -146,6 +152,7 @@ const ConsiderRPA = [
     desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
     cta: "Know More",
     ctaUrl: "/",
+    image: "/rpa/ReduceAHT.jpg",
   },
 ];
 
@@ -572,9 +579,9 @@ const page = () => {
                 key={item._id}
               >
                 <Image
-                  src={RPAPlaceholder}
-                  height={150}
-                  width={150}
+                  src={item.image}
+                  height={130}
+                  width={130}
                   className="w-[100%] sm:w-fit"
                   alt={item.title}
                 />
