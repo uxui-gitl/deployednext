@@ -103,7 +103,7 @@ const ConsiderRPA = [
     desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/IncreasedProductivity.jpg",
+    image: "/rpa/IncreasedProductivity.png",
   },
   {
     _id: 2,
@@ -111,7 +111,7 @@ const ConsiderRPA = [
     desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/GainAccurateOutcomes.jpg",
+    image: "/rpa/GainAccurateOutcomes.png",
   },
   {
     _id: 3,
@@ -119,7 +119,7 @@ const ConsiderRPA = [
     desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/EnsureCompliance.jpg",
+    image: "/rpa/EnsureCompliance.png",
   },
   {
     _id: 4,
@@ -127,7 +127,7 @@ const ConsiderRPA = [
     desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/StrengthenPotential.jpg",
+    image: "/rpa/StrengthenPotential.png",
   },
   {
     _id: 5,
@@ -136,7 +136,7 @@ const ConsiderRPA = [
 
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/OptimizeFTEcost.jpg",
+    image: "/rpa/OptimizeFTEcost.png",
   },
   {
     _id: 6,
@@ -144,7 +144,7 @@ const ConsiderRPA = [
     desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/EnhanceFlexibility.jpg",
+    image: "/rpa/EnhanceFlexibility.png",
   },
   {
     _id: 7,
@@ -152,7 +152,7 @@ const ConsiderRPA = [
     desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
     cta: "Know More",
     ctaUrl: "/",
-    image: "/rpa/ReduceAHT.jpg",
+    image: "/rpa/ReduceAHT.png",
   },
 ];
 
