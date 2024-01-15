@@ -9,7 +9,7 @@ const Abstract = (AbstractProps) => {
              
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Abstract
+                  Overview
                 </h3>
               </div>
               <div>
