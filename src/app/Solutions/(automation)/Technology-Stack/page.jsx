@@ -109,7 +109,7 @@ const TechStackOfferings = [
     _id: 3,
     title: "Application managed services",
     image:
-      "/technologyStack/Service-Offerings_Application-managed-Services.jpg",
+      "/technologyStack/Service-Offerings_Application-managed-services.jpg",
     desc: "Providing instrumental assistance to businesses as they face challenges, we deliver enhanced value by placing the right people with the right skills in the right positions. Additionally, we bring tools and methods developed with our experiences across various industry verticals. Our application management approach covers the entire lifecycle: Build, Run and Evolve.",
     cta: "Know More",
     link: "",
@@ -349,7 +349,6 @@ const page = () => {
                   desc: "Ensuring long-term stability, reliability and scalability of the application",
                   image: "/technologyStack/Application-Maintenance.jpg",
                 },
-                
               ]}
             />
           </div>
