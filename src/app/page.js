@@ -91,7 +91,7 @@ export default function Home() {
                   <h4
                     className={` font-medium text-[#0745D3] uppercase ribbon`}
                   >
-                    GITL Project Solutions Portfolio
+                    Godrej Infotech Project Solutions Portfolio
                   </h4>
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                     Our Offerings
@@ -112,7 +112,7 @@ export default function Home() {
               {[
                 {
                   _id: 1,
-                  title: "Automation",
+                  title: "Services",
                   desc: " ",
                   cta: "Explore Service",
                   ctaUrl: "/",
@@ -121,31 +121,35 @@ export default function Home() {
                   bgImg: "bg-card1",
                   links: [
                     {
-                      title: "Project Monitoring Tools ",
+                      title: "Business Consulting",
                       url: "/",
                     },
                     {
-                      title: "Augmented Intelligence ",
+                      title: "Implementations & Global Rollout",
                       url: "/",
                     },
                     {
-                      title: "Budgeting and Forecasting ",
+                      title: "Migrations & Transformation",
                       url: "/",
                     },
                     {
-                      title: "Data Driven Analytics ",
+                      title: "Legacy Modernisation",
                       url: "/",
                     },
 
                     {
-                      title: "Quality Control Analysis  ",
+                      title: "Infrastructure as a service ",
+                      url: "/",
+                    },
+                    {
+                      title: "Managed Services",
                       url: "/",
                     },
                   ],
                 },
                 {
                   _id: 2,
-                  title: "Cloud",
+                  title: "Industry Spotlight",
                   desc: "  ",
                   cta: "Explore Service",
                   ctaUrl: "/",
@@ -158,34 +162,34 @@ export default function Home() {
                       url: "/",
                     },
                     {
-                      title: "Cloud Consulting",
+                      title: "Manufacturing",
                       url: "/",
                     },
                     {
-                      title: "Upgrade/Migrate to cloud",
+                      title: "Retail",
                       url: "/",
                     },
                     {
-                      title: "ERP on cloud",
+                      title: "Trading & Distribution",
                       url: "/",
                     },
                     {
-                      title: "Iot Data management in Cloud",
+                      title: "Healthcare",
                       url: "/",
                     },
                     {
-                      title: "DevOps",
+                      title: "Professional Service",
                       url: "/",
                     },
                     {
-                      title: "Cloud Security Solutions for Mfg.",
+                      title: "Project",
                       url: "/",
                     },
                   ],
                 },
                 {
                   _id: 3,
-                  title: "Transformation",
+                  title: "Partners",
                   desc: " ",
                   cta: "Explore Service",
                   bgImg: "",
@@ -194,27 +198,31 @@ export default function Home() {
                   btnTheme: "#D4A73B",
                   links: [
                     {
-                      title: "Architecture Designing  ",
+                      title: "Microsoft",
                       url: "/",
                     },
                     {
-                      title: "Hierarchy Management ",
+                      title: "Infor",
                       url: "/",
                     },
                     {
-                      title: "Process Optimization ",
+                      title: "Oracle",
                       url: "/",
                     },
                     {
-                      title: "Stakeholder work/ role assignment ",
+                      title: "Salesforce",
                       url: "/",
                     },
                     {
-                      title: "Multiple invoicing modes",
+                      title: "LS Retail",
                       url: "/",
                     },
                     {
-                      title: "Customer Experience - CRM and Ecommerce ",
+                      title: "Automation Anywhere",
+                      url: "/",
+                    },
+                    {
+                      title: "Ui Path",
                       url: "/",
                     },
                   ],
