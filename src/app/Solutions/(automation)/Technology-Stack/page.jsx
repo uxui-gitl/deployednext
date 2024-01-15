@@ -109,7 +109,7 @@ const TechStackOfferings = [
     _id: 3,
     title: "Application managed services",
     image:
-      "/technologyStack/Service-Offerings_Application-Managed-Services.jpg",
+      "/technologyStack/Service-Offerings_Application-managed-Services.jpg",
     desc: "Providing instrumental assistance to businesses as they face challenges, we deliver enhanced value by placing the right people with the right skills in the right positions. Additionally, we bring tools and methods developed with our experiences across various industry verticals. Our application management approach covers the entire lifecycle: Build, Run and Evolve.",
     cta: "Know More",
     link: "",
@@ -154,7 +154,6 @@ const BenefitsData = [
     icon: "benefits-technology-stack/process-analyze",
     title: "Ensure seamless performance",
   },
-  
 ];
 const navLinks = [
   {
@@ -216,11 +215,7 @@ const page = () => {
         />
       </>
 
-      <Abstract
-        abstractdesc="As the cornerstone of business success, technology plays a pivotal role in fostering innovation across diverse industries. Our robust suite of advanced technologies, coupled with dedicated expertise, is equipped to deliver tailor-made applications spanning various industry domains. We are committed to providing cutting-edge solutions that align with the unique needs of each sector, ensuring businesses stay at the forefront of innovation, efficiency and adaptability in this rapidly evolving technological landscape."
-        >
-
-        </Abstract>
+      <Abstract abstractdesc="As the cornerstone of business success, technology plays a pivotal role in fostering innovation across diverse industries. Our robust suite of advanced technologies, coupled with dedicated expertise, is equipped to deliver tailor-made applications spanning various industry domains. We are committed to providing cutting-edge solutions that align with the unique needs of each sector, ensuring businesses stay at the forefront of innovation, efficiency and adaptability in this rapidly evolving technological landscape."></Abstract>
 
       {/* Tech Stack Platform Expertise Logos */}
       <>
@@ -235,7 +230,8 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our focus centres on leveraging cutting edge and emerging technologies to develop high performing applications.
+                  Our focus centres on leveraging cutting edge and emerging
+                  technologies to develop high performing applications.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -400,7 +396,7 @@ const page = () => {
             desc: "100% collaborative approach, quality guidelines & adherence to the right coding standards",
             icon: "",
           },
-           {
+          {
             _id: 5,
             desc: "Comprehensive requirement analysis and scope-of-work documentation before designing",
             icon: "",

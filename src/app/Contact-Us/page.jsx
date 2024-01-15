@@ -11,6 +11,7 @@ import ReactFlagsSelect from "react-flags-select";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import Navbar from "@/components/Navbar/Navbar";
+import Announcement from "@/sections/announcement/Announcement";
 
 const MySwal = withReactContent(Swal);
 const ContactUs = () => {
@@ -185,6 +186,15 @@ const ContactUs = () => {
 
   return (
     <>
+      {/* Nav */}
+      <Announcement />
+
+      <div className={`relative z-[500]`}>
+        <div className={`absolute w-full  `}>
+          <Navbar theme="dark" />
+        </div>
+      </div>
+
       {/* Global Locations */}
       <>
         <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
