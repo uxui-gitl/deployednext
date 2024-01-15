@@ -24,6 +24,11 @@ const ClientLogos = () => {
       title: "Cii",
       url: "/client/cii.png",
     },
+    {
+      id: 5,
+      title: "Reza",
+      url: "/client/REZA.png",
+    },
   ];
 
   return (
