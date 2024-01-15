@@ -136,22 +136,22 @@ const TechStackOfferings = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "benefits-technology-stack/process-analyze",
+    icon: "benefits-technology-stack/GainCompetitiveEdge",
     title: "Gain a competitive edge",
   },
   {
     _id: 2,
-    icon: "benefits-technology-stack/ensure-uniformity",
+    icon: "benefits-technology-stack/ElevateBrandValue",
     title: "Elevate brand value",
   },
   {
     _id: 3,
-    icon: "benefits-technology-stack/boost-brand-value",
+    icon: "benefits-technology-stack/ReduceTrainingOverheads",
     title: "Reduce training overheads and time investment",
   },
   {
     _id: 4,
-    icon: "benefits-technology-stack/process-analyze",
+    icon: "benefits-technology-stack/EnsureSeamlessPerformance",
     title: "Ensure seamless performance",
   },
 ];
