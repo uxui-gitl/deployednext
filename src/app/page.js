@@ -101,9 +101,7 @@ export default function Home() {
               <div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Holistic and future- ready solutions to re-engineer your
-                    business with our proven implementation methodologies for
-                    maximum Return on Investment (RoI)
+                    Explore the boundless possibilities that our industry-focused expertise and reliable partnerships bring to your business landscape through service offerings.
                   </p>
                 </div>
               </div>
