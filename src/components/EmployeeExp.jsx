@@ -7,7 +7,7 @@ const EmployeeExp = ({ ribbon, heading, desc, arr }) => {
   const renderCard = (item) => (
     <div
       key={item._id}
-      className={`rounded-xl my-4 ml-4 flex justify-start flex-col p-4 bg-[#F2F4F7] hover:bg-[#CE2EE3]`}
+      className={`rounded-xl my-4 ml-4 flex justify-start flex-col p-4 bg-[#F2F4F7] hover:bg-gradient-to-br hover:from-ce2ee3 hover:via-7433ea hover:to-070021`}
     >
       <div className="w-fit h-fit max-w-sm min-w-fit">
         <p className=" ">

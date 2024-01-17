@@ -170,7 +170,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                 <label className="flex justify-start items-start gap-3 mb-5">
                   <input
                     type="checkbox"
-                    class="default:ring-2 mt-[6px]"
+                    className="default:ring-2 mt-[6px]"
                     name="Consent"
                     value={formData.Consent}
                     onChange={handleChange}

@@ -20,7 +20,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import WhySection from "@/components/WhySection";
 import Benefits from "@/components/Benefits";
 import Icon from "@mdi/react";
-import { mdiBullseyeArrow } from "@mdi/js";
+import { mdiArrowLeft, mdiBullseyeArrow } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
@@ -163,22 +163,6 @@ export default function Home() {
       link: "/",
       bg: "/gradient-1.png",
     },
-    {
-      _id: 6,
-      title: "Cloud Database Migration",
-      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 7,
-      title: "Cloud Database Migration",
-      desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
   ];
 
   const aglity = [
@@ -211,7 +195,16 @@ export default function Home() {
       title: "Cloud Monitoring and Reporting ",
     },
   ];
+  const tabs = [
+    { label: "Tab 1", content: "Content for Tab 1" },
+    { label: "Tab 2", content: "Content for Tab 2" },
+    { label: "Tab 3", content: "Content for Tab 3" },
+  ];
+  const [activeTab, setActiveTab] = useState(0);
 
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+  };
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
@@ -419,42 +412,45 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 grid-flow-row gap-5 sm:gap-10 mx-auto px-[2rem] md:px-20 sm:px-[8rem]">
               {upgradeCloud.map((item, i) => {
                 return (
-                  <div
-                    key={i}
-                    className={clsx(`col px-14 py-16 text-white`, {
-                      "bg-[#344CA9]": item._id === 2,
-                      " bg-[#320A53]": item._id === 4 || item._id === 5,
-                      " bg-[url('/gradient-1.png')]": item._id === 1,
-                      " bg-[url('/gradient-2.png')]": item._id === 3,
-                    })}
-                  >
-                    <h4 className="text-[30px] font-bold leading-[42px] mb-3">
-                      {item.title}
-                    </h4>
-                    <p className="text-base leading-6 font-medium">
-                      {item.desc}
-                    </p>
-                    <button
-                      onClick={() => openPopup(item.title)}
-                      className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
+                  <>
+                    <div
+                      key={i}
+                      className={clsx(`col px-14 py-16 text-white`, {
+                        "bg-[#344CA9]": item._id === 2,
+                        " bg-[#320A53]": item._id === 4 || item._id === 5,
+                        " bg-[url('/gradient-1.png')]": item._id === 1,
+                        " bg-[url('/gradient-2.png')]": item._id === 3,
+                      })}
                     >
-                      {item.cta}{" "}
-                      <span>
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{
-                            marginLeft: "0.5em",
-                            width: "1rem",
-                            fontSize: "14px",
-                          }}
-                          className="cta-know-more"
-                        />
-                      </span>
-                    </button>
-                  </div>
+                      <h4 className="text-[30px] font-bold leading-[42px] mb-3">
+                        {item.title}
+                      </h4>
+                      <p className="text-base leading-6 font-medium">
+                        {item.desc}
+                      </p>
+                      <button
+                        onClick={() => openPopup(item.title)}
+                        className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
+                      >
+                        {item.cta}{" "}
+                        <span>
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{
+                              marginLeft: "0.5em",
+                              width: "1rem",
+                              fontSize: "14px",
+                            }}
+                            className="cta-know-more"
+                          />
+                        </span>
+                      </button>
+                    </div>
+                  </>
                 );
               })}
               <div className="col text-[#fff] flex flex-col sm:flex-row gap-5 sm:gap-10  ">
@@ -487,16 +483,90 @@ export default function Home() {
           </div>
           {/* Popup */}
           {isPopupOpen && (
-            <div className="fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex items-center justify-center">
-              <div className="bg-white p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4">{selectedTitle}</h3>
-                {/* Add more content or components as needed */}
-                <button
-                  onClick={closePopup}
-                  className="text-blue-500 hover:underline"
-                >
-                  Close
-                </button>
+            <div className="fixed w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex-col flex items-center justify-center">
+              <div className="bg-[#ededed] w-full  max-w-screen-xl md:max-w-screen-xl ">
+                <div className="p-8">
+                  <div>
+                    <button
+                      onClick={closePopup}
+                      className="text-blue-500 flex items-center gap-2 mb-4"
+                    >
+                      <span>
+                        <Icon
+                          path={mdiArrowLeft}
+                          style={{
+                            width: "1rem",
+                            fontSize: "14px",
+                          }}
+                          className="cta-know-more"
+                        />
+                      </span>{" "}
+                      Back to solutions
+                    </button>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">{selectedTitle}</h3>
+                </div>
+                {/* Tabs */}
+                <div>
+                  <div>
+                    <div className="px-8 pt-8 flex justify-start gap-4">
+                      {tabs.map((tab, index) => (
+                        <div
+                          key={index}
+                          onClick={() => handleTabClick(index)}
+                          className={`cursor-pointer px-4 py-2 ${
+                            index === activeTab
+                              ? "text-blue-500 border-b-2 border-blue-500"
+                              : ""
+                          }`}
+                        >
+                          {tab.label}
+                        </div>
+                      ))}
+                    </div>
+                    {/* Tab Content */}
+                    <div className="">
+                      <div className="bg-white w-full px-8 py-16 max-w-screen-xl md:max-w-screen-xl ">
+                        <div className="flex flex-row gap-4 ">
+                          {[0, 1, 2].map((i, index) => (
+                            <div
+                              className="min-w-[300px] w-1/3 bg-[#ededed] inline-flex"
+                              key={index}
+                            >
+                              <div className="flex p-8 flex-col">
+                                <span>
+                                  {true ? (
+                                    <Image
+                                      src={`/dummy.png`}
+                                      width={56}
+                                      height={56}
+                                      alt="item icon"
+                                      className="mb-4"
+                                    />
+                                  ) : (
+                                    <Icon
+                                      size={3}
+                                      path={mdiArrowLeft}
+                                      style={{
+                                        width: "1rem",
+                                        fontSize: "14px",
+                                      }}
+                                      className="cta-know-more"
+                                    />
+                                  )}
+                                </span>{" "}
+                                <h3 className="text-2xl font-bold mb-4">
+                                  {selectedTitle}
+                                </h3>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        {/* Add more content or components as needed */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           )}

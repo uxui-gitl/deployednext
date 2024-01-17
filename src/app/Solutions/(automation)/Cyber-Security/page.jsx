@@ -41,6 +41,7 @@ import IndustryExpertise from "@/components/IndustryExpertise";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import Abstract from "@/components/Abstract";
 import BlogSlider from "@/components/BlogSlider";
+import Accordion from "@/components/Accordion";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -267,14 +268,169 @@ const OfferingsSliderData = [
   {
     _id: 1,
     title: "Computer Vision ",
-    subArr: false,
+    subArr: true,
     image: "OfferingsSlider.png",
     desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
     cta: "Explore Service",
     ctaUrl: "/",
+    subArrLinks: [
+      {
+        _id: 1,
+        icon: "gear",
+        title: "Future of Projects  ",
+        desc: "",
+        cta: "Know More",
+        ctaUrl: "/",
+        list: [
+          {
+            title: "External integration with project monitoring tools  ",
+            url: "/",
+          },
+          {
+            title: "Mobile applications for task assignment",
+            url: "/",
+          },
+          {
+            title: "After sales service",
+            url: "/",
+          },
+          {
+            title: "Data Security & Digital Documentation ",
+            url: "/",
+          },
+          {
+            title: "Multi site management  ",
+            url: "/",
+          },
+          {
+            title: "Project Task Assignment & Management  ",
+            url: "/",
+          },
+          {
+            title: "Remote Work and Cost Accuracy   ",
+            url: "/",
+          },
+        ],
+      },
+      {
+        _id: 2,
+        icon: "gear",
+        title: "IoT Enabled Products ",
+        desc: "",
+        cta: "Know More",
+        ctaUrl: "/",
+        list: [
+          {
+            title: "External integration with project monitoring tools  ",
+            url: "/",
+          },
+          {
+            title: "Mobile applications for task assignment",
+            url: "/",
+          },
+          {
+            title: "After sales service",
+            url: "/",
+          },
+          {
+            title: "Data Security & Digital Documentation ",
+            url: "/",
+          },
+          {
+            title: "Multi site management  ",
+            url: "/",
+          },
+          {
+            title: "Project Task Assignment & Management  ",
+            url: "/",
+          },
+          {
+            title: "Remote Work and Cost Accuracy   ",
+            url: "/",
+          },
+        ],
+      },
+      {
+        _id: 3,
+        icon: "gear",
+        title: "Supply Chain Management  ",
+        desc: "",
+        cta: "Know More",
+        ctaUrl: "/",
+        list: [
+          {
+            title: "External integration with project monitoring tools  ",
+            url: "/",
+          },
+          {
+            title: "Mobile applications for task assignment",
+            url: "/",
+          },
+          {
+            title: "After sales service",
+            url: "/",
+          },
+          {
+            title: "Data Security & Digital Documentation ",
+            url: "/",
+          },
+          {
+            title: "Multi site management  ",
+            url: "/",
+          },
+          {
+            title: "Project Task Assignment & Management  ",
+            url: "/",
+          },
+          {
+            title: "Remote Work and Cost Accuracy   ",
+            url: "/",
+          },
+        ],
+      },
+      {
+        _id: 4,
+        icon: "gear",
+        title: "Performance Management ",
+        desc: "",
+        cta: "Know More",
+        ctaUrl: "/",
+        list: [
+          {
+            title: "External integration with project monitoring tools  ",
+            url: "/",
+          },
+          {
+            title: "Mobile applications for task assignment",
+            url: "/",
+          },
+          {
+            title: "After sales service",
+            url: "/",
+          },
+          {
+            title: "Data Security & Digital Documentation ",
+            url: "/",
+          },
+          {
+            title: "Multi site management  ",
+            url: "/",
+          },
+          {
+            title: "Project Task Assignment & Management  ",
+            url: "/",
+          },
+          {
+            title: "Remote Work and Cost Accuracy   ",
+            url: "/",
+          },
+        ],
+      },
+      // Add more items as needed
+    ],
     links: [
       {
-        title: "Real-time Object Detection",
+        title: "Links Real-time Object Detection",
         url: "/",
       },
       {
@@ -355,7 +511,9 @@ const OfferingsSliderData = [
     title: "Document  Understanding",
     desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
     cta: "Explore Service",
+    subArrLinks: [],
     image: "OfferingsSlider.png",
+    subArr: false,
     ctaUrl: "/",
     links: [
       {
@@ -383,6 +541,8 @@ const OfferingsSliderData = [
     desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
     cta: "Explore Service",
     image: "OfferingsSlider.png",
+    subArrLinks: [],
+    subArr: false,
     ctaUrl: "/",
     links: [
       {
@@ -405,6 +565,8 @@ const OfferingsSliderData = [
     desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
     cta: "Explore Service",
     image: "OfferingsSlider.png",
+    subArrLinks: [],
+    subArr: false,
     ctaUrl: "/",
     links: [
       {
@@ -497,7 +659,460 @@ const page = () => {
       {/*  Card Slider Offerings */}
 
       <>
-        <OfferingsSlider arr={OfferingsSliderData} />
+        <OfferingsSlider
+          arr={[
+            {
+              _id: 1,
+              title: "Computer Vision ",
+              inline: true,
+              subArr: true,
+              image: "OfferingsSlider.png",
+              desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
+              cta: "Explore Service",
+              ctaUrl: "/",
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Future of Projects  ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "IoT Enabled Products ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Supply Chain Management  ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 4,
+                  icon: "gear",
+                  title: "Performance Management ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                // Add more items as needed
+              ],
+              links: [
+                {
+                  title: "Links Real-time Object Detection",
+                  url: "/",
+                },
+                {
+                  title: "Data Labelling",
+                  url: "/",
+                },
+                {
+                  title: "Security Solution",
+                  url: "/",
+                },
+                {
+                  title: "Equipment Monitoring",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 2,
+              title: "Speech &  Language ",
+              desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+              inline: true,
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Future of Projects  2",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "IoT Enabled Products 2",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Supply Chain Management  ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 4,
+                  icon: "gear",
+                  title: "Performance Management ",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "External integration with project monitoring tools  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Mobile applications for task assignment",
+                      url: "/",
+                    },
+                    {
+                      title: "After sales service",
+                      url: "/",
+                    },
+                    {
+                      title: "Data Security & Digital Documentation ",
+                      url: "/",
+                    },
+                    {
+                      title: "Multi site management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Project Task Assignment & Management  ",
+                      url: "/",
+                    },
+                    {
+                      title: "Remote Work and Cost Accuracy   ",
+                      url: "/",
+                    },
+                  ],
+                },
+                // Add more items as needed
+              ],
+              cta: "Explore Service",
+              image: "OfferingsSlider.png",
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Transcription Services",
+                  url: "/",
+                },
+                {
+                  title: "Speech recognition",
+                  url: "/",
+                },
+                {
+                  title: "Language translation",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 3,
+              title: "Document  Understanding",
+              desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "OfferingsSlider.png",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Optical Character Recognition (OCR)",
+                  url: "/",
+                },
+                {
+                  title: "Text extraction",
+                  url: "/",
+                },
+                {
+                  title: "Optical Character Recognition - PDF",
+                  url: "/",
+                },
+                {
+                  title: "AP Automation ",
+                  url: "/",
+                },
+              ],
+            },
+
+            {
+              _id: 4,
+              title: "Conversational AI",
+              desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+              cta: "Explore Service",
+              inline: true,
+              image: "OfferingsSlider.png",
+              subArrLinks: [],
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Document processing",
+                  url: "/",
+                },
+                {
+                  title: "Sentiment analysis",
+                  url: "/",
+                },
+                {
+                  title: "Chatbots and Virtual Assistants",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 5,
+              title: "Conversational AI",
+              desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+              inline: true,
+              cta: "Explore Service",
+              image: "OfferingsSlider.png",
+              subArrLinks: [],
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Document processing",
+                  url: "/",
+                },
+                {
+                  title: "Sentiment analysis",
+                  url: "/",
+                },
+                {
+                  title: "Chatbots and Virtual Assistants",
+                  url: "/",
+                },
+              ],
+            },
+          ]}
+        />
       </>
 
       {/* Industry Spotlight Slider */}

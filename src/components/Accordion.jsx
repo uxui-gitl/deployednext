@@ -1,74 +1,86 @@
-// components/Accordion.js
-
 import React, { useState } from "react";
 import Icon from "@mdi/react";
-import { mdiArrowRight, mdiDomain } from "@mdi/js";
 import { mdiChevronDown, mdiChevronUp } from "@mdi/js";
 import Link from "next/link";
 import Image from "next/image";
+import clsx from "clsx";
 
-const AccordionItem = ({
-  _id,
-  title,
-  list,
-  cta,
-  ctaUrl,
-  icon,
-  isOpen,
-  onClick,
-}) => (
-  <div className={`accordionItem mb-4 bg-[#fff]`}>
+const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
+  <div
+    className={clsx("accordionItem", {
+      "mb-4 bg-[#fff]": !inline,
+      "border-b-2 bg-transparent": inline,
+    })}
+  >
     <div
-      className={`accordionHeader cursor-pointer px-4 justify-between items-center flex`}
+      // className={`text-[#101828] text-[14px] font-medium border-b-2 border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  `}
+      className={clsx(
+        "accordionHeader cursor-pointer py-1 mt-1  justify-between items-center flex",
+        { "px-4": !inline }
+      )}
       onClick={onClick}
     >
       <div className="flex items-center">
-        <span className="font-semibold text-[#101828] text-[22px] leading-[42px]">
-          {icon !== "" ? (
+        {icons && (
+          <span className="font-semibold text-[#101828] text-[22px] leading-[42px]">
             <Image
-              src={`/icons/${icon}.svg`}
+              src={`/icons/${item.icon}.svg`}
               width="80"
               height="80"
-              alt={icon}
+              alt={item.icon}
             />
-          ) : (
-            <Icon path={mdiDomain} size={3} />
-          )}
-        </span>
-        <span className="font-semibold text-[#101828] text-[22px] leading-[42px]">
-          {title}
-        </span>
+          </span>
+        )}
+        {inline ? (
+          <span className="text-[14px] font-semibold my-1 leading-[16px] text-[#101828]">
+            {item.title}
+          </span>
+        ) : (
+          <span className="font-semibold text-[#101828] text-[22px] leading-[42px]">
+            {item.title}
+          </span>
+        )}
       </div>
       <Icon path={isOpen ? mdiChevronUp : mdiChevronDown} size={1} />
     </div>
     {isOpen && (
-      <div className={`accordionContent `}>
-        <div className=" px-8 py-2">
-          <ul>
-            {list.map((item, index) => (
-              <li
-                key={item._id}
-                className=" border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2 "
-              >
-                <p className="text-[14px] my-1 leading-[16px] text-[#101828]">
-                  {item.title}
-                </p>
-              </li>
-            ))}
+      <div className="accordionContent">
+        <div className={clsx({ "px-8 py-2": !inline, "px-0": inline })}>
+          <ul className={clsx({ "border-t-2 pt-2": inline })}>
+            {item.list &&
+              item.list.map((subItem) => (
+                <li
+                  key={subItem._id}
+                  className={clsx({
+                    "border-b-2": !inline,
+                    "last:mb-2": inline,
+                    "border-[#DBDBDB] pb-1": inline,
+                    "border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2":
+                      !inline,
+                  })}
+                >
+                  <p className="text-[14px] mb-1 leading-[16px] text-[#101828]">
+                    {subItem.title}
+                  </p>
+                </li>
+              ))}
           </ul>
         </div>
-        <Link
-          href="\"
-          className="text-[#F5F5F5] text-[14px] font-medium leading-[22px] py-4 px-8 w-full flex transition-all hover:opacity-75 bg-[#0745D3]"
-        >
-          Know More
-          <Icon path={mdiArrowRight} style={{ marginLeft: "0.5em" }} size={1} />
-        </Link>
+        {!inline && item.ctaUrl && (
+          <Link
+            href={item.ctaUrl}
+            className="text-[#F5F5F5] text-[14px] font-medium leading-[22px] py-4 px-8 w-full flex transition-all hover:opacity-75 bg-[#0745D3]"
+          >
+            Know More
+            <Icon path={mdiChevronUp} size={1} />
+          </Link>
+        )}
       </div>
     )}
   </div>
 );
-const Accordion = ({ items }) => {
+
+const Accordion = ({ items, inline, icons }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleItemClick = (index) => {
@@ -76,17 +88,15 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className={`accordion w-[100%]`}>
+    <div className="accordion w-full">
       {items.map((item, index) => (
         <AccordionItem
           key={item._id}
-          title={item.title}
-          icon={item.icon}
-          cta={item.cta}
-          ctaUrl={item.ctaUrl}
-          list={item.list}
-          isOpen={item._id === openIndex}
-          onClick={() => handleItemClick(item._id)}
+          item={item}
+          inline={inline}
+          icons={icons}
+          isOpen={index === openIndex}
+          onClick={() => handleItemClick(index)}
         />
       ))}
     </div>

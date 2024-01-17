@@ -30,7 +30,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
             </div>
           </div>
         </div>
-        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-3 overflow-hidden">
+        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
           <Swiper
             slidesPerView={"auto"}
             pagination={{
@@ -59,7 +59,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
             {arr.map((item, index) => (
               <SwiperSlide
                 key={item._id}
-                className="w-1/3 max-w-[500px] mr-4  relative group"
+                className="w-fit md:w-1/3 max-w-[500px] mr-4  relative group"
               >
                 <div className="bg-[#EDF1FF] h-full  " key={item._id}>
                   <div className=" h-full flex flex-col justify-start">
@@ -83,198 +83,37 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                       </div>
                       <div>
                         <div className="p-4 flex flex-col justify-end h-100">
-                          {subArr && subArr !== "" ? (
+                          {item.subArr ? (
                             <Accordion
-                              items={[
-                                {
-                                  _id: 1,
-                                  icon: "gear",
-                                  title: "Future of Projects  ",
-                                  desc: "",
-                                  cta: "Know More",
-                                  ctaUrl: "/",
-                                  list: [
-                                    {
-                                      title:
-                                        "External integration with project monitoring tools  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Mobile applications for task assignment",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "After sales service",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Data Security & Digital Documentation ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Multi site management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Project Task Assignment & Management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Remote Work and Cost Accuracy   ",
-                                      url: "/",
-                                    },
-                                  ],
-                                },
-                                {
-                                  _id: 2,
-                                  icon: "gear",
-                                  title: "IoT Enabled Products ",
-                                  desc: "",
-                                  cta: "Know More",
-                                  ctaUrl: "/",
-                                  list: [
-                                    {
-                                      title:
-                                        "External integration with project monitoring tools  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Mobile applications for task assignment",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "After sales service",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Data Security & Digital Documentation ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Multi site management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Project Task Assignment & Management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Remote Work and Cost Accuracy   ",
-                                      url: "/",
-                                    },
-                                  ],
-                                },
-                                {
-                                  _id: 3,
-                                  icon: "gear",
-                                  title: "Supply Chain Management  ",
-                                  desc: "",
-                                  cta: "Know More",
-                                  ctaUrl: "/",
-                                  list: [
-                                    {
-                                      title:
-                                        "External integration with project monitoring tools  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Mobile applications for task assignment",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "After sales service",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Data Security & Digital Documentation ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Multi site management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Project Task Assignment & Management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Remote Work and Cost Accuracy   ",
-                                      url: "/",
-                                    },
-                                  ],
-                                },
-                                {
-                                  _id: 4,
-                                  icon: "gear",
-                                  title: "Performance Management ",
-                                  desc: "",
-                                  cta: "Know More",
-                                  ctaUrl: "/",
-                                  list: [
-                                    {
-                                      title:
-                                        "External integration with project monitoring tools  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Mobile applications for task assignment",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "After sales service",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Data Security & Digital Documentation ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Multi site management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title:
-                                        "Project Task Assignment & Management  ",
-                                      url: "/",
-                                    },
-                                    {
-                                      title: "Remote Work and Cost Accuracy   ",
-                                      url: "/",
-                                    },
-                                  ],
-                                },
-                              ]}
+                              key={item._id}
+                              inline={item.inline}
+                              icons={false}
+                              items={item.subArrLinks}
+                              // items={[
+                              //   { _id: item._id, list: item.subArrLinks },
+                              // ]}
                             />
                           ) : (
                             <ul className="my-4">
-                              {item.links.map((list, index) => (
-                                <li
-                                  key={index}
-                                  className=" border-b-2 border-[#DBDBDB] py-2 "
-                                >
-                                  <Link
-                                    href={list.url}
-                                    className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                              {item.links &&
+                                item.links.map((list, index) => (
+                                  <li
+                                    key={index}
+                                    // className=" border-b-2 border-[#DBDBDB] py-2 "
+                                    className="text-[#101828] text-[14px] font-medium border-b-2 border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                                   >
+                                    {/* <Link
+                                  href={list.url}
+                                  className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                                > */}
                                     {list.title}
-                                  </Link>
-                                </li>
-                              ))}
+                                    {/* </Link> */}
+                                  </li>
+                                ))}
                             </ul>
                           )}
                         </div>
-                        <div className="bg-[#0745D3]   ">
+                        <div className="bg-[#0745D3] hidden  ">
                           <Link
                             href={item.ctaUrl}
                             className="text-[#fff] w-full p-4 text-[14px] font-medium leading-[22px]   flex transition-all hover:opacity-75  "
