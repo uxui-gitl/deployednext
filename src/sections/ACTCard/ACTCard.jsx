@@ -32,7 +32,7 @@ const ACTCard = ({
       _id: 1,
       subcategory: "Intuitive/ Intelligent Technologies",
       sublinks: [
-        { title: "Artificial Intelligence", url: "/ai" },
+        { title: "Artificial Intelligence & Machine Learning", url: "/ai" },
         { title: "IoT", url: "/iot" },
         { title: "Robotic Process Automation", url: "/rpa" },
       ],
