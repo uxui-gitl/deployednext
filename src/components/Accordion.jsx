@@ -21,7 +21,7 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
       onClick={onClick}
     >
       <div className="flex items-center">
-        {icons && (
+        {!inline ? (
           <span className="font-semibold text-[#101828] text-[22px] leading-[42px]">
             <Image
               src={`/icons/${item.icon}.svg`}
@@ -30,7 +30,7 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
               alt={item.icon}
             />
           </span>
-        )}
+        ) : null}
         {inline ? (
           <span className="text-[14px] font-semibold my-1 leading-[16px] text-[#101828]">
             {item.title}
