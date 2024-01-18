@@ -93,7 +93,7 @@ const TechStackOfferings = [
     title: "Custom Application Development",
     image:
       "/technologyStack/Service-Offerings_Custom-Application-Development.jpg",
-    desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
+    desc: "Leveraging extensive global experience, we specialize in developing bespoke applications that transcend generic off-the-shelf offerings. Our custom application development service ensures precise alignment with unique business needs, delivering an efficient application in the dynamic global marketplace. Our focus on technical excellence guarantees the delivery of application that exceed the expectations of our clients.",
     cta: "",
     link: "",
   },
@@ -101,7 +101,7 @@ const TechStackOfferings = [
     _id: 2,
     title: "Legacy Modernisation",
     image: "/technologyStack/Service-Offerings_Legacy-Modernisation.jpg",
-    desc: "Continuously improving on best practices in IT consulting services, our application legacy modernization service helps customers to meet their Triple Aim goals while maximizing Return on Investment (RoI).",
+    desc: "We are committed to continual improvement in our best practices. Through application legacy modernization service, we enable businesses to achieve Triple Aim goals, assuring optimal Return on Investment (RoI) and a smooth transition to modernized, agile and future-ready application. By harnessing cutting-edge technologies, we transform legacy systems into effective and scalable solution.",
     cta: "",
     link: "",
   },
@@ -116,18 +116,18 @@ const TechStackOfferings = [
   },
   {
     _id: 4,
-    title: "Mobile Application ",
+    title: "Mobile Application",
     image: "/technologyStack/Service-Offerings_Mobile-Application.jpg",
-    desc: "Leveraging the strengths of each OS, we develop a powerful backend and a beautiful frontend. We help you to experience most advance mobile application, seamlessly running on any platform.",
+    desc: "Optimising the strengths of each operating system, our expert team develops a robust backend and an aesthetically pleasing frontend. Our goal is to provide you with the most advanced, high performing mobile application, elevating your user engagement and delivering a seamless experience across any platform. ",
     cta: "",
     link: "",
   },
   {
     _id: 5,
-    title: "Enterprise Application Integration ",
+    title: "Enterprise Application Integration",
     image:
       "/technologyStack/Service-Offerings_Enterprise-Application-Integration.jpg",
-    desc: "We drive time-to-market with the adoption of modern architecture paradigms and seamlessly integrating data, processes and applications.",
+    desc: "Accelerating time-to-market, we embrace modern architecture paradigms, seamlessly integrating data, processes and applications. Our diligent approach guarantees swift solution deployment, enhancing overall system responsiveness. We make sure of optimized data flow and synchronization of processes and applications, creating a dynamic ecosystem that aligns seamlessly with the ever-evolving landscape of modern business demands.",
     cta: "",
     link: "",
   },
@@ -225,14 +225,14 @@ const page = () => {
             <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  100 + Applications developed & 50 + Expert developers
+                  200 + Applications Build and Delivered
                 </h3>
               </div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                {/* <p className="font-medium leading-[22px] md:w-[90%] ">
                   Our focus centres on leveraging cutting edge and emerging
                   technologies to develop high performing applications.
-                </p>
+                </p> */}
               </div>
               <div className="flex justify-center items-center gap-20">
                 <div>
@@ -276,8 +276,8 @@ const page = () => {
       {/* Tech Stack Benefit Vertical Slider */}
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Tech stack Benefits"
-        ribbonTxtWhite="Tech stack Benefits"
+        ribbon="Bespoke Application Benefits"
+        ribbonTxtWhite="Bespoke Application Benefits"
         title="Benefits of Application Development with Our Technology Stack Expertise "
         desc=""
         arr={BenefitsData}
@@ -290,7 +290,7 @@ const page = () => {
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
               <div className="bg-[#F2F4F7] text-left">
                 <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                  Services for successful results
+                  Application Development Process 
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
@@ -312,16 +312,16 @@ const page = () => {
                 {
                   label: "01",
                   expandedLabel: "Step 01",
-                  title: "Application Planning & Designing",
-                  expandedTitle: "Application Planning & Designing",
+                  title: "Planning & Designing",
+                  expandedTitle: "Planning & Designing",
                   desc: "Bridging the envisioned outcome with the planned application and designing application architecture.",
                   image: "/technologyStack/Application-Planning.jpg",
                 },
                 {
                   label: "02",
                   expandedLabel: "Step 02",
-                  title: "Defining technology stack & Development",
-                  expandedTitle: "Defining technology stack & Development",
+                  title: "Define Technology Stack & Develop",
+                  expandedTitle: "Define Technology Stack & Develop",
                   desc: "Meticulous selection of frameworks, programming languages, libraries and tools followed by the development of innovative application with a clean code architecture.",
                   image: "/technologyStack/Defining-technology-stack.jpg",
                 },
@@ -330,7 +330,7 @@ const page = () => {
                   expandedLabel: "Step 03",
                   title: "Application Testing",
                   expandedTitle: "Application Testing",
-                  desc: "Detecting defects, verifying compliance and ensuring seamless functionality and user experience",
+                  desc: "Detecting defects, verifying compliance while ensuring seamless functionality and user experience.",
                   image: "/technologyStack/Application-Testing.jpg",
                 },
                 {
@@ -338,7 +338,7 @@ const page = () => {
                   expandedLabel: "Step 04",
                   title: "Application Deployment",
                   expandedTitle: "Application Deployment",
-                  desc: "Efficient release of application with a focus on automation and DevOps practices",
+                  desc: "Efficient release of application with a focus on automation and DevOps practice.",
                   image: "/technologyStack/Application-Development.jpg",
                 },
                 {
@@ -346,7 +346,7 @@ const page = () => {
                   expandedLabel: "Step 05",
                   title: "Application Maintenance",
                   expandedTitle: "Application Maintenance",
-                  desc: "Ensuring long-term stability, reliability and scalability of the application",
+                  desc: "Ensuring long-term stability, reliability and scalability of the application.",
                   image: "/technologyStack/Application-Maintenance.jpg",
                 },
               ]}
@@ -358,7 +358,7 @@ const page = () => {
       <WhySection
         title="Why Godrej Infotech"
         desc="We understand the intricacies of diverse technologies, leverage our capability and experience to deliver solutions that ally exquisitely with your business ambitions."
-        ribbon="Let's Collaborate and Make it Happen"
+        ribbon="The Distinctive Edge"
         arr={[
           {
             _id: 1,
