@@ -108,6 +108,7 @@ const OfferingsSliderData = [
     _id: 1,
     title: "Computer Vision ",
     subArr: false,
+    inline: false,
     image: "OfferingsSlider.png",
     desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
     cta: "Explore Service",
@@ -135,7 +136,8 @@ const OfferingsSliderData = [
     _id: 2,
     title: "Speech &  Language ",
     desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
-    subArr: true,
+    subArr: false,
+    inline: false,
     subArrLinks: [
       {
         title: "Perimeter Security ",
@@ -197,6 +199,8 @@ const OfferingsSliderData = [
     cta: "Explore Service",
     image: "OfferingsSlider.png",
     ctaUrl: "/",
+    subArr: false,
+    inline: false,
     links: [
       {
         title: "Optical Character Recognition (OCR)",
@@ -222,6 +226,8 @@ const OfferingsSliderData = [
     desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
     cta: "Explore Service",
     image: "OfferingsSlider.png",
+    subArr: false,
+    inline: false,
     ctaUrl: "/",
     links: [
       {
@@ -243,6 +249,8 @@ const OfferingsSliderData = [
     title: "Conversational AI",
     desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
     cta: "Explore Service",
+    subArr: false,
+    inline: false,
     image: "OfferingsSlider.png",
     ctaUrl: "/",
     links: [
