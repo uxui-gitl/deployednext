@@ -52,38 +52,26 @@ const fadeInAnimationVariant = {
 const blogData = [
   {
     _id: 1,
-    ribbon: "blog",
-    title: "Voice Assistant Challenges in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    ribbon: "Insights",
+    title: "Unveiling Hyper-automation for Supply Chain Efficiency",
+    desc: "Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. ",
     cta: "Know More",
     link: "/",
     imgUrl: "",
   },
-  {
-    _id: 2,
-    ribbon: "blog",
-    title: "Hyper automation trends in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  }
+  
 ];
 
 const AIOfferings = [
   {
     _id: 1,
-    title: "Computer Vision ",
-    desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. We use advanced technologies like OpenCV to optimize existing computer vision algorithms or develop new ones.",
+    title: "Computer Vision",
+    desc: "We specialize in custom video and image analysis tool leveraging advanced technologies like OpenCV to optimize or create computer vision algorithms.",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
       {
-        title: "Real-time Object Detection",
-        url: "/",
-      },
-      {
-        title: "Data Labelling",
+        title: "Data Labelling and Real-time Object Detection",
         url: "/",
       },
       {
@@ -94,12 +82,13 @@ const AIOfferings = [
         title: "Equipment Monitoring",
         url: "/",
       },
+      
     ],
   },
   {
     _id: 2,
-    title: "Speech &  Language ",
-    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences and stand tall in competition.",
+    title: "Speech & Language",
+    desc: "Our reliable approach to Speech and Language AI empowers your business with the tools to elevate customer experiences and stand tall in competition.",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
@@ -108,7 +97,7 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "Speech recognition",
+        title: "Speech Recognition",
         url: "/",
       },
       {
@@ -120,7 +109,7 @@ const AIOfferings = [
   {
     _id: 3,
     title: "Document  Understanding",
-    desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos.",
+    desc: "We help you to achieve error-free AI-driven data capture from diverse document types and helps your business with unstructured data.",
     cta: "Explore Service",
     ctaUrl: "",
     links: [
@@ -133,19 +122,16 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "Optical Character Recognition - PDF",
+        title: "Financial Processing",
         url: "/",
       },
-      {
-        title: "Account Payable, Bank Reconciliation, Invoice matching, Data Scraping ",
-        url: "/",
-      },
+      
     ],
   },
 
   {
     _id: 4,
-    title: "Conversational AI / Natural Language Processing",
+    title: "Conversational AI",
     desc: "Ensuring a more human-centric engagement with data, we provide solutions that facilitate customer-centric decision-making.",
     cta: "Explore Service",
     ctaUrl: "",
@@ -211,25 +197,21 @@ const BenefitsData = [
   {
     _id: 3,
     icon: "benefits-ai-ml/effortless-communicate",
-    cardDesc: "Effortless communication and efficient information retrieval through Natural Language Processing",
+    cardDesc: "Effortless communication and efficient information retrieval through Natural Language Processing ",
   },
   {
     _id: 4,
     icon: "benefits-ai-ml/optimise-supply-chain",
-    cardDesc: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+    cardDesc: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
   },
-  {
-    _id: 5,
-    icon: "benefits-ai-ml/healthcare",
-    cardDesc: "Revolutionising Healthcare with medical image analysis",
-  }
+
 ];
 
 const MLData = [{
   _id:1,
   imgURL: "/ai-ml/Expertise_Deep-Learning.jpg",
   title:"Deep Learning",
-  subTitle:"Our deep learning creates solutions that automate complex tasks data-driven decision-making, especially when it comes to forecasting your business's future.",
+  subTitle:"Our deep learning expertise builds solutions that automate complex tasks helping in data-driven decision-making, especially when it comes to forecasting your business's future.",
   ctaURL:""
 },{
   _id:2,
@@ -241,7 +223,7 @@ const MLData = [{
   _id:3,
   imgURL: "/ai-ml/Expertise_Unsupervised-Learning.jpg",
   title:"Unsupervised Learning",
-  subTitle:"With our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
+  subTitle:"Our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
   ctaURL:""
 },{
   _id:4,
@@ -254,8 +236,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Artificial Intelligence & Machine Learning"
-        desc="Leverage Optimized Business Intelligence with Advanced Solutions of Artificial Intelligence and Machine Learning"
+        title="Leverage Optimized Business Intelligence with Advanced Solutions of Artificial Intelligence and Machine Learning"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -289,7 +271,7 @@ const page = () => {
 
       {/* Overview  */}
       <Abstract
-        abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join forces with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours."
+        abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours. "
         >
 
         </Abstract>
@@ -310,7 +292,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-               We are committed to bringing the power of Artificial Intelligence to your business operations, providing tailored solutions that drives business proficiency.
+               We are committed to bringing the power of Artificial Intelligence to your business operations, providing tailored solutions that drives business proficiency. 
                 </p>
               </div>
             </div>
@@ -458,10 +440,10 @@ const page = () => {
       ></Benefits>
 
       {/* Industry Spotlight Slider */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
+            {/* left /}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -512,34 +494,34 @@ const page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
 
       <BlogSlider arr={blogData}/>
       {/* Why choose gitl and ai and ml */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
         desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'>Deep understanding of specific business domains  </span>for developing AI and ML solutions that truly meet your needs.",
+            desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Agile approach that keeps projects on cutting edge.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
             icon: "",
           },
         ]}
@@ -548,10 +530,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Ready for Intelligent Solutions? "
+        blue=""
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Share your details NOW for Smarter Business Future!"
       />
 
       {/* Infotech Weekly Updates */}
