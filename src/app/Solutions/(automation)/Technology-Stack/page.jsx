@@ -94,7 +94,7 @@ const TechStackOfferings = [
     image:
       "/technologyStack/Service-Offerings_Custom-Application-Development.jpg",
     desc: "With our extensive experience in the global marketplace, we build bespoke software solution that goes beyond off-the-shelf offerings.",
-    cta: "Know More",
+    cta: "",
     link: "",
   },
   {
@@ -102,7 +102,7 @@ const TechStackOfferings = [
     title: "Legacy Modernisation",
     image: "/technologyStack/Service-Offerings_Legacy-Modernisation.jpg",
     desc: "Continuously improving on best practices in IT consulting services, our application legacy modernization service helps customers to meet their Triple Aim goals while maximizing Return on Investment (RoI).",
-    cta: "Know More",
+    cta: "",
     link: "",
   },
   {
@@ -111,7 +111,7 @@ const TechStackOfferings = [
     image:
       "/technologyStack/Service-Offerings_Application-managed-services.jpg",
     desc: "Providing instrumental assistance to businesses as they face challenges, we deliver enhanced value by placing the right people with the right skills in the right positions. Additionally, we bring tools and methods developed with our experiences across various industry verticals. Our application management approach covers the entire lifecycle: Build, Run and Evolve.",
-    cta: "Know More",
+    cta: "",
     link: "",
   },
   {
@@ -119,7 +119,7 @@ const TechStackOfferings = [
     title: "Mobile Application ",
     image: "/technologyStack/Service-Offerings_Mobile-Application.jpg",
     desc: "Leveraging the strengths of each OS, we develop a powerful backend and a beautiful frontend. We help you to experience most advance mobile application, seamlessly running on any platform.",
-    cta: "Know More",
+    cta: "",
     link: "",
   },
   {
@@ -128,7 +128,7 @@ const TechStackOfferings = [
     image:
       "/technologyStack/Service-Offerings_Enterprise-Application-Integration.jpg",
     desc: "We drive time-to-market with the adoption of modern architecture paradigms and seamlessly integrating data, processes and applications.",
-    cta: "Know More",
+    cta: "",
     link: "",
   },
 ];

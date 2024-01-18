@@ -63,17 +63,19 @@ const OfferingsGrid = ({ title, titleOnly, desc, columns, arr }) => {
                 <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
                   {item.desc}
                 </p>
-                <Link
-                  href={item.link}
-                  className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                >
-                  {item.cta}{" "}
-                  <Icon
-                    path={mdiArrowRight}
-                    style={{ marginLeft: "0.5em" }}
-                    size={1}
-                  />
-                </Link>
+                {item.cta && item.link ? (
+                  <Link
+                    href={item.link}
+                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                ) : null}
               </div>
             </div>
           ))}
