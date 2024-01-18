@@ -338,9 +338,9 @@ const page = () => {
       {/* Why Infotech */}
 
       <WhySection
-        title="Why choose GITL as your preferred innovation partner?"
+        title="Why Godrej Infotech?"
         desc="Experience the positive impact on your business growth being at the forefront of innovative technologies."
-        ribbon="Let's Collaborate and Make it Happen"
+        ribbon="Let Us Collaborate and Make it Happen"
         arr={[
           {
             _id: 1,
@@ -404,8 +404,8 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Tap the faster and simpler way for futuristic seamless business experiences"
-        desc="Let us discuss how intelligent technologies can help you with rapid growth"
+        title="Tap the intelligent way for futuristic seamless business experience"
+        desc="Let us discuss how intelligent technologies can help you with rapid growth."
       />
       <InfotechWeeklyAlt />
     </>
