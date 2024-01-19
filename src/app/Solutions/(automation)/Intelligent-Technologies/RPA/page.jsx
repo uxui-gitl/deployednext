@@ -222,7 +222,11 @@ const RPACards = [
     bgcolor2: "#EDF1FF",
     bgcolor3: "#0745D3",
     icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-    list: ["Designing the server architecture", "Installing and configuring the architecture", "Setting up dev, test & production environments"],
+    list: [
+      "Designing the server architecture",
+      "Installing and configuring the architecture",
+      "Setting up dev, test & production environments",
+    ],
   },
   {
     _id: 2,
@@ -233,7 +237,11 @@ const RPACards = [
     bgcolor2: "#FFF8E5",
     bgcolor3: "#F4C447",
     icon: "icon/RPA-projectLifestyle/ProjectGovernance",
-    list: ["Project Governance", "Agreeing on the project development approach", "Reviewing the RPA best practices"],
+    list: [
+      "Project Governance",
+      "Agreeing on the project development approach",
+      "Reviewing the RPA best practices",
+    ],
   },
   {
     _id: 3,
@@ -244,7 +252,11 @@ const RPACards = [
     bgcolor2: "#E5F8EE",
     bgcolor3: "#429268",
     icon: "icon/RPA-projectLifestyle/WorkflowDesign",
-    list: ["Filling in the Process Design Document (PDO)", "Creating test cases and data", "Designing the solution"],
+    list: [
+      "Filling in the Process Design Document (PDO)",
+      "Creating test cases and data",
+      "Designing the solution",
+    ],
   },
   {
     _id: 4,
@@ -255,7 +267,11 @@ const RPACards = [
     bgcolor2: "#EDF1FF",
     bgcolor3: "#4C6FFF",
     icon: "icon/RPA-projectLifestyle/WorkflowDevelopment",
-    list: ["Building the workflows", "Performing Unit and Functional testing", "Creating the Development Specification Document (DSD)"],
+    list: [
+      "Building the workflows",
+      "Performing Unit and Functional testing",
+      "Creating the Development Specification Document (DSD)",
+    ],
   },
   {
     _id: 5,
@@ -266,7 +282,11 @@ const RPACards = [
     bgcolor2: "#FEEDED",
     bgcolor3: "#B42318",
     icon: "icon/RPA-projectLifestyle/QualityAssurance",
-    list: ["Executing the test cases", "Reporting the results", "Making the Go/NoGo decision"],
+    list: [
+      "Executing the test cases",
+      "Reporting the results",
+      "Making the Go/NoGo decision",
+    ],
   },
   {
     _id: 6,
@@ -572,7 +592,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
             {ConsiderRPA.map((item, index) => (
               <div
                 className="flex flex-col sm:flex-row  bg-white"
@@ -580,12 +600,12 @@ const page = () => {
               >
                 <Image
                   src={item.image}
-                  height={130}
-                  width={130}
-                  className="w-[100%] sm:w-fit"
+                  height={120}
+                  width={120}
+                  className="w-[100%] sm:w-fit object-cover"
                   alt={item.title}
                 />
-                <div className="p-4 sm:justify-center sm:flex sm:flex-col w-full">
+                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
                   <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
                     {item.title}
                   </p>
