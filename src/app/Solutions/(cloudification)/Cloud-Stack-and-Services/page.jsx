@@ -52,7 +52,7 @@ import Highestlevels from "../../../../../public/icon/cloudStackServices/Highest
 import StreamlineDelivery from "../../../../../public/icon/cloudStackServices/StreamlineDelivery.svg"
 import Effortlessintegration from "../../../../../public/icon/cloudStackServices/Effortlessintegration.svg"
 import BuiltInreliable from "../../../../../public/icon/cloudStackServices/BuiltInreliable.svg"
-
+import Abstract from "@/components/Abstract";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -202,6 +202,14 @@ export default function Home() {
             ]}
           />
         </>
+
+  {/* Overview  */}
+      <Abstract
+        abstractdesc="We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Through meticulous planning and execution, we ensure cloud solutions that align with your business objectives, driving efficiency and innovation. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine your user experience."
+        >
+
+        </Abstract>
+
         {/* Solutions Robot */}
         <>
           <div className={` w-full bg-white py-16`}>
@@ -264,51 +272,37 @@ export default function Home() {
                 arr={[
                   {
                     _id: 1,
-                    title: "Infrastructure",
-                    expandedTitle: "Infrastructure",
+                    title: "Core Infrastructure and Virtualization",
+                    expandedTitle: "Core Infrastructure and Virtualization",
                     bgImg: "bg1",
                     bgColor: "",
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
+                        title: "Infrastructure as a Service (IAAS)",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Platform as a Service(PAAS)",
+                        title: "Virtual Desktop Infrastructure (VDI)",
                         url: "/",
                       },
                       {
                         _id: 3,
-                        title: "Disaster Recovery as a Service(DrAAS)",
+                        title: "Disaster Recovery as a Service (DrAAS)",
                         url: "/",
                       },
                       {
                         _id: 4,
-                        title: "Database as a Service(DBaaS",
+                        title: "Database as a Service (DBaaS)",
                         url: "/",
                       },
                       {
                         _id: 5,
-                        title: "BaaS: Backup as a Service(BaaS)",
+                        title: "BaaS: Backup as a Service (BaaS)",
                         url: "/",
                       },
-                      {
-                        _id: 6,
-                        title: "Azure IoT",
-                        url: "/",
-                      },
-                      {
-                        _id: 7,
-                        title: "DevOps and Bespoke Applications",
-                        url: "/",
-                      },
-                      {
-                        _id: 8,
-                        title: "Hybrid and Multicloud Managed Services",
-                        url: "/",
-                      },
+                      
                     ],
 
                     ctaBtn: false,
@@ -317,10 +311,39 @@ export default function Home() {
                   },
                   {
                     _id: 2,
-                    title: "M365",
-                    expandedTitle: "M365",
+                    title: "Advanced Cloud Infrastructure",
+                    expandedTitle: "Advanced Cloud Infrastructure",
                     bgImg: "",
                     bgColor: "#101828",
+                    linksArr: [
+                      {
+                        _id: 1,
+                        title: "Azure IoT",
+                        url: "/",
+                      },
+                      {
+                        _id: 2,
+                        title: "DevOps and Bespoke Applications",
+                        url: "/",
+                      },
+                      {
+                        _id: 3,
+                        title: "Hybrid and Multicloud Managed Services ",
+                        url: "/",
+                      },
+                      
+                    ],
+
+                    ctaBtn: false,
+                    ctaUrl: "/",
+                    cta: "Know More",
+                  },
+                  {
+                    _id: 3,
+                    title: "M365",
+                    expandedTitle: "M365",
+                    bgImg: "bg3",
+                    bgColor: "",
                     linksArr: [
                       {
                         _id: 1,
@@ -339,7 +362,7 @@ export default function Home() {
                       },
                       {
                         _id: 4,
-                        title: "Device Security and Access Management",
+                        title: "Device Security and Access Management ",
                         url: "/",
                       },
                       {
@@ -349,16 +372,16 @@ export default function Home() {
                       },
                     ],
 
-                    ctaBtn: true,
+                    ctaBtn: false,
                     ctaUrl: "/",
                     cta: "Know More",
                   },
                   {
-                    _id: 3,
+                    _id: 4,
                     title: "Business Applications",
                     expandedTitle: "Business Applications",
-                    bgImg: "bg3",
-                    bgColor: "",
+                    bgImg: "bg4",
+                    bgColor: "#FF0000",
                     linksArr: [
                       {
                         _id: 1,
@@ -380,6 +403,7 @@ export default function Home() {
                         title: "LS Retail",
                         url: "/",
                       },
+                      
                     ],
 
                     ctaBtn: false,
@@ -452,10 +476,7 @@ export default function Home() {
           </div>
         </>
 
-        {/* Blog */}
-        <BlogSlider arr={blogData} />
-
-        {/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth / Spotlight */}
+{/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth / Spotlight */}
 
         <div id="spotlight">
           <>
@@ -480,7 +501,7 @@ export default function Home() {
                 arr={[
                   {
                     label: "01",
-                    expandedLabel: "Step 01",
+                    expandedLabel: "",
                     title: "Advisory and Consulting",
                     desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment and maximize the benefits of cloud computing.",
                     expandedTitle: "Advisory and Consulting",
@@ -488,34 +509,70 @@ export default function Home() {
                   },
                   {
                     label: "02",
-                    expandedLabel: "Step 02",
+                    expandedLabel: "",
                     expandedTitle: "Strategy and Roadmap",
                     title: "Strategy and Roadmap",
-                    desc: "Actionable plan with multi-phased approach that ensures business is adequately equipped for the challenges and opportunities of cloud adoption.",
+                    desc: "Actionable plan with multi-phased approach that ensures business is adequately equipped for the challenges and opportunities of cloud adoption. Top of Form",
                     image: "/Spotlight/card1.png",
                   },
                   {
                     label: "03",
-                    expandedLabel: "Step 03",
-                    expandedTitle: "Operations and Management",
-                    title: "Operations and Management",
-                    desc: "Address the obstacles of cloud adoption & optimization and develop infrastructure and platform strategies aligned with business operations that improves management models.",
+                    expandedLabel: "",
+                    expandedTitle: "Architecture and Planning",
+                    title: "Architecture and Planning",
+                    desc: "Address the obstacles of cloud adoption & optimization and develop infrastructure and platform strategies aligned with business operations that improves management models. ",
                     image: "/Spotlight/card1.png",
                   },
                   {
                     label: "04",
-                    expandedLabel: "Step 04",
+                    expandedLabel: "",
+                    expandedTitle: "Operations and Management",
+                    title: "Operations and Management",
+                    desc: "Comprehensive management of cloud infrastructure and business application ecosystem for 360-degree visibility that fosters business performance and reduced IT costs.",
+                    image: "/Spotlight/card1.png",
+                  },
+                   {
+                    label: "05",
+                    expandedLabel: "",
                     expandedTitle: "Cloud Security",
                     title: "Cloud Security",
                     desc: "Detection of security gaps, formation of risk-allied structural design and a blueprint for baseline cloud security and automate the deployment of security guardrails for cloud native services.",
                     image: "/Spotlight/card1.png",
                   },
-                  
+                    {
+                    label: "06",
+                    expandedLabel: "",
+                    expandedTitle: "Public Cloud",
+                    title: "Public Cloud",
+                    desc: "Intact development of cloud environments and execute industry-leading top practices that supports the individual business cloud implementation and management structures.",
+                    image: "/Spotlight/card1.png",
+                  },
+                    {
+                    label: "07",
+                    expandedLabel: "",
+                    expandedTitle: "Application transformation",
+                    title: "Application transformation",
+                    desc: "Adhering to industry best practices, optimizing business processes, and guaranteeing seamless integration, we help businesses in accomplishing transformation goals.",
+                    image: "/Spotlight/card1.png",
+                  },
+                   {
+                    label: "08",
+                    expandedLabel: "",
+                    expandedTitle: "Cloud Cost Optimization",
+                    title: "Cloud Cost Optimization",
+                    desc: "Optimize your cloud expenditure and guarantee cost savings while simultaneously fulfilling IT performance requirements and deriving business value from the cloud. ",
+                    image: "/Spotlight/card1.png",
+                  },
                 ]}
               />
             </div>
           </div>
         </div>
+
+        {/* Blog */}
+        <BlogSlider arr={blogData} />
+
+        
 
         {/* SME Experts */}
         {/* <SME
@@ -575,27 +632,27 @@ export default function Home() {
           arr={[
             {
               _id: 1,
-              desc: "Comprehensive access to our cloud services across worldwide ",
+              desc: "Comprehensive access to our cloud services across worldwide",
               icon: "",
             },
             {
               _id: 2,
-              desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications ",
+              desc: "Tailored solutions for sensitive performing on-premises applications and conventional enterprise applications",
               icon: "",
             },
             {
               _id: 3,
-              desc: "Holistic approach including resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks. ",
+              desc: "Holistic approach including resource gathering for cloud availability and scale-up architectures to manage multi-cloud risks",
               icon: "",
             },
             {
               _id: 4,
-              desc: "End-to-end strategic cloud services for complete cloud journey. ",
+              desc: "End-to-end strategic cloud services for complete cloud journey",
               icon: "",
             },
             {
               _id: 5,
-              desc: "Cloud expertise that offers business growth and localized requirements support. ",
+              desc: "Cloud expertise that offers business growth and localized requirements support",
               icon: "",
             },
           ]}
@@ -649,7 +706,7 @@ export default function Home() {
                 "Greater scalability and cost-effectiveness with integration of Dynamics 365 F&O and Dynamics CRM on Cloud",
               thumbnail: "1",
               description: "KSA's Leading Distributor of Electrical Components",
-              tags: ["Electric House"],
+              tags: [""],
               cta: "Know More",
               link: "/",
             },
@@ -659,7 +716,7 @@ export default function Home() {
                 "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
               thumbnail: "2",
               description: "India's Leading Wildlife & Nature Conservation Organization",
-              tags: ["WWF"],
+              tags: [""],
               cta: "Know More",
               link: "/",
             },
@@ -678,18 +735,37 @@ export default function Home() {
 
         {/* Testimonial */}
         <Testimonial
-          ribbon="Testimonials "
-          title="What Experts Think About Us "
-          desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+          ribbon="Testimonials"
+          title="Delighted Customers share their Experiences"
+          desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
           arr={[
             {
               id: 1,
               clientName: "",
-              clientDesignation: "IT Manager",
+              clientDesignation: "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
               thumbnail: "1",
               description:
-                "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+                "Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation: "IT Head,  Middle East based Fast Food Chain",
+              thumbnail: "1",
+              description:
+                "Appreciation to Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency and productivity. We look forward to continuing this partnership with Godrej Infotech for future technological needs.",
+              category: "static",
+              link: "/",
+            },
+                {
+              id: 3,
+              clientName: "",
+              clientDesignation: "IT Manager, India’s Premier hi-tech Engineering Solutions Provider",
+              thumbnail: "1",
+              description:
+                "Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.",
               category: "static",
               link: "/",
             },
