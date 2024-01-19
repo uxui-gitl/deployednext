@@ -121,14 +121,14 @@ const ConsiderRPA = [
     ctaUrl: "/",
     image: "/rpa/EnsureCompliance.png",
   },
-  {
-    _id: 4,
-    title: "Strengthen Potential",
-    desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/StrengthenPotential.png",
-  },
+  // {
+  //   _id: 4,
+  //   title: "Strengthen Potential",
+  //   desc: "Enable employees to focus on more meaningful and strategic endeavors, helping them to deliver attentive experience to customers.",
+  //   cta: "Know More",
+  //   ctaUrl: "/",
+  //   image: "/rpa/StrengthenPotential.png",
+  // },
   {
     _id: 5,
     title: "Optimize FTE Cost",
@@ -159,13 +159,13 @@ const ConsiderRPA = [
 const UseCases = [
   {
     _id: 1,
-    title: "Incident Management Tickets ",
+    title: "Employee Access Creation",
     cta: "Know More",
     link: "",
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Ticketing system - Incident management",
     cta: "Know More",
     link: "",
   },
@@ -367,7 +367,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes.  "></Abstract>
+      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
 
       {/* Why consider RPA for Your Business */}
       {/* <>
@@ -643,9 +643,7 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are your trusted RPA partner, and our experience extends to
-                  industry-leading RPA platforms and expertise to customize
-                  solutions that fulfil your exclusive business needs.
+                 Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -866,13 +864,8 @@ const page = () => {
             {/* right */}
             <div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] mb-2 ">
-                  The journey towards efficiency and competency{" "}
-                </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  From inception to upheld brilliance, every stage of our
-                  project lifecycle is precisely devised to optimize your
-                  business processes.
+                  From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.
                 </p>
               </div>
             </div>
