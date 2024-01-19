@@ -24,7 +24,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                 </h3>
               ) : (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                  GITL proposed offerings
+                 Our Offerings
                 </h3>
               )}
             </div>
