@@ -42,6 +42,7 @@ import OfferingsSlider from "@/components/OfferingsSlider";
 import Abstract from "@/components/Abstract";
 import BlogSlider from "@/components/BlogSlider";
 import Accordion from "@/components/Accordion";
+import Infographics from "@/components/Infographics";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -661,235 +662,72 @@ const page = () => {
       <>
         <OfferingsSlider
           arr={[
+            /*One*/
             {
               _id: 1,
-              title: "Computer Vision ",
-              inline: true,
-              subArr: true,
-              image: "OfferingsSlider.png",
-              desc: "We specialize in custom video and image analysis tool development for computer vision and machine vision systems. Our expert team leverages advanced technologies like OpenCV to optimize existing computer vision algorithms or develop entirely new algorithms based on mathematical models ",
+              title: "Business Consulting",
+              desc: "",
               cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
               ctaUrl: "/",
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Future of Projects  ",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title:
-                        "External integration with project monitoring tools  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile applications for task assignment",
-                      url: "/",
-                    },
-                    {
-                      title: "After sales service",
-                      url: "/",
-                    },
-                    {
-                      title: "Data Security & Digital Documentation ",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi site management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "IoT Enabled Products ",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title:
-                        "External integration with project monitoring tools  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile applications for task assignment",
-                      url: "/",
-                    },
-                    {
-                      title: "After sales service",
-                      url: "/",
-                    },
-                    {
-                      title: "Data Security & Digital Documentation ",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi site management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Supply Chain Management  ",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title:
-                        "External integration with project monitoring tools  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile applications for task assignment",
-                      url: "/",
-                    },
-                    {
-                      title: "After sales service",
-                      url: "/",
-                    },
-                    {
-                      title: "Data Security & Digital Documentation ",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi site management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 4,
-                  icon: "gear",
-                  title: "Performance Management ",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title:
-                        "External integration with project monitoring tools  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile applications for task assignment",
-                      url: "/",
-                    },
-                    {
-                      title: "After sales service",
-                      url: "/",
-                    },
-                    {
-                      title: "Data Security & Digital Documentation ",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi site management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
-                  ],
-                },
-                // Add more items as needed
-              ],
               links: [
                 {
-                  title: "Links Real-time Object Detection",
+                  title: "Cybersecurity roadmap development",
                   url: "/",
                 },
                 {
-                  title: "Data Labelling",
+                  title: "Assessment services against cyber security frameworks & standards",
                   url: "/",
                 },
-                {
-                  title: "Security Solution",
-                  url: "/",
-                },
-                {
-                  title: "Equipment Monitoring",
-                  url: "/",
-                },
+                
               ],
             },
+            /*End One*/
             {
               _id: 2,
-              title: "Speech &  Language ",
-              desc: "Our reliable approach to Speech and Language AI empowers your business with the tools needed to elevate customer experiences, streamline operations and stand tall in competition ",
+              title: "Technology Solutions - Implementation & Management",
+              desc: "",
               inline: true,
               subArr: true,
               subArrLinks: [
                 {
                   _id: 1,
                   icon: "gear",
-                  title: "Future of Projects  2",
+                  title: "Perimeter Security",
                   desc: "",
                   cta: "Know More",
                   ctaUrl: "/",
                   list: [
                     {
                       title:
-                        "External integration with project monitoring tools  ",
+                        "Zero Trust Security",
                       url: "/",
                     },
                     {
-                      title: "Mobile applications for task assignment",
+                      title: "Secure access service edge (SASE)",
                       url: "/",
                     },
                     {
-                      title: "After sales service",
+                      title: "Next Generation Firewall (NGFW)",
                       url: "/",
                     },
                     {
-                      title: "Data Security & Digital Documentation ",
+                      title: "Secure Remote Access (VPN)",
                       url: "/",
                     },
                     {
-                      title: "Multi site management  ",
+                      title: "Multi Factor Authentication (MFA)",
                       url: "/",
                     },
                     {
-                      title: "Project Task Assignment & Management  ",
+                      title: "Distributed Denial of Service (DDoS)",
                       url: "/",
                     },
                     {
-                      title: "Remote Work and Cost Accuracy   ",
+                      title: "Web Security Gateways",
                       url: "/",
                     },
                   ],
@@ -897,116 +735,137 @@ const page = () => {
                 {
                   _id: 2,
                   icon: "gear",
-                  title: "IoT Enabled Products 2",
+                  title: "Network Security",
                   desc: "",
                   cta: "Know More",
                   ctaUrl: "/",
                   list: [
                     {
                       title:
-                        "External integration with project monitoring tools  ",
+                        "Next Generation Firewalls",
                       url: "/",
                     },
                     {
-                      title: "Mobile applications for task assignment",
+                      title: "Unified Threat Management",
                       url: "/",
                     },
                     {
-                      title: "After sales service",
+                      title: "Software Defined WAN",
                       url: "/",
                     },
                     {
-                      title: "Data Security & Digital Documentation ",
+                      title: "Network Access Control (NAC)",
                       url: "/",
                     },
                     {
-                      title: "Multi site management  ",
+                      title: "Deception Technology",
                       url: "/",
                     },
                     {
-                      title: "Project Task Assignment & Management  ",
+                      title: "Advanced Persistent Threat (APT)",
                       url: "/",
                     },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
+                    
                   ],
                 },
                 {
                   _id: 3,
                   icon: "gear",
-                  title: "Supply Chain Management  ",
+                  title: "End Point Security",
                   desc: "",
                   cta: "Know More",
                   ctaUrl: "/",
                   list: [
                     {
                       title:
-                        "External integration with project monitoring tools  ",
+                        "Endpoint Protection Suite",
                       url: "/",
                     },
                     {
-                      title: "Mobile applications for task assignment",
+                      title: "Endpoint Detection Response (EDR)",
                       url: "/",
                     },
                     {
-                      title: "After sales service",
+                      title: "Software Asset Management (SAM)",
                       url: "/",
                     },
                     {
-                      title: "Data Security & Digital Documentation ",
+                      title: "Patch Management Solutions",
                       url: "/",
                     },
                     {
-                      title: "Multi site management  ",
+                      title: "Mobile Device or Application Management (MDM / MAM)",
                       url: "/",
                     },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
-                      url: "/",
-                    },
+                    
                   ],
                 },
                 {
                   _id: 4,
                   icon: "gear",
-                  title: "Performance Management ",
+                  title: "Application Security",
                   desc: "",
                   cta: "Know More",
                   ctaUrl: "/",
                   list: [
                     {
                       title:
-                        "External integration with project monitoring tools  ",
+                        "Web Application Security (WAF)",
                       url: "/",
                     },
                     {
-                      title: "Mobile applications for task assignment",
+                      title: "API Gateways",
+                      url: "/",
+                    },
+                    
+                  ],
+                },
+                {
+                  _id: 5,
+                  icon: "gear",
+                  title: "e. Users",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "O365",
                       url: "/",
                     },
                     {
-                      title: "After sales service",
+                      title: "Mobile Device / Application",
+                      url: "/",
+                    },
+                     {
+                      title: "Management (MDM/ MAM)",
+                      url: "/",
+                    },
+                  ],
+                },
+                {
+                  _id: 6,
+                  icon: "gear",
+                  title: "Data",
+                  desc: "",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [
+                    {
+                      title:
+                        "Data Loss Prevention (DLP)",
                       url: "/",
                     },
                     {
-                      title: "Data Security & Digital Documentation ",
+                      title: "Privilege Identity Management (PIM)",
+                      url: "/",
+                    },
+                     {
+                      title: "Cloud Security",
                       url: "/",
                     },
                     {
-                      title: "Multi site management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Project Task Assignment & Management  ",
-                      url: "/",
-                    },
-                    {
-                      title: "Remote Work and Cost Accuracy   ",
+                      title: "Disaster Recovery",
                       url: "/",
                     },
                   ],
@@ -1014,7 +873,7 @@ const page = () => {
                 // Add more items as needed
               ],
               cta: "Explore Service",
-              image: "OfferingsSlider.png",
+              image: "rpa/Cyber-security_Technology-Solutions.jpg",
               ctaUrl: "/",
               links: [
                 {
@@ -1033,87 +892,98 @@ const page = () => {
             },
             {
               _id: 3,
-              title: "Document  Understanding",
-              desc: "We help you to achieve error-free AI-driven data capture from diverse document types, including invoices, receipts, driver's licenses, passports, and more. Our approach helps your business with unstructured data, whether it's in the form of text documents, images, voice or videos",
+              title: "Application Security testing",
+              desc: "",
               cta: "Explore Service",
               subArrLinks: [],
-              image: "OfferingsSlider.png",
+              image: "rpa/Application-Security-Testing.jpg",
               inline: true,
               subArr: false,
               ctaUrl: "/",
               links: [
                 {
-                  title: "Optical Character Recognition (OCR)",
+                  title: "Web application Security testing",
                   url: "/",
                 },
                 {
-                  title: "Text extraction",
+                  title: "Mobile App Security testing",
                   url: "/",
                 },
                 {
-                  title: "Optical Character Recognition - PDF",
+                  title: "Vulnerability Assessment and Penetration Testing (VAPT)",
                   url: "/",
                 },
-                {
-                  title: "AP Automation ",
-                  url: "/",
-                },
+                
               ],
             },
 
             {
               _id: 4,
-              title: "Conversational AI",
-              desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
+              title: "vCISO Services",
+              desc: "",
               cta: "Explore Service",
               inline: true,
-              image: "OfferingsSlider.png",
+              image: "rpa/Cyber-security_vCISO.jpg",
               subArrLinks: [],
               subArr: false,
               ctaUrl: "/",
               links: [
                 {
-                  title: "Document processing",
+                  title: "Strategy",
                   url: "/",
                 },
                 {
-                  title: "Sentiment analysis",
+                  title: "Risk Management",
                   url: "/",
                 },
                 {
-                  title: "Chatbots and Virtual Assistants",
+                  title: "Regulatory & Standards compliance",
+                  url: "/",
+                },
+                {
+                  title: "Policy & procedures",
+                  url: "/",
+                },
+                {
+                  title: "Security Program",
+                  url: "/",
+                },
+                {
+                  title: "End user Training",
                   url: "/",
                 },
               ],
             },
-            {
-              _id: 5,
-              title: "Conversational AI",
-              desc: "Ensuring your engagement with data more human-centric we offer solutions that helps you with smarter and customer-centric decision-making.",
-              inline: true,
-              cta: "Explore Service",
-              image: "OfferingsSlider.png",
-              subArrLinks: [],
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Document processing",
-                  url: "/",
-                },
-                {
-                  title: "Sentiment analysis",
-                  url: "/",
-                },
-                {
-                  title: "Chatbots and Virtual Assistants",
-                  url: "/",
-                },
-              ],
-            },
+            
           ]}
         />
       </>
+
+      {/* Infographics */}
+        <>
+          <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+            <div className=" mt-[5em] mb-[2em]">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  Services | Dynamic Cybersecurity
+                </h3>
+                
+              </div>
+            </div>
+            <div className="mx-auto text-center w-max">
+              <Infographics src="/infographics/Infographic_ServicesDynamic.png" />
+            </div>
+
+<h3 className="text-4xl leading-[42px] font-bold pt-32 mb-[2em] text-center">
+                  End to End Business Security with Our Cybersecurity Suite
+                </h3>
+
+                 <div className="mx-auto text-center w-max mb-20">
+              <Infographics src="/infographics/Infographic_EndToEnd.png" />
+            </div>
+
+          </div>
+        </>
 
       {/* Industry Spotlight Slider */}
       {/* <>
