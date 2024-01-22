@@ -266,8 +266,8 @@ export default function Home() {
               </div>
             </div>
           </>
-          <div className={`w-full bg-[#fff] text-left  `}>
-            <div className="  max-w-screen  md:max-w-screen  mx-auto pt-5   ">
+          <div className={`w-full bg-[#fff] text-left`}>
+            <div className="max-w-screen  md:max-w-screen  mx-auto pt-5">
               <SpotlightImageGrid
                 arr={[
                   {
@@ -314,7 +314,7 @@ export default function Home() {
                     title: "Advanced Cloud Infrastructure",
                     expandedTitle: "Advanced Cloud Infrastructure",
                     bgImg: "",
-                    bgColor: "#101828",
+                    bgColor: "#344CA9",
                     linksArr: [
                       {
                         _id: 1,
@@ -381,7 +381,7 @@ export default function Home() {
                     title: "Business Applications",
                     expandedTitle: "Business Applications",
                     bgImg: "bg4",
-                    bgColor: "#FF0000",
+                    bgColor: "#320A53",
                     linksArr: [
                       {
                         _id: 1,
