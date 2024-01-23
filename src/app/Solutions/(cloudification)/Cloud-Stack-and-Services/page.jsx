@@ -13,8 +13,8 @@ import Lottie from "lottie-react";
 // import robotAnimation from "../../../../assets/robot.json";
 import robotAnimation from "@/assets/robot.json";
 import infor from "../../../../../public/upgradeCloud/infor.png";
-import oracle from "../../../../../public/upgradeCloud/Oracle.png";
-import dynamic365 from "../../../../../public/upgradeCloud/Dynamic365.png";
+import oracle from "../../../../../public/upgradeCloud/OracleDB.png";
+import dynamic365 from "../../../../../public/upgradeCloud/Dynamic.png";
 import azure from "../../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
@@ -45,13 +45,13 @@ import SectionNav from "@/components/SectionNav";
 import SpotlightImageGrid from "@/components/SpotlightImageGrid";
 import Spotlight from "@/components/Spotlight";
 
-import scalabilityAccording from "../../../../../public/icon/cloudStackServices/scalabilityAccording.svg"
-import Fasterdevelopment from "../../../../../public/icon/cloudStackServices/Fasterdevelopment.svg"
-import Drivebusiness from "../../../../../public/icon/cloudStackServices/Drivebusiness.svg"
-import Highestlevels from "../../../../../public/icon/cloudStackServices/Highestlevels.svg"
-import StreamlineDelivery from "../../../../../public/icon/cloudStackServices/StreamlineDelivery.svg"
-import Effortlessintegration from "../../../../../public/icon/cloudStackServices/Effortlessintegration.svg"
-import BuiltInreliable from "../../../../../public/icon/cloudStackServices/BuiltInreliable.svg"
+import scalabilityAccording from "../../../../../public/icon/cloudStackServices/scalabilityAccording.svg";
+import Fasterdevelopment from "../../../../../public/icon/cloudStackServices/Fasterdevelopment.svg";
+import Drivebusiness from "../../../../../public/icon/cloudStackServices/Drivebusiness.svg";
+import Highestlevels from "../../../../../public/icon/cloudStackServices/Highestlevels.svg";
+import StreamlineDelivery from "../../../../../public/icon/cloudStackServices/StreamlineDelivery.svg";
+import Effortlessintegration from "../../../../../public/icon/cloudStackServices/Effortlessintegration.svg";
+import BuiltInreliable from "../../../../../public/icon/cloudStackServices/BuiltInreliable.svg";
 import Abstract from "@/components/Abstract";
 
 const fadeInAnimationVariant = {
@@ -87,7 +87,7 @@ const ChoiceSlider = [
   {
     _id: 4,
     desc: "Highest levels of security and privacy, ensuring data is safeguarded",
-     icon: "cloudStackServices/Highestlevels",
+    icon: "cloudStackServices/Highestlevels",
   },
   {
     _id: 5,
@@ -102,7 +102,7 @@ const ChoiceSlider = [
   {
     _id: 7,
     desc: "Built-in reliable disaster recovery capabilities and integrated development framework",
-  icon: "cloudStackServices/BuiltInreliable",
+    icon: "cloudStackServices/BuiltInreliable",
   },
 ];
 
@@ -116,7 +116,6 @@ const blogData = [
     link: "/",
     imgUrl: "",
   },
-  
 ];
 const front = [
   {
@@ -203,12 +202,8 @@ export default function Home() {
           />
         </>
 
-  {/* Overview  */}
-      <Abstract
-        abstractdesc="We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Through meticulous planning and execution, we ensure cloud solutions that align with your business objectives, driving efficiency and innovation. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine your user experience."
-        >
-
-        </Abstract>
+        {/* Overview  */}
+        <Abstract abstractdesc="We collaborate closely with clients to design and implement robust cloud systems. Our focus is on recalibrating businesses, delivering enhanced value, and refining user experiences. Through meticulous planning and execution, we ensure cloud solutions that align with your business objectives, driving efficiency and innovation. Trust us to navigate the complexities of cloud technology, deliver greater business value and refine your user experience."></Abstract>
 
         {/* Solutions Robot */}
         <>
@@ -302,7 +297,6 @@ export default function Home() {
                         title: "BaaS: Backup as a Service (BaaS)",
                         url: "/",
                       },
-                      
                     ],
 
                     ctaBtn: false,
@@ -331,7 +325,6 @@ export default function Home() {
                         title: "Hybrid and Multicloud Managed Services ",
                         url: "/",
                       },
-                      
                     ],
 
                     ctaBtn: false,
@@ -403,14 +396,12 @@ export default function Home() {
                         title: "LS Retail",
                         url: "/",
                       },
-                      
                     ],
 
                     ctaBtn: false,
                     ctaUrl: "/",
                     cta: "Know More",
                   },
-                  
                 ]}
               />
             </div>
@@ -461,7 +452,13 @@ export default function Home() {
                       <div className="bg-[#EDF1FF]  p-5 mb-10">
                         <div className="text-left ">
                           <p className=" gap-4 mb-5 pb-3 text-base leading-[22px]  ">
-                            <Image src={`/icon/${item.icon}.svg`} width={45} height={45} alt="icon" className="mb-5" />
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width={45}
+                              height={45}
+                              alt="icon"
+                              className="mb-5"
+                            />
                           </p>
                           <h3 className="text-[22px] w-fit leading-[30px] font-bold mb-5 ">
                             {item.desc}
@@ -476,7 +473,7 @@ export default function Home() {
           </div>
         </>
 
-{/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth / Spotlight */}
+        {/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth / Spotlight */}
 
         <div id="spotlight">
           <>
@@ -488,7 +485,10 @@ export default function Home() {
                       Leading Forefront with Our Cloud Services to Fuel Growth
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                      We aim for business foster growth and convert effective pilot initiatives into enterprise-scale implementation, while comprehensively addressing all technical and business requirements.
+                      We aim for business foster growth and convert effective
+                      pilot initiatives into enterprise-scale implementation,
+                      while comprehensively addressing all technical and
+                      business requirements.
                     </p>
                   </div>
                 </div>
@@ -513,7 +513,8 @@ export default function Home() {
                     expandedTitle: "Architecture and Management",
                     title: "Architecture and Management",
                     desc: "Architect and manage cloud infrastructure and platforms, ensuring comprehensive oversight of the business application ecosystem. This 360-degree visibility enhances business performance and reduces IT costs.",
-                    image: "/CloudStackServices/Capabilities-OperationsManagement.jpg",
+                    image:
+                      "/CloudStackServices/Capabilities-OperationsManagement.jpg",
                   },
                   {
                     label: "03",
@@ -531,15 +532,16 @@ export default function Home() {
                     desc: "Intact development of cloud environments and execute industry-leading top practices that support the individual business cloud implementation and management structures.",
                     image: "/CloudStackServices/Capabilities-PublicCloud.jpg",
                   },
-                   {
+                  {
                     label: "05",
                     expandedLabel: "",
-                    expandedTitle: "Application transformation and Cost Optimization",
+                    expandedTitle:
+                      "Application transformation and Cost Optimization",
                     title: "Application transformation and Cost Optimization",
                     desc: "Adherence to industry best practices, optimization of business processes and efficient cloud expenditure, while guaranteeing seamless integration, we help in achieving transformation goals in a cost-effective manner.",
-                    image: "/CloudStackServices/Capabilities-CloudCostOptimization.jpg",
+                    image:
+                      "/CloudStackServices/Capabilities-CloudCostOptimization.jpg",
                   },
-                    
                 ]}
               />
             </div>
@@ -548,8 +550,6 @@ export default function Home() {
 
         {/* Blog */}
         <BlogSlider arr={blogData} />
-
-        
 
         {/* SME Experts */}
         {/* <SME
@@ -692,7 +692,8 @@ export default function Home() {
               title:
                 "Built-in redundancy & automatic backups with Successful implementation of D365 Finance & Operations on Cloud",
               thumbnail: "2",
-              description: "India's Leading Wildlife & Nature Conservation Organization",
+              description:
+                "India's Leading Wildlife & Nature Conservation Organization",
               tags: [""],
               cta: "Know More",
               link: "/",
@@ -702,7 +703,8 @@ export default function Home() {
               title:
                 "Flexible system accessibility and Faster deployment time with D365 F&O Cloud Solution",
               thumbnail: "3",
-              description: "Leading Distributor of Fruits & Vegetables in the Philippines",
+              description:
+                "Leading Distributor of Fruits & Vegetables in the Philippines",
               tags: [""],
               cta: "Know More",
               link: "/",
@@ -719,7 +721,8 @@ export default function Home() {
             {
               id: 1,
               clientName: "",
-              clientDesignation: "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
+              clientDesignation:
+                "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
               thumbnail: "1",
               description:
                 "Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.",
@@ -736,10 +739,11 @@ export default function Home() {
               category: "static",
               link: "/",
             },
-                {
+            {
               id: 3,
               clientName: "",
-              clientDesignation: "IT Manager, India’s Premier hi-tech Engineering Solutions Provider",
+              clientDesignation:
+                "IT Manager, India’s Premier hi-tech Engineering Solutions Provider",
               thumbnail: "1",
               description:
                 "Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.",
