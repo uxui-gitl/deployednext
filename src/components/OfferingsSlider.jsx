@@ -24,7 +24,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                 </h3>
               ) : (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                 Our Offerings
+                  Our Offerings
                 </h3>
               )}
             </div>
@@ -86,6 +86,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                           {item.subArr ? (
                             <Accordion
                               key={item._id}
+                              bullet={true}
                               inline={item.inline}
                               icons={false}
                               items={item.subArrLinks}
