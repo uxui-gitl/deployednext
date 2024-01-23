@@ -54,7 +54,7 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
                   className={clsx({
                     "border-b-2": !inline,
                     "last:mb-2": inline,
-                    "border-[#DBDBDB] pb-1": inline,
+                    "border-[#DBDBDB] pb-1 ml-4 list-disc": inline,
                     "border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2":
                       !inline,
                   })}
