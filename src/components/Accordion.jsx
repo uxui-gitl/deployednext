@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 
-const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
+const AccordionItem = ({ item, inline, icons, isOpen, onClick, bullet }) => (
   <div
     className={clsx("accordionItem", {
       "mb-4 bg-[#fff]": !inline,
@@ -53,8 +53,9 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick }) => (
                   key={subItem._id}
                   className={clsx({
                     "border-b-2": !inline,
+                    "list-disc": bullet,
                     "last:mb-2": inline,
-                    "border-[#DBDBDB] pb-1": inline,
+                    "border-[#DBDBDB] list-disc ml-4 pb-1": inline,
                     "border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2":
                       !inline,
                   })}
