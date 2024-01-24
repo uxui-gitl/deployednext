@@ -15,8 +15,8 @@ import SectionNav from "@/components/SectionNav";
 import InfotechWeeklyAlt from "@/sections/infotechWeeklyAlt/InfotechWeeklyAlt";
 
 import java from "../../../../../public/java.png";
-import dotnet from "../../../../../public/dotnet.png";
-import sharepoint from "../../../../../public/sharepoint.png";
+import dotnet from "../../../../../public/technologyStack/dotnet.png";
+import sharepoint from "../../../../../public/technologyStack/sharepoint.png";
 import ms from "../../../../../public/ms.png";
 import RPAPlaceholder from "../../../../../public/RPAPlaceholder.png";
 import techStack1 from "../../../../../public/techStack1.png";
@@ -290,7 +290,7 @@ const page = () => {
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
               <div className="bg-[#F2F4F7] text-left">
                 <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                  Application Development Process 
+                  Application Development Process
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
