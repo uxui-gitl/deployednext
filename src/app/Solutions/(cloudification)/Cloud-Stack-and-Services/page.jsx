@@ -519,29 +519,13 @@ export default function Home() {
                   {
                     label: "03",
                     expandedLabel: "",
-                    expandedTitle: "Architecture and Planning",
-                    title: "Architecture and Planning",
-                    desc: "Address the obstacles of cloud adoption & optimization and develop infrastructure and platform strategies aligned with business operations that improves management models. ",
-                    image: "/Spotlight/card1.png",
-                  },
-                  {
-                    label: "04",
-                    expandedLabel: "",
-                    expandedTitle: "Operations and Management",
-                    title: "Operations and Management",
-                    desc: "Comprehensive management of cloud infrastructure and business application ecosystem for 360-degree visibility that fosters business performance and reduced IT costs.",
-                    image: "/Spotlight/card1.png",
-                  },
-                  {
-                    label: "05",
-                    expandedLabel: "",
                     expandedTitle: "Cloud Security",
                     title: "Cloud Security",
                     desc: "Detection of security gaps, formation of risk-allied structural design and a blueprint for baseline cloud security and automate the deployment of security guardrails for cloud native services.",
                     image: "/CloudStackServices/Capabilities-CloudSecurity.jpg",
                   },
                   {
-                    label: "06",
+                    label: "04",
                     expandedLabel: "",
                     expandedTitle: "Public Cloud",
                     title: "Public Cloud",
@@ -549,20 +533,14 @@ export default function Home() {
                     image: "/CloudStackServices/Capabilities-PublicCloud.jpg",
                   },
                   {
-                    label: "07",
+                    label: "05",
                     expandedLabel: "",
-                    expandedTitle: "Application transformation",
-                    title: "Application transformation",
-                    desc: "Adhering to industry best practices, optimizing business processes, and guaranteeing seamless integration, we help businesses in accomplishing transformation goals.",
-                    image: "/Spotlight/card1.png",
-                  },
-                  {
-                    label: "08",
-                    expandedLabel: "",
-                    expandedTitle: "Cloud Cost Optimization",
-                    title: "Cloud Cost Optimization",
-                    desc: "Optimize your cloud expenditure and guarantee cost savings while simultaneously fulfilling IT performance requirements and deriving business value from the cloud. ",
-                    image: "/Spotlight/card1.png",
+                    expandedTitle:
+                      "Application transformation and Cost Optimization",
+                    title: "Application transformation and Cost Optimization",
+                    desc: "Adherence to industry best practices, optimization of business processes and efficient cloud expenditure, while guaranteeing seamless integration, we help in achieving transformation goals in a cost-effective manner.",
+                    image:
+                      "/CloudStackServices/Capabilities-CloudCostOptimization.jpg",
                   },
                 ]}
               />

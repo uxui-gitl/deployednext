@@ -55,10 +55,13 @@ const fadeInAnimationVariant = {
 export default function Home() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState("");
+  const [selectedTabContent, setSelectedTabContent] = useState([]);
+  const [selectedTabContentListID, setSelectedTabContentListID] = useState(1);
 
-  const openPopup = (title) => {
+  const openPopup = (title, nested) => {
     setSelectedTitle(title);
     setIsPopupOpen(true);
+    setSelectedTabContent(nested);
   };
 
   const closePopup = () => {
@@ -130,6 +133,26 @@ export default function Home() {
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
+      nested: [
+        {
+          _tabId: 1,
+          tabTitle: "Migrate email to cloud",
+          list: [
+            "Migrate from GSuite to M 365",
+            "On-premises emails to O 365 Cloud",
+            "Migrate M365 / O365",
+          ],
+        },
+        {
+          _tabId: 2,
+          tabTitle: "Migrate/ Upgrade Infrastructure to Cloud",
+          list: [
+            "Minimize downtime for seamless business operations",
+            "Improve customer & employee experiences",
+            "Optimize overall performance",
+          ],
+        },
+      ],
     },
     {
       _id: 2,
@@ -138,6 +161,26 @@ export default function Home() {
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
+      nested: [
+        {
+          _tabId: 1,
+          tabTitle: "Migrate email to cloud",
+          list: [
+            "Migrate from GSuite to M 365",
+            "On-premises emails to O 365 Cloud",
+            "Migrate M365 / O365",
+          ],
+        },
+        {
+          _tabId: 2,
+          tabTitle: "Migrate/ Upgrade Infrastructure to Cloud",
+          list: [
+            "Minimize downtime for seamless business operations",
+            "Improve customer & employee experiences",
+            "Optimize overall performance",
+          ],
+        },
+      ],
     },
     {
       _id: 3,
@@ -146,6 +189,26 @@ export default function Home() {
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
+      nested: [
+        {
+          _tabId: 1,
+          tabTitle: "Migrate email to cloud",
+          list: [
+            "Migrate from GSuite to M 365",
+            "On-premises emails to O 365 Cloud",
+            "Migrate M365 / O365",
+          ],
+        },
+        {
+          _tabId: 2,
+          tabTitle: "Migrate/ Upgrade Infrastructure to Cloud",
+          list: [
+            "Minimize downtime for seamless business operations",
+            "Improve customer & employee experiences",
+            "Optimize overall performance",
+          ],
+        },
+      ],
     },
     {
       _id: 4,
@@ -154,6 +217,26 @@ export default function Home() {
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
+      nested: [
+        {
+          _tabId: 1,
+          tabTitle: "Migrate email to cloud",
+          list: [
+            "Migrate from GSuite to M 365",
+            "On-premises emails to O 365 Cloud",
+            "Migrate M365 / O365",
+          ],
+        },
+        {
+          _tabId: 2,
+          tabTitle: "Migrate/ Upgrade Infrastructure to Cloud",
+          list: [
+            "Minimize downtime for seamless business operations",
+            "Improve customer & employee experiences",
+            "Optimize overall performance",
+          ],
+        },
+      ],
     },
     {
       _id: 5,
@@ -162,48 +245,35 @@ export default function Home() {
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
+      nested: [
+        {
+          _tabId: 1,
+          tabTitle: "Migrate email to cloud",
+          list: [
+            "Migrate from GSuite to M 365",
+            "On-premises emails to O 365 Cloud",
+            "Migrate M365 / O365",
+          ],
+        },
+        {
+          _tabId: 2,
+          tabTitle: "Migrate/ Upgrade Infrastructure to Cloud",
+          list: [
+            "Minimize downtime for seamless business operations",
+            "Improve customer & employee experiences",
+            "Optimize overall performance",
+          ],
+        },
+      ],
     },
   ];
 
-  const aglity = [
-    {
-      _id: 1,
-      title: "Database Migration",
-    },
-    {
-      _id: 2,
-      title: "Infrastructure Migration ",
-    },
-    {
-      _id: 3,
-      title: "Enterprise Platforms Migration",
-    },
-    {
-      _id: 4,
-      title: "Cloud Microservices",
-    },
-    {
-      _id: 5,
-      title: "Disaster Recovery and Enterprise Backup Service",
-    },
-    {
-      _id: 6,
-      title: "Application Migration and Modernization",
-    },
-    {
-      _id: 7,
-      title: "Cloud Monitoring and Reporting ",
-    },
-  ];
-  const tabs = [
-    { label: "Tab 1", content: "Content for Tab 1" },
-    { label: "Tab 2", content: "Content for Tab 2" },
-    { label: "Tab 3", content: "Content for Tab 3" },
-  ];
   const [activeTab, setActiveTab] = useState(0);
 
-  const handleTabClick = (index) => {
+  const handleTabClick = (index, _tabId) => {
     setActiveTab(index);
+    console.log({ _tabId });
+    setSelectedTabContentListID(_tabId);
   };
   return (
     <>
@@ -433,7 +503,7 @@ export default function Home() {
                         {item.desc}
                       </p>
                       <button
-                        onClick={() => openPopup(item.title)}
+                        onClick={() => openPopup(item.title, item.nested)}
                         className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
                       >
                         {item.cta}{" "}
@@ -510,17 +580,17 @@ export default function Home() {
                 <div>
                   <div>
                     <div className="px-8 pt-8 flex justify-start gap-4">
-                      {tabs.map((tab, index) => (
+                      {selectedTabContent.map((tab, index) => (
                         <div
                           key={index}
-                          onClick={() => handleTabClick(index)}
+                          onClick={() => handleTabClick(index, tab._tabId)}
                           className={`cursor-pointer px-4 py-2 ${
                             index === activeTab
                               ? "text-blue-500 border-b-2 border-blue-500"
                               : ""
                           }`}
                         >
-                          {tab.label}
+                          {tab.tabTitle}
                         </div>
                       ))}
                     </div>
@@ -528,13 +598,16 @@ export default function Home() {
                     <div className="">
                       <div className="bg-white w-full px-8 py-16 max-w-screen-xl md:max-w-screen-xl ">
                         <div className="flex flex-row gap-4 ">
-                          {[0, 1, 2].map((i, index) => (
-                            <div
-                              className="min-w-[300px] w-1/3 bg-[#ededed] inline-flex"
-                              key={index}
-                            >
-                              <div className="flex p-8 flex-col">
-                                <span>
+                          {selectedTabContent.map((tabContent, index) => (
+                            <>
+                              {tabContent._tabId == selectedTabContentListID
+                                ? tabContent.list.map((item, index) => (
+                                    <div
+                                      key={index}
+                                      className="min-w-[300px] w-1/3 bg-[#ededed]  inline-flex"
+                                    >
+                                      <div className="flex p-8 flex-col">
+                                        {/* <span>
                                   {true ? (
                                     <Image
                                       src={`/dummy.png`}
@@ -554,15 +627,17 @@ export default function Home() {
                                       className="cta-know-more"
                                     />
                                   )}
-                                </span>{" "}
-                                <h3 className="text-2xl font-bold mb-4">
-                                  {selectedTitle}
-                                </h3>
-                              </div>
-                            </div>
+                                </span> */}
+                                        <p className="text-[18px] font-semibold mb-4">
+                                          {item}
+                                        </p>
+                                      </div>
+                                    </div>
+                                  ))
+                                : null}
+                            </>
                           ))}
                         </div>
-                        {/* Add more content or components as needed */}
                       </div>
                     </div>
                   </div>
@@ -652,7 +727,6 @@ export default function Home() {
         </div>
 
         {/* Benefits */}
-
         <Benefits
           ribbon="Upgrade to Cloud Benefits "
           ribbonTxtWhite="true"
