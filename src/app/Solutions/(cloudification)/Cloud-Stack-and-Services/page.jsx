@@ -13,8 +13,8 @@ import Lottie from "lottie-react";
 // import robotAnimation from "../../../../assets/robot.json";
 import robotAnimation from "@/assets/robot.json";
 import infor from "../../../../../public/upgradeCloud/infor.png";
-import OracleDB from "../../../../../public/upgradeCloud/OracleDB.png";
-import Dynamic from "../../../../../public/upgradeCloud/Dynamic.png";
+import oracle from "../../../../../public/upgradeCloud/OracleDB.png";
+import dynamic365 from "../../../../../public/upgradeCloud/Dynamic.png";
 import azure from "../../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
@@ -502,18 +502,19 @@ export default function Home() {
                   {
                     label: "01",
                     expandedLabel: "",
-                    title: "Advisory and Consulting",
-                    desc: "Strategic guidance and advice for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment and maximize the benefits of cloud computing.",
-                    expandedTitle: "Advisory and Consulting",
-                    image: "/Spotlight/card1.png",
+                    title: "Consulting and Roadmap",
+                    desc: "Strategic guidance and actionable plan for adoption, integration and management of cloud technologies while enabling businesses to optimize their cloud investment.",
+                    expandedTitle: "Consulting and Roadmap",
+                    image: "/CloudStackServices/Capabilities-Consulting.jpg",
                   },
                   {
                     label: "02",
                     expandedLabel: "",
-                    expandedTitle: "Strategy and Roadmap",
-                    title: "Strategy and Roadmap",
-                    desc: "Actionable plan with multi-phased approach that ensures business is adequately equipped for the challenges and opportunities of cloud adoption. Top of Form",
-                    image: "/Spotlight/card1.png",
+                    expandedTitle: "Architecture and Management",
+                    title: "Architecture and Management",
+                    desc: "Architect and manage cloud infrastructure and platforms, ensuring comprehensive oversight of the business application ecosystem. This 360-degree visibility enhances business performance and reduces IT costs.",
+                    image:
+                      "/CloudStackServices/Capabilities-OperationsManagement.jpg",
                   },
                   {
                     label: "03",
@@ -537,15 +538,15 @@ export default function Home() {
                     expandedTitle: "Cloud Security",
                     title: "Cloud Security",
                     desc: "Detection of security gaps, formation of risk-allied structural design and a blueprint for baseline cloud security and automate the deployment of security guardrails for cloud native services.",
-                    image: "/Spotlight/card1.png",
+                    image: "/CloudStackServices/Capabilities-CloudSecurity.jpg",
                   },
                   {
                     label: "06",
                     expandedLabel: "",
                     expandedTitle: "Public Cloud",
                     title: "Public Cloud",
-                    desc: "Intact development of cloud environments and execute industry-leading top practices that supports the individual business cloud implementation and management structures.",
-                    image: "/Spotlight/card1.png",
+                    desc: "Intact development of cloud environments and execute industry-leading top practices that support the individual business cloud implementation and management structures.",
+                    image: "/CloudStackServices/Capabilities-PublicCloud.jpg",
                   },
                   {
                     label: "07",
