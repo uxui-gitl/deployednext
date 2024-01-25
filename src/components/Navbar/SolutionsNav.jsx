@@ -187,14 +187,7 @@ const SolutionsNav = () => {
                 {
                   sectionLabel: "Technology Stack",
                   sectionHref: "/Solutions/Technology-Stack",
-                  subLinks: [
-                    {
-                      label: "AI & ML",
-                      href: "/Solutions/Technology-Stack/AI-ML",
-                    },
-                    { label: "RPA", href: "/Solutions/Technology-Stack/RPA" },
-                    { label: "IIOT", href: "/Solutions/Technology-Stack/IIOT" },
-                  ],
+                  subLinks: [],
                 },
               ]}
             />
@@ -209,11 +202,11 @@ const SolutionsNav = () => {
                   subLinks: [
                     {
                       label: "Upgrade to Cloud",
-                      href: "/Solutions/Intelligent-Technologies/AI-ML",
+                      href: "/Solutions/Upgrade-to-Cloud",
                     },
                     {
                       label: "Cloud Stack & Services",
-                      href: "/Solutions/Intelligent-Technologies/RPA",
+                      href: "/Solutions/Cloud-Stack-and-Services",
                     },
                   ],
                 },
