@@ -640,7 +640,7 @@ export default function Home() {
             {/* Popup */}
             {isPopupOpen && (
               <div className="fixed w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex-col flex items-center justify-center">
-                <div className="bg-[#ededed] w-full  max-w-screen-xl md:max-w-screen-xl ">
+                <div className="bg-[#ededed] w-full  max-w-screen-xl md:max-w-screen-xl md:h-auto max-h-[66%]">
                   <div className="p-4 md:p-8">
                     <div>
                       <button
