@@ -232,29 +232,12 @@ const page = () => {
     _id: 1,
     ribbon: "blog",
     title: "Azure Data Lake – Data Storage Solution for Big Data Analytics",
-    desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behavior. ",
+    desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
     cta: "Know More",
     link: "/",
     imgUrl: "",
   },
-  {
-    _id: 2,
-    ribbon: "blog",
-    title: "Delighted Customers Share their Customer Experience /Testimonial",
-    desc: "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
-    {
-    _id: 3,
-    ribbon: "blog",
-    title: "Heading Missing in document",
-    desc: "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
+  
 ];
 
   const smartTools = [
@@ -534,7 +517,7 @@ const page = () => {
         <BlogSlider arr={blogData} />
 
       {/* Expertise */}
-      <Expertise
+      {/* <Expertise
         ribbon="Our Expertise "
         ribbonTxtWhite="true"
         title="Future Outlook with Intelligent Technologies"
@@ -553,22 +536,32 @@ const page = () => {
             desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
           },
         ]}
-      ></Expertise>
+      ></Expertise> */}
 
       {/* Testimonial */}
       <Testimonial
         ribbon="Testimonials "
-        title="What Experts Think About Us "
+        title="Delighted Customers Share their Customer Experience"
         desc="It is a long established fact that a reader will be distracted by
           the readable content of a page when looking at its layout."
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation: "IT Manager, Leading Cooling Services Provider in the Middle East",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation: "IT Manager, Saudi Arabia's Major Retail Chain",
+            thumbnail: "1",
+            description:
+              "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
             category: "static",
             link: "/",
           },
