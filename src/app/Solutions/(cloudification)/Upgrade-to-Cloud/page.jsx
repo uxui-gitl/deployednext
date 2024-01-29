@@ -321,7 +321,7 @@ export default function Home() {
       _id: 4,
       title: "Cloud Backup and Disaster Recovery",
       desc: "We assure to secure your data and keep your business running, safeguarding your business against unexpected disruptions with scalable solution.",
-      cta: "Know More",
+      cta: "",
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       isNested: false,
@@ -331,7 +331,7 @@ export default function Home() {
       _id: 5,
       title: "Cloud Database Migration",
       desc: "Our cloud migration experts employ a combination of Extract, Transform, Load (ETL) processes and real-time data replication to ensure a smooth transition.",
-      cta: "Know More",
+      cta: "",
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       isNested: false,
@@ -356,7 +356,7 @@ export default function Home() {
   };
 
   const handleTabClick = (index, _tabId) => {
-    console.log(index["_tabId"]);
+    // console.log(index["_tabId"]);
     setActiveTab(index["_tabId"] - 1);
     setSelectedTabContentListID(_tabId);
   };
@@ -588,23 +588,25 @@ export default function Home() {
                       <p className="text-base leading-6 font-medium">
                         {item.desc}
                       </p>
-                      <button
-                        onClick={() => openPopup(item.title, item.tabData)}
-                        className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
-                      >
-                        {item.cta}
-                        <span>
-                          <Icon
-                            path={mdiArrowRight}
-                            style={{
-                              marginLeft: "0.5em",
-                              width: "1rem",
-                              fontSize: "14px",
-                            }}
-                            className="cta-know-more"
-                          />
-                        </span>
-                      </button>
+                      {item.cta && (
+                        <button
+                          onClick={() => openPopup(item.title, item.tabData)}
+                          className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
+                        >
+                          {item.cta}
+                          <span>
+                            <Icon
+                              path={mdiArrowRight}
+                              style={{
+                                marginLeft: "0.5em",
+                                width: "1rem",
+                                fontSize: "14px",
+                              }}
+                              className="cta-know-more"
+                            />
+                          </span>
+                        </button>
+                      )}
                     </div>
                   );
                 })}
@@ -640,7 +642,7 @@ export default function Home() {
             {/* Popup */}
             {isPopupOpen && (
               <div className="fixed w-full inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex-col flex items-center justify-center">
-                <div className="bg-[#ededed] w-full  max-w-screen-xl md:max-w-screen-xl ">
+                <div className="bg-[#ededed] w-full  max-w-screen-xl md:max-w-screen-xl md:h-auto max-h-[66%]">
                   <div className="p-4 md:p-8">
                     <div>
                       <button
@@ -690,7 +692,7 @@ export default function Home() {
                                   ? tabContent.list.map((item, index) => (
                                       <div
                                         key={index}
-                                        className="min-w-[300px] w-full md:w-1/3 bg-[#ededed]  inline-flex"
+                                        className="min-w-[300px] w-full md:w-2/3 bg-[#ededed]  inline-flex"
                                       >
                                         <div className="flex p-4 md:p-8 flex-col">
                                           <p className="text-[18px] font-semibold mb-4">

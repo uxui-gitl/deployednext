@@ -90,9 +90,17 @@ const Spotlight = ({ arr }) => {
                     <div className="font-bold text-[26px] mb-4 leading-[34px]">
                       <Balancer>{card.expandedTitle}</Balancer>
                     </div>
-                    <div className="text-[12px] leading-[18px] font-medium">
-                      {card.desc}
-                    </div>
+                    {card.isBullet ? (
+                      <div className="text-[12px] leading-[18px] font-medium">
+                        {card.list.map((i, index) => (
+                          <li key={index}>{i}</li>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-[12px] leading-[18px] font-medium">
+                        {card.desc}
+                      </div>
+                    )}
                   </div>
                 </div>
 

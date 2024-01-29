@@ -48,7 +48,7 @@ const ChoiceSlider = [
     imgUrl: "Industry-served-Healthcare",
     url: "/",
   },
-    {
+  {
     _id: 5,
     title: "Project ",
     desc: "",
@@ -341,7 +341,9 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                    Being preferred partner of leading industries, we help in shaping specific technology prerequisites and deliver brilliant value driven solutions tailored to your sector.  
+                    Being preferred partner of leading industries, we help in
+                    shaping specific technology prerequisites and deliver
+                    brilliant value driven solutions tailored to your sector.
                   </p>
                 </div>
                 <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -385,7 +387,84 @@ export default function Home() {
           </div>
         </>
 
-        
+        {/* Engg. with our Methodology */}
+        <div id="spotlight">
+          <>
+            <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+                <div className="bg-[#F2F4F7] text-left">
+                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                    People-led and Innovation-empowered Services for Successful
+                    results
+                  </h4>
+                  <div className="flex flex-col md:flex-row gap-8 ">
+                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                      Accomplishing Your Goals at Every stage
+                    </h3>
+                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                      Enabling you to thrive in digital era, we prepare your
+                      organisation with scaling growth for sustainable tomorrow.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className={`w-full bg-[#F2F4F7] text-left `}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem] ">
+              <Spotlight
+                arr={[
+                  {
+                    label: "01",
+                    expandedLabel: "Step 01",
+                    title: "Business Situation Analysis for journey mapping",
+                    expandedTitle:
+                      "Business Situation Analysis for journey mapping",
+                    isBullet: true,
+                    list: ["dummy1", "dummy1", "dummy1"],
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image:
+                      "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
+                  },
+                  {
+                    label: "02",
+                    expandedLabel: "Step 02",
+                    title: "Development Aimed at Performance Enhancement",
+                    expandedTitle:
+                      "Development Aimed at Performance Enhancement",
+                    isBullet: true,
+                    list: ["dummy1", "dummy1", "dummy1"],
+                    desc: "Dummy",
+                    image:
+                      "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
+                  },
+                  {
+                    label: "03",
+                    expandedLabel: "Step 03",
+                    title: "Deployment to Ensure Seamless Transition ",
+                    expandedTitle: "Deployment to Ensure Seamless Transition ",
+                    list: ["dummy1", "dummy1", "dummy1"],
+                    desc: "Dummy",
+                    isBullet: true,
+                    image:
+                      "/Spotlight/Services-Deployment-to-Ensure-Seamless-Transition.jpg",
+                  },
+                  {
+                    label: "04",
+                    expandedLabel: "Step 04",
+                    title: "Support for System Maintenance",
+                    expandedTitle: "Support for System Maintenance",
+                    isBullet: true,
+                    desc: "Dummy",
+                    list: ["dummy1", "dummy1", "dummy1"],
+                    image:
+                      "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
+                  },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
 
         {/* Infographics */}
         <>
@@ -396,7 +475,9 @@ export default function Home() {
                   Helping Enterprises to Succeed
                 </h3>
                 <p className="font-normal leading-[22px] w-[80%] mx-auto">
-                  We redefine success standards globally with robust enterprise solutions to enhance stakeholder experiences, strengthen business resilience and modernize IT environment.  
+                  We redefine success standards globally with robust enterprise
+                  solutions to enhance stakeholder experiences, strengthen
+                  business resilience and modernize IT environment.
                 </p>
               </div>
             </div>
@@ -442,14 +523,16 @@ export default function Home() {
                         <h4
                           className={`font-medium text-[#0745D3] uppercase ribbon`}
                         >
-                         Accelerating Business Engineering 
+                          Accelerating Business Engineering
                         </h4>
                         <div className="flex flex-col md:flex-row gap-8 ">
                           <h3 className="text-4xl leading-[42px] my-4 font-bold">
                             Godrej Infotech Solutions
                           </h3>
                           <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                             Resolving complex business challenges and seizing growth opportunities through our purpose driven solutions designed by our experts. 
+                            Resolving complex business challenges and seizing
+                            growth opportunities through our purpose driven
+                            solutions designed by our experts.
                           </p>
                         </div>
                       </div>
