@@ -305,6 +305,125 @@ const page = () => {
         />
       </>
 
+      {/*  */}
+      <>
+        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col  sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+            <Swiper
+              slidesPerView={2}
+              spaceBetween={20}
+              pagination={true}
+              modules={[Pagination]}
+            >
+              {[
+                {
+                  _id: 1,
+                  title: "Consulting ",
+                  cta: "Know More",
+                  link: "/",
+                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                },
+                {
+                  _id: 2,
+                  title: "Employee Access Creation ",
+                  cta: "Know More",
+                  link: "/",
+                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                },
+                {
+                  _id: 3,
+                  title: "Account Payable and Receivable Process",
+                  cta: "Know More",
+                  link: "/",
+                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                },
+                {
+                  _id: 4,
+                  title: "Vendor Onboarding Process",
+                  cta: "Know More",
+                  link: "/",
+                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                },
+                {
+                  _id: 5,
+                  title: "Customer Onboarding Process",
+                  cta: "Know More",
+                  link: "/",
+                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                },
+              ].map((item, index) => {
+                return (
+                  <SwiperSlide
+                    key={item._id}
+                    className=" mx-2 bg-white flex flex-col justify-between"
+                  >
+                    <div className="p-5 w-full">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/icon/${item.icon}.svg`}
+                            width="48"
+                            height="48"
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                    </div>
+                    <div
+                      className={clsx("w-full bg-[#0745D3] p-5", {
+                        hidden: item.link === "/" || item.link === "",
+                      })}
+                    >
+                      <Link
+                        href={item.link}
+                        className={
+                          "text-white flex transition-all hover:opacity-75"
+                        }
+                      >
+                        {item.cta}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </div>
+      </>
+
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Benefits "
@@ -401,6 +520,114 @@ const page = () => {
             </div>
           </div>
         </div>
+      </>
+
+      {/*  */}
+
+      <>
+        <>
+          <div className={` w-full bg-[#FFF] pt-24`}>
+            <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Advance Solutions for Business Future Readiness
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="font-normal leading-[22px] md:w-[90%] ">
+                    Embrace the future and stay ahead in digital era, harnessing
+                    the potential of innovative technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+        <>
+          <div className={`bg-img w-full pt-24 pb-12 mt-20`} id="productivity">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "Machine Learning",
+                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                  list: [
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  ],
+                },
+                {
+                  _id: 2,
+                  title: "Artificial Intelligence ",
+                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  cta: "Know More",
+                  link: "/",
+                  list: [
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  ],
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <ul>
+                        {item.list.map((i, index) => (
+                          <li
+                            className="text-[14px] leading-[22px] border-b-2 mb-4 text-[#101828]"
+                            key={index}
+                          >
+                            {i}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </>
       </>
 
       {/* Industry Solutions Slider */}
