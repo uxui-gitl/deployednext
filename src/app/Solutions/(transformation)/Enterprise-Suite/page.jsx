@@ -99,8 +99,7 @@ export default function Home() {
       <main>
         {/* <Intro /> */}
         <EntIntro
-          title="Bridging Transformation
-          with Enterprise Agility"
+          title="Bridging Transformation with Enterprise Agility"
           desc=""
           cta="Let's Connect"
           width="60%"
@@ -113,16 +112,10 @@ export default function Home() {
             <div className=" mt-[5em] mb-[2em]">
               <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
                 <h3 className="text-[42px] leading-[54px] w-[80%] mx-auto font-bold">
-                  Your capable partner for{" "}
-                  <span className="text-[#0745D3]">
-                    Enterprise Transformation
-                  </span>{" "}
-                  Success
+                  Your Trusted Partner for Enterprise Transformation Success
                 </h3>
                 <p className="font-normal leading-[22px] w-[70%] mx-auto">
-                  Collaborating with top- tier application providers, we
-                  recognise and deliver right technology for your business to
-                  bring forth scalable transformation
+                  With long standing experience of diverse industries and a strong technology partner ecosystem, we deliver 360-degree transformation solutions and consultation service helping organizations to modernize their core technology model and go-to-market framework. This enables businesses to embrace high end digitalization and leverage data analytics for taking better and proactive decisions along with enriching customer and employee experiences.  
                 </p>
               </div>
             </div>
@@ -135,31 +128,14 @@ export default function Home() {
         </>
 
         <div id="spotlightGrid">
-          <>
-            <div className={`w-full text-left bg-[#fff] pt-32`}>
-              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
-                <div className="bg-[#fff] text-left">
-                  <div className="flex flex-col md:flex-row gap-8 ">
-                    <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
-                      Maximizing Your Business Outcomes with Cloud Technology
-                    </h3>
-                    <p className="font-medium leading-[22px] md:w-[90%] ">
-                      Our verified proficiency in execution and innovation in
-                      cloud adaptability facilitate the process of business
-                      transformation at each juncture.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
+          
           <div className={`w-full bg-[#fff] text-left `}>
             <div className=" max-w-screen md:max-w-screen mx-auto pt-5 ">
               <SpotlightLogoGrid
                 arr={[
                   {
                     _id: 1,
-                    logo: "Microsoft-Office",
+                    logo: "Infor",
                     bgColor: "#e4f8ed",
                     btnColor: "#fff",
                     btnBg: "#4f9d73",
@@ -169,7 +145,39 @@ export default function Home() {
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Dynamics 365 CRM",
+                        title: "Infor Cloud Suite",
+                        url: "/",
+                      },
+                      {
+                        _id: 2,
+                        title: "Infor LN (On Premise & Infor Cloud - MT)",
+                        url: "/",
+                      },
+                      {
+                        _id: 3,
+                        title: "Infor WMS",
+                        url: "/",
+                      },
+                      {
+                        _id: 4,
+                        title: "HXN EAM ",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 2,
+                    logo: "Microsoft-Office",
+                    bgColor: "#fff8e5",
+                    btnColor: "#fff",
+                    btnBg: "#dc6803",
+                    ctaBtn: true,
+                    ctaUrl: "/",
+                    cta: "Know More",
+                    linksArr: [
+                      {
+                        _id: 1,
+                        title: "Dynamics 365 CRM ",
                         url: "/",
                       },
                       {
@@ -187,78 +195,7 @@ export default function Home() {
                         title: "Dynamics 365 Business Central",
                         url: "/",
                       },
-                    ],
-                  },
-                  {
-                    _id: 2,
-                    logo: "infor",
-                    bgColor: "#fff8e5",
-                    btnColor: "#fff",
-                    btnBg: "#dc6803",
-                    ctaBtn: true,
-                    ctaUrl: "/",
-                    cta: "Know More",
-                    linksArr: [
-                      {
-                        _id: 1,
-                        title: "Infor CloudSuite",
-                        url: "/",
-                      },
-                      {
-                        _id: 2,
-                        title: "Infor LN(On Prem & On Cloud - MT)",
-                        url: "/",
-                      },
-                      {
-                        _id: 3,
-                        title: "Infor WMS",
-                        url: "/",
-                      },
-                      {
-                        _id: 4,
-                        title: "Factory Track",
-                        url: "/",
-                      },
-                      {
-                        _id: 5,
-                        title: "HxGN EAM",
-                        url: "/",
-                      },
-                      {
-                        _id: 6,
-                        title: "Infor OS",
-                        url: "/",
-                      },
-                      {
-                        _id: 7,
-                        title: "Infor XM",
-                        url: "/",
-                      },
-                      {
-                        _id: 8,
-                        title: "Infor CPQ",
-                        url: "/",
-                      },
-                      {
-                        _id: 9,
-                        title: "Infor CRM",
-                        url: "/",
-                      },
-                      {
-                        _id: 10,
-                        title: "Infor HCM",
-                        url: "/",
-                      },
-                      {
-                        _id: 11,
-                        title: "Infor d/EPM",
-                        url: "/",
-                      },
-                      {
-                        _id: 12,
-                        title: "Infor Birst",
-                        url: "/",
-                      },
+                      
                     ],
                   },
                   {
@@ -273,26 +210,85 @@ export default function Home() {
                     linksArr: [
                       {
                         _id: 1,
-                        title: "Dummy",
+                        title: "Oracle Fusion Cloud",
                         url: "/",
                       },
                       {
                         _id: 2,
-                        title: "Dummy",
+                        title: "Oracle EBS ",
                         url: "/",
                       },
-                      {
-                        _id: 3,
-                        title: "Dummy",
-                        url: "/",
-                      },
-                      {
-                        _id: 4,
-                        title: "Dummy",
-                        url: "/",
-                      },
+                      
                     ],
                   },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Engg. with our Methodology */}
+        <div id="spotlight">
+          <>
+            <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+                <div className="bg-[#F2F4F7] text-left">
+                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                    People-led and Innovation-empowered Services for Successful results 
+                  </h4>
+                  <div className="flex flex-col md:flex-row gap-8 ">
+                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                      Accomplishing Your Goals at Every stage
+                    </h3>
+                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                      Equipping your organization to thrive in the digital era, we deliver high-end solutions, spanning from core ERP suite to our accelerators across complete technology spectrum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className={`w-full bg-[#F2F4F7] text-left `}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem] ">
+              <Spotlight
+                arr={[
+                  {
+                    label: "01",
+                    expandedLabel: "Step 01",
+                    title: "Business Consulting & Journey Mapping",
+                    expandedTitle:
+                      "Business Consulting & Journey Mapping",
+                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
+                    image: "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
+                  },
+                  {
+                    label: "02",
+                    expandedLabel: "Step 02",
+                    title: "Development Aimed at Performance Enhancement",
+                    expandedTitle:
+                      "Development Aimed at Performance Enhancement",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
+                  },
+                  {
+                    label: "03",
+                    expandedLabel: "Step 03",
+                    title: "Deployment to Ensure Seamless Transition ",
+                    expandedTitle:
+                      "Deployment to Ensure Seamless Transition ",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Deployment-to-Ensure-Seamless-Transition.jpg",
+                  },
+                  {
+                    label: "04",
+                    expandedLabel: "Step 04",
+                    title: "Support for System Maintenance",
+                    expandedTitle:
+                      "Support for System Maintenance",
+                    desc: "Dummy",
+                    image: "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
+                  },
+                  
                 ]}
               />
             </div>
