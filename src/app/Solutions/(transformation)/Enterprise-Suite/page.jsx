@@ -19,6 +19,7 @@ import "swiper/css/pagination";
 import Subscription from "@/components/Subscription";
 import handShake from "../../../../../public/handShake.png";
 import styles from "./page.module.css";
+import BlogSlider from "@/components/BlogSlider";
 const ChoiceSlider = [
   {
     _id: 1,
@@ -63,25 +64,38 @@ const ChoiceSlider = [
     url: "/",
   },
 ];
+
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Digital Transformation - The need of the hour",
+    desc: "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era. It is not just about adopting new technologies. It is about learning how these technologies can be applied to the existing business models so as to yield better results. For this, today’s leaders must debunk the myths in the industry, be open to learning, adapting & collaborating, thereby helping their organizations to ride this tide by following a successful transformation roadmap.",
+    cta: "Read More",
+    link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+    imgUrl: "",
+  },
+];
+
 const expandedCardSlider = [
   {
     _id: 1,
-    imgUrl: "Godrej-Solution-Valve-Management",
+    imgUrl: "Dealer-Management",
     title: "Dealer Management",
-    desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
+    desc: "Experience user friendly Dealer management system built for retail dealers to easily manage end-to-end inventory operations and order process. Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions effortlessly.",
     url: "/",
   },
   {
     _id: 2,
     imgUrl: "Godrej-Solution-Valve-Management",
     title: "Valve Manufacturing Process Management",
-    desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
+    desc: "Specifically built for unique requirements of valve manufacturing industry, this solution encompasses pre-configured business process mapping and standardize process. This work-around solution for intricate business processes ensures smooth operations even in challenging scenarios.",
     url: "/",
   },
   {
     _id: 3,
     title: "Metal Recycling Operations Management",
-    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    desc: "This pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
   },
@@ -135,7 +149,7 @@ export default function Home() {
                 arr={[
                   {
                     _id: 1,
-                    logo: "Infor",
+                    logo: "infor",
                     bgColor: "#e4f8ed",
                     btnColor: "#fff",
                     btnBg: "#4f9d73",
@@ -227,167 +241,28 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Engg. with our Methodology */}
-        <div id="spotlight">
-          <>
-            <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
-              <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
-                <div className="bg-[#F2F4F7] text-left">
-                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                    People-led and Innovation-empowered Services for Successful results 
-                  </h4>
-                  <div className="flex flex-col md:flex-row gap-8 ">
-                    <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                      Accomplishing Your Goals at Every stage
-                    </h3>
-                    <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                      Equipping your organization to thrive in the digital era, we deliver high-end solutions, spanning from core ERP suite to our accelerators across complete technology spectrum.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-          <div className={`w-full bg-[#F2F4F7] text-left `}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mx-auto p-5 px-[2rem] ">
-              <Spotlight
-                arr={[
-                  {
-                    label: "01",
-                    expandedLabel: "Step 01",
-                    title: "Business Consulting & Journey Mapping",
-                    expandedTitle:
-                      "Business Consulting & Journey Mapping",
-                    desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
-                    image: "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
-                  },
-                  {
-                    label: "02",
-                    expandedLabel: "Step 02",
-                    title: "Development Aimed at Performance Enhancement",
-                    expandedTitle:
-                      "Development Aimed at Performance Enhancement",
-                    desc: "Dummy",
-                    image: "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
-                  },
-                  {
-                    label: "03",
-                    expandedLabel: "Step 03",
-                    title: "Deployment to Ensure Seamless Transition ",
-                    expandedTitle:
-                      "Deployment to Ensure Seamless Transition ",
-                    desc: "Dummy",
-                    image: "/Spotlight/Services-Deployment-to-Ensure-Seamless-Transition.jpg",
-                  },
-                  {
-                    label: "04",
-                    expandedLabel: "Step 04",
-                    title: "Support for System Maintenance",
-                    expandedTitle:
-                      "Support for System Maintenance",
-                    desc: "Dummy",
-                    image: "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
-                  },
-                  
-                ]}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Expertise */}
-        <Expertise
-          ribbon="Acing Your Business Objectives"
-          ribbonTxtWhite="true"
-          title="The Hub of Expertise"
-          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe. "
-          arr={[
-            {
-              title: "50+",
-              desc: "Countries Spanning our Happy Customers",
-            },
-            {
-              title: "10.31",
-              desc: "10.31 Billion Total Revenue",
-            },
-            {
-              title: "500+",
-              desc: "Employees Worldwide",
-            },
-            {
-              title: "700+",
-              desc: "Implementations",
-            },
-            {
-              title: "2+",
-              desc: "Decades of Experience",
-            },
-            {
-              title: "40000+",
-              desc: "User Licenses Sold",
-            },
-          ]}
-        ></Expertise>
-        {/* Industry Spotlight Slider */}
+         {/* Infographics */}
         <>
-          <div className={` w-full bg-[#FFF] pt-20`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-              {/* left */}
-              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                    Industry Spotlight
-                  </h3>
-                </div>
-                <div>
-                  <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                    Being preferred partner of leading industries, we help in
-                    shaping specific technology prerequisites and deliver
-                    brilliant value driven solutions tailored to your sector.
-                  </p>
-                </div>
-                <div className="flex justify-center items-center max-w-screen-xl w-full">
-                  <div>
-                    <Swiper
-                      slidesPerView={"auto"}
-                      pagination={{
-                        clickable: true,
-                      }}
-                      modules={[Pagination]}
-                      className="mySwiper"
-                    >
-                      {ChoiceSlider.map((item) => (
-                        <>
-                          <SwiperSlide
-                            key={item._id}
-                            className="w-[283px] max-w-[283px] mr-4  relative group"
-                          >
-                            <div className="relative overflow-hidden">
-                              <Image
-                                src={`/industrySpotlight/${item.imgUrl}.jpg`}
-                                height={350}
-                                width={283}
-                                alt="icon"
-                                className=" transition-transform transform group-hover:scale-105"
-                              />
-                              <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                                <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                  {item.title}
-                                </h3>
-                              </div>
-                            </div>
-                          </SwiperSlide>
-                        </>
-                      ))}
-                    </Swiper>
-                  </div>
-                </div>
+          <div className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white">
+            <div className=" mt-[5em] mb-[2em]">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  With our Holistic Approach 
+                </h3>
+                <p className="font-normal leading-[22px] w-[80%] mx-auto">
+                  We redefine success standards globally with robust enterprise
+                  solutions to enhance stakeholder experiences, strengthen
+                  business resilience and modernize IT environment.
+                </p>
               </div>
+            </div>
+            <div className="mx-auto text-center w-max">
+              <Infographics src="/infographics/Infographic-Enterprise.png" />
             </div>
           </div>
         </>
 
-        {/* Engg. with our Methodology */}
+        {/* Accomplishing Your Goals */}
         <div id="spotlight">
           <>
             <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
@@ -421,7 +296,7 @@ export default function Home() {
                     expandedTitle:
                       "Business Situation Analysis for journey mapping",
                     isBullet: true,
-                    list: ["dummy1", "dummy1", "dummy1"],
+                    list: ["Audit for a right fit solution & defining technology landscape.", "Identify inefficiencies and bottlenecks"],
                     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
                     image:
                       "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
@@ -433,7 +308,7 @@ export default function Home() {
                     expandedTitle:
                       "Development Aimed at Performance Enhancement",
                     isBullet: true,
-                    list: ["dummy1", "dummy1", "dummy1"],
+                    list: ["Infrastructure configuration & management", "Data Management", "Process Reengineering & Automation"],
                     desc: "Dummy",
                     image:
                       "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
@@ -443,7 +318,7 @@ export default function Home() {
                     expandedLabel: "Step 03",
                     title: "Deployment to Ensure Seamless Transition ",
                     expandedTitle: "Deployment to Ensure Seamless Transition ",
-                    list: ["dummy1", "dummy1", "dummy1"],
+                    list: ["Solution Implementation", "Data Migration", "Customization","Rollouts & Country Localization"],
                     desc: "Dummy",
                     isBullet: true,
                     image:
@@ -456,7 +331,7 @@ export default function Home() {
                     expandedTitle: "Support for System Maintenance",
                     isBullet: true,
                     desc: "Dummy",
-                    list: ["dummy1", "dummy1", "dummy1"],
+                    list: ["Monitoring", "Troubleshooting", "Training", "Maintenance and Upgrades"],
                     image:
                       "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
                   },
@@ -465,52 +340,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Infographics */}
-        <>
-          <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-            <div className=" mt-[5em] mb-[2em]">
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
-                <h3 className="text-4xl leading-[42px] font-bold">
-                  Helping Enterprises to Succeed
-                </h3>
-                <p className="font-normal leading-[22px] w-[80%] mx-auto">
-                  We redefine success standards globally with robust enterprise
-                  solutions to enhance stakeholder experiences, strengthen
-                  business resilience and modernize IT environment.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto text-center w-max">
-              <Infographics src="/infographics/Infographic-Enterprise.png" />
-            </div>
-          </div>
-        </>
-
-        {/* Godrej Infotech Solutions */}
-        {/* <div className={` w-full bg-[#fff] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
-            <div className=" flex items-start flex-col justify-around">
-              <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                Accelerating Business Engineering
-              </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <h3 className="text-4xl leading-[42px] font-bold">
-                  Godrej Infotech Solutions
-                </h3>
-                <p className="font-normal leading-[22px]">
-                  Resolving complex business challenges and seizing growth
-                  opportunities through our purpose driven solutions designed by
-                  our experts
-                </p>
-              </div>
-            </div>
-          </div>
-          <>
-            <CardSwiper />
-          </>
-        </div> */}
-
+        
         {/* Industry Solutions Slider */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-20`}>
@@ -527,12 +357,10 @@ export default function Home() {
                         </h4>
                         <div className="flex flex-col md:flex-row gap-8 ">
                           <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                            Godrej Infotech Solutions
+                            Add On Solutions
                           </h3>
                           <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                            Resolving complex business challenges and seizing
-                            growth opportunities through our purpose driven
-                            solutions designed by our experts.
+                            Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                           </p>
                         </div>
                       </div>
@@ -590,10 +418,130 @@ export default function Home() {
           </div>
         </>
 
+        {/* Industry Spotlight Slider */}
+        <>
+          <div className={` w-full bg-[#FFF] pt-20`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+              {/* left */}
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Industry Spotlight
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                    Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program. 
+                  </p>
+                </div>
+                <div className="flex justify-center items-center max-w-screen-xl w-full">
+                  <div>
+                    <Swiper
+                      slidesPerView={"auto"}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper"
+                    >
+                      {ChoiceSlider.map((item) => (
+                        <>
+                          <SwiperSlide
+                            key={item._id}
+                            className="w-[283px] max-w-[283px] mr-4  relative group"
+                          >
+                            <div className="relative overflow-hidden">
+                              <Image
+                                src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                                height={350}
+                                width={283}
+                                alt="icon"
+                                className=" transition-transform transform group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                                <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                  {item.title}
+                                </h3>
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                        </>
+                      ))}
+                    </Swiper>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+
+        {/* Expertise */}
+        <Expertise
+          ribbon="Acing Your Business Objectives"
+          ribbonTxtWhite="true"
+          title="The Hub of Expertise"
+          desc="We are here to build competitive edge with technology brilliance for businesses across the world."
+          arr={[
+            {
+              title: "25+",
+              desc: "Years of Experience",
+            },
+            {
+              title: "500+",
+              desc: "Customers Worldwide",
+            },
+            {
+              title: "500+",
+              desc: "Employees Worldwide",
+            },
+            {
+              title: "1000+",
+              desc: "Implementation Sites",
+            },
+            {
+              title: "15000+",
+              desc: "Man Years of Experience",
+            },
+            {
+              title: "24*7",
+              desc: "Support",
+            },
+          ]}
+        ></Expertise>
+        
+{/* Blog */}
+   <BlogSlider arr={blogData} />
+
+        {/* Godrej Infotech Solutions */}
+        {/* <div className={` w-full bg-[#fff] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
+            <div className=" flex items-start flex-col justify-around">
+              <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
+                Accelerating Business Engineering
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  Godrej Infotech Solutions
+                </h3>
+                <p className="font-normal leading-[22px]">
+                  Resolving complex business challenges and seizing growth
+                  opportunities through our purpose driven solutions designed by
+                  our experts
+                </p>
+              </div>
+            </div>
+          </div>
+          <>
+            <CardSwiper />
+          </>
+        </div> */}
+
+       
+
         {/* Subscription */}
         <Subscription
-          title="Free 30 minutes IT strategy session with our Consultant"
-          desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity."
+          title="Free 30 minutes IT strategy session with our consultant?"
+          desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity. Your Tomorrow Starts Here!"
         />
         <InfotechWeeklyAlt />
       </main>
