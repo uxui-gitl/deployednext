@@ -45,6 +45,7 @@ import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
+import Abstract from "@/components/Abstract";
 const smartTools = [
   {
     _id: 1,
@@ -100,31 +101,31 @@ const smartTools = [
 const ChoiceSlider = [
   {
     _id: 1,
-    title: "Healthcare",
+    title: "Manufacturing",
     imgUrl: "1",
     url: "/",
   },
   {
     _id: 2,
-    title: "Automotive",
+    title: "Retail",
     imgUrl: "2",
     url: "/",
   },
   {
     _id: 3,
-    title: "Logistic",
+    title: "Trading and Distribution",
     imgUrl: "3",
     url: "/",
   },
   {
     _id: 4,
-    title: "Retail",
+    title: "Project",
     imgUrl: "4",
     url: "/",
   },
   {
     _id: 5,
-    title: "Manufacturing",
+    title: "Professional Services",
     imgUrl: "5",
     url: "/",
   },
@@ -133,12 +134,12 @@ const ChoiceSlider = [
 const InforGrid = [
   {
     _id: 1,
-    title: "Infor LN",
+    title: "Infor LN (On Prem & On Cloud - MT)",
     icon: "dummy",
   },
   {
     _id: 2,
-    title: "Infor d/EPM",
+    title: "Factory Track",
     icon: "dummy",
   },
   {
@@ -231,16 +232,16 @@ const page = () => {
   const upgradeCloud = [
     {
       _id: 1,
-      title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
+      title: "Migrate to the Cloud ",
+      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 2,
-      title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
+      title: "Migrate From a different ERP Platform to Infor LN",
+      desc: "Experience seamless and transformative migration with data integrity for your business.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -248,15 +249,15 @@ const page = () => {
     {
       _id: 3,
       title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
+      desc: "Get access to enhanced innovation, business preferences and value.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
     },
     {
       _id: 4,
-      title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
+      title: "End-to-End Implementation",
+      desc: "Streamlining every phase of the implementation, we provide the capability of successful and on-time delivery of Infor solution.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -264,7 +265,7 @@ const page = () => {
     {
       _id: 5,
       title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
+      desc: "Managing every complex, time-consuming and resource-rigorous process and on demand maintenance of Infor application.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -272,7 +273,7 @@ const page = () => {
     {
       _id: 6,
       title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
+      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes.",
       cta: "Know more",
       link: "/",
       bg: "/gradient-1.png",
@@ -415,8 +416,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future  of Business Efficiency with Infor "
-        desc="We assist your organization to respond to the most important stakeholder’s expectations with agility and accuracy. Encompassing all business units, we collaborate with you to drive transformation throughout the entire customer journey.  We deliver solution"
+        title="Deliver Speedy time-to-value for your customers with Industry Specialized Infor Application"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -449,92 +450,29 @@ const page = () => {
         />
       </>
 
-      {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
+      {/* Overview  */}
+        <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech’s persistent partnership of over two decades and a track record of successfully delivering APAC’s largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
-            description: "Non-government Association of Indian Industries ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 2,
-            title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-        ]}
-      />
-
-      {/* Expertise */}
-      <Expertise
-        ribbon="Our Expertise "
-        ribbonTxtWhite="true"
-        title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
-        arr={[
-          {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
-          },
-          {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
-          },
-          {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
-          },
-        ]}
-      ></Expertise>
-
-      {/* Infor Grid */}
+{/* Infor Grid */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div className={`w-full bg-[#FFF] pt-32`}>
           <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+            <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                   Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  We deliver high-performing services for a comprehensive suite
-                  Microsoft ecosystem, devised to elevate growth and
-                  productivity and build stronger stakeholder connections
+                  Regardless of whether you are starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className={`w-full  `}>
-          <div className="  sm:flex-row h-full justify-center grid grid-cols-1 grid-rows-1 sm:grid-cols-7 sm:grid-rows-2 gap-0">
+        <div className={`w-full`}>
+          <div className="sm:flex-row h-full justify-center grid grid-cols-1 grid-rows-1 sm:grid-cols-7 sm:grid-rows-2 gap-0">
             <div className="bg-[#feeded] py-20 px-8 h-full row-span-1 sm:row-span-2 w-full   sm:flex-grow col-span-1 sm:col-span-2  ">
               <div className=" ">
                 <Image
@@ -554,7 +492,7 @@ const page = () => {
                       href={"/"}
                       className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
-                      Industrial Enterprise
+                      CloudSuite™ Industrial Enterprise
                     </Link>
                   </li>
                   <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
@@ -562,7 +500,7 @@ const page = () => {
                       href={"/"}
                       className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
-                      Automotive
+                     CloudSuite™ Automotive
                     </Link>
                   </li>
                   <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
@@ -570,7 +508,7 @@ const page = () => {
                       href={"/"}
                       className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
-                      Aerospace & Defense
+                      CloudSuite™ Aerospace & Defense
                     </Link>
                   </li>
                 </ul>
@@ -590,7 +528,7 @@ const page = () => {
             </div>
             {InforGrid.map((item, index) => (
               <Link href={"/"} key={index}>
-                <div className="    col-span-1 row-span-1 flex border-[1px] flex-col justify-start sm:justify-center items-start sm:items-center h-full px-[2rem] p-4">
+                <div className="col-span-1 row-span-1 flex border-[1px] flex-col justify-start sm:justify-center items-start sm:items-center h-full px-[2rem] p-4">
                   <div className=" ">
                     <Image
                       src={`/${item.icon}.png`}
@@ -609,120 +547,8 @@ const page = () => {
         </div>
       </>
 
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="Spend LESS, GROW MORE"
-        title="Why Godrej Infotech ?"
-        desc="Embark on cloud upgradation journey by harnessing our credible
-        assessment process, strategic resources and fluent data
-        migration practice to minimise your business risk, time to
-        market and cost. Our time-tested delivery framework enables
-        businesses"
-        arr={[
-          {
-            _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
-
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
-
-      {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industries Spotlight
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={`/industrySpotlight/${item.imgUrl}.png`}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Awards */}
-      <Awards />
-
-      {/* Infor service grid */}
-      <>
-        <div className={` w-full bg-white py-32`}>
+        <div className={`w-full bg-white py-32`}>
           <div className=" max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
@@ -730,10 +556,7 @@ const page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  We revamp your core business application with cloud-native
-                  development so that you can win a competitive threshold in the
-                  marketplace. Our adept hyper-scaler team can help rearchitect
-                  your business operations with an efficient approach
+                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business.
                 </p>
               </div>
             </div>
@@ -794,7 +617,7 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Innovative Infor Drivers
+                  Infor Drivers by Godrej Infotech
                 </h3>
               </div>
             </div>
@@ -802,8 +625,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
+                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise. 
                 </p>
               </div>
             </div>
@@ -816,14 +638,10 @@ const page = () => {
                 <div key={index} className="mx-5 bg-white ">
                   <div className="p-5  w-full ">
                     <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      DataSwift Pro
+                      InsightEdge+
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                      Godrej Infotech Data Conversion Utility Tool offers data
-                      migration utilities facilitating faster & structured data
-                      upload and managing source & target systems, table
-                      structures, field mapping and data download/upload
-                      scripts.
+                     Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.
                     </p>
                   </div>
                   <div className=" w-full bg-[#0745D3] p-5">
@@ -846,12 +664,222 @@ const page = () => {
         </div>
       </>
 
+      {/* Expertise */}
+      <Expertise
+        ribbon="Hub of Expertise"
+        ribbonTxtWhite="true"
+        title=""
+        desc="We are here to build a competitive edge with technology brilliance for businesses across the world."
+        arr={[
+          {
+            title: "300+",
+            desc: "Implementation Experiences",
+          },
+          {
+            title: "Largest",
+            desc: "Implementation Experience in Asia",
+          },
+          {
+            title: "10,000+",
+            desc: "Infor Users",
+          },
+          {
+            title: "10+",
+            desc: "Countries Opted Infor Applications",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY"
+        title="Elevating Our Customer Experience with Infor"
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+            thumbnail: "1",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+          },
+          {
+            id: 2,
+            title:
+              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
+            thumbnail: "2",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
+          },
+          {
+            id: 3,
+            title:
+              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
+            thumbnail: "3",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+          },
+        ]}
+      />
+
+           
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
+        desc="It is our solution-focused approach, domain consulting and value-added services that enable us to manage projects of every size and complexity in the global transformation landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "Proven excellence of 20 + years and 300+ successful implementations",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "Comprehensive in-house product ecosystem delivering unified functionality and operational effectiveness",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Subsidiary of the globally renowned Godrej conglomerate, worth $4.1Bn enable us in leveraging synergies of business and IT solutions to deliver holistic solutions",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "Infor's Centre of Excellence and Co-development Partnership program help us to deliver innovative and industry-specific solutions",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Repository of ready-to-use use-cases guarantees swift implementation and seamless integration, driving enhanced productivity.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials"
+        title="Delighted Customers Share Their Success Experience"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "Manager, Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
+            thumbnail: "1",
+            description:
+              "In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation: "IT Manager, Global Process Equipment Supplier",
+            thumbnail: "1",
+            description:
+              "Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.",
+            category: "static",
+            link: "/",
+          },
+                    {
+            id: 3,
+            clientName: "",
+            clientDesignation: "Executive Director - Commercial",
+            thumbnail: "1",
+            description:
+              "Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industries Spotlight
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Awards */}
+      {/* <Awards /> */}
+
+      {/* Infor service grid */}
+      
+
+      
+
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Are you Ready for Infor-driven growth?"
+        blue="Let's get started!?"
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
       />
       <InfotechWeeklyAlt />
     </>
