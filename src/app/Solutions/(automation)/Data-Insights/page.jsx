@@ -320,8 +320,8 @@ const page = () => {
         <ServiceOfferingGrid
           title="Data Visualization"
           desc="With real-time data access and visualization, you'll always have your finger on the pulse of your business operations. "
-          ctaDesc="Let's Connect for a Walkthrough"
-          cta="Let's Connect"
+          ctaDesc=""
+          cta=""
           arr={[
             {
               _id: 1,
@@ -331,7 +331,7 @@ const page = () => {
               bg: "transparent",
               desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
               icon: "Power-BI-Logo.png",
-              cta: "Know More",
+              cta: "",
             },
             {
               _id: 2,
@@ -349,7 +349,7 @@ const page = () => {
               title: "Birst ",
               theme: "dark",
               bg: "#07001F",
-              desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
+              desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
               icon: "Birst-logo.png",
               cta: "Know More",
             },
@@ -570,7 +570,7 @@ const page = () => {
 
       <Subscription
         title="Free 30 Minutes Strategy Session with Our Data Expert"
-        desc="Let's discuss how data can help your business with innovation. Please select your preferred timeslot to call."
+        desc="Let's discuss how data can help your business with innovation."
       />
       <InfotechWeeklyAlt />
     </>
