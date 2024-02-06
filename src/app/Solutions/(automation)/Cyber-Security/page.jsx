@@ -688,7 +688,7 @@ const page = () => {
             /*End One*/
             {
               _id: 2,
-              title: "Technology Solutions - Implementation & Management",
+              title: "Implementation & Management",
               desc: "",
               inline: true,
               subArr: true,
@@ -823,7 +823,7 @@ const page = () => {
                 {
                   _id: 5,
                   icon: "gear",
-                  title: "e. Users",
+                  title: "Users",
                   desc: "",
                   cta: "Know More",
                   ctaUrl: "/",
@@ -892,7 +892,7 @@ const page = () => {
             },
             {
               _id: 3,
-              title: "Application Security testing",
+              title: "Application Security Testing",
               desc: "",
               cta: "Explore Service",
               subArrLinks: [],
