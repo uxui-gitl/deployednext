@@ -451,10 +451,9 @@ const page = () => {
       </>
 
       {/* Overview  */}
-        <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech’s persistent partnership of over two decades and a track record of successfully delivering APAC’s largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech’s persistent partnership of over two decades and a track record of successfully delivering APAC’s largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
-
-{/* Infor Grid */}
+      {/* Infor Grid */}
       <>
         <div className={`w-full bg-[#FFF] pt-32`}>
           <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
@@ -465,7 +464,9 @@ const page = () => {
                   Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  Regardless of whether you are starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level.
+                  Regardless of whether you are starting your transformation
+                  journey or aiming to gain cloud capabilities, our Infor
+                  expertise helps you progress to a higher level.
                 </p>
               </div>
             </div>
@@ -500,7 +501,7 @@ const page = () => {
                       href={"/"}
                       className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
-                     CloudSuite™ Automotive
+                      CloudSuite™ Automotive
                     </Link>
                   </li>
                   <li className="border-b-[1px] w-fit border-[#DBDBDB] py-2 ">
@@ -556,7 +557,10 @@ const page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business.
+                  Our commitment to your project&#39;s success drives our
+                  ownership and determination to go above and beyond. With rich
+                  experience of technical expertise, we offer services to meet
+                  the sole requirements of your business.
                 </p>
               </div>
             </div>
@@ -625,7 +629,10 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise. 
+                  Enhancing the features of business applications, our easily
+                  integrating specialized solutions intend to add value to
+                  business with handy support, streamlined processes and intense
+                  industry expertise.
                 </p>
               </div>
             </div>
@@ -641,7 +648,9 @@ const page = () => {
                       InsightEdge+
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                     Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.
+                      Industry-specific pre-built business reporting readily
+                      available on Power BI tailored to meet the needs of MIS
+                      and India localization requirements.
                     </p>
                   </div>
                   <div className=" w-full bg-[#0745D3] p-5">
@@ -660,6 +669,64 @@ const page = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </>
+
+      {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] py-20`}>
+          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industries Spotlight
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Delivering industry-centric solutions with a strategic ACT
+                  (Automation, Cloud and Transformation) program.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </>
@@ -733,8 +800,6 @@ const page = () => {
         ]}
       />
 
-           
-
       {/* Why Infotech */}
       <WhySection
         ribbon="The Distinctive Edge"
@@ -779,7 +844,8 @@ const page = () => {
           {
             id: 1,
             clientName: "",
-            clientDesignation: "Manager, Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
+            clientDesignation:
+              "Manager, Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
             thumbnail: "1",
             description:
               "In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.",
@@ -796,7 +862,7 @@ const page = () => {
             category: "static",
             link: "/",
           },
-                    {
+          {
             id: 3,
             clientName: "",
             clientDesignation: "Executive Director - Commercial",
@@ -809,70 +875,10 @@ const page = () => {
         ]}
       />
 
-      {/* Industry Spotlight Slider */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industries Spotlight
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program.
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={`/industrySpotlight/${item.imgUrl}.png`}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
       {/* Awards */}
       {/* <Awards /> */}
 
       {/* Infor service grid */}
-      
-
-      
 
       {/* Subscription */}
       <Subscription
@@ -881,7 +887,13 @@ const page = () => {
         title2=""
         desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
       />
-      <InfotechWeeklyAlt />
+
+      {/* Infotech weekly */}
+      <>
+        <div className="hidden">
+          <InfotechWeeklyAlt />
+        </div>
+      </>
     </>
   );
 };

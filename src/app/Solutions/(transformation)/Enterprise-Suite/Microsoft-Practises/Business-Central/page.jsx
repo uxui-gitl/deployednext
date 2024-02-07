@@ -582,30 +582,34 @@ const page = () => {
       />
 
       {/* Expertise */}
-      <Expertise
-        ribbon="Acing your Business Objectives"
-        ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-        arr={[
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-        ]}
-      ></Expertise>
+      <>
+        <div className="hidden">
+          <Expertise
+            ribbon="Acing your Business Objectives"
+            ribbonTxtWhite="true"
+            title="The Hub of Expertise"
+            desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+            arr={[
+              {
+                title: "15 +",
+                desc: "Cloud Certified Professionals",
+              },
+              {
+                title: "50 +",
+                desc: "Cloud Deployments",
+              },
+              {
+                title: "15 +",
+                desc: "Cloud Certified Professionals",
+              },
+              {
+                title: "50 +",
+                desc: "Cloud Deployments",
+              },
+            ]}
+          ></Expertise>
+        </div>
+      </>
 
       {/* Case Study */}
       <CaseStudy

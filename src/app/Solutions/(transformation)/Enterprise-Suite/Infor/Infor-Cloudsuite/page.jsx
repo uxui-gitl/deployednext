@@ -310,81 +310,82 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+
+const lists = [
+  {
+    id: 1,
+    text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+  },
+  {
+    id: 2,
+    text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+  },
+  {
+    id: 3,
+    text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+  },
+  {
+    id: 4,
+    text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+  },
+  {
+    id: 5,
+    text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
+  },
+];
+
+const upgradeCloud = [
+  {
+    _id: 1,
+    title: "Migrate to the Cloud from On-Prem",
+    desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 2,
+    title: "Migrate From a Different ERP Platform to Infor LN  ",
+    desc: "Experience seamless and transformative migration with data integrity for your business",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 3,
+    title: "Upgrade with Infor",
+    desc: "Get access to enhanced innovation, business preferences and value",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 4,
+    title: "End-to-End Implementation ",
+    desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 5,
+    title: "Managed Services ",
+    desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 6,
+    title: "Custom Development & Integrations",
+    desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+];
+
 const page = () => {
-  const lists = [
-    {
-      id: 1,
-      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
-    },
-    {
-      id: 2,
-      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
-    },
-    {
-      id: 3,
-      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
-    },
-    {
-      id: 4,
-      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
-    },
-    {
-      id: 5,
-      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
-    },
-  ];
-
-  const upgradeCloud = [
-    {
-      _id: 1,
-      title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 2,
-      title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 4,
-      title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 6,
-      title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-  ];
-
   return (
     <>
       <EntIntro
@@ -424,6 +425,36 @@ const page = () => {
         />
       </>
 
+      {/* Overview */}
+      <>
+        <div className={` w-full bg-white py-5`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+              <div className=" mt-[5em] mb-[2rem]">
+                <div className="flex flex-col gap-x-10">
+                  <h4
+                    className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
+                  >
+                    HxnEAM
+                  </h4>
+                  <h3 className="text-4xl leading-[42px] font-bold">
+                    Overview
+                  </h3>
+                  <p>
+                    Our commitment is to make your transformation journey as
+                    smooth as possible, guaranteeing that you attain your
+                    ambitious results. That&apos;s why we build a holistic
+                    viewpoint on your implementation and rollout project and
+                    assure that your project is on time, exceeding your
+                    expectations
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+        </div>
+      </>
+
       {/* slider */}
       {/*  Card Slider Offerings */}
 
@@ -434,10 +465,7 @@ const page = () => {
         />
       </>
 
-      <BlogSlider arr={blogData} />
-
       {/* Benefits */}
-
       <Benefits
         ribbon="Upgrade to Cloud Benefits "
         ribbonTxtWhite="true"
@@ -491,6 +519,9 @@ const page = () => {
         ]}
       ></Benefits>
 
+      {/* blog */}
+      <BlogSlider arr={blogData} />
+
       {/* Testimonial */}
       <Testimonial
         ribbon="Testimonials "
@@ -519,7 +550,11 @@ const page = () => {
         title2=""
         desc="Talk To Our Experts to discuss your requirements "
       />
-      <InfotechWeeklyAlt />
+
+      {/* Infotehc weekly */}
+      <div className="hidden">
+        <InfotechWeeklyAlt />
+      </div>
     </>
   );
 };

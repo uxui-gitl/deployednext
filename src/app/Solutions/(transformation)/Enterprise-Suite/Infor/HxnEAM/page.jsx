@@ -411,6 +411,36 @@ const page = () => {
         />
       </>
 
+      {/* Overview */}
+      <>
+        <div className={` w-full bg-white py-10`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+              <div className=" mt-[5em] mb-[2rem]">
+                <div className="flex flex-col gap-x-10">
+                  <h4
+                    className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
+                  >
+                    HxnEAM
+                  </h4>
+                  <h3 className="text-4xl leading-[42px] font-bold">
+                    Overview
+                  </h3>
+                  <p>
+                    Our commitment is to make your transformation journey as
+                    smooth as possible, guaranteeing that you attain your
+                    ambitious results. That&apos;s why we build a holistic
+                    viewpoint on your implementation and rollout project and
+                    assure that your project is on time, exceeding your
+                    expectations
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+        </div>
+      </>
+
       {/* Core Capabilities */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
@@ -564,7 +594,7 @@ const page = () => {
 
       {/* Assest Managment Solutions */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div className={` w-full bg-[#FFF] hidden pt-20`}>
           <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
@@ -755,7 +785,13 @@ const page = () => {
         title2=""
         desc="Talk To Our Experts to discuss your requirements "
       />
-      <InfotechWeeklyAlt />
+
+      {/* Infotech weekly */}
+      <>
+        <div className="hidden">
+          <InfotechWeeklyAlt />
+        </div>
+      </>
     </>
   );
 };

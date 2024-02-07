@@ -53,7 +53,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/IIOT"}
                           >
-                            IIOT [Not Found]
+                            ☑️ IIOT
                           </Link>
                         </li>
                       </ul>
@@ -215,7 +215,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Microsoft-Practises/FnO"
                                   }
                                 >
-                                  F&O
+                                  ☑️ F&O
                                 </Link>
                               </li>
                               <li>
@@ -223,10 +223,10 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/Ecommerce"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/ECommerce"
                                   }
                                 >
-                                  eCommerce
+                                  ☑️ eCommerce
                                 </Link>
                               </li>
                             </ul>
@@ -236,9 +236,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={
-                              "/Solutions/Enterprise-Suite/Microsoft-Practises/Oracle"
-                            }
+                            href={"/Solutions/Enterprise-Suite/Oracle"}
                           >
                             Oracle
                           </Link>

@@ -114,81 +114,80 @@ const fadeInAnimationVariant = {
     },
   }),
 };
+const lists = [
+  {
+    id: 1,
+    text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+  },
+  {
+    id: 2,
+    text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+  },
+  {
+    id: 3,
+    text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+  },
+  {
+    id: 4,
+    text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+  },
+  {
+    id: 5,
+    text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
+  },
+];
+
+const upgradeCloud = [
+  {
+    _id: 1,
+    title: "Migrate to the Cloud from On-Prem",
+    desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 2,
+    title: "Migrate From a Different ERP Platform to Infor LN  ",
+    desc: "Experience seamless and transformative migration with data integrity for your business",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 3,
+    title: "Upgrade with Infor",
+    desc: "Get access to enhanced innovation, business preferences and value",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 4,
+    title: "End-to-End Implementation ",
+    desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 5,
+    title: "Managed Services ",
+    desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 6,
+    title: "Custom Development & Integrations",
+    desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+];
 const page = () => {
-  const lists = [
-    {
-      id: 1,
-      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
-    },
-    {
-      id: 2,
-      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
-    },
-    {
-      id: 3,
-      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
-    },
-    {
-      id: 4,
-      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
-    },
-    {
-      id: 5,
-      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
-    },
-  ];
-
-  const upgradeCloud = [
-    {
-      _id: 1,
-      title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 2,
-      title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 4,
-      title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 6,
-      title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-  ];
-
   return (
     <>
       <EntIntro
@@ -303,39 +302,6 @@ const page = () => {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </>
-
-      {/* Supply System */}
-      <>
-        <div className={` w-full  pt-32`}></div>
-        <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
-        >
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor proudly presents the most extensive suite of global
-                  supply chain solutions, including the world&apos;s largest
-                  single-instance, multi-enterprise business network and
-                  comprehensive CloudSuite capabilities. These capabilities
-                  optimize supply chains from end to end, covering planning,
-                  procurement, orchestration and fulfillment. Infor WMS is a
-                  cloud-based Tier-1 solution, reshaping warehouse operations
-                  through advanced functionalities ensuring efficient
-                  fulfillment in a dynamic business landscape. With Infor WMS,
-                  enterprises gain a competitive edge, ready to tackle the
-                  ever-evolving demands of the modern market.
-                </p>
-              </div>
-            </div>
-            {/* right */}
           </div>
         </div>
       </>
@@ -530,28 +496,40 @@ const page = () => {
         </div>
       </>
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
+      {/* Supply System */}
+      <>
+        <div className={` w-full  pt-32`}></div>
+        <div
+          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
+        >
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Infor Intelligent Supply System
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Infor proudly presents the most extensive suite of global
+                  supply chain solutions, including the world&apos;s largest
+                  single-instance, multi-enterprise business network and
+                  comprehensive CloudSuite capabilities. These capabilities
+                  optimize supply chains from end to end, covering planning,
+                  procurement, orchestration and fulfillment. Infor WMS is a
+                  cloud-based Tier-1 solution, reshaping warehouse operations
+                  through advanced functionalities ensuring efficient
+                  fulfillment in a dynamic business landscape. With Infor WMS,
+                  enterprises gain a competitive edge, ready to tackle the
+                  ever-evolving demands of the modern market.
+                </p>
+              </div>
+            </div>
+            {/* right */}
+          </div>
+        </div>
+      </>
 
       {/* Benefits */}
-
       <Benefits
         ribbon="Upgrade to Cloud Benefits "
         ribbonTxtWhite="true"
@@ -605,6 +583,50 @@ const page = () => {
         ]}
       ></Benefits>
 
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "blog",
+            title: "Digital Transformation - The need of the hour",
+            desc: "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era. It is not just about adopting new technologies. It is about learning how these technologies can be applied to the existing business models so as to yield better results. For this, today’s leaders must debunk the myths in the industry, be open to learning, adapting & collaborating, thereby helping their organizations to ride this tide by following a successful transformation roadmap.",
+            cta: "Read More",
+            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+            imgUrl: "",
+          },
+          {
+            _id: 2,
+            ribbon: "blog",
+            title: "Digital Transformation - The need of the hour",
+            desc: "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era. It is not just about adopting new technologies. It is about learning how these technologies can be applied to the existing business models so as to yield better results. For this, today’s leaders must debunk the myths in the industry, be open to learning, adapting & collaborating, thereby helping their organizations to ride this tide by following a successful transformation roadmap.",
+            cta: "Read More",
+            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+            imgUrl: "",
+          },
+        ]}
+      />
+
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY "
@@ -649,35 +671,45 @@ const page = () => {
       />
 
       {/* Expertise */}
-      <Expertise
-        ribbon="Our Expertise "
-        ribbonTxtWhite="true"
-        title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
-        arr={[
-          {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
-          },
-          {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
-          },
-          {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
-          },
-        ]}
-      ></Expertise>
+      <div className="hidden">
+        <Expertise
+          ribbon="Our Expertise "
+          ribbonTxtWhite="true"
+          title="Future Outlook with Intelligent Technologies  "
+          desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+          arr={[
+            {
+              title: "85%",
+              desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            },
+            {
+              title: "$200B",
+              desc: "Forbes forecasts size for AI market by 2026 ",
+            },
+            {
+              title: "$6.6T",
+              desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+            },
+          ]}
+        ></Expertise>
+      </div>
 
       {/* Subscription */}
-      <Subscription
-        title="Let Us Transform Your "
-        blue="Vision into Reality"
-        title2=""
-        desc="Complete the Form to Begin"
-      />
-      <InfotechWeeklyAlt />
+      <div className="">
+        <Subscription
+          title="Let Us Transform Your "
+          blue="Vision into Reality"
+          title2=""
+          desc="Complete the Form to Begin"
+        />
+      </div>
+
+      {/* Infotech weekly */}
+      <>
+        <div className="hidden">
+          <InfotechWeeklyAlt />
+        </div>
+      </>
     </>
   );
 };
