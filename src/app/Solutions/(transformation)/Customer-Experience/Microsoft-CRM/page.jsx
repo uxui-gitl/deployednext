@@ -50,7 +50,7 @@ import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
-import { OfferingsSlider } from "@/components";
+import { Benefits, OfferingsSlider } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -106,36 +106,84 @@ const smartTools = [
 const ChoiceSlider = [
   {
     _id: 1,
+    imgUrl: "Industry-Spotlight-Manufacturing",
     title: "Manufacturing",
-    imgUrl: "1",
+    desc: "",
     url: "/",
   },
   {
     _id: 2,
+    imgUrl: "Industry-Spotlight-Retail",
     title: "Retail",
-    imgUrl: "2",
+    desc: "",
     url: "/",
   },
   {
     _id: 3,
     title: "Trading and Distribution",
-    imgUrl: "3",
+    desc: "",
+    imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
   {
     _id: 4,
-    title: "Project",
-    imgUrl: "4",
+    title: "Healthcare ",
+    desc: "",
+    imgUrl: "Industry-served-Healthcare",
     url: "/",
   },
   {
     _id: 5,
-    title: "Professional Services",
-    imgUrl: "5",
+    title: "Project ",
+    desc: "",
+    imgUrl: "Industry-Spotlight-Projects",
+    url: "/",
+  },
+  {
+    _id: 6,
+    title: "Professional services",
+    desc: "",
+    imgUrl: "ProfessionalServices",
     url: "/",
   },
 ];
-
+const UseCases = [
+  {
+    _id: 1,
+    title: "Consulting ",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 2,
+    title: "Employee Access Creation ",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 3,
+    title: "Account Payable and Receivable Process",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 4,
+    title: "Vendor Onboarding Process",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 5,
+    title: "Customer Onboarding Process",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+];
 const InforGrid = [
   {
     _id: 1,
@@ -754,72 +802,207 @@ const page = () => {
         />
       </>
 
-      {/* Key Feature and Benefits of Infor CRM  */}
+      {/* Ms slider */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Key Feature and Benefits of Infor CRM
-                </h3>
+        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
-            {[
-              {
-                _id: 1,
-                title: "Increased Productivity",
-                desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/IncreasedProductivity.png",
-              },
-              {
-                _id: 2,
-                title: "Gain Accurate Outcomes",
-                desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/GainAccurateOutcomes.png",
-              },
-            ].map((item, index) => (
-              <div
-                className="flex flex-col sm:flex-row  bg-white"
-                key={item._id}
-              >
-                <Image
-                  src={item.image}
-                  height={120}
-                  width={120}
-                  className="w-[100%] sm:w-fit object-cover"
-                  alt={item.title}
-                />
-                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
-                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.ctaUrl}
-                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    key={item._id}
+                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
                   >
-                    {item.cta}{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
+                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
+                      <div className="p-5  mx-2">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </>
+
+      {/* Industry Spotlight Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Spotlight
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
 
       {/* Blog */}
       <BlogSlider
@@ -835,36 +1018,6 @@ const page = () => {
           },
         ]}
       />
-
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-        arr={[
-          {
-            _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
 
       {/* Case Study */}
       <CaseStudy
@@ -908,73 +1061,6 @@ const page = () => {
           },
         ]}
       />
-
-      {/*  */}
-      {/* Supply System */}
-      <>
-        <div className={` w-full  pt-32`}></div>
-        <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
-        >
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor proudly presents the most extensive suite of global
-                  supply chain solutions, including the world&apos;s largest
-                  single-instance, multi-enterprise business network and
-                  comprehensive CloudSuite capabilities. These capabilities
-                  optimize supply chains from end to end, covering planning,
-                  procurement, orchestration and fulfillment. Infor WMS is a
-                  cloud-based Tier-1 solution, reshaping warehouse operations
-                  through advanced functionalities ensuring efficient
-                  fulfillment in a dynamic business landscape. With Infor WMS,
-                  enterprises gain a competitive edge, ready to tackle the
-                  ever-evolving demands of the modern market.
-                </p>
-              </div>
-            </div>
-            {/* right */}
-          </div>
-        </div>
-      </>
-      <>
-        <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem1.png')] bg-center bg-cover sm:bg-contain `}
-        >
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div>&nbsp;</div>
-            {/* right */}
-            <div className="text-[#FFF] flex items-end flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor proudly presents the most extensive suite of global
-                  supply chain solutions, including the world&apos;s largest
-                  single-instance, multi-enterprise business network and
-                  comprehensive CloudSuite capabilities. These capabilities
-                  optimize supply chains from end to end, covering planning,
-                  procurement, orchestration and fulfillment. Infor WMS is a
-                  cloud-based Tier-1 solution, reshaping warehouse operations
-                  through advanced functionalities ensuring efficient
-                  fulfillment in a dynamic business landscape. With Infor WMS,
-                  enterprises gain a competitive edge, ready to tackle the
-                  ever-evolving demands of the modern market.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Infor CRM Manuf. */}
 
       {/* Subscription */}
       <Subscription
