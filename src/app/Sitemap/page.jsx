@@ -260,7 +260,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Infor-CRM"}
                           >
-                            Infor CRM
+                            ☑️ Infor CRM
                           </Link>
                         </li>
                         <li>

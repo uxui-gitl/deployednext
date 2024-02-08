@@ -420,10 +420,14 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Deliver Speedy time-to-value for your customers with Industry Specialized Infor Application"
-        desc=""
+        title="The Ultimate CRM Solution for
+        Enterprise-level Sales and Marketing
+        Performance "
+        desc="The Ultimate CRM Solution for
+        Enterprise-level Sales and Marketing
+        Performance "
         cta="Let's Connect"
-        width="60%"
+        width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       {/* Section Nav */}
@@ -480,7 +484,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center bg-[#F2F4F7] text-left max-w-screen-xl md:max-w-screen-2xl  mx-auto px-8 pt-8 pb-14 flex-wrap">
             {[
               {
                 _id: 1,
@@ -517,11 +521,46 @@ const page = () => {
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
+              {
+                _id: 5,
+                title: "Customer Onboarding Process",
+                cta: "Know More",
+                link: "/",
+                icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              },
+              {
+                _id: 5,
+                title: "Customer Onboarding Process",
+                cta: "Know More",
+                link: "/",
+                icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              },
+              {
+                _id: 5,
+                title: "Customer Onboarding Process",
+                cta: "Know More",
+                link: "/",
+                icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              },
+              {
+                _id: 5,
+                title: "Customer Onboarding Process",
+                cta: "Know More",
+                link: "/",
+                icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              },
+              {
+                _id: 5,
+                title: "Customer Onboarding Process",
+                cta: "Know More",
+                link: "/",
+                icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              },
             ].map((item, index) => {
               return (
                 <div
                   key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                  className=" mx-2 bg-white sm:w-[250px] w-fit flex flex-col justify-between"
                 >
                   <div className="p-5 w-fit ">
                     <div className="mb-4">
@@ -542,7 +581,7 @@ const page = () => {
                   </div>
                   <div
                     className={clsx("w-full bg-[#0745D3] p-5", {
-                      hidden: item.link === "/" || item.link === "",
+                      hidden: item.link === "",
                     })}
                   >
                     <Link
