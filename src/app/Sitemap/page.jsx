@@ -250,7 +250,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Customer-Experience"}
                     >
-                      Customer Experience
+                      ☑️ Customer Experience
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>

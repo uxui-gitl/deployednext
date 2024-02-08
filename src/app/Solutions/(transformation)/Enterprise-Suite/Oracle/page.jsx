@@ -128,14 +128,14 @@ const expandedCardSlider = [
   {
     _id: 1,
     imgUrl: "Godrej-Solution-Valve-Management",
-    title: "Dealer Management",
+    title: "Infrastructure",
     desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
     url: "/",
   },
   {
     _id: 2,
     imgUrl: "Godrej-Solution-Valve-Management",
-    title: "Valve Manufacturing Process Management",
+    title: "Manufacturing",
     desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
   },
@@ -148,7 +148,7 @@ const expandedCardSlider = [
   },
   // {
   //   _id: 4,
-  //   title: "Dealer Management",
+  //   title: "Infrastructure",
   //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
   //   imgUrl: "2",
   //   url: "/",
@@ -194,6 +194,7 @@ const UseCases = [
 const page = () => {
   return (
     <>
+      {/* Intro */}
       <EntIntro
         title="Maximize Asset Value and Productivity
         with HxGN EAM Godrej Infotech Expertise "
@@ -250,288 +251,320 @@ const page = () => {
         ></AbstractCard>
       </>
 
-      {/* Spotlight */}
-      <div id="spotlightGrid">
-        <>
-          <div className={`w-full text-left bg-[#fff] pt-32`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
-              <div className="bg-[#fff] text-left">
-                <div className="flex flex-col md:flex-row gap-8 ">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
-                    Maximizing Your Business Outcomes with Cloud Technology
+      {/* Left right cards */}
+      <div className={`bg-white w-full    py-32  `} id="productivity">
+        <div className={` w-full`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="  flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                  Key Capabailities
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                  It is a single business software system that consists of many
+                  different applications and are broadly conventional for
+                  integration, customization, and configuration
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-key1 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="bg-key2 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-start text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="bg-key3 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Oracle EBS slider */}
+      <>
+        <div className={`bg-white w-full    py-32  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                    Oracle EBS
                   </h3>
-                  <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our verified proficiency in execution and innovation in
-                    cloud adaptability facilitate the process of business
-                    transformation at each juncture.
+                </div>
+                <div></div>
+              </div>
+              {/* right */}
+              <div>
+                <div>
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    It is a single business software system that consists of
+                    many different applications and are broadly conventional for
+                    integration, customization, and configuration
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </>
-        <div className={`w-full bg-[#fff] text-left  `}>
-          <div className="  max-w-screen  md:max-w-screen  mx-auto pt-5   ">
-            <SpotlightImageGrid
-              arr={[
-                {
-                  _id: 1,
-                  title: "Infrastructure",
-                  expandedTitle: "Infrastructure",
-                  bgImg: "bg1",
-                  bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title:
-                        "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Platform as a Service(PAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Disaster Recovery as a Service(DrAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Database as a Service(DBaaS",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "BaaS: Backup as a Service(BaaS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 6,
-                      title: "Azure IoT",
-                      url: "/",
-                    },
-                    {
-                      _id: 7,
-                      title: "DevOps and Bespoke Applications",
-                      url: "/",
-                    },
-                    {
-                      _id: 8,
-                      title: "Hybrid and Multicloud Managed Services",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 2,
-                  title: "M365",
-                  expandedTitle: "M365",
-                  bgImg: "",
-                  bgColor: "#101828",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title: "Office apps and services",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Collaboration Tools",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Cloud storage",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Device Security and Access Management",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "Lowcode Application Development",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: true,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 3,
-                  title: "Business Applications",
-                  expandedTitle: "Business Applications",
-                  bgImg: "bg3",
-                  bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title: "Microsoft Dynamics 365",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Infor",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Oracle",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "LS Retail",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 4,
-                  title: "Infrastructure",
-                  expandedTitle: "Infrastructure",
-                  bgImg: "bg1",
-                  bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title:
-                        "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Platform as a Service(PAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Disaster Recovery as a Service(DrAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Database as a Service(DBaaS",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "BaaS: Backup as a Service(BaaS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 6,
-                      title: "Azure IoT",
-                      url: "/",
-                    },
-                    {
-                      _id: 7,
-                      title: "DevOps and Bespoke Applications",
-                      url: "/",
-                    },
-                    {
-                      _id: 8,
-                      title: "Hybrid and Multicloud Managed Services",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 5,
-                  title: "M365",
-                  expandedTitle: "M365",
-                  bgImg: "",
-                  bgColor: "#101828",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title: "Office apps and services",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Collaboration Tools",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Cloud storage",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Device Security and Access Management",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "Lowcode Application Development",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: true,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 6,
-                  title: "Business Applications",
-                  expandedTitle: "Business Applications",
-                  bgImg: "bg3",
-                  bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title: "Microsoft Dynamics 365",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Infor",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Oracle",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "LS Retail",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-              ]}
-            />
+          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-5 py-16 bg-[#F2F4F7]">
+            {UseCases.map((item, index) => {
+              return (
+                <div
+                  key={item._id}
+                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                >
+                  <div className="p-5 w-fit ">
+                    <div className="mb-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/icon/${item.icon}.svg`}
+                          width="48"
+                          height="48"
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
+                    </div>
+                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div
+                    className={clsx("w-full bg-[#0745D3] p-5", {
+                      hidden: item.link === "/" || item.link === "",
+                    })}
+                  >
+                    <Link
+                      href={item.link}
+                      className={
+                        "text-white flex transition-all hover:opacity-75"
+                      }
+                    >
+                      {item.cta}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
+      </>
 
-      {/*  Card Slider Offerings */}
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
 
+      {/* Stack Offering Sliders */}
       <>
         <OfferingsSlider
           arr={[
@@ -823,201 +856,7 @@ const page = () => {
         />
       </>
 
-      {/* Expertise */}
-      <Expertise
-        ribbon="Acing your Business Objectives"
-        ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-        arr={[
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-        ]}
-      ></Expertise>
-
-      {/* RPA UseCases */}
-
-      <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
-          <div className={` w-full`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
-                  </h3>
-                </div>
-                <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
-                  </p>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {UseCases.map((item, index) => {
-              return (
-                <div
-                  key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
-                >
-                  <div className="p-5 w-fit ">
-                    <div className="mb-4">
-                      {item.icon !== "" ? (
-                        <Image
-                          src={`/icon/${item.icon}.svg`}
-                          width="48"
-                          height="48"
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div
-                    className={clsx("w-full bg-[#0745D3] p-5", {
-                      hidden: item.link === "/" || item.link === "",
-                    })}
-                  >
-                    <Link
-                      href={item.link}
-                      className={
-                        "text-white flex transition-all hover:opacity-75"
-                      }
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      {/* Seamless imple */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] py-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px] sm:text-[68px] sm:leading-[84px] leading-[54px] mb-3 font-bold ">
-                  Seamless Implementation to Customer Centric Support
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  We leverage time-tested methodologies such as waterfall, rapid
-                  methodologies and agile to pilot our implementation approach
-                  according to the specific project requirements. Our prior
-                  purpose is to assure optimal system performance. While
-                  addressing system glitches, we understand their implications
-                  on our customers&apos; business processes, and prioritize on
-                  the swift resolutions. Our support services are all ears with
-                  dedicated and shared teams, enabling us to effectively address
-                  our customers&apos; unique support requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Blog */}
-      <BlogSlider arr={blogData} />
-
-      {/* Industry Spotlight Slider */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Spotlight
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Industry Solutions Slider */}
+      {/* Industry expertise expanded two cards */}
       <>
         <div className={` w-full bg-[#F2F4F7] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
@@ -1027,18 +866,19 @@ const page = () => {
                   <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5  ">
                     <div className="bg-[#F2F4F7] text-left">
                       <h4
-                        className={`font-medium text-[#0745D3] uppercase ribbon`}
+                        className={`font-medium hidden text-[#0745D3] uppercase ribbon`}
                       >
                         Accelerating Business Engineering
                       </h4>
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                          Godrej Infotech Solutions
+                          Industry Expertise
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Resolving complex business challenges and seizing
-                          growth opportunities through our purpose driven
-                          solutions designed by our experts.
+                          Being preferred partner of leading industries, we help
+                          in shaping specific technology prerequisites and
+                          deliver brilliant value driven solutions tailored to
+                          your sector
                         </p>
                       </div>
                     </div>
@@ -1095,47 +935,9 @@ const page = () => {
           </div>
         </div>
       </>
-      {/* Awards n achievements */}
-      <Awards />
 
-      {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
-        arr={[
-          {
-            _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
-          },
-          {
-            _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
-          },
-          {
-            _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
-          },
-          {
-            _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
-          },
-        ]}
-      ></Benefits>
+      {/* Blog */}
+      <BlogSlider arr={blogData} />
 
       {/* Testimonial */}
       <Testimonial

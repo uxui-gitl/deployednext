@@ -41,7 +41,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import BlogSlider from "@/components/BlogSlider";
 import Abstract from "@/components/Abstract";
-import { CaseStudy } from "@/components";
+import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import { useState } from "react";
 const fadeInAnimationVariant = {
   initial: {
