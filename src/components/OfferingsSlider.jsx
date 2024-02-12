@@ -10,19 +10,19 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import Accordion from "./Accordion";
 
-const OfferingsSlider = ({ arr, subArr, header, headerAlign }) => {
+const OfferingsSlider = ({ arr, title, alignment }) => {
   return (
     <>
       <div className={` w-full bg-[#FFF] py-20`}>
         <div
-          className={`text-${headerAlign} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1`}
+          className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1`}
         >
           {/* left */}
           <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
             <div className="">
-              {header ? (
+              {title ? (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                  {header}
+                  {title}
                 </h3>
               ) : (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
@@ -63,7 +63,7 @@ const OfferingsSlider = ({ arr, subArr, header, headerAlign }) => {
                 key={item._id}
                 className="w-fit md:w-1/3 max-w-[500px] mr-4  relative group"
               >
-                <div className="bg-[#EDF1FF] h-full  " key={item._id}>
+                <div className="bg-[#EDF1FF] h-full  ">
                   <div className=" h-full flex flex-col justify-start">
                     <div className="w-full mb-4 ">
                       <Image

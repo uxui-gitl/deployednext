@@ -289,13 +289,6 @@ const blogData = [
     imgUrl: "",
   },
 ];
-const OfferingsSliderDataHeader = [
-  {
-    _id: 1,
-    title: "Proposed GITL Offerings ",
-    alignment: "center",
-  },
-];
 
 const fadeInAnimationVariant = {
   initial: {
@@ -435,7 +428,7 @@ const page = () => {
                   <h4
                     className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
                   >
-                    HxnEAM
+                    Cloudsuite
                   </h4>
                   <h3 className="text-4xl leading-[42px] font-bold">
                     Overview
@@ -461,7 +454,9 @@ const page = () => {
       <>
         <OfferingsSlider
           arr={OfferingsSliderData}
-          header={OfferingsSliderDataHeader}
+          // header={OfferingsSliderDataHeader}
+          title={"Proposed GITL Offerings"}
+          alignment={"center"}
         />
       </>
 
