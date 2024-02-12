@@ -271,7 +271,7 @@ const page = () => {
                               "/Solutions/Customer-Experience/Microsoft-CRM"
                             }
                           >
-                            Microsoft CRM
+                            ☑️ Microsoft CRM
                           </Link>
                         </li>
                         <li>
