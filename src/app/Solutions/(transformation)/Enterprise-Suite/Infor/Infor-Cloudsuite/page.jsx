@@ -361,7 +361,7 @@ const upgradeCloud = [
   },
   {
     _id: 4,
-    title: "End-to-End Implementation ",
+    title: "End-to-End Implementation",
     desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
     cta: "Know more",
     link: "/",
