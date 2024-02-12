@@ -509,8 +509,8 @@ const page = () => {
       {/* Stack Offering Sliders */}
       <>
         <OfferingsSlider
-          header="Modules"
-          headerAlign="left"
+          title="Modules"
+          alignment="left"
           expandedDesc={true}
           arr={[
             /*One*/
@@ -519,14 +519,42 @@ const page = () => {
               title: "Business Consulting",
               desc: "",
               cta: "Explore Service",
-              subArrLinks: [],
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
               image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
               inline: true,
-              subArr: false,
               ctaUrl: "/",
               links: [
                 {
-                  title: "Cybersecurity roadmap development",
+                  title: "Sales Execution CRM",
                   url: "/",
                 },
                 {
@@ -547,190 +575,49 @@ const page = () => {
                 {
                   _id: 1,
                   icon: "gear",
-                  title: "Perimeter Security",
-                  desc: "",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
                   cta: "Know More",
                   ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Zero Trust Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure access service edge (SASE)",
-                      url: "/",
-                    },
-                    {
-                      title: "Next Generation Firewall (NGFW)",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure Remote Access (VPN)",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi Factor Authentication (MFA)",
-                      url: "/",
-                    },
-                    {
-                      title: "Distributed Denial of Service (DDoS)",
-                      url: "/",
-                    },
-                    {
-                      title: "Web Security Gateways",
-                      url: "/",
-                    },
-                  ],
+                  list: [],
                 },
                 {
                   _id: 2,
                   icon: "gear",
-                  title: "Network Security",
-                  desc: "",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
                   cta: "Know More",
                   ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Next Generation Firewalls",
-                      url: "/",
-                    },
-                    {
-                      title: "Unified Threat Management",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Defined WAN",
-                      url: "/",
-                    },
-                    {
-                      title: "Network Access Control (NAC)",
-                      url: "/",
-                    },
-                    {
-                      title: "Deception Technology",
-                      url: "/",
-                    },
-                    {
-                      title: "Advanced Persistent Threat (APT)",
-                      url: "/",
-                    },
-                  ],
+                  list: [],
                 },
                 {
                   _id: 3,
                   icon: "gear",
-                  title: "End Point Security",
-                  desc: "",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
                   cta: "Know More",
                   ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Endpoint Protection Suite",
-                      url: "/",
-                    },
-                    {
-                      title: "Endpoint Detection Response (EDR)",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Asset Management (SAM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Patch Management Solutions",
-                      url: "/",
-                    },
-                    {
-                      title:
-                        "Mobile Device or Application Management (MDM / MAM)",
-                      url: "/",
-                    },
-                  ],
+                  list: [],
                 },
-                {
-                  _id: 4,
-                  icon: "gear",
-                  title: "Application Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Web Application Security (WAF)",
-                      url: "/",
-                    },
-                    {
-                      title: "API Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 5,
-                  icon: "gear",
-                  title: "e. Users",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "O365",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile Device / Application",
-                      url: "/",
-                    },
-                    {
-                      title: "Management (MDM/ MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 6,
-                  icon: "gear",
-                  title: "Data",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Data Loss Prevention (DLP)",
-                      url: "/",
-                    },
-                    {
-                      title: "Privilege Identity Management (PIM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Cloud Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Disaster Recovery",
-                      url: "/",
-                    },
-                  ],
-                },
-                // Add more items as needed
               ],
               cta: "Explore Service",
               image: "rpa/Cyber-security_Technology-Solutions.jpg",
               ctaUrl: "/",
               links: [
-                {
-                  title: "Transcription Services",
-                  url: "/",
-                },
-                {
-                  title: "Speech recognition",
-                  url: "/",
-                },
-                {
-                  title: "Language translation",
-                  url: "/",
-                },
+                [
+                  {
+                    title: "Transcription Services",
+                    url: "/",
+                  },
+                  {
+                    title: "Speech recognition",
+                    url: "/",
+                  },
+                  {
+                    title: "Language translation",
+                    url: "/",
+                  },
+                ],
               ],
             },
             {
@@ -738,10 +625,38 @@ const page = () => {
               title: "Application Security testing",
               desc: "",
               cta: "Explore Service",
-              subArrLinks: [],
               image: "rpa/Application-Security-Testing.jpg",
               inline: true,
-              subArr: false,
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
               ctaUrl: "/",
               links: [
                 {
@@ -767,8 +682,36 @@ const page = () => {
               cta: "Explore Service",
               inline: true,
               image: "rpa/Cyber-security_vCISO.jpg",
-              subArrLinks: [],
-              subArr: false,
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
               ctaUrl: "/",
               links: [
                 {

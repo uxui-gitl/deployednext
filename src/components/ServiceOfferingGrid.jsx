@@ -5,7 +5,14 @@ import { mdiArrowRight } from "@mdi/js";
 import React from "react";
 import { mdiArrowTopRight } from "@mdi/js";
 
-const ServiceOfferingGrid = ({ title, desc, arr, ctaDesc, cta }) => {
+const ServiceOfferingGrid = ({
+  title,
+  desc,
+  arr,
+  ctaDesc,
+  cta,
+  ctaVisible,
+}) => {
   const showConnectCard = arr.length === 6;
   return (
     console.log(showConnectCard),
@@ -89,7 +96,7 @@ const ServiceOfferingGrid = ({ title, desc, arr, ctaDesc, cta }) => {
               {/* 6th Grid */}
               <div
                 className="p-8 w-[400px] max-w-1/4 "
-                style={{ display: arr.length < 6 ? "block" : "none" }}
+                style={{ display: ctaVisible ? "block" : "none" }}
               >
                 <h4 className="text-[26px] leading-[32px] my-5 font-bold text-[#101828]">
                   {ctaDesc}

@@ -731,6 +731,60 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Benefits */}
+        <Benefits
+          ribbon="Upgrade to Cloud Benefits "
+          ribbonTxtWhite="true"
+          title="Experience business performance surge with cloud"
+          desc=""
+          arr={[
+            {
+              _id: 1,
+              icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
+              title: "Minimize operational expenses of IT portfolio",
+            },
+            {
+              _id: 2,
+              icon: "Benefits-upgradeCloud/EnableUserConcurrency",
+              title: "Enable user concurrency to support large-scale workloads",
+            },
+            {
+              _id: 3,
+              icon: "Benefits-upgradeCloud/EnhancedCollaboration",
+              title:
+                "Enhanced collaboration through cross-device accessibility to information",
+            },
+            {
+              _id: 4,
+              icon: "Benefits-upgradeCloud/AdvancedDataManagement",
+              title:
+                "Advanced data management solutions, modernized process and cloud services",
+            },
+            {
+              _id: 5,
+              icon: "Benefits-upgradeCloud/AptitudeToRespond",
+              title: "Aptitude to respond to shifting business requirements",
+            },
+            {
+              _id: 6,
+              icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
+              title:
+                "Integrate Big Data Analytics into business processes for data-driven decision-making",
+            },
+            {
+              _id: 7,
+              icon: "Benefits-upgradeCloud/SecurelyStores",
+              title: "Securely stores confidential business information",
+            },
+            {
+              _id: 8,
+              icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+              title:
+                "Enhance system performance and user experience by scaling up the system",
+            },
+          ]}
+        ></Benefits>
+
         {/* We are Trained and Accredited in Cloud Services
          */}
         <>
@@ -803,60 +857,6 @@ export default function Home() {
             },
           ]}
         />
-
-        {/* Benefits */}
-        <Benefits
-          ribbon="Upgrade to Cloud Benefits "
-          ribbonTxtWhite="true"
-          title="Experience business performance surge with cloud"
-          desc=""
-          arr={[
-            {
-              _id: 1,
-              icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-              title: "Minimize operational expenses of IT portfolio",
-            },
-            {
-              _id: 2,
-              icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-              title: "Enable user concurrency to support large-scale workloads",
-            },
-            {
-              _id: 3,
-              icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-              title:
-                "Enhanced collaboration through cross-device accessibility to information",
-            },
-            {
-              _id: 4,
-              icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-              title:
-                "Advanced data management solutions, modernized process and cloud services",
-            },
-            {
-              _id: 5,
-              icon: "Benefits-upgradeCloud/AptitudeToRespond",
-              title: "Aptitude to respond to shifting business requirements",
-            },
-            {
-              _id: 6,
-              icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-              title:
-                "Integrate Big Data Analytics into business processes for data-driven decision-making",
-            },
-            {
-              _id: 7,
-              icon: "Benefits-upgradeCloud/SecurelyStores",
-              title: "Securely stores confidential business information",
-            },
-            {
-              _id: 8,
-              icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-              title:
-                "Enhance system performance and user experience by scaling up the system",
-            },
-          ]}
-        ></Benefits>
 
         {/* Expertise */}
         <Expertise

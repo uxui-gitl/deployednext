@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import Accordion from "./Accordion";
 
-const OfferingsSlider = ({ arr, title, alignment }) => {
+const OfferingsSlider = ({ arr, title, alignment, expandedDesc }) => {
   return (
     <>
       <div className={` w-full bg-[#FFF] py-20`}>
@@ -74,7 +74,7 @@ const OfferingsSlider = ({ arr, title, alignment }) => {
                         alt=""
                       />
                     </div>
-                    <div className="flex justify-between flex-col h-full">
+                    <div className="flex justify-start flex-col h-full">
                       <div className="p-4">
                         <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
                           {item.title}
@@ -92,6 +92,7 @@ const OfferingsSlider = ({ arr, title, alignment }) => {
                               inline={item.inline}
                               icons={false}
                               items={item.subArrLinks}
+                              expandedDesc={expandedDesc}
                               // items={[
                               //   { _id: item._id, list: item.subArrLinks },
                               // ]}
@@ -102,15 +103,9 @@ const OfferingsSlider = ({ arr, title, alignment }) => {
                                 item.links.map((list, index) => (
                                   <li
                                     key={index}
-                                    // className=" border-b-2 border-[#DBDBDB] py-2 "
                                     className="text-[#101828] text-[14px] font-medium border-b-2 border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                                   >
-                                    {/* <Link
-                                  href={list.url}
-                                  className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                                > */}
                                     {list.title}
-                                    {/* </Link> */}
                                   </li>
                                 ))}
                             </ul>

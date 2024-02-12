@@ -40,6 +40,7 @@ import styles from "./page.module.css";
 import Awards from "@/sections/awards/Awards";
 import ServiceOfferingGrid from "@/components/ServiceOfferingGrid";
 import Abstract from "@/components/Abstract";
+import { NewTestimonial } from "@/components";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -87,71 +88,71 @@ const page = () => {
   ];
 
   const ConsiderRPA = [
-  {
-    _id: 1,
-    title: "Azure SQL Data Ware Housing",
-    desc: "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/IncreasedProductivity.png",
-  },
-  {
-    _id: 2,
-    title: "AWS Redshift",
-    desc: "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/GainAccurateOutcomes.png",
-  },
-  {
-    _id: 3,
-    title: "Azure Synapse",
-    desc: "Seamlessly integrate, analyze and visualize your data with Azure Synapse, and rely on us for real-time insights that drive informed decisions.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/EnsureCompliance.png",
-  },
-  {
-    _id: 4,
-    title: "Azure Data Factory",
-    desc: "Effortlessly move, transform and orchestrate data while we streamline your data workflows for you.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/StrengthenPotential.png",
-  },
-  {
-    _id: 5,
-    title: "Databricks",
-    desc: "Harness unified data analytics gaining deeper insights with our guidance and empowering data-driven strategies.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/OptimizeFTEcost.png",
-  },
-  {
-    _id: 6,
-    title: "Amazon S3",
-    desc: "Securely store, retrieve and manage data knowing that we offer right scalability and durability to safeguard your valuable information.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/EnhanceFlexibility.png",
-  },
-  {
-    _id: 7,
-    title: "Azure Data Lake",
-    desc: "Experience high-performance and secure data management with Azure Data Lake, customized to meet your evolving data needs while we provide our expertise.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/ReduceAHT.png",
-  },
     {
-    _id: 8,
-    title: "Microsoft Fabric",
-    desc: "We leverage the capabilities of Microsoft Fabric, an integrated Lakehouse, Datawarehouse & AI-powered platform designed to drive your business efficiency through the seamless consolidation of data estate, enhanced access management, robust governance and compliance mechanisms.",
-    cta: "Know More",
-    ctaUrl: "/",
-    image: "/rpa/ReduceAHT.png",
-  },
-];
+      _id: 1,
+      title: "Azure SQL Data Ware Housing",
+      desc: "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/IncreasedProductivity.png",
+    },
+    {
+      _id: 2,
+      title: "AWS Redshift",
+      desc: "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/GainAccurateOutcomes.png",
+    },
+    {
+      _id: 3,
+      title: "Azure Synapse",
+      desc: "Seamlessly integrate, analyze and visualize your data with Azure Synapse, and rely on us for real-time insights that drive informed decisions.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/EnsureCompliance.png",
+    },
+    {
+      _id: 4,
+      title: "Azure Data Factory",
+      desc: "Effortlessly move, transform and orchestrate data while we streamline your data workflows for you.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/StrengthenPotential.png",
+    },
+    {
+      _id: 5,
+      title: "Databricks",
+      desc: "Harness unified data analytics gaining deeper insights with our guidance and empowering data-driven strategies.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/OptimizeFTEcost.png",
+    },
+    {
+      _id: 6,
+      title: "Amazon S3",
+      desc: "Securely store, retrieve and manage data knowing that we offer right scalability and durability to safeguard your valuable information.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/EnhanceFlexibility.png",
+    },
+    {
+      _id: 7,
+      title: "Azure Data Lake",
+      desc: "Experience high-performance and secure data management with Azure Data Lake, customized to meet your evolving data needs while we provide our expertise.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/ReduceAHT.png",
+    },
+    {
+      _id: 8,
+      title: "Microsoft Fabric",
+      desc: "We leverage the capabilities of Microsoft Fabric, an integrated Lakehouse, Datawarehouse & AI-powered platform designed to drive your business efficiency through the seamless consolidation of data estate, enhanced access management, robust governance and compliance mechanisms.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/ReduceAHT.png",
+    },
+  ];
 
   const upgradeCloud = [
     {
@@ -228,17 +229,16 @@ const page = () => {
   ];
 
   const blogData = [
-  {
-    _id: 1,
-    ribbon: "blog",
-    title: "Azure Data Lake – Data Storage Solution for Big Data Analytics",
-    desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
-  
-];
+    {
+      _id: 1,
+      ribbon: "blog",
+      title: "Azure Data Lake – Data Storage Solution for Big Data Analytics",
+      desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
+      cta: "Know More",
+      link: "/",
+      imgUrl: "",
+    },
+  ];
 
   const smartTools = [
     {
@@ -271,7 +271,6 @@ const page = () => {
       icon: "Birst-logo.png",
       cta: "Know More",
     },
-    
   ];
   const navLinks = [
     {
@@ -305,8 +304,7 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      
-{/* Section Nav */}
+      {/* Section Nav */}
       <>
         <SectionNav arr={navLinks} />
       </>
@@ -314,11 +312,11 @@ const page = () => {
       {/* Abstract  */}
       <Abstract abstractdesc="We develop and execute bespoke strategies emphasizing governance and autonomous management to build your data estates for abstracting actionable insights. Through seamless integration of data into critical workflows, we optimize operational efficiency while implementing AI and automation at key junctures."></Abstract>
 
-
       {/* Smart Tools Dynamic */}
       <>
         <ServiceOfferingGrid
           title="Data Visualization"
+          ctaVisible={false}
           desc="With real-time data access and visualization, you'll always have your finger on the pulse of your business operations. "
           ctaDesc="Let's Connect for a Walkthrough"
           cta="Let's Connect"
@@ -353,7 +351,6 @@ const page = () => {
               icon: "Birst-logo.png",
               cta: "Know More",
             },
-            
           ]}
         />
       </>
@@ -365,15 +362,21 @@ const page = () => {
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                 DATA Management 
+                  DATA Management
                 </h3>
-                <p>We blend technology capabilities with a human touch to elevate your data management to new heights.</p>
+                <p>
+                  We blend technology capabilities with a human touch to elevate
+                  your data management to new heights.
+                </p>
               </div>
             </div>
           </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
             {ConsiderRPA.map((item, index) => (
-              <div className="flex flex-col sm:flex-row  bg-white" key={item._id}>
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
                 <Image
                   src={item.image}
                   height={120}
@@ -421,10 +424,10 @@ const page = () => {
             ctaUrl: "",
             list: [
               {
-                title: "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
+                title:
+                  "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
                 url: "/",
               },
-              
             ],
           },
           {
@@ -436,10 +439,10 @@ const page = () => {
             ctaUrl: "",
             list: [
               {
-                title: "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
+                title:
+                  "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
                 url: "/",
               },
-              
             ],
           },
           {
@@ -451,10 +454,10 @@ const page = () => {
             ctaUrl: "",
             list: [
               {
-                title: "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
+                title:
+                  "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
                 url: "/",
               },
-              
             ],
           },
           {
@@ -466,10 +469,10 @@ const page = () => {
             ctaUrl: "",
             list: [
               {
-                title: "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
+                title:
+                  "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
                 url: "/",
               },
-              
             ],
           },
           {
@@ -481,10 +484,10 @@ const page = () => {
             ctaUrl: "",
             list: [
               {
-                title: "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
+                title:
+                  "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
                 url: "/",
               },
-              
             ],
           },
         ]}
@@ -493,28 +496,27 @@ const page = () => {
       {/* <Awards /> */}
 
       {/* Casestudy */}
-        <CaseStudy
-          ribbon="CASE STUDY "
-          title="Data Insights in Action / Case study"
-          desc=""
-          isHomepage={false}
-          arr={[
-            {
-              id: 1,
-              title:
-                "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-              thumbnail: "1",
-              description: "",
-              tags: [""],
-              cta: "Know More",
-              link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-            },
-            
-          ]}
-        />
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Data Insights in Action / Case study"
+        desc=""
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
+            thumbnail: "1",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
+          },
+        ]}
+      />
 
-        {/* Blog */}
-        <BlogSlider arr={blogData} />
+      {/* Blog */}
+      <BlogSlider arr={blogData} />
 
       {/* Expertise */}
       {/* <Expertise
@@ -540,7 +542,8 @@ const page = () => {
 
       {/* Testimonial */}
       <Testimonial
-        ribbon="Testimonials "
+        ribbon="Testimonials"
+        ribbonVisible={false}
         title="Delighted Customers Share their Customer Experience"
         desc="It is a long established fact that a reader will be distracted by
           the readable content of a page when looking at its layout."
@@ -548,7 +551,8 @@ const page = () => {
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager, Leading Cooling Services Provider in the Middle East",
+            clientDesignation:
+              "IT Manager, Leading Cooling Services Provider in the Middle East",
             thumbnail: "1",
             description:
               "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
@@ -562,6 +566,62 @@ const page = () => {
             thumbnail: "1",
             description:
               "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* fix */}
+
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          // temp
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
             link: "/",
           },

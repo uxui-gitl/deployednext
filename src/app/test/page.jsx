@@ -85,49 +85,17 @@ export default function Home() {
                 <div
                   key={item._id}
                   className={` mx-2 w-full flex flex-col justify-between`}
-                  onMouseOver={() => setHoveredCard(item._id)}
-                  onMouseOut={() => setHoveredCard(null)}
                 >
-                  <div
-                    className={`w-full hidden text-2xl font-bold ${
-                      isHovered ? "block" : "hidden"
-                    }  p-5`}
-                    style={{
-                      backgroundColor: item.bgcolor1,
-                      color: item.color,
-                    }}
-                  >
-                    {item.keyword}
-                  </div>
                   <div
                     className={`p-5 w-full h-full `}
                     style={{
                       backgroundColor: item.bgcolor2,
                     }}
                   >
-                    <div className="hidden mb-4">
-                      {item.icon !== "" ? (
-                        <Image
-                          src={`/${item.icon}.svg`}
-                          width={56}
-                          height={56}
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4
-                      className={`text-2xl hidden font-bold my-2 text-[#101828]`}
-                    >
-                      {item.title}
-                    </h4>
                     <div
-                      className={`${
-                        isHovered
-                          ? "hidden"
-                          : "block  text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]"
-                      } `}
+                      className={
+                        "block  text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]"
+                      }
                     >
                       {item.desc}
                     </div>
