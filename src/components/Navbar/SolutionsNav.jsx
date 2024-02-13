@@ -235,7 +235,7 @@ const SolutionsNav = () => {
                         },
                         {
                           label: "Infor CloudSuite",
-                          href: "/Solutions/Enterprise-Suite/Infor/Infor-CloudSuite",
+                          href: "/Solutions/Enterprise-Suite/Infor/Infor-Cloudsuite",
                         },
                         {
                           label: "HxnEAM",
@@ -244,7 +244,7 @@ const SolutionsNav = () => {
                       ],
                     },
                     {
-                      label: "Microsoft Dynamics",
+                      label: "Microsoft Practises",
                       href: "/Solutions/Enterprise-Suite/Microsoft-Practises",
                       level3Links: [
                         {
@@ -257,7 +257,7 @@ const SolutionsNav = () => {
                         },
                         {
                           label: "Commerce",
-                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/Commerce",
+                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/ECommerce",
                         },
                       ],
                     },
@@ -269,11 +269,11 @@ const SolutionsNav = () => {
                 },
                 {
                   sectionLabel: "Customer Experience",
-                  sectionHref: "/Solutions/Data-Insights",
+                  sectionHref: "/Solutions/Customer-Experience",
                   subLinks: [
                     {
                       label: "Infor CRM",
-                      href: "/Solutions/Customer-Experience/Cyber-Security",
+                      href: "/Solutions/Customer-Experience/Infor-CRM",
                     },
                     {
                       label: "Microsoft CRM",
@@ -289,7 +289,7 @@ const SolutionsNav = () => {
                     },
                     {
                       label: "LS Retail",
-                      href: "/Solutions/Customer-Experience/LS-Retail",
+                      href: "/Solutions/Customer-Experience/LS-retail",
                     },
                   ],
                 },

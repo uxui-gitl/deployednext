@@ -298,7 +298,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={"/Solutions/Customer-Experience/LS-Retail"}
+                            href={"/Solutions/Customer-Experience/LS-retail"}
                           >
                             LS Retail
                           </Link>
