@@ -108,7 +108,7 @@ const AIOfferings = [
   },
   {
     _id: 3,
-    title: "Document  Understanding",
+    title: "Document Understanding",
     desc: "We help you to achieve error-free AI-driven data capture from diverse document types and helps your business with unstructured data.",
     cta: "Explore Service",
     ctaUrl: "",
@@ -280,7 +280,7 @@ const page = () => {
       {/* Our Ai Offerings */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -348,7 +348,7 @@ const page = () => {
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-2 relative">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-1 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                   ML Expertise
@@ -400,17 +400,17 @@ const page = () => {
 
       {/* AI & ML Partners */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div className={`w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold">
                 Intelligent Technologies Platforms
                 </h3>
               </div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                <p className="font-medium leading-[22px] md:w-[90%]">
                 Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.
                 </p>
               </div>
@@ -432,7 +432,7 @@ const page = () => {
 
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Benefits "
+        ribbon="Benefits"
         ribbonTxtWhite="true"
         title=""
         desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
@@ -530,7 +530,7 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Intelligent Solutions? "
+        title="Ready for Intelligent Solutions?"
         blue=""
         title2=""
         desc="Share your details NOW for Smarter Business Future!"
