@@ -349,7 +349,8 @@ const page = () => {
           },
           {
             _id: 2,
-            desc: "Drive rapid and substantial improvements in return on investment (RoI)",
+            desc: "Drive rapid and substantial improvements in return on investment (ROI) ",
+
             icon: "",
           },
           {
