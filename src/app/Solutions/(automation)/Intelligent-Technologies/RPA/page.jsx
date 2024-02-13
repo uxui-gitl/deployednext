@@ -99,7 +99,7 @@ const RPAServiceOfferings = [
 const ConsiderRPA = [
   {
     _id: 1,
-    title: "Increased Productivity",
+    title: "Increase Productivity",
     desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
     cta: "Know More",
     ctaUrl: "/",
@@ -215,7 +215,7 @@ const IndustryExperts = [
 const RPACards = [
   {
     _id: 1,
-    title: "Infrastructure",
+    title: "Infrastructure Setup",
     keyword: "Enable",
     color: "#032573",
     bgcolor1: "#7491D4",
@@ -223,29 +223,28 @@ const RPACards = [
     bgcolor3: "#0745D3",
     icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
     list: [
-      "Designing the server architecture",
-      "Installing and configuring the architecture",
-      "Setting up dev, test & production environments",
+      "Design server architecture",
+      "Install and configuration",
+      "Setting up development, test & production environments",
     ],
   },
   {
     _id: 2,
     title: "Project Governance ",
-    keyword: "Prepare",
+    keyword: "Preparation",
     color: "#806113",
     bgcolor1: "#F5D687",
     bgcolor2: "#FFF8E5",
     bgcolor3: "#F4C447",
     icon: "icon/RPA-projectLifestyle/ProjectGovernance",
     list: [
-      "Project Governance",
-      "Agreeing on the project development approach",
-      "Reviewing the RPA best practices",
+      "Discuss & finalize project development approach",
+      "Review RPA best practices",
     ],
   },
   {
     _id: 3,
-    title: "Workflow ",
+    title: "Workflow Design",
     keyword: "Design",
     color: "#224D37",
     bgcolor1: "#6D917F",
@@ -253,14 +252,14 @@ const RPACards = [
     bgcolor3: "#429268",
     icon: "icon/RPA-projectLifestyle/WorkflowDesign",
     list: [
-      "Filling in the Process Design Document (PDO)",
-      "Creating test cases and data",
-      "Designing the solution",
+      "Create Process Design Document (PDO)",
+      "Build test cases",
+      "Solution Design",
     ],
   },
   {
     _id: 4,
-    title: "Workflow  Development ",
+    title: "Workflow Development",
     keyword: "Build",
     color: "#4E6EF2",
     bgcolor1: "#8CA3FF",
@@ -268,14 +267,14 @@ const RPACards = [
     bgcolor3: "#4C6FFF",
     icon: "icon/RPA-projectLifestyle/WorkflowDevelopment",
     list: [
-      "Building the workflows",
-      "Performing Unit and Functional testing",
-      "Creating the Development Specification Document (DSD)",
+      "Build workflows",
+      "Unit and Functional testing",
+      "Create Development Specification Document (DSD)",
     ],
   },
   {
     _id: 5,
-    title: "Quality  Assurance ",
+    title: "Quality Assurance",
     keyword: "Test",
     color: "#732822",
     bgcolor1: "#B56964",
@@ -283,21 +282,21 @@ const RPACards = [
     bgcolor3: "#B42318",
     icon: "icon/RPA-projectLifestyle/QualityAssurance",
     list: [
-      "Executing the test cases",
-      "Reporting the results",
-      "Making the Go/NoGo decision",
+      "Execute test cases",
+      "Report results",
+      "Go/NoGo decision finalization",
     ],
   },
   {
     _id: 6,
-    title: "Hyper Care ",
+    title: "Hypercare",
     keyword: "Sustain",
     color: "#DDDDDE",
     bgcolor1: "#575D66",
     bgcolor2: "#F5F5F5",
     bgcolor3: "#475467",
     icon: "icon/RPA-projectLifestyle/Hypercare",
-    list: ["Performing workflow support", "Managing Changes and Improvements"],
+    list: ["Support workflow", "Manage Changes and Improvements"],
   },
 ];
 const ChoiceSlider = [
@@ -642,9 +641,8 @@ const page = () => {
                 </h3>
               </div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our in-depth expertise in RPA platforms helps in maximizing
-                  functionality, ensuring optimal business performance.
+                <p className="font-medium leading-[22px] md:w-[100%] ">
+                 Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -866,9 +864,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  From inception to upheld brilliance, every stage of our
-                  project lifecycle is precisely devised to optimize your
-                  business processes.
+                  From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.
                 </p>
               </div>
             </div>
