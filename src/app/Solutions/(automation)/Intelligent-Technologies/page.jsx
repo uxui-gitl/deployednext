@@ -206,7 +206,7 @@ const page = () => {
   const navLinks = [
     {
       _id: 1,
-      title: "Enterprise suite",
+      title: "Enterprise Suite",
       link: "#about",
     },
     {
@@ -349,7 +349,9 @@ const page = () => {
           },
           {
             _id: 2,
-            desc: "Drive rapid and substantial improvements in return on investment (ROI)",
+
+            desc: "Drive rapid and substantial improvements in return on investment (ROI) ",
+
             icon: "",
           },
           {
