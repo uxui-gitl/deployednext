@@ -679,10 +679,10 @@ const page = () => {
                   url: "/",
                 },
                 {
-                  title: "Assessment services against cyber security frameworks & standards",
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
                   url: "/",
                 },
-                
               ],
             },
             /*End One*/
@@ -702,8 +702,7 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "Zero Trust Security",
+                      title: "Zero Trust Security",
                       url: "/",
                     },
                     {
@@ -741,8 +740,7 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "Next Generation Firewalls",
+                      title: "Next Generation Firewalls",
                       url: "/",
                     },
                     {
@@ -765,7 +763,6 @@ const page = () => {
                       title: "Advanced Persistent Threat (APT)",
                       url: "/",
                     },
-                    
                   ],
                 },
                 {
@@ -777,8 +774,7 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "Endpoint Protection Suite",
+                      title: "Endpoint Protection Suite",
                       url: "/",
                     },
                     {
@@ -794,10 +790,10 @@ const page = () => {
                       url: "/",
                     },
                     {
-                      title: "Mobile Device or Application Management (MDM / MAM)",
+                      title:
+                        "Mobile Device or Application Management (MDM / MAM)",
                       url: "/",
                     },
-                    
                   ],
                 },
                 {
@@ -809,15 +805,13 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "Web Application Security (WAF)",
+                      title: "Web Application Security (WAF)",
                       url: "/",
                     },
                     {
                       title: "API Gateways",
                       url: "/",
                     },
-                    
                   ],
                 },
                 {
@@ -829,15 +823,14 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "O365",
+                      title: "O365",
                       url: "/",
                     },
                     {
                       title: "Mobile Device / Application",
                       url: "/",
                     },
-                     {
+                    {
                       title: "Management (MDM/ MAM)",
                       url: "/",
                     },
@@ -852,15 +845,14 @@ const page = () => {
                   ctaUrl: "/",
                   list: [
                     {
-                      title:
-                        "Data Loss Prevention (DLP)",
+                      title: "Data Loss Prevention (DLP)",
                       url: "/",
                     },
                     {
                       title: "Privilege Identity Management (PIM)",
                       url: "/",
                     },
-                     {
+                    {
                       title: "Cloud Security",
                       url: "/",
                     },
@@ -910,10 +902,10 @@ const page = () => {
                   url: "/",
                 },
                 {
-                  title: "Vulnerability Assessment and Penetration Testing (VAPT)",
+                  title:
+                    "Vulnerability Assessment and Penetration Testing (VAPT)",
                   url: "/",
                 },
-                
               ],
             },
 
@@ -954,36 +946,33 @@ const page = () => {
                 },
               ],
             },
-            
           ]}
         />
       </>
 
       {/* Infographics */}
-        <>
-          <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-            <div className=" mt-[5em] mb-[2em]">
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
-                <h3 className="text-4xl leading-[42px] font-bold">
-                  Services | Dynamic Cybersecurity
-                </h3>
-                
-              </div>
+      <>
+        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                Services | Dynamic Cybersecurity
+              </h3>
             </div>
-            <div className="mx-auto text-center w-max">
-              <Infographics src="/infographics/Infographic_ServicesDynamic.png" />
-            </div>
-
-<h3 className="text-4xl leading-[42px] font-bold pt-32 mb-[2em] text-center">
-                  End to End Business Security with Our Cybersecurity Suite
-                </h3>
-
-                 <div className="mx-auto text-center w-max mb-20">
-              <Infographics src="/infographics/Infographic_EndToEnd.png" />
-            </div>
-
           </div>
-        </>
+          <div className="mx-auto text-center w-max">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.png" />
+          </div>
+
+          <h3 className="text-4xl leading-[42px] font-bold pt-32 mb-[2em] text-center">
+            End to End Business Security with Our Cybersecurity Suite
+          </h3>
+
+          <div className="mx-auto text-center w-full mb-20">
+            <Infographics src="/infographics/GITL_Infographics.svg" />
+          </div>
+        </div>
+      </>
 
       {/* Industry Spotlight Slider */}
       {/* <>

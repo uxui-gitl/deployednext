@@ -10,17 +10,19 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import Accordion from "./Accordion";
 
-const OfferingsSlider = ({ arr, subArr, header }) => {
+const OfferingsSlider = ({ arr, title, alignment, expandedDesc }) => {
   return (
     <>
       <div className={` w-full bg-[#FFF] py-20`}>
-        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+        <div
+          className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1`}
+        >
           {/* left */}
           <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
             <div className="">
-              {header && header.length > 0 ? (
+              {title ? (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                  {header[0].title}
+                  {title}
                 </h3>
               ) : (
                 <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
@@ -61,7 +63,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                 key={item._id}
                 className="w-fit md:w-1/3 max-w-[500px] mr-4  relative group"
               >
-                <div className="bg-[#EDF1FF] h-full  " key={item._id}>
+                <div className="bg-[#EDF1FF] h-full  ">
                   <div className=" h-full flex flex-col justify-start">
                     <div className="w-full mb-4 ">
                       <Image
@@ -72,7 +74,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                         alt=""
                       />
                     </div>
-                    <div className="flex justify-between flex-col h-full">
+                    <div className="flex justify-start flex-col h-full">
                       <div className="p-4">
                         <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
                           {item.title}
@@ -90,6 +92,7 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                               inline={item.inline}
                               icons={false}
                               items={item.subArrLinks}
+                              expandedDesc={expandedDesc}
                               // items={[
                               //   { _id: item._id, list: item.subArrLinks },
                               // ]}
@@ -100,15 +103,9 @@ const OfferingsSlider = ({ arr, subArr, header }) => {
                                 item.links.map((list, index) => (
                                   <li
                                     key={index}
-                                    // className=" border-b-2 border-[#DBDBDB] py-2 "
                                     className="text-[#101828] text-[14px] font-medium border-b-2 border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                                   >
-                                    {/* <Link
-                                  href={list.url}
-                                  className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                                > */}
                                     {list.title}
-                                    {/* </Link> */}
                                   </li>
                                 ))}
                             </ul>

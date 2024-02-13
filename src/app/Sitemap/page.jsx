@@ -53,7 +53,7 @@ const page = () => {
                             target="_blank"
                             href={"/Solutions/Intelligent-Technologies/IIOT"}
                           >
-                            IIOT [Not Found]
+                            ☑️ IIOT
                           </Link>
                         </li>
                       </ul>
@@ -215,7 +215,7 @@ const page = () => {
                                     "/Solutions/Enterprise-Suite/Microsoft-Practises/FnO"
                                   }
                                 >
-                                  F&O
+                                  ☑️ F&O
                                 </Link>
                               </li>
                               <li>
@@ -223,10 +223,10 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/Ecommerce"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/ECommerce"
                                   }
                                 >
-                                  eCommerce
+                                  ☑️ eCommerce
                                 </Link>
                               </li>
                             </ul>
@@ -236,9 +236,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={
-                              "/Solutions/Enterprise-Suite/Microsoft-Practises/Oracle"
-                            }
+                            href={"/Solutions/Enterprise-Suite/Oracle"}
                           >
                             Oracle
                           </Link>
@@ -252,7 +250,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Customer-Experience"}
                     >
-                      Customer Experience
+                      ☑️ Customer Experience
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>
@@ -262,7 +260,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Customer-Experience/Infor-CRM"}
                           >
-                            Infor CRM
+                            ☑️ Infor CRM
                           </Link>
                         </li>
                         <li>
@@ -273,7 +271,7 @@ const page = () => {
                               "/Solutions/Customer-Experience/Microsoft-CRM"
                             }
                           >
-                            Microsoft CRM
+                            ☑️ Microsoft CRM
                           </Link>
                         </li>
                         <li>
@@ -479,6 +477,24 @@ const page = () => {
                 href={"/"}
               >
                 Homepage
+              </Link>
+            </li>
+            <li style={{ listStyleType: "circle" }}>
+              <Link
+                className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
+                target="_blank"
+                href={"/Sitemap"}
+              >
+                Healthcare
+              </Link>
+            </li>
+            <li style={{ listStyleType: "circle" }}>
+              <Link
+                className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
+                target="_blank"
+                href={"/Sitemap"}
+              >
+                LVD
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>

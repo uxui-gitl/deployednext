@@ -643,7 +643,8 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                 Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.
+                  Our in-depth expertise in RPA platforms helps in maximizing
+                  functionality, ensuring optimal business performance.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -865,7 +866,9 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.
+                  From inception to upheld brilliance, every stage of our
+                  project lifecycle is precisely devised to optimize your
+                  business processes.
                 </p>
               </div>
             </div>

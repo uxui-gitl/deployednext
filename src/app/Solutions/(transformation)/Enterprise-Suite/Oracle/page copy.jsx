@@ -1,23 +1,23 @@
 "use client";
 import EntIntro from "@/components/EntIntro";
 import StrategySub from "@/components/StrategySub";
-import shield from "../../../../../../../public/upgradeCloud/sheild.png";
-import puzzle from "../../../../../../../public/upgradeCloud/puzzle.png";
-import icon from "../../../../../../../public/icon.png";
-import microsoft from "../../../../../../../public/upgradeCloud/microsoft.png";
-import azure from "../../../../../../../public/upgradeCloud/azure.png";
-import checkout from "../../../../../../../public/upgradeCloud/checkout.png";
-import curiousPerson from "../../../../../../../public/upgradeCloud/curiousPerson.png";
-import cloud from "../../../../../../../public/upgradeCloud/cloud.png";
-import cloudArrows from "../../../../../../../public/upgradeCloud/cloudArrows.png";
+import shield from "../../../../../../public/upgradeCloud/sheild.png";
+import puzzle from "../../../../../../public/upgradeCloud/puzzle.png";
+import icon from "../../../../../../public/icon.png";
+import microsoft from "../../../../../../public/upgradeCloud/microsoft.png";
+import azure from "../../../../../../public/upgradeCloud/azure.png";
+import checkout from "../../../../../../public/upgradeCloud/checkout.png";
+import curiousPerson from "../../../../../../public/upgradeCloud/curiousPerson.png";
+import cloud from "../../../../../../public/upgradeCloud/cloud.png";
+import cloudArrows from "../../../../../../public/upgradeCloud/cloudArrows.png";
 
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import PowerBI from "../../../../../../../public/Power-BI-Logo.png";
-import PowerApp from "../../../../../../../public/Power-App.png";
-import Birst from "../../../../../../../public/Birst-logo.png";
-import dummy from "../../../../../../../public/dummy.png";
+import PowerBI from "../../../../../../public/Power-BI-Logo.png";
+import PowerApp from "../../../../../../public/Power-App.png";
+import Birst from "../../../../../../public/Birst-logo.png";
+import dummy from "../../../../../../public/dummy.png";
 
 import Icon from "@mdi/react";
 import { mdiBullseyeArrow } from "@mdi/js";
@@ -39,7 +39,6 @@ import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
-import InsightSlider from "@/components/InsightSlider";
 const smartTools = [
   {
     _id: 1,
@@ -109,23 +108,31 @@ const page = () => {
   const lists = [
     {
       id: 1,
-      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+      text: "Inadequate Scalability and Availability",
     },
     {
       id: 2,
-      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+      text: "Unreliable Backup Storage",
     },
     {
       id: 3,
-      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+      text: "Weak Disaster Recovery and Redundancy",
     },
     {
       id: 4,
-      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+      text: "Inadequate Data Integrity and Automation Capabilities",
     },
     {
       id: 5,
-      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
+      text: "Subpar IT Performance",
+    },
+    {
+      id: 6,
+      text: "Limited IT Universality and Centralized Monitoring",
+    },
+    {
+      id: 7,
+      text: "High Management Costs of IT Infrastructure",
     },
   ];
 
@@ -180,14 +187,45 @@ const page = () => {
     },
   ];
 
+  const aglity = [
+    {
+      _id: 1,
+      title: "Database Migration",
+    },
+    {
+      _id: 2,
+      title: "Infrastructure Migration ",
+    },
+    {
+      _id: 3,
+      title: "Enterprise Platforms Migration",
+    },
+    {
+      _id: 4,
+      title: "Cloud Microservices",
+    },
+    {
+      _id: 5,
+      title: "Disaster Recovery and Enterprise Backup Service",
+    },
+    {
+      _id: 6,
+      title: "Application Migration and Modernization",
+    },
+    {
+      _id: 7,
+      title: "Cloud Monitoring and Reporting ",
+    },
+  ];
+
   return (
     <>
       <EntIntro
-        title="Elevate Your Retail Game with
-        seamless shopping experience "
-        desc="D365 F&O is reliable robust solution for medium to large-sized businesses which enables streamlining and automating global operations, giving real-time insights that become the foundation of well-informed decisions. Our expert D365 F&O team simplifies the adoption of solution, delivering streamlined financial processes and paving the way for business transformation."
+        title="Elevating Future-Ready Global
+        Enterprises with Oracle"
+        desc=" "
         cta="Let's Connect"
-        width="90%"
+        width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       <>
@@ -216,11 +254,14 @@ const page = () => {
           ]}
         />
       </>
-      <BlogSlider />
+
       <CaseStudy />
+
+      {/* Data Metrics Insights to be created */}
+
       {/* Why Infotech */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div className={` w-full bg-[#F2F4F7] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
@@ -326,14 +367,142 @@ const page = () => {
       </>
 
       <Testimonials />
+      <Awards />
+
+      {/* Infor service grid */}
+      <>
+        <div className={` w-full bg-white py-32`}>
+          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="md:flex-row flex-col flex text-left gap-x-10">
+                <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                  Infor Services with Expert Consulting and Success Delivery
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
+                  We revamp your core business application with cloud-native
+                  development so that you can win a competitive threshold in the
+                  marketplace. Our adept hyper-scaler team can help rearchitect
+                  your business operations with an efficient approach
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-[2rem]">
+            <div className="grid grid-cols-1 grid-rows-1 md:grid-rows-3 md:grid-cols-2 grid-flow-row gap-5 md:gap-10 mx-auto ">
+              {upgradeCloud.map((item, i) => {
+                return (
+                  <div
+                    key={i}
+                    className={clsx(
+                      `col flex justify-between flex-col bg-[#320A53] text-white bg-cover px-14 py-16`,
+                      {
+                        " bg-[#344CA9]": item._id === 2 || item._id === 6,
+                        " bg-[url('/gradient-1.png')]": item._id === 1,
+                        " bg-[url('/gradient-2.png')]": item._id === 3,
+                      }
+                    )}
+                  >
+                    <div>
+                      <h4 className="text-[30px] font-bold leading-[42px] mb-3">
+                        {item.title}
+                      </h4>
+                      <p className="text-base leading-6 font-semibold">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <Link
+                      href={item.link}
+                      className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
+                    >
+                      {item.cta}{" "}
+                      <span>
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{
+                            marginLeft: "0.5em",
+                            width: "1rem",
+                            fontSize: "14px",
+                          }}
+                          className="cta-know-more"
+                        />
+                      </span>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Innovative Infor Drivers */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Innovative Infor Drivers
+                </h3>
+              </div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Extending the capabilities of Infor with tailored functional
+                  enhancements for enhancement of business productivity
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={` ${styles["bg-img"]} w-full py-32 `}>
+          <div className=" grid grid-cols-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
+            {[0, 1, 2, 3].map((item, index) => {
+              return (
+                <div key={index} className="mx-5 bg-white ">
+                  <div className="p-5  w-full ">
+                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      DataSwift Pro
+                    </h4>
+                    <p className="text-[14px] leading-[22px] text-[#475467]">
+                      Godrej Infotech Data Conversion Utility Tool offers data
+                      migration utilities facilitating faster & structured data
+                      upload and managing source & target systems, table
+                      structures, field mapping and data download/upload
+                      scripts.
+                    </p>
+                  </div>
+                  <div className=" w-full bg-[#0745D3] p-5">
+                    <Link
+                      href={"/"}
+                      className="text-white  flex transition-all hover:opacity-75  "
+                    >
+                      Know More{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
+
+      <SME />
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
-        blue=" "
+        title="Ready for Transformation with"
+        blue="AI and ML?"
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Let's embark on your journey together aligned with your business goals."
       />
       <InfotechWeeklyAlt />
     </>

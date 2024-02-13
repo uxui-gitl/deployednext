@@ -5,7 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 
-const AccordionItem = ({ item, inline, icons, isOpen, onClick, bullet }) => (
+const AccordionItem = ({
+  item,
+  inline,
+  icons,
+  isOpen,
+  onClick,
+  bullet,
+  expandedDesc,
+}) => (
   <div
     className={clsx("accordionItem", {
       "mb-4 bg-[#fff]": !inline,
@@ -46,26 +54,33 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick, bullet }) => (
     {isOpen && (
       <div className="accordionContent">
         <div className={clsx({ "px-8 py-2": !inline, "px-0": inline })}>
-          <ul className={clsx({ "border-t-2 pt-2": inline })}>
-            {item.list &&
-              item.list.map((subItem) => (
-                <li
-                  key={subItem._id}
-                  className={clsx({
-                    "border-b-2": !inline,
-                    "list-disc": bullet,
-                    "last:mb-2": inline,
-                    "border-[#DBDBDB] pb-1 ml-4 list-disc": inline,
-                    "border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2":
-                      !inline,
-                  })}
-                >
-                  <p className="text-[14px] mb-1 leading-[16px] text-[#101828]">
-                    {subItem.title}
-                  </p>
-                </li>
-              ))}
-          </ul>
+          {console.log({ item })}
+          {expandedDesc ? (
+            <p className="text-[14px] leading-[22px] font-normal">
+              {item.desc}
+            </p>
+          ) : (
+            <ul className={clsx({ "border-t-2 pt-2": inline })}>
+              {item.list &&
+                item.list.map((subItem) => (
+                  <li
+                    key={subItem._id}
+                    className={clsx({
+                      "border-b-2": !inline,
+                      "list-disc": bullet,
+                      "last:mb-2": inline,
+                      "border-[#DBDBDB] pb-1 ml-4 list-disc": inline,
+                      "border-b-2 last:border-b-0 last:mb-4 border-[#DBDBDB] py-2":
+                        !inline,
+                    })}
+                  >
+                    <p className="text-[14px] mb-1 leading-[16px] text-[#101828]">
+                      {subItem.title}
+                    </p>
+                  </li>
+                ))}
+            </ul>
+          )}
         </div>
         {!inline && item.ctaUrl && (
           <Link
@@ -81,7 +96,7 @@ const AccordionItem = ({ item, inline, icons, isOpen, onClick, bullet }) => (
   </div>
 );
 
-const Accordion = ({ items, inline, icons }) => {
+const Accordion = ({ items, inline, icons, expandedDesc }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleItemClick = (index) => {
@@ -96,6 +111,7 @@ const Accordion = ({ items, inline, icons }) => {
           item={item}
           inline={inline}
           icons={icons}
+          expandedDesc={expandedDesc}
           isOpen={index === openIndex}
           onClick={() => handleItemClick(index)}
         />

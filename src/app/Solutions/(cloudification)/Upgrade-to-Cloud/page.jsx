@@ -402,7 +402,7 @@ export default function Home() {
           />
         </>
 
-        {/* Upgrade to Cloud */}
+        {/* Upgrade to Cloud overview */}
         <>
           <div className={` w-full bg-white pt-24`}>
             <div className="text-left   max-w-screen-xl  mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
@@ -433,76 +433,6 @@ export default function Home() {
             </div>
           </div>
         </>
-        {/* <ClientLogos /> */}
-
-        {/* Expertise */}
-        <Expertise
-          ribbon="Acing your Business Objectives"
-          ribbonTxtWhite="true"
-          title="The Hub of Expertise"
-          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-          arr={[
-            {
-              title: "15 +",
-              desc: "Cloud Certified Professionals",
-            },
-            {
-              title: "50 +",
-              desc: "Cloud Deployments",
-            },
-            {
-              title: "15 +",
-              desc: "Cloud Certified Professionals",
-            },
-            {
-              title: "50 +",
-              desc: "Cloud Deployments",
-            },
-          ]}
-        ></Expertise>
-
-        <CaseStudy
-          ribbon="CASE STUDY "
-          title="Elevating Customer Experience with Cloud  "
-          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-          isHomepage={false}
-          arr={[
-            {
-              id: 1,
-              title:
-                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-              thumbnail: "1",
-
-              description: "Non-government Association of Indian Industries ",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-            {
-              id: 2,
-              title:
-                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-              thumbnail: "2",
-
-              description:
-                " Middle East-based Electrical Products Manufacturer ",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-            {
-              id: 3,
-              title:
-                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-              thumbnail: "3",
-
-              description: "Coffee Brand Distributor in Egypt and Middle East",
-              tags: [""],
-              cta: "Know More",
-              link: "/",
-            },
-          ]}
-        />
 
         {/* On premises Challenges*/}
         <>
@@ -722,7 +652,7 @@ export default function Home() {
           </>
         </>
 
-        {/* Spotlight test */}
+        {/* Spotlight test - Streamline Cloud Upgrade Service with Our Process Map */}
         <div id="spotlight">
           <>
             <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
@@ -855,6 +785,105 @@ export default function Home() {
           ]}
         ></Benefits>
 
+        {/* We are Trained and Accredited in Cloud Services
+         */}
+        <>
+          <div className={` w-full bg-white mx-auto text-center py-24`}>
+            <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
+              <div className="mx-auto text-center bg-white flex items-center  flex-col justify-center">
+                <div className="mx-auto text-center">
+                  <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                    We are Trained and Accredited in Cloud Services
+                  </h3>
+                  <p className="font-normal leading-[22px] md:w-[80%] mx-auto">
+                    We undergo demanding assessment and authorisation to
+                    guarantee that our expertise and practices fulfil highest
+                    standards of excellence.
+                  </p>
+                </div>
+                <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                  <div>
+                    <Image src={microsoft} alt="microsoft" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+
+        {/* casestudy */}
+        <CaseStudy
+          ribbon="CASE STUDY "
+          title="Elevating Customer Experience with Cloud  "
+          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+          isHomepage={false}
+          arr={[
+            {
+              id: 1,
+              title:
+                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              thumbnail: "1",
+
+              description: "Non-government Association of Indian Industries ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 2,
+              title:
+                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              thumbnail: "2",
+
+              description:
+                " Middle East-based Electrical Products Manufacturer ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 3,
+              title:
+                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              thumbnail: "3",
+
+              description: "Coffee Brand Distributor in Egypt and Middle East",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+          ]}
+        />
+
+        {/* Expertise */}
+        <Expertise
+          ribbon="Acing your Business Objectives"
+          ribbonTxtWhite="true"
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+          arr={[
+            {
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50 +",
+              desc: "Cloud Deployments",
+            },
+            {
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50 +",
+              desc: "Cloud Deployments",
+            },
+          ]}
+        ></Expertise>
+
         {/* Unlocking agility */}
 
         <>
@@ -895,32 +924,6 @@ export default function Home() {
           ></WhySection>
         </>
 
-        <>
-          <div className={` w-full bg-white mx-auto text-center py-24`}>
-            <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
-              <div className="mx-auto text-center bg-white flex items-center  flex-col justify-center">
-                <div className="mx-auto text-center">
-                  <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                    We are Trained and Accredited in Cloud Services
-                  </h3>
-                  <p className="font-normal leading-[22px] md:w-[80%] mx-auto">
-                    We undergo demanding assessment and authorisation to
-                    guarantee that our expertise and practices fulfil highest
-                    standards of excellence.
-                  </p>
-                </div>
-                <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                  <div>
-                    <Image src={microsoft} alt="microsoft" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
         <Testimonials
           ribbon="CLIENT TESTIMONIALS"
           title="Delighted customers share their success experience "

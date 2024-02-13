@@ -104,7 +104,7 @@ const InfotechWeeklyAlt = (props) => {
 
   return (
     <>
-      <div className={` w-full bg-[#f2f4f7] py-32`}>
+      <div className={` hidden w-full bg-[#f2f4f7] py-32`}>
         <div
           // className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 "
           className={`text-left max-w-screen-xl  mb-5 mx-auto p-5 grid grid-cols-1 sm:grid-cols-2  px-[2rem]`}
@@ -114,19 +114,21 @@ const InfotechWeeklyAlt = (props) => {
               <h4
                 className={`${styles.subHead} font-medium text-[#0745D3] uppercase ribbon`}
               >
-                Never miss a tech beat! 
+                Never miss a tech beat!
               </h4>
               <h3 className="text-4xl  leading-[42px] mb-3 font-bold">
                 Infotech Exclusive
               </h3>
               <p className="font-medium leading-[22px] md:w-[90%] ">
-              Discover why our clients trust us and dive into our insights section. Empower your decision with right knowledge and stay in the vanguard.
+                Discover why our clients trust us and dive into our insights
+                section. Empower your decision with right knowledge and stay in
+                the vanguard.
               </p>
             </div>
 
             <div className="">
               <p className="font-medium leading-[22px] md:w-[90%] mb-4">
-              Subscribe NOW for Updates! 
+                Subscribe NOW for Updates!
               </p>
               <div
                 className={`${styles["containerx"]}  flex justify-start text-left `}

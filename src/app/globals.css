@@ -348,7 +348,53 @@ input:focus {
   background-position: center;
 }
 .bg-img {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
   background-image: url("../../public/bgEcomScreen.png");
+}
+
+.bg-img-ecom {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../public/Transformation/ecombgfilter.png");
+}
+
+.bg-img-boxbg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-image: url("../../public/iiot/boxbg.png");
+}
+
+.bg-people {
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../public/oracle/people.png");
+}
+
+.bg-key1 {
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-image: url("../../public/oracle/key1.png");
+}
+.bg-key2 {
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-image: url("../../public/oracle/key2.png");
+}
+.bg-key3 {
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  background-image: url("../../public/oracle/key3.png");
 }
 
 /* Slanting Ribbon CSS */

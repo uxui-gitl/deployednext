@@ -22,8 +22,8 @@ import { Cursor } from "react-creative-cursor";
 import "react-creative-cursor/dist/styles.css";
 import Container from "@/components/Container";
 
-const Testimonials = ({ ribbon, title, desc, arr }) => {
-  // const clientTestimonials = [
+const Testimonial = ({ ribbon, title, desc, arr }) => {
+  // const clientTestimonial = [
   //   {
   //     id: 1,
   //     clientName: "",
@@ -131,4 +131,4 @@ const Testimonials = ({ ribbon, title, desc, arr }) => {
   );
 };
 
-export default Testimonials;
+export default Testimonial;
