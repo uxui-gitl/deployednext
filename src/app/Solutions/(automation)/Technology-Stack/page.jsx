@@ -99,7 +99,7 @@ const TechStackOfferings = [
   },
   {
     _id: 2,
-    title: "Legacy Modernisation",
+    title: "Legacy Modernization - ROI capital",
     image: "/technologyStack/Service-Offerings_Legacy-Modernisation.jpg",
     desc: "We are committed to continual improvement in our best practices. Through application legacy modernization service, we enable businesses to achieve Triple Aim goals, assuring optimal Return on Investment (RoI) and a smooth transition to modernized, agile and future-ready application. By harnessing cutting-edge technologies, we transform legacy systems into effective and scalable solution.",
     cta: "",
@@ -107,7 +107,7 @@ const TechStackOfferings = [
   },
   {
     _id: 3,
-    title: "Application managed services",
+    title: "Application Managed Services",
     image:
       "/technologyStack/Service-Offerings_Application-managed-services.jpg",
     desc: "Providing instrumental assistance to businesses as they face challenges, we deliver enhanced value by placing the right people with the right skills in the right positions. Additionally, we bring tools and methods developed with our experiences across various industry verticals. Our application management approach covers the entire lifecycle: Build, Run and Evolve.",
@@ -225,7 +225,7 @@ const page = () => {
             <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  200 + Applications Build and Delivered
+                  200 + Applications Built and Delivered
                 </h3>
               </div>
               <div>
@@ -394,7 +394,7 @@ const page = () => {
         title="Free 30 Minutes Strategy"
         blue="Session with Tech Expert "
         title2=""
-        desc="Let's discuss how technology can help you with innovation. Please select a preferred time to call."
+        desc="Let's discuss how technology can help you with innovation. Please fill the form so that we can connect & collaborate."
       />
 
       {/* Infotech Weekly Updates */}
