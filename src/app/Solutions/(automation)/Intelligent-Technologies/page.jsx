@@ -206,7 +206,7 @@ const page = () => {
   const navLinks = [
     {
       _id: 1,
-      title: "Enterprise suite",
+      title: "Enterprise Suite",
       link: "#about",
     },
     {
