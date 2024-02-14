@@ -282,7 +282,7 @@ const page = () => {
                               "/Solutions/Customer-Experience/Salesforce-CRM"
                             }
                           >
-                            Salesforce CRM
+                            ☑️ Salesforce CRM
                           </Link>
                         </li>
                         <li>
@@ -298,9 +298,9 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={"/Solutions/Customer-Experience/LS-retail"}
+                            href={"/Solutions/Customer-Experience/LS-Retail"}
                           >
-                            LS Retail
+                            ☑️ LS Retail
                           </Link>
                         </li>
                       </ul>
@@ -371,7 +371,7 @@ const page = () => {
                   target="_blank"
                   href={"/Industries/Retail"}
                 >
-                  Retail
+                  ☑️ Retail
                 </Link>{" "}
               </li>
 
