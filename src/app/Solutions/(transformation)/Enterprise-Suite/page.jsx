@@ -174,7 +174,7 @@ export default function Home() {
                       },
                       {
                         _id: 4,
-                        title: "HXN EAM ",
+                        title: "HxGN EAM",
                         url: "/",
                       },
                     ],
@@ -189,24 +189,25 @@ export default function Home() {
                     ctaUrl: "/",
                     cta: "Know More",
                     linksArr: [
+                      
                       {
                         _id: 1,
-                        title: "Dynamics 365 CRM ",
-                        url: "/",
-                      },
-                      {
-                        _id: 2,
                         title: "Dynamics 365 Finance and Operations",
                         url: "/",
                       },
                       {
-                        _id: 3,
+                        _id: 2,
                         title: "Dynamics 365 Commerce",
                         url: "/",
                       },
                       {
-                        _id: 4,
+                        _id: 3,
                         title: "Dynamics 365 Business Central",
+                        url: "/",
+                      },
+                      {
+                        _id: 4,
+                        title: "Dynamics 365 CRM",
                         url: "/",
                       },
                       
@@ -268,17 +269,16 @@ export default function Home() {
             <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
                 <div className="bg-[#F2F4F7] text-left">
-                  <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                  {/* <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
                     People-led and Innovation-empowered Services for Successful
                     results
-                  </h4>
+                  </h4> */}
                   <div className="flex flex-col md:flex-row gap-8 ">
                     <h3 className="text-4xl leading-[42px] my-4 font-bold">
                       Accomplishing Your Goals at Every stage
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                      Enabling you to thrive in digital era, we prepare your
-                      organisation with scaling growth for sustainable tomorrow.
+                      Equipping your organization to thrive in the digital era, we deliver high-end solutions, spanning from core ERP suite to our accelerators across complete technology spectrum. 
                     </p>
                   </div>
                 </div>
@@ -292,11 +292,11 @@ export default function Home() {
                   {
                     label: "01",
                     expandedLabel: "Step 01",
-                    title: "Business Situation Analysis for journey mapping",
+                    title: "Business Consulting & Journey Mapping",
                     expandedTitle:
-                      "Business Situation Analysis for journey mapping",
+                      "Business Consulting & Journey Mapping",
                     isBullet: true,
-                    list: ["Audit for a right fit solution & defining technology landscape.", "Identify inefficiencies and bottlenecks"],
+                    list: ["Audit for a right fit solution & defining technology landscape", "Identify inefficiencies and bottlenecks"],
                     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
                     image:
                       "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
@@ -350,11 +350,11 @@ export default function Home() {
                   <div className={`w-full bg-[#F2F4F7] text-left`}>
                     <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5  ">
                       <div className="bg-[#F2F4F7] text-left">
-                        <h4
+                        {/* <h4
                           className={`font-medium text-[#0745D3] uppercase ribbon`}
                         >
                           Accelerating Business Engineering
-                        </h4>
+                        </h4> */}
                         <div className="flex flex-col md:flex-row gap-8 ">
                           <h3 className="text-4xl leading-[42px] my-4 font-bold">
                             Add On Solutions
