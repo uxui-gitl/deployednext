@@ -27,7 +27,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Icon from "@mdi/react";
-import { mdiBullseyeArrow } from "@mdi/js";
+import { mdiBullseyeArrow, mdiEyeOutline } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
@@ -55,6 +55,7 @@ import {
   Capabilities,
   NewTestimonial,
   OfferingsSlider,
+  Spotlight,
 } from "@/components";
 const smartTools = [
   {
@@ -469,16 +470,32 @@ const ul = [
     cta: "Know More",
   },
 ];
+const ConsiderRPA = [
+  {
+    _id: 1,
+    title: "Azure SQL Data Ware Housing",
+    desc: "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/IncreasedProductivity.png",
+  },
+  {
+    _id: 2,
+    title: "AWS Redshift",
+    desc: "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+  },
+];
+
 const page = () => {
   return (
     <>
       <EntIntro
-        title="Discover the Power of Microsoft CRM
-        Elevate Your Customer Relationship
-        Management"
-        desc="Discover the Power of Microsoft CRM
-        Elevate Your Customer Relationship
-        Management"
+        title=" Effective and Smooth Implementation to
+        Elevate your Business Results "
+        desc="Elevate your Business Results "
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -511,22 +528,7 @@ const page = () => {
         />
       </>
 
-      {/* Overview  */}
-      {/* OVerview with list */}
-
-      <Abstract
-        abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "
-        list={true}
-        ribbon="Retail"
-        listArr={[
-          { _id: 1, icon: "dummy", title: "Customer loyalty retention" },
-          { _id: 2, icon: "dummy", title: "Customer loyalty retention" },
-          { _id: 3, icon: "dummy", title: "Customer loyalty retention" },
-          { _id: 4, icon: "dummy", title: "Customer loyalty retention" },
-          { _id: 5, icon: "dummy", title: "Customer loyalty retention" },
-        ]}
-      ></Abstract>
-      {/* Our Services */}
+      {/* two people expetise / Our Services */}
       <>
         <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
           <div className={` w-full`}>
@@ -629,264 +631,64 @@ const page = () => {
           </div>
         </div>
       </>
-      {/* Retail segment slider */}
+
+      {/* cards */}
       <>
-        <>
-          <div className={` w-full bg-[#FFF] pt-24`}>
-            <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                    Industry Solutions
-                  </h3>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Embrace the future and stay ahead in digital era, harnessing
-                    the potential of innovative technologies.
-                  </p>
-                </div>
-              </div>
+        <div
+          className={`  text-[white] bg-[rgb(91,_98,_138)] bg-[linear-gradient(90deg,_rgba(49,_9,_74,_1)_0%,_rgba(29,_8,_69,_1)_15%,_rgba(14,_0,_42,_1)_100%)]`}
+          style={{}}
+        >
+          <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
+            <div className="mt-[3em] mb-[12em]">
+              <h3 className=" text-7xl font-bold leading-[90px]">
+                The Guiding Principles We Live By
+              </h3>
+              <p className="text-base font-regular">
+                Every day, we endeavour to create a meaningful impact, driven by
+                our core principles and essence, reaching beyond our industry to
+                positively touch every association we encounter.
+              </p>
             </div>
           </div>
-        </>
-        <>
-          <div className={`bg-img w-full pt-12 pb-12 mt-20`} id="productivity">
-            <div className="flex flex-col sm:flex-row gap-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
-              {[
-                {
-                  _id: 1,
-                  title: "Retail Automations",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  cta: "Know More",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  link: "/",
-                  list: [
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  ],
-                },
-                {
-                  _id: 2,
-                  title: "Intelligent Merchandising ",
-                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  cta: "Know More",
-                  link: "/",
-                  list: [
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  ],
-                },
-                {
-                  _id: 3,
-                  title: "Customers Recommendation ",
-                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  cta: "Know More",
-                  link: "/",
-                  list: [
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  ],
-                },
-              ].map((item, index) => {
-                return (
-                  <div
-                    key={item._id}
-                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
-                  >
-                    <div className="p-5 w-fit ">
-                      <div className="mb-4">
-                        {item.icon !== "" ? (
-                          <Image
-                            src={`/${item.icon}.svg`}
-                            width={56}
-                            height={56}
-                            alt={item.icon}
-                          />
-                        ) : (
-                          <Icon path={mdiDomain} size={3} />
-                        )}
-                      </div>
-                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <p className="text-[16px] font-medium leading-[22px] text-[#101828]">
-                        {item.desc}
-                      </p>
-                    </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
-                      <Link
-                        href={item.link}
-                        className="text-white  flex transition-all hover:opacity-75  "
-                      >
-                        {item.cta}{" "}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
+        </div>
+      </>
+      {/* Offset cards */}
+      <>
+        <div className="offsetCardWrap relative pb-32  ">
+          <div className="max-w-screen-lg shadow-md mx-auto left-0 right-0 absolute bg-[#f2f4f7] grid grid-cols-3 -top-32">
+            <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
+              <p className="text-base font-medium">
+                Create Sustainable Value for our Stakeholders by connecting
+                People and Technology.
+              </p>
+            </div>
+            <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
+              <p className="text-base font-medium">
+                Be a world class provider of high-quality Information &
+                Technology solutions.
+              </p>
+            </div>
+            <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Values</h4>
+              <p className="text-base font-medium">
+                Integrity <br /> Responsiveness <br /> Commitment & Teamwork
+              </p>
             </div>
           </div>
-        </>
+        </div>
       </>
 
-      {/* partnership */}
-
-      {/* solutions we offer */}
-
-      {/* Our capabilites faq */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities"
-        desc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental aspects – our domain experience, technical excellence and business environment."
-        arr={[
-          {
-            _id: 1,
-            icon: "gear",
-            title: "Data Platform Modernization",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 2,
-            icon: "gear",
-            title: "Advance Analytics",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 3,
-            icon: "gear",
-            title: "Business Intelligence",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 4,
-            icon: "gear",
-            title: "Data Warehouse and Integration",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 5,
-            icon: "gear",
-            title: "Data Governance",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
-                url: "/",
-              },
-            ],
-          },
-        ]}
-      />
-
-      {/* Blog */}
-      <BlogSlider
-        arr={[
-          {
-            _id: 1,
-            ribbon: "blog",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
-        ]}
-      />
-
-      {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY"
-        title="Elevating Our Customer Experience with Infor"
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
-            thumbnail: "1",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
-          },
-          {
-            id: 2,
-            title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "2",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
-          },
-          {
-            id: 3,
-            title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "3",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
-          },
-        ]}
-      />
       {/* Testimonials */}
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
@@ -915,6 +717,180 @@ const page = () => {
               "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
             link: "/",
+          },
+        ]}
+      />
+
+      {/* Spotlight test - Streamline Cloud Upgrade Service with Our Process Map */}
+      <div id="spotlight">
+        <>
+          <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+              <div className="bg-[#f2f4f7] text-left">
+                <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
+                  Services for successful results
+                </h4>
+                <div className="flex flex-col md:flex-row gap-8 ">
+                  <h3 className="text-4xl leading-[42px] my-4 font-bold">
+                    Streamline Cloud Upgrade Service with Our Process Map
+                  </h3>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-4 "></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+        <div className={`w-full bg-[#f2f4f7] text-left `}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
+            <Spotlight
+              arr={[
+                {
+                  label: "01",
+                  expandedLabel: "Step 01",
+                  title: "Current Infrastructure and Data Evaluation",
+                  expandedTitle: "Current Infrastructure and Data Evaluation",
+                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action.",
+                  image: "/upgradeCloud/Services-Strategy-Designing.jpg",
+                },
+                {
+                  label: "02",
+                  expandedLabel: "Step 02",
+                  title: "Strategy Designing",
+                  expandedTitle: "Strategy Designing",
+                  desc: "Aligning business needs and goals, we set KPIs and devise strategy which is documented & communicated for smooth cloud adoption.",
+                  image: "/upgradeCloud/Services-Strategy-Designing.jpg",
+                },
+                {
+                  label: "03",
+                  expandedLabel: "Step 03",
+                  title: "Milestone Blueprint Development",
+                  expandedTitle: "Milestone Blueprint Development",
+                  desc: "Define and prioritize tasks, align assets, establish iterations and timelines for a journey blueprint.",
+                  image:
+                    "/upgradeCloud/Services-Milestone-Blueprint-Development.jpg",
+                },
+                {
+                  label: "04",
+                  expandedLabel: "Step 04",
+                  title: "Establishing Readiness",
+                  expandedTitle: "Establishing Readiness",
+                  desc: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.",
+                  image: "/upgradeCloud/Services-Establishing-Readiness.jpg",
+                },
+                {
+                  label: "05",
+                  expandedLabel: "Step 05",
+                  title: "Upgradation and Execution",
+                  expandedTitle: "Upgradation and Execution",
+                  desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                  image: "/upgradeCloud/Services-Upgradation-and-Execution.jpg",
+                },
+                {
+                  label: "06",
+                  expandedLabel: "Step 06",
+                  title: "Management and Contro",
+                  expandedTitle: "Management and Controon",
+                  desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                  image: "/upgradeCloud/Services-Management-and-Control.jpg",
+                },
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Our Expertise */}
+      {/* Expertise */}
+      <Expertise
+        ribbon="Acing your Business Objectives"
+        ribbonTxtWhite="true"
+        title="The Hub of Expertise"
+        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        arr={[
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+        ]}
+      ></Expertise>
+
+      {/* 360 degree implem. */}
+      <>
+        <div className={`w-full bg-[#F2F4F7] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  DATA Management
+                </h3>
+                <p>
+                  We blend technology capabilities with a human touch to elevate
+                  your data management to new heights.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
+                <Image
+                  src={item.image}
+                  height={120}
+                  width={120}
+                  className="w-[100%] sm:w-fit object-cover"
+                  alt={item.title}
+                />
+                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                    {item.title}
+                  </p>
+                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.ctaUrl}
+                    className="text-[#0745D3]  text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "ingsights",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
           },
         ]}
       />
