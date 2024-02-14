@@ -347,7 +347,7 @@ const page = () => {
               title: "Birst ",
               theme: "dark",
               bg: "#07001F",
-              desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
+              desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
               icon: "Birst-logo.png",
               cta: "Know More",
             },
@@ -510,7 +510,17 @@ const page = () => {
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf",
+          },
+          {
+            id: 2,
+            title:
+              "Leading Cooling Services Provider in the Middle East Successfully Implements Power BI Solution",
+            thumbnail: "2",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Leading-Cooling-Services-Provider.pdf",
           },
         ]}
       />
@@ -587,10 +597,10 @@ const page = () => {
             id: 1,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "IT Manager, Leading Cooling Services Provider in the Middle East",
             thumbnail: "1",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
             category: "static",
             link: "/",
           },
@@ -598,10 +608,10 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "IT Manager, Saudi Arabia's Major Retail Chain",
             thumbnail: "1",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
             category: "static",
             link: "/",
           },
@@ -610,7 +620,7 @@ const page = () => {
 
       <Subscription
         title="Free 30 Minutes Strategy Session with Our Data Expert"
-        desc="Let's discuss how data can help your business with innovation. Please select your preferred timeslot to call."
+        desc="Let's discuss how data can help your business with innovation."
       />
       <InfotechWeeklyAlt />
     </>
