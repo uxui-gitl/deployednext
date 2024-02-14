@@ -9,6 +9,7 @@ import puzzle from "../../../../../public/upgradeCloud/puzzle.png";
 import Subscription from "@/components/Subscription";
 import icon from "../../../../../public/icon.png";
 import microsoft from "../../../../../public/upgradeCloud/microsoft.png";
+import microsoftpartner from "../../../../../public/upgradeCloud/microsoftpartner.png";
 import azure from "../../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../../public/upgradeCloud/curiousPerson.png";
@@ -37,6 +38,8 @@ import IntegrateBigDataAnalytics from "../../../../../public/icon/Benefits-upgra
 import SecurelyStores from "../../../../../public/icon/Benefits-upgradeCloud/SecurelyStores.svg";
 import EnhanceSystemPerformance from "../../../../../public/icon/Benefits-upgradeCloud/EnhanceSystemPerformance.svg";
 import { useState } from "react";
+import { NewTestimonial } from "@/components";
+
 
 const fadeInAnimationVariant = {
   initial: {
@@ -126,7 +129,7 @@ export default function Home() {
           list: [
             {
               _listId: 1,
-              title: "Migrate from GSuite to M 365",
+              title: "Migrate from GSuite to M365",
               li: [
                 "Gobal collaboration capabilities",
                 "Realize cost savings",
@@ -135,7 +138,7 @@ export default function Home() {
             },
             {
               _listId: 2,
-              title: "On-premises emails to O 365 Cloud",
+              title: "On-premises emails to O365 Cloud",
               li: [
                 "Communication infrastructure modernization",
                 "Email system security Reinforcement",
@@ -189,9 +192,9 @@ export default function Home() {
               _listId: 1,
               title: "Why Upgrade Dynamics AX?",
               li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
+                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021",
+                "Dependency on ISV and partner channels",
+                "Non-compliance risk for any regulatory updates for  AX 2012 customers",
               ],
             },
             {
@@ -288,10 +291,10 @@ export default function Home() {
               li: [
                 "Costly on-premises hardware maintenance",
                 "Non scalability and need of ongoing maintenance and updates",
-                "Access confined to data centre.",
+                "Access confined to data centre",
                 "Risk of data loss and downtime during disasters or system failures",
                 "Difficult security management",
-                "Rigidity in making changes or updates to application.",
+                "Rigidity in making changes or updates to application",
                 "Limited access to the modern technologies",
               ],
             },
@@ -408,11 +411,11 @@ export default function Home() {
             <div className="text-left   max-w-screen-xl  mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
-                  <h4
+                  {/* <h4
                     className={` font-medium text-[#0745D3] uppercase ribbon`}
                   >
                     UPGRADE TO CLOUD{""}
-                  </h4>
+                  </h4> */}
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                     Minimizing Cost and Strengthening Agility with{" "}
                     <span className="text-[#0745D3]"> Better Security</span>{" "}
@@ -720,9 +723,9 @@ export default function Home() {
                   {
                     label: "06",
                     expandedLabel: "Step 06",
-                    title: "Management and Contro",
-                    expandedTitle: "Management and Controon",
-                    desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                    title: "Management and Control",
+                    expandedTitle: "Management and Control",
+                    desc: "This stage includes tasks such as cost optimisation, mapping business risks, defining policies, standardizing processes , governance, resource management and security.",
                     image: "/upgradeCloud/Services-Management-and-Control.jpg",
                   },
                 ]}
@@ -793,20 +796,16 @@ export default function Home() {
               <div className="mx-auto text-center bg-white flex items-center  flex-col justify-center">
                 <div className="mx-auto text-center">
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                    We are Trained and Accredited in Cloud Services
+                   We are Trained and Accredited in Cloud Services
                   </h3>
                   <p className="font-normal leading-[22px] md:w-[80%] mx-auto">
-                    We undergo demanding assessment and authorisation to
-                    guarantee that our expertise and practices fulfil highest
-                    standards of excellence.
+                    We undergo demanding assessment and authorisation to guarantee that our expertise and practices fulfil highest standards of excellence.  
                   </p>
                 </div>
                 <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                  <div>
-                    <Image src={microsoft} alt="microsoft" />
+                  
+                  <div className="mt-16">
+                    <Image src={microsoftpartner} alt="microsoft" />
                   </div>
                 </div>
               </div>
@@ -924,12 +923,44 @@ export default function Home() {
           ></WhySection>
         </>
 
-        <Testimonials
+<NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider",
+            thumbnail: "2",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+        {/* <Testimonials
           ribbon="CLIENT TESTIMONIALS"
           title="Delighted customers share their success experience "
           desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
           arr={TestimonialsData}
-        />
+        /> */}
+
         {/* Subscription */}
         <Subscription
           title="Lets discuss how upgrade to cloud can help you to enhance your business's growth potential. "
