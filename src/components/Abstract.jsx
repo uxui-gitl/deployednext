@@ -1,3 +1,5 @@
+import { mdiBullseyeArrow } from "@mdi/js";
+import Icon from "@mdi/react";
 import React from "react";
 
 const Abstract = (AbstractProps) => {
@@ -19,10 +21,31 @@ const Abstract = (AbstractProps) => {
             </h3>
           </div>
           <div>
-            <p className="font-medium leading-[22px] md:w-[90%] ">
+            <p className="font-medium leading-[22px] md:w-[90%]">
               {AbstractProps.abstractdesc}
             </p>
           </div>
+          {AbstractProps.list ? (
+            <div className="mt-8">
+              <ul>
+                {AbstractProps.listArr.map((list) => (
+                  <li key={list._id}>
+                    {" "}
+                    <p className="flex gap-4 mb-4 border-dashed border-b-2 pb-3 text-base leading-[22px]">
+                      <span className="">
+                        <Icon
+                          path={mdiBullseyeArrow}
+                          color="dodgerblue"
+                          size={1}
+                        />
+                      </span>
+                      {list.title}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

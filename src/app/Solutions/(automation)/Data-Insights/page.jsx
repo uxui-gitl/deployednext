@@ -541,36 +541,39 @@ const page = () => {
       ></Expertise> */}
 
       {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials"
-        ribbonVisible={false}
-        title="Delighted Customers Share their Customer Experience"
-        desc="It is a long established fact that a reader will be distracted by
+      <div className="hidden">
+        <Testimonial
+          ribbon="Testimonials"
+          ribbonVisible={false}
+          title="Delighted Customers Share their Customer Experience"
+          desc="It is a long established fact that a reader will be distracted by
           the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation:
-              "IT Manager, Leading Cooling Services Provider in the Middle East",
-            thumbnail: "1",
-            description:
-              "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-          {
-            id: 2,
-            clientName: "",
-            clientDesignation: "IT Manager, Saudi Arabia's Major Retail Chain",
-            thumbnail: "1",
-            description:
-              "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
+          arr={[
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation:
+                "IT Manager, Leading Cooling Services Provider in the Middle East",
+              thumbnail: "1",
+              description:
+                "We sincerely appreciate GITL team for delivering Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation:
+                "IT Manager, Saudi Arabia's Major Retail Chain",
+              thumbnail: "1",
+              description:
+                "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",
+              category: "static",
+              link: "/",
+            },
+          ]}
+        />
+      </div>
 
       {/* fix */}
 
