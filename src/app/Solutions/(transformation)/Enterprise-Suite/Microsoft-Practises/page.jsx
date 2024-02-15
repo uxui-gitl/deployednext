@@ -55,6 +55,7 @@ import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import InsightSlider from "@/components/InsightSlider";
 import { NewTestimonial } from "@/components";
+import CaseStudy from "@/sections/caseStudy/CaseStudy";
 const smartTools = [
   {
     _id: 1,
@@ -280,6 +281,39 @@ const page = () => {
             },
           ]}
         />
+      </>
+
+      {/* Overiew */}
+      <>
+        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+            {/* left */}
+            <div className=" flex items-start flex-col justify-start mt-10  relative">
+              <div className="">
+                <h4
+                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
+                >
+                  MS PRactices
+                </h4>
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Overview
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Microsoft Practices is the innovative cloud-based solution
+                  with business transformative capabilities. This solution
+                  seamlessly integrates ERP, CRM, and Office 365 into a unified
+                  platform, bringing your sales, service, finance and operations
+                  teams together for enhanced adaptability and faster results.
+                  It serves as the all-in-one management tool. Designed with
+                  affordability in mind, it paves the way for growth for small,
+                  medium and upper mid-sized organizations. The choice between
+                  on-premises or cloud implementation is with you, providing
+                  ultimate control over your business operations.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </>
 
       {/* MS Stack Slider */}
@@ -963,6 +997,49 @@ const page = () => {
             description:
               "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
             link: "/",
           },
         ]}
