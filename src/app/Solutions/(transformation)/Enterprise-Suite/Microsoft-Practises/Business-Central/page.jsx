@@ -566,6 +566,79 @@ const page = () => {
         ]}
       ></Benefits>
 
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Let's Collaborate and Make it Happen"
+        title="Why Choose GITL for AI and ML?"
+        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
+
       {/* Blog */}
       <BlogSlider
         arr={[
@@ -611,98 +684,28 @@ const page = () => {
         </div>
       </>
 
-      {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
-
-            description: "Non-government Association of Indian Industries ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 2,
-            title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
-
-            description: " Middle East-based Electrical Products Manufacturer ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-        ]}
-      />
-
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-        arr={[
-          {
-            _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
-
       {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
+      <div className="hidden">
+        <Testimonial
+          ribbon="Testimonials "
+          title="What Experts Think About Us "
+          desc="It is a long established fact that a reader will be distracted by
           the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
+          arr={[
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation: "IT Manager",
+              thumbnail: "1",
+              description:
+                "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              category: "static",
+              link: "/",
+            },
+          ]}
+        />
+      </div>
+
       {/* Subscription */}
       <Subscription
         title="Ready to Streamline Your

@@ -1,4 +1,5 @@
 "use client";
+import React, { useCallback, useEffect, useState } from "react";
 import EntIntro from "@/components/EntIntro";
 import StrategySub from "@/components/StrategySub";
 import shield from "../../../../../../public/upgradeCloud/sheild.png";
@@ -39,195 +40,152 @@ import Infographics from "@/components/Infographics";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
-const smartTools = [
-  {
-    _id: 1,
-    type: "box",
-    title: "Infor CRM",
-    theme: "light",
-    bg: "transparent",
-    desc: "With Power BI integration - a highly scalable analytics platform that accommodates both individual users",
-    icon: "Power-BI-Logo.png",
-    cta: "Know More",
-  },
-  {
-    _id: 2,
-    type: "box",
-    title: "Microsoft CRM",
-    theme: "dark",
-    bg: "#4C6FFF",
-    desc: "We help you to efficiently develop low-code applications in a fraction of the time with Power Apps",
-    icon: "Power-App.png",
-    cta: "Know More",
-  },
-  {
-    _id: 3,
-    type: "box",
-    title: "Salesforce ",
-    theme: "dark",
-    bg: "#07001F",
-    desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
-    icon: "Birst-logo.png",
-    cta: "Know More",
-  },
-  {
-    _id: 4,
-    type: "box",
-    title: "Magento",
-    theme: "dark",
-    bg: "transparent",
-    desc: "Extracting insights from tapped and  untapped data assets, we help you understand customer behaviour",
-    icon: "dummy.png",
-    cta: "Know More",
-  },
-  {
-    _id: 5,
-    type: "box",
-    title: "LS Retail",
-    theme: "light",
-    bg: "transparent",
-    desc: "We specialize in assisting customers on their digital transformation journey by designing and deploying custom data lake",
-    icon: "dummy.png",
-    cta: "Know More",
-  },
-];
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: (index) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.5 * index,
-    },
-  }),
-};
-const page = () => {
+import Expertise from "@/components/Expertise";
+import Benefits from "@/components/Benefits";
+
+import Testimonial from "@/sections/testimonial/Testimonial";
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import WhySection from "@/components/WhySection";
+
+import InsightSlider from "@/components/InsightSlider";
+
+const Page = () => {
+  const [selectedColumn, setSelectedColumn] = useState(0);
+
   const lists = [
     {
       id: 1,
-      text: "Inadequate Scalability and Availability",
+      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
     },
     {
       id: 2,
-      text: "Unreliable Backup Storage",
+      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
     },
     {
       id: 3,
-      text: "Weak Disaster Recovery and Redundancy",
+      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
     },
     {
       id: 4,
-      text: "Inadequate Data Integrity and Automation Capabilities",
+      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
     },
     {
       id: 5,
-      text: "Subpar IT Performance",
-    },
-    {
-      id: 6,
-      text: "Limited IT Universality and Centralized Monitoring",
-    },
-    {
-      id: 7,
-      text: "High Management Costs of IT Infrastructure",
+      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
     },
   ];
-
-  const upgradeCloud = [
+  const handleColumnClick = (columnId) => {
+    setSelectedColumn(columnId);
+  };
+  const eComCapabilities = [
     {
       _id: 1,
-      title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "Omnichannel Engagement ",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
     {
       _id: 2,
-      title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "Customer Loyalty and Personalization",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
     {
       _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "Streamlined Digital Commerce",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
     {
       _id: 4,
-      title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "AI-Driven Intelligent Commerce ",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
     {
       _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "Connected Customer Journeys ",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
     {
       _id: 6,
-      title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
+      title: "Headless, Scalable API-First Solution ",
+      cta: "Explore Solutions",
+      icon: "dummy",
+      ctaUrl: "/",
+      list: [
+        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
+        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
+        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
+        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
+        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+      ],
     },
   ];
 
-  const aglity = [
-    {
-      _id: 1,
-      title: "Database Migration",
-    },
-    {
-      _id: 2,
-      title: "Infrastructure Migration ",
-    },
-    {
-      _id: 3,
-      title: "Enterprise Platforms Migration",
-    },
-    {
-      _id: 4,
-      title: "Cloud Microservices",
-    },
-    {
-      _id: 5,
-      title: "Disaster Recovery and Enterprise Backup Service",
-    },
-    {
-      _id: 6,
-      title: "Application Migration and Modernization",
-    },
-    {
-      _id: 7,
-      title: "Cloud Monitoring and Reporting ",
-    },
-  ];
+  const [selectedCapability, setSelectedCapability] = useState(0);
+
+  const handleClick = useCallback((index) => {
+    setSelectedCapability(index);
+  }, []);
 
   return (
     <>
       <EntIntro
-        title="Transform Your Online Presence with
-        state-of-the-art E-Commerce Solutions"
-        desc="In today's world, where more and more people prefer shopping online, the e-commerce sector is booming, with around 70% of total sales happening online. This percentage is on a continuous rise. To ensure your small business thrives in this digital era, having a carefully crafted e-commerce website is essential."
+        title="Elevate Your Retail Game with
+        seamless shopping experience "
+        desc="D365 F&O is reliable robust solution for medium to large-sized businesses which enables streamlining and automating global operations, giving real-time insights that become the foundation of well-informed decisions. Our expert D365 F&O team simplifies the adoption of solution, delivering streamlined financial processes and paving the way for business transformation."
         cta="Let's Connect"
-        width="60%"
+        width="75%%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
+
+      {/* Section Nav */}
       <>
         <SectionNav
           arr={[
@@ -255,166 +213,108 @@ const page = () => {
         />
       </>
 
-      <CaseStudy />
-
-      {/* Data Metrics Insights to be created */}
-
-      {/* Why Infotech */}
+      {/* On premises Challenges*/}
       <>
-        <div className={` w-full bg-[#F2F4F7] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  Spend LESS, GROW MORE
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Why Godrej Infotech ?
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Embark on cloud upgradation journey by harnessing our credible
-                  assessment process, strategic resources and fluent data
-                  migration practice to minimise your business risk, time to
-                  market and cost. Our time-tested delivery framework enables
-                  businesses
-                </p>
-                <div className="  mt-[20rem]">
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={cloudArrows}
-                    alt="cloud Arrows"
-                  />
-                  <Image
-                    className="absolute left-5 bottom-10 z-30"
-                    src={cloud}
-                    alt="cloud"
-                  />
-                  <Image
-                    className="absolute bottom-0 z-20"
-                    src={curiousPerson}
-                    alt="curious Person"
-                  />
+        <div className={` w-full bg-[#f2f4f7] py-24`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
+              <div className="  ">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+                  <h3 className="text-left text-4xl leading-[42px] font-bold">
+                    On-premises <br /> Infrastructure Challenges
+                  </h3>
                 </div>
               </div>
             </div>
-            {/* right */}
+          </>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="bg-[#f2f4f7] flex items-start flex-col justify-start">
+              <div className="mx-auto">
+                <Image src={puzzle} alt="puzzle" />
+              </div>
+            </div>
             <div>
               <div>
-                <div className="relative">
-                  <AnimatePresence>
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={1}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        One of the most dedicated and{" "}
-                        <span className="text-[#4C6FFF]">
-                          reliable partners
-                        </span>{" "}
-                        for Azure Migration Services and Managed Cloud Service
-                        across{" "}
+                <ul>
+                  {lists.map((list) => (
+                    <li key={list.id}>
+                      {" "}
+                      <p className="flex gap-4 mb-4 border-dashed border-b-2 pb-3 text-base leading-[22px]">
+                        <span className="">
+                          <Icon
+                            path={mdiBullseyeArrow}
+                            color="dodgerblue"
+                            size={1}
+                          />
+                        </span>
+                        {list.text}
                       </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={2}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-10 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">1 Billion+</span>{" "}
-                        Unfailing Cloud Hosting availability managing{" "}
-                        <span className="text-[#4C6FFF]">40000+</span> VMs
-                      </p>
-                    </motion.div>
-
-                    <motion.div
-                      initial="initial"
-                      whileInView="animate"
-                      custom={3}
-                      viewport={{
-                        once: true,
-                      }}
-                      className="flex flex-row justify-start items-center gap-x-5 bg-white rounded-md p-5 shadow-lg mb-5 sm:ml-20 w-[100%]"
-                      variants={fadeInAnimationVariant}
-                    >
-                      <Image src={checkout} alt="checkout" />
-                      <p className="text-base font-medium leading-[22px]">
-                        <span className="text-[#4C6FFF]">25000+</span> Apps and
-                        Databases migrated
-                      </p>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </>
 
-      <Testimonials />
-      <Awards />
-
-      {/* Infor service grid */}
+      {/* Capabilites grid */}
       <>
-        <div className={` w-full bg-white py-32`}>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
-            <div className="bg-white flex items-start flex-col justify-start">
-              <div className="md:flex-row flex-col flex text-left gap-x-10">
-                <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Infor Services with Expert Consulting and Success Delivery
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Globally Trusted Core Infor expertise
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  We revamp your core business application with cloud-native
-                  development so that you can win a competitive threshold in the
-                  marketplace. Our adept hyper-scaler team can help rearchitect
-                  your business operations with an efficient approach
+                <p>
+                  We deliver high-performing services for a comprehensive suite
+                  Microsoft ecosystem, devised to elevate growth and
+                  productivity and build stronger stakeholder connections
                 </p>
               </div>
             </div>
           </div>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-[2rem]">
-            <div className="grid grid-cols-1 grid-rows-1 md:grid-rows-3 md:grid-cols-2 grid-flow-row gap-5 md:gap-10 mx-auto ">
-              {upgradeCloud.map((item, i) => {
-                return (
+        </div>
+        <div className={`w-full  `}>
+          <div className="grid my-32 max-w-screen-xl sm:max-w-screen-xl mx-auto col-span-1 grid-cols-1 sm:grid-cols-5 grid-rows-3 w-full">
+            {eComCapabilities.map((item, index) => (
+              <div
+                key={index}
+                className={`mb-2 capability-item ${
+                  selectedCapability === index ? "selected" : ""
+                }`}
+                onClick={() => handleClick(index)}
+              >
+                <div className="h-full">
                   <div
-                    key={i}
-                    className={clsx(
-                      `col flex justify-between flex-col bg-[#320A53] text-white bg-cover px-14 py-16`,
-                      {
-                        " bg-[#344CA9]": item._id === 2 || item._id === 6,
-                        " bg-[url('/gradient-1.png')]": item._id === 1,
-                        " bg-[url('/gradient-2.png')]": item._id === 3,
-                      }
-                    )}
+                    className={`flex justify-between p-4  flex-col h-full ${
+                      selectedCapability === index
+                        ? "bg-[#0745D3] text-white transition-all"
+                        : "transparent text-inherit transition-all"
+                    }`}
                   >
                     <div>
-                      <h4 className="text-[30px] font-bold leading-[42px] mb-3">
+                      <Image
+                        src={`/${item.icon}.png`}
+                        height={36}
+                        width={36}
+                        alt="dummy"
+                      />
+                      <p className="text-[26px] font-bold leading-[34px]">
                         {item.title}
-                      </h4>
-                      <p className="text-base leading-6 font-semibold">
-                        {item.desc}
                       </p>
                     </div>
                     <Link
-                      href={item.link}
-                      className="flex text-[14px] leading-[22px] mt-10 max-w-max border-b-[1px] border-[#FFFFFF] items-center font-medium hover:scale-105"
+                      href={item.ctaUrl}
+                      className={`flex text-[14px] leading-[22px] mt-10 max-w-max text-[#0745D3] items-center font-medium hover:scale-105 ${
+                        selectedCapability === index
+                          ? " text-white transition-all"
+                          : " text-inherit transition-all"
+                      }`}
                     >
-                      {item.cta}{" "}
+                      Know More
                       <span>
                         <Icon
                           path={mdiArrowRight}
@@ -428,85 +328,320 @@ const page = () => {
                       </span>
                     </Link>
                   </div>
+                </div>
+              </div>
+            ))}
+            {selectedCapability !== null && (
+              <div className="bg-img-ecom col-span-3 row-span-3 col-start-3 row-start-1 relative">
+                <div className="absolute inset-0 bg-[#0745D3] bg-opacity-80 transition-opacity ">
+                  <div className="absolute top-4 p-8 left-4 text-white">
+                    <h3 className="text-[30px] text-white w-fit leading-[42px] font-bold mb-5">
+                      {eComCapabilities[selectedCapability].title}
+                    </h3>
+                    <ul>
+                      {eComCapabilities[selectedCapability].list.map(
+                        (item, index) => (
+                          <li
+                            key={index}
+                            className="border-b-[1px] mb-4 text-[14px] font-medium leading-[16px] pb-2"
+                          >
+                            {item}
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </>
+
+      {/* grid test */}
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
+
+      {/* 3 columsn */}
+      <>
+        <>
+          <div className={` w-full bg-[#FFF] pt-24`}>
+            <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Industry Solutions
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="font-normal leading-[22px] md:w-[90%] ">
+                    Embrace the future and stay ahead in digital era, harnessing
+                    the potential of innovative technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+        <>
+          <div className={`bg-img w-full pt-12 pb-12 mt-20`} id="productivity">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "Retail Automations",
+                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                  list: [
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  ],
+                },
+                {
+                  _id: 2,
+                  title: "Intelligent Merchandising ",
+                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  cta: "Know More",
+                  link: "/",
+                  list: [
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  ],
+                },
+                {
+                  _id: 3,
+                  title: "Customers Recommendation ",
+                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  cta: "Know More",
+                  link: "/",
+                  list: [
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  ],
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <p className="text-[16px] font-medium leading-[22px] text-[#101828]">
+                        {item.desc}
+                      </p>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
                 );
               })}
             </div>
           </div>
-        </div>
+        </>
       </>
 
-      {/* Innovative Infor Drivers */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Innovative Infor Drivers
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={` ${styles["bg-img"]} w-full py-32 `}>
-          <div className=" grid grid-cols-2 sm:flex-row gap-y-10 justify-center px-[2rem]">
-            {[0, 1, 2, 3].map((item, index) => {
-              return (
-                <div key={index} className="mx-5 bg-white ">
-                  <div className="p-5  w-full ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      DataSwift Pro
-                    </h4>
-                    <p className="text-[14px] leading-[22px] text-[#475467]">
-                      Godrej Infotech Data Conversion Utility Tool offers data
-                      migration utilities facilitating faster & structured data
-                      upload and managing source & target systems, table
-                      structures, field mapping and data download/upload
-                      scripts.
-                    </p>
-                  </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
-                    <Link
-                      href={"/"}
-                      className="text-white  flex transition-all hover:opacity-75  "
-                    >
-                      Know More{" "}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Let's Collaborate and Make it Happen"
+        title="Why Choose GITL for AI and ML?"
+        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
-      <SME />
+      {/* Expertise */}
+      <Expertise
+        ribbon="Acing your Business Objectives"
+        ribbonTxtWhite="true"
+        title="The Hub of Expertise"
+        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        arr={[
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Elevating Customer Experience with Cloud  "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+            thumbnail: "1",
+
+            description: "Non-government Association of Indian Industries ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 2,
+            title:
+              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+            thumbnail: "2",
+
+            description: " Middle East-based Electrical Products Manufacturer ",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+          {
+            id: 3,
+            title:
+              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+            thumbnail: "3",
+
+            description: "Coffee Brand Distributor in Egypt and Middle East",
+            tags: [""],
+            cta: "Know More",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Testimonial */}
+      <Testimonial
+        ribbon="Testimonials "
+        title="What Experts Think About Us "
+        desc="It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation: "IT Manager",
+            thumbnail: "1",
+            description:
+              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Ready to Streamline Your
+        Business Operations? "
+        blue=" "
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Talk To Our Experts to discuss your requirements "
       />
       <InfotechWeeklyAlt />
     </>
   );
 };
 
-export default page;
+export default Page;
