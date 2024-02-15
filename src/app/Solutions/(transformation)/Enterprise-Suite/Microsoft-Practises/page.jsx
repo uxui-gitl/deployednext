@@ -9,6 +9,11 @@ import Benefits from "@/components/Benefits";
 import azure from "../../../../../../public/upgradeCloud/azure.png";
 import Awards from "@/sections/awards/Awards";
 import checkout from "../../../../../../public/upgradeCloud/checkout.png";
+
+import infor from "../../../../../../public/upgradeCloud/infor.png";
+import OracleDB from "../../../../../../public/upgradeCloud/OracleDB.png";
+import Dynamic from "../../../../../../public/upgradeCloud/Dynamic.png";
+
 import curiousPerson from "../../../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../../../public/upgradeCloud/cloud.png";
 import cloudArrows from "../../../../../../public/upgradeCloud/cloudArrows.png";
@@ -49,6 +54,7 @@ import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import InsightSlider from "@/components/InsightSlider";
+import { NewTestimonial } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -248,7 +254,7 @@ const page = () => {
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
-      {/* section nav */}
+      {/* Section nav */}
       <>
         <SectionNav
           arr={[
@@ -276,7 +282,8 @@ const page = () => {
         />
       </>
 
-      <div id="spotlightGrid">
+      {/* MS Stack Slider */}
+      <>
         <>
           <div className={`w-full text-left bg-[#fff] pt-32`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
@@ -553,36 +560,9 @@ const page = () => {
             />
           </div>
         </div>
-      </div>
+      </>
 
-      {/* Expertise */}
-      <Expertise
-        ribbon="Acing your Business Objectives"
-        ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-        arr={[
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-        ]}
-      ></Expertise>
-
-      {/* RPA UseCases */}
-
+      {/* Microsoft Services */}
       <>
         <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
           <div className={` w-full`}>
@@ -658,38 +638,6 @@ const page = () => {
         </div>
       </>
 
-      {/* Seamless imple */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] py-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px] sm:text-[68px] sm:leading-[84px] leading-[54px] mb-3 font-bold ">
-                  Seamless Implementation to Customer Centric Support
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  We leverage time-tested methodologies such as waterfall, rapid
-                  methodologies and agile to pilot our implementation approach
-                  according to the specific project requirements. Our prior
-                  purpose is to assure optimal system performance. While
-                  addressing system glitches, we understand their implications
-                  on our customers&apos; business processes, and prioritize on
-                  the swift resolutions. Our support services are all ears with
-                  dedicated and shared teams, enabling us to effectively address
-                  our customers&apos; unique support requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
-      {/* Blog */}
-      <BlogSlider arr={blogData} />
-
       {/* Industry Spotlight Slider */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
@@ -749,7 +697,42 @@ const page = () => {
         </div>
       </>
 
-      {/* Industry Solutions Slider */}
+      {/* client logos */}
+      <>
+        <div className={` w-full bg-white py-32`}>
+          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="text-left">
+                <h3 className="text-left text-4xl leading-[42px] font-bold mb-5">
+                  Partnerships
+                </h3>
+                <p className=" text-left font-medium leading-[22px]   mx-auto">
+                  Our expansive worldwide network of market innovators enables
+                  us to embrace breakthrough technologies and confront business
+                  roadblocks effectively.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row my-5 justify-center items-center mx-auto gap-10 sm:gap-16">
+                <div>
+                  <Image src={infor} alt="infor" />
+                </div>
+                <div>
+                  <Image src={OracleDB} alt="oracle" />
+                </div>
+
+                <div>
+                  <Image src={Dynamic} alt="dynamic365" />
+                </div>
+                <div>
+                  <Image src={azure} alt="azure" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Addon solution - Slider */}
       <>
         <div className={` w-full bg-[#F2F4F7] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
@@ -827,8 +810,6 @@ const page = () => {
           </div>
         </div>
       </>
-      {/* Awards n achievements */}
-      <Awards />
 
       {/* Benefits Vertical Slider */}
       <Benefits
@@ -869,26 +850,6 @@ const page = () => {
         ]}
       ></Benefits>
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
-
       {/* Why Infotech */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
@@ -918,6 +879,102 @@ const page = () => {
         ]}
         renderInlineSpans={true}
       ></WhySection>
+
+      {/* Expertise */}
+      <Expertise
+        ribbon="Acing your Business Objectives"
+        ribbonTxtWhite="true"
+        title="The Hub of Expertise"
+        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        arr={[
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+          {
+            title: "15 +",
+            desc: "Cloud Certified Professionals",
+          },
+          {
+            title: "50 +",
+            desc: "Cloud Deployments",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Seamless Seamless Implementation to Customer Centric Support
+       */}
+      <>
+        <div className={` w-full bg-[#F2F4F7] py-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px] sm:text-[68px] sm:leading-[84px] leading-[54px] mb-3 font-bold ">
+                  Seamless Implementation to Customer Centric Support
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  We leverage time-tested methodologies such as waterfall, rapid
+                  methodologies and agile to pilot our implementation approach
+                  according to the specific project requirements. Our prior
+                  purpose is to assure optimal system performance. While
+                  addressing system glitches, we understand their implications
+                  on our customers&apos; business processes, and prioritize on
+                  the swift resolutions. Our support services are all ears with
+                  dedicated and shared teams, enabling us to effectively address
+                  our customers&apos; unique support requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Testimonials */}
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+      {/* Blog */}
+      <BlogSlider arr={blogData} />
+
+      {/* Awards n achievements */}
+      <div className="hidden">
+        <Awards />
+      </div>
 
       {/* Subscription */}
       <Subscription

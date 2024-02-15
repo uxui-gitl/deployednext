@@ -159,7 +159,7 @@ const SpotlightImageGrid = ({ expanded, arr }) => {
           <div
             key={index}
             // className={`text-white w-full  md:w-1/4 md:max-h-[500px] h-fit md:h-[400px] md:max-w-1/5 transition-transform mb-4 overflow-hidden`}
-            className={` text-white w-full  md:w-1/4 md:max-h-[500px] h-fit md:h-[400px] md:max-w-1/5 transition-transform mb-4 overflow-hidden ${
+            className={` text-white w-full  md:w-1/4 md:max-h-[500px] h-fit md:h-[400px] md:max-w-1/5 transition-transform  overflow-hidden ${
               activeCard === index ? "w-full md:w-2/3" : "p-4"
             }`}
             style={{
