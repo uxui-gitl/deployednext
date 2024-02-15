@@ -4,7 +4,7 @@ import React from "react";
 
 const Abstract = (AbstractProps) => {
   return (
-    <div className={` w-full bg-[#FFF] pt-32`}>
+    <div className={` w-full bg-[#FFF] py-24`}>
       <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
         <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
           <div>

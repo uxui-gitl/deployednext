@@ -328,7 +328,7 @@ input:focus {
 
 .bg-ms-practise {
   background-image: url("../../public/bgMsPractise.png");
-  background-color: #9199a6;
+  /* background-color: #9199a6; */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;

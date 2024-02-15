@@ -267,7 +267,48 @@ const Page = () => {
     },
   ];
   const [hoveredCard, setHoveredCard] = useState(null);
-
+  const UseCases = [
+    {
+      _id: 1,
+      title: "Consulting ",
+      cta: "Know More",
+      link: "/",
+      desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 2,
+      title: "Employee Access Creation ",
+      cta: "Know More",
+      link: "/",
+      desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 3,
+      title: "Account Payable and Receivable Process",
+      cta: "Know More",
+      link: "/",
+      desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 4,
+      title: "Vendor Onboarding Process",
+      cta: "Know More",
+      link: "/",
+      desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+    {
+      _id: 5,
+      title: "Customer Onboarding Process",
+      cta: "Know More",
+      link: "/",
+      desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations",
+      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+    },
+  ];
   return (
     <>
       <EntIntro
@@ -311,110 +352,12 @@ const Page = () => {
       {/* Overview  */}
       <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
 
-      {/* Old */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Why Consider RPA for your business?
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {[
-              {
-                _id: 1,
-                title: "Increased Productivity",
-                desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/IncreasedProductivity.png",
-              },
-              {
-                _id: 2,
-                title: "Gain Accurate Outcomes",
-                desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/GainAccurateOutcomes.png",
-              },
-              {
-                _id: 3,
-                title: "Ensure Compliance and Consistency",
-                desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/EnsureCompliance.png",
-              },
-              {
-                _id: 5,
-                title: "Optimize FTE Cost",
-                desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
+      {/* key highlights */}
 
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/OptimizeFTEcost.png",
-              },
-              {
-                _id: 6,
-                title: "Enhance Flexibility",
-                desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/EnhanceFlexibility.png",
-              },
-              {
-                _id: 7,
-                title: "Reduce AHT (Average Handling Time)",
-                desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
-                cta: "Know More",
-                ctaUrl: "/",
-                image: "/rpa/ReduceAHT.png",
-              },
-            ].map((item, index) => (
-              <div
-                className="flex flex-col sm:flex-row  bg-white"
-                key={item._id}
-              >
-                <Image
-                  src={item.image}
-                  height={120}
-                  width={120}
-                  className="w-[100%] sm:w-fit object-cover"
-                  alt={item.title}
-                />
-                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
-                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
-                    {item.title}
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
-                    {item.desc}
-                  </p>
-                  <Link
-                    href={item.ctaUrl}
-                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                  >
-                    {item.cta}{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </>
-
-      {/*  */}
+      {/* Ms slider */}
       <>
         <div
-          className={`bg-ms-practise w-full  hidden  py-32  `}
+          className={`bg-ms-practise bg-white w-full py-32  `}
           id="productivity"
         >
           <div className={` w-full`}>
@@ -422,15 +365,16 @@ const Page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                    Key Highlights of F&O
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
+                  <p className="font-medium text-[16px] text-[#475467] leading-[22px] md:w-[90%] ">
+                    Microsoft Dynamics 365 Finance and Operations (D365 F&O)
+                    power up your business with AI-driven insights and
+                    comprehensive financial tools to streamline operations and
+                    adapt to changing business environments
                   </p>
                 </div>
               </div>
@@ -440,98 +384,78 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col  sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
             <Swiper
-              slidesPerView={2}
-              spaceBetween={20}
-              pagination={true}
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
               modules={[Pagination]}
+              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
             >
-              {[
-                {
-                  _id: 1,
-                  title: "Consulting ",
-                  cta: "Know More",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  link: "/",
-                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-                },
-                {
-                  _id: 2,
-                  title: "Employee Access Creation ",
-                  cta: "Know More",
-                  link: "/",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-                },
-                {
-                  _id: 3,
-                  title: "Account Payable and Receivable Process",
-                  cta: "Know More",
-                  link: "/",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-                },
-                {
-                  _id: 4,
-                  title: "Vendor Onboarding Process",
-                  cta: "Know More",
-                  link: "/",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-                },
-                {
-                  _id: 5,
-                  title: "Customer Onboarding Process",
-                  cta: "Know More",
-                  link: "/",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                  icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-                },
-              ].map((item, index) => {
+              {UseCases.map((item, index) => {
                 return (
                   <SwiperSlide
                     key={item._id}
-                    className=" mx-2 bg-white flex flex-col justify-between"
+                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
                   >
-                    <div className="p-5 w-full">
-                      <div className="hidden mb-4">
-                        {item.icon !== "" ? (
-                          <Image
-                            src={`/icon/${item.icon}.svg`}
-                            width="48"
-                            height="48"
-                            alt={item.icon}
-                          />
-                        ) : (
-                          <Icon path={mdiDomain} size={3} />
-                        )}
+                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
+                      <div className="p-5  mx-2">
+                        <div className={`hidden mb-4`}>
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                        <p className="text-[14px] font-normal  mb-2 leading-[22px] text[#475467]">
+                          {item.desc}
+                        </p>
                       </div>
-                      <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <p className="text-[14px] leading-[22px]  mb-4 text-[#101828]">
-                        {item.desc}
-                      </p>
-                    </div>
-                    <div
-                      className={clsx("w-full bg-[#0745D3] p-5", {
-                        hidden: item.link === "/" || item.link === "",
-                      })}
-                    >
-                      <Link
-                        href={item.link}
-                        className={
-                          "text-white flex transition-all hover:opacity-75"
-                        }
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "",
+                        })}
                       >
-                        {item.cta}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
                     </div>
                   </SwiperSlide>
                 );
@@ -541,46 +465,256 @@ const Page = () => {
         </div>
       </>
 
-      {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
-        arr={[
-          {
-            _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
-          },
-          {
-            _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
-          },
-          {
-            _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
-          },
-          {
-            _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
-          },
-        ]}
-      ></Benefits>
+      <div className="hidden">
+        <>
+          {/* Old */}
+          <>
+            <div className={` w-full bg-[#F2F4F7] py-32`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+                <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+                  <div className="">
+                    <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                      Why Consider RPA for your business?
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+                {[
+                  {
+                    _id: 1,
+                    title: "Increased Productivity",
+                    desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/IncreasedProductivity.png",
+                  },
+                  {
+                    _id: 2,
+                    title: "Gain Accurate Outcomes",
+                    desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/GainAccurateOutcomes.png",
+                  },
+                  {
+                    _id: 3,
+                    title: "Ensure Compliance and Consistency",
+                    desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/EnsureCompliance.png",
+                  },
+                  {
+                    _id: 5,
+                    title: "Optimize FTE Cost",
+                    desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
 
-      {/* Industry Spotlight Slider */}
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/OptimizeFTEcost.png",
+                  },
+                  {
+                    _id: 6,
+                    title: "Enhance Flexibility",
+                    desc: "Enables businesses to quickly adapt to changing business needs without the time and expense required to hire and train new employees.",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/EnhanceFlexibility.png",
+                  },
+                  {
+                    _id: 7,
+                    title: "Reduce AHT (Average Handling Time)",
+                    desc: "Businesses can enhance customer service quality, shrink response times and improve operational efficiency.",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    image: "/rpa/ReduceAHT.png",
+                  },
+                ].map((item, index) => (
+                  <div
+                    className="flex flex-col sm:flex-row  bg-white"
+                    key={item._id}
+                  >
+                    <Image
+                      src={item.image}
+                      height={120}
+                      width={120}
+                      className="w-[100%] sm:w-fit object-cover"
+                      alt={item.title}
+                    />
+                    <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                      <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                        {item.title}
+                      </p>
+                      <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                        {item.desc}
+                      </p>
+                      <Link
+                        href={item.ctaUrl}
+                        className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+          {/*  */}
+          <>
+            <div
+              className={`bg-ms-practise w-full  hidden  py-32  `}
+              id="productivity"
+            >
+              <div className={` w-full`}>
+                <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+                  {/* left */}
+                  <div className="  flex items-start flex-col justify-between  relative">
+                    <div className="">
+                      <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                        Microsoft Services
+                      </h3>
+                    </div>
+                    <div>
+                      <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                        We deliver high-performing services for a comprehensive
+                        suite Microsoft ecosystem, devised to elevate growth and
+                        productivity and build stronger stakeholder connections
+                      </p>
+                    </div>
+                  </div>
+                  {/* right */}
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col  sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+                <Swiper
+                  slidesPerView={2}
+                  spaceBetween={20}
+                  pagination={true}
+                  modules={[Pagination]}
+                >
+                  {[
+                    {
+                      _id: 1,
+                      title: "Consulting ",
+                      cta: "Know More",
+                      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                      link: "/",
+                      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                    },
+                    {
+                      _id: 2,
+                      title: "Employee Access Creation ",
+                      cta: "Know More",
+                      link: "/",
+                      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                    },
+                    {
+                      _id: 3,
+                      title: "Account Payable and Receivable Process",
+                      cta: "Know More",
+                      link: "/",
+                      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                    },
+                    {
+                      _id: 4,
+                      title: "Vendor Onboarding Process",
+                      cta: "Know More",
+                      link: "/",
+                      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                    },
+                    {
+                      _id: 5,
+                      title: "Customer Onboarding Process",
+                      cta: "Know More",
+                      link: "/",
+                      desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                      icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+                    },
+                  ].map((item, index) => {
+                    return (
+                      <SwiperSlide
+                        key={item._id}
+                        className=" mx-2 bg-white flex flex-col justify-between"
+                      >
+                        <div className="p-5 w-full">
+                          <div className="hidden mb-4">
+                            {item.icon !== "" ? (
+                              <Image
+                                src={`/icon/${item.icon}.svg`}
+                                width="48"
+                                height="48"
+                                alt={item.icon}
+                              />
+                            ) : (
+                              <Icon path={mdiDomain} size={3} />
+                            )}
+                          </div>
+                          <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                            {item.title}
+                          </h4>
+                          <p className="text-[14px] leading-[22px]  mb-4 text-[#101828]">
+                            {item.desc}
+                          </p>
+                        </div>
+                        <div
+                          className={clsx("w-full bg-[#0745D3] p-5", {
+                            hidden: item.link === "/" || item.link === "",
+                          })}
+                        >
+                          <Link
+                            href={item.link}
+                            className={
+                              "text-white flex transition-all hover:opacity-75"
+                            }
+                          >
+                            {item.cta}
+                            <Icon
+                              path={mdiArrowRight}
+                              style={{ marginLeft: "0.5em" }}
+                              size={1}
+                            />
+                          </Link>
+                        </div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              </div>
+            </div>
+          </>
+        </>
+      </div>
+
+      {/* Infographics */}
+      <>
+        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                Infographics
+              </h3>
+            </div>
+          </div>
+          <div className="mx-auto text-center w-max mb-20">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.png" />
+          </div>
+        </div>
+      </>
+
+      {/* Industry Served Slider */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
@@ -588,7 +722,7 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Spotlight
+                  Industry Served
                 </h3>
               </div>
               <div>
@@ -639,8 +773,7 @@ const Page = () => {
         </div>
       </>
 
-      {/*  */}
-
+      {/* Industry solutions */}
       <>
         <>
           <div className={` w-full bg-[#FFF] pt-24`}>
@@ -746,6 +879,45 @@ const Page = () => {
           </div>
         </>
       </>
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
 
       {/* Industry Solutions Slider */}
       <>
