@@ -53,6 +53,7 @@ import Abstract from "@/components/Abstract";
 
 import InsightSlider from "@/components/InsightSlider";
 import { useState } from "react";
+import { NewTestimonial } from "@/components";
 const ChoiceSlider = [
   {
     _id: 1,
@@ -880,45 +881,6 @@ const Page = () => {
         </>
       </>
 
-      {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
-        arr={[
-          {
-            _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
-          },
-          {
-            _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
-          },
-          {
-            _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
-          },
-          {
-            _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
-          },
-        ]}
-      ></Benefits>
-
       {/* Industry Solutions Slider */}
       <>
         <div className={` w-full bg-[#F2F4F7] pt-20`}>
@@ -998,6 +960,44 @@ const Page = () => {
         </div>
       </>
 
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
       {/* Why Infotech */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
@@ -1028,20 +1028,58 @@ const Page = () => {
         renderInlineSpans={true}
       ></WhySection>
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "ingsights",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+        ]}
+      />
+
+      {/* Testimonials */}
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
             link: "/",
           },
