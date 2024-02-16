@@ -1022,7 +1022,9 @@ const Page = () => {
                   Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  Regardless of whether you are starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level.
+                  Regardless of whether you are starting your transformation
+                  journey or aiming to gain cloud capabilities, our Infor
+                  expertise helps you progress to a higher level.
                 </p>
               </div>
             </div>
@@ -1113,7 +1115,10 @@ const Page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business.
+                  Our commitment to your project&#39;s success drives our
+                  ownership and determination to go above and beyond. With rich
+                  experience of technical expertise, we offer services to meet
+                  the sole requirements of your business.
                 </p>
               </div>
             </div>
@@ -1264,7 +1269,10 @@ const Page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
+                  Enhancing the features of business applications, our easily
+                  integrating specialized solutions intend to add value to
+                  business with handy support, streamlined processes and intense
+                  industry expertise.
                 </p>
               </div>
             </div>
@@ -1324,7 +1332,7 @@ const Page = () => {
                       {item.desc}
                     </p>
                   </div>
-                  <div className="w-full hidden bg-[#0745D3] p-5">
+                  <div className=" w-full hidden bg-[#0745D3] p-5">
                     <Link
                       href={item.ctaUrl}
                       className="text-white  flex transition-all hover:opacity-75  "
@@ -1357,7 +1365,8 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program.
+                  Delivering industry-centric solutions with a strategic ACT
+                  (Automation, Cloud and Transformation) program.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -1568,8 +1577,7 @@ const Page = () => {
           {
             id: 2,
             clientName: "",
-            clientDesignation:
-              "IT Manager, Global Process Equipment Supplier",
+            clientDesignation: "IT Manager, Global Process Equipment Supplier",
             thumbnail: "1",
             description:
               "Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.",
@@ -1579,8 +1587,7 @@ const Page = () => {
           {
             id: 3,
             clientName: "",
-            clientDesignation:
-              "Executive Director - Commercial",
+            clientDesignation: "Executive Director - Commercial",
             thumbnail: "1",
             description:
               "Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.",
