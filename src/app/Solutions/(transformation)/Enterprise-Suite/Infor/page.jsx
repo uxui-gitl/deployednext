@@ -1332,7 +1332,7 @@ const Page = () => {
                       {item.desc}
                     </p>
                   </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
+                  <div className=" w-full hidden bg-[#0745D3] p-5">
                     <Link
                       href={item.ctaUrl}
                       className="text-white  flex transition-all hover:opacity-75  "
