@@ -5,10 +5,14 @@ import shield from "../../../../public/upgradeCloud/sheild.png";
 import puzzle from "../../../../public/upgradeCloud/puzzle.png";
 import Testimonial from "@/sections/testimonial/Testimonial";
 import Expertise from "@/components/Expertise";
+
+import infor from "../../../../public/upgradeCloud/infor.png";
+import OracleDB from "../../../../public/upgradeCloud/OracleDB.png";
+import Dynamic from "../../../../public/upgradeCloud/Dynamic.png";
+import azure from "../../../../public/upgradeCloud/azure.png";
 import WhySection from "@/components/WhySection";
 import icon from "../../../../public/icon.png";
 import microsoft from "../../../../public/upgradeCloud/microsoft.png";
-import azure from "../../../../public/upgradeCloud/azure.png";
 import checkout from "../../../../public/upgradeCloud/checkout.png";
 import curiousPerson from "../../../../public/upgradeCloud/curiousPerson.png";
 import cloud from "../../../../public/upgradeCloud/cloud.png";
@@ -290,6 +294,32 @@ const lists = [
     text: "High Management Costs of IT Infrastructure",
   },
 ];
+const supplylists = [
+  {
+    id: 1,
+    text: "Inadequate Scalability and Availability",
+  },
+  {
+    id: 2,
+    text: "Unreliable Backup Storage",
+  },
+  {
+    id: 3,
+    text: "Weak Disaster Recovery and Redundancy",
+  },
+  {
+    id: 4,
+    text: "Inadequate Data Integrity and Automation Capabilities",
+  },
+  {
+    id: 5,
+    text: "Subpar IT Performance",
+  },
+  {
+    id: 6,
+    text: "Limited IT Universality and Centralized Monitoring",
+  },
+];
 
 const upgradeCloud = [
   {
@@ -563,6 +593,53 @@ const page = () => {
       </>
 
       {/* Challengers Para */}
+      <>
+        <div className={` w-full bg-white pb-20`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+              <div className=" mt-[5em] mb-[2rem]">
+                <div className="flex flex-col md:flex-row gap-x-10">
+                  <h3 className="text-4xl leading-[42px] font-bold">
+                    Challenges Encountered by Businesses
+                  </h3>
+                  <p>
+                    We offer strategic insights, specialized knowledge and
+                    experience in helping businesses adapt, grow and thrive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="mx-auto">
+                <Image src={puzzle} alt="puzzle" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <ul>
+                  {lists.map((list) => (
+                    <li key={list.id}>
+                      {" "}
+                      <p className="flex gap-4 mb-6 border-dashed border-b-2 pb-3 text-base leading-[22px]">
+                        <span className="">
+                          <Icon
+                            path={mdiBullseyeArrow}
+                            color="dodgerblue"
+                            size={1}
+                          />
+                        </span>
+                        {list.text}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
 
       {/* Blog */}
       <BlogSlider
@@ -580,20 +657,233 @@ const page = () => {
       />
 
       {/* Construction guy */}
+      <>
+        <div className={` w-full  pt-32`}></div>
+        <div
+          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
+        >
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Infor Intelligent Supply System
+                </h3>
+                <ul>
+                  {supplylists.map((list) => (
+                    <li key={list.id}>
+                      {" "}
+                      <p className="flex gap-4 mb-6 border-dashed border-[#70707070] border-b-2 pb-3 text-base leading-[22px]">
+                        <span className="">
+                          <Icon
+                            path={mdiBullseyeArrow}
+                            color="dodgerblue"
+                            size={1}
+                          />
+                        </span>
+                        {list.text}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            {/* right */}
+          </div>
+        </div>
+      </>
 
       {/* Managed services card slider */}
+      <>
+        <div className={` w-full    py-12  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div className="hidden">
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-[#F2F4F7] sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+            {UseCases.map((item, index) => {
+              return (
+                <div
+                  key={item._id}
+                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                >
+                  <div className="p-5 w-fit ">
+                    <div className="mb-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/icon/${item.icon}.svg`}
+                          width="48"
+                          height="48"
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
+                    </div>
+                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div
+                    className={clsx("w-full bg-[#0745D3] p-5", {
+                      hidden: item.link === "/" || item.link === "",
+                    })}
+                  >
+                    <Link
+                      href={item.link}
+                      className={
+                        "text-white flex transition-all hover:opacity-75"
+                      }
+                    >
+                      {item.cta}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
 
       {/* Technology cover logo */}
+      <>
+        <div className={` w-full bg-white py-32`}>
+          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="text-left ml-0 mb-4">
+                <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                  Technology Coverage
+                </h3>
+                <p className="font-medium leading-[22px]  mx-auto">
+                  Our expansive worldwide network of market innovators enables
+                  us to embrace breakthrough technologies and confront business
+                  roadblocks effectively.
+                </p>
+              </div>
+              {/* set 1 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Infor
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              {/* set 2 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Microsoft
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              {/* set 3 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Digital
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              {/* set 4 */}
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Infrastructure
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
 
       {/* Left right bg cart column card */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div className={` w-full bg-[#FFF] py-10`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor WMS Key Highlights
+                  Infor WMS Industry Solutions
                 </h3>
               </div>
             </div>
@@ -601,49 +891,111 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
+                  We endeavor to build actual business impact of Robotic Process
+                  Automation (RPA) reforming industries, improving output and
+                  leading digital transformation
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className={`w-full pt-48 pb-12 bg-[url('/bgEcomScreen.png')]`}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
+        <div
+          className={`w-full pt-48 pb-12 relative bg-cover`}
+          style={{ backgroundImage: `url('/bgEcomScreen.png')` }}
+        >
+          {/* Overlay for background image */}
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
             {[
               {
                 _id: 1,
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
-                cta: "Know More",
-                link: "",
+                title: "Retail",
+                list: [
+                  {
+                    _id: 1,
+                    title: "Digital stores & connected associates",
+                    url: "/",
+                  },
+                  {
+                    _id: 2,
+                    title: "Point-of-Sale (POS) modernization",
+                    url: "/",
+                  },
+                  {
+                    _id: 3,
+                    title: "Client Eling, Assisted sales",
+                    url: "/",
+                  },
+                  {
+                    _id: 4,
+                    title:
+                      "Customer experience (CX) transformation & measurement",
+                    url: "/",
+                  },
+                ],
+                cta: "Let's Connect",
+                ctaUrl: "#contact",
               },
               {
                 _id: 2,
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+                title: "3 PL Logistics",
+                list: [
+                  {
+                    _id: 1,
+                    title: "Digital stores & connected associates",
+                    url: "/",
+                  },
+                  {
+                    _id: 2,
+                    title: "Point-of-Sale (POS) modernization",
+                    url: "/",
+                  },
+                  {
+                    _id: 3,
+                    title: "Client Eling, Assisted sales",
+                    url: "/",
+                  },
+                  {
+                    _id: 4,
+                    title:
+                      "Customer experience (CX) transformation & measurement",
+                    url: "/",
+                  },
+                ],
                 cta: "Know More",
-                link: "",
+                ctaUrl: "#contact",
               },
             ].map((item, index) => {
               return (
-                <div key={index} className="mx-5 bg-white ">
-                  <div className="p-5 w-fit ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                <div key={item._id} className="mx-5 text-white relative">
+                  <div className=" w-fit relative z-10">
+                    <h4 className="text-[22px] font-bold  leading-[28px] text-[#fff]">
                       {item.title}
                     </h4>
-                    <p className="text-[14px] leading-[22px] text-[#475467]">
-                      {item.desc}
-                    </p>
                   </div>
-                  <div className=" w-full bg-[#0745D3] p-5">
+                  <div>
+                    <ul className="my-4">
+                      {item.list.map((listItem) => (
+                        <li
+                          key={listItem._id}
+                          className="border-b-2 w-fit border-[#DBDBDB] py-2"
+                        >
+                          <Link
+                            href={listItem.url}
+                            className="text-[#fff] text-[14px] font-medium leading-[16px] w-fit flex transition-all hover:opacity-75"
+                          >
+                            {listItem.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                     <Link
-                      href={item.link}
-                      className="text-white  flex transition-all hover:opacity-75  "
+                      href={item.ctaUrl}
+                      className="text-[#101828] bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
                       {item.cta}
                       <Icon
-                        path={mdiArrowRight}
+                        path={mdiArrowTopRight}
                         style={{ marginLeft: "0.5em" }}
                         size={1}
                       />
