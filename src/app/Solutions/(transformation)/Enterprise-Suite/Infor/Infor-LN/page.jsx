@@ -54,6 +54,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Subscription from "@/components/Subscription";
+import { Abstract } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -180,201 +181,200 @@ const expandedCardSlider = [
     url: "/",
   },
 ];
+const lists = [
+  {
+    id: 1,
+    text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+  },
+  {
+    id: 2,
+    text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+  },
+  {
+    id: 3,
+    text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+  },
+  {
+    id: 4,
+    text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+  },
+  {
+    id: 5,
+    text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
+  },
+];
+
+const upgradeCloud = [
+  {
+    _id: 1,
+    title: "Migrate to the Cloud from On-Prem",
+    desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 2,
+    title: "Migrate From a Different ERP Platform to Infor LN  ",
+    desc: "Experience seamless and transformative migration with data integrity for your business",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 3,
+    title: "Upgrade with Infor",
+    desc: "Get access to enhanced innovation, business preferences and value",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 4,
+    title: "End-to-End Implementation ",
+    desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 5,
+    title: "Managed Services ",
+    desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+  {
+    _id: 6,
+    title: "Custom Development & Integrations",
+    desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
+    cta: "Know more",
+    link: "/",
+    bg: "/gradient-1.png",
+  },
+];
+
+const capabilities = [
+  {
+    _id: 1,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 2,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 3,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 4,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 5,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 6,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 7,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 7,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+  {
+    _id: 8,
+    icon: "dummy",
+    title: "Master Complexity",
+    list: [
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+      "Better decision taking ability",
+    ],
+  },
+];
 const page = () => {
-  const lists = [
-    {
-      id: 1,
-      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
-    },
-    {
-      id: 2,
-      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
-    },
-    {
-      id: 3,
-      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
-    },
-    {
-      id: 4,
-      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
-    },
-    {
-      id: 5,
-      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
-    },
-  ];
-
-  const upgradeCloud = [
-    {
-      _id: 1,
-      title: "Migrate to the Cloud from On-Prem",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 2,
-      title: "Migrate From a Different ERP Platform to Infor LN  ",
-      desc: "Experience seamless and transformative migration with data integrity for your business",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 4,
-      title: "End-to-End Implementation ",
-      desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-    {
-      _id: 6,
-      title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes",
-      cta: "Know more",
-      link: "/",
-      bg: "/gradient-1.png",
-    },
-  ];
-
-  const capabilities = [
-    {
-      _id: 1,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 2,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 3,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 4,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 5,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 6,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 7,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 7,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-    {
-      _id: 8,
-      icon: "dummy",
-      title: "Master Complexity",
-      list: [
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-        "Better decision taking ability",
-      ],
-    },
-  ];
-
   return (
     <>
       <EntIntro
@@ -411,6 +411,9 @@ const page = () => {
           ]}
         />
       </>
+
+      {/* Overview  */}
+      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
 
       {/* Key Capabilites */}
       <>
@@ -602,35 +605,6 @@ const page = () => {
         ]}
       ></Benefits>
 
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="Spend LESS, GROW MORE"
-        title="Why Godrej Infotech ?"
-        desc="Embark on cloud upgradation journey by harnessing our credible
-        assessment process, strategic resources and fluent data
-        migration practice to minimise your business risk, time to
-        market and cost. Our time-tested delivery framework enables
-        businesses"
-        arr={[
-          {
-            _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
-
       {/* Industry Solutions Slider */}
       <>
         <div className={` w-full bg-[#F2F4F7] pt-20`}>
@@ -709,6 +683,35 @@ const page = () => {
           </div>
         </div>
       </>
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Spend LESS, GROW MORE"
+        title="Why Godrej Infotech ?"
+        desc="Embark on cloud upgradation journey by harnessing our credible
+        assessment process, strategic resources and fluent data
+        migration practice to minimise your business risk, time to
+        market and cost. Our time-tested delivery framework enables
+        businesses"
+        arr={[
+          {
+            _id: 1,
+            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
       {/* Subscription */}
       <Subscription

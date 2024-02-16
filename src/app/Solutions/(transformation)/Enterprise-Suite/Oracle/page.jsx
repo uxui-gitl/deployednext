@@ -448,123 +448,7 @@ const page = () => {
           </div>
         </div>
       </div>
-
-      {/* Oracle EBS slider */}
-      <>
-        <div className={`bg-white w-full    py-32  `} id="productivity">
-          <div className={` w-full`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                    Oracle EBS
-                  </h3>
-                </div>
-                <div></div>
-              </div>
-              {/* right */}
-              <div>
-                <div>
-                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    It is a single business software system that consists of
-                    many different applications and are broadly conventional for
-                    integration, customization, and configuration
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-5 py-16 bg-[#F2F4F7]">
-            {UseCases.map((item, index) => {
-              return (
-                <div
-                  key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
-                >
-                  <div className="p-5 w-fit ">
-                    <div className="mb-4">
-                      {item.icon !== "" ? (
-                        <Image
-                          src={`/icon/${item.icon}.svg`}
-                          width="48"
-                          height="48"
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div
-                    className={clsx("w-full bg-[#0745D3] p-5", {
-                      hidden: item.link === "/" || item.link === "",
-                    })}
-                  >
-                    <Link
-                      href={item.link}
-                      className={
-                        "text-white flex transition-all hover:opacity-75"
-                      }
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
-        arr={[
-          {
-            _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
-          },
-          {
-            _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
-          },
-          {
-            _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
-          },
-          {
-            _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
-          },
-        ]}
-      ></Benefits>
-
-      {/* Stack Offering Sliders */}
+      {/* Stack Offering Sliders / Oracle services */}
       <>
         <OfferingsSlider
           arr={[
@@ -856,9 +740,215 @@ const page = () => {
         />
       </>
 
+      {/* Industries */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Served
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper h-[350px]"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden h-[350px]">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="Let's Collaborate and Make it Happen"
+        title="Why Choose GITL for AI and ML?"
+        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Oracle EBS slider */}
+      <div className="hidden">
+        <>
+          <div className={`bg-white w-full    py-32  `} id="productivity">
+            <div className={` w-full`}>
+              <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+                {/* left */}
+                <div className="  flex items-start flex-col justify-between  relative">
+                  <div className="">
+                    <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                      Oracle EBS
+                    </h3>
+                  </div>
+                  <div></div>
+                </div>
+                {/* right */}
+                <div>
+                  <div>
+                    <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                      It is a single business software system that consists of
+                      many different applications and are broadly conventional
+                      for integration, customization, and configuration
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-5 py-16 bg-[#F2F4F7]">
+              {UseCases.map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/icon/${item.icon}.svg`}
+                            width="48"
+                            height="48"
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                    </div>
+                    <div
+                      className={clsx("w-full bg-[#0745D3] p-5", {
+                        hidden: item.link === "/" || item.link === "",
+                      })}
+                    >
+                      <Link
+                        href={item.link}
+                        className={
+                          "text-white flex transition-all hover:opacity-75"
+                        }
+                      >
+                        {item.cta}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </>
+      </div>
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
+
       {/* Industry expertise expanded two cards */}
       <>
-        <div className={` w-full bg-[#F2F4F7] pt-20`}>
+        <div className={`hidden w-full bg-[#F2F4F7] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <>
@@ -938,56 +1028,6 @@ const page = () => {
 
       {/* Blog */}
       <BlogSlider arr={blogData} />
-
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation: "IT Manager",
-            thumbnail: "1",
-            description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
-
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-        arr={[
-          {
-            _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
 
       {/* Subscription */}
       <Subscription
