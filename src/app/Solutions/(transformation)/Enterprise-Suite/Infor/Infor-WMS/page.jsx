@@ -331,24 +331,52 @@ const page = () => {
         </div>
         <div className={`w-full pt-48 pb-12 bg-[url('/bgEcomScreen.png')]`}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
-            {[0, 1, 2, 3].map((item, index) => {
+            {[
+              {
+                _id: 0,
+                title: "3D Visualization ",
+                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+                cta: "Know More",
+                link: "",
+              },
+              {
+                _id: 1,
+                title: "3D Visualization ",
+                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+                cta: "Know More",
+                link: "",
+              },
+              {
+                _id: 2,
+                title: "3D Visualization ",
+                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+                cta: "Know More",
+                link: "",
+              },
+              {
+                _id: 3,
+                title: "3D Visualization ",
+                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
+                cta: "Know More",
+                link: "",
+              },
+            ].map((item, index) => {
               return (
                 <div key={index} className="mx-5 bg-white ">
                   <div className="p-5 w-fit ">
                     <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      3D Visualization
+                      {item.title}
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                      With our ability in constructing, training and deploying
-                      ML models, we assure an effective implementation process.
+                      {item.desc}
                     </p>
                   </div>
                   <div className=" w-full bg-[#0745D3] p-5">
                     <Link
-                      href={"/"}
+                      href={item.link}
                       className="text-white  flex transition-all hover:opacity-75  "
                     >
-                      Know More{" "}
+                      {item.cta}
                       <Icon
                         path={mdiArrowRight}
                         style={{ marginLeft: "0.5em" }}
