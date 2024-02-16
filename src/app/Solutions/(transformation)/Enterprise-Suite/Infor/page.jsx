@@ -47,6 +47,7 @@ import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
 import { useState } from "react";
+import { NewTestimonial } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -103,31 +104,31 @@ const ChoiceSlider = [
   {
     _id: 1,
     title: "Manufacturing",
-    imgUrl: "1",
+    imgUrl: "Industry-Spotlight-Manufacturing",
     url: "/",
   },
   {
     _id: 2,
     title: "Retail",
-    imgUrl: "2",
+    imgUrl: "Industry-Spotlight-Retail",
     url: "/",
   },
   {
     _id: 3,
     title: "Trading and Distribution",
-    imgUrl: "3",
+    imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
   {
     _id: 4,
     title: "Project",
-    imgUrl: "4",
+    imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
     _id: 5,
     title: "Professional Services",
-    imgUrl: "5",
+    imgUrl: "ProfessionalServices",
     url: "/",
   },
 ];
@@ -257,9 +258,9 @@ const Page = () => {
       _id: 1,
       title: "Migrate to the Cloud ",
       desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations.",
-      cta: "Know More",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -354,9 +355,9 @@ const Page = () => {
       _id: 2,
       title: "Migrate From a different ERP Platform to Infor LN",
       desc: "Experience seamless and transformative migration with data integrity for your business.",
-      cta: "Know more",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -451,9 +452,9 @@ const Page = () => {
       _id: 3,
       title: "Upgrade with Infor",
       desc: "Get access to enhanced innovation, business preferences and value.",
-      cta: "Know more",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -508,20 +509,20 @@ const Page = () => {
                 "Seamless integration with Microsoft products and third-party applications  ",
                 "Mobile and web access, anywhere, anytime ",
                 "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
+                "Optimised operation",
+                "Effective User management cost",
               ],
             },
           ],
         },
         {
           _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
+          title: "Upgrade to Infor Cloud",
           isBullet: true,
           list: [
             {
               _listId: 1,
-              title: "Infor On- premises Challenges ",
+              title: "Infor On- premises Challenges",
               li: [
                 "Keeping up with the latest security and version updates ",
                 "Manual efforts to configure dynamic workloads",
@@ -548,9 +549,9 @@ const Page = () => {
       _id: 4,
       title: "End-to-End Implementation",
       desc: "Streamlining every phase of the implementation, we provide the capability of successful and on-time delivery of Infor solution.",
-      cta: "Know more",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -643,11 +644,11 @@ const Page = () => {
     },
     {
       _id: 5,
-      title: "Managed Services ",
+      title: "Managed Services",
       desc: "Managing every complex, time-consuming and resource-rigorous process and on demand maintenance of Infor application.",
-      cta: "Know more",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -742,9 +743,9 @@ const Page = () => {
       _id: 6,
       title: "Custom Development & Integrations",
       desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes.",
-      cta: "Know more",
+      cta: "",
       isNested: false,
-      ctaUrl: "/",
+      ctaUrl: "",
       bgImg: "/gradient-1.png",
       tabData: [
         {
@@ -1008,7 +1009,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech’s persistent partnership of over two decades and a track record of successfully delivering APAC’s largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With over two decades of Infor partnership, including one of the largest implementation in Asia Pacific for India's largest conglomerate and providing support to a renowned Dutch marine leader with a complex structure of 300 + entities, we drive growth-focused business operations."></Abstract>
 
       {/* Infor Grid */}
       <>
@@ -1021,9 +1022,7 @@ const Page = () => {
                   Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  Regardless of whether you are starting your transformation
-                  journey or aiming to gain cloud capabilities, our Infor
-                  expertise helps you progress to a higher level.
+                  Regardless of whether you are starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level.
                 </p>
               </div>
             </div>
@@ -1114,10 +1113,7 @@ const Page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our
-                  ownership and determination to go above and beyond. With rich
-                  experience of technical expertise, we offer services to meet
-                  the sole requirements of your business.
+                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business.
                 </p>
               </div>
             </div>
@@ -1268,10 +1264,7 @@ const Page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily
-                  integrating specialized solutions intend to add value to
-                  business with handy support, streamlined processes and intense
-                  industry expertise.
+                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                 </p>
               </div>
             </div>
@@ -1282,35 +1275,43 @@ const Page = () => {
             {[
               {
                 _id: 1,
-                title: " InsightEdge+",
+                title: "InsightEdge+",
                 desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
-                cta: "Know More",
+                cta: "",
                 icon: mdiArrowRight,
-                ctaUrl: "/",
+                ctaUrl: "",
               },
               {
                 _id: 2,
-                title: " InsightEdge+",
-                desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
-                cta: "Know More",
+                title: "DataMasterX / DataSwiftPro",
+                desc: "Godrej Infotech Data Conversion Utility Tool offers data migration utilities facilitating faster & structured data upload and managing source & target systems, table structures, field mapping and data download/upload scripts.",
+                cta: "",
                 icon: mdiArrowRight,
-                ctaUrl: "/",
+                ctaUrl: "",
               },
               {
                 _id: 3,
-                title: " InsightEdge+",
-                desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
-                cta: "Know More",
+                title: "VertiNexus Catalyst",
+                desc: "Industry vertical focused accelerator offering Pre-Configured Business Process Mapping and Pre-Built Industry required Customization.",
+                cta: "",
                 icon: mdiArrowRight,
-                ctaUrl: "/",
+                ctaUrl: "",
               },
               {
                 _id: 4,
-                title: " InsightEdge+",
-                desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
-                cta: "Know More",
+                title: "Cloud Navigator",
+                desc: "Infor Cloud Migration Planner addressing critical factors like data migration strategies, application compatibility, network architecture and security protocols to assure steady and effectual transition to the Infor cloud environment.",
+                cta: "",
                 icon: mdiArrowRight,
-                ctaUrl: "/",
+                ctaUrl: "",
+              },
+              {
+                _id: 5,
+                title: "Prosoft 2.0",
+                desc: "Robust project management solution and inventory controls are designed to streamline operations in on-site project management. PS2.0 is integrated with the Infor platform, ensuring an efficient project management experience.",
+                cta: "",
+                icon: mdiArrowRight,
+                ctaUrl: "",
               },
             ].map((item, index) => {
               return (
@@ -1351,13 +1352,12 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industries Spotlight
+                  Industry Spotlight
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Delivering industry-centric solutions with a strategic ACT
-                  (Automation, Cloud and Transformation) program.
+                  Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -1378,7 +1378,7 @@ const Page = () => {
                         >
                           <div className="relative overflow-hidden">
                             <Image
-                              src={`/industrySpotlight/${item.imgUrl}.png`}
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
                               height={350}
                               width={283}
                               alt="icon"
@@ -1506,7 +1506,7 @@ const Page = () => {
       ></WhySection>
 
       {/* Testimonial */}
-      <Testimonial
+      {/* <Testimonial
         ribbon="Testimonials"
         title="Delighted Customers Share Their Success Experience"
         desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
@@ -1544,6 +1544,48 @@ const Page = () => {
             category: "static",
             isNested: false,
             ctaUrl: "/",
+          },
+        ]}
+      /> */}
+
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "Manager, Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
+            thumbnail: "1",
+            description:
+              "In January 2009, our India operations launched ERP LN FP2. Godrej Infotech has provided consistent, effective support since April, optimizing ERP use and managing global financial reporting. We appreciate GITL team for their successful efforts.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "IT Manager, Global Process Equipment Supplier",
+            thumbnail: "1",
+            description:
+              "Thank you, Godrej Infotech, for excellent implementation, quick understanding of our business needs and impactful contributions. Appreciation to your leadership and dedicated team.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Executive Director - Commercial",
+            thumbnail: "1",
+            description:
+              "Thanks to Godrej Infotech Limited for their swift Infor LN 10.4 & Infor OS implementation. With a seamless process, they resolved our challenges and mapped all business processes within 10 weeks. Kudos to the delivery and backend technical teams for their proactive and resourceful support.",
+            category: "static",
+            link: "/",
           },
         ]}
       />
