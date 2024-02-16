@@ -49,6 +49,8 @@ import Awards from "@/sections/awards/Awards";
 import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
+import Abstract from "@/components/Abstract";
+import { NewTestimonial } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -73,7 +75,7 @@ const smartTools = [
   {
     _id: 3,
     type: "box",
-    title: "Salesforce ",
+    title: "Salesforce",
     theme: "dark",
     bg: "#07001F",
     desc: "The aim is to facilitate faster decision-making with the tools and flexibility to implement new insight",
@@ -117,24 +119,21 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+    text: "Complex warehouse operations require solutions for accurate labor, inventory, and invoicing administration.",
   },
   {
     id: 2,
-    text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+    text: "Warehouse operations need flexibility and agility to meet the constantly shifting needs of their clients.",
   },
   {
     id: 3,
-    text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+    text: "Requirement for data-driven insights and real-time data availability to make well-informed decisions.",
   },
   {
     id: 4,
-    text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+    text: "Supply chain operations require transformation, with a focus on intelligence, speed and flexibility.",
   },
-  {
-    id: 5,
-    text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
-  },
+  
 ];
 
 const upgradeCloud = [
@@ -164,7 +163,7 @@ const upgradeCloud = [
   },
   {
     _id: 4,
-    title: "End-to-End Implementation ",
+    title: "End-to-End Implementation",
     desc: "Streamlining every phase of the implementation, we provide capability of successful and on-time delivery of Infor solution",
     cta: "Know more",
     link: "/",
@@ -172,7 +171,7 @@ const upgradeCloud = [
   },
   {
     _id: 5,
-    title: "Managed Services ",
+    title: "Managed Services",
     desc: "Managing every complexity, time-consuming and resource-rigorous process and on demand maintenance of Infor application",
     cta: "Know more",
     link: "/",
@@ -191,10 +190,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Experience the Future of Warehouse
-        Operations with Godrej Infotech Infor
-        WMS Solutions "
-        desc="Warehouse management is the cornerstone of business, capable of transforming its operations entirely"
+        title="Infor WMS - High-Performance and Scalable Warehouse Management Application for Increased Efficiency with Seamless Integration"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -227,49 +224,22 @@ const page = () => {
         />
       </>
 
-      {/* Overview */}
-      <>
-        <div className={` w-full bg-white py-10`}>
-          <>
-            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-              <div className=" mt-[5em] mb-[2rem]">
-                <div className="flex flex-col gap-x-10">
-                  <h4
-                    className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
-                  >
-                    Infor CRM
-                  </h4>
-                  <h3 className="text-4xl leading-[42px] font-bold">
-                    Overview
-                  </h3>
-                  <p>
-                    Our commitment is to make your transformation journey as
-                    smooth as possible, guaranteeing that you attain your
-                    ambitious results. That&apos;s why we build a holistic
-                    viewpoint on your implementation and rollout project and
-                    assure that your project is on time, exceeding your
-                    expectations
-                  </p>
-                </div>
-              </div>
-            </div>
-          </>
-        </div>
-      </>
+      {/* Overview  */}
+      <Abstract abstractdesc="It is crucial for worldwide businesses to maintain updated business applications.  Infor WMS, with its enhanced supply chain management features, integrated labor management tools, and increased inventory visibility, ensures streamlined warehouse operations. Infor WMS goes beyond standard solutions, integrating warehouse fulfillment with inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment and personnel."></Abstract>
+
 
       {/* Challengers Encountered */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div className={`w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                    Challenges Encountered by Businesses
+                   Warehouse and Supply chain - Challenges 
                   </h3>
                   <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
+                    To satisfy customers&#39; ever-increasing demands for speed, availability and affordability, warehouses today confront more obstacles than ever before.
                   </p>
                 </div>
               </div>
@@ -308,12 +278,12 @@ const page = () => {
 
       {/* Infor WMS Key Highlights */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div className={`w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                <h3 className="text-[42px] leading-[54px] mb-3 font-bold w-[90%]">
                   Infor WMS Key Highlights
                 </h3>
               </div>
@@ -322,8 +292,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
+                  Infor WMS is designed to optimize warehouse operations, simplifying complex processes with movement of goods tracking from receipt to dispatch. 
                 </p>
               </div>
             </div>
@@ -339,8 +308,7 @@ const page = () => {
                       3D Visualization
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-                      With our ability in constructing, training and deploying
-                      ML models, we assure an effective implementation process.
+                     Experience streamlined operations with Infor WMS&#39;s 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization. 
                     </p>
                   </div>
                   <div className=" w-full bg-[#0745D3] p-5">
@@ -379,9 +347,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We endeavor to build actual business impact of Robotic Process
-                  Automation (RPA) reforming industries, improving output and
-                  leading digital transformation
+                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                 </p>
               </div>
             </div>
@@ -393,7 +359,7 @@ const page = () => {
         >
           {/* Overlay for background image */}
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
+          <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-y-10 justify-center">
             {[
               {
                 _id: 1,
@@ -401,28 +367,23 @@ const page = () => {
                 list: [
                   {
                     _id: 1,
-                    title: "Digital stores & connected associates",
+                    title: "Dynamic slotting to meet the changing product needs.",
                     url: "/",
                   },
                   {
                     _id: 2,
-                    title: "Point-of-Sale (POS) modernization",
+                    title: "Interactive Web & Mobile Dashboards.",
                     url: "/",
                   },
                   {
                     _id: 3,
-                    title: "Client Eling, Assisted sales",
+                    title: "Omnichannel fulfilment combines in-store, depot and warehouse channels for customer orders. ",
                     url: "/",
                   },
-                  {
-                    _id: 4,
-                    title:
-                      "Customer experience (CX) transformation & measurement",
-                    url: "/",
-                  },
+                 
                 ],
-                cta: "Let's Connect",
-                ctaUrl: "#contact",
+                cta: "",
+                ctaUrl: "",
               },
               {
                 _id: 2,
@@ -430,28 +391,52 @@ const page = () => {
                 list: [
                   {
                     _id: 1,
-                    title: "Digital stores & connected associates",
+                    title: "Tailored 3PL Dashboard for Intelligent Reporting",
                     url: "/",
                   },
                   {
                     _id: 2,
-                    title: "Point-of-Sale (POS) modernization",
+                    title: "Advanced Inventory, Space and Labor Optimization",
                     url: "/",
                   },
                   {
                     _id: 3,
-                    title: "Client Eling, Assisted sales",
+                    title: "Multi-Warehouse, Multi-Owner Support",
+                    url: "/",
+                  },
+                  
+                ],
+                cta: "",
+                ctaUrl: "",
+              },
+              {
+                _id: 3,
+                title: "Trading and Distribution",
+                list: [
+                  {
+                    _id: 1,
+                    title: "Warehouse optimisation",
+                    url: "/",
+                  },
+                  {
+                    _id: 2,
+                    title: "Order fulfilment",
+                    url: "/",
+                  },
+                  {
+                    _id: 3,
+                    title: "Inventory management",
                     url: "/",
                   },
                   {
                     _id: 4,
-                    title:
-                      "Customer experience (CX) transformation & measurement",
+                    title: "•Minimize stockouts",
                     url: "/",
                   },
+                  
                 ],
-                cta: "Know More",
-                ctaUrl: "#contact",
+                cta: "",
+                ctaUrl: "",
               },
             ].map((item, index) => {
               return (
@@ -479,7 +464,7 @@ const page = () => {
                     </ul>
                     <Link
                       href={item.ctaUrl}
-                      className="text-[#101828] bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      className="text-[#101828] hidden bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                     >
                       {item.cta}
                       <Icon
@@ -507,20 +492,10 @@ const page = () => {
             <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
+                  Infor WMS - Intelligent Supply System
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor proudly presents the most extensive suite of global
-                  supply chain solutions, including the world&apos;s largest
-                  single-instance, multi-enterprise business network and
-                  comprehensive CloudSuite capabilities. These capabilities
-                  optimize supply chains from end to end, covering planning,
-                  procurement, orchestration and fulfillment. Infor WMS is a
-                  cloud-based Tier-1 solution, reshaping warehouse operations
-                  through advanced functionalities ensuring efficient
-                  fulfillment in a dynamic business landscape. With Infor WMS,
-                  enterprises gain a competitive edge, ready to tackle the
-                  ever-evolving demands of the modern market.
+                  Infor WMS is a cloud-based Tier-1 solution, reshaping warehouse operations through advanced functionalities ensuring efficient fulfillment in a dynamic business landscape. With Infor WMS, enterprises gain a competitive edge, ready to tackle the ever-evolving demands of the modern market. 
                 </p>
               </div>
             </div>
@@ -531,60 +506,66 @@ const page = () => {
 
       {/* Benefits */}
       <Benefits
-        ribbon="Upgrade to Cloud Benefits "
+        ribbon="Infor WMS Benefits"
         ribbonTxtWhite="true"
-        title="Experience business performance surge with cloud"
+        title="Achieving warehouse operation goals in an excellent way"
         desc=""
         arr={[
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Minimize operational expenses of IT portfolio",
+            title: "Reduction in fulfilment costs",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Enable user concurrency to support large-scale workloads",
+            title: "Personalised user interface in 14 languages",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:
-              "Enhanced collaboration through cross-device accessibility to information",
+            title:"Boost labour productivity",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:
-              "Advanced data management solutions, modernized process and cloud services",
+            title:"Seamless integration with ERP systems for smooth data flow",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Aptitude to respond to shifting business requirements",
+            title: "Reduction in space requirements",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:
-              "Integrate Big Data Analytics into business processes for data-driven decision-making",
+            title:"Gain immediate warehouse insights",
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Securely stores confidential business information",
+            title: "Improve inventory throughput and management",
           },
           {
             _id: 8,
             icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "Enhance system performance and user experience by scaling up the system",
+            title:"Efficient handling of B2B and D2C processing in one facility",
+          },
+          {
+            _id: 9,
+            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+            title:"Streamlined Omni Channel",
+          },
+          {
+            _id: 10,
+            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+            title:"Efficient handling of B2B and D2C processing in one facility",
           },
         ]}
       ></Benefits>
 
       {/* Testimonial */}
-      <Testimonial
+      {/* <Testimonial
         ribbon="Testimonials "
         title="What Experts Think About Us "
         desc="It is a long established fact that a reader will be distracted by
@@ -601,6 +582,38 @@ const page = () => {
             link: "/",
           },
         ]}
+      /> */}
+
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted Customers share their Experiences"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "IT Manager",
+            thumbnail: "1",
+            description:
+              "India's Premier hi-tech Engineering Solutions Provider thanks GITL for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we recommend Godrej Infotech as a professional cloud services provider.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager Sales and Support",
+            thumbnail: "1",
+            description:
+              "Leading Manufacturer of Antenna System Technology Implements Infor ERP LN. We have received timely inputs and guidance across the modules that have been implemented on the system.",
+            category: "static",
+            link: "/",
+          },
+       
+        ]}
       />
 
       {/* Blog */}
@@ -609,38 +622,30 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Digital Transformation - The need of the hour",
-            desc: "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era. It is not just about adopting new technologies. It is about learning how these technologies can be applied to the existing business models so as to yield better results. For this, today’s leaders must debunk the myths in the industry, be open to learning, adapting & collaborating, thereby helping their organizations to ride this tide by following a successful transformation roadmap.",
-            cta: "Read More",
-            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
+            title: "How does Infor WMS Enhances Visibility and Control in Warehousing?",
+            desc: "In today's complex supply chain ecosystem, the efficient management of warehouses is crucial. Infor Warehouse Management System (WMS) emerges as a sophisticated solution that optimizes inventory control, order processing, and overall warehouse efficiency. It acts as the linchpin, harmonizing operations and providing a comprehensive platform for effective warehouse management.",
+            cta: "Know More",
+            link: "",
             imgUrl: "",
           },
-          {
-            _id: 2,
-            ribbon: "blog",
-            title: "Digital Transformation - The need of the hour",
-            desc: "Digital Transformation is changing the way business is done in every sector of the economy. Businesses need to transform themselves into digital enterprises to thrive and succeed in this new era. It is not just about adopting new technologies. It is about learning how these technologies can be applied to the existing business models so as to yield better results. For this, today’s leaders must debunk the myths in the industry, be open to learning, adapting & collaborating, thereby helping their organizations to ride this tide by following a successful transformation roadmap.",
-            cta: "Read More",
-            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
-            imgUrl: "",
-          },
+          
         ]}
       />
 
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        title="Explore Successful Infor WMS Journey"
+        desc="World's top-notch businesses choose us for our excellent technical acumen and provide standards as we deliver high performing multi-disciplinary solutions across the spectrum of industries."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              "Multinational company specializing in international express courier services automates operations and streamlines order picking process with Infor WMS",
             thumbnail: "1",
 
-            description: "Non-government Association of Indian Industries ",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
@@ -648,25 +653,15 @@ const page = () => {
           {
             id: 2,
             title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              "Auto Sectors Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN Implementation",
             thumbnail: "2",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
           },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
+          
         ]}
       />
 
