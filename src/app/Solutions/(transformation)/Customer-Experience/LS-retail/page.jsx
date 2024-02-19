@@ -1144,65 +1144,137 @@ const Page = () => {
 
       {/* our offerings left right para only */}
 
-      {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY"
-        title="Elevating Our Customer Experience with Infor"
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
-            thumbnail: "1",
+      <div
+        className={`text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]`}
+      >
+        <div className=" mt-[5em] mb-[2em]">
+          <div className={`  grid-cols-1 md:grid-cols-2 gap-4`}>
+            <h3 className="text-4xl leading-[42px] font-bold text-center">
+              Our Offerings
+            </h3>
 
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
-          },
-          {
-            id: 2,
-            title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "2",
+            <p className="hidden font-normal leading-[22px]">desc</p>
+          </div>
+        </div>
+        <motion.div className="container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+          {[
+            {
+              id: 1,
+              title: "LS Central for Retail",
+              thumbnail: "1",
+              description:
+                "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              tags: [""],
+              cta: "Know More",
+              link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+            },
+            {
+              id: 2,
+              title: "LS Central for Restaurants",
+              thumbnail: "1",
+              description:
+                "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              tags: [""],
+              cta: "Know More",
+              link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+            },
+          ].map((cases, index) => (
+            <motion.div
+              key={index}
+              variants={fadeInAnimationVariant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={index}
+              className={`flex justify-start items-start flex-col w-full mb-5 gap-4 h-[350px] overflow-hidden`}
 
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
-          },
-          {
-            id: 3,
-            title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "3",
+              // className={`${styles["iw-card"]} item`}
+            >
+              <div className={` overflow-hidden w-[100%] h-auto relative`}>
+                <Image
+                  // src={`/project-${cases.thumbnail}.png`}
+                  src={
+                    cases.thumbnail
+                      ? `/project-${cases.thumbnail}.png`
+                      : `/project-placeholder.png`
+                  }
+                  alt={`${cases.tags}`}
+                  className="w-full hover:scale-125 transition-transform duration-[0.75s] ease-[ease]"
+                  width="315"
+                  height="200"
+                  // className="w-full h-auto lg:w-315 lg:h-200"
+                />
+                <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
+                  <p
+                    className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
+                      cases.tags == "" ? "hidden" : "block"
+                    } `}
+                  >
+                    {`${cases.tags}`}
+                  </p>
+                </div>
+              </div>
+              <div className={`${styles["iw-card-content"]}`}>
+                {cases.subtitle && (
+                  <p
+                    className={`my-2  text-[#101828] font-semibold leading-[22px] text-[16px]`}
+                  >
+                    {cases.subtitle}
+                  </p>
+                )}
+                <p
+                  className={`${
+                    styles["iw-card-content-desc "]
+                  } text-clip  text-[#101828]  mb-3 font-semibold text-sm ${
+                    cases.description.length <= 0 ? "hidden" : "block"
+                  }`}
+                >
+                  {cases.title}
+                </p>
+                <p
+                  className={`text-base mt-2 font-normal  pb-2 leading-[22px] text-[#101828]`}
+                >
+                  {" "}
+                  {cases.description}
+                </p>
 
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
-          },
-        ]}
-      />
+                <p className={styles["iw-card-content-link-wrap"]}>
+                  <Link
+                    href={`${cases.link}`}
+                    className={`${styles["iw-card-content-link"]} flex items-center hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
+                  >
+                    {cases.cta}
+                    <span className=" inline-flex">
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{
+                          marginLeft: "0.5em",
+                          width: "1rem",
+                          fontSize: "14px",
+                        }}
+                        className="cta-know-more"
+                      />
+                    </span>
+                  </Link>
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
 
-      {/* Retail excellence grid */}
-
+      {/* Retail excellence grid - Features */}
       <>
         <div className={`w-full bg-white py-32`}>
           <div className=" max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Infor Services with Expert Consulting and Success Delivery
+                  LS Retail Robust Features for Efficient Retail Excellence
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our
-                  ownership and determination to go above and beyond. With rich
-                  experience of technical expertise, we offer services to meet
-                  the sole requirements of your business.
-                </p>
+                <p className="font-medium leading-[22px] md:w-[80%] mx-auto"></p>
               </div>
             </div>
           </div>
@@ -1336,32 +1408,14 @@ const Page = () => {
         </div>
       </>
 
-      {/* Blog */}
-      <BlogSlider
-        arr={[
-          {
-            _id: 1,
-            ribbon: "blog",
-            title:
-              "Azure Data Lake – Data Storage Solution for Big Data Analytics",
-            desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
-        ]}
-      />
-      {/* Benefits */}
-
-      {/* targeted solutions */}
-      {/* Core Capabilities */}
+      {/* targeted solutions - Core Capabilities */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5  ">
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Core Capabilities
+                  Godrej Infotech Targeted Solutions for Industries
                 </h3>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
@@ -1376,14 +1430,97 @@ const Page = () => {
           <div
             className={` pt-48 pb-12 bg-[url('/bgEcomScreen.png')] flex justify-center items-center w-full`}
           >
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl ">
+            <div className="max-w-screen-xl text-left  mb-5 mx-auto p-5   px-[2rem]">
+              <div className={` w-full flex pb-12 `}>
+                <Swiper
+                  slidesPerView={"auto"}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  breakpoints={{
+                    // when window width is >= 320px
+                    320: {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                    },
+                    // when window width is >= 480px
+                    480: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                    },
+                    // when window width is >= 640px
+                    640: {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                    },
+                  }}
+                  modules={[Pagination]}
+                  className=" flex-grow"
+                >
+                  {CoreCapabilitySlider.map((item, index) => {
+                    return (
+                      <SwiperSlide
+                        style={{ height: "auto" }}
+                        key={item._id}
+                        className="sm:w-full md:w-1/3 flex flex-col justify-between  mr-4  relative group"
+                      >
+                        <motion.div
+                          key={item._id}
+                          variants={fadeInAnimationVariant}
+                          initial="initial"
+                          whileInView="animate"
+                          viewport={{
+                            once: true,
+                          }}
+                          custom={index}
+                          className={`  mx-2 flex flex-col h-full `}
+                        >
+                          <div
+                            className={`p-5 bg-white w-full h-full flex flex-col justify-between`}
+                          >
+                            <div
+                              className={
+                                "block  text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]"
+                              }
+                            >
+                              {item.title}
+                            </div>
+                          </div>
+
+                          <div className={`w-full p-1 `}></div>
+                        </motion.div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              </div>
+            </div>
+
+            <div className="hidden text-left max-w-screen-xl md:max-w-screen-xl ">
               <Swiper
                 slidesPerView={"auto"}
                 pagination={{
                   clickable: true,
                 }}
+                breakpoints={{
+                  // when window width is >= 320px
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  // when window width is >= 480px
+                  480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  // when window width is >= 640px
+                  640: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[Pagination]}
-                className="mySwiper"
+                className=" flex-grow"
               >
                 {CoreCapabilitySlider.map((item) => (
                   <>
@@ -1446,6 +1583,65 @@ const Page = () => {
         </div>
       </>
 
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "blog",
+            title:
+              "Azure Data Lake - Data Storage Solution for Big Data Analytics",
+            desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+        ]}
+      />
+      {/* Benefits */}
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY"
+        title="Elevating Our Customer Experience with Infor"
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+            thumbnail: "1",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+          },
+          {
+            id: 2,
+            title:
+              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
+            thumbnail: "2",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
+          },
+          {
+            id: 3,
+            title:
+              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
+            thumbnail: "3",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+          },
+        ]}
+      />
       {/* Testimonaisl */}
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
