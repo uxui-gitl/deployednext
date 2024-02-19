@@ -546,110 +546,6 @@ const page = () => {
       {/* Overview  */}
       <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
-      {/* Ms slider */}
-      <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
-          <div className={` w-full`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
-                  </h3>
-                </div>
-                <div>
-                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
-                  </p>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
-            <Swiper
-              slidesPerView={"auto"}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                // when window width is >= 320px
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-                // when window width is >= 480px
-                480: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                // when window width is >= 640px
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-              }}
-              modules={[Pagination]}
-              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
-            >
-              {UseCases.map((item, index) => {
-                return (
-                  <SwiperSlide
-                    key={item._id}
-                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
-                  >
-                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
-                      <div className="p-5  mx-2">
-                        <div className="mb-4">
-                          {item.icon !== "" ? (
-                            <Image
-                              src={`/icon/${item.icon}.svg`}
-                              width="48"
-                              height="48"
-                              alt={item.icon}
-                            />
-                          ) : (
-                            <Icon path={mdiDomain} size={3} />
-                          )}
-                        </div>
-                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                          {item.title}
-                        </h4>
-                      </div>
-                      <div
-                        className={clsx("w-full bg-[#0745D3] p-5", {
-                          hidden: item.link === "",
-                        })}
-                      >
-                        <Link
-                          href={item.link}
-                          className={
-                            "text-white flex transition-all hover:opacity-75"
-                          }
-                        >
-                          {item.cta}
-                          <Icon
-                            path={mdiArrowRight}
-                            style={{ marginLeft: "0.5em" }}
-                            size={1}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
-        </div>
-      </>
-
       {/* Stack Offering Sliders */}
       <>
         <OfferingsSlider
@@ -942,6 +838,109 @@ const page = () => {
         />
       </>
 
+      {/* Ms slider */}
+      <>
+        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    key={item._id}
+                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
+                  >
+                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
+                      <div className="p-5  mx-2">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </div>
+      </>
       {/*  Cards */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
