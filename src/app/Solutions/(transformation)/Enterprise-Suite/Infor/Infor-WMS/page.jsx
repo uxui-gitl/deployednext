@@ -305,54 +305,30 @@ const page = () => {
             {[
               {
                 _id: 0,
-<<<<<<< HEAD
                 title: "3D Visualization",
                 desc: "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization.",
                 cta: "",
-=======
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
-                cta: "Know More",
->>>>>>> 5acadef011b6d2b725030cdaf0aef0f0f6dbc0b1
                 link: "",
               },
               {
                 _id: 1,
-<<<<<<< HEAD
                 title: "Advanced Warehousing Processes",
                 desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
                 cta: "",
-=======
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
-                cta: "Know More",
->>>>>>> 5acadef011b6d2b725030cdaf0aef0f0f6dbc0b1
                 link: "",
               },
               {
                 _id: 2,
-<<<<<<< HEAD
                 title: "3PL Billing",
                 desc: "Infor WMS integrates advanced activity-based features, enabling precise customer-level costing, billing, and invoicing. It supports multi-warehouse and multi-owner operations with tailored workflows and full traceability.",
                 cta: "",
-=======
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
-                cta: "Know More",
->>>>>>> 5acadef011b6d2b725030cdaf0aef0f0f6dbc0b1
                 link: "",
               },
               {
                 _id: 3,
-<<<<<<< HEAD
                 title: "Labor Management & Configurability",
                 desc: "The user experience is tailored for productivity, enabling you to measure, assess, and optimize DC activities, identify bottlenecks, and maintain resource balance with engineered labor standards and performance metrics.",
                 cta: "",
-=======
-                title: "3D Visualization ",
-                desc: "With our ability in constructing, training and deploying ML models, we assure an effective implementation process.",
-                cta: "Know More",
->>>>>>> 5acadef011b6d2b725030cdaf0aef0f0f6dbc0b1
                 link: "",
               },
             ].map((item, index) => {
@@ -363,12 +339,7 @@ const page = () => {
                       {item.title}
                     </h4>
                     <p className="text-[14px] leading-[22px] text-[#475467]">
-<<<<<<< HEAD
                       {item.desc}
-=======
-
-                      {item.desc} 
->>>>>>> 5acadef011b6d2b725030cdaf0aef0f0f6dbc0b1
                     </p>
                   </div>
                   <div className="hidden w-full bg-[#0745D3] p-5">
@@ -406,7 +377,7 @@ const page = () => {
             {/* right */}
             <div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                <p className="font-medium leading-[22px] md:w-[90%]">
                   Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                 </p>
               </div>
@@ -574,53 +545,39 @@ const page = () => {
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Reduction in fulfilment costs",
+            title: "Improve inventory throughput and management",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Personalised user interface in 14 languages",
+            title: "Gain immediate warehouse insights",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:"Boost labour productivity",
+            title:"Seamless integration with ERP systems for smooth data flow",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:"Seamless integration with ERP systems for smooth data flow",
+            title:"Efficient handling of B2B and D2C processing in one facility",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Reduction in space requirements",
+            title: "Personalized user interface in 14 languages",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:"Gain immediate warehouse insights",
+            title:"Significant transportation costs savings",
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Improve inventory throughput and management",
+            title: "Personalized user interface in 14 languages",
           },
-          {
-            _id: 8,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:"Efficient handling of B2B and D2C processing in one facility",
-          },
-          {
-            _id: 9,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:"Streamlined Omni Channel",
-          },
-          {
-            _id: 10,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:"Efficient handling of B2B and D2C processing in one facility",
-          },
+          
         ]}
       ></Benefits>
 
