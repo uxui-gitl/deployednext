@@ -251,203 +251,6 @@ const page = () => {
         ></AbstractCard>
       </>
 
-      {/* Left right cards */}
-      <div className={`bg-white w-full    py-32  `} id="productivity">
-        <div className={` w-full`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="  flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                  Key Capabailities
-                </h3>
-              </div>
-              <div></div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                  It is a single business software system that consists of many
-                  different applications and are broadly conventional for
-                  integration, customization, and configuration
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-key1 w-full">
-            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
-              {[
-                {
-                  _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                  cta: "Know More",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  link: "/",
-                },
-              ].map((item, index) => {
-                return (
-                  <div
-                    key={item._id}
-                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
-                  >
-                    <div className="p-5 w-fit ">
-                      <div className="mb-4">
-                        {item.icon !== "" ? (
-                          <Image
-                            src={`/${item.icon}.svg`}
-                            width={56}
-                            height={56}
-                            alt={item.icon}
-                          />
-                        ) : (
-                          <Icon path={mdiDomain} size={3} />
-                        )}
-                      </div>
-                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <div>
-                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
-                      <Link
-                        href={item.link}
-                        className="text-white  flex transition-all hover:opacity-75  "
-                      >
-                        {item.cta}{" "}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="bg-key2 w-full">
-            <div className="flex flex-col sm:flex-row gap-5 justify-start text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
-              {[
-                {
-                  _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                  cta: "Know More",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  link: "/",
-                },
-              ].map((item, index) => {
-                return (
-                  <div
-                    key={item._id}
-                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
-                  >
-                    <div className="p-5 w-fit ">
-                      <div className="mb-4">
-                        {item.icon !== "" ? (
-                          <Image
-                            src={`/${item.icon}.svg`}
-                            width={56}
-                            height={56}
-                            alt={item.icon}
-                          />
-                        ) : (
-                          <Icon path={mdiDomain} size={3} />
-                        )}
-                      </div>
-                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <div>
-                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
-                      <Link
-                        href={item.link}
-                        className="text-white  flex transition-all hover:opacity-75  "
-                      >
-                        {item.cta}{" "}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="bg-key3 w-full">
-            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
-              {[
-                {
-                  _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                  cta: "Know More",
-                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  link: "/",
-                },
-              ].map((item, index) => {
-                return (
-                  <div
-                    key={item._id}
-                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
-                  >
-                    <div className="p-5 w-fit ">
-                      <div className="mb-4">
-                        {item.icon !== "" ? (
-                          <Image
-                            src={`/${item.icon}.svg`}
-                            width={56}
-                            height={56}
-                            alt={item.icon}
-                          />
-                        ) : (
-                          <Icon path={mdiDomain} size={3} />
-                        )}
-                      </div>
-                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
-                        {item.title}
-                      </h4>
-                      <div>
-                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
-                      <Link
-                        href={item.link}
-                        className="text-white  flex transition-all hover:opacity-75  "
-                      >
-                        {item.cta}{" "}
-                        <Icon
-                          path={mdiArrowRight}
-                          style={{ marginLeft: "0.5em" }}
-                          size={1}
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Stack Offering Sliders / Oracle services */}
       <>
         <OfferingsSlider
@@ -739,6 +542,204 @@ const page = () => {
           ]}
         />
       </>
+
+      {/* Key capabilites */}
+      <div className={`bg-white w-full    py-32  `} id="productivity">
+        <div className={` w-full`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="  flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                  Key Capabailities
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                  It is a single business software system that consists of many
+                  different applications and are broadly conventional for
+                  integration, customization, and configuration
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-key1 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="bg-key2 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-start text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="bg-key3 w-full">
+            <div className="flex flex-col sm:flex-row gap-5 justify-end text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+              {[
+                {
+                  _id: 1,
+                  title: "CRM services",
+                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  cta: "Know More",
+                  icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                  link: "/",
+                },
+              ].map((item, index) => {
+                return (
+                  <div
+                    key={item._id}
+                    className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                  >
+                    <div className="p-5 w-fit ">
+                      <div className="mb-4">
+                        {item.icon !== "" ? (
+                          <Image
+                            src={`/${item.icon}.svg`}
+                            width={56}
+                            height={56}
+                            alt={item.icon}
+                          />
+                        ) : (
+                          <Icon path={mdiDomain} size={3} />
+                        )}
+                      </div>
+                      <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                        {item.title}
+                      </h4>
+                      <div>
+                        <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                    <div className=" w-full bg-[#0745D3] p-5">
+                      <Link
+                        href={item.link}
+                        className="text-white  flex transition-all hover:opacity-75  "
+                      >
+                        {item.cta}{" "}
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Industries */}
       <>

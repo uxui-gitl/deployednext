@@ -133,7 +133,6 @@ const lists = [
     id: 4,
     text: "Supply chain operations require transformation, with a focus on intelligence, speed and flexibility.",
   },
-  
 ];
 
 const upgradeCloud = [
@@ -227,7 +226,6 @@ const page = () => {
       {/* Overview  */}
       <Abstract abstractdesc="It is crucial for worldwide businesses to maintain updated business applications.  Infor WMS, with its enhanced supply chain management features, integrated labor management tools, and increased inventory visibility, ensures streamlined warehouse operations. Infor WMS goes beyond standard solutions, integrating warehouse fulfillment with inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment and personnel."></Abstract>
 
-
       {/* Challengers Encountered */}
       <>
         <div className={`w-full bg-white pb-20`}>
@@ -236,10 +234,12 @@ const page = () => {
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                   Warehouse and Supply chain - Challenges 
+                    Warehouse and Supply chain - Challenges
                   </h3>
                   <p>
-                    To satisfy customers&#39; ever-increasing demands for speed, availability and affordability, warehouses today confront more obstacles than ever before.
+                    To satisfy customers&#39; ever-increasing demands for speed,
+                    availability and affordability, warehouses today confront
+                    more obstacles than ever before.
                   </p>
                 </div>
               </div>
@@ -315,6 +315,9 @@ const page = () => {
                 title: "Advanced Warehousing Processes",
                 desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
                 cta: "",
+                title: "Advanced Warehousing Processes",
+                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
+                cta: "",
                 link: "",
               },
               {
@@ -377,8 +380,12 @@ const page = () => {
             {/* right */}
             <div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%]">
-                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
+
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Enhancing the features of business applications, our easily
+                  integrating specialized solutions intend to add value to
+                  business with handy support, streamlined processes and intense
+                  industry expertise.
                 </p>
               </div>
             </div>
@@ -398,7 +405,8 @@ const page = () => {
                 list: [
                   {
                     _id: 1,
-                    title: "Dynamic slotting to meet the changing product needs.",
+                    title:
+                      "Dynamic slotting to meet the changing product needs.",
                     url: "/",
                   },
                   {
@@ -408,10 +416,10 @@ const page = () => {
                   },
                   {
                     _id: 3,
-                    title: "Omnichannel fulfilment combines in-store, depot and warehouse channels for customer orders. ",
+                    title:
+                      "Omnichannel fulfilment combines in-store, depot and warehouse channels for customer orders. ",
                     url: "/",
                   },
-                 
                 ],
                 cta: "",
                 ctaUrl: "",
@@ -435,7 +443,6 @@ const page = () => {
                     title: "Multi-Warehouse, Multi-Owner Support",
                     url: "/",
                   },
-                  
                 ],
                 cta: "",
                 ctaUrl: "",
@@ -464,7 +471,6 @@ const page = () => {
                     title: "•Minimize stockouts",
                     url: "/",
                   },
-                  
                 ],
                 cta: "",
                 ctaUrl: "",
@@ -495,7 +501,7 @@ const page = () => {
                     </ul>
                     <Link
                       href={item.ctaUrl}
-                      className="text-[#101828] hidden bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                      className="text-[#101828] hidden bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit    transition-all hover:opacity-75  "
                     >
                       {item.cta}
                       <Icon
@@ -526,7 +532,11 @@ const page = () => {
                   Infor WMS - Intelligent Supply System
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor WMS is a cloud-based Tier-1 solution, reshaping warehouse operations through advanced functionalities ensuring efficient fulfillment in a dynamic business landscape. With Infor WMS, enterprises gain a competitive edge, ready to tackle the ever-evolving demands of the modern market. 
+                  Infor WMS is a cloud-based Tier-1 solution, reshaping
+                  warehouse operations through advanced functionalities ensuring
+                  efficient fulfillment in a dynamic business landscape. With
+                  Infor WMS, enterprises gain a competitive edge, ready to
+                  tackle the ever-evolving demands of the modern market.
                 </p>
               </div>
             </div>
@@ -571,12 +581,15 @@ const page = () => {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
             title:"Significant transportation costs savings",
+
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
             title: "Personalized user interface in 14 languages",
+
           },
+          
           
         ]}
       ></Benefits>
@@ -610,8 +623,7 @@ const page = () => {
           {
             id: 1,
             clientName: "",
-            clientDesignation:
-              "IT Manager",
+            clientDesignation: "IT Manager",
             thumbnail: "1",
             description:
               "India's Premier hi-tech Engineering Solutions Provider thanks GITL for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we recommend Godrej Infotech as a professional cloud services provider.",
@@ -621,15 +633,13 @@ const page = () => {
           {
             id: 2,
             clientName: "",
-            clientDesignation:
-              "Manager Sales and Support",
+            clientDesignation: "Manager Sales and Support",
             thumbnail: "1",
             description:
               "Leading Manufacturer of Antenna System Technology Implements Infor ERP LN. We have received timely inputs and guidance across the modules that have been implemented on the system.",
             category: "static",
             link: "/",
           },
-       
         ]}
       />
 
@@ -639,13 +649,13 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "How does Infor WMS Enhances Visibility and Control in Warehousing?",
+            title:
+              "How does Infor WMS Enhances Visibility and Control in Warehousing?",
             desc: "In today's complex supply chain ecosystem, the efficient management of warehouses is crucial. Infor Warehouse Management System (WMS) emerges as a sophisticated solution that optimizes inventory control, order processing, and overall warehouse efficiency. It acts as the linchpin, harmonizing operations and providing a comprehensive platform for effective warehouse management.",
             cta: "Know More",
             link: "",
             imgUrl: "",
           },
-          
         ]}
       />
 
@@ -678,7 +688,6 @@ const page = () => {
             cta: "Know More",
             link: "/",
           },
-          
         ]}
       />
 
