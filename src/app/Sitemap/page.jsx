@@ -324,7 +324,7 @@ const page = () => {
                   target="_blank"
                   href={"/Our-Services/Business-Consulting"}
                 >
-                  Business Consulting
+                  ☑️ Business Consulting
                 </Link>
               </li>
               <li>

@@ -334,6 +334,12 @@ input:focus {
   background-position: right;
 }
 
+.bg-cardBg {
+  background-image: url("../../public/bgCardBg.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-card1 {
   background-image: url("../../public/cardbg1.png");
   background-color: #31094a;

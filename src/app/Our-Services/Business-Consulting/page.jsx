@@ -31,7 +31,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import Icon from "@mdi/react";
-import { mdiBullseyeArrow, mdiEyeOutline } from "@mdi/js";
+import { mdiBullseyeArrow, mdiEyeOutline, mdiTableLarge } from "@mdi/js";
 import Link from "next/link";
 import { mdiArrowRight } from "@mdi/js";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
@@ -638,26 +638,202 @@ const page = () => {
 
       {/* 3 column compone */}
 
-      {/* 4 cards */}
-      {/*  Cards */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div className={` w-full bg-[#fff] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Why Consider RPA for your business?
+            <div className=" mt-[5em] mb-[2em]">
+              <div className="hidden">
+                <h4
+                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
+                >
+                  Paramount Business Consulting Services
+                </h4>
+              </div>
+              <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  Paramount Business Consulting Services
                 </h3>
+
+                <p className="font-normal leading-[22px]">
+                  We bring a wealth of industry knowledge and expertise to the
+                  table and follow the collaborative journey that effectively
+                  addresses your unique challenges, with the sole aim of your
+                  success
+                </p>
               </div>
             </div>
           </div>
+          {/* 3 Cards */}
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1  sm:grid-cols-2  ">
+            <div className="gap-x-8 flex flex-row justify-between">
+              {[
+                {
+                  _id: 1,
+                  title:
+                    "Low Code, No Code Configurable Portals on Azure IoT or AWS IoT",
+                  desc: "We bring a wealth of industry knowledge and expertise to the table and follow the",
+                  cta: "Explore Solutions",
+                  isNested: true,
+                  ctaLink: "/",
+                  tabData: [
+                    {
+                      _tabId: 1,
+                      title:
+                        "Remote Asset Tracking with Connected Field  Service & Predictive Analytics",
+                      isBullet: true,
+                      list: [
+                        {
+                          _listId: 1,
+                          title: "Solution Feature",
+                          li: [
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      _tabId: 2,
+                      title:
+                        "Industry 4.0 Accelerator (IoT for shopfloor)   for implementation of IoT in shopfloor – Both for Discrete & Process Manufacturing",
+                      isBullet: true,
+                      list: [
+                        {
+                          _listId: 1,
+                          title: "Solution Feature",
+                          li: [
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                            "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ].map((item, index) => (
+                <div key={index} className="bg-img-boxbg w-full py-14 px-24 ">
+                  <div className="flex flex-col justify-center h-full">
+                    <div className="">
+                      {item.title ? (
+                        <h3 className="text-[23px]  leading-[28px] mb-3 font-bold ">
+                          {" "}
+                          {item.title}
+                        </h3>
+                      ) : null}
+                    </div>
+                    <div className="">
+                      {item.desc ? (
+                        <p className="font-medium  text-[14px] leading-[22px]">
+                          {" "}
+                          {item.desc}
+                        </p>
+                      ) : null}
+                    </div>
+                    <div className="max-w-max flex justify-start items-center mt-5">
+                      <button
+                        onClick={() => openPopup(item.title, item.tabData)}
+                        className="min-w-max text-[12px] leading-[15px] flex  py-2 items-center px-10  font-medium text-base bg-[#101828] text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+                      >
+                        {item.cta || "Explore Solutions"}
+                        <Icon
+                          path={mdiArrowTopRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto   pb-0 grid grid-cols-1 sm:grid-cols-2">
+              {[
+                {
+                  _id: 1,
+                  title: "Increase Productivity",
+                  desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+                  cta: "Contact Us",
+                  ctaUrl: "/",
+                  image: "/rpa/IncreasedProductivity.png",
+                },
+                {
+                  _id: 2,
+                  title: "Gain Accurate Outcomes",
+                  desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
+                  cta: "Contact Us",
+                  ctaUrl: "/",
+                  image: "/rpa/GainAccurateOutcomes.png",
+                },
+              ].map((item, index) => (
+                <div
+                  className={`flex flex-col sm:flex-row py-24 ${
+                    index == 1 ? "bg-cardBg text-white" : ""
+                  } bg-[#F2F4F7]`}
+                  key={item._id}
+                >
+                  <div className="px-8 sm:justify-start sm:flex sm:flex-col w-full">
+                    <p
+                      className={`text-[#101828] font-bold text-[26px] leading-[32px] ${
+                        index == 1 ? "text-white" : ""
+                      }`}
+                    >
+                      {item.title}
+                    </p>
+                    <p
+                      className={`text-[#475467] text-[14px] font-normal my-2 leading-[22px] ${
+                        index == 1 ? "text-white" : ""
+                      }`}
+                    >
+                      {item.desc}
+                    </p>
+                    <ul
+                      className={`text-[#475467] mb-8 text-[14px] font-normal my-2 leading-[22px] ${
+                        index == 1 ? "text-white" : ""
+                      }`}
+                    >
+                      {[0, 1, 2, 3].map((i, index) => (
+                        <li
+                          className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                          key={index}
+                        >
+                          Lorem, ipsum.
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={item.ctaUrl}
+                      className={`${
+                        index == 1 ? "hidden" : ""
+                      } w-fit text-[14px] leading-[15px] flex  py-2 items-center px-10  font-medium text-base bg-[#101828] text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105`}
+                    >
+                      {item.cta}{" "}
+                      <Icon
+                        path={mdiArrowTopRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* 4 cards */}
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-2 sm:grid-cols-4">
             {[
               {
                 _id: 1,
                 title: "Increase Productivity",
                 desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-                cta: "Know More",
+                cta: "Explore Service",
                 ctaUrl: "/",
                 image: "/rpa/IncreasedProductivity.png",
               },
@@ -665,7 +841,7 @@ const page = () => {
                 _id: 2,
                 title: "Gain Accurate Outcomes",
                 desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-                cta: "Know More",
+                cta: "Explore Service",
                 ctaUrl: "/",
                 image: "/rpa/GainAccurateOutcomes.png",
               },
@@ -673,7 +849,7 @@ const page = () => {
                 _id: 3,
                 title: "Ensure Compliance and Consistency",
                 desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
-                cta: "Know More",
+                cta: "Explore Service",
                 ctaUrl: "/",
                 image: "/rpa/EnsureCompliance.png",
               },
@@ -681,23 +857,27 @@ const page = () => {
                 _id: 4,
                 title: "Optimize FTE Cost",
                 desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
-                cta: "Know More",
+                cta: "Explore Service",
                 ctaUrl: "/",
                 image: "/rpa/OptimizeFTEcost.png",
               },
             ].map((item, index) => (
               <div
-                className="flex flex-col sm:flex-row  bg-white"
+                className="flex flex-col sm:flex-row py-24  bg-[#F2F4F7]"
                 key={item._id}
               >
-                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                <div className="px-8 sm:justify-start sm:flex sm:flex-col w-full">
                   <div>
-                    <Icon path={mdiTableLarge} size={2} className="mb-4" />
+                    <Icon
+                      path={mdiTableLarge}
+                      size={2}
+                      className="text-[#0745D3] mb-4"
+                    />
                   </div>
                   <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
                     {item.title}
                   </p>
-                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                  <p className="text-[#475467] text-[14px] font-normal my-2 leading-[22px]">
                     {item.desc}
                   </p>
                   <Link
