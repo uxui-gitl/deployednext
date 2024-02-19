@@ -294,7 +294,7 @@ const Page = () => {
         },
         {
           _tabId: 2,
-          title: "Nav Upgrade ",
+          title: "Nav Upgrade",
           isBullet: true,
           list: [
             {
@@ -328,7 +328,7 @@ const Page = () => {
           list: [
             {
               _listId: 1,
-              title: "Infor On- premises Challenges ",
+              title: "Infor On- premises Challenges",
               li: [
                 "Keeping up with the latest security and version updates ",
                 "Manual efforts to configure dynamic workloads",
@@ -1040,7 +1040,7 @@ const Page = () => {
                 />
               </div>
               <h3 className="text-[#101828] text-[30px]   leading-[42px] w-fit  flex transition-all hover:opacity-75  font-bold ">
-                Infor Cloudsuite
+                Infor CloudSuite
               </h3>
               <div>
                 <ul className="my-4">
