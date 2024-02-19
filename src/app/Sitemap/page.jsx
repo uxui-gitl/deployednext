@@ -238,7 +238,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Oracle"}
                           >
-                            Oracle
+                            ☑️ Oracle
                           </Link>
                         </li>
                       </ul>
@@ -298,7 +298,7 @@ const page = () => {
                           <Link
                             target="_blank"
                             className="block pb-1 hover:underline w-fit"
-                            href={"/Solutions/Customer-Experience/LS-Retail"}
+                            href={"/Solutions/Customer-Experience/LS-retail"}
                           >
                             ☑️ LS Retail
                           </Link>
@@ -342,7 +342,7 @@ const page = () => {
                   target="_blank"
                   href={"/Our-Services/Managed-Services"}
                 >
-                  Managed Services
+                  ☑️ Managed Services
                 </Link>
               </li>
             </ul>

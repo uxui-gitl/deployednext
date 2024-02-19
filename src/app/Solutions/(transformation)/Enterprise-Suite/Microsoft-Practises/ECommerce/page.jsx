@@ -52,6 +52,7 @@ import "swiper/css/pagination";
 import WhySection from "@/components/WhySection";
 
 import InsightSlider from "@/components/InsightSlider";
+import { Abstract, NewTestimonial } from "@/components";
 
 const Page = () => {
   const [selectedColumn, setSelectedColumn] = useState(0);
@@ -81,6 +82,50 @@ const Page = () => {
   const handleColumnClick = (columnId) => {
     setSelectedColumn(columnId);
   };
+  const ChoiceSlider = [
+    {
+      _id: 1,
+      imgUrl: "Industry-Spotlight-Manufacturing",
+      title: "Manufacturing",
+      desc: "",
+      url: "/",
+    },
+    {
+      _id: 2,
+      imgUrl: "Industry-Spotlight-Retail",
+      title: "Retail",
+      desc: "",
+      url: "/",
+    },
+    {
+      _id: 3,
+      title: "Trading and Distribution",
+      desc: "",
+      imgUrl: "Industry-Spotlight-rading-and-Distribution",
+      url: "/",
+    },
+    {
+      _id: 4,
+      title: "Healthcare ",
+      desc: "",
+      imgUrl: "Industry-served-Healthcare",
+      url: "/",
+    },
+    {
+      _id: 5,
+      title: "Project ",
+      desc: "",
+      imgUrl: "Industry-Spotlight-Projects",
+      url: "/",
+    },
+    {
+      _id: 6,
+      title: "Professional services",
+      desc: "",
+      imgUrl: "ProfessionalServices",
+      url: "/",
+    },
+  ];
   const eComCapabilities = [
     {
       _id: 1,
@@ -213,6 +258,20 @@ const Page = () => {
         />
       </>
 
+      {/* OVerview with list */}
+      <Abstract
+        abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "
+        list={false}
+        ribbon="Commerce"
+        listArr={[
+          { _id: 1, icon: "dummy", title: "Customer loyalty retention" },
+          { _id: 2, icon: "dummy", title: "Customer loyalty retention" },
+          { _id: 3, icon: "dummy", title: "Customer loyalty retention" },
+          { _id: 4, icon: "dummy", title: "Customer loyalty retention" },
+          { _id: 5, icon: "dummy", title: "Customer loyalty retention" },
+        ]}
+      ></Abstract>
+
       {/* On premises Challenges*/}
       <>
         <div className={` w-full bg-[#f2f4f7] py-24`}>
@@ -278,7 +337,7 @@ const Page = () => {
           </div>
         </div>
         <div className={`w-full  `}>
-          <div className="grid my-32 max-w-screen-xl sm:max-w-screen-xl mx-auto col-span-1 grid-cols-1 sm:grid-cols-5 grid-rows-3 w-full">
+          <div className="grid my-16 max-w-screen-xl sm:max-w-screen-xl mx-auto col-span-1 grid-cols-1 sm:grid-cols-5 grid-rows-3 w-full">
             {eComCapabilities.map((item, index) => (
               <div
                 key={index}
@@ -334,22 +393,39 @@ const Page = () => {
             {selectedCapability !== null && (
               <div className="bg-img-ecom col-span-3 row-span-3 col-start-3 row-start-1 relative">
                 <div className="absolute inset-0 bg-[#0745D3] bg-opacity-80 transition-opacity ">
-                  <div className="absolute top-4 p-8 left-4 text-white">
-                    <h3 className="text-[30px] text-white w-fit leading-[42px] font-bold mb-5">
-                      {eComCapabilities[selectedCapability].title}
-                    </h3>
-                    <ul>
-                      {eComCapabilities[selectedCapability].list.map(
-                        (item, index) => (
-                          <li
-                            key={index}
-                            className="border-b-[1px] mb-4 text-[14px] font-medium leading-[16px] pb-2"
-                          >
-                            {item}
-                          </li>
-                        )
-                      )}
-                    </ul>
+                  <div className="absolute top-4 p-8 left-4 text-white flex justify-between h-[90%] flex-col">
+                    <div>
+                      <h3 className="text-[30px] text-white w-fit leading-[42px] font-bold mb-5">
+                        {eComCapabilities[selectedCapability].title}
+                      </h3>
+                      <ul>
+                        {eComCapabilities[selectedCapability].list.map(
+                          (item, index) => (
+                            <li
+                              key={index}
+                              className="border-b-[1px] mb-4 text-[14px] font-medium leading-[16px] pb-2"
+                            >
+                              {item}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                    <div className="w-fit">
+                      <Link
+                        href={"/"}
+                        className="min-w-max flex bg-[#F5F5F5] py-2 px-10 border-2 border-[#F5F5F5] font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+                      >
+                        {eComCapabilities[selectedCapability].cta ||
+                          "Know More"}
+
+                        <Icon
+                          path={mdiArrowRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -357,8 +433,6 @@ const Page = () => {
           </div>
         </div>
       </>
-
-      {/* grid test */}
 
       {/* Benefits Vertical Slider */}
       <Benefits
@@ -400,7 +474,7 @@ const Page = () => {
       ></Benefits>
 
       {/* 3 columsn */}
-      <>
+      <div className="hidden">
         <>
           <div className={` w-full bg-[#FFF] pt-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
@@ -510,7 +584,7 @@ const Page = () => {
             </div>
           </div>
         </>
-      </>
+      </div>
 
       {/* Why Infotech */}
       <WhySection
@@ -542,89 +616,191 @@ const Page = () => {
         renderInlineSpans={true}
       ></WhySection>
 
+      {/* Industry Served Slider */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Served
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper h-[350px]"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden h-[350px]">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
       {/* Expertise */}
-      <Expertise
-        ribbon="Acing your Business Objectives"
-        ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
-        arr={[
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-          {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
-        ]}
-      ></Expertise>
+      <div className="hidden">
+        <Expertise
+          ribbon="Acing your Business Objectives"
+          ribbonTxtWhite="true"
+          title="The Hub of Expertise"
+          desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+          arr={[
+            {
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50 +",
+              desc: "Cloud Deployments",
+            },
+            {
+              title: "15 +",
+              desc: "Cloud Certified Professionals",
+            },
+            {
+              title: "50 +",
+              desc: "Cloud Deployments",
+            },
+          ]}
+        ></Expertise>
+      </div>
 
       {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-        isHomepage={false}
+      <div className="hidden">
+        <CaseStudy
+          ribbon="CASE STUDY "
+          title="Elevating Customer Experience with Cloud  "
+          desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+          isHomepage={false}
+          arr={[
+            {
+              id: 1,
+              title:
+                "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              thumbnail: "1",
+
+              description: "Non-government Association of Indian Industries ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 2,
+              title:
+                "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              thumbnail: "2",
+
+              description:
+                " Middle East-based Electrical Products Manufacturer ",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+            {
+              id: 3,
+              title:
+                "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              thumbnail: "3",
+
+              description: "Coffee Brand Distributor in Egypt and Middle East",
+              tags: [""],
+              cta: "Know More",
+              link: "/",
+            },
+          ]}
+        />
+      </div>
+
+      {/* Blog */}
+      <BlogSlider
         arr={[
           {
-            id: 1,
-            title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
-
-            description: "Non-government Association of Indian Industries ",
-            tags: [""],
+            _id: 1,
+            ribbon: "ingsights",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
             cta: "Know More",
             link: "/",
-          },
-          {
-            id: 2,
-            title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
-
-            description: " Middle East-based Electrical Products Manufacturer ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
+            imgUrl: "",
           },
         ]}
       />
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+      {/* Testimonials */}
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
             link: "/",
           },

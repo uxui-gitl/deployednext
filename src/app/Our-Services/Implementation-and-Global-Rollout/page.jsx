@@ -159,6 +159,7 @@ const UseCases = [
     title: "Consulting ",
     cta: "Know More",
     link: "/",
+    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -166,6 +167,7 @@ const UseCases = [
     title: "Employee Access Creation ",
     cta: "Know More",
     link: "/",
+    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -173,6 +175,7 @@ const UseCases = [
     title: "Account Payable and Receivable Process",
     cta: "Know More",
     link: "/",
+    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -180,6 +183,7 @@ const UseCases = [
     title: "Vendor Onboarding Process",
     cta: "Know More",
     link: "/",
+    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -536,12 +540,12 @@ const page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
                     We deliver high-performing services for a comprehensive
                     suite Microsoft ecosystem, devised to elevate growth and
                     productivity and build stronger stakeholder connections
@@ -588,7 +592,7 @@ const page = () => {
                   >
                     <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
                       <div className="p-5  mx-2">
-                        <div className="mb-4">
+                        <div className="mb-4 hidden">
                           {item.icon !== "" ? (
                             <Image
                               src={`/icon/${item.icon}.svg`}
@@ -603,6 +607,9 @@ const page = () => {
                         <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
                           {item.title}
                         </h4>
+                        <p className="text-[14px] leading-[22px]  mb-4 text-[#101828]">
+                          {item.desc}
+                        </p>
                       </div>
                       <div
                         className={clsx("w-full bg-[#0745D3] p-5", {
