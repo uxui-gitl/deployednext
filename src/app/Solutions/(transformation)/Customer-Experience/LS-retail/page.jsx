@@ -47,7 +47,7 @@ import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
 import { useState } from "react";
-import { NewTestimonial } from "@/components";
+import { Benefits, NewTestimonial } from "@/components";
 
 const CoreCapabilitySlider = [
   {
@@ -1430,7 +1430,7 @@ const Page = () => {
           <div
             className={` pt-48 pb-12 bg-[url('/bgEcomScreen.png')] flex justify-center items-center w-full`}
           >
-            <div className="max-w-screen-xl text-left  mb-5 mx-auto p-5   px-[2rem]">
+            <div className=" md:max-w-screen-xl w-full text-left  mb-5 mx-auto p-5   px-[2rem]">
               <div className={` w-full flex pb-12 `}>
                 <Swiper
                   slidesPerView={"auto"}
@@ -1475,62 +1475,7 @@ const Page = () => {
                           custom={index}
                           className={`  mx-2 flex flex-col h-full `}
                         >
-                          <div
-                            className={`p-5 bg-white w-full h-full flex flex-col justify-between`}
-                          >
-                            <div
-                              className={
-                                "block  text-clip text-[#475467] leading-[22px] text-sm pt-[16px]  pb-[14px]"
-                              }
-                            >
-                              {item.title}
-                            </div>
-                          </div>
-
-                          <div className={`w-full p-1 `}></div>
-                        </motion.div>
-                      </SwiperSlide>
-                    );
-                  })}
-                </Swiper>
-              </div>
-            </div>
-
-            <div className="hidden text-left max-w-screen-xl md:max-w-screen-xl ">
-              <Swiper
-                slidesPerView={"auto"}
-                pagination={{
-                  clickable: true,
-                }}
-                breakpoints={{
-                  // when window width is >= 320px
-                  320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                  },
-                  // when window width is >= 480px
-                  480: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                  },
-                  // when window width is >= 640px
-                  640: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                  },
-                }}
-                modules={[Pagination]}
-                className=" flex-grow"
-              >
-                {CoreCapabilitySlider.map((item) => (
-                  <>
-                    <SwiperSlide
-                      key={item._id}
-                      className="w-[283px] max-w-[283px] mr-4  relative group"
-                    >
-                      <div className="bg-[#EDF1FF]" key={item._id}>
-                        <div className=" h-full flex flex-col justify-between">
-                          <div className=" p-5">
+                          <div className=" bg-white p-5">
                             <div>
                               <Icon
                                 path={mdiTableLarge}
@@ -1563,7 +1508,7 @@ const Page = () => {
                           </div>
                           <Link
                             href={item.ctaUrl}
-                            className="text-[#fff] bg-[#0745D3]  p-5 w-full text-[14px] font-medium leading-[22px]  flex transition-all hover:opacity-75  "
+                            className="text-[#fff] bg-[#0745D3]  p-5 w-full text-[14px] font-medium leading-[22px]  flex transition-all   "
                           >
                             {item.cta}{" "}
                             <Icon
@@ -1572,16 +1517,90 @@ const Page = () => {
                               size={1}
                             />
                           </Link>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  </>
-                ))}
-              </Swiper>
+                        </motion.div>
+                      </SwiperSlide>
+                    );
+                  })}
+                </Swiper>
+              </div>
             </div>
           </div>
         </div>
       </>
+
+      {/* Benefits Vertical Slider */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        arr={[
+          {
+            _id: 1,
+            icon: "benefits-ai-ml/process-analyse",
+            cardDesc:
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+          },
+          {
+            _id: 2,
+            icon: "benefits-ai-ml/anticipate-future",
+            cardDesc:
+              "Anticipate future outcomes based on historical data, making informed decisions",
+          },
+          {
+            _id: 3,
+            icon: "benefits-ai-ml/effortless-communicate",
+            cardDesc:
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
+          },
+          {
+            _id: 4,
+            icon: "benefits-ai-ml/optimise-supply-chain",
+            cardDesc:
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+          },
+          {
+            _id: 5,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
+          },
+        ]}
+      ></Benefits>
+
+      {/* Why Infotech */}
+      <WhySection
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
+        desc="It is our solution-focused approach, domain consulting and value-added services that enable us to manage projects of every size and complexity in the global transformation landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "Proven excellence of 20 + years and 300+ successful implementations",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "Comprehensive in-house product ecosystem delivering unified functionality and operational effectiveness",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Subsidiary of the globally renowned Godrej conglomerate, worth $4.1Bn enable us in leveraging synergies of business and IT solutions to deliver holistic solutions",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "Infor's Centre of Excellence and Co-development Partnership program help us to deliver innovative and industry-specific solutions",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Repository of ready-to-use use-cases guarantees swift implementation and seamless integration, driving enhanced productivity.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
 
       {/* Blog */}
       <BlogSlider
@@ -1598,7 +1617,6 @@ const Page = () => {
           },
         ]}
       />
-      {/* Benefits */}
 
       {/* Case Study */}
       <CaseStudy
@@ -1695,41 +1713,6 @@ const Page = () => {
           },
         ]}
       />
-
-      {/* Why Infotech */}
-      <WhySection
-        ribbon="The Distinctive Edge"
-        title="Why Godrej Infotech?"
-        desc="It is our solution-focused approach, domain consulting and value-added services that enable us to manage projects of every size and complexity in the global transformation landscape."
-        arr={[
-          {
-            _id: 1,
-            desc: "Proven excellence of 20 + years and 300+ successful implementations",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "Comprehensive in-house product ecosystem delivering unified functionality and operational effectiveness",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Subsidiary of the globally renowned Godrej conglomerate, worth $4.1Bn enable us in leveraging synergies of business and IT solutions to deliver holistic solutions",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "Infor's Centre of Excellence and Co-development Partnership program help us to deliver innovative and industry-specific solutions",
-            icon: "",
-          },
-          {
-            _id: 5,
-            desc: "Repository of ready-to-use use-cases guarantees swift implementation and seamless integration, driving enhanced productivity.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
 
       {/* Subscription */}
       <Subscription
