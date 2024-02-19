@@ -50,7 +50,7 @@ import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
-import { Benefits, OfferingsSlider } from "@/components";
+import { Benefits, NewTestimonial, OfferingsSlider } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -546,6 +546,110 @@ const page = () => {
       {/* Overview  */}
       <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
+      {/* Ms slider */}
+      <>
+        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    key={item._id}
+                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
+                  >
+                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
+                      <div className="p-5  mx-2">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </div>
+      </>
+
       {/* Stack Offering Sliders */}
       <>
         <OfferingsSlider
@@ -838,110 +942,6 @@ const page = () => {
         />
       </>
 
-      {/* Ms slider */}
-      <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
-          <div className={` w-full`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
-                  </h3>
-                </div>
-                <div>
-                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
-                  </p>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
-            <Swiper
-              slidesPerView={"auto"}
-              pagination={{
-                clickable: true,
-              }}
-              breakpoints={{
-                // when window width is >= 320px
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-                // when window width is >= 480px
-                480: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                // when window width is >= 640px
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-              }}
-              modules={[Pagination]}
-              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
-            >
-              {UseCases.map((item, index) => {
-                return (
-                  <SwiperSlide
-                    key={item._id}
-                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
-                  >
-                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
-                      <div className="p-5  mx-2">
-                        <div className="mb-4">
-                          {item.icon !== "" ? (
-                            <Image
-                              src={`/icon/${item.icon}.svg`}
-                              width="48"
-                              height="48"
-                              alt={item.icon}
-                            />
-                          ) : (
-                            <Icon path={mdiDomain} size={3} />
-                          )}
-                        </div>
-                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                          {item.title}
-                        </h4>
-                      </div>
-                      <div
-                        className={clsx("w-full bg-[#0745D3] p-5", {
-                          hidden: item.link === "",
-                        })}
-                      >
-                        <Link
-                          href={item.link}
-                          className={
-                            "text-white flex transition-all hover:opacity-75"
-                          }
-                        >
-                          {item.cta}
-                          <Icon
-                            path={mdiArrowRight}
-                            style={{ marginLeft: "0.5em" }}
-                            size={1}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </div>
-        </div>
-      </>
-
       {/*  Cards */}
       <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
@@ -992,65 +992,6 @@ const page = () => {
         </div>
       </>
 
-      {/* Industry Spotlight Slider */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Spotlight
-                </h3>
-              </div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
-                </p>
-              </div>
-              <div className="flex justify-center items-center max-w-screen-xl w-full">
-                <div>
-                  <Swiper
-                    slidesPerView={"auto"}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper"
-                  >
-                    {ChoiceSlider.map((item) => (
-                      <>
-                        <SwiperSlide
-                          key={item._id}
-                          className="w-[283px] max-w-[283px] mr-4  relative group"
-                        >
-                          <div className="relative overflow-hidden">
-                            <Image
-                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
-                              height={350}
-                              width={283}
-                              alt="icon"
-                              className=" transition-transform transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
-                                {item.title}
-                              </h3>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Benefits "
@@ -1089,6 +1030,97 @@ const page = () => {
           },
         ]}
       ></Benefits>
+
+      {/* Why Section */}
+      <WhySection
+        ribbon="Let's Collaborate and Make it Happen"
+        title="Why Choose GITL for AI and ML?"
+        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        arr={[
+          {
+            _id: 1,
+            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Industry Spotlight Slider */}
+      <div className="hidden">
+        <>
+          <div className={` w-full bg-[#FFF] pt-20`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+              {/* left */}
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Industry Spotlight
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                    Being preferred partner of leading industries, we help in
+                    shaping specific technology prerequisites and deliver
+                    brilliant value driven solutions tailored to your sector.
+                  </p>
+                </div>
+                <div className="flex justify-center items-center max-w-screen-xl w-full">
+                  <div>
+                    <Swiper
+                      slidesPerView={"auto"}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper"
+                    >
+                      {ChoiceSlider.map((item) => (
+                        <>
+                          <SwiperSlide
+                            key={item._id}
+                            className="w-[283px] max-w-[283px] mr-4  relative group"
+                          >
+                            <div className="relative overflow-hidden">
+                              <Image
+                                src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                                height={350}
+                                width={283}
+                                alt="icon"
+                                className=" transition-transform transform group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                                <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                  {item.title}
+                                </h3>
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                        </>
+                      ))}
+                    </Swiper>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      </div>
 
       {/* Blog */}
       <BlogSlider
@@ -1144,6 +1176,60 @@ const page = () => {
             tags: [""],
             cta: "Know More",
             link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+          },
+        ]}
+      />
+
+      {/* Testimonaisl */}
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
           },
         ]}
       />
