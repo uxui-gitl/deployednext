@@ -466,6 +466,42 @@ const page = () => {
     },
   ];
 
+  const ConsiderRPA = [
+    {
+      _id: 1,
+      title: "Increase Productivity",
+      desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/IncreasedProductivity.png",
+    },
+    {
+      _id: 2,
+      title: "Gain Accurate Outcomes",
+      desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/GainAccurateOutcomes.png",
+    },
+    {
+      _id: 3,
+      title: "Ensure Compliance and Consistency",
+      desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/EnsureCompliance.png",
+    },
+    {
+      _id: 4,
+      title: "Optimize FTE Cost",
+      desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
+
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/OptimizeFTEcost.png",
+    },
+  ];
+
   return (
     <>
       <EntIntro
@@ -810,12 +846,12 @@ const page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
                     We deliver high-performing services for a comprehensive
                     suite Microsoft ecosystem, devised to elevate growth and
                     productivity and build stronger stakeholder connections
@@ -902,6 +938,56 @@ const page = () => {
                 );
               })}
             </Swiper>
+          </div>
+        </div>
+      </>
+
+      {/*  Cards */}
+      <>
+        <div className={` w-full bg-[#F2F4F7] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Why Consider RPA for your business?
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
+                <Image
+                  src={item.image}
+                  height={120}
+                  width={120}
+                  className="w-[100%] sm:w-fit object-cover"
+                  alt={item.title}
+                />
+                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                    {item.title}
+                  </p>
+                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.ctaUrl}
+                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </>
