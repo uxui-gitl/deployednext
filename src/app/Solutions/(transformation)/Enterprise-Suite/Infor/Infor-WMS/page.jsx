@@ -308,16 +308,16 @@ const page = () => {
                 title: "3D Visualization",
                 desc: "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization.",
                 cta: "",
-
                 link: "",
               },
               {
                 _id: 1,
-
                 title: "Advanced Warehousing Processes",
                 desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
                 cta: "",
-
+                title: "Advanced Warehousing Processes",
+                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
+                cta: "",
                 link: "",
               },
               {
@@ -380,6 +380,7 @@ const page = () => {
             {/* right */}
             <div>
               <div>
+
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   Enhancing the features of business applications, our easily
                   integrating specialized solutions intend to add value to
@@ -554,55 +555,42 @@ const page = () => {
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Reduction in fulfilment costs",
+            title: "Improve inventory throughput and management",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Personalised user interface in 14 languages",
+            title: "Gain immediate warehouse insights",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title: "Boost labour productivity",
+            title:"Seamless integration with ERP systems for smooth data flow",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title: "Seamless integration with ERP systems for smooth data flow",
+            title:"Efficient handling of B2B and D2C processing in one facility",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Reduction in space requirements",
+            title: "Personalized user interface in 14 languages",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title: "Gain immediate warehouse insights",
+            title:"Significant transportation costs savings",
+
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Improve inventory throughput and management",
+            title: "Personalized user interface in 14 languages",
+
           },
-          {
-            _id: 8,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "Efficient handling of B2B and D2C processing in one facility",
-          },
-          {
-            _id: 9,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title: "Streamlined Omni Channel",
-          },
-          {
-            _id: 10,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "Efficient handling of B2B and D2C processing in one facility",
-          },
+          
+          
         ]}
       ></Benefits>
 
