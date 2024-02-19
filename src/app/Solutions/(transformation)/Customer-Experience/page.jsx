@@ -23,7 +23,13 @@ import Subscription from "@/components/Subscription";
 import handShake from "../../../../../public/handShake.png";
 import styles from "./page.module.css";
 import BlogSlider from "@/components/BlogSlider";
-import { Benefits, ServiceOfferingGrid, WhySection } from "@/components";
+import {
+  Abstract,
+  Benefits,
+  NewTestimonial,
+  ServiceOfferingGrid,
+  WhySection,
+} from "@/components";
 import Link from "next/link";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
@@ -157,15 +163,19 @@ export default function Home() {
           />
         </>
 
+        {/* Overview  */}
+        <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+
         {/* Grid */}
         <>
           <ServiceOfferingGrid
             title="Advance Solutions for
             Transforming Customer
             Experience"
+            ctaVisible={false}
+            cta="Let's Connect"
             desc="We are dedicated to helping businesses like yours to optimize sales processes and drive greater sales results. We collaborate closely with you to gain a deep understanding of your sales operations to fine-tune Infor CRM and align perfectly with your business objectives"
             ctaDesc="Let's Connect for a Walkthrough"
-            cta="Let's Connect"
             arr={[
               {
                 _id: 1,
@@ -230,40 +240,6 @@ export default function Home() {
             ]}
           />
         </>
-
-        {/* Expertise */}
-        <Expertise
-          ribbon="Acing Your Business Objectives"
-          ribbonTxtWhite="true"
-          title="The Hub of Expertise"
-          desc="We are here to build competitive edge with technology brilliance for businesses across the world."
-          arr={[
-            {
-              title: "25+",
-              desc: "Years of Experience",
-            },
-            {
-              title: "500+",
-              desc: "Customers Worldwide",
-            },
-            {
-              title: "500+",
-              desc: "Employees Worldwide",
-            },
-            {
-              title: "1000+",
-              desc: "Implementation Sites",
-            },
-            {
-              title: "15000+",
-              desc: "Man Years of Experience",
-            },
-            {
-              title: "24*7",
-              desc: "Support",
-            },
-          ]}
-        ></Expertise>
 
         {/* Experience solutions */}
         <>
@@ -361,7 +337,6 @@ export default function Home() {
             </div>
           </>
         </>
-
         {/* Infographics */}
         <>
           <div className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white">
@@ -382,36 +357,6 @@ export default function Home() {
             </div>
           </div>
         </>
-
-        {/* Why Infotech */}
-        <WhySection
-          ribbon="Let's Collaborate and Make it Happen"
-          title="Why Choose GITL for AI and ML?"
-          desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-          arr={[
-            {
-              _id: 1,
-              desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
-              icon: "",
-            },
-            {
-              _id: 2,
-              desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
-              icon: "",
-            },
-            {
-              _id: 3,
-              desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
-              icon: "",
-            },
-            {
-              _id: 4,
-              desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-              icon: "",
-            },
-          ]}
-          renderInlineSpans={true}
-        ></WhySection>
 
         {/* Benefits Vertical Slider */}
         <Benefits
@@ -453,23 +398,123 @@ export default function Home() {
           ]}
         ></Benefits>
 
-        {/* Awards n achievements */}
-        <Awards />
+        {/* Why Infotech */}
+        <WhySection
+          ribbon="Let's Collaborate and Make it Happen"
+          title="Why Choose GITL for AI and ML?"
+          desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+          arr={[
+            {
+              _id: 1,
+              desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+              icon: "",
+            },
+            {
+              _id: 2,
+              desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+              icon: "",
+            },
+            {
+              _id: 3,
+              desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+              icon: "",
+            },
+            {
+              _id: 4,
+              desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+              icon: "",
+            },
+          ]}
+          renderInlineSpans={true}
+        ></WhySection>
 
-        {/* Testimonial */}
-        <Testimonial
-          ribbon="Testimonials "
-          title="What Experts Think About Us "
-          desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+        {/* Expertise */}
+        <Expertise
+          ribbon="Acing Your Business Objectives"
+          ribbonTxtWhite="true"
+          title="The Hub of Expertise"
+          desc="We are here to build competitive edge with technology brilliance for businesses across the world."
+          arr={[
+            {
+              title: "25+",
+              desc: "Years of Experience",
+            },
+            {
+              title: "500+",
+              desc: "Customers Worldwide",
+            },
+            {
+              title: "500+",
+              desc: "Employees Worldwide",
+            },
+            {
+              title: "1000+",
+              desc: "Implementation Sites",
+            },
+            {
+              title: "15000+",
+              desc: "Man Years of Experience",
+            },
+            {
+              title: "24*7",
+              desc: "Support",
+            },
+          ]}
+        ></Expertise>
+
+        {/* Awards n achievements */}
+        <div className="hidden">
+          <Awards />
+        </div>
+
+        {/* Testimonaisl */}
+        <NewTestimonial
+          ribbon="CLIENT TESTIMONIALS"
+          ribbonVisible={false}
+          title="Delighted customers share their success experience "
+          desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
           arr={[
             {
               id: 1,
               clientName: "",
-              clientDesignation: "IT Manager",
+              clientDesignation:
+                "ERP and Business Intelligence Head, Fast food service chain  ",
               thumbnail: "1",
               description:
-                "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation:
+                "Manager IT, India's leading Energy Management System and Solutions provider ",
+              thumbnail: "1",
+              description:
+                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation:
+                "ERP and Business Intelligence Head, Fast food service chain  ",
+              thumbnail: "1",
+              description:
+                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation:
+                "Manager IT, India's leading Energy Management System and Solutions provider ",
+              thumbnail: "1",
+              description:
+                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
               category: "static",
               link: "/",
             },
