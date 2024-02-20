@@ -145,20 +145,13 @@ const ChoiceSlider = [
   },
   {
     _id: 4,
-    title: "Healthcare ",
-    desc: "",
-    imgUrl: "Industry-served-Healthcare",
-    url: "/",
-  },
-  {
-    _id: 5,
     title: "Project ",
     desc: "",
     imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
-    _id: 6,
+    _id: 5,
     title: "Professional services",
     desc: "",
     imgUrl: "ProfessionalServices",
@@ -169,8 +162,17 @@ const blogData = [
   {
     _id: 1,
     ribbon: "blog",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    title: "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
+    desc: "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements. ",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+   {
+    _id: 2,
+    ribbon: "blog",
+    title: "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
+    desc: "After successful client acquisitions and implementation projects across the globe, Microsoft Dynamics AX 2012 ERP is now entering its end-of-life phase. Microsoft has officially ended mainstream support for AX 2012 version since October 2021. Fortunately, there is a better, enhanced, and latest technology version i.e. MS Dynamics 365 Finance and Supply Chain ERP available to customers who are looking to upgrade their AX 2012 application.",
     cta: "Know More",
     link: "/",
     imgUrl: "",
@@ -181,30 +183,79 @@ const expandedCardSlider = [
     _id: 1,
     imgUrl: "Godrej-Solution-Valve-Management",
     title: "Dealer Management",
-    desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
+    desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
   },
   {
     _id: 2,
     imgUrl: "Godrej-Solution-Valve-Management",
-    title: "Valve Manufacturing Process Management",
+    title: "Lease Process Management",
     desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
   },
   {
     _id: 3,
-    title: "Metal Recycling Operations Management",
+    title: "Gate Pass Management",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
   },
-  // {
-  //   _id: 4,
-  //   title: "Dealer Management",
-  //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-  //   imgUrl: "2",
-  //   url: "/",
-  // },
+ {
+    _id: 4,
+    title: "Quality Management for Production Excellence",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 5,
+    title: "Digital Certificate E-Signing",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 6,
+    title: "Purchase Indent",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 7,
+    title: "Material Request",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 8,
+    title: "Payroll and HRMS",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 9,
+    title: "Off-line Call Centre & LS Loyalty",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+   {
+    _id: 10,
+    title: "Loyalty Management Mobile App",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
+    {
+    _id: 11,
+    title: "Employee & Candidate Management Web App",
+    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+  },
 ];
 const UseCases = [
   {
@@ -216,28 +267,63 @@ const UseCases = [
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Implementation & Rollout",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Account Payable and Receivable Process",
+    title: "Upgrade & Migration",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Vendor Onboarding Process",
+    title: "Development & Customization",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Customer Onboarding Process",
+    title: "Training Workshop",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+   _id: 6,
+    title: "Managed Services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+    {
+   _id: 7,
+    title: "Legacy Modernization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+    {
+   _id: 8,
+    title: "Bespoke Applications",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+    {
+   _id: 9,
+    title: "License sales and services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+    {
+   _id: 10,
+    title: "Data Insights",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -247,9 +333,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Maximize Asset Value and Productivity
-        with HxGN EAM Godrej Infotech Expertise "
-        desc="HxGN EAM, formerly known as Infor EAM, presents holistic solutions to address the pressing challenges of asset performance in both the present and the future"
+        title="Your Ace Microsoft Partner for Successful Business Outcomes"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -290,25 +375,16 @@ const page = () => {
             {/* left */}
             <div className=" flex items-start flex-col justify-start mt-10  relative">
               <div className="">
-                <h4
+                {/* <h4
                   className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
                 >
                   MS PRactices
-                </h4>
+                </h4> */}
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                   Overview
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Microsoft Practices is the innovative cloud-based solution
-                  with business transformative capabilities. This solution
-                  seamlessly integrates ERP, CRM, and Office 365 into a unified
-                  platform, bringing your sales, service, finance and operations
-                  teams together for enhanced adaptability and faster results.
-                  It serves as the all-in-one management tool. Designed with
-                  affordability in mind, it paves the way for growth for small,
-                  medium and upper mid-sized organizations. The choice between
-                  on-premises or cloud implementation is with you, providing
-                  ultimate control over your business operations.{" "}
+                  Microsoft Solutions such as cloud, workplace & business applications infused with our capability, enable businesses to adapt, innovate and transform operations for excellence and better customer satisfaction. With our Microsoft expertise of 20 years, we have been developing agile and resilient businesses across the world.
                 </p>
               </div>
             </div>
@@ -322,70 +398,68 @@ const page = () => {
           <div className={`w-full text-left bg-[#fff] pt-32`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
               <div className="bg-[#fff] text-left">
-                <div className="flex flex-col md:flex-row gap-8 ">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[90%]">
-                    Maximizing Your Business Outcomes with Cloud Technology
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[95%]">
+                    Delivering Full Stack Microsoft Solutions - Connecting People, Data & Processes
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our verified proficiency in execution and innovation in
-                    cloud adaptability facilitate the process of business
-                    transformation at each juncture.
+                    We bring together the power of Microsoft technologies delivering cohesive ecosystems, enabling you to achieve more.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </>
-        <div className={`w-full bg-[#fff] text-left  `}>
+        <div className={`w-full bg-[#fff] text-left`}>
           <div className="  max-w-screen  md:max-w-screen  mx-auto pt-5   ">
             <SpotlightImageGrid
               arr={[
                 {
                   _id: 1,
-                  title: "Infrastructure",
-                  expandedTitle: "Infrastructure",
+                  title: "Azure",
+                  expandedTitle: "Azure",
                   bgImg: "bg1",
                   bgColor: "",
                   linksArr: [
                     {
                       _id: 1,
                       title:
-                        "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
+                        "Virtualization",
                       url: "/",
                     },
                     {
                       _id: 2,
-                      title: "Platform as a Service(PAAS)",
+                      title: "Backup & Disaster Recovery",
                       url: "/",
                     },
                     {
                       _id: 3,
-                      title: "Disaster Recovery as a Service(DrAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Database as a Service(DBaaS",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "BaaS: Backup as a Service(BaaS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 6,
                       title: "Azure IoT",
                       url: "/",
                     },
                     {
+                      _id: 4,
+                      title: "Business Applications on Azure",
+                      url: "/",
+                    },
+                    {
+                      _id: 5,
+                      title: "Networking",
+                      url: "/",
+                    },
+                    {
+                      _id: 6,
+                      title: "Security & Governance",
+                      url: "/",
+                    },
+                    {
                       _id: 7,
-                      title: "DevOps and Bespoke Applications",
+                      title: "Hybrid and multicloud Solutions",
                       url: "/",
                     },
                     {
                       _id: 8,
-                      title: "Hybrid and Multicloud Managed Services",
+                      title: "Data and Analytics",
                       url: "/",
                     },
                   ],
@@ -396,34 +470,34 @@ const page = () => {
                 },
                 {
                   _id: 2,
-                  title: "M365",
-                  expandedTitle: "M365",
+                  title: "Microsoft Dynamics",
+                  expandedTitle: "Microsoft Dynamics",
                   bgImg: "",
                   bgColor: "#101828",
                   linksArr: [
                     {
                       _id: 1,
-                      title: "Office apps and services",
+                      title: "D365 Finance & Operations",
                       url: "/",
                     },
                     {
                       _id: 2,
-                      title: "Collaboration Tools",
+                      title: "D365 Business Central",
                       url: "/",
                     },
                     {
                       _id: 3,
-                      title: "Cloud storage",
+                      title: "D365 Commerce",
                       url: "/",
                     },
                     {
                       _id: 4,
-                      title: "Device Security and Access Management",
+                      title: "Dynamics AX",
                       url: "/",
                     },
                     {
                       _id: 5,
-                      title: "Lowcode Application Development",
+                      title: "Dynamics Nav",
                       url: "/",
                     },
                   ],
@@ -434,97 +508,10 @@ const page = () => {
                 },
                 {
                   _id: 3,
-                  title: "Business Applications",
-                  expandedTitle: "Business Applications",
+                  title: "M 365",
+                  expandedTitle: "M 365",
                   bgImg: "bg3",
                   bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title: "Microsoft Dynamics 365",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Infor",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Oracle",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "LS Retail",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 4,
-                  title: "Infrastructure",
-                  expandedTitle: "Infrastructure",
-                  bgImg: "bg1",
-                  bgColor: "",
-                  linksArr: [
-                    {
-                      _id: 1,
-                      title:
-                        "Infrastructure as a Service(IAAS) and Virtual Desktop Infrastructure (VDI)",
-                      url: "/",
-                    },
-                    {
-                      _id: 2,
-                      title: "Platform as a Service(PAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 3,
-                      title: "Disaster Recovery as a Service(DrAAS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 4,
-                      title: "Database as a Service(DBaaS",
-                      url: "/",
-                    },
-                    {
-                      _id: 5,
-                      title: "BaaS: Backup as a Service(BaaS)",
-                      url: "/",
-                    },
-                    {
-                      _id: 6,
-                      title: "Azure IoT",
-                      url: "/",
-                    },
-                    {
-                      _id: 7,
-                      title: "DevOps and Bespoke Applications",
-                      url: "/",
-                    },
-                    {
-                      _id: 8,
-                      title: "Hybrid and Multicloud Managed Services",
-                      url: "/",
-                    },
-                  ],
-
-                  ctaBtn: false,
-                  ctaUrl: "/",
-                  cta: "Know More",
-                },
-                {
-                  _id: 5,
-                  title: "M365",
-                  expandedTitle: "M365",
-                  bgImg: "",
-                  bgColor: "#101828",
                   linksArr: [
                     {
                       _id: 1,
@@ -533,7 +520,7 @@ const page = () => {
                     },
                     {
                       _id: 2,
-                      title: "Collaboration Tools",
+                      title: "Outlook and Exchange",
                       url: "/",
                     },
                     {
@@ -546,9 +533,77 @@ const page = () => {
                       title: "Device Security and Access Management",
                       url: "/",
                     },
+                  ],
+
+                  ctaBtn: false,
+                  ctaUrl: "/",
+                  cta: "Know More",
+                },
+                {
+                  _id: 4,
+                  title: "Technologies",
+                  expandedTitle: "Technologies",
+                  bgImg: "bg1",
+                  bgColor: "",
+                  linksArr: [
+                    {
+                      _id: 1,
+                      title:
+                        "Dot Net",
+                      url: "/",
+                    },
+                    {
+                      _id: 2,
+                      title: "SQL",
+                      url: "/",
+                    },
+                    {
+                      _id: 3,
+                      title: "Share Point",
+                      url: "/",
+                    },
+                    
+                  ],
+
+                  ctaBtn: false,
+                  ctaUrl: "/",
+                  cta: "Know More",
+                },
+                {
+                  _id: 5,
+                  title: "Microsoft Fabric",
+                  expandedTitle: "Microsoft Fabric",
+                  bgImg: "",
+                  bgColor: "#101828",
+                  linksArr: [
+                    {
+                      _id: 1,
+                      title: "Data Factory",
+                      url: "/",
+                    },
+                    {
+                      _id: 2,
+                      title: "Synapse Data Engineering",
+                      url: "/",
+                    },
+                    {
+                      _id: 3,
+                      title: "Synapse5 Data Science",
+                      url: "/",
+                    },
+                    {
+                      _id: 4,
+                      title: "Synapse Data Warehousing",
+                      url: "/",
+                    },
                     {
                       _id: 5,
-                      title: "Lowcode Application Development",
+                      title: "Synapse Real-Time Analytics",
+                      url: "/",
+                    },
+                    {
+                      _id: 6,
+                      title: "Data Activator",
                       url: "/",
                     },
                   ],
@@ -559,31 +614,27 @@ const page = () => {
                 },
                 {
                   _id: 6,
-                  title: "Business Applications",
+                  title: "Power Platform",
                   expandedTitle: "Business Applications",
                   bgImg: "bg3",
                   bgColor: "",
                   linksArr: [
                     {
                       _id: 1,
-                      title: "Microsoft Dynamics 365",
+                      title: "Power BI",
                       url: "/",
                     },
                     {
                       _id: 2,
-                      title: "Infor",
+                      title: "Power Apps",
                       url: "/",
                     },
                     {
                       _id: 3,
-                      title: "Oracle",
+                      title: "Power Automate",
                       url: "/",
                     },
-                    {
-                      _id: 4,
-                      title: "LS Retail",
-                      url: "/",
-                    },
+                   
                   ],
 
                   ctaBtn: false,
@@ -604,15 +655,13 @@ const page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                   Our comprehensive Microsoft services includes everything that business requires to effectively digitize business operations and customer relationship management.
                   </p>
                 </div>
               </div>
@@ -680,7 +729,7 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Spotlight
+                  Industry Expertise
                 </h3>
               </div>
               <div>
@@ -777,17 +826,14 @@ const page = () => {
                     <div className="bg-[#F2F4F7] text-left">
                       <h4
                         className={`font-medium text-[#0745D3] uppercase ribbon`}
-                      >
-                        Accelerating Business Engineering
+                      >Experience the Next Level Efficiency
                       </h4>
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                          Godrej Infotech Solutions
+                          GITL Microsoft Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Resolving complex business challenges and seizing
-                          growth opportunities through our purpose driven
-                          solutions designed by our experts.
+                          We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.  
                         </p>
                       </div>
                     </div>
@@ -847,67 +893,92 @@ const page = () => {
 
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Benefits "
+        ribbon=" Microsoft Dynamics Benefits"
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title="Microsoft Promise for Your Business"
+        desc="Driving transformational changes, Microsoft Dynamics minimizes operational cost and increases overall efficiency of employees and customers."
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "Platform scalability in accordance with business demands and render it suitable for varying sizes",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Live data analytics and insights from reporting, enabling smarter decisions",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Cloud or on-premises deployment options based on business requirements and preferences.",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Manage and nurture customer relationship from lead generation to post-sale support, improving customer satisfaction and retention.",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc: "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings.",
+          },
+           {
+            _id: 6,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management. ",
           },
         ]}
       ></Benefits>
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="Ideal Choice as Your Microsoft Partner"
+        title="Why Godrej Infotech?"
+        desc="Prioritizing authenticity in our solutions and service delivery, we have established trustworthiness in the global marketplace with our high-level technical capabilities aligned with Microsoft's standards."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "20 years of experience with deep understanding of Microsoft Solutions",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Proactive support to clients, ensuring needs are met with attentive assistance",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Project quality is ensured through milestone-wise quality checks performed by a dedicated quality team",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Actively incorporate customer feedback obtained from unbiased third-party sources",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Stability extends to both users and consultants involved in the project",
+            icon: "",
+          },
+          {
+            _id: 6,
+            desc: "Dedicated team for comprehensive project audits",
+            icon: "",
+          },
+          {
+            _id: 7,
+            desc: "Extensive domain expertise of Microsoft solutions",
+            icon: "",
+          },
+          {
+            _id: 8,
+            desc: "Rigorous testing is conducted by standalone tester team to guarantee solution excellence",
             icon: "",
           },
         ]}
@@ -918,24 +989,24 @@ const page = () => {
       <Expertise
         ribbon="Acing your Business Objectives"
         ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        title="Microsoft Excellence with GITL"
+        desc="We are here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe.  "
         arr={[
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "250 +",
+            desc: "Microsoft Dynamics Projects Delivered",
           },
           {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "150 +",
+            desc: "Projects migrated to Microsoft",
           },
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "1000 +",
+            desc: "Management of Microsoft Licenses",
           },
           {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "20",
+            desc: "years of experience in Microsoft platform",
           },
         ]}
       ></Expertise>
@@ -949,20 +1020,12 @@ const page = () => {
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px] sm:text-[68px] sm:leading-[84px] leading-[54px] mb-3 font-bold ">
-                  Seamless Implementation to Customer Centric Support
+                  Seamless Implementation to Customer Centric Support 
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  We leverage time-tested methodologies such as waterfall, rapid
-                  methodologies and agile to pilot our implementation approach
-                  according to the specific project requirements. Our prior
-                  purpose is to assure optimal system performance. While
-                  addressing system glitches, we understand their implications
-                  on our customers&apos; business processes, and prioritize on
-                  the swift resolutions. Our support services are all ears with
-                  dedicated and shared teams, enabling us to effectively address
-                  our customers&apos; unique support requirements.
+                  Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs. 
                 </p>
               </div>
             </div>
@@ -981,10 +1044,10 @@ const page = () => {
             id: 1,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "Director of Finance, Wildlife Conservation International NGO based in India",
             thumbnail: "1",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "We've implemented LS Retail Solution, streamlining our store and backend operations. Our association with Godrej Infotech is rooted in shared values—simplicity, affordability and top-notch quality. I look forward to continuing association with GITL as we advance our vision of tech-driven business simplicity.",
             category: "static",
             link: "/",
           },
@@ -992,10 +1055,21 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "Director of Finance, Wildlife Conservation International NGO based in India",
             thumbnail: "1",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Project Manager, Investment Holding Company in Riyadh & Dubai",
+            thumbnail: "1",
+            description:
+              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
             category: "static",
             link: "/",
           },
@@ -1005,7 +1079,7 @@ const page = () => {
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
+        title="Elevating Customer Experience with Cloud"
         desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
         isHomepage={false}
         arr={[
@@ -1026,7 +1100,7 @@ const page = () => {
               "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
             thumbnail: "2",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
+            description: "Middle East-based Electrical Products Manufacturer",
             tags: [""],
             cta: "Know More",
             link: "/",
@@ -1055,8 +1129,7 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
+        title="Ready to Streamline Your Business Operations? "
         blue=" "
         title2=""
         desc="Talk To Our Experts to discuss your requirements "
