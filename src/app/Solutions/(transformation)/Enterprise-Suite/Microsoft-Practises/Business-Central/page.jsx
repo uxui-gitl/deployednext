@@ -49,45 +49,55 @@ import Testimonials from "@/sections/testimonial/Testimonial";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import InsightSlider from "@/components/InsightSlider";
+import Abstract from "@/components/Abstract";
+import { NewTestimonial } from "@/components";
+
 const ChoiceSlider = [
   {
     _id: 1,
     imgUrl: "Industry-Spotlight-Manufacturing",
-    title: "Manufacturing",
+    title: "Food & Beverage",
     desc: "",
     url: "/",
   },
   {
     _id: 2,
     imgUrl: "Industry-Spotlight-Retail",
-    title: "Retail",
+    title: "Manufacturing",
     desc: "",
     url: "/",
   },
   {
     _id: 3,
-    title: "Trading and Distribution",
+    title: "Consumer Goods",
     desc: "",
     imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
   {
     _id: 4,
-    title: "Healthcare ",
+    title: "Wholesale & Distribution",
     desc: "",
     imgUrl: "Industry-served-Healthcare",
     url: "/",
   },
   {
     _id: 5,
-    title: "Project ",
+    title: "Retail ",
     desc: "",
     imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
     _id: 6,
-    title: "Professional services",
+    title: "Projects",
+    desc: "",
+    imgUrl: "ProfessionalServices",
+    url: "/",
+  },
+    {
+    _id:7,
+    title: "Professional Services",
     desc: "",
     imgUrl: "ProfessionalServices",
     url: "/",
@@ -236,10 +246,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Manage Your Operations Effortlessly and
-        Boost Business Efficiency with Microsoft
-        Dynamics D365 Business Central Expertise
-        from Experienced Partner"
+        title="Manage Your Operations Effortlessly and Boost Business Efficiency with Microsoft Dynamics D365 Business Central Expertise"
         desc=""
         cta="Let's Connect"
         width="90%"
@@ -273,194 +280,142 @@ const page = () => {
         />
       </>
 
-      {/* Overiew */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-            {/* left */}
-            <div className=" flex items-start flex-col justify-start mt-10  relative">
-              <div className="">
-                <h4
-                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
-                >
-                  MS business central
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Overview
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Microsoft Dynamics 365 Business Central is the innovative
-                  cloud-based solution with business transformative
-                  capabilities. This solution seamlessly integrates ERP, CRM,
-                  and Office 365 into a unified platform, bringing your sales,
-                  service, finance and operations teams together for enhanced
-                  adaptability and faster results. It serves as the all-in-one
-                  management tool. Designed with affordability in mind, it paves
-                  the way for growth for small, medium and upper mid-sized
-                  organizations. The choice between on-premises or cloud
-                  implementation is with you, providing ultimate control over
-                  your business operations.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+ 
+  {/* Overview  */}
+      <Abstract abstractdesc="Microsoft D365 Business Central is an innovative cloud-based solution that seamlessly integrates ERP, CRM and Office 365 into a unified platform, bringing sales, service, finance and operations teams together for enhanced adaptability and faster results. This all-in-one affordable management tool paves the way for growth for small, medium and upper mid-sized organizations. Businesses have a choice between on-premises or cloud implementation providing ultimate control over operations.  
+ With team of adept developers specializing in Microsoft Dynamics 365 Business Central, our team is well-equipped to meet your business needs, offering tailored solutions to address the requirements of your enterprise. 
+"></Abstract>
+
+
 
       {/* Capabilites */}
       <Capabilities
         ribbon=" "
-        title="Our Capabilities "
-        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+        title="Key Capabilities"
+        desc="Embrace a modern, efficient and cost-effective approach to managing your business right at your fingertips."
         arr={[
           {
             _id: 1,
             icon: "gear",
-            title: "Future of Projects  ",
+            title: "Future of Projects",
             desc: "",
             cta: "Know More",
             ctaUrl: "/",
             list: [
               {
-                title: "External integration with project monitoring tools  ",
+                title: "Financial Data Consolidation : Seamlessly consolidate data from accounting, sales, purchasing, inventory to achieve a unified financial perspective.",
                 url: "/",
               },
               {
-                title: "Mobile applications for task assignment",
+                title: "Built-in Power BI Dashboards: Visualize real-time financial performance data to identify patterns and trends with precision.",
                 url: "/",
               },
               {
-                title: "After sales service",
+                title: "Process Streamlining: Streamline essential accounting processes, such as accounts receivable and payable, Fixed Assets, Cash & Bank Management, Taxation ensuring automatic reconciliation.",
                 url: "/",
               },
               {
-                title: "Data Security & Digital Documentation ",
+                title: "Data Modeling and Analysis: Conduct multi-dimensional data analysis and improve forecasting accuracy.",
                 url: "/",
               },
               {
-                title: "Multi site management  ",
+                title: "Customized Reporting: Easily customize and share reports, featuring seamless Excel integration.",
                 url: "/",
               },
-              {
-                title: "Project Task Assignment & Management  ",
-                url: "/",
-              },
-              {
-                title: "Remote Work and Cost Accuracy   ",
-                url: "/",
-              },
+              
             ],
           },
           {
             _id: 2,
             icon: "gear",
-            title: "IoT Enabled Products ",
+            title: "Supply Chain",
             desc: "",
             cta: "Know More",
             ctaUrl: "/",
             list: [
               {
-                title: "External integration with project monitoring tools  ",
+                title: "Automated Stock Management: Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times, and reorder points.",
                 url: "/",
               },
               {
-                title: "Mobile applications for task assignment",
+                title: "Approval Workflow: Prevent unnecessary purchases and avoid vendor overdue penalties with a structured approval workflow.",
                 url: "/",
               },
               {
-                title: "After sales service",
+                title: "Built-in Intelligence: Make informed inventory replenishment decisions using sales forecasts and anticipated stock-outs.",
                 url: "/",
               },
-              {
-                title: "Data Security & Digital Documentation ",
-                url: "/",
-              },
-              {
-                title: "Multi site management  ",
-                url: "/",
-              },
-              {
-                title: "Project Task Assignment & Management  ",
-                url: "/",
-              },
-              {
-                title: "Remote Work and Cost Accuracy   ",
-                url: "/",
-              },
+              
             ],
           },
           {
             _id: 3,
             icon: "gear",
-            title: "Supply Chain Management  ",
+            title: "Sales and Marketing",
             desc: "",
             cta: "Know More",
             ctaUrl: "/",
             list: [
               {
-                title: "External integration with project monitoring tools  ",
+                title: "Client Interaction Tracking: Gain automated guidance on optimal upsell, cross-sell and renewal opportunities by tracking historical client data.",
                 url: "/",
               },
               {
-                title: "Mobile applications for task assignment",
+                title: "Efficient Sales Process: Streamline the quote-to-cash sales process and manage service requests directly through Outlook integration.",
                 url: "/",
               },
-              {
-                title: "After sales service",
-                url: "/",
-              },
-              {
-                title: "Data Security & Digital Documentation ",
-                url: "/",
-              },
-              {
-                title: "Multi site management  ",
-                url: "/",
-              },
-              {
-                title: "Project Task Assignment & Management  ",
-                url: "/",
-              },
-              {
-                title: "Remote Work and Cost Accuracy   ",
-                url: "/",
-              },
+              
             ],
           },
           {
             _id: 4,
             icon: "gear",
-            title: "Performance Management ",
+            title: "Project Management",
             desc: "",
             cta: "Know More",
             ctaUrl: "/",
             list: [
               {
-                title: "External integration with project monitoring tools  ",
+                title: "Timesheets: Manage client projects with advanced job costing and reporting capabilities, while tracking timesheets.",
                 url: "/",
               },
               {
-                title: "Mobile applications for task assignment",
+                title: "Invoice Tracking: Keep tabs on client invoicing in relation to planned costs on orders and quotes.",
                 url: "/",
               },
               {
-                title: "After sales service",
+                title: "Real-Time Insights: Monitor real-time project status, profitability and resource usage metrics.",
+                url: "/",
+              },
+              
+            ],
+          },
+          {
+            _id: 5,
+            icon: "gear",
+            title: "Service Management",
+            desc: "",
+            cta: "Know More",
+            ctaUrl: "/",
+            list: [
+              {
+                title: "Planning and dispatching : Assign and log work order details, manage dispatch with personnel, skills and stock filters for efficiency.",
                 url: "/",
               },
               {
-                title: "Data Security & Digital Documentation ",
+                title: "Service contract management: Agree on service levels, track contract history, renewal and warranties. Manage details, measure profitability and generate quotes.",
                 url: "/",
               },
               {
-                title: "Multi site management  ",
+                title: "Service Item Management: Manage service items comprehensively, recording contracts, components, BOM, and warranty data, analysing key performance indicators efficiently.",
                 url: "/",
               },
               {
-                title: "Project Task Assignment & Management  ",
+                title: "Service Order Management: Handle post-sales issues, service requests, and equipment loans; let customers initiate or auto-create requests based on agreements.",
                 url: "/",
               },
               {
-                title: "Remote Work and Cost Accuracy   ",
+                title: "Service Price Management: Establish, track, and adjust prices with automated assignment based on criteria for profitability insights.",
                 url: "/",
               },
             ],
@@ -481,9 +436,7 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
+                  Being preferred Microsoft partner, we deliver brilliant value driven D365 Business Central Solution to your sector.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -531,96 +484,141 @@ const page = () => {
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title="D365 Business Central"
+        desc="Microsoft Dynamics 365 Business Central offers your business a strategic edge."
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "Enhanced Productivity and Efficiency ",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Real-time Insights and Collaborative Capabilities ",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Customisable and Scalable System",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Any time and Any place System Accessibility with Cloud",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc: "Integration with other Microsoft Products",
+          },
+          {
+            _id: 6,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Advanced Security Measures for Data and Applications ",
           },
         ]}
       ></Benefits>
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech"
+        desc="Our substantial experience and expertise in the implementation of D365 Business Central solution guarantee a business system that impeccably aligns with your organization's unique requirements."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "ISO-certified company dedicated to delivering top-notch D365 solution and services, adapted to your specific business demands.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Expert team committed to quick turnarounds and always meeting deadlines with precision.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Dedicated solution support from in-house team",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Extensive experience in integrating Business Central with various systems, including CRM, ERP and E-commerce platforms",
             icon: "",
           },
         ]}
         renderInlineSpans={true}
       ></WhySection>
 
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted Customers share their Experiences"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "Procurement Manager, Indian Highway Construction Company",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has successfully upgraded our software from NAV 2016 to Business Central on-SaaS, including data migration. We were impressed by the expertise of their team, who not only saved us additional subscription costs but also enabled faster transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation: "Finance Manager, India based Worldwide Fast-Food chain",
+            thumbnail: "1",
+            description:
+              "GITL upgraded our NAV 2016 system to Business Central on-SaaS, including seamless data migration. We were highly impressed by the proficiency of GITL team.  This upgradation has helped us save on subscription costs but also facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation: "IT Head, Middle East base Popular Fast-food Chain",
+            thumbnail: "1",
+            description:
+              "We appreciate Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        title="D365 Business Central in Action"
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              "Saudi Trading Company Successfully Implements LS Central & Upgrades NAV to Business Central",
             thumbnail: "1",
 
-            description: "Non-government Association of Indian Industries ",
+            description: "",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/SaudiCompanySuccessfullyImplementsLSCentralandBusinessCentral.pdf",
           },
           {
             id: 2,
             title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              "Tyre Trading Organization in the Middle East Successfully Deploys Web-based, On-Premises Microsoft D365 Business Central with Servers on Azure.",
             thumbnail: "2",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
@@ -628,10 +626,10 @@ const page = () => {
           {
             id: 3,
             title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              "India's Modern Manufacturing & Testing Provider Successfully Implements D365 Business Central Online.",
             thumbnail: "3",
 
-            description: "Coffee Brand Distributor in Egypt and Middle East",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
@@ -645,8 +643,8 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            title: "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
+            desc: "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -708,11 +706,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
+        title="Have Questions? Our experts are ready to assist you with business process optimization."
         blue=" "
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Share your details NOW to schedule a call!"
       />
       <InfotechWeeklyAlt />
     </>
