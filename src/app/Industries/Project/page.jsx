@@ -6,12 +6,19 @@ import Image from "next/image";
 
 import Icon from "@mdi/react";
 import Link from "next/link";
-import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
+import {
+  mdiArrowRight,
+  mdiArrowTopRight,
+  mdiBullseyeArrow,
+  mdiDomain,
+} from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
 import Testimonial from "@/sections/testimonial/Testimonial";
 
 import inforCloudSuite from "../../../../public/inforCloudSuite.png";
 import Testimonials from "@/sections/testimonial/Testimonial";
+import puzzle from "../../../../public/upgradeCloud/puzzle.png";
+
 import Dynamic365 from "../../../../public/Dynamic365.png";
 import Oracle from "../../../../public/Oracle.png";
 import checkout from "../../../../public/checkout.png";
@@ -20,9 +27,17 @@ import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import { AnimatePresence, motion } from "framer-motion";
+import { Pagination } from "swiper/modules";
+import SpotlightLogoGrid from "@/components/SpotlightLogoGrid";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 import Benefits from "@/components/Benefits";
 import Capabilities from "@/components/Capabilities";
 import Expertise from "@/components/Expertise";
+import clsx from "clsx";
+import { NewTestimonial, OfferingsSlider } from "@/components";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -36,7 +51,108 @@ const fadeInAnimationVariant = {
     },
   }),
 };
-
+const lists = [
+  {
+    id: 1,
+    text: "Inadequate Scalability and Availability",
+  },
+  {
+    id: 2,
+    text: "Unreliable Backup Storage",
+  },
+  {
+    id: 3,
+    text: "Weak Disaster Recovery and Redundancy",
+  },
+  {
+    id: 4,
+    text: "Inadequate Data Integrity and Automation Capabilities",
+  },
+  {
+    id: 5,
+    text: "Subpar IT Performance",
+  },
+  {
+    id: 6,
+    text: "Limited IT Universality and Centralized Monitoring",
+  },
+  {
+    id: 7,
+    text: "High Management Costs of IT Infrastructure",
+  },
+];
+const UseCases = [
+  {
+    _id: 1,
+    title: "Consulting ",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 2,
+    title: "Implementation & Rollout",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 3,
+    title: "Upgrade & Migration",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 4,
+    title: "Development & Customization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 5,
+    title: "Training Workshop",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 6,
+    title: "Managed Services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 7,
+    title: "Legacy Modernization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 8,
+    title: "Bespoke Applications",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 9,
+    title: "License sales and services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 10,
+    title: "Data Insights",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+];
 const AIOfferings = [
   {
     _id: 1,
@@ -246,6 +362,55 @@ const page = () => {
         </div>
       </>
 
+      {/* Challengers Para */}
+      <>
+        <div className={` w-full bg-white pb-20`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+              <div className=" mt-[5em] mb-[2rem]">
+                <div className="flex flex-col md:flex-row gap-x-10">
+                  <h3 className="text-4xl leading-[42px] font-bold">
+                    Challenges Encountered by Businesses
+                  </h3>
+                  <p>
+                    We offer strategic insights, specialized knowledge and
+                    experience in helping businesses adapt, grow and thrive.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="mx-auto">
+                <Image src={puzzle} alt="puzzle" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <ul>
+                  {lists.map((list) => (
+                    <li key={list.id}>
+                      {" "}
+                      <p className="flex gap-4 mb-6 border-dashed border-b-2 pb-3 text-base leading-[22px]">
+                        <span className="">
+                          <Icon
+                            path={mdiBullseyeArrow}
+                            color="dodgerblue"
+                            size={1}
+                          />
+                        </span>
+                        {list.text}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
       {/* Our Ai Offerings */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
@@ -322,6 +487,107 @@ const page = () => {
           </div>
         </div>
       </>
+
+      {/* 3 column */}
+      <>
+        <OfferingsSlider
+          title="The healthcare segment we serve"
+          alignHorizontal="left"
+          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+          arr={[
+            /*One*/
+            {
+              _id: 1,
+              title: "Business Consulting",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Cybersecurity roadmap development",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 2,
+              title: "Business Consulting",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Cybersecurity roadmap development",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 3,
+              title: "Business Consulting",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Cybersecurity roadmap development",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 4,
+              title: "Business Consulting",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Cybersecurity roadmap development",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
+                  url: "/",
+                },
+              ],
+            },
+          ]}
+        />
+      </>
+
       {/* Our Capabilities */}
       <Capabilities
         ribbon=" "
@@ -351,59 +617,172 @@ const page = () => {
         ]}
       ></Expertise>
 
-      {/* ML Expertise */}
+      {/* Microsoft Services */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
-            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-2 relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  ML Expertise
-                </h3>
+        <div
+          className={`bg-ms-practise w-full  bg-[#9199A6]  py-32  `}
+          id="productivity"
+        >
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                    Our comprehensive Microsoft services includes everything
+                    that business requires to effectively digitize business
+                    operations and customer relationship management.
+                  </p>
+                </div>
               </div>
+              {/* right */}
               <div>
-                <p className="font-medium leading-[22px] ">
-                  We specialize in developing algorithms to make your operations
-                  smarter, faster and more reliable
-                </p>
+                <div></div>
               </div>
             </div>
           </div>
-
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
-            {[0, 1, 2, 3].map((item, index) => (
-              <div className="" key={index}>
-                <Image
-                  src={MLExpertise}
-                  className="w-[100%]"
-                  alt="ML Expertise"
-                />
-                <div className="p-4 pb-0">
-                  <p className="text-[#101828] font-medium text-base leading-[22px]">
-                    Deep Learning
-                  </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
-                    Our deep learning expertise is about making data come to
-                    life. We use these cutting-edge practices to create
-                    solutions that automate complex tasks data-driven
-                  </p>
-                  <Link
-                    href={"/"}
-                    className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+          <div className="max-w-screen-xl md:max-w-screen-xl flex flex-col sm:flex-row gap-y-5 justify-center text-left  mb-5 mx-auto  p-5">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className=" flex-grow"
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    style={{ height: "auto" }}
+                    key={item._id}
+                    className="sm:w-full md:w-1/4 bg-white flex flex-col justify-between  mr-4  relative group"
                   >
-                    Know More{" "}
-                    <Icon
-                      path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
-                    />
-                  </Link>
-                </div>
-              </div>
-            ))}
+                    <div
+                      key={item._id}
+                      className=" mx-2  w-fit flex flex-col justify-between"
+                    >
+                      <div className="p-5 w-fit ">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "/" || item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </>
+
+      {/* ML Expertise */}
+      <div className="hidden">
+        <>
+          <div className={` w-full bg-[#F2F4F7] py-32`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+              <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-2 relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    ML Expertise
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] ">
+                    We specialize in developing algorithms to make your
+                    operations smarter, faster and more reliable
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+              {[0, 1, 2, 3].map((item, index) => (
+                <div className="" key={index}>
+                  <Image
+                    src={MLExpertise}
+                    className="w-[100%]"
+                    alt="ML Expertise"
+                  />
+                  <div className="p-4 pb-0">
+                    <p className="text-[#101828] font-medium text-base leading-[22px]">
+                      Deep Learning
+                    </p>
+                    <p className="text-[#475467] text-[14px] font-normal my-4 leading-[22px]">
+                      Our deep learning expertise is about making data come to
+                      life. We use these cutting-edge practices to create
+                      solutions that automate complex tasks data-driven
+                    </p>
+                    <Link
+                      href={"/"}
+                      className="text-[#0745D3] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      Know More{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      </div>
 
       {/* Casestudy */}
       <CaseStudy
@@ -447,7 +826,7 @@ const page = () => {
       {/* Our Partners */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
@@ -479,12 +858,13 @@ const page = () => {
       </>
       {/* Industry Spotlight Slider */}
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
+      {/* Testimonials */}
+      <NewTestimonial
+        ribbon="Testimonials"
+        ribbonVisible={false}
         title="What Experts Think About Us "
         desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+        the readable content of a page when looking at its layout."
         arr={[
           {
             id: 1,
@@ -493,6 +873,28 @@ const page = () => {
             thumbnail: "1",
             description:
               "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Director of Finance, Wildlife Conservation International NGO based in India",
+            thumbnail: "1",
+            description:
+              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Project Manager, Investment Holding Company in Riyadh & Dubai",
+            thumbnail: "1",
+            description:
+              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
             category: "static",
             link: "/",
           },
