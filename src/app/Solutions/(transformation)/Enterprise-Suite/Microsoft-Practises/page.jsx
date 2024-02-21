@@ -162,13 +162,14 @@ const blogData = [
   {
     _id: 1,
     ribbon: "blog",
-    title: "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
+    title:
+      "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
     desc: "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements. ",
     cta: "Know More",
     link: "/",
     imgUrl: "",
   },
-   {
+  {
     _id: 2,
     ribbon: "blog",
     title: "Upgrading Microsoft Dynamics AX to D365 Finance & Supply Chain",
@@ -186,12 +187,9 @@ const expandedCardSlider = [
     desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
     list: [
-      "Windows digital certificate retrieval",
-      "3rd-Party certificate integration for PDF E signature",
-      "Secure authentication management",
-      "Record activity logging",
-      "Device identification",
-      "Customizable signature position",
+      "Streamline dealer interactions ",
+      "Online order booking platform",
+      "Access to invoice details  ",
     ],
   },
   {
@@ -201,12 +199,10 @@ const expandedCardSlider = [
     desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
     list: [
-      "Windows digital certificate retrieval",
-      "3rd-Party certificate integration for PDF E signature",
-      "Secure authentication management",
-      "Record activity logging",
-      "Device identification",
-      "Customizable signature position",
+      "Unit & Contract templates",
+      "Fees structure and Contract signing ",
+      "Automate amortization calculations",
+      "Invoice scheduling and Finance management  ",
     ],
   },
   {
@@ -215,69 +211,112 @@ const expandedCardSlider = [
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Returnable & non-returnable handling ",
+      "RGP & NRGP cycles execution ",
+      "Gate pass types for manufacturing and subcontracting  ",
+    ],
   },
- {
+  {
     _id: 4,
     title: "Quality Management for Production Excellence",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Rigorous quality checks",
+      "Preconfigured quality parameters",
+      "Efficient item handling",
+      "Quality parameter configuration till Bill of Material level  ",
+    ],
   },
-   {
+  {
     _id: 5,
     title: "Digital Certificate E-Signing",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Windows digital certificate retrieval ",
+      "3rd-Party certificate integration for PDF E signature ",
+      "Secure authentication management ",
+      "Record activity logging ",
+      "Device identification ",
+      "Customizable signature position ",
+    ],
   },
-   {
+  {
     _id: 6,
     title: "Purchase Indent",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Standalone purchase indent creation  ",
+      "Material request conversion into purchase indent ",
+      "Purchase order generation ",
+    ],
   },
-   {
+  {
     _id: 7,
     title: "Material Request",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Material request generation from production orders ",
+      "Material request conversion to tansfer order/ purchase indent ",
+    ],
   },
-   {
+  {
     _id: 8,
     title: "Payroll and HRMS",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Integration with HR and Financial systems ",
+      "Adherence to local payroll regulations ",
+      "Streamline payroll process ",
+    ],
   },
-   {
+  {
     _id: 9,
     title: "Off-line Call Centre & LS Loyalty",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Standard modules with LS Hospitality integration ",
+      "Offline call center capabilities ",
+      "LS Mobile loyalty features ",
+    ],
   },
-   {
+  {
     _id: 10,
     title: "Loyalty Management Mobile App",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Addition & redemption of points",
+      "QR Code scanner integration",
+      "Loyalty Point Ledger",
+      "Arabic language support",
+    ],
   },
-    {
+  {
     _id: 11,
     title: "Employee & Candidate Management Web App",
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
     list: [
-      "Windows digital certificate retrieval",
-      "3rd-Party certificate integration for PDF E signature",
-      "Secure authentication management",
-      "Record activity logging",
-      "Device identification",
-      "Customizable signature position",
+      "Candidate Self-Service (CSS) for application processing",
+      "HR Interaction with candidates",
+      "Employee self service ",
+      "Employee multi document handling",
+      "Multi-level HR workflow  ",
     ],
   },
 ];
@@ -318,35 +357,35 @@ const UseCases = [
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
-   _id: 6,
+    _id: 6,
     title: "Managed Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-    {
-   _id: 7,
+  {
+    _id: 7,
     title: "Legacy Modernization",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-    {
-   _id: 8,
+  {
+    _id: 8,
     title: "Bespoke Applications",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-    {
-   _id: 9,
+  {
+    _id: 9,
     title: "License sales and services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-    {
-   _id: 10,
+  {
+    _id: 10,
     title: "Data Insights",
     cta: "Know More",
     link: "/",
@@ -363,7 +402,6 @@ const page = () => {
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
-
       {/* Section nav */}
       <>
         <SectionNav
@@ -408,7 +446,12 @@ const page = () => {
                   Overview
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Microsoft Solutions such as cloud, workplace & business applications infused with our capability, enable businesses to adapt, innovate and transform operations for excellence and better customer satisfaction. With our Microsoft expertise of 20 years, we have been developing agile and resilient businesses across the world.
+                  Microsoft Solutions such as cloud, workplace & business
+                  applications infused with our capability, enable businesses to
+                  adapt, innovate and transform operations for excellence and
+                  better customer satisfaction. With our Microsoft expertise of
+                  20 years, we have been developing agile and resilient
+                  businesses across the world.
                 </p>
               </div>
             </div>
@@ -424,10 +467,13 @@ const page = () => {
               <div className="bg-[#fff] text-left">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold sm:w-[95%]">
-                    Delivering Full Stack Microsoft Solutions - Connecting People, Data & Processes
+                    Delivering Full Stack Microsoft Solutions - Connecting
+                    People, Data & Processes
                   </h3>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    We bring together the power of Microsoft technologies delivering cohesive ecosystems, enabling you to achieve more.
+                    We bring together the power of Microsoft technologies
+                    delivering cohesive ecosystems, enabling you to achieve
+                    more.
                   </p>
                 </div>
               </div>
@@ -447,8 +493,7 @@ const page = () => {
                   linksArr: [
                     {
                       _id: 1,
-                      title:
-                        "Virtualization",
+                      title: "Virtualization",
                       url: "/",
                     },
                     {
@@ -572,8 +617,7 @@ const page = () => {
                   linksArr: [
                     {
                       _id: 1,
-                      title:
-                        "Dot Net",
+                      title: "Dot Net",
                       url: "/",
                     },
                     {
@@ -586,7 +630,6 @@ const page = () => {
                       title: "Share Point",
                       url: "/",
                     },
-                    
                   ],
 
                   ctaBtn: false,
@@ -658,7 +701,6 @@ const page = () => {
                       title: "Power Automate",
                       url: "/",
                     },
-                   
                   ],
 
                   ctaBtn: false,
@@ -688,7 +730,9 @@ const page = () => {
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                   Our comprehensive Microsoft services includes everything that business requires to effectively digitize business operations and customer relationship management.
+                    Our comprehensive Microsoft services includes everything
+                    that business requires to effectively digitize business
+                    operations and customer relationship management.
                   </p>
                 </div>
               </div>
@@ -885,14 +929,18 @@ const page = () => {
                     <div className="bg-[#F2F4F7] text-left">
                       <h4
                         className={`font-medium text-[#0745D3] uppercase ribbon`}
-                      >Experience the Next Level Efficiency
+                      >
+                        Experience the Next Level Efficiency
                       </h4>
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
                           GITL Microsoft Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          We design, develop and implement hundreds of custom solutions and software applications using Microsoft technologies across Azure, Microsoft 365, Dynamics 365 and Power Platform.  
+                          We design, develop and implement hundreds of custom
+                          solutions and software applications using Microsoft
+                          technologies across Azure, Microsoft 365, Dynamics 365
+                          and Power Platform.
                         </p>
                       </div>
                     </div>
@@ -998,12 +1046,14 @@ const page = () => {
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings.",
+            cardDesc:
+              "Supply chain management functionalities for optimizing inventory, procurement and logistics processes that help to increase efficiency and cost savings.",
           },
-           {
+          {
             _id: 6,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management. ",
+            cardDesc:
+              "Streamline financial processes like accounting, budgeting and forecasting, offering error-free insights for better financial management. ",
           },
         ]}
       ></Benefits>
@@ -1093,12 +1143,19 @@ const page = () => {
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px] sm:text-[68px] sm:leading-[84px] leading-[54px] mb-3 font-bold ">
-                  Seamless Implementation to Customer Centric Support 
+                  Seamless Implementation to Customer Centric Support
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Employing proven methodologies such as Waterfall, Agile and Rapid, we tailor our implementation strategy to meet the distinct requirements of each project. The goal is to deliver optimal system performance. In instances of system issues, our team meticulously assesses the impact on business processes and prioritizes swift resolutions. Further, our adaptable support services offer both dedicated and shared teams to effectively address individual customer needs. 
+                  Employing proven methodologies such as Waterfall, Agile and
+                  Rapid, we tailor our implementation strategy to meet the
+                  distinct requirements of each project. The goal is to deliver
+                  optimal system performance. In instances of system issues, our
+                  team meticulously assesses the impact on business processes
+                  and prioritizes swift resolutions. Further, our adaptable
+                  support services offer both dedicated and shared teams to
+                  effectively address individual customer needs.
                 </p>
               </div>
             </div>
