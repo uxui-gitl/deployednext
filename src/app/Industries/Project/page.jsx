@@ -218,20 +218,19 @@ const page = () => {
       </>
       {/* Overview  */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div>
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
+        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+            {/* left */}
+            <div className=" flex items-start flex-col justify-start mt-10  relative">
+              <div className="">
+                <h4
+                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
+                >
                   Projects
                 </h4>
-              </div>
-              <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
                   Overview
                 </h3>
-              </div>
-              <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   By harnessing the power of data analytics, machine learning,
                   and artificial intelligence, our advanced IT services empower
@@ -246,6 +245,7 @@ const page = () => {
           </div>
         </div>
       </>
+
       {/* Our Ai Offerings */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>

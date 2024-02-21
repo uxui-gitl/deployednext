@@ -1058,6 +1058,11 @@ const page = () => {
         ]}
       ></Benefits>
 
+      {/* Awards n achievements */}
+      <div className="">
+        <Awards />
+      </div>
+
       {/* Why Infotech */}
       <WhySection
         ribbon="Ideal Choice as Your Microsoft Partner"
@@ -1251,11 +1256,6 @@ const page = () => {
 
       {/* Blog */}
       <BlogSlider arr={blogData} />
-
-      {/* Awards n achievements */}
-      <div className="hidden">
-        <Awards />
-      </div>
 
       {/* Subscription */}
       <Subscription

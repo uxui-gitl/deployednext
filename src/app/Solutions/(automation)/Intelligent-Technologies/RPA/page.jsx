@@ -217,10 +217,10 @@ const RPACards = [
     _id: 1,
     title: "Infrastructure Setup",
     keyword: "Enable",
-    color: "#032573",
-    bgcolor1: "#7491D4",
-    bgcolor2: "#EDF1FF",
-    bgcolor3: "#0745D3",
+    color: "#fff",
+    bgTopColor1: "#7491D4",
+    bgCardColor2: "#edf1ff",
+    bgBottomColor3: "#0745d4",
     icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
     list: [
       "Design server architecture",
@@ -232,10 +232,10 @@ const RPACards = [
     _id: 2,
     title: "Project Governance ",
     keyword: "Preparation",
-    color: "#806113",
-    bgcolor1: "#F5D687",
-    bgcolor2: "#FFF8E5",
-    bgcolor3: "#F4C447",
+    color: "#fff",
+    bgTopColor1: "#4f9d73",
+    bgCardColor2: "#e4f8ed",
+    bgBottomColor3: "#4f9d73",
     icon: "icon/RPA-projectLifestyle/ProjectGovernance",
     list: [
       "Discuss & finalize project development approach",
@@ -246,10 +246,10 @@ const RPACards = [
     _id: 3,
     title: "Workflow Design",
     keyword: "Design",
-    color: "#224D37",
-    bgcolor1: "#6D917F",
-    bgcolor2: "#E5F8EE",
-    bgcolor3: "#429268",
+    color: "#fff",
+    bgTopColor1: "#d4a73b",
+    bgCardColor2: "#fff8e5",
+    bgBottomColor3: "#d4a73b",
     icon: "icon/RPA-projectLifestyle/WorkflowDesign",
     list: [
       "Create Process Design Document (PDO)",
@@ -261,10 +261,10 @@ const RPACards = [
     _id: 4,
     title: "Workflow Development",
     keyword: "Build",
-    color: "#4E6EF2",
-    bgcolor1: "#8CA3FF",
-    bgcolor2: "#EDF1FF",
-    bgcolor3: "#4C6FFF",
+    color: "#fff",
+    bgTopColor1: "#78797c",
+    bgCardColor2: "#ededee",
+    bgBottomColor3: "#78797c",
     icon: "icon/RPA-projectLifestyle/WorkflowDevelopment",
     list: [
       "Build workflows",
@@ -276,10 +276,10 @@ const RPACards = [
     _id: 5,
     title: "Quality Assurance",
     keyword: "Test",
-    color: "#732822",
-    bgcolor1: "#B56964",
-    bgcolor2: "#FEEDED",
-    bgcolor3: "#B42318",
+    color: "#fff",
+    bgTopColor1: "#8098ff",
+    bgCardColor2: "#edf0ff",
+    bgBottomColor3: "#0745d4",
     icon: "icon/RPA-projectLifestyle/QualityAssurance",
     list: [
       "Execute test cases",
@@ -291,10 +291,10 @@ const RPACards = [
     _id: 6,
     title: "Hypercare",
     keyword: "Sustain",
-    color: "#DDDDDE",
-    bgcolor1: "#575D66",
-    bgcolor2: "#F5F5F5",
-    bgcolor3: "#475467",
+    color: "#fff",
+    bgTopColor1: "#4f9d73",
+    bgCardColor2: "#e4f8ed",
+    bgBottomColor3: "#4f9d73",
     icon: "icon/RPA-projectLifestyle/Hypercare",
     list: ["Support workflow", "Manage Changes and Improvements"],
   },
@@ -642,7 +642,8 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[100%] ">
-                 Our in-depth expertise in RPA platforms helps in maximizing functionality, ensuring optimal business performance.
+                  Our in-depth expertise in RPA platforms helps in maximizing
+                  functionality, ensuring optimal business performance.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -864,7 +865,9 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  From inception to upheld brilliance, every stage of our project lifecycle is precisely devised to optimize your business processes.
+                  From inception to upheld brilliance, every stage of our
+                  project lifecycle is precisely devised to optimize your
+                  business processes.
                 </p>
               </div>
             </div>
@@ -889,7 +892,7 @@ const page = () => {
                       isHovered ? "hidden" : "block"
                     }  p-5`}
                     style={{
-                      backgroundColor: item.bgcolor1,
+                      backgroundColor: item.bgTopColor1,
                       color: item.color,
                     }}
                   >
@@ -898,12 +901,13 @@ const page = () => {
                   <div
                     className={`p-5 w-full h-full `}
                     style={{
-                      backgroundColor: item.bgcolor2,
+                      backgroundColor: item.bgCardColor2,
                     }}
                   >
-                    <div className="mb-4">
+                    <div className="mb-4 max-h-[56px]">
                       {item.icon !== "" ? (
                         <Image
+                          className="max-h-[56px] h-[56px]"
                           src={`/${item.icon}.svg`}
                           width={56}
                           height={56}
@@ -930,7 +934,7 @@ const page = () => {
                   <div
                     className={`w-full p-2`}
                     style={{
-                      backgroundColor: item.bgcolor3,
+                      backgroundColor: item.bgBottomColor3,
                     }}
                   ></div>
                 </div>
@@ -960,7 +964,7 @@ const page = () => {
                       isHovered ? "block" : "hidden"
                     }`}
                     style={{
-                      backgroundColor: item.bgcolor1,
+                      backgroundColor: item.bgTopColor1,
                       color: item.color,
                     }}
                   >
@@ -970,8 +974,8 @@ const page = () => {
                     className={`p-5 w-full h-full `}
                     style={{
                       backgroundColor: isHovered
-                        ? item.bgcolor2
-                        : item.bgcolor2,
+                        ? item.bgCardColor2
+                        : item.bgCardColor2,
                     }}
                   >
                     {isHovered && (
@@ -997,8 +1001,8 @@ const page = () => {
                     className={`w-full p-2`}
                     style={{
                       backgroundColor: isHovered
-                        ? item.bgcolor3
-                        : item.bgcolor3,
+                        ? item.bgBottomColor3
+                        : item.bgBottomColor3,
                     }}
                   ></div>
                 </div>
