@@ -183,6 +183,14 @@ const expandedCardSlider = [
     title: "Dealer Management",
     desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
     url: "/",
+    list: [
+      "Windows digital certificate retrieval",
+      "3rd-Party certificate integration for PDF E signature",
+      "Secure authentication management",
+      "Record activity logging",
+      "Device identification",
+      "Customizable signature position",
+    ],
   },
   {
     _id: 2,
@@ -190,6 +198,14 @@ const expandedCardSlider = [
     title: "Valve Manufacturing Process Management",
     desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
     url: "/",
+    list: [
+      "Windows digital certificate retrieval",
+      "3rd-Party certificate integration for PDF E signature",
+      "Secure authentication management",
+      "Record activity logging",
+      "Device identification",
+      "Customizable signature position",
+    ],
   },
   {
     _id: 3,
@@ -197,14 +213,15 @@ const expandedCardSlider = [
     desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+    list: [
+      "Windows digital certificate retrieval",
+      "3rd-Party certificate integration for PDF E signature",
+      "Secure authentication management",
+      "Record activity logging",
+      "Device identification",
+      "Customizable signature position",
+    ],
   },
-  // {
-  //   _id: 4,
-  //   title: "Dealer Management",
-  //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-  //   imgUrl: "2",
-  //   url: "/",
-  // },
 ];
 const UseCases = [
   {
@@ -598,7 +615,10 @@ const page = () => {
 
       {/* Microsoft Services */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div
+          className={`bg-ms-practise w-full  bg-[#9199A6]  py-32  `}
+          id="productivity"
+        >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
@@ -622,52 +642,84 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {UseCases.map((item, index) => {
-              return (
-                <div
-                  key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
-                >
-                  <div className="p-5 w-fit ">
-                    <div className="mb-4">
-                      {item.icon !== "" ? (
-                        <Image
-                          src={`/icon/${item.icon}.svg`}
-                          width="48"
-                          height="48"
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div
-                    className={clsx("w-full bg-[#0745D3] p-5", {
-                      hidden: item.link === "/" || item.link === "",
-                    })}
+          <div className="max-w-screen-xl md:max-w-screen-xl flex flex-col sm:flex-row gap-y-5 justify-center text-left  mb-5 mx-auto  p-5">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className=" flex-grow"
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    style={{ height: "auto" }}
+                    key={item._id}
+                    className="sm:w-full md:w-1/4 bg-white flex flex-col justify-between  mr-4  relative group"
                   >
-                    <Link
-                      href={item.link}
-                      className={
-                        "text-white flex transition-all hover:opacity-75"
-                      }
+                    <div
+                      key={item._id}
+                      className=" mx-2  w-fit flex flex-col justify-between"
                     >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
+                      <div className="p-5 w-fit ">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "/" || item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </>
@@ -827,12 +879,26 @@ const page = () => {
 
                           {/* Hover overlay */}
                           <div className="absolute inset-0 bg-[#4c6fff] transition-opacity opacity-0 group-hover:opacity-100 flex flex-col justify-end p-4">
-                            <h3 className="text-[22px] text-white font-bold mb-1">
+                            <h3 className="text-[22px] text-white font-bold  mb-5">
                               {item.title}
                             </h3>
-                            <p className="text-white leading-[20px] mb-5">
+                            <p className="text-white hidden leading-[20px] mb-5">
                               {item.desc}
                             </p>
+                            {item.list && (
+                              <>
+                                <ul className=" list-disc pl-4">
+                                  {item.list.map((i, index) => (
+                                    <li
+                                      className="text-white leading-[20px]"
+                                      key={index}
+                                    >
+                                      {i}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
                           </div>
                         </div>
                       </SwiperSlide>
