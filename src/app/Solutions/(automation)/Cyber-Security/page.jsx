@@ -969,7 +969,7 @@ const page = () => {
           </h3>
 
           <div className="mx-auto text-center w-[75%] mb-20">
-            <Infographics src="/infographics/Infographic_EndToEnd.png" />
+            <Infographics src="/infographics/Infographic_EndToEnd.svg" />
           </div>
         </div>
       </>
