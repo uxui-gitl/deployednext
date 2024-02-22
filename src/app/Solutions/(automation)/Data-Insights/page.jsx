@@ -329,7 +329,7 @@ const page = () => {
               bg: "transparent",
               desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
               icon: "Power-BI-Logo.png",
-              cta: "Know More",
+              cta: "",
             },
             {
               _id: 2,
@@ -339,7 +339,7 @@ const page = () => {
               bg: "#4C6FFF",
               desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
               icon: "Power-App.png",
-              cta: "Know More",
+              cta: "",
             },
             {
               _id: 3,
@@ -349,7 +349,7 @@ const page = () => {
               bg: "#07001F",
               desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
               icon: "Birst-logo.png",
-              cta: "Know More",
+              cta: "",
             },
           ]}
         />

@@ -76,7 +76,9 @@ const ServiceOfferingGrid = ({
                   >
                     {item.desc}
                   </p>
-                  <Link
+                  
+                    {(item.cta !== "")? (
+                       <Link
                     href={"/"}
                     style={{
                       color: item.theme === "dark" ? "#fff" : "#0745D3",
@@ -91,6 +93,9 @@ const ServiceOfferingGrid = ({
                       size={1}
                     />
                   </Link>
+                    ): null}
+
+                   
                 </div>
               ))}
               {/* 6th Grid */}
