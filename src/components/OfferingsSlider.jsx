@@ -9,6 +9,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Accordion from "./Accordion";
+import Balancer from "react-wrap-balancer";
+import clsx from "clsx";
 
 const OfferingsSlider = ({
   arr,
@@ -19,20 +21,21 @@ const OfferingsSlider = ({
   imageDisabled,
   cardOnly,
   desc,
+  cardColor,
 }) => {
   return (
     <>
-      <div className={` w-full bg-[#FFF] py-20`}>
+      <div className={` w-full bg-[#F2F4F7] py-20`}>
         {alignHorizontal ? (
           <div
-            className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1`}
+            className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2`}
           >
             {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <div className="">
                 {title ? (
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                    {title}
+                    <Balancer>{title}</Balancer>
                   </h3>
                 ) : (
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
@@ -43,7 +46,9 @@ const OfferingsSlider = ({
             </div>
 
             {/* right */}
-            <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
+            <div
+              className={`bg-[#F2F4F7] text-${alignment} flex items-start flex-col justify-between  relative`}
+            >
               <div className="">
                 {desc ? (
                   <p className="text-[16px] leading-[22px] mb-3 font-regular ">
@@ -118,7 +123,13 @@ const OfferingsSlider = ({
               >
                 {/* If card display only */}
                 {cardOnly ? (
-                  <div className="bg-[#EDF1FF] h-full py-24">
+                  <div
+                    className={clsx(
+                      `bg-[${cardColor}]`,
+                      { "bg-[#EDF1FF]": !cardColor },
+                      "h-full py-24"
+                    )}
+                  >
                     <div className=" h-full flex flex-col justify-start">
                       {item.icon !== "" ? (
                         <Image
@@ -161,7 +172,13 @@ const OfferingsSlider = ({
                     </div>
                   </div>
                 ) : (
-                  <div className="bg-[#EDF1FF] h-full  ">
+                  <div
+                    className={clsx(
+                      `bg-[${cardColor}]`,
+                      { "bg-[#EDF1FF]": !cardColor },
+                      "h-full"
+                    )}
+                  >
                     <div className=" h-full flex flex-col justify-start">
                       {!imageDisabled ? (
                         <div className="w-full mb-4 ">

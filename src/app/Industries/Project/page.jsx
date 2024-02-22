@@ -441,6 +441,7 @@ const page = () => {
               <div
                 className={`bg-[${item.theme}] py-10 sm:py-20 px-8 sm:px-24`}
                 key={item._id}
+                style={{ backgroundColor: item.theme }}
               >
                 <div className="h-full flex flex-col justify-between">
                   <div>
@@ -456,7 +457,7 @@ const page = () => {
                       {item.links.map((list, index) => (
                         <li
                           key={index}
-                          className=" border-b-[1px] w-fit border-[#DBDBDB] py-2 "
+                          className=" border-b-[1px] last:border-b-[0px] w-fit border-[#DBDBDB] py-2 "
                         >
                           <Link
                             href={list.url}
@@ -493,6 +494,7 @@ const page = () => {
         <OfferingsSlider
           title="The healthcare segment we serve"
           alignHorizontal="left"
+          cardColor="#FFF"
           desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
           arr={[
             /*One*/
@@ -620,7 +622,7 @@ const page = () => {
       {/* Microsoft Services */}
       <>
         <div
-          className={`bg-ms-practise w-full  bg-[#9199A6]  py-32  `}
+          className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32  `}
           id="productivity"
         >
           <div className={` w-full`}>
