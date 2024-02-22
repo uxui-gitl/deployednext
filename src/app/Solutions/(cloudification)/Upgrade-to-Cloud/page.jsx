@@ -889,9 +889,9 @@ export default function Home() {
           {/* Why Infotech */}
 
           <WhySection
-            title="Let's Collaborate and Make it Happen"
+            title="Why Godrej Infotech?"
             desc="Embark on cloud upgradation journey by harnessing our credible assessment process, delivery framework, strategic resources and fluent data migration practice to minimise your business risk, time to market and cost while ensuring pinnacle of performance."
-            ribbon="Why Godrej Infotech?"
+            ribbon="The Distinctive Edge"
             arr={[
               {
                 _id: 1,
@@ -966,7 +966,7 @@ export default function Home() {
           title="Lets discuss how upgrade to cloud can help you to enhance your business's growth potential. "
           blue=""
           title2=""
-          desc="Please select a preferred time to call "
+          desc=""
         />
       </main>
     </>
