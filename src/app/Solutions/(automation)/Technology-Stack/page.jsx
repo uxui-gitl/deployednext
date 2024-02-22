@@ -224,7 +224,7 @@ const page = () => {
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
               <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                <h3 className="text-[42px]  leading-[54px] mb-4 font-bold ">
                   200 + Applications Built and Delivered
                 </h3>
               </div>
@@ -234,17 +234,17 @@ const page = () => {
                   technologies to develop high performing applications.
                 </p> */}
               </div>
-              <div className="flex justify-center items-center gap-20">
-                <div>
+              <div className="flex flex-col sm:flex-row justify-center my-4 flex-wrap items-center gap-20">
+                <div className="max-w-[200px] mb-4">
                   <Image src={java} alt="java" />
                 </div>
-                <div>
+                <div className="max-w-[200px] mb-4">
                   <Image src={dotnet} alt="dotnet" />
                 </div>
-                <div>
+                <div className="max-w-[200px] mb-4">
                   <Image src={sharepoint} alt="sharepoint" />
                 </div>
-                <div>
+                <div className="max-w-[200px] mb-4">
                   <Image src={ms} alt="ms" />
                 </div>
               </div>
