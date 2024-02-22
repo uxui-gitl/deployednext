@@ -129,7 +129,14 @@ export default function Home() {
                   Your Trusted Partner for Enterprise Transformation Success
                 </h3>
                 <p className="font-normal leading-[22px] w-[70%] mx-auto">
-                  With long standing experience of diverse industries and a strong technology partner ecosystem, we deliver 360-degree transformation solutions and consultation service helping organizations to modernize their core technology model and go-to-market framework. This enables businesses to embrace high end digitalization and leverage data analytics for taking better and proactive decisions along with enriching customer and employee experiences.  
+                  With long standing experience of diverse industries and a
+                  strong technology partner ecosystem, we deliver 360-degree
+                  transformation solutions and consultation service helping
+                  organizations to modernize their core technology model and
+                  go-to-market framework. This enables businesses to embrace
+                  high end digitalization and leverage data analytics for taking
+                  better and proactive decisions along with enriching customer
+                  and employee experiences.
                 </p>
               </div>
             </div>
@@ -142,7 +149,6 @@ export default function Home() {
         </>
 
         <div id="spotlightGrid">
-          
           <div className={`w-full bg-[#fff] text-left `}>
             <div className=" max-w-screen md:max-w-screen mx-auto pt-5 ">
               <SpotlightLogoGrid
@@ -189,7 +195,6 @@ export default function Home() {
                     ctaUrl: "/",
                     cta: "Know More",
                     linksArr: [
-                      
                       {
                         _id: 1,
                         title: "Dynamics 365 Finance and Operations",
@@ -210,7 +215,6 @@ export default function Home() {
                         title: "Dynamics 365 CRM",
                         url: "/",
                       },
-                      
                     ],
                   },
                   {
@@ -233,7 +237,6 @@ export default function Home() {
                         title: "Oracle EBS ",
                         url: "/",
                       },
-                      
                     ],
                   },
                 ]}
@@ -242,13 +245,13 @@ export default function Home() {
           </div>
         </div>
 
-         {/* Infographics */}
+        {/* Infographics */}
         <>
           <div className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white">
             <div className=" mt-[5em] mb-[2em]">
               <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
                 <h3 className="text-4xl leading-[42px] font-bold">
-                  With our Holistic Approach 
+                  With our Holistic Approach
                 </h3>
                 <p className="font-normal leading-[22px] w-[80%] mx-auto">
                   We redefine success standards globally with robust enterprise
@@ -257,8 +260,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto text-center w-max">
-              <Infographics src="/infographics/Infographic-Enterprise.png" />
+            <div className="mx-auto text-center w-[60%]">
+              <Infographics src="/infographics/Enterprise.svg" />
             </div>
           </div>
         </>
@@ -278,7 +281,10 @@ export default function Home() {
                       Accomplishing Your Goals at Every stage
                     </h3>
                     <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                      Equipping your organization to thrive in the digital era, we deliver high-end solutions, spanning from core ERP suite to our accelerators across complete technology spectrum. 
+                      Equipping your organization to thrive in the digital era,
+                      we deliver high-end solutions, spanning from core ERP
+                      suite to our accelerators across complete technology
+                      spectrum.
                     </p>
                   </div>
                 </div>
@@ -293,10 +299,12 @@ export default function Home() {
                     label: "01",
                     expandedLabel: "Step 01",
                     title: "Business Consulting & Journey Mapping",
-                    expandedTitle:
-                      "Business Consulting & Journey Mapping",
+                    expandedTitle: "Business Consulting & Journey Mapping",
                     isBullet: true,
-                    list: ["Audit for a right fit solution & defining technology landscape", "Identify inefficiencies and bottlenecks"],
+                    list: [
+                      "Audit for a right fit solution & defining technology landscape",
+                      "Identify inefficiencies and bottlenecks",
+                    ],
                     desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action",
                     image:
                       "/Spotlight/Services-Business-Situation-Review-for-journey-mapping.jpg",
@@ -308,7 +316,11 @@ export default function Home() {
                     expandedTitle:
                       "Development Aimed at Performance Enhancement",
                     isBullet: true,
-                    list: ["Infrastructure configuration & management", "Data Management", "Process Reengineering & Automation"],
+                    list: [
+                      "Infrastructure configuration & management",
+                      "Data Management",
+                      "Process Reengineering & Automation",
+                    ],
                     desc: "Dummy",
                     image:
                       "/Spotlight/Services-Optimization-Aimed-at-Performance--Enhancement.jpg",
@@ -318,7 +330,12 @@ export default function Home() {
                     expandedLabel: "Step 03",
                     title: "Deployment to Ensure Seamless Transition ",
                     expandedTitle: "Deployment to Ensure Seamless Transition ",
-                    list: ["Solution Implementation", "Data Migration", "Customization","Rollouts & Country Localization"],
+                    list: [
+                      "Solution Implementation",
+                      "Data Migration",
+                      "Customization",
+                      "Rollouts & Country Localization",
+                    ],
                     desc: "Dummy",
                     isBullet: true,
                     image:
@@ -331,7 +348,12 @@ export default function Home() {
                     expandedTitle: "Support for System Maintenance",
                     isBullet: true,
                     desc: "Dummy",
-                    list: ["Monitoring", "Troubleshooting", "Training", "Maintenance and Upgrades"],
+                    list: [
+                      "Monitoring",
+                      "Troubleshooting",
+                      "Training",
+                      "Maintenance and Upgrades",
+                    ],
                     image:
                       "/Spotlight/Services-Technical-Support-for-System-Maintenance.jpg",
                   },
@@ -340,7 +362,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         {/* Industry Solutions Slider */}
         <>
           <div className={` w-full bg-[#F2F4F7] pt-20`}>
@@ -360,7 +382,11 @@ export default function Home() {
                             Add On Solutions
                           </h3>
                           <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                            Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
+                            Enhancing the features of business applications, our
+                            easily integrating specialized solutions intend to
+                            add value to business with handy support,
+                            streamlined processes and intense industry
+                            expertise.
                           </p>
                         </div>
                       </div>
@@ -431,7 +457,8 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                    Delivering industry-centric solutions with a strategic ACT (Automation, Cloud and Transformation) program. 
+                    Delivering industry-centric solutions with a strategic ACT
+                    (Automation, Cloud and Transformation) program.
                   </p>
                 </div>
                 <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -508,9 +535,9 @@ export default function Home() {
             },
           ]}
         ></Expertise>
-        
-{/* Blog */}
-   <BlogSlider arr={blogData} />
+
+        {/* Blog */}
+        <BlogSlider arr={blogData} />
 
         {/* Godrej Infotech Solutions */}
         {/* <div className={` w-full bg-[#fff] py-32`}>
@@ -535,8 +562,6 @@ export default function Home() {
             <CardSwiper />
           </>
         </div> */}
-
-       
 
         {/* Subscription */}
         <Subscription
