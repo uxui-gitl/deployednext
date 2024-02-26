@@ -1069,7 +1069,7 @@ const Page = () => {
                     </Link>
                   </li>
                 </ul>
-                <Link href={"/"} className="mb-4">
+                <Link href={"/"} className="mb-4 hidden">
                   <div
                     className={`text-[#fff] bg-[#B42318] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75`}
                   >
@@ -1286,7 +1286,7 @@ const Page = () => {
               },
               {
                 _id: 2,
-                title: "DataMasterX / DataSwiftPro",
+                title: "DataSwiftPro",
                 desc: "Godrej Infotech Data Conversion Utility Tool offers data migration utilities facilitating faster & structured data upload and managing source & target systems, table structures, field mapping and data download/upload scripts.",
                 cta: "",
                 icon: mdiArrowRight,
@@ -1360,8 +1360,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Delivering industry-centric solutions with a strategic ACT
-                  (Automation, Cloud and Transformation) program.
+                  Understanding unique demands of each industry vertical and capitalizing Infor capabilities, we equip businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -1434,15 +1433,15 @@ const Page = () => {
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY"
-        title="Elevating Our Customer Experience with Infor"
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
+        title="Infor Project Highlights"
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
               "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
-            thumbnail: "1",
+            thumbnail: "AutoSectorLeadingElectrical",
 
             description: "",
             tags: [""],
@@ -1453,7 +1452,7 @@ const Page = () => {
             id: 2,
             title:
               "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "2",
+            thumbnail: "GlobalOncology",
 
             description: "",
             tags: [""],
@@ -1464,7 +1463,7 @@ const Page = () => {
             id: 3,
             title:
               "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "3",
+            thumbnail: "GlobalHydraulicSystems",
 
             description: "",
             tags: [""],
@@ -1477,7 +1476,7 @@ const Page = () => {
       {/* Why Infotech */}
       <WhySection
         ribbon="The Distinctive Edge"
-        title="Why Godrej Infotech?"
+        title="Why Godrej Infotech"
         desc="It is our solution-focused approach, domain consulting and value-added services that enable us to manage projects of every size and complexity in the global transformation landscape."
         arr={[
           {
@@ -1502,7 +1501,7 @@ const Page = () => {
           },
           {
             _id: 5,
-            desc: "Repository of ready-to-use use-cases guarantees swift implementation and seamless integration, driving enhanced productivity.",
+            desc: "Repository of ready-to-use use cases guarantees swift implementation and seamless integration, driving enhanced productivity. ",
             icon: "",
           },
         ]}
@@ -1602,7 +1601,7 @@ const Page = () => {
         title="Are you Ready for Infor-driven growth?"
         blue="Let's get started!?"
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Please fill in the form below to implement robust industry-specific solutions and enhance the agility of your operations. "
       />
 
       {/* Infotech weekly */}

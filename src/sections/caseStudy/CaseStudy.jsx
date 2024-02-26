@@ -96,7 +96,7 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
               >
                 <Image
                   // src={`/project-${cases.thumbnail}.png`}
-                  src={
+  src={
                     cases.thumbnail
                       ? `/caseStudies/${cases.thumbnail}.png`
                       : `/project-placeholder.png`
