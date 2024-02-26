@@ -299,13 +299,7 @@ const page = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <div
-          className={`w-full pt-48 pb-12 px-[2rem] bg-[url('/bgEcomScreen.png')]`}
-        >
-=======
         <div className={`w-full pt-48 pb-12 bg-[url('/InforWMSKeyHighlights.png')]`}>
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
             {[
               {
@@ -521,11 +515,7 @@ const page = () => {
         <div className={` w-full  pt-32`}></div>
         
         <div
-<<<<<<< HEAD
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover bg-no-repeat `}
-=======
           className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover `}
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
         >
           
           x
@@ -569,21 +559,12 @@ const page = () => {
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-<<<<<<< HEAD
-            title: "Seamless integration with ERP systems for smooth data flow",
-=======
             title:"Reduction in space requirements",
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-<<<<<<< HEAD
-            title:
-              "Efficient handling of B2B and D2C processing in one facility",
-=======
             title:"Gain immediate warehouse insights",
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
           },
           {
             _id: 5,
@@ -593,22 +574,14 @@ const page = () => {
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-<<<<<<< HEAD
-            title: "Significant transportation costs savings",
-=======
             title:"Efficient handling of B2B and D2C processing in one facility",
 
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-<<<<<<< HEAD
-            title: "Personalized user interface in 14 languages",
-=======
             title: "Significant transportation costs savings ",
 
->>>>>>> 55acaba0067af3a70772a94e75e20feb7ff0c725
           },
         ]}
       ></Benefits>
