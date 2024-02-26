@@ -381,7 +381,7 @@ const page = () => {
                   target="_blank"
                   href={"/Industries/Trading-and-Distribution"}
                 >
-                  Trading and Distribution
+                  ☑️ Trading and Distribution
                 </Link>{" "}
               </li>
               <li>
@@ -390,7 +390,7 @@ const page = () => {
                   target="_blank"
                   href={"/Industries/Project"}
                 >
-                  Project
+                  ☑️ Project
                 </Link>{" "}
               </li>
               <li>

@@ -277,7 +277,6 @@ const page = () => {
       </>
 
       {/* Infor WMS Key Highlights */}
-      {/* Infor WMS Key Highlights */}
       <>
         <div className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -300,7 +299,9 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className={`w-full pt-48 pb-12 bg-[url('/bgEcomScreen.png')]`}>
+        <div
+          className={`w-full pt-48 pb-12 px-[2rem] bg-[url('/bgEcomScreen.png')]`}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
             {[
               {
@@ -380,7 +381,6 @@ const page = () => {
             {/* right */}
             <div>
               <div>
-
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   Enhancing the features of business applications, our easily
                   integrating specialized solutions intend to add value to
@@ -522,7 +522,7 @@ const page = () => {
       <>
         <div className={` w-full  pt-32`}></div>
         <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
+          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover bg-no-repeat `}
         >
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
@@ -565,12 +565,13 @@ const page = () => {
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:"Seamless integration with ERP systems for smooth data flow",
+            title: "Seamless integration with ERP systems for smooth data flow",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:"Efficient handling of B2B and D2C processing in one facility",
+            title:
+              "Efficient handling of B2B and D2C processing in one facility",
           },
           {
             _id: 5,
@@ -580,17 +581,13 @@ const page = () => {
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:"Significant transportation costs savings",
-
+            title: "Significant transportation costs savings",
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
             title: "Personalized user interface in 14 languages",
-
           },
-          
-          
         ]}
       ></Benefits>
 

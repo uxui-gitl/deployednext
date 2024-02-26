@@ -98,7 +98,7 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                   // src={`/project-${cases.thumbnail}.png`}
                   src={
                     cases.thumbnail
-                      ? `/project-${cases.thumbnail}.png`
+                      ? `/caseStudies/${cases.thumbnail}.png`
                       : `/project-placeholder.png`
                   }
                   alt={`${cases.tags}`}
