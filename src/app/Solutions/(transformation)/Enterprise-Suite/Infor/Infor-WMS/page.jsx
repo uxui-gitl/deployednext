@@ -189,7 +189,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Infor WMS - High-Performance and Scalable Warehouse Management Application for Increased Efficiency with Seamless Integration"
+        title="Leverage High Performance and Scalable Warehouse Management for Increased Efficiency with Infor WMS"
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -224,7 +224,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="It is crucial for worldwide businesses to maintain updated business applications.  Infor WMS, with its enhanced supply chain management features, integrated labor management tools, and increased inventory visibility, ensures streamlined warehouse operations. Infor WMS goes beyond standard solutions, integrating warehouse fulfillment with inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment and personnel."></Abstract>
+      <Abstract abstractdesc="Infor WMS, with its enhanced supply chain management features, integrated labor management tools and increased inventory visibility, ensures streamlined warehouse operations. The application includes inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment, and personnel. Godrej Infotech’s collaborative approach involves working closely with Key Users throughout the entire process, ensuring that your operational processes receive continuous support. Our team proactively takes ownership of the diverse functionalities within Infor WMS and aim to develop new reports that provide a comprehensive 360° view of your operation's performance."></Abstract>
 
       {/* Challengers Encountered */}
       <>
@@ -315,9 +315,6 @@ const page = () => {
                 title: "Advanced Warehousing Processes",
                 desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
                 cta: "",
-                title: "Advanced Warehousing Processes",
-                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
-                cta: "",
                 link: "",
               },
               {
@@ -382,10 +379,7 @@ const page = () => {
               <div>
 
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily
-                  integrating specialized solutions intend to add value to
-                  business with handy support, streamlined processes and intense
-                  industry expertise.
+                  Enhancing the features of business applications, our specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                 </p>
               </div>
             </div>
@@ -417,7 +411,7 @@ const page = () => {
                   {
                     _id: 3,
                     title:
-                      "Omnichannel fulfilment combines in-store, depot and warehouse channels for customer orders. ",
+                      "Omnichannel fulfilment combines in-store, depot and warehouse channels for customer orders.",
                     url: "/",
                   },
                 ],
@@ -468,7 +462,7 @@ const page = () => {
                   },
                   {
                     _id: 4,
-                    title: "•Minimize stockouts",
+                    title: "Minimize stockouts",
                     url: "/",
                   },
                 ],
@@ -532,11 +526,7 @@ const page = () => {
                   Infor WMS - Intelligent Supply System
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor WMS is a cloud-based Tier-1 solution, reshaping
-                  warehouse operations through advanced functionalities ensuring
-                  efficient fulfillment in a dynamic business landscape. With
-                  Infor WMS, enterprises gain a competitive edge, ready to
-                  tackle the ever-evolving demands of the modern market.
+                  Infor WMS is a cloud-based Tier-1 solution, reshaping warehouse operations through advanced functionalities ensuring efficient fulfillment in a dynamic business landscape. With Infor WMS, enterprises gain a competitive edge, ready to tackle the ever-evolving demands of the modern market.
                 </p>
               </div>
             </div>
@@ -555,38 +545,38 @@ const page = () => {
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Improve inventory throughput and management",
+            title: "Personalised user interface in 14 languages",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Gain immediate warehouse insights",
+            title: "Seamless integration with ERP systems for smooth data flow",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:"Seamless integration with ERP systems for smooth data flow",
+            title:"Reduction in space requirements",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:"Efficient handling of B2B and D2C processing in one facility",
+            title:"Gain immediate warehouse insights",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Personalized user interface in 14 languages",
+            title: "Improve inventory throughput and management",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:"Significant transportation costs savings",
+            title:"Efficient handling of B2B and D2C processing in one facility",
 
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Personalized user interface in 14 languages",
+            title: "Significant transportation costs savings ",
 
           },
           
@@ -680,13 +670,13 @@ const page = () => {
           {
             id: 2,
             title:
-              "Auto Sectors Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN Implementation",
+              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN Implementation",
             thumbnail: "2",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
           },
         ]}
       />
@@ -718,10 +708,10 @@ const page = () => {
       {/* Subscription */}
       <div className="">
         <Subscription
-          title="Let Us Transform Your "
-          blue="Vision into Reality"
+          title="Fill in the form to schedule a discussion and strengthen your operations control, starting today!"
+          blue=""
           title2=""
-          desc="Complete the Form to Begin"
+          desc=""
         />
       </div>
 
