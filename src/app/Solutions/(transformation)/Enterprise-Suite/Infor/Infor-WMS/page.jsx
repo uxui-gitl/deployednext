@@ -189,7 +189,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Infor WMS - High-Performance and Scalable Warehouse Management Application for Increased Efficiency with Seamless Integration"
+        title="Leverage High Performance and Scalable Warehouse Management for Increased Efficiency with Infor WMS"
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -224,7 +224,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="It is crucial for worldwide businesses to maintain updated business applications.  Infor WMS, with its enhanced supply chain management features, integrated labor management tools, and increased inventory visibility, ensures streamlined warehouse operations. Infor WMS goes beyond standard solutions, integrating warehouse fulfillment with inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment and personnel."></Abstract>
+      <Abstract abstractdesc="Infor WMS, with its enhanced supply chain management features, integrated labor management tools and increased inventory visibility, ensures streamlined warehouse operations. The application includes inbuilt labor management and 3D visual analysis, offering visibility into inventory, orders, equipment, and personnel. Godrej Infotech’s collaborative approach involves working closely with Key Users throughout the entire process, ensuring that your operational processes receive continuous support. Our team proactively takes ownership of the diverse functionalities within Infor WMS and aim to develop new reports that provide a comprehensive 360° view of your operation's performance."></Abstract>
 
       {/* Challengers Encountered */}
       <>
@@ -379,7 +379,7 @@ const page = () => {
               <div>
 
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
+                  Enhancing the features of business applications, our specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
                 </p>
               </div>
             </div>
