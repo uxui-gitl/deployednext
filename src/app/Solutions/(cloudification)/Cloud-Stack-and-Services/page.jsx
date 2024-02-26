@@ -53,6 +53,7 @@ import StreamlineDelivery from "../../../../../public/icon/cloudStackServices/St
 import Effortlessintegration from "../../../../../public/icon/cloudStackServices/Effortlessintegration.svg";
 import BuiltInreliable from "../../../../../public/icon/cloudStackServices/BuiltInreliable.svg";
 import Abstract from "@/components/Abstract";
+import { NewTestimonial } from "@/components";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -713,7 +714,48 @@ export default function Home() {
         />
 
         {/* Testimonial */}
-        <Testimonial
+
+<NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
+            thumbnail: "1",
+            description:
+              "Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation: "IT Head,  Middle East based Fast Food Chain",
+            thumbnail: "1",
+            description:
+              "Appreciation to Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency and productivity. We look forward to continuing this partnership with Godrej Infotech for future technological needs.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation: "IT Manager, India’s Premier hi-tech Engineering Solutions Provider",
+            thumbnail: "1",
+            description:
+              "Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+
+        {/* <Testimonial
           ribbon="Testimonials"
           title="Delighted Customers share their Experiences"
           desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
@@ -751,7 +793,7 @@ export default function Home() {
               link: "/",
             },
           ]}
-        />
+        /> */}
         {/* Join the Team */}
         <JoinExpTeam />
         <Subscription
