@@ -300,7 +300,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className={`w-full pt-48 pb-12 bg-[url('/bgEcomScreen.png')]`}>
+        <div className={`w-full pt-48 pb-12 bg-[url('/InforWMSKeyHighlights.png')]`}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
             {[
               {
@@ -364,7 +364,7 @@ const page = () => {
 
       {/* Infor WMS Industry solutions */}
       <>
-        <div className={` w-full bg-[#FFF] py-10`}>
+        <div className={`w-full bg-[#FFF] py-10`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -387,10 +387,10 @@ const page = () => {
         </div>
         <div
           className={`w-full pt-48 pb-12 relative bg-cover`}
-          style={{ backgroundImage: `url('/bgEcomScreen.png')` }}
+          style={{ backgroundImage: `url('/industrySolutionsInfor.png')` }}
         >
           {/* Overlay for background image */}
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-y-10 justify-center">
             {[
               {
@@ -515,9 +515,12 @@ const page = () => {
       {/* Supply System */}
       <>
         <div className={` w-full  pt-32`}></div>
+        
         <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
+          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover `}
         >
+          
+          x
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
@@ -532,7 +535,10 @@ const page = () => {
             </div>
             {/* right */}
           </div>
-        </div>
+          </div>
+        
+        {/* Overlay for background image */}
+          
       </>
 
       {/* Benefits */}
