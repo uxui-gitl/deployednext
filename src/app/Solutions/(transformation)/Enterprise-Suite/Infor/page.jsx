@@ -974,7 +974,7 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Deliver Speedy time-to-value for your customers with Industry Specialized Infor Application"
+        title="Embrace the Digital Future of Business Efficiency with Infor"
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -1009,7 +1009,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With over two decades of Infor partnership, including one of the largest implementation in Asia Pacific for India's largest conglomerate and providing support to a renowned Dutch marine leader with a complex structure of 300 + entities, we drive growth-focused business operations."></Abstract>
+      <Abstract abstractdesc="Infor stands as a globally recognized provider of industry-specific business cloud solutions. With a persistent partnership of two decades, our expertise lies in delivering bespoke cloud solutions that strengthen business growth through the application of data science and seamless integration. Further we have successfully implemented and are currently managing Infor solutions for our parent company, the globally renowned Godrej conglomerate, valued at $4.1 billion. W enabling businesses to embark on a transformative journey to the cloud and harness advanced capabilities."></Abstract>
 
       {/* Infor Grid */}
       <>
@@ -1019,12 +1019,10 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Globally Trusted Core Infor expertise
+                 Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  Regardless of whether you are starting your transformation
-                  journey or aiming to gain cloud capabilities, our Infor
-                  expertise helps you progress to a higher level.
+                  No matter the intricacy of your business requirements, our highly skilled team excels at understanding your organization&#39;s pain points and providing effective solutions. 
                 </p>
               </div>
             </div>
@@ -1115,15 +1113,12 @@ const Page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our
-                  ownership and determination to go above and beyond. With rich
-                  experience of technical expertise, we offer services to meet
-                  the sole requirements of your business.
+                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. This steadfast dedication has positioned us as a trusted long-term collaborator in our industry.
                 </p>
               </div>
             </div>
           </div>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-[2rem]">
+          <div className="max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  px-[2rem]">
             <div className="grid grid-cols-1 grid-rows-1 md:grid-rows-3 md:grid-cols-2 grid-flow-row gap-5 md:gap-10 mx-auto ">
               {upgradeCloud.map((item, i) => {
                 return (
