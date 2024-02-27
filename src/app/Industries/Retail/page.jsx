@@ -1084,12 +1084,12 @@ const page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                  <p className="font-medium  leading-[22px] md:w-[90%] ">
                     We deliver high-performing services for a comprehensive
                     suite Microsoft ecosystem, devised to elevate growth and
                     productivity and build stronger stakeholder connections
