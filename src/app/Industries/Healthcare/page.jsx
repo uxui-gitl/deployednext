@@ -153,6 +153,96 @@ const UseCases = [
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
 ];
+const UseCasesSlider = [
+  {
+    _id: 1,
+    title: "Consulting ",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 2,
+    title: "Implementation & Rollout",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 3,
+    title: "Upgrade & Migration",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 4,
+    title: "Development & Customization",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 5,
+    title: "Training Workshop",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 6,
+    title: "Managed Services",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 7,
+    title: "Legacy Modernization",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 8,
+    title: "Bespoke Applications",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    image: "",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 9,
+    title: "License sales and services",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 10,
+    title: "Data Insights",
+    cta: "Know More",
+    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+];
 const AIOfferings = [
   {
     _id: 1,
@@ -408,6 +498,104 @@ const page = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </>
+
+      {/*  Cards  Sliders*/}
+      <>
+        <div className={` w-full bg-[#F2F4F7] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
+              <h3 className="text-4xl leading-[42px] font-bold">
+                The Healthcare Segments We Serve
+              </h3>
+
+              <p className="font-normal leading-[22px]">
+                Extending the capabilities of Infor with tailored functional
+                enhancements for enhancement of business productivity
+              </p>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] flex gap-10  overflow-hidden">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className="flex flex-col sm:flex-row gap-y-5 flex-wrap justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5 "
+            >
+              {UseCasesSlider.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    key={item._id}
+                    className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
+                  >
+                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
+                      <div
+                        className={` overflow-hidden w-[100%] h-auto relative`}
+                      >
+                        <Image
+                          src={
+                            item.thumbnail
+                              ? `/project-${item.thumbnail}.png`
+                              : `/project-placeholder.png`
+                          }
+                          alt={`${item.thumbnail}`}
+                          className="w-full hover:scale-125 transition-transform duration-[0.75s] ease-[ease]"
+                          width="315"
+                          height="200"
+                          // className="w-full h-auto lg:w-315 lg:h-200"
+                        />
+                      </div>
+                      <div className="p-5  mx-2">
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                        <p>{item.desc}</p>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
         </div>
       </>
