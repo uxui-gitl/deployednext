@@ -579,7 +579,7 @@ const Page = () => {
             id: 1,
             title:
               "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
+            thumbnail: "",
 
             description: "Non-government Association of Indian Industries ",
             tags: [""],
@@ -601,7 +601,7 @@ const Page = () => {
             id: 3,
             title:
               "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
+            thumbnail: "",
 
             description: "Coffee Brand Distributor in Egypt and Middle East",
             tags: [""],

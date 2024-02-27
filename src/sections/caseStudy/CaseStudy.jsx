@@ -61,44 +61,16 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                 item: !isHomepage,
               })}
             >
-              {/* <div
-                className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
-              >
-                <Image
-                  src={
-                    cases.thumbnail
-                      ? `/project-${cases.thumbnail}.png`
-                      : `/project-placeholder.png`
-                  }
-                  alt={`${cases.tags}`}
-                  className="w-[100%]"
-                  width="315"
-                  height="200"
-                />
-                <div className="  flex justify-start items-center space-x-2">
-                  {cases.subtitle && (
-                    <h5 className="text-base font-semibold leading-[22px] mt-4">
-                      {cases.subtitle}
-                    </h5>
-                  )}
-
-                  <p
-                    className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
-                      cases.tags == "" ? "hidden" : "block"
-                    } `}
-                  >
-                    {`${cases.tags}`}
-                  </p>
-                </div>
-              </div> */}
               <div
                 className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
               >
                 <Image
                   // src={`/project-${cases.thumbnail}.png`}
-  src={
+                  src={
                     cases.thumbnail
-                      ? `/caseStudies/${cases.thumbnail}.png`
+                      ? cases.thumbnail == "1" || "2" || "3"
+                        ? `/project-placeholder.png`
+                        : `/caseStudies/${cases.thumbnail}.png`
                       : `/project-placeholder.png`
                   }
                   alt={`${cases.tags}`}

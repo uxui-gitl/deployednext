@@ -776,7 +776,7 @@ const Page = () => {
             clientName: "",
             clientDesignation:
               "ERP and Business Intelligence Head, Fast food service chain  ",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
             category: "static",
@@ -787,7 +787,7 @@ const Page = () => {
             clientName: "",
             clientDesignation:
               "Manager IT, India's leading Energy Management System and Solutions provider ",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
@@ -798,7 +798,7 @@ const Page = () => {
             clientName: "",
             clientDesignation:
               "Manager IT, India's leading Energy Management System and Solutions provider ",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
             category: "static",
