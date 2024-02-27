@@ -50,6 +50,85 @@ import OfferingsSlider from "@/components/OfferingsSlider";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import InsightSlider from "@/components/InsightSlider";
+import { NewTestimonial } from "@/components";
+
+import { Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+const UseCases = [
+  {
+    _id: 1,
+    title: "Consulting ",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 2,
+    title: "Implementation & Rollout",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 3,
+    title: "Upgrade & Migration",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 4,
+    title: "Development & Customization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 5,
+    title: "Training Workshop",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 6,
+    title: "Managed Services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 7,
+    title: "Legacy Modernization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 8,
+    title: "Bespoke Applications",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 9,
+    title: "License sales and services",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 10,
+    title: "Data Insights",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+];
 const smartTools = [
   {
     _id: 1,
@@ -387,7 +466,7 @@ const page = () => {
         Pre-configured for Your Success"
         desc="HxGN EAM, formerly known as Infor EAM, presents holistic solutions to address the pressing challenges of asset performance in both the present and the future"
         cta="Let's Connect"
-        width="60%"
+        width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
       {/* section nav */}
@@ -453,13 +532,354 @@ const page = () => {
 
       <>
         <OfferingsSlider
-          arr={OfferingsSliderData}
+          // arr={OfferingsSliderData}
           // header={OfferingsSliderDataHeader}
           title={"Proposed GITL Offerings"}
           alignment={"center"}
+          // alignment="left"
+          expandedDesc={true}
+          arr={[
+            /*One*/
+            {
+              _id: 1,
+              title: "Business Consulting",
+              desc: "",
+              cta: "Explore Service",
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Sales Execution CRM",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Assessment services against cyber security frameworks & standards",
+                  url: "/",
+                },
+              ],
+            },
+            /*End One*/
+            {
+              _id: 2,
+              title: "Technology Solutions - Implementation & Management",
+              desc: "",
+              inline: true,
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
+              cta: "Explore Service",
+              image: "rpa/Cyber-security_Technology-Solutions.jpg",
+              ctaUrl: "/",
+              links: [
+                [
+                  {
+                    title: "Transcription Services",
+                    url: "/",
+                  },
+                  {
+                    title: "Speech recognition",
+                    url: "/",
+                  },
+                  {
+                    title: "Language translation",
+                    url: "/",
+                  },
+                ],
+              ],
+            },
+            {
+              _id: 3,
+              title: "Application Security testing",
+              desc: "",
+              cta: "Explore Service",
+              image: "rpa/Application-Security-Testing.jpg",
+              inline: true,
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Web application Security testing",
+                  url: "/",
+                },
+                {
+                  title: "Mobile App Security testing",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Vulnerability Assessment and Penetration Testing (VAPT)",
+                  url: "/",
+                },
+              ],
+            },
+
+            {
+              _id: 4,
+              title: "vCISO Services",
+              desc: "",
+              cta: "Explore Service",
+              inline: true,
+              image: "rpa/Cyber-security_vCISO.jpg",
+              subArr: true,
+              subArrLinks: [
+                {
+                  _id: 1,
+                  icon: "gear",
+                  title: "Sales Execution CRM",
+                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 2,
+                  icon: "gear",
+                  title: "Sales Cloud",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+                {
+                  _id: 3,
+                  icon: "gear",
+                  title: "Salesforce CPQ (Configure, Price, Quote)",
+                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                  cta: "Know More",
+                  ctaUrl: "/",
+                  list: [],
+                },
+              ],
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Strategy",
+                  url: "/",
+                },
+                {
+                  title: "Risk Management",
+                  url: "/",
+                },
+                {
+                  title: "Regulatory & Standards compliance",
+                  url: "/",
+                },
+                {
+                  title: "Policy & procedures",
+                  url: "/",
+                },
+                {
+                  title: "Security Program",
+                  url: "/",
+                },
+                {
+                  title: "End user Training",
+                  url: "/",
+                },
+              ],
+            },
+          ]}
         />
       </>
 
+      {/* Microsoft Services */}
+      <>
+        <div
+          className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32  `}
+          id="productivity"
+        >
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
+                    Microsoft Services
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] ">
+                    Our comprehensive Microsoft services includes everything
+                    that business requires to effectively digitize business
+                    operations and customer relationship management.
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-screen-xl md:max-w-screen-xl flex flex-col sm:flex-row gap-y-5 justify-center text-left  mb-5 mx-auto  p-5">
+            <Swiper
+              slidesPerView={"auto"}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
+              modules={[Pagination]}
+              className=" flex-grow"
+            >
+              {UseCases.map((item, index) => {
+                return (
+                  <SwiperSlide
+                    style={{ height: "auto" }}
+                    key={item._id}
+                    className="sm:w-full md:w-1/4 bg-white flex flex-col justify-between  mr-4  relative group"
+                  >
+                    <div
+                      key={item._id}
+                      className=" mx-2  w-fit flex flex-col justify-between"
+                    >
+                      <div className="p-5 w-fit ">
+                        <div className="mb-4">
+                          {item.icon !== "" ? (
+                            <Image
+                              src={`/icon/${item.icon}.svg`}
+                              width="48"
+                              height="48"
+                              alt={item.icon}
+                            />
+                          ) : (
+                            <Icon path={mdiDomain} size={3} />
+                          )}
+                        </div>
+                        <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                          {item.title}
+                        </h4>
+                      </div>
+                      <div
+                        className={clsx("w-full bg-[#0745D3] p-5", {
+                          hidden: item.link === "/" || item.link === "",
+                        })}
+                      >
+                        <Link
+                          href={item.link}
+                          className={
+                            "text-white flex transition-all hover:opacity-75"
+                          }
+                        >
+                          {item.cta}
+                          <Icon
+                            path={mdiArrowRight}
+                            style={{ marginLeft: "0.5em" }}
+                            size={1}
+                          />
+                        </Link>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </div>
+      </>
       {/* Benefits */}
       <Benefits
         ribbon="Upgrade to Cloud Benefits "
@@ -517,12 +937,13 @@ const page = () => {
       {/* blog */}
       <BlogSlider arr={blogData} />
 
-      {/* Testimonial */}
-      <Testimonial
-        ribbon="Testimonials "
+      {/* Testimonials */}
+      <NewTestimonial
+        ribbon="Testimonials"
+        ribbonVisible={false}
         title="What Experts Think About Us "
         desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+        the readable content of a page when looking at its layout."
         arr={[
           {
             id: 1,
@@ -531,6 +952,28 @@ const page = () => {
             thumbnail: "1",
             description:
               "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Director of Finance, Wildlife Conservation International NGO based in India",
+            thumbnail: "1",
+            description:
+              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Project Manager, Investment Holding Company in Riyadh & Dubai",
+            thumbnail: "1",
+            description:
+              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
             category: "static",
             link: "/",
           },

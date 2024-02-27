@@ -31,7 +31,7 @@ const OfferingsSlider = ({
             className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2`}
           >
             {/* left */}
-            <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
+            <div className="  flex items-start flex-col justify-between  relative">
               <div className="">
                 {title ? (
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
@@ -47,7 +47,7 @@ const OfferingsSlider = ({
 
             {/* right */}
             <div
-              className={`bg-[#F2F4F7] text-${alignment} flex items-start flex-col justify-between  relative`}
+              className={` text-${alignment} flex items-start flex-col justify-between  relative`}
             >
               <div className="">
                 {desc ? (
@@ -63,7 +63,7 @@ const OfferingsSlider = ({
             className={`text-${alignment} max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1`}
           >
             {/* left */}
-            <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
+            <div className="  flex items-center flex-col justify-between  relative">
               <div className="">
                 {title ? (
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
