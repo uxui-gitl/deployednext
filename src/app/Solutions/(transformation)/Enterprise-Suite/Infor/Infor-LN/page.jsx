@@ -124,61 +124,77 @@ const fadeInAnimationVariant = {
 const ChoiceSlider = [
   {
     _id: 1,
-    imgUrl: "1",
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "AerospaceAndDefense",
+    title: "Aerospace and Defense",
+    desc: "",
     url: "/",
   },
   {
     _id: 2,
-    imgUrl: "2",
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "IndustrialManufacturing",
+    title: "Industrial Manufacturing",
+    desc: "",
     url: "/",
   },
   {
     _id: 3,
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "3",
+    title: "Automotive",
+    desc: "",
+    imgUrl: "Automotive",
     url: "/",
   },
   {
     _id: 4,
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "4",
+    title: "Construction and Engineering",
+    desc: "",
+    imgUrl: "ConstructionEngineering",
     url: "/",
   },
 ];
 const expandedCardSlider = [
   {
     _id: 1,
-    imgUrl: "1",
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "DataConversionUtilityTool",
+    title: "Data Conversion Utility Tool",
+    desc: "",
     url: "/",
+    list: [
+      "Business Need - Data conversion from legacy systems are complex due to change in table structure and new requirements for maintaining same master data in upgraded systems.",
+      "Solution - This utility tool enables conversion and relationship between legacy and new system’s data structure in simpler way and with required checks.",
+    ],
   },
   {
     _id: 2,
-    imgUrl: "2",
-    title: "Valve Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
+    imgUrl: "PreBuiltBusinessReporting",
+    title: "Pre-built business reporting",
+    desc: "",
     url: "/",
+     list: [
+      "Business need - Time and efforts required to work on data analysis",
+      "Solution - Add on solution that generates pre-configured reports to analyse business data and make insightful decisions on day-to-day basis.",
+    ],
   },
   {
     _id: 3,
-    title: "Valve 2 Management Solutions",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "1",
+    title: "Infor Cloud Migration Planner",
+    desc: "",
+    imgUrl: "InforCloudMigrationPlanner",
     url: "/",
+    list: [
+      "Business Need - Complicated data migration from legacy systems that needs strategy and involves factors like validation, obsolete values, structural changes and application compatibility.",
+      "Solution - Coded standard practices offering consistent results in every run. This tool reduces time and brings better quality results in the data migration process.",
+    ],
   },
   {
     _id: 4,
-    title: "Dealer Management",
-    desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-    imgUrl: "2",
+    title: "Business Process Mapping and Customization.",
+    desc: "",
+    imgUrl: "BusinessProcessMapping",
     url: "/",
+     list: [
+      "Business need  Industry standard practices need to be configured from scratch.",
+      "Solution - Tool with industry standard practices and experienced based add-ons that meets customer requirements with less efforts and time",
+    ],
   },
 ];
 const lists = [
@@ -258,129 +274,110 @@ const upgradeCloud = [
 const capabilities = [
   {
     _id: 1,
-    icon: "dummy",
+    icon: "MasterComplexity",
     title: "Master Complexity",
     list: [
       "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Promote Manufacturing excellence",
+      "Exceptional customer experience fulfillment",
+      "Efficiently manage people, technology, activities, information and resources",
+      
     ],
   },
   {
     _id: 2,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "AgileSupplyChain",
+    title: "Agile supply chain",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Segment the supply base",
+      "Measure and improve supplier performance",
+      "Minimize supply chain risk.",
+      "Multimodal manufacturing capabilities",
+      "Mass-customization capabilities",
+      "Direct management of subcontracted production",
     ],
   },
   {
     _id: 3,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "ServiceLifecycleManagement",
+    title: "Service lifecycle management",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Service planning and scheduling",
+      "Warranty and contract management",
+      "Parts and inventory control",
+      "Field service support",
+      "Analytics for performance analysis",
     ],
   },
   {
     _id: 4,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "QualityManagement",
+    title: "Quality management",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Minimize product recalls and warranty claims",
+      "Ensure business requirements",
+      "Implement quality control",
+      "Reduce rework and scrap costs",
+      
     ],
   },
   {
     _id: 5,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "ProjectLifecycleManagement",
+    title: "Project lifecycle management",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Project planning, tracking and reporting",
+      "Resource management",
+      "Cost management",
+      "Risk management",
+      
     ],
   },
   {
     _id: 6,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "IntegrationWorkflow",
+    title: "Integration and workflow",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Infor ION enabling seamless integration",
+      "Integrate and manage data workflow",
+      "Manage data workflow",
+      "Receive tasks and alerts across organization",
+      "Mobile device access",
     ],
   },
   {
     _id: 7,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "BusinessIntelligenceInforBirst",
+    title: "Business intelligence with Infor Birst",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-    ],
-  },
-  {
-    _id: 7,
-    icon: "dummy",
-    title: "Master Complexity",
-    list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Integrated BI platform",
+      "Financial and operational analytics",
+      "Infor LN Analytics synergy",
+      "Key performance indicators (KPIs) delivery",
+      "Predictive analytics",
     ],
   },
   {
     _id: 8,
-    icon: "dummy",
-    title: "Master Complexity",
+    icon: "ProductLifecycleManagement",
+    title: "Product Lifecycle Management",
     list: [
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
-      "Better decision taking ability",
+      "Integrated product lifecycle management (PLM)",
+      "Seamless workflows between engineering and manufacturing",
+      "Impact analysis for engineering changes",
+      "Integration with leading CAD solutions",
+      "Collaboration between engineering and design teams",
+      
     ],
   },
+  
 ];
 const page = () => {
   return (
     <>
       <EntIntro
-        title="A Global ERP Cloud and On-Premises
-        Solution for complex and large businesses"
-        desc="Our expertise is refined and matured over years of close engagement with multiple enterprises, thus ensures that our customers derive maximum value from their Infor LN ERP. We offer end-to-end services across the application lifecycle (Plan-Build-Run) that enable us to design and deliver the right solutions "
+        title="Infor LN - A Global ERP Cloud and On-Premises Solution for complex and large businesses"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -413,7 +410,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
+      <Abstract abstractdesc="Our expertise is refined and matured over years of close engagement with multiple enterprises, thus ensuring that our customers derive maximum value from their Infor LN ERP. We offer end-to-end services across the application lifecycle (Plan-Build-Run) that enable us to design and deliver the right solutions to our customers on time and at the right cost. Our global Infor LN workforce is proactive to empower our customers with the right solutions to drive business value. "></Abstract>
 
       {/* Key Capabilites */}
       <>
@@ -431,12 +428,10 @@ const page = () => {
                       </h4>
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                          What all we are Capable of
+                          Driving Operational Brilliance
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          We offer strategic insights, specialized knowledge and
-                          experience in helping businesses adapt, grow and
-                          thrive.
+                          Infor LN stands out as a game-changer, renowned for its robust capabilities, making it the top choice among leading enterprises globally.
                         </p>
                       </div>
                     </div>
@@ -452,7 +447,7 @@ const page = () => {
           <div className="text-left  mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <div className="text-left p-5  ">
-                <div className="flex justify-center flex-row items-start flex-wrap gap-4">
+                <div className="flex justify-left flex-row items-start flex-wrap gap-4">
                   {capabilities.map((item) => (
                     <div key={item._id} className="w-full sm:w-[32%] mb-8">
                       <div>
@@ -475,7 +470,7 @@ const page = () => {
                           {item.list.map((i, index) => (
                             <li
                               key={index}
-                              className="text-[16px] leading-[22px] font-normal text-[#475467]"
+                              className="text-[16px] leading-[22px] font-normal text-[#475467] p-2 ml-5 list-disc"
                             >
                               {i}
                             </li>
@@ -499,14 +494,12 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Expertise
+                  Industries Served
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector
+                  Understanding unique demands of each sector and capitalizing Infor LN capabilities, we equip businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -553,55 +546,39 @@ const page = () => {
       {/* Benefits */}
 
       <Benefits
-        ribbon="Upgrade to Cloud Benefits "
+        ribbon="Benefits of Infor LN"
         ribbonTxtWhite="true"
-        title="Experience business performance surge with cloud"
+        title="Discover substantial benefits that Infor LN brings to the table, helping in competitive business landscape."
         desc=""
         arr={[
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Minimize operational expenses of IT portfolio",
+            title: "Access advanced global financials, supply chain, manufacturing, project and service lifecycle management features.",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Enable user concurrency to support large-scale workloads",
+            title: "Empower the entire organization with modern user experience.",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
             title:
-              "Enhanced collaboration through cross-device accessibility to information",
+              "Acquire a top-notch global ERP solution that offers agility and quick value delivery.",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
             title:
-              "Advanced data management solutions, modernized process and cloud services",
+              "Guarantee optimal industry business processes following global best practices.",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Aptitude to respond to shifting business requirements",
+            title: "Create transparent end-to-end processes encompassing sales, planning, production, procurement, financial management, inventory, logistics and after-sales service.",
           },
-          {
-            _id: 6,
-            icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:
-              "Integrate Big Data Analytics into business processes for data-driven decision-making",
-          },
-          {
-            _id: 7,
-            icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Securely stores confidential business information",
-          },
-          {
-            _id: 8,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "Enhance system performance and user experience by scaling up the system",
-          },
+          
         ]}
       ></Benefits>
 
@@ -614,19 +591,17 @@ const page = () => {
                 <div className={`w-full bg-[#F2F4F7] text-left`}>
                   <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5  ">
                     <div className="bg-[#F2F4F7] text-left">
-                      <h4
+                      {/* <h4
                         className={`font-medium text-[#0745D3] uppercase ribbon`}
                       >
                         Services for successful results
-                      </h4>
+                      </h4> */}
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                          Accomplishing Your Goals at Every stage
+                          Add On Infor LN Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Enabling you to thrive in digital era, we prepare your
-                          organisation with scaling growth for sustainable
-                          tomorrow
+                          Our Infor LN Solutions have been meticulously developed, taking into account the insights of industry expertise.
                         </p>
                       </div>
                     </div>
@@ -672,6 +647,20 @@ const page = () => {
                             <p className="text-white leading-[20px] mb-5">
                               {item.desc}
                             </p>
+                            {item.list && (
+                              <>
+                                <ul className=" list-disc pl-4">
+                                  {item.list.map((i, index) => (
+                                    <li
+                                      className="text-white leading-[20px]"
+                                      key={index}
+                                    >
+                                      {i}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
                           </div>
                         </div>
                       </SwiperSlide>
@@ -686,27 +675,33 @@ const page = () => {
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Spend LESS, GROW MORE"
-        title="Why Godrej Infotech ?"
-        desc="Embark on cloud upgradation journey by harnessing our credible
-        assessment process, strategic resources and fluent data
-        migration practice to minimise your business risk, time to
-        market and cost. Our time-tested delivery framework enables
-        businesses"
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech"
+        desc="Our substantial experience and expertise in the implementation of Infor LN solution, ensuring a business system that impeccably aligns with the unique requirements of your organization."
         arr={[
           {
             _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
+            desc: "Serving one of the Asia's largest Infor LN user bases",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            desc: "Our Project managers take complete responsibility for delivering quality on time.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
+            icon: "",
+          },
+            {
+            _id: 4,
+            desc: "Streamlined processes and enhanced efficiency offering significant advantages, especially for multi-site manufacturing enterprises.",
+            icon: "",
+          },
+           {
+            _id: 5,
+            desc: "Enable businesses to make data-driven decisions, stay ahead of the competition, reduce costs and deliver top notch products and services to customers.",
             icon: "",
           },
         ]}
@@ -715,10 +710,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Let Us Transform Your "
-        blue="Vision into Reality"
+        title="Ready to Accelerate"
+        blue="Your Business Progression?"
         title2=""
-        desc="Complete the Form to Begin"
+        desc="Share your details and let our Infor LN experts accelerates your path to business growth!"
       />
       <InfotechWeeklyAlt />
     </>
