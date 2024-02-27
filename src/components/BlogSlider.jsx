@@ -60,7 +60,11 @@ const BlogSlider = ({ arr }) => {
                   </div>
                   <div>
                     <Image
-                      src={blogpost}
+                      src={
+                        arr.imgUrl && arr.imgUrl !== ""
+                          ? `/public/blogsImg/${arr.imgUrl}.png`
+                          : blogpost
+                      }
                       className="sm:mb-0 mb-8"
                       alt="blog post"
                     />
