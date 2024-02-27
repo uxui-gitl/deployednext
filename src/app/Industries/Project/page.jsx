@@ -797,7 +797,7 @@ const page = () => {
             id: 1,
             title:
               "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
-            thumbnail: "1",
+            thumbnail: "",
             description: "",
             tags: ["Automation"],
             cta: "Read article",
@@ -807,7 +807,7 @@ const page = () => {
             id: 2,
             title:
               "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
-            thumbnail: "2",
+            thumbnail: "",
             description: "",
             tags: ["Cloud"],
             cta: "Read article",
@@ -817,7 +817,7 @@ const page = () => {
             id: 3,
             title:
               "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
-            thumbnail: "3",
+            thumbnail: "",
             description: "",
             tags: ["Transformation"],
             cta: "Read article",
@@ -872,7 +872,7 @@ const page = () => {
             id: 1,
             clientName: "",
             clientDesignation: "IT Manager",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
             category: "static",
@@ -883,7 +883,7 @@ const page = () => {
             clientName: "",
             clientDesignation:
               "Director of Finance, Wildlife Conservation International NGO based in India",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
             category: "static",
@@ -894,7 +894,7 @@ const page = () => {
             clientName: "",
             clientDesignation:
               "Project Manager, Investment Holding Company in Riyadh & Dubai",
-            thumbnail: "1",
+            thumbnail: "",
             description:
               "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
             category: "static",

@@ -715,7 +715,7 @@ const Page = () => {
               id: 1,
               title:
                 "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-              thumbnail: "1",
+              thumbnail: "",
 
               description: "Non-government Association of Indian Industries ",
               tags: [""],
@@ -726,7 +726,7 @@ const Page = () => {
               id: 2,
               title:
                 "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-              thumbnail: "2",
+              thumbnail: "",
 
               description:
                 " Middle East-based Electrical Products Manufacturer ",
@@ -738,7 +738,7 @@ const Page = () => {
               id: 3,
               title:
                 "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-              thumbnail: "3",
+              thumbnail: "",
 
               description: "Coffee Brand Distributor in Egypt and Middle East",
               tags: [""],

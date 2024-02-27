@@ -728,7 +728,7 @@ const page = () => {
             id: 1,
             title:
               "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
-            thumbnail: "1",
+            thumbnail: "",
 
             description: "",
             tags: [""],
@@ -739,7 +739,7 @@ const page = () => {
             id: 2,
             title:
               "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "2",
+            thumbnail: "",
 
             description: "",
             tags: [""],
@@ -750,7 +750,7 @@ const page = () => {
             id: 3,
             title:
               "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "3",
+            thumbnail: "",
 
             description: "",
             tags: [""],

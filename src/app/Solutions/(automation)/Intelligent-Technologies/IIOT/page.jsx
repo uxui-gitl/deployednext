@@ -569,7 +569,7 @@ const Page = () => {
             id: 1,
             title:
               "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "1",
+            thumbnail: "",
             description: "",
             tags: [""],
             cta: "Know More",
@@ -579,7 +579,7 @@ const Page = () => {
             id: 2,
             title:
               "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "1",
+            thumbnail: "",
             description: "",
             tags: [""],
             cta: "Know More",
@@ -589,7 +589,7 @@ const Page = () => {
             id: 3,
             title:
               "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "1",
+            thumbnail: "",
             description: "",
             tags: [""],
             cta: "Know More",

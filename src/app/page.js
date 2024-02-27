@@ -24,6 +24,7 @@ import { projects } from "../assets/data";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import clsx from "clsx";
+import { NewTestimonial } from "@/components";
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -101,7 +102,9 @@ export default function Home() {
               <div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Explore the boundless possibilities that our industry-focused expertise and reliable partnerships bring to your business landscape through service offerings.
+                    Explore the boundless possibilities that our
+                    industry-focused expertise and reliable partnerships bring
+                    to your business landscape through service offerings.
                   </p>
                 </div>
               </div>
@@ -292,7 +295,7 @@ export default function Home() {
               id: 1,
               title:
                 "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
-              thumbnail: "1",
+              thumbnail: "",
               description: "",
               tags: ["Automation"],
               cta: "Read more",
@@ -302,7 +305,7 @@ export default function Home() {
               id: 2,
               title:
                 "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
-              thumbnail: "2",
+              thumbnail: "",
               description: "",
               tags: ["Cloud"],
               cta: "Read more",
@@ -312,7 +315,7 @@ export default function Home() {
               id: 3,
               title:
                 "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
-              thumbnail: "3",
+              thumbnail: "",
               description: "",
               tags: ["Transformation"],
               cta: "Read more",
@@ -320,18 +323,21 @@ export default function Home() {
             },
           ]}
         />
-        <Testimonial
-          ribbon="Testimonials "
+
+        {/* Testimonials */}
+        <NewTestimonial
+          ribbon="Testimonials"
+          ribbonVisible={false}
           title="What Experts Think About Us "
           desc="It is a long established fact that a reader will be distracted by
-          the readable content of a page when looking at its layout."
+        the readable content of a page when looking at its layout."
           arr={[
             {
               id: 1,
               clientName: "",
               clientDesignation:
                 "IT Director, Cooling Facility Management Company",
-              thumbnail: "1",
+              thumbnail: "",
               description:
                 "GITL helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
               category: "static",
@@ -342,7 +348,7 @@ export default function Home() {
               clientName: "",
               clientDesignation:
                 "IT Director, Saudi Arabia's Leading Engineering & Construction Service Provider ",
-              thumbnail: "2",
+              thumbnail: "1",
               description:
                 "GITL upgraded Dynamics AX to Business Central on SAAS - and integrated Power BI seamlessly. The upgradation to an all-inclusive solution significantly helped us in taking control over our finance and budgeting processes.",
               category: "static",
@@ -353,7 +359,7 @@ export default function Home() {
               clientName: "",
               clientDesignation:
                 "Operations Head, India's Security Solutions Company",
-              thumbnail: "3",
+              thumbnail: "1",
               description:
                 "Salesforce Sales Cloud implementation connected out complete lead-to-order cycle in customers' journey. GITL team proved their Infor LN expertise  and project management abilities by achieving highly challenging deadline.",
               category: "static",
