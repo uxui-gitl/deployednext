@@ -54,80 +54,40 @@ import { NewTestimonial } from "@/components";
 
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Abstract from "@/components/Abstract";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Consulting",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Implementation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Upgrade & Migration",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 4,
-    title: "Development & Customization",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 5,
-    title: "Training Workshop",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 6,
     title: "Managed Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
-    _id: 7,
-    title: "Legacy Modernization",
+    _id: 4,
+    title: "Migration and Upgrade",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 8,
-    title: "Bespoke Applications",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const smartTools = [
   {
@@ -351,22 +311,14 @@ const OfferingsSliderData = [
 const blogData = [
   {
     _id: 1,
-    ribbon: "insights",
-    title: "Voice Assistant Challenges in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    ribbon: "Blog",
+    title: "Role of Infor OS in Powering Infor Cloud Suite User Experiences ",
+    desc: "",
     cta: "Know More",
     link: "/",
-    imgUrl: "",
+    imgUrl: "RoleInforOSBlog",
   },
-  {
-    _id: 2,
-    ribbon: "insights",
-    title: "Hyper automation trends in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
+  
 ];
 
 const fadeInAnimationVariant = {
@@ -461,10 +413,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Make your business smart with seamless
-        Infor Cloud Suite implementation -
-        Pre-configured for Your Success"
-        desc="HxGN EAM, formerly known as Infor EAM, presents holistic solutions to address the pressing challenges of asset performance in both the present and the future"
+        title="Make your business smart with seamless Infor Cloud Suite implementation - Pre-configured for Your Success"
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -497,35 +447,9 @@ const page = () => {
         />
       </>
 
-      {/* Overview */}
-      <>
-        <div className={` w-full bg-white py-5`}>
-          <>
-            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-              <div className=" mt-[5em] mb-[2rem]">
-                <div className="flex flex-col gap-x-10">
-                  <h4
-                    className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
-                  >
-                    Cloudsuite
-                  </h4>
-                  <h3 className="text-4xl leading-[42px] font-bold">
-                    Overview
-                  </h3>
-                  <p>
-                    Our commitment is to make your transformation journey as
-                    smooth as possible, guaranteeing that you attain your
-                    ambitious results. That&apos;s why we build a holistic
-                    viewpoint on your implementation and rollout project and
-                    assure that your project is on time, exceeding your
-                    expectations
-                  </p>
-                </div>
-              </div>
-            </div>
-          </>
-        </div>
-      </>
+       {/* Overview  */}
+      <Abstract abstractdesc="Infor Cloud Suite ERP products have been recognized as Leaders in the 2022 Gartner Magic Quadrant for Cloud ERP, with a specific focus on serving product-centric enterprises. This acknowledgment underscores their exceptional capabilities, solidifying their status as an industry-leading solution. At Godrej Infotech, we understand daunting complexities of businesses and have reliable experience in implementing Infor Cloud Suite solutions along with continuous support and optimization. As your trusted Infor partner we collaborate with you at every step of your transformation journey."></Abstract>
+
 
       {/* slider */}
       {/*  Card Slider Offerings */}
@@ -542,230 +466,153 @@ const page = () => {
             /*One*/
             {
               _id: 1,
-              title: "Business Consulting",
+              title: "Infor CloudSuite Industrial Enterprise",
               desc: "",
               cta: "Explore Service",
-              subArr: true,
+              subArr: false,
               subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
+                
               ],
               image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
               inline: true,
               ctaUrl: "/",
               links: [
                 {
-                  title: "Sales Execution CRM",
+                  title: "Financials",
+                  url: "/",
+                },{
+                  title: "Supply Chain Management ",
+                  url: "/",
+                },{
+                  title: "Manufacturing",
+                  url: "/",
+                },{
+                  title: "Human Capital Management (HCM) ",
                   url: "/",
                 },
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
+                    "Customer Relationship Management (CRM) ",
+                  url: "/",
+                },
+                 {
+                  title:
+                    "Enterprise Asset Management (EAM)",
+                  url: "/",
+                },
+                 {
+                  title:
+                    "Quality Management",
                   url: "/",
                 },
               ],
             },
             /*End One*/
-            {
+             {
               _id: 2,
-              title: "Technology Solutions - Implementation & Management",
+              title: "Infor CloudSuite Automotive (Infor LN)",
               desc: "",
-              inline: true,
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
               cta: "Explore Service",
-              image: "rpa/Cyber-security_Technology-Solutions.jpg",
+              subArr: false,
+              subArrLinks: [
+                
+              ],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
               ctaUrl: "/",
               links: [
-                [
-                  {
-                    title: "Transcription Services",
-                    url: "/",
-                  },
-                  {
-                    title: "Speech recognition",
-                    url: "/",
-                  },
-                  {
-                    title: "Language translation",
-                    url: "/",
-                  },
-                ],
+                {
+                  title: "Quality and production",
+                  url: "/",
+                },{
+                  title: "Supply chain visibility",
+                  url: "/",
+                },{
+                  title: "Planning and inventory",
+                  url: "/",
+                },{
+                  title: "Customer relationship management",
+                  url: "/",
+                },
+                
               ],
             },
-            {
+             {
               _id: 3,
-              title: "Application Security testing",
+              title: "Infor CloudSuite Aerospace & Defense (Infor LN) ",
               desc: "",
               cta: "Explore Service",
-              image: "rpa/Application-Security-Testing.jpg",
-              inline: true,
-              subArr: true,
+              subArr: false,
               subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
+                
               ],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
               ctaUrl: "/",
               links: [
                 {
-                  title: "Web application Security testing",
+                  title: "Planning and production",
+                  url: "/",
+                },{
+                  title: "Contract Management",
+                  url: "/",
+                },{
+                  title: "Regulations & Compliance",
+                  url: "/",
+                },{
+                  title: "Supply chain visibility ",
+                  url: "/",
+                },
+                
+              ],
+            },
+
+         {
+              _id: 4,
+              title: "Infor CS Engineering and Construction",
+              desc: "",
+              cta: "Explore Service",
+              subArr: false,
+              subArrLinks: [
+                
+              ],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Project Management",
+                  url: "/",
+                },{
+                  title: "Document Management",
+                  url: "/",
+                },{
+                  title: "Financial Management",
                   url: "/",
                 },
                 {
-                  title: "Mobile App Security testing",
+                  title: "Procurement and Supply Chain ",
                   url: "/",
                 },
                 {
-                  title:
-                    "Vulnerability Assessment and Penetration Testing (VAPT)",
+                  title: "Contract Management",
+                  url: "/",
+                },
+                {
+                  title: "Estimating and Bidding",
+                  url: "/",
+                },
+                {
+                  title: "Quality and Safety Management",
+                  url: "/",
+                },
+                {
+                  title: "Equipment Management",
                   url: "/",
                 },
               ],
             },
 
-            {
-              _id: 4,
-              title: "vCISO Services",
-              desc: "",
-              cta: "Explore Service",
-              inline: true,
-              image: "rpa/Cyber-security_vCISO.jpg",
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Strategy",
-                  url: "/",
-                },
-                {
-                  title: "Risk Management",
-                  url: "/",
-                },
-                {
-                  title: "Regulatory & Standards compliance",
-                  url: "/",
-                },
-                {
-                  title: "Policy & procedures",
-                  url: "/",
-                },
-                {
-                  title: "Security Program",
-                  url: "/",
-                },
-                {
-                  title: "End user Training",
-                  url: "/",
-                },
-              ],
-            },
           ]}
         />
       </>
@@ -782,14 +629,12 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
+                    Infor CloudSuite Services 
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our comprehensive Microsoft services includes everything
-                    that business requires to effectively digitize business
-                    operations and customer relationship management.
+                    Our services offer strategic business insights, refined through years of experience in understanding business processes, along with Infor Cloud Suite technical expertise.
                   </p>
                 </div>
               </div>
@@ -882,55 +727,45 @@ const page = () => {
       </>
       {/* Benefits */}
       <Benefits
-        ribbon="Upgrade to Cloud Benefits "
+        ribbon="Infor CloudSuite Benefits"
         ribbonTxtWhite="true"
-        title="Experience business performance surge with cloud"
+        title="Extensible and integrable Cloud Suites through Infor OS."
         desc=""
         arr={[
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Minimize operational expenses of IT portfolio",
+            title: "Extensible and integrable Cloud Suites through Infor OS.",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Enable user concurrency to support large-scale workloads",
+            title: "Accommodates multiple, intricate manufacturing scenarios.",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
             title:
-              "Enhanced collaboration through cross-device accessibility to information",
+              "Industry-tailored features with a well-coordinated cloud environment.",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
             title:
-              "Advanced data management solutions, modernized process and cloud services",
+              "Cloud-based applications less susceptible to downtime, ensuring business continuity.",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Aptitude to respond to shifting business requirements",
+            title: "Tailored solutions for various industries, addressing specific needs and challenges.",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
             title:
-              "Integrate Big Data Analytics into business processes for data-driven decision-making",
+              "Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.",
           },
-          {
-            _id: 7,
-            icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Securely stores confidential business information",
-          },
-          {
-            _id: 8,
-            icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "Enhance system performance and user experience by scaling up the system",
-          },
+          
         ]}
       ></Benefits>
 
@@ -941,17 +776,16 @@ const page = () => {
       <NewTestimonial
         ribbon="Testimonials"
         ribbonVisible={false}
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-        the readable content of a page when looking at its layout."
+        title="Delighted Customers share their Experiences"
+        desc="We're your trusted Infor CloudSuite partner and increasing the growth of your business efficiency is our utmost priority"
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation: "Managing Director",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "We would like to put on record the successful completion of our INFOR ERP LN implementation project by Godrej Infotech at our plant in Ahmedabad. We are glad to inform that the project has been completed as per our requirement.",
             category: "static",
             link: "/",
           },
@@ -959,34 +793,23 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Director of Finance, Wildlife Conservation International NGO based in India",
+              "Manager Sales and Support",
             thumbnail: "1",
             description:
-              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+              "We highly appreciate the service and support provided by your team for our Infor ERP LN Annual Maintenance. Over the last 2 years we have had a very good working relation with your team and have received timely inputs and guidance across the modules that have been implemented on the system. We look forward to a mutually beneficial relationship in the future as well. ",
             category: "static",
             link: "/",
           },
-          {
-            id: 3,
-            clientName: "",
-            clientDesignation:
-              "Project Manager, Investment Holding Company in Riyadh & Dubai",
-            thumbnail: "1",
-            description:
-              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
-            category: "static",
-            link: "/",
-          },
+          
         ]}
       />
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
+        title="Share your details to gain a competitive threshold with Infor CloudSuite solution."
         blue=" "
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc=""
       />
 
       {/* Infotehc weekly */}
