@@ -51,6 +51,7 @@ import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
 import { NewTestimonial } from "@/components";
+import React from "react";
 const smartTools = [
   {
     _id: 1,
@@ -275,92 +276,6 @@ const page = () => {
           </div>
         </div>
       </>
-
-      {/* Infor WMS Key Highlights */}
-      <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor WMS Key Highlights
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={`w-full pt-48 pb-12 bg-[url('/InforWMSKeyHighlights.png')]`}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
-            {[
-              {
-                _id: 0,
-                title: "3D Visualization",
-                desc: "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization.",
-                cta: "",
-                link: "",
-              },
-              {
-                _id: 1,
-                title: "Advanced Warehousing Processes",
-                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
-                cta: "",
-                link: "",
-              },
-              {
-                _id: 2,
-                title: "3PL Billing",
-                desc: "Infor WMS integrates advanced activity-based features, enabling precise customer-level costing, billing, and invoicing. It supports multi-warehouse and multi-owner operations with tailored workflows and full traceability.",
-                cta: "",
-                link: "",
-              },
-              {
-                _id: 3,
-                title: "Labor Management & Configurability",
-                desc: "The user experience is tailored for productivity, enabling you to measure, assess, and optimize DC activities, identify bottlenecks, and maintain resource balance with engineered labor standards and performance metrics.",
-                cta: "",
-                link: "",
-              },
-            ].map((item, index) => {
-              return (
-                <div key={index} className="mx-5 bg-white ">
-                  <div className="p-5 w-fit ">
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                    <p className="text-[14px] leading-[22px] text-[#475467]">
-                      {item.desc}
-                    </p>
-                  </div>
-                  <div className="hidden w-full bg-[#0745D3] p-5">
-                    <Link
-                      href={item.link}
-                      className="text-white  flex transition-all hover:opacity-75  "
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
       {/* Infor WMS Industry solutions */}
       <>
         <div className={`w-full bg-[#FFF] py-10`}>
@@ -377,7 +292,10 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our specialized solutions intend to add value to business with handy support, streamlined processes and intense industry expertise.
+                  Enhancing the features of business applications, our
+                  specialized solutions intend to add value to business with
+                  handy support, streamlined processes and intense industry
+                  expertise.
                 </p>
               </div>
             </div>
@@ -510,14 +428,98 @@ const page = () => {
         </div>
       </>
 
+      {/* Infor WMS Key Highlights */}
+      <>
+        <div className={` w-full bg-[#FFF] pt-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
+                  Infor WMS Key Highlights
+                </h3>
+              </div>
+            </div>
+            {/* right */}
+            <div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Extending the capabilities of Infor with tailored functional
+                  enhancements for enhancement of business productivity
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={`w-full pt-48 pb-12 bg-[url('/InforWMSKeyHighlights.png')]`}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
+            {[
+              {
+                _id: 0,
+                title: "3D Visualization",
+                desc: "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization.",
+                cta: "",
+                link: "",
+              },
+              {
+                _id: 1,
+                title: "Advanced Warehousing Processes",
+                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
+                cta: "",
+                link: "",
+              },
+              {
+                _id: 2,
+                title: "3PL Billing",
+                desc: "Infor WMS integrates advanced activity-based features, enabling precise customer-level costing, billing, and invoicing. It supports multi-warehouse and multi-owner operations with tailored workflows and full traceability.",
+                cta: "",
+                link: "",
+              },
+              {
+                _id: 3,
+                title: "Labor Management & Configurability",
+                desc: "The user experience is tailored for productivity, enabling you to measure, assess, and optimize DC activities, identify bottlenecks, and maintain resource balance with engineered labor standards and performance metrics.",
+                cta: "",
+                link: "",
+              },
+            ].map((item, index) => {
+              return (
+                <div key={index} className="mx-5 bg-white ">
+                  <div className="p-5 w-fit ">
+                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                    <p className="text-[14px] leading-[22px] text-[#475467]">
+                      {item.desc}
+                    </p>
+                  </div>
+                  <div className="hidden w-full bg-[#0745D3] p-5">
+                    <Link
+                      href={item.link}
+                      className="text-white  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
+
       {/* Supply System */}
       <>
-        <div className={` w-full  pt-32`}></div>
-        
         <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover `}
+          className={`w-full hidden pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-cover `}
         >
-          
           x
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
@@ -527,16 +529,19 @@ const page = () => {
                   Infor WMS - Intelligent Supply System
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor WMS is a cloud-based Tier-1 solution, reshaping warehouse operations through advanced functionalities ensuring efficient fulfillment in a dynamic business landscape. With Infor WMS, enterprises gain a competitive edge, ready to tackle the ever-evolving demands of the modern market.
+                  Infor WMS is a cloud-based Tier-1 solution, reshaping
+                  warehouse operations through advanced functionalities ensuring
+                  efficient fulfillment in a dynamic business landscape. With
+                  Infor WMS, enterprises gain a competitive edge, ready to
+                  tackle the ever-evolving demands of the modern market.
                 </p>
               </div>
             </div>
             {/* right */}
           </div>
-          </div>
-        
+        </div>
+
         {/* Overlay for background image */}
-          
       </>
 
       {/* Benefits */}
@@ -559,12 +564,12 @@ const page = () => {
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:"Reduction in space requirements",
+            title: "Reduction in space requirements",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:"Gain immediate warehouse insights",
+            title: "Gain immediate warehouse insights",
           },
           {
             _id: 5,
@@ -574,14 +579,13 @@ const page = () => {
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:"Efficient handling of B2B and D2C processing in one facility",
-
+            title:
+              "Efficient handling of B2B and D2C processing in one facility",
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
             title: "Significant transportation costs savings ",
-
           },
         ]}
       ></Benefits>
@@ -624,6 +628,16 @@ const page = () => {
           },
           {
             id: 2,
+            clientName: "",
+            clientDesignation: "Manager Sales and Support",
+            thumbnail: "1",
+            description:
+              "Leading Manufacturer of Antenna System Technology Implements Infor ERP LN. We have received timely inputs and guidance across the modules that have been implemented on the system.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
             clientName: "",
             clientDesignation: "Manager Sales and Support",
             thumbnail: "1",
