@@ -313,7 +313,7 @@ const blogData = [
     _id: 1,
     ribbon: "Blog",
     title: "Role of Infor OS in Powering Infor Cloud Suite User Experiences ",
-    desc: "",
+    desc: "This article talks about the pivotal role of Infor OS in optimizing user experiences within Infor CloudSuite, exploring its significance and diverse applications.",
     cta: "Know More",
     link: "/",
     imgUrl: "RoleInforOSBlog",
