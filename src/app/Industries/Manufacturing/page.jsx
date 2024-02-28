@@ -931,6 +931,139 @@ const page = () => {
       </div>
 
       {/* Our Capabilities */}
+      <>
+        <div className={` w-full bg-[#FFF] py-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="text-center">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Our Capabilities
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Holistic and future- ready solutions to re-engineer your
+                  business with our proven implementation methodologies for
+                  maximum Return on Investment (RoI)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-3    ">
+            {[
+              {
+                _id: 1,
+                title: "Master Complexity",
+                desc: "",
+                cta: "Know More",
+                icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                link: "/",
+                list: [
+                  "Better decision taking ability",
+                  "Promote Manufacturing excellence",
+                  "Exceptional customer experience fulfillment",
+                  "Efficiently manage people, technology, activities, information and resources",
+                ],
+              },
+              {
+                _id: 2,
+                title: "Master Complexity",
+                desc: "",
+                cta: "Know More",
+                icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                link: "/",
+                list: [
+                  "Better decision taking ability",
+                  "Promote Manufacturing excellence",
+                  "Exceptional customer experience fulfillment",
+                  "Efficiently manage people, technology, activities, information and resources",
+                ],
+              },
+              {
+                _id: 3,
+                title: "Master Complexity",
+                desc: "",
+                cta: "Know More",
+                icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                link: "/",
+                list: [
+                  "Better decision taking ability",
+                  "Promote Manufacturing excellence",
+                  "Exceptional customer experience fulfillment",
+                  "Efficiently manage people, technology, activities, information and resources",
+                ],
+              },
+              {
+                _id: 4,
+                title: "Master Complexity",
+                desc: "",
+                cta: "Know More",
+                icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                link: "/",
+                list: [
+                  "Better decision taking ability",
+                  "Promote Manufacturing excellence",
+                  "Exceptional customer experience fulfillment",
+                  "Efficiently manage people, technology, activities, information and resources",
+                ],
+              },
+              {
+                _id: 5,
+                title: "Master Complexity",
+                desc: "",
+                cta: "Know More",
+                icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                link: "/",
+                list: [
+                  "Better decision taking ability",
+                  "Promote Manufacturing excellence",
+                  "Exceptional customer experience fulfillment",
+                  "Efficiently manage people, technology, activities, information and resources",
+                ],
+              },
+            ].map((item, index) => (
+              <>
+                {/* icon */}
+                {/* title */}
+                {/* list */}
+                <div
+                  key={item._id}
+                  className="sm:mx-2 w-full flex flex-col justify-between "
+                >
+                  <div className="p-5 w-fit ">
+                    <div className="mb-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/${item.icon}.svg`}
+                          width={56}
+                          height={56}
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
+                    </div>
+                    <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                    <div>
+                      <ul className="mt-4">
+                        {item.list.map((i, index) => (
+                          <li
+                            className="text-[#475467] text-[14px] font-medium py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                            key={index}
+                          >
+                            {i}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+      </>
 
       {/* Our Services / Ms Services */}
       <>

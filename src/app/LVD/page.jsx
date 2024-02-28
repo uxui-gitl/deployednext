@@ -11,11 +11,13 @@ import {
   mdiArrowTopRight,
   mdiBullseyeArrow,
   mdiDomain,
+  mdiEyeOutline,
 } from "@mdi/js";
 import SectionNav from "@/components/SectionNav";
 import Testimonial from "@/sections/testimonial/Testimonial";
 
 import inforCloudSuite from "../../../public/inforCloudSuite.png";
+import { projects } from "../../assets/data";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import puzzle from "../../../public/upgradeCloud/puzzle.png";
 
@@ -26,7 +28,7 @@ import MLExpertise from "../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { Pagination } from "swiper/modules";
 import SpotlightLogoGrid from "@/components/SpotlightLogoGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,7 +39,13 @@ import Benefits from "@/components/Benefits";
 import Capabilities from "@/components/Capabilities";
 import Expertise from "@/components/Expertise";
 import clsx from "clsx";
-import { NewTestimonial, OfferingsSlider } from "@/components";
+import { JoinExpTeam, NewTestimonial, OfferingsSlider } from "@/components";
+import Robot from "@/sections/robot/Robot";
+import ACTCard from "@/sections/ACTCard/ACTCard";
+
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
+
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -519,7 +527,23 @@ const BenefitsData = [
   },
 ];
 
-const page = () => {
+const Page = () => {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
   return (
     <>
       <EntIntro
@@ -623,6 +647,29 @@ const page = () => {
       {/* ACT header */}
 
       {/* Robot */}
+      <Robot />
+      <>
+        <div
+          id="actCards"
+          className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+        >
+          <main ref={container} className={`relative mt-[20vh]`}>
+            {projects.map((project, i) => {
+              const targetScale = 1 - (projects.length - i) * 0.05;
+              return (
+                <ACTCard
+                  key={`p_${i}`}
+                  i={i}
+                  {...project}
+                  progress={scrollYProgress}
+                  range={[i * 0.25, 1]}
+                  targetScale={targetScale}
+                />
+              );
+            })}
+          </main>
+        </div>
+      </>
 
       {/* Robot Cards */}
 
@@ -802,8 +849,75 @@ const page = () => {
       </>
 
       {/* About us CTA and Para */}
+      <>
+        <div
+          style={{
+            color: "white",
+            background: "rgb(91, 98, 138)",
+            backgroundImage: `linear-gradient(90deg, rgba(49, 9, 74, 1) 0%, rgba(29, 8, 69, 1) 15%, rgba(14, 0, 42, 1) 100%)`,
+          }}
+        >
+          <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
+            <div className="mt-[3em] mb-[12em]">
+              <h3 className=" text-7xl font-bold leading-[90px]">
+                Our team is the driving force behind our mission, and their
+                passion and expertise make it possible.
+              </h3>
+              <p className="text-base hidden font-regular">
+                Every day, we endeavour to create a meaningful impact, driven by
+                our core principles and essence, reaching beyond our industry to
+                positively touch every association we encounter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </>
+      {/* Offset cards */}
+      <>
+        <div className="offsetCardWrap relative sm:pb-48 pb-32 bg-[#f2f4f7]">
+          <div className="max-w-screen-lg shadow-md mx-auto left-0 right-0 absolute bg-[#f2f4f7] grid grid-cols-3 -top-32">
+            <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
+              <p className="text-base font-medium">
+                Create Sustainable Value for our Stakeholders by connecting
+                People and Technology.
+              </p>
+            </div>
+            <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
+              <p className="text-base font-medium">
+                Be a world class provider of high-quality Information &
+                Technology solutions.
+              </p>
+            </div>
+            <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
+              <div className="w-max">
+                <Icon path={mdiEyeOutline} size={2} className="inline" />
+              </div>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Values</h4>
+              <p className="text-base font-medium">
+                Integrity <br /> Responsiveness <br /> Commitment & Teamwork
+              </p>
+            </div>
+          </div>
+        </div>
+      </>
 
       {/* Career Leap CTA */}
+      <JoinExpTeam
+        title="The work culture in Godrej supports learning at every stage of your
+        work life."
+        desc=""
+        cta="Take the Cloud Career Leap"
+        link=""
+        img=""
+      />
 
       {/* Subscription */}
       <Subscription
@@ -869,4 +983,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
