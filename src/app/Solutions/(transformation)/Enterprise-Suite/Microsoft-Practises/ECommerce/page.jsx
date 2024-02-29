@@ -60,24 +60,21 @@ const Page = () => {
   const lists = [
     {
       id: 1,
-      text: "Navigating intricate warehouse operations demands sophisticated solutions for precise management of inventory, labor and billing",
+      text: "Need of digital self-service purchase options for seamless customer experiences.",
     },
     {
       id: 2,
-      text: "Meeting the ever-changing needs of customers requires agility and adaptability within warehouse functions",
+      text: "Real-time insights to enable proactive responses to customer demands.",
     },
     {
       id: 3,
-      text: "Success in today's business landscape hinges on real-time data access and data-driven insights for informed decision-making",
+      text: "Solve data silos and inefficiencies to improve collaboration, data access and decision-making.",
     },
     {
       id: 4,
-      text: "To stay competitive, businesses must undergo a significant transformation of their supply chain operations, prioritizing speed, flexibility, and intelligence",
+      text: "Precise information and reporting for tracking sales, customer acquisition costs and inventory turnover metrics.",
     },
-    {
-      id: 5,
-      text: "Embracing digitization is the key to converting the supply chain from a cost center into a source of competitive advantage",
-    },
+    
   ];
   const handleColumnClick = (columnId) => {
     setSelectedColumn(columnId);
@@ -148,11 +145,11 @@ const Page = () => {
       icon: "dummy",
       ctaUrl: "/",
       list: [
-        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
-        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
-        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
-        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
-        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+        "Enhanced Customer Experiences: Offer personalized product selections across shopping channels.",
+        "Expanded Purchasing Options: Give customers access to your full product catalogue, regardless of stock levels or location.",
+        "Comprehensive Customer View: Seamlessly connect physical and digital storefronts for a 360-degree view of customer data.",
+        "Employee Empowerment: Build lasting customer relationships through AI-driven recommendations and loyalty programs.",
+        "Enhanced Sales Capabilities: Utilize native support for D365 Sales and Customer Service",
       ],
     },
     {
@@ -162,11 +159,11 @@ const Page = () => {
       icon: "dummy",
       ctaUrl: "/",
       list: [
-        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
-        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
-        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
-        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
-        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+        "Dynamic Website Creation: Launch dynamic websites effortlessly with a user-friendly visual page builder.",
+        "Elevated Shopper Engagement: Enhance engagement with personalized, content-driven commerce strategies.",
+        "Improved B2B Experience: Enhance B2B purchasing with intelligent B2C-like features and custom catalogues.",
+        "Efficient Channel Management: Manage content, assets, promotions, stock and pricing across all channels.",
+        "Optimized Digital Channels: Implement experiments and personalization for digital growth.",
       ],
     },
     {
@@ -176,11 +173,11 @@ const Page = () => {
       icon: "dummy",
       ctaUrl: "/",
       list: [
-        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
-        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
-        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
-        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
-        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+        "Sales Boost: Increase sales with AI-driven product recommendations.",
+        "Revenue Enhancement: Enhance revenue and security with Dynamics 365 Fraud Protection.",
+        "Conversion Elevation: Elevate conversion rates through AI-moderated ratings and reviews.",
+        "Enhanced Product Discovery: Facilitate easy product discovery with intelligent search capabilities.",
+        "Accessibility Prioritization: Prioritize accessibility with user-friendly content tools and Accessibility Insights.",
       ],
     },
     {
@@ -190,25 +187,23 @@ const Page = () => {
       icon: "dummy",
       ctaUrl: "/",
       list: [
-        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
-        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
-        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
-        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
-        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+        "Personalized Multichannel Journeys: Craft personalized journeys with Commerce and Dynamics 365 Marketing.",
+        "Cart Abandonment Reduction: Decrease cart abandonment with engaging e-commerce experiences.",
+        "24/7 AI-Powered Support: Provide round-the-clock AI-powered chatbot support with Dynamics 365 Customer Service.",
+        "Customer Satisfaction Enhancement: Enhance satisfaction with an intuitive call centre and service management.",
+        "Data-Driven Targeting: Target customers effectively through data-driven segmentation for relevant campaigns.",
       ],
     },
     {
       _id: 6,
-      title: "Headless, Scalable API-First Solution ",
+      title: "Headless, Scalable API-First Solution",
       cta: "Explore Solutions",
       icon: "dummy",
       ctaUrl: "/",
       list: [
-        "Personalized Buying Experience: Immersive buying experience across channels, uniting digital, in-store and back-office operations on a unified platform.",
-        "Consistent Customer Engagement: Hassle-free engagement, allowing customers to choose when, how and where they purchase.",
-        "Flexible Purchase Options: Freedom to select preferred method, facilitating integrated ordering and fulfilment.",
-        "Efficient Sales Promotions: Centrally manage and oversee sales promotions across channels with real-time data.",
-        "Enhanced B2B Engagement: Tailored functionality for B2B organizations and self-service purchasing experiences.",
+        "Adaptable Commerce: Deploy adaptable, API-first commerce for various channels.",
+        "Global Business Flexibility: Customize your solution effortlessly to match global business requirements.",
+        "Data Security: Go global with flexible deployment options and secure data management.",
       ],
     },
   ];
@@ -222,9 +217,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Elevate Your Retail Game with
-        seamless shopping experience "
-        desc="D365 F&O is reliable robust solution for medium to large-sized businesses which enables streamlining and automating global operations, giving real-time insights that become the foundation of well-informed decisions. Our expert D365 F&O team simplifies the adoption of solution, delivering streamlined financial processes and paving the way for business transformation."
+        title="Scale Up Your Omnichannel Business with personalised Experience – Microsoft D365 Commerce"
+        desc=""
         cta="Let's Connect"
         width="75%%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -260,9 +254,9 @@ const Page = () => {
 
       {/* OVerview with list */}
       <Abstract
-        abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "
+        abstractdesc="Dynamics 365 Commerce offers a complete solution to increase customer engagement through intuitive shopping experiences. It brings together several retail channels, including back-office, in-store, call centre, and digital building a unified framework. Further, this solution attunes with the evolving consumer behavior and research-driven purchasing to   meet customer demands. One of the significant aspects that distinguish Godrej Infotech from other Microsoft partners is its meticulous implementation approach.  Partnership with us brings speed, improved outcomes, quality and industry best practices along with proven retail and supply chain practice and global support."
         list={false}
-        ribbon="Commerce"
+        // ribbon="Commerce"
         listArr={[
           { _id: 1, icon: "dummy", title: "Customer loyalty retention" },
           { _id: 2, icon: "dummy", title: "Customer loyalty retention" },
@@ -278,11 +272,14 @@ const Page = () => {
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
               <div className="  ">
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
-                  <h3 className="text-left text-4xl leading-[42px] font-bold">
-                    On-premises <br /> Infrastructure Challenges
-                  </h3>
-                </div>
+                <div className="md:flex-row flex-col flex text-left gap-x-10">
+                <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                  Business Challenges of Retail Businesses
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[80%] mx-auto mb-10">
+                 Customers now seek personalized experiences, seamless interactions, and a sense of connection with the brands they choose. Businesses face the challenge of understanding this shift and creating strategies that resonate with each customer&#39;s individuality. The rapid pace of technological evolution poses a risk for retailers; failing to adapt may disconnect them from their tech-savvy customer base. Adaptability is crucial for businesses to stay connected and relevant in this evolving landscape. 
+                </p>
+              </div>
               </div>
             </div>
           </>
@@ -325,12 +322,10 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Globally Trusted Core Infor expertise
+                  Key capabilities
                 </h3>
                 <p>
-                  We deliver high-performing services for a comprehensive suite
-                  Microsoft ecosystem, devised to elevate growth and
-                  productivity and build stronger stakeholder connections
+                  Dive deep into the fundamental strengths of D365 Commerce, equipping your business with powerful tools for growth.
                 </p>
               </div>
             </div>
@@ -436,39 +431,39 @@ const Page = () => {
 
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Benefits "
+        ribbon="Benefits"
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title=""
+        desc="Explore business efficiency and customer-centric experiences with D365 commerce"
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "AI-based suggestions for cross-selling and up-selling that improves customer buying propositions.",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Strengthened commerce operations and customer experiences with omnichannel selling and real-time inventory visibility.",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Open access to full product catalogues and advanced in-built tools for proactive actions and decision-making.",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Connected view of marketing and commerce operations for improved coordination.",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc: "Engaging digital storefronts with user-friendly web authoring and development tools.",
           },
         ]}
       ></Benefits>
@@ -588,30 +583,68 @@ const Page = () => {
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
+        desc="Our substantial experience and expertise in implementing the D365 Commerce solution guarantees a business system that impeccably aligns with the unique requirements of your organization."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Experienced team that guarantees D365 Commerce's full potential for growth and innovation.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Descriptive approach and tailored Dynamics 365 Commerce solutions delivery that adapt to your unique business needs and changing scenarios.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Extensive experience in comprehending the intricacies of business processes.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
             icon: "",
           },
+
+
+          {
+            _id: 5,
+            desc: "Proficiency in utilizing Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
+            icon: "",
+          },
+          {
+            _id: 6,
+            desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel. ",
+            icon: "",
+          },
+          {
+            _id: 7,
+            desc: "Assistance in adopting newer technologies to drive business growth. ",
+            icon: "",
+          },
+          {
+            _id: 8,
+            desc: "Prestigious Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
+            icon: "",
+          },
+          {
+            _id: 9,
+            desc: "Troubleshoot, evaluates and optimizes D365 Commerce solution with expertise.",
+            icon: "",
+          },
+          {
+            _id: 10,
+            desc: "Global delivery model and pool of certified D365 experts.",
+            icon: "",
+          },
+          {
+            _id: 11,
+            desc: "Microsoft cloud partner and proven history of working with small, medium and large size enterprises.",
+            icon: "",
+          },
+          
         ]}
         renderInlineSpans={true}
       ></WhySection>
@@ -754,9 +787,9 @@ const Page = () => {
         arr={[
           {
             _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            ribbon: "Blog",
+            title: "The Significance of Dynamics 365 Commerce in B2B Sales Evolution",
+            desc: "In the realm of B2B digital sales, Dynamics 365 Commerce stands as a beacon of innovation. This platform plays a pivotal role in reshaping B2B sales strategies, enabling businesses to navigate the digital landscape effectively. Dynamics 365 Commerce integrates cutting-edge technology and streamlined processes to elevate B2B digital sales practices. Understanding the essence of this platform is crucial in harnessing its potential to revolutionize B2B sales, marking a significant evolution in this arena.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -765,6 +798,7 @@ const Page = () => {
       />
 
       {/* Testimonials */}
+      <div className="hidden">
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
@@ -806,7 +840,7 @@ const Page = () => {
           },
         ]}
       />
-
+</div>
       {/* Subscription */}
       <Subscription
         title="Ready to Streamline Your
