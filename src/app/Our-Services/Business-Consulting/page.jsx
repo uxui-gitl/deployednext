@@ -924,21 +924,6 @@ const page = () => {
         ]}
       ></Expertise>
 
-      {/* Blog */}
-      <BlogSlider
-        arr={[
-          {
-            _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
-        ]}
-      />
-
       {/* Why Section */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
@@ -968,6 +953,21 @@ const page = () => {
         ]}
         renderInlineSpans={true}
       ></WhySection>
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "ingsights",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+        ]}
+      />
 
       {/* Subscription */}
       <Subscription
