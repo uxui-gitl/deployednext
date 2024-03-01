@@ -64,9 +64,9 @@ const ChoiceSlider = [
   },
   {
     _id: 2,
-    imgUrl: "Industry-Spotlight-Retail",
-    title: "Retail",
+    title: "Project ",
     desc: "",
+    imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
@@ -76,22 +76,9 @@ const ChoiceSlider = [
     imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
+
   {
     _id: 4,
-    title: "Healthcare ",
-    desc: "",
-    imgUrl: "Industry-served-Healthcare",
-    url: "/",
-  },
-  {
-    _id: 5,
-    title: "Project ",
-    desc: "",
-    imgUrl: "Industry-Spotlight-Projects",
-    url: "/",
-  },
-  {
-    _id: 6,
     title: "Professional services",
     desc: "",
     imgUrl: "ProfessionalServices",
@@ -102,32 +89,136 @@ const expandedCardSlider = [
   {
     _id: 1,
     imgUrl: "Godrej-Solution-Valve-Management",
-    title: "Dealer Management",
-    desc: "Developed using Dot NET technology and integrated with Business Central, this cutting-edge solution eliminates manual data entry, reducing errors, streamlines processes and provides accurate information for better decision-making. Leveraging this solution customers can access real-time insights, track inventory, monitor sales and make data-driven decisions.",
+    title: "Manufacturing",
+    desc: "",
     url: "/",
+    list: [
+      "Full process coverage for discrete and process manufacturing",
+      "Real-time planning and optimization",
+      "IoT and mixed reality roadmap for a connected factory experience",
+    ],
   },
   {
     _id: 2,
     imgUrl: "Godrej-Solution-Valve-Management",
-    title: "Valve Manufacturing Process Management",
-    desc: "Benefit to valve manufacturing businesses from pre-configured business process mapping that seamlessly aligns with your unique requirements. Our work-around solutions for intricate business processes ensure smooth operations even in challenging scenarios.",
+    title: "Trading & Distribution",
+    desc: "",
     url: "/",
+     list: [
+      "Comprehensive process coverage for trading & distribution",
+      "Material requirement planning",
+      "Machine learning-driven demand forecasting",
+    ],
   },
   {
     _id: 3,
-    title: "Metal Recycling Operations Management",
-    desc: "Our pre-built industry-specific customizations assures a unified integration that aligns perfectly with the unique demands of metal recycling business. Backed by extensive business process knowledge, our solution is developed to optimize your operations.   ",
+    title: "Professional services",
+    desc: "",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
+     list: [
+      "Financial precision for budgeting, invoicing and expense management",
+      "Project-centric approach for professional services firms",
+    ],
   },
-  // {
-  //   _id: 4,
-  //   title: "Dealer Management",
-  //   desc: "Dealer Management Collaborating with top- tier application providers, we recognise and deliver right technology for your business to bring forth scalable transformation",
-  //   imgUrl: "2",
-  //   url: "/",
-  // },
+  {
+    _id: 4,
+    title: "Projects",
+    desc: "",
+    imgUrl: "Godrej-Solution-Metal-Solutions",
+    url: "/",
+    list: [
+      "Financial transparency and control for budgeting and cost management",
+      "Real-time project insights for better decision-making and proactive issue resolution",
+      "Precise project management and resource optimization",
+    ],
+  },
 ];
+
+const ConsiderRPA = [
+  {
+    _id: 1,
+    title: "Asset Management",
+    desc: "Effectively monitor your business assets to maintain its optimal condition, ensuring the uniform business operations.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/IncreasedProductivity.png",
+  },
+  {
+    _id: 2,
+    title: "Financial Management",
+    desc: "Handle financial and accounting matters with precision, promoting financial stability.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+  },
+  {
+    _id: 3,
+    title: "Inventory Management",
+    desc: "Assure that products are precisely where they need to be, precisely when they need to be there, enhancing business efficiency.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/EnsureCompliance.png",
+  },
+ 
+  {
+    _id: 5,
+    title: "Budgeting",
+    desc: "Skilfully plan and manage organisation budgeting and allocate resources accordingly to achieve financial objectives.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/OptimizeFTEcost.png",
+  },
+  {
+    _id: 6,
+    title: "Supply Chain Management",
+    desc: "Exercise comprehensive control on entire supply chain, facilitating the smooth flow of products from suppliers to customers, enhancing operational efficiency.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/EnhanceFlexibility.png",
+  },
+  {
+    _id: 7,
+    title: "Commerce",
+    desc: "Craft a seamless shopping experience for your customers, both online and in-store, ensuring hassle-free shopping journey, thus enhancing customer satisfaction.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/ReduceAHT.png",
+  },
+  {
+    _id: 8,
+    title: "Customer and Vendor Collaboration",
+    desc: "Cultivate robust relationships with both customers and vendors enhancing mutual success.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/ReduceAHT.png",
+  },
+    {
+    _id: 9,
+    title: "Manufacturing",
+    desc: "Optimize your manufacturing processes, streamlining production and upholding product quality to meet or exceed market standards.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/ReduceAHT.png",
+  },
+    {
+    _id: 10,
+    title: "Project Management",
+    desc: "Efficiently manage and coordinate projects, ensuring they are executed promptly and within budget constraints, delivering successful project outcomes.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/ReduceAHT.png",
+  },
+    {
+    _id: 11,
+    title: "Accounting",
+    desc: "Maintain immaculate financial records, safeguarding business's financial health and ensuring compliance with accounting standards.",
+    cta: "Know More",
+    ctaUrl: "/",
+    image: "/rpa/ReduceAHT.png",
+  },
+];
+
 const smartTools = [
   {
     _id: 1,
@@ -313,10 +404,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Revolutionize Your Business
-        Dynamics with Our D365 F&O
-        Expertise "
-        desc="D365 F&O is reliable robust solution for medium to large-sized businesses which enables streamlining and automating global operations, giving real-time insights that become the foundation of well-informed decisions. Our expert D365 F&O team simplifies the adoption of solution, delivering streamlined financial processes and paving the way for business transformation."
+        title="Revolutionize Your Business Dynamics with Our D365 F&O Expertise"
+        desc=""
         cta="Let's Connect"
         width="75%%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -351,14 +440,64 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our forte lies in upgrading business operations with the high-powered productivity of Robotic Process Automation (RPA). We help you to manage high-volume tasks by slashing down time requirements with precise outcomes. With our tailored RPA solutions, we empower organizations to boost productivity, attain operational excellence, and seamlessly navigate intricate workflows, establishing a standard of efficiency in their processes."></Abstract>
+      <Abstract abstractdesc="Microsoft Dynamics 365 Finance & Operations is a robust solution for medium- to large-sized businesses. It enables streamlining and automating global operations, offering real-time insights that form the bedrock of informed decision-making. Godrej Infotech is committed to helping clients for long-term success. Our seasoned D365 F&O team specializes in simplifying the adoption of this powerful solution, ensuring a seamless integration into your business processes."></Abstract>
 
       {/* key highlights */}
+
+      <>
+        <div className={` w-full bg-[#F2F4F7] py-32`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Key Highlights of Dynamics 365 F&O
+                </h3>
+                <p>Microsoft D365 Finance and Operations powers up your business with insights and comprehensive financial tools to streamline operations and adapt to changing business environments.</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
+                <Image
+                  src={item.image}
+                  height={120}
+                  width={120}
+                  className="w-[100%] sm:w-fit object-cover"
+                  alt={item.title}
+                />
+                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                    {item.title}
+                  </p>
+                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.ctaUrl}
+                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
 
       {/* Ms slider */}
       <>
         <div
-          className={`bg-ms-practise bg-white w-full py-32  `}
+          className={`bg-ms-practise bg-white w-full py-32 hidden `}
           id="productivity"
         >
           <div className={` w-full`}>
@@ -701,7 +840,7 @@ const Page = () => {
 
       {/* Infographics */}
       <>
-        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+        <div className="max-w-screen-xl mx-auto px-[2rem] bg-white hidden">
           <div className=" mt-[5em] mb-[2em]">
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
               <h3 className="text-4xl leading-[42px] font-bold">
@@ -717,7 +856,7 @@ const Page = () => {
 
       {/* Industry Served Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div className={`w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -728,9 +867,7 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
+                  Understanding unique demands of each industry vertical and capitalizing Infor capabilities, we equip businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -782,15 +919,14 @@ const Page = () => {
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                    Advance Solutions for Business Future Readiness
+                    Godrej Infotech Value-Added Solutions
                   </h3>
                 </div>
               </div>
               <div>
                 <div>
                   <p className="font-normal leading-[22px] md:w-[90%] ">
-                    Embrace the future and stay ahead in digital era, harnessing
-                    the potential of innovative technologies.
+                    With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible. 
                   </p>
                 </div>
               </div>
@@ -803,28 +939,35 @@ const Page = () => {
               {[
                 {
                   _id: 1,
-                  title: "Machine Learning",
-                  desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                  title: "Quality Order Mobile Apps",
+                  desc: "",
                   cta: "Know More",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
                   list: [
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Simplified Quality Order Generation",
+                    "Real-Time Data Integration",
+                    "Effortless QR Code Search to locate Quality Orders",
+                    "Mobile Inspection Updates",
+                    "Detailed Test Insights",
+                    "Order-level validation, approval and closure",
                   ],
                 },
                 {
                   _id: 2,
-                  title: "Artificial Intelligence ",
-                  desc: "Improvement in customer experiences, facilitating acceleration and optimized business operations.",
+                  title: "Production Order App",
+                  desc: "",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   cta: "Know More",
                   link: "/",
                   list: [
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
-                    "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+                    "Seamless Production Order Creation",
+                    "Real-Time Data Integration",
+                    "Open Order Management",
+                    "Quick QR Code Searches for Production Orders",
+                    "Mobile Inspection Updates",
+                    "Individual Test Results",
+                    "Efficient Validation",
                   ],
                 },
               ].map((item, index) => {
@@ -900,9 +1043,7 @@ const Page = () => {
                           Godrej Infotech Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Resolving complex business challenges and seizing
-                          growth opportunities through our purpose driven
-                          solutions designed by our experts.
+                          The high scalability of the Dynamics 365 F&O solution makes it a valuable choice for medium size businesses to large enterprises. 
                         </p>
                       </div>
                     </div>
@@ -948,6 +1089,20 @@ const Page = () => {
                             <p className="text-white leading-[20px] mb-5">
                               {item.desc}
                             </p>
+                            {item.list && (
+                              <>
+                                <ul className=" list-disc pl-4">
+                                  {item.list.map((i, index) => (
+                                    <li
+                                      className="text-white leading-[20px]"
+                                      key={index}
+                                    >
+                                      {i}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </>
+                            )}
                           </div>
                         </div>
                       </SwiperSlide>
@@ -962,66 +1117,76 @@ const Page = () => {
 
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Benefits "
+        ribbon="Benefits"
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title="Dynamics 365 F&O"
+        desc="Microsoft Dynamics 365 Finance & Operations (D365 F&O) stands out as a modern and adaptable solution, with a pivotal feature being its role-based design along with comprehensive support for all compliance-related necessities."
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "Unify supply chain operations for financial visibility, risk control and innovation",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Built-in data security safeguards with Azure integration",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Substantial return on investment (ROI) through enhanced efficiency and automation",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Gain real-time insights, reporting and AI-driven agility for growth",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc: "Achieve on-time, on-budget project delivery with integrated teams",
+          },
+           {
+            _id: 6,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "International functionality for global uniformity",
           },
         ]}
       ></Benefits>
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech"
+        desc="Our highly experienced Microsoft team is dedicated to understanding your unique business needs, delivering a tailored solution, and ensuring you harness the full potential of D365 F&O for business efficiency."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Our dedicated team troubleshoots, evaluates and optimizes your Dynamics 365 Finance and Supply Chain solution with expertise.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "We modernize legacy applications with new technologies for enhanced speed, efficiency, security and scalability.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Our Microsoft Dynamics 365 certified experts have executed projects across diverse industries across globs.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "We hold a prestigious Gold Partnership with Microsoft and operate global delivery model.",
+            icon: "",
+          },
+            {
+            _id: 5,
+            desc: "Our toolkit includes tested, proven and reusable tools and frameworks.",
             icon: "",
           },
         ]}
@@ -1033,9 +1198,9 @@ const Page = () => {
         arr={[
           {
             _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            ribbon: "Blog",
+            title: "The Future of Financial Agility: D365 Finance and Operations Insights",
+            desc: "This innovative platform, coupled with the expertise of a Microsoft Dynamics Partner Company, promises agility and operational effectiveness. Dynamics 365 Finance stands at the forefront of revolutionizing financial management, offering a comprehensive suite of tools to navigate the evolving financial terrain.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -1054,10 +1219,10 @@ const Page = () => {
             id: 1,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "Distributor of a popular coffee brand in Egypt and Saudi Arabia",
             thumbnail: "1",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "We are delighted to say that D365 F&O has solved our earlier performance issues and we now have an IT infrastructure that is streamlined, systematic, and secure. We would like to take this opportunity to express our gratitude to the entire team of Godrej Infotech that has worked along with our team to make this go live successful.",
             category: "static",
             link: "/",
           },
@@ -1065,66 +1230,56 @@ const Page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "General Manager, Distributor of Fruits & Vegetables in the Philippines",
             thumbnail: "1",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "Godrej Infotech team's dedication and commitment with excellent domain knowledge of our business was the key factor to our success and we cannot thank them enough for their valuable contribution. We have benefited tremendously from working with Godrej Infotech and hope to have the opportunity to continue a long-term relationship with them.",
             category: "static",
             link: "/",
           },
-          {
-            id: 3,
-            clientName: "",
-            clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
-            thumbnail: "1",
-            description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-            category: "static",
-            link: "/",
-          },
+          
         ]}
       />
 
       {/* Case Study */}
       <CaseStudy
-        ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        ribbon="CASE STUDY"
+        title="Dynamics 365 F&O Project Highlights"
+        desc=""
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              "Indian Wildlife Nature Conservation Organisation successfully implements Microsoft Dynamics 365 F&O",
             thumbnail: "1",
 
-            description: "Non-government Association of Indian Industries ",
+            description: "",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/IndiasLeadingWildlifeNatureConservation_MD365.pdf",
           },
           {
             id: 2,
             title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
+              "KSA's Leading Distributor of Electrical Components integrates Dynamics 365 F&O with Microsoft CRM on Cloud for streamlined item creation process and increased quality compliance",
             thumbnail: "2",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
+            description: "",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/KSA-LeadingDistributor_ElectricalComponents.pdf",
           },
           {
             id: 3,
             title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
+              "Achieved significant cost savings along with operations digitalization through D365 F&O Cloud Solution for Leading Distributor of Fruits & Vegetables in Philippines",
             thumbnail: "3",
 
-            description: "Coffee Brand Distributor in Egypt and Middle East",
+            description: "",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "www.godrejinfotech.com/assets/pdf/case-studies/LeadingDistributorofFruitsVegetablesinthePhilippinesGoesLivewithD365FandOCloudSolution.pdf",
           },
         ]}
       />
