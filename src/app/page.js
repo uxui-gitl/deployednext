@@ -16,17 +16,18 @@ import Announcement from "@/sections/announcement/Announcement";
 import Image from "next/image";
 
 import Icon from "@mdi/react";
-import Link from "next/link";
 import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
 import { useScroll } from "framer-motion";
 import { projects } from "../assets/data";
 import clsx from "clsx";
-import { NewTestimonial } from "@/components";
+import { NewTestimonial, Globe } from "@/components";
 
 import ACTCard from "@/sections/ACTCard/ACTCard";
 
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import Link from "next/link";
+import CobeGlobe from "@/components/CobeGlobe";
 
 export default function Home() {
   const container = useRef(null);
@@ -82,7 +83,9 @@ export default function Home() {
             </main>
           </div>
         </>
-        <Expertise />
+        {/* <Expertise /> */}
+
+        {/* <CobeGlobe /> */}
         {/* Maximize business output / Vertical Slider */}
 
         {/* Our Ai Offerings */}

@@ -45,85 +45,99 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
       </div>
       <motion.div className="container grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         {arr &&
-          arr.map((cases, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInAnimationVariant}
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
-              }}
-              custom={index}
-              // className={`${styles["iw-card"]} item`}
-              className={clsx({
-                "iw-card item": isHomepage,
-                item: !isHomepage,
-              })}
-            >
-              <div
-                className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
-              >
-                <Image
-                  // src={`/project-${cases.thumbnail}.png`}
-                  src={
-                    cases.thumbnail
-                      ? cases.thumbnail == "1" || "2" || "3"
-                        ? `/project-placeholder.png`
-                        : `/caseStudies/${cases.thumbnail}.png`
-                      : `/project-placeholder.png`
-                  }
-                  alt={`${cases.tags}`}
-                  className="w-[100%]"
-                  width="315"
-                  height="200"
-                  // className="w-full h-auto lg:w-315 lg:h-200"
-                />
-                <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
-                  <p
-                    className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
-                      cases.tags == "" ? "hidden" : "block"
-                    } `}
-                  >
-                    {`${cases.tags}`}
-                  </p>
-                </div>
-              </div>
-              <div className={`${styles["iw-card-content"]}`}>
-                {cases.subtitle && (
-                  <p
-                    className={`my-2  text-[#101828] font-semibold leading-[22px] text-[16px]`}
-                  >
-                    {cases.subtitle}
-                  </p>
-                )}
-                <p
-                  className={`${
-                    styles["iw-card-content-desc "]
-                  } text-clip  text-[#101828]  mb-3 font-semibold text-sm ${
-                    cases.description.length <= 0 ? "hidden" : "block"
-                  }`}
+          arr.map(
+            (cases, index) => (
+              console.log(cases.thumbnail),
+              (
+                <motion.div
+                  key={index}
+                  variants={fadeInAnimationVariant}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                  custom={index}
+                  // className={`${styles["iw-card"]} item`}
+                  className={clsx({
+                    "iw-card item": isHomepage,
+                    item: !isHomepage,
+                  })}
                 >
-                  {`${cases.description}`}
-                </p>
-                <p
-                  className={`text-base mt-2 font-normal  pb-2 leading-[22px] text-[#101828]`}
-                >
-                  {" "}
-                  {`${cases.title}`}{" "}
-                </p>
+                  <div
+                    className={`${styles["iw-card-img-wrap"]} w-[100%] h-auto relative`}
+                  >
+                    <Image
+                      // src={`/project-${cases.thumbnail}.png`}
 
-                <p className={styles["iw-card-content-link-wrap"]}>
-                  <Link
-                    href={`${cases.link}`}
-                    className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
-                  >
-                    {`${cases.cta}`}
-                  </Link>
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                      src={
+                        cases.thumbnail
+                          ? cases.thumbnail == "1" || "2" || "3"
+                            ? `/caseStudies/${cases.thumbnail}.png`
+                            : `/caseStudies/${cases.thumbnail}.png`
+                          : `/project-placeholder.png`
+                      }
+                      alt={cases.thumbnail}
+                      // src={
+                      //   cases.thumbnail
+                      //     ? cases.thumbnail == "1" || "2" || "3"
+                      //       ? `/project-placeholder.png`
+                      //       : `/caseStudies/${cases.thumbnail}.png`
+                      //     : `/project-placeholder.png`
+                      // }
+                      alt={`${cases.tags}`}
+                      className="w-[100%]"
+                      width="315"
+                      height="200"
+                      // className="w-full h-auto lg:w-315 lg:h-200"
+                    />
+                    <div className="absolute bottom-4 left-4 flex justify-start items-center space-x-2">
+                      <p
+                        className={`text-sm bg-[#fff] text-[#101828] px-2 py-1 rounded font-medium  ${
+                          cases.tags == "" ? "hidden" : "block"
+                        } `}
+                      >
+                        {`${cases.tags}`}
+                      </p>
+                    </div>
+                  </div>
+                  <div className={`${styles["iw-card-content"]}`}>
+                    {cases.subtitle && (
+                      <p
+                        className={`my-2  text-[#101828] font-semibold leading-[22px] text-[16px]`}
+                      >
+                        {cases.subtitle}
+                      </p>
+                    )}
+                    <p
+                      className={`${
+                        styles["iw-card-content-desc "]
+                      } text-clip  text-[#101828]  mb-3 font-semibold text-sm ${
+                        cases.description.length <= 0 ? "hidden" : "block"
+                      }`}
+                    >
+                      {`${cases.description}`}
+                    </p>
+                    <p
+                      className={`text-base mt-2 font-normal  pb-2 leading-[22px] text-[#101828]`}
+                    >
+                      {" "}
+                      {`${cases.title}`}{" "}
+                    </p>
+
+                    <p className={styles["iw-card-content-link-wrap"]}>
+                      <Link
+                        href={`${cases.link}`}
+                        className={`${styles["iw-card-content-link"]} hover:underline mt-2 me-3 text-[#0745D3] text-sm font-medium`}
+                      >
+                        {`${cases.cta}`}
+                      </Link>
+                    </p>
+                  </div>
+                </motion.div>
+              )
+            )
+          )}
       </motion.div>
     </div>
   );
