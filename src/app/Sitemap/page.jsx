@@ -25,7 +25,7 @@ const page = () => {
                       className=" block pb-1 hover:underline w-fit py-2"
                       href={"/Solutions/Intelligent-Technologies"}
                     >
-                      ✔️💫 Intelligent Technologies
+                      ✔️ Intelligent Technologies
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>
@@ -65,7 +65,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Technology-Stack"}
                     >
-                      ✔️💫 Technology Stack
+                      ✔️ Technology Stack
                     </Link>
                   </li>
                   <li>
@@ -74,7 +74,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Data-Insights"}
                     >
-                      ✔️💫 Data Insights
+                      ✔️ Data Insights
                     </Link>
                   </li>
                   <li>
@@ -83,7 +83,7 @@ const page = () => {
                       target="_blank"
                       href={"/Solutions/Cyber-Security"}
                     >
-                      ✔️💫 Cyber Security
+                      ✔️ Cyber Security
                     </Link>
                   </li>
                 </ul>
@@ -99,7 +99,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Upgrade-to-Cloud"}
                     >
-                      ✔️ 💫 Upgrade to Cloud
+                      ✔️ Upgrade to Cloud
                     </Link>
                   </li>
                   <li>
@@ -108,7 +108,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Cloud-Stack-and-Services"}
                     >
-                      ✔️💫 Cloud Stack & Services
+                      ✔️ Cloud Stack & Services
                     </Link>
                   </li>
                 </ul>
@@ -124,7 +124,7 @@ const page = () => {
                       className="block pb-1 hover:underline w-fit"
                       href={"/Solutions/Enterprise-Suite"}
                     >
-                      ☑️ 💫 Enterprise Suite
+                      ☑️ Enterprise Suite
                     </Link>
                     <div className="ml-12">
                       <ul style={{ listStyleType: "circle" }}>
@@ -134,7 +134,7 @@ const page = () => {
                             className="block pb-1 hover:underline w-fit"
                             href={"/Solutions/Enterprise-Suite/Infor"}
                           >
-                            ☑️💫 Infor
+                            ☑️ Infor
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>
@@ -192,7 +192,7 @@ const page = () => {
                               "/Solutions/Enterprise-Suite/Microsoft-Practises"
                             }
                           >
-                            ☑️💫 Microsoft Practises
+                            ☑️ Microsoft Practises
                           </Link>
                           <div className="ml-12">
                             <ul style={{ listStyleType: "circle" }}>
@@ -361,7 +361,7 @@ const page = () => {
                   target="_blank"
                   href={"/Industries/Manufacturing"}
                 >
-                  Manufacturing
+                  ☑️ Manufacturing
                 </Link>{" "}
               </li>
 
@@ -399,7 +399,7 @@ const page = () => {
                   target="_blank"
                   href={"/Industries/Professional-Services"}
                 >
-                  Professional Services
+                  ☑️ Professional Services
                 </Link>{" "}
               </li>
             </ul>
@@ -417,7 +417,7 @@ const page = () => {
                 target="_blank"
                 href={"/About-Us"}
               >
-                About Us
+                ☑️ About Us
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>
@@ -437,7 +437,7 @@ const page = () => {
                   target="_blank"
                   href={"/Careers"}
                 >
-                  Careers
+                  ☑️ Careers
                 </Link>
               </li>
               <ul className=" ml-12" style={{ listStyleType: "circle" }}>
@@ -447,7 +447,7 @@ const page = () => {
                     className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
                     href={"/We-Are-Hiring"}
                   >
-                    We Are Hiring
+                    ☑️ We Are Hiring
                   </Link>
                 </li>
                 <li className="mb-4 mt-2">
@@ -456,7 +456,7 @@ const page = () => {
                     className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
                     href={"/Job-Description"}
                   >
-                    Job Description
+                    ☑️ Job Description
                   </Link>
                 </li>
               </ul>
@@ -467,7 +467,7 @@ const page = () => {
                 target="_blank"
                 href={"/Contact-Us"}
               >
-                Contact Us
+                ☑️ Contact Us
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>
@@ -476,7 +476,7 @@ const page = () => {
                 target="_blank"
                 href={"/"}
               >
-                Homepage
+                ☑️ Homepage
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>
@@ -485,16 +485,25 @@ const page = () => {
                 target="_blank"
                 href={"/Industries/Healthcare"}
               >
-                Healthcare
+                ☑️ Healthcare
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>
               <Link
                 className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
                 target="_blank"
-                href={"/Sitemap"}
+                href={"/LVD"}
               >
-                LVD
+                ☑️ LVD
+              </Link>
+            </li>
+            <li style={{ listStyleType: "circle" }}>
+              <Link
+                className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
+                target="_blank"
+                href={"/GIA"}
+              >
+                ☑️ GIA
               </Link>
             </li>
             <li style={{ listStyleType: "circle" }}>

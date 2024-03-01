@@ -18,13 +18,16 @@ import Image from "next/image";
 import Icon from "@mdi/react";
 import Link from "next/link";
 import { mdiArrowRight, mdiArrowTopRight } from "@mdi/js";
-import ACTCard from "@/sections/ACTCard/ACTCard";
 import { useScroll } from "framer-motion";
 import { projects } from "../assets/data";
-import { useEffect, useRef } from "react";
-import Lenis from "@studio-freight/lenis";
 import clsx from "clsx";
 import { NewTestimonial } from "@/components";
+
+import ACTCard from "@/sections/ACTCard/ACTCard";
+
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
+
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -45,7 +48,7 @@ export default function Home() {
   return (
     <>
       {/* <Cursor isGelly={true} /> */}
-      <main className=" overflow-hidden ">
+      <main>
         <Announcement />
 
         <div className={`relative z-[500]`}>

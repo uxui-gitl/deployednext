@@ -23,9 +23,10 @@ const ACTCard = ({
     target: container,
     offset: ["start end", "start start"],
   });
+  const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
 
-  // const scale = useTransform(progress, range, [1, targetScale]);
   // const scale = useTransform(scrollYProgress, [0, 0.2], [0.95, 0.85]);
+  const scale = useTransform(progress, range, [1, targetScale]);
 
   const CardStack = [
     {
@@ -64,30 +65,36 @@ const ACTCard = ({
         {title}
       </div>
       <div className="bg-[#fff] p-4">
-        {sublinks.map((link, index) => (
-          <span key={index} className="  inline">
-            <span
-              className="text-[#0745D3] text-[14px]  leading-[30px] inline "
-              style={{ textDecoration: "none" }}
+        <ul>
+          {sublinks.map((link, index) => (
+            <li
+              key={index}
+              className=" border-b-[1px] last:border-b-[0px] inline"
             >
-              <Link
-                href={link.url}
-                target="_blank"
-                className=" inline-flex align-middle border-b-2 hover:opacity-80 mb-4"
+              <span
+                className="text-[#101828] text-[14px]  leading-[30px] inline "
+                style={{ textDecoration: "none" }}
               >
-                {link.title}
-                <span>
-                  <Icon
-                    path={mdiArrowTopRight}
-                    style={{ marginLeft: "0.5em" }}
-                    size={1}
-                  />
-                </span>
-              </Link>
-            </span>
-            <br />
-          </span>
-        ))}
+                <Link
+                  href={link.url}
+                  target="_blank"
+                  className=" inline-flex align-middle transition-all hover:opacity-80 mb-2"
+                >
+                  {link.title}
+                  <span className="">
+                    <Icon
+                      className=" opacity-25 hover:opacity-80 transition-all"
+                      path={mdiArrowTopRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </span>
+                </Link>
+              </span>
+              <br />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
@@ -99,10 +106,11 @@ const ACTCard = ({
       <motion.div
         style={{
           backgroundColor: color,
-          width: "100%",
-          top: `calc(-5vh + ${i * 50}px)`,
+          // width: "100%",
+          top: `calc(-5vh + ${i * 30}px)`,
+          // scale: imageScale,
         }}
-        className={`card flex flex-col relative top-[-25%] h-fit w-[full] rounded-2xl p-12 transform origin-top`}
+        className={`card flex flex-col relative top-[-25%] h-[500px] w-full rounded-2xl p-12 transform origin-top`}
       >
         <>
           <div>
