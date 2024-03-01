@@ -54,25 +54,18 @@ import IntegrateBigDataAnalytics from "../../../../../../../public/icon/Benefits
 import SecurelyStores from "../../../../../../../public/icon/Benefits-upgradeCloud/SecurelyStores.svg";
 import EnhanceSystemPerformance from "../../../../../../../public/icon/Benefits-upgradeCloud/EnhanceSystemPerformance.svg";
 import InsightSlider from "@/components/InsightSlider";
+import Abstract from "@/components/Abstract";
 const blogData = [
   {
     _id: 1,
-    ribbon: "insights",
-    title: "Voice Assistant Challenges in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
+    ribbon: "Blog",
+    title: "Why customizing hxgn eam is important for your business",
+    desc: "Every advantage counts in the extremely competitive asset management market of today. Thus, it's critical to comprehend why Customizing HxGN EAM is a game-changer rather than just a nice-to-have.",
     cta: "Know More",
     link: "/",
-    imgUrl: "",
+    imgUrl: "hxgn_blog",
   },
-  {
-    _id: 2,
-    ribbon: "insights",
-    title: "Hyper automation trends in 2023",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,.",
-    cta: "Know More",
-    link: "/",
-    imgUrl: "",
-  },
+
 ];
 const smartTools = [
   {
@@ -143,31 +136,31 @@ const ChoiceSlider = [
   {
     _id: 1,
     title: "Healthcare",
-    imgUrl: "1",
+    imgUrl: "Healthcare",
     url: "/",
   },
   {
     _id: 2,
-    title: "Automotive",
-    imgUrl: "2",
+    title: "Facility Management",
+    imgUrl: "FacilityManagement",
     url: "/",
   },
   {
     _id: 3,
-    title: "Logistic",
-    imgUrl: "3",
+    title: "Trading & Distribution",
+    imgUrl: "TradingDistribution",
     url: "/",
   },
   {
     _id: 4,
-    title: "Retail",
-    imgUrl: "4",
+    title: "Manufacturing",
+    imgUrl: "Manufacturing",
     url: "/",
   },
   {
     _id: 5,
-    title: "Manufacturing",
-    imgUrl: "5",
+    title: "Projects",
+    imgUrl: "Projects",
     url: "/",
   },
 ];
@@ -273,111 +266,184 @@ const page = () => {
     },
     {
       _id: 2,
-      title: "Asset Management",
+      title: "Asset Performance Management",
       cta: "Know more",
       ctaUrl: "/",
       icon: "dummy",
       links: [
         {
-          title: "Record",
+          title: "Monitor Asset Performance",
           url: "/",
         },
         {
-          title: "Maintain",
+          title: "Predictive Maintenance",
           url: "/",
         },
         {
-          title: "Structure",
+          title: "Asset Health Monitoring",
           url: "/",
         },
         {
-          title: "Standardize asset information",
+          title: "Asset Lifecycle Management",
           url: "/",
         },
       ],
     },
     {
       _id: 3,
-      title: "Asset Management",
+      title: "Work Management",
       cta: "Know more",
       ctaUrl: "/",
       icon: "dummy",
       links: [
         {
-          title: "Record",
+          title: "Work order generation and scheduling",
           url: "/",
         },
         {
-          title: "Maintain",
+          title: "Revision control",
           url: "/",
         },
         {
-          title: "Structure",
+          title: "Case management",
           url: "/",
         },
         {
-          title: "Standardize asset information",
+          title: "Purchase-order tracking",
+          url: "/",
+        },
+        {
+          title: "Preventive maintenance",
           url: "/",
         },
       ],
     },
     {
       _id: 4,
-      title: "Asset Management",
+      title: "Inspection management",
       cta: "Know more",
       ctaUrl: "/",
       icon: "dummy",
       links: [
         {
-          title: "Record",
+          title: "Simplify inspection routes.",
           url: "/",
         },
         {
-          title: "Maintain",
+          title: "Inspection planning and organization",
           url: "/",
         },
         {
-          title: "Structure",
+          title: "Inspection point scheduling and classification",
           url: "/",
         },
-        {
-          title: "Standardize asset information",
-          url: "/",
-        },
+        
       ],
     },
     {
-      _id: 4,
-      title: "Asset Management",
+      _id: 5,
+      title: "Intelligent nonconformity tracking",
       cta: "Know more",
       ctaUrl: "/",
       icon: "dummy",
       links: [
         {
-          title: "Record",
+          title: "Potential issues quick detection",
           url: "/",
         },
         {
-          title: "Maintain",
+          title: "Issues segmentation based on preset nonconformity index.",
+          url: "/",
+        },
+        
+      ],
+    },
+    {
+      _id: 6,
+      title: "Safety management",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Identify and control all hazardous situations.",
           url: "/",
         },
         {
-          title: "Structure",
+          title: "HSE compliance regulations.",
+          url: "/",
+        },
+        
+      ],
+    },
+    {
+      _id: 7,
+      title: "Asset management services",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Service cost tracking delivered to customers.",
           url: "/",
         },
         {
-          title: "Standardize asset information",
+          title: "Automatic cost inclusion through invoices",
           url: "/",
         },
+        
+      ],
+    },
+    {
+      _id: 8,
+      title: "Electronic records and signatures",
+      cta: "Know more",
+      ctaUrl: "/",
+      icon: "dummy",
+      links: [
+        {
+          title: "Electronic records of database events requiring signature",
+          url: "/",
+        },
+        {
+          title: "Preventative management version control",
+          url: "/",
+        },
+         {
+          title: "Track attribute changes for every table in HxGN EAM",
+          url: "/",
+        },
+        
+      ],
+    },
+    {
+      _id: 9,
+      title: "Calibration",
+      cta: "Know more",
+      ctaUrl: "",
+      icon: "dummy",
+      links: [
+        {
+          title: "Track calibration data for equipment categories, assets, systems and positions",
+          url: "/",
+        },
+        {
+          title: "Define test point data",
+          url: "/",
+        },
+         {
+          title: "Associate test-point sets with work orders and preventive maintenance work orders",
+          url: "/",
+        },
+        
       ],
     },
   ];
   return (
     <>
       <EntIntro
-        title="Maximize Asset Value and Productivity
-        with HxGN EAM Godrej Infotech Expertise "
-        desc="HxGN EAM, formerly known as Infor EAM, presents holistic solutions to address the pressing challenges of asset performance in both the present and the future"
+        title="Gain Asset Management Visibility for Informed Capital Investments with HxGN EAM"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -412,34 +478,9 @@ const page = () => {
       </>
 
       {/* Overview */}
-      <>
-        <div className={` w-full bg-white py-10`}>
-          <>
-            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-              <div className=" mt-[5em] mb-[2rem]">
-                <div className="flex flex-col gap-x-10">
-                  <h4
-                    className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
-                  >
-                    HxnEAM
-                  </h4>
-                  <h3 className="text-4xl leading-[42px] font-bold">
-                    Overview
-                  </h3>
-                  <p>
-                    Our commitment is to make your transformation journey as
-                    smooth as possible, guaranteeing that you attain your
-                    ambitious results. That&apos;s why we build a holistic
-                    viewpoint on your implementation and rollout project and
-                    assure that your project is on time, exceeding your
-                    expectations
-                  </p>
-                </div>
-              </div>
-            </div>
-          </>
-        </div>
-      </>
+      {/* Overview  */}
+        <Abstract abstractdesc="HxGN EAM, formerly known as Infor EAM, offers holistic solutions to address the pressing challenges of asset performance in both the present and the future. This robust and adaptable solution helps in attaining enhanced insights into your assets, elevating their reliability and performance while efficiently reducing the total cost of ownership. Godrej Infotech has successfully implemented HxGN EAM for a diverse range of clients, each experiencing tangible improvements in their asset management processes. Our expertise extends to deploying predictive maintenance strategies, leveraging real-time data to anticipate asset issues, reduce downtime and optimize maintenance costs."></Abstract>
+
 
       {/* Core Capabilities */}
       <>
@@ -452,9 +493,7 @@ const page = () => {
                 </h3>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    We are committed to bringing the power of AI to your
-                    business operations, providing tailored solutions that
-                    drives business proficiency.
+                    Beyond static approaches, HxGN EAM dynamically adapts to the lifecycle stages ensuring assets remain at their peak throughout. 
                   </p>
                 </div>
               </div>
@@ -541,14 +580,12 @@ const page = () => {
             <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industries Spotlight
+                  Industry Spotlight
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] mb-3 md:w-[90%] ">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector
+                  Understanding unique demands of industry vertical and capitalizing Infor CloudSuite capabilities, we equip businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -654,71 +691,71 @@ const page = () => {
       {/* Benefits */}
 
       <Benefits
-        ribbon="Upgrade to Cloud Benefits "
+        ribbon="The HxGN EAM advantage"
         ribbonTxtWhite="true"
-        title="Experience business performance surge with cloud"
+        title="Discover the Key Tangible Benefits for Increased Business Efficiency and Cost Reduction."
         desc=""
         arr={[
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Minimize operational expenses of IT portfolio",
+            title: "Up to a 50% Reduction in maintenance overtime, labor and contractor costs",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Enable user concurrency to support large-scale workloads",
+            title: "20% Reduction in production downtime",
           },
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
             title:
-              "Enhanced collaboration through cross-device accessibility to information",
+              "50% Increase in warranty cost recovery",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
             title:
-              "Advanced data management solutions, modernized process and cloud services",
+              "30% Reduction in inventory levels",
           },
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Aptitude to respond to shifting business requirements",
+            title: "20% Reduction in inventory carrying costs",
           },
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
             title:
-              "Integrate Big Data Analytics into business processes for data-driven decision-making",
+              "10% Reduction in materials costs",
           },
           {
             _id: 7,
             icon: "Benefits-upgradeCloud/SecurelyStores",
-            title: "Securely stores confidential business information",
+            title: "50% Reduction in purchasing process costs",
           },
           {
             _id: 8,
             icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
             title:
-              "Enhance system performance and user experience by scaling up the system",
+              "20% Improvement in labor productivity",
           },
         ]}
       ></Benefits>
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY "
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        title="EHxGN EAM Project Highlights"
+        desc=""
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
-            thumbnail: "1",
+              "Indian based Global Oncology Pharmaceuticals Company Implements HxGN EAM Solution",
+            thumbnail: "IndianBasedGlobal",
 
-            description: "Non-government Association of Indian Industries ",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
@@ -726,51 +763,37 @@ const page = () => {
           {
             id: 2,
             title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
+              "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6.",
+            thumbnail: "IndianProminentHealthcare",
 
-            description: " Middle East-based Electrical Products Manufacturer ",
+            description: "",
             tags: [""],
             cta: "Know More",
             link: "/",
           },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
+          
         ]}
       />
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Spend LESS, GROW MORE"
-        title="Why Godrej Infotech ?"
-        desc="Embark on cloud upgradation journey by harnessing our credible
-        assessment process, strategic resources and fluent data
-        migration practice to minimise your business risk, time to
-        market and cost. Our time-tested delivery framework enables
-        businesses"
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech"
+        desc="It is our Hexagon EAM expertise, experience and commitment to excellence that sets us apart in a competitive landscape."
         arr={[
           {
             _id: 1,
-            desc: "One of the most dedicated and <span style='color: #4C6FFF;'> reliable partners </span>  for Azure Migration Services and Managed Cloud Service across ",
+            desc: "Trusted global alliance partner for Infor and Hexagon.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'>1 Billion+</span> Unfailing Cloud Hosting availability managing <span style='color: #4C6FFF;'>40000+</span> VMs",
+            desc: "Our experts possess deep domain knowledge and a proven track record of success.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "<span style='color: #4C6FFF;'>25000+</span> Apps and Databases migrated",
+            desc: "Expertise in delivering innovative solutions that address your most complex digital transformation needs.",
             icon: "",
           },
         ]}
@@ -779,11 +802,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
-        blue=" "
+        title="Ready to Optimize Your Asset Performance?"
+        blue="Let's Discuss!"
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Talk to our experts to discuss your requirements"
       />
 
       {/* Infotech weekly */}
