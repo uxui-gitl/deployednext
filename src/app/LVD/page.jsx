@@ -45,6 +45,9 @@ import ACTCard from "@/sections/ACTCard/ACTCard";
 
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import Announcement from "@/sections/announcement/Announcement";
+import Navbar from "@/components/Navbar/Navbar";
+import React from "react";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -547,6 +550,12 @@ const Page = () => {
   });
   return (
     <>
+      <Announcement />
+      <div className={`relative z-[500]`}>
+        <div className={`absolute w-full  `}>
+          <Navbar theme="light" />
+        </div>
+      </div>
       <EntIntro
         alignment="center"
         title="Delivering Business value

@@ -169,7 +169,7 @@ const expandedCardSlider = [
     title: "Pre-built business reporting",
     desc: "",
     url: "/",
-     list: [
+    list: [
       "Business need - Time and efforts required to work on data analysis",
       "Solution - Add on solution that generates pre-configured reports to analyse business data and make insightful decisions on day-to-day basis.",
     ],
@@ -191,7 +191,7 @@ const expandedCardSlider = [
     desc: "",
     imgUrl: "BusinessProcessMapping",
     url: "/",
-     list: [
+    list: [
       "Business need  Industry standard practices need to be configured from scratch.",
       "Solution - Tool with industry standard practices and experienced based add-ons that meets customer requirements with less efforts and time",
     ],
@@ -281,7 +281,6 @@ const capabilities = [
       "Promote Manufacturing excellence",
       "Exceptional customer experience fulfillment",
       "Efficiently manage people, technology, activities, information and resources",
-      
     ],
   },
   {
@@ -318,7 +317,6 @@ const capabilities = [
       "Ensure business requirements",
       "Implement quality control",
       "Reduce rework and scrap costs",
-      
     ],
   },
   {
@@ -330,7 +328,6 @@ const capabilities = [
       "Resource management",
       "Cost management",
       "Risk management",
-      
     ],
   },
   {
@@ -367,10 +364,8 @@ const capabilities = [
       "Impact analysis for engineering changes",
       "Integration with leading CAD solutions",
       "Collaboration between engineering and design teams",
-      
     ],
   },
-  
 ];
 const page = () => {
   return (
@@ -384,26 +379,37 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Capabilities
+          // Industries
+          // Benefits
+          // Add-Ons
+          // Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Industries",
+              link: "#Industries",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Add-Ons",
+              link: "#AddOns",
+            },
+            {
+              _id: 4,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -414,7 +420,7 @@ const page = () => {
 
       {/* Key Capabilites */}
       <>
-        <div className={` w-full bg-[#fff] pt-20`}>
+        <div id="Capabilities" className={` w-full bg-[#fff] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 pb-0   grid grid-cols-1 ">
             <div className="bg-[#fff] flex items-start flex-col justify-between  relative">
               <>
@@ -431,7 +437,9 @@ const page = () => {
                           Driving Operational Brilliance
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Infor LN stands out as a game-changer, renowned for its robust capabilities, making it the top choice among leading enterprises globally.
+                          Infor LN stands out as a game-changer, renowned for
+                          its robust capabilities, making it the top choice
+                          among leading enterprises globally.
                         </p>
                       </div>
                     </div>
@@ -488,7 +496,7 @@ const page = () => {
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -499,7 +507,9 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Understanding unique demands of each sector and capitalizing Infor LN capabilities, we equip businesses to thrive in competitive market.
+                  Understanding unique demands of each sector and capitalizing
+                  Infor LN capabilities, we equip businesses to thrive in
+                  competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -554,12 +564,14 @@ const page = () => {
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Access advanced global financials, supply chain, manufacturing, project and service lifecycle management features.",
+            title:
+              "Access advanced global financials, supply chain, manufacturing, project and service lifecycle management features.",
           },
           {
             _id: 2,
             icon: "Benefits-upgradeCloud/EnableUserConcurrency",
-            title: "Empower the entire organization with modern user experience.",
+            title:
+              "Empower the entire organization with modern user experience.",
           },
           {
             _id: 3,
@@ -576,15 +588,15 @@ const page = () => {
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Create transparent end-to-end processes encompassing sales, planning, production, procurement, financial management, inventory, logistics and after-sales service.",
+            title:
+              "Create transparent end-to-end processes encompassing sales, planning, production, procurement, financial management, inventory, logistics and after-sales service.",
           },
-          
         ]}
       ></Benefits>
 
       {/* Industry Solutions Slider */}
       <>
-        <div className={` w-full bg-[#F2F4F7] pt-20`}>
+        <div id="AddOns" className={` w-full bg-[#F2F4F7] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
             <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
               <>
@@ -601,7 +613,9 @@ const page = () => {
                           Add On Infor LN Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Our Infor LN Solutions have been meticulously developed, taking into account the insights of industry expertise.
+                          Our Infor LN Solutions have been meticulously
+                          developed, taking into account the insights of
+                          industry expertise.
                         </p>
                       </div>
                     </div>
@@ -694,12 +708,12 @@ const page = () => {
             desc: "Proprietary tool integrating project management and communication, ensuring 100% transparency.",
             icon: "",
           },
-            {
+          {
             _id: 4,
             desc: "Streamlined processes and enhanced efficiency offering significant advantages, especially for multi-site manufacturing enterprises.",
             icon: "",
           },
-           {
+          {
             _id: 5,
             desc: "Enable businesses to make data-driven decisions, stay ahead of the competition, reduce costs and deliver top notch products and services to customers.",
             icon: "",

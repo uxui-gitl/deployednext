@@ -272,26 +272,25 @@ const page = () => {
       cta: "Know More",
     },
   ];
+  //   Data Visualization
+  // Data Management Tools
+  // Capabilities
+
   const navLinks = [
     {
       _id: 1,
-      title: "Enterprise suite",
-      link: "#about",
+      title: "Data Visualization",
+      link: "#DataVisualization",
     },
     {
       _id: 2,
-      title: "Act Cards",
-      link: "#actCards",
+      title: "Data Management Tools",
+      link: "#DataManagementTools",
     },
     {
       _id: 3,
-      title: "Employee Experience",
-      link: "#empExp",
-    },
-    {
-      _id: 4,
-      title: "Spotlight",
-      link: "#spotlight",
+      title: "Capabilities",
+      link: "#Capabilities",
     },
   ];
   return (
@@ -312,52 +311,54 @@ const page = () => {
       {/* Abstract  */}
       <Abstract abstractdesc="We develop and execute bespoke strategies emphasizing governance and autonomous management to build your data estates for abstracting actionable insights. Through seamless integration of data into critical workflows, we optimize operational efficiency while implementing AI and automation at key junctures."></Abstract>
 
-      {/* Smart Tools Dynamic */}
+      {/* Smart Tools Dynamic - DataVisualization*/}
       <>
-        <ServiceOfferingGrid
-          title="Data Visualization"
-          ctaVisible={false}
-          desc="With real-time data access and visualization, you'll always have your finger on the pulse of your business operations. "
-          ctaDesc="Let's Connect for a Walkthrough"
-          cta="Let's Connect"
-          arr={[
-            {
-              _id: 1,
-              type: "box",
-              title: "Power BI",
-              theme: "light",
-              bg: "transparent",
-              desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
-              icon: "Power-BI-Logo.png",
-              cta: "",
-            },
-            {
-              _id: 2,
-              type: "box",
-              title: "Tableau",
-              theme: "dark",
-              bg: "#4C6FFF",
-              desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
-              icon: "Power-App.png",
-              cta: "",
-            },
-            {
-              _id: 3,
-              type: "box",
-              title: "Birst ",
-              theme: "dark",
-              bg: "#07001F",
-              desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
-              icon: "Birst-logo.png",
-              cta: "",
-            },
-          ]}
-        />
+        <div id="DataVisualization">
+          <ServiceOfferingGrid
+            title="Data Visualization"
+            ctaVisible={false}
+            desc="With real-time data access and visualization, you'll always have your finger on the pulse of your business operations. "
+            ctaDesc="Let's Connect for a Walkthrough"
+            cta="Let's Connect"
+            arr={[
+              {
+                _id: 1,
+                type: "box",
+                title: "Power BI",
+                theme: "light",
+                bg: "transparent",
+                desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+                icon: "Power-BI-Logo.png",
+                cta: "",
+              },
+              {
+                _id: 2,
+                type: "box",
+                title: "Tableau",
+                theme: "dark",
+                bg: "#4C6FFF",
+                desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+                icon: "Power-App.png",
+                cta: "",
+              },
+              {
+                _id: 3,
+                type: "box",
+                title: "Birst ",
+                theme: "dark",
+                bg: "#07001F",
+                desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location.",
+                icon: "Birst-logo.png",
+                cta: "",
+              },
+            ]}
+          />
+        </div>
       </>
 
       {/* Data Management */}
       <>
-        <div className={`w-full bg-[#F2F4F7] py-32`}>
+        <div id="DataManagementTools" className={`w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
@@ -409,89 +410,93 @@ const page = () => {
         </div>
       </>
 
-      {/* Capabilites */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities"
-        desc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental aspects – our domain experience, technical excellence and business environment."
-        arr={[
-          {
-            _id: 1,
-            icon: "gear",
-            title: "Data Platform Modernization",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
+      {/* Capabilites - Capabilities */}
+      <>
+        <div id="Capabilities">
+          <Capabilities
+            ribbon=" "
+            title="Our Capabilities"
+            desc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental aspects – our domain experience, technical excellence and business environment."
+            arr={[
               {
-                title:
-                  "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
-                url: "/",
+                _id: 1,
+                icon: "gear",
+                title: "Data Platform Modernization",
+                desc: "",
+                cta: "",
+                ctaUrl: "",
+                list: [
+                  {
+                    title:
+                      "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
+                    url: "/",
+                  },
+                ],
               },
-            ],
-          },
-          {
-            _id: 2,
-            icon: "gear",
-            title: "Advance Analytics",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
               {
-                title:
-                  "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
-                url: "/",
+                _id: 2,
+                icon: "gear",
+                title: "Advance Analytics",
+                desc: "",
+                cta: "",
+                ctaUrl: "",
+                list: [
+                  {
+                    title:
+                      "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
+                    url: "/",
+                  },
+                ],
               },
-            ],
-          },
-          {
-            _id: 3,
-            icon: "gear",
-            title: "Business Intelligence",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
               {
-                title:
-                  "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
-                url: "/",
+                _id: 3,
+                icon: "gear",
+                title: "Business Intelligence",
+                desc: "",
+                cta: "",
+                ctaUrl: "",
+                list: [
+                  {
+                    title:
+                      "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
+                    url: "/",
+                  },
+                ],
               },
-            ],
-          },
-          {
-            _id: 4,
-            icon: "gear",
-            title: "Data Warehouse and Integration",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
               {
-                title:
-                  "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
-                url: "/",
+                _id: 4,
+                icon: "gear",
+                title: "Data Warehouse and Integration",
+                desc: "",
+                cta: "",
+                ctaUrl: "",
+                list: [
+                  {
+                    title:
+                      "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
+                    url: "/",
+                  },
+                ],
               },
-            ],
-          },
-          {
-            _id: 5,
-            icon: "gear",
-            title: "Data Governance",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
               {
-                title:
-                  "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
-                url: "/",
+                _id: 5,
+                icon: "gear",
+                title: "Data Governance",
+                desc: "",
+                cta: "",
+                ctaUrl: "",
+                list: [
+                  {
+                    title:
+                      "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
+                    url: "/",
+                  },
+                ],
               },
-            ],
-          },
-        ]}
-      />
+            ]}
+          />
+        </div>
+      </>
 
       {/* <Awards /> */}
 
@@ -607,8 +612,7 @@ const page = () => {
           {
             id: 2,
             clientName: "",
-            clientDesignation:
-              "IT Manager, Saudi Arabia's Major Retail Chain",
+            clientDesignation: "IT Manager, Saudi Arabia's Major Retail Chain",
             thumbnail: "1",
             description:
               "We decided to choose the LS Retail NAV solution after technical. One of the most interesting aspects of this implementation is the Automated Data Capture System (ADCS) which provides a real-time interface between the handheld devices at the warehouse and the back-end ERP system at the head-office.",

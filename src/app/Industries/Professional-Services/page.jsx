@@ -265,33 +265,27 @@ const AIOfferings = [
 const BenefitsData = [
   {
     _id: 1,
-    icon: "gear",
-    title: "Gain competitive edge",
+    icon: "benefits-ai-ml/process-analyse",
+    cardDesc:
+      "Process and analyse vast volumes of data and round-the-clock assistance to customers",
   },
   {
     _id: 2,
-    icon: "diamond",
-    title: "Streamline operations",
+    icon: "benefits-ai-ml/anticipate-future",
+    cardDesc:
+      "Anticipate future outcomes based on historical data, making informed decisions",
   },
   {
     _id: 3,
-    icon: "eyeGear",
-    title: "Boost brand value",
+    icon: "benefits-ai-ml/effortless-communicate",
+    cardDesc:
+      "Effortless communication and efficient information retrieval through Natural Language Processing ",
   },
   {
     _id: 4,
-    icon: "gear",
-    title: "Gain competitive edge",
-  },
-  {
-    _id: 5,
-    icon: "diamond",
-    title: "Streamline operations",
-  },
-  {
-    _id: 6,
-    icon: "eyeGear",
-    title: "Boost brand value",
+    icon: "benefits-ai-ml/optimise-supply-chain",
+    cardDesc:
+      "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
   },
 ];
 
@@ -597,8 +591,17 @@ const page = () => {
         />
       </>
 
+      {/* Benefits */}
+      <Benefits
+        ribbon="Benefits "
+        ribbonTxtWhite="true"
+        title=""
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
+        arr={BenefitsData}
+      ></Benefits>
+
       {/* Expertise */}
-      <Expertise
+      {/* <Expertise
         ribbon="Our Expertise "
         ribbonTxtWhite="true"
         title="Future Outlook with Intelligent Technologies  "
@@ -617,7 +620,7 @@ const page = () => {
             desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
           },
         ]}
-      ></Expertise>
+      ></Expertise> */}
 
       {/* Microsoft Services */}
       <>

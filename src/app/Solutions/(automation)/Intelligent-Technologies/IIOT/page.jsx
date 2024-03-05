@@ -274,26 +274,37 @@ const Page = () => {
       {/* section Nav */}
       <>
         <SectionNav
+          // Solutions
+          // Case Study
+          // Benefits
+          // Insights
+          // Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Case Study",
+              link: "#CaseStudy",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Insights",
+              link: "#Insights",
+            },
+            {
+              _id: 5,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -304,6 +315,7 @@ const Page = () => {
       {/* GITL IOT solutions */}
       <>
         <div
+          id="Solutions"
           className={`text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]`}
         >
           <div className=" mt-[5em] mb-[2em]">
@@ -335,6 +347,7 @@ const Page = () => {
                 cta: "Explore Solutions",
                 isNested: true,
                 ctaLink: "/",
+                ctaHide: false,
                 tabData: [
                   {
                     _tabId: 1,
@@ -383,6 +396,7 @@ const Page = () => {
                 title: "Bespoke IoT Solutions",
                 desc: "We bring a wealth of industry knowledge and expertise to the table and follow the",
                 cta: "Explore Solutions",
+                ctaHide: true,
                 isNested: true,
                 ctaLink: "/",
                 tabData: [
@@ -448,17 +462,19 @@ const Page = () => {
                     ) : null}
                   </div>
                   <div className="max-w-max flex justify-start items-center mt-5">
-                    <button
-                      onClick={() => openPopup(item.title, item.tabData)}
-                      className="min-w-max text-[12px] leading-[15px] flex bg-transparent py-2 items-center pr-10  font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
-                    >
-                      {item.cta || "Explore Solutions"}
-                      <Icon
-                        path={mdiArrowTopRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </button>
+                    {!item.ctaHide ? (
+                      <button
+                        onClick={() => openPopup(item.title, item.tabData)}
+                        className="min-w-max text-[12px] leading-[15px] flex bg-transparent py-2 items-center pr-10  font-medium text-base text-[#101828] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
+                      >
+                        {item.cta || "Explore Solutions"}
+                        <Icon
+                          path={mdiArrowTopRight}
+                          style={{ marginLeft: "0.5em" }}
+                          size={1}
+                        />
+                      </button>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -558,45 +574,49 @@ const Page = () => {
         )}
       </>
 
-      {/* case study */}
-      <CaseStudy
-        ribbon="CASE STUDY "
-        title="Data Insights in Action / Case study"
-        desc=""
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "",
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-          },
-          {
-            id: 2,
-            title:
-              "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "",
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-          },
-          {
-            id: 3,
-            title:
-              "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-            thumbnail: "",
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-          },
-        ]}
-      />
+      {/* case study CaseStudy */}
+      <>
+        <div id="CaseStudy">
+          <CaseStudy
+            ribbon="CASE STUDY "
+            title="Data Insights in Action / Case study"
+            desc=""
+            isHomepage={false}
+            arr={[
+              {
+                id: 1,
+                title:
+                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
+                thumbnail: "",
+                description: "",
+                tags: [""],
+                cta: "Know More",
+                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
+              },
+              {
+                id: 2,
+                title:
+                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
+                thumbnail: "",
+                description: "",
+                tags: [""],
+                cta: "Know More",
+                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
+              },
+              {
+                id: 3,
+                title:
+                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
+                thumbnail: "",
+                description: "",
+                tags: [""],
+                cta: "Know More",
+                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
+              },
+            ]}
+          />
+        </div>
+      </>
 
       {/* Benefits Vertical Slider */}
       <Benefits

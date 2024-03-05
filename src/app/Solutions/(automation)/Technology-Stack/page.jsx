@@ -190,26 +190,37 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Partners
+          // Services
+          // Benefits
+          // Methodology
+          // Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Partners",
+              link: "#Partners",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Methodology",
+              link: "#Methodology",
+            },
+            {
+              _id: 5,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -219,7 +230,7 @@ const page = () => {
 
       {/* Tech Stack Platform Expertise Logos */}
       <>
-        <div className={`w-full bg-[#FFF] py-20`}>
+        <div id="Partners" className={`w-full bg-[#FFF] py-20`}>
           <div className="text-center max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-between  relative">
@@ -262,13 +273,17 @@ const page = () => {
       </> */}
 
       {/* Offerings 3 col grid */}
-      <OfferingsGrid
-        title="Service Offerings"
-        titleOnly={true}
-        desc=""
-        columns="3"
-        arr={TechStackOfferings}
-      />
+      <>
+        <div id="Services">
+          <OfferingsGrid
+            title="Service Offerings"
+            titleOnly={true}
+            desc=""
+            columns="3"
+            arr={TechStackOfferings}
+          />
+        </div>
+      </>
 
       {/* Insights */}
       <BlogSlider arr={blogData} />
@@ -284,7 +299,7 @@ const page = () => {
       ></Benefits>
 
       {/* Engg. with our Methodology */}
-      <div id="spotlight">
+      <div id="Methodology">
         <>
           <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">

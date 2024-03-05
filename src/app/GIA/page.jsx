@@ -42,9 +42,11 @@ import clsx from "clsx";
 import { JoinExpTeam, NewTestimonial, OfferingsSlider } from "@/components";
 import Robot from "@/sections/robot/Robot";
 import ACTCard from "@/sections/ACTCard/ACTCard";
+import Navbar from "@/components/Navbar/Navbar";
 
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
+import Announcement from "@/sections/announcement/Announcement";
 
 const fadeInAnimationVariant = {
   initial: {
@@ -547,6 +549,12 @@ const Page = () => {
   });
   return (
     <>
+      <Announcement />
+      <div className={`relative z-[500]`}>
+        <div className={`absolute w-full  `}>
+          <Navbar theme="light" />
+        </div>
+      </div>
       <EntIntro
         alignment="center"
         title="Delivering Business value

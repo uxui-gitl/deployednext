@@ -54,7 +54,7 @@ const AccordionItem = ({
     {isOpen && (
       <div className="accordionContent">
         <div className={clsx({ "px-8 py-2": !inline, "px-0": inline })}>
-          {console.log({ item })}
+          {/* {console.log({ item })} */}
           {expandedDesc ? (
             <p className="text-[14px] leading-[22px] font-normal">
               {item.desc}

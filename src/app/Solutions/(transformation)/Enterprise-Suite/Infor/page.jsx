@@ -983,26 +983,38 @@ const Page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Infor Expertise
+          // Services
+          // Add-Ons
+          // Industry Spotlight
+          // Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Infor Expertise",
+              link: "#InforExpertise",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Add-Ons",
+              link: "#AddOns",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Industry Spotlight",
+              link: "#IndustrySpotlight",
+            },
+
+            {
+              _id: 5,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -1013,16 +1025,19 @@ const Page = () => {
 
       {/* Infor Grid */}
       <>
-        <div className={`w-full bg-[#FFF] pt-32`}>
+        <div id="InforExpertise" className={`w-full bg-[#FFF] pt-32`}>
           <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                 Globally Trusted Core Infor expertise
+                  Globally Trusted Core Infor expertise
                 </h3>
                 <p>
-                  No matter the intricacy of your business requirements, our highly skilled team excels at understanding your organization&#39;s pain points and providing effective solutions. 
+                  No matter the intricacy of your business requirements, our
+                  highly skilled team excels at understanding your
+                  organization&#39;s pain points and providing effective
+                  solutions.
                 </p>
               </div>
             </div>
@@ -1105,7 +1120,7 @@ const Page = () => {
       </>
 
       <>
-        <div className={`w-full bg-white py-32`}>
+        <div id="Services" className={`w-full bg-white py-32`}>
           <div className=" max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
@@ -1113,7 +1128,10 @@ const Page = () => {
                   Infor Services with Expert Consulting and Success Delivery
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our ownership and determination to go above and beyond. This steadfast dedication has positioned us as a trusted long-term collaborator in our industry.
+                  Our commitment to your project&#39;s success drives our
+                  ownership and determination to go above and beyond. This
+                  steadfast dedication has positioned us as a trusted long-term
+                  collaborator in our industry.
                 </p>
               </div>
             </div>
@@ -1250,7 +1268,7 @@ const Page = () => {
 
       {/* Innovative Infor Drivers */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div id="AddOns" className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -1349,7 +1367,7 @@ const Page = () => {
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="IndustrySpotlight" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
@@ -1360,7 +1378,9 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Understanding unique demands of each industry vertical and capitalizing Infor capabilities, we equip businesses to thrive in competitive market.
+                  Understanding unique demands of each industry vertical and
+                  capitalizing Infor capabilities, we equip businesses to thrive
+                  in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">

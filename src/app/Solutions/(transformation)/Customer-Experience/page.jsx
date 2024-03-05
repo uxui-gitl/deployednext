@@ -138,26 +138,37 @@ export default function Home() {
         {/* Section Nav */}
         <>
           <SectionNav
+            // Solutions
+            // Services
+            // Our Approach
+            // Benefits
+            // Why Us
+
             arr={[
               {
                 _id: 1,
-                title: "Enterprise suite",
-                link: "#about",
+                title: "Solutions",
+                link: "#Solutions",
               },
               {
                 _id: 2,
-                title: "Act Cards",
-                link: "#actCards",
+                title: "Services",
+                link: "#Services",
               },
               {
                 _id: 3,
-                title: "Employee Experience",
-                link: "#empExp",
+                title: "Our Approach",
+                link: "#OurApproach",
               },
               {
                 _id: 4,
-                title: "Spotlight",
-                link: "#spotlight",
+                title: "Benefits",
+                link: "#Benefits",
+              },
+              {
+                _id: 5,
+                title: "Why Us",
+                link: "#WhyUs",
               },
             ]}
           />
@@ -166,180 +177,188 @@ export default function Home() {
         {/* Overview  */}
         <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
-        {/* Grid */}
+        {/* Grid Solutions */}
         <>
-          <ServiceOfferingGrid
-            title="Advance Solutions for
+          <div id="Solutions">
+            <ServiceOfferingGrid
+              title="Advance Solutions for
             Transforming Customer
             Experience"
-            ctaVisible={false}
-            cta="Let's Connect"
-            desc="We are dedicated to helping businesses like yours to optimize sales processes and drive greater sales results. We collaborate closely with you to gain a deep understanding of your sales operations to fine-tune Infor CRM and align perfectly with your business objectives"
-            ctaDesc="Let's Connect for a Walkthrough"
-            arr={[
-              {
-                _id: 1,
-                type: "box",
-                title: "Power BI",
-                theme: "light",
-                bg: "transparent",
-                desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
-                icon: "Power-BI-Logo.png",
-                cta: "Know More",
-              },
-              {
-                _id: 2,
-                type: "box",
-                title: "Tableau",
-                theme: "dark",
-                bg: "#4C6FFF",
-                desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
-                icon: "Power-App.png",
-                cta: "Know More",
-              },
-              {
-                _id: 3,
-                type: "box",
-                title: "Birst ",
-                theme: "dark",
-                bg: "#07001F",
-                desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
-                icon: "Birst-logo.png",
-                cta: "Know More",
-              },
-              {
-                _id: 1,
-                type: "box",
-                title: "Power BI",
-                theme: "light",
-                bg: "transparent",
-                desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
-                icon: "Power-BI-Logo.png",
-                cta: "Know More",
-              },
-              {
-                _id: 2,
-                type: "box",
-                title: "Tableau",
-                theme: "dark",
-                bg: "#4C6FFF",
-                desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
-                icon: "Power-App.png",
-                cta: "Know More",
-              },
-              {
-                _id: 3,
-                type: "box",
-                title: "Birst ",
-                theme: "dark",
-                bg: "#07001F",
-                desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
-                icon: "Birst-logo.png",
-                cta: "Know More",
-              },
-            ]}
-          />
+              ctaVisible={false}
+              cta="Let's Connect"
+              desc="We are dedicated to helping businesses like yours to optimize sales processes and drive greater sales results. We collaborate closely with you to gain a deep understanding of your sales operations to fine-tune Infor CRM and align perfectly with your business objectives"
+              ctaDesc="Let's Connect for a Walkthrough"
+              arr={[
+                {
+                  _id: 1,
+                  type: "box",
+                  title: "Power BI",
+                  theme: "light",
+                  bg: "transparent",
+                  desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+                  icon: "Power-BI-Logo.png",
+                  cta: "Know More",
+                },
+                {
+                  _id: 2,
+                  type: "box",
+                  title: "Tableau",
+                  theme: "dark",
+                  bg: "#4C6FFF",
+                  desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+                  icon: "Power-App.png",
+                  cta: "Know More",
+                },
+                {
+                  _id: 3,
+                  type: "box",
+                  title: "Birst ",
+                  theme: "dark",
+                  bg: "#07001F",
+                  desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
+                  icon: "Birst-logo.png",
+                  cta: "Know More",
+                },
+                {
+                  _id: 1,
+                  type: "box",
+                  title: "Power BI",
+                  theme: "light",
+                  bg: "transparent",
+                  desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+                  icon: "Power-BI-Logo.png",
+                  cta: "Know More",
+                },
+                {
+                  _id: 2,
+                  type: "box",
+                  title: "Tableau",
+                  theme: "dark",
+                  bg: "#4C6FFF",
+                  desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+                  icon: "Power-App.png",
+                  cta: "Know More",
+                },
+                {
+                  _id: 3,
+                  type: "box",
+                  title: "Birst ",
+                  theme: "dark",
+                  bg: "#07001F",
+                  desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
+                  icon: "Birst-logo.png",
+                  cta: "Know More",
+                },
+              ]}
+            />
+          </div>
         </>
 
         {/* Experience solutions */}
         <>
-          <>
-            <div className={` w-full bg-[#FFF] pt-24`}>
-              <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
-                <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-                  <div className="">
-                    <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                      Customer experience Service
-                    </h3>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <p className="font-normal leading-[22px] md:w-[90%] ">
-                      Starting precisely where you stand in your digital
-                      transformation journey, we seamlessly integrate our teams
-                      into your culture, fostering a collaborative environment
-                      for success
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </>
-          <>
-            <div
-              className={`bg-img w-full pt-24 pb-12 mt-20`}
-              id="productivity"
-            >
-              <div className="flex flex-col sm:flex-row gap-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
-                {[
-                  {
-                    _id: 1,
-                    title: "CRM services",
-                    desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                    cta: "Know More",
-                    icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                    link: "/",
-                  },
-                  {
-                    _id: 2,
-                    title: "Ecommerce   ",
-                    desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                    icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                    cta: "Know More",
-                    link: "/",
-                  },
-                ].map((item, index) => {
-                  return (
-                    <div
-                      key={item._id}
-                      className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
-                    >
-                      <div className="p-5 w-fit ">
-                        <div className="mb-4">
-                          {item.icon !== "" ? (
-                            <Image
-                              src={`/${item.icon}.svg`}
-                              width={56}
-                              height={56}
-                              alt={item.icon}
-                            />
-                          ) : (
-                            <Icon path={mdiDomain} size={3} />
-                          )}
-                        </div>
-                        <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
-                          {item.title}
-                        </h4>
-                        <div>
-                          <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
-                            {item.desc}
-                          </p>
-                        </div>
-                      </div>
-                      <div className=" w-full bg-[#0745D3] p-5">
-                        <Link
-                          href={item.link}
-                          className="text-white  flex transition-all hover:opacity-75  "
-                        >
-                          {item.cta}{" "}
-                          <Icon
-                            path={mdiArrowRight}
-                            style={{ marginLeft: "0.5em" }}
-                            size={1}
-                          />
-                        </Link>
-                      </div>
+          <div id="Services">
+            <>
+              <div className={` w-full bg-[#FFF] pt-24`}>
+                <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
+                  <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                    <div className="">
+                      <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                        Customer experience Service
+                      </h3>
                     </div>
-                  );
-                })}
+                  </div>
+                  <div>
+                    <div>
+                      <p className="font-normal leading-[22px] md:w-[90%] ">
+                        Starting precisely where you stand in your digital
+                        transformation journey, we seamlessly integrate our
+                        teams into your culture, fostering a collaborative
+                        environment for success
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </>
+            </>
+            <>
+              <div
+                className={`bg-img w-full pt-24 pb-12 mt-20`}
+                id="productivity"
+              >
+                <div className="flex flex-col sm:flex-row gap-5 justify-center text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto  p-5">
+                  {[
+                    {
+                      _id: 1,
+                      title: "CRM services",
+                      desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                      cta: "Know More",
+                      icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                      link: "/",
+                    },
+                    {
+                      _id: 2,
+                      title: "Ecommerce   ",
+                      desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                      icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
+                      cta: "Know More",
+                      link: "/",
+                    },
+                  ].map((item, index) => {
+                    return (
+                      <div
+                        key={item._id}
+                        className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
+                      >
+                        <div className="p-5 w-fit ">
+                          <div className="mb-4">
+                            {item.icon !== "" ? (
+                              <Image
+                                src={`/${item.icon}.svg`}
+                                width={56}
+                                height={56}
+                                alt={item.icon}
+                              />
+                            ) : (
+                              <Icon path={mdiDomain} size={3} />
+                            )}
+                          </div>
+                          <h4 className="text-[26px] font-bold mb-4 md:mb-8 leading-[34px] text-[#101828]">
+                            {item.title}
+                          </h4>
+                          <div>
+                            <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
+                              {item.desc}
+                            </p>
+                          </div>
+                        </div>
+                        <div className=" w-full bg-[#0745D3] p-5">
+                          <Link
+                            href={item.link}
+                            className="text-white  flex transition-all hover:opacity-75  "
+                          >
+                            {item.cta}{" "}
+                            <Icon
+                              path={mdiArrowRight}
+                              style={{ marginLeft: "0.5em" }}
+                              size={1}
+                            />
+                          </Link>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </>
+          </div>
         </>
+
         {/* Infographics */}
         <>
-          <div className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white">
+          <div
+            id="OurApproach"
+            className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white"
+          >
             <div className=" mt-[5em] mb-[2em]">
               <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
                 <h3 className="text-4xl leading-[42px] font-bold">
