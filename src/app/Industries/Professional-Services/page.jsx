@@ -411,7 +411,7 @@ const page = () => {
         </div>
       </>
 
-      {/* Our Ai Offerings */}
+      {/* Our Ai Offerings - our solutions */}
       <>
         <div className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -489,7 +489,14 @@ const page = () => {
         </div>
       </>
 
-      {/* 3 column */}
+      {/* Our Capabilities */}
+      <Capabilities
+        ribbon=" "
+        title="Our Capabilities "
+        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+      />
+
+      {/* 3 column - Segment we serve */}
       <>
         <OfferingsSlider
           title="The healthcare segment we serve"
@@ -589,13 +596,6 @@ const page = () => {
           ]}
         />
       </>
-
-      {/* Our Capabilities */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities "
-        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
-      />
 
       {/* Expertise */}
       <Expertise

@@ -85,7 +85,7 @@ const Navbar = ({ theme }) => {
                     </Link>
                   </li>
                   <CareersNav />
-                  <InsightsNav />
+                  {/* <InsightsNav /> */}
                 </ul>
               </nav>
               {/* Mobile */}

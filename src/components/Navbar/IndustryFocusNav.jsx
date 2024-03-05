@@ -100,6 +100,14 @@ const IndustryFocusNav = () => {
                 Professional Services
               </Link>
             </li>
+            <li>
+              <Link
+                href="/Industries/Healthcare"
+                className="block py-2 hover:text-blue-600"
+              >
+                Healthcare
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

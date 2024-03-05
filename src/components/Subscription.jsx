@@ -114,7 +114,7 @@ const Subscription = ({ title, blue, title2, desc }) => {
                   onChange={handleChange}
                   type="text"
                   id="name"
-                  placeholder="Darshan Sawant"
+                  placeholder="John Doe"
                   className="mt-1 block w-full px-3 py-2 text-sm shadow-sm placeholder-slate-400
                   focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                   disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none

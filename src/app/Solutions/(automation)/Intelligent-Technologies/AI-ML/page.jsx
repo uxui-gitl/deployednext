@@ -59,7 +59,6 @@ const blogData = [
     link: "/",
     imgUrl: "",
   },
-  
 ];
 
 const AIOfferings = [
@@ -82,7 +81,6 @@ const AIOfferings = [
         title: "Equipment Monitoring",
         url: "/",
       },
-      
     ],
   },
   {
@@ -125,7 +123,6 @@ const AIOfferings = [
         title: "Financial Processing",
         url: "/",
       },
-      
     ],
   },
 
@@ -187,51 +184,63 @@ const BenefitsData = [
   {
     _id: 1,
     icon: "benefits-ai-ml/process-analyse",
-    cardDesc: "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+    cardDesc:
+      "Process and analyse vast volumes of data and round-the-clock assistance to customers",
   },
   {
     _id: 2,
     icon: "benefits-ai-ml/anticipate-future",
-    cardDesc: "Anticipate future outcomes based on historical data, making informed decisions",
+    cardDesc:
+      "Anticipate future outcomes based on historical data, making informed decisions",
   },
   {
     _id: 3,
     icon: "benefits-ai-ml/effortless-communicate",
-    cardDesc: "Effortless communication and efficient information retrieval through Natural Language Processing ",
+    cardDesc:
+      "Effortless communication and efficient information retrieval through Natural Language Processing ",
   },
   {
     _id: 4,
     icon: "benefits-ai-ml/optimise-supply-chain",
-    cardDesc: "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
+    cardDesc:
+      "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
   },
-
 ];
 
-const MLData = [{
-  _id:1,
-  imgURL: "/ai-ml/Expertise_Deep-Learning.jpg",
-  title:"Deep Learning",
-  subTitle:"Our deep learning expertise builds solutions that automate complex tasks helping in data-driven decision-making, especially when it comes to forecasting your business's future.",
-  ctaURL:""
-},{
-  _id:2,
-  imgURL:"/ai-ml/Expertise_Supervised-Learning.jpg",
-  title:"Supervised Learning",
-  subTitle:"We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
-  ctaURL:""
-},{
-  _id:3,
-  imgURL: "/ai-ml/Expertise_Unsupervised-Learning.jpg",
-  title:"Unsupervised Learning",
-  subTitle:"Our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
-  ctaURL:""
-},{
-  _id:4,
-  imgURL: "/ai-ml/Expertise_Reinforcement-Learning.jpg",
-  title:"Reinforcement Learning",
-  subTitle:"Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
-  ctaURL:""
-}]
+const MLData = [
+  {
+    _id: 1,
+    imgURL: "/ai-ml/Expertise_Deep-Learning.jpg",
+    title: "Deep Learning",
+    subTitle:
+      "Our deep learning expertise builds solutions that automate complex tasks helping in data-driven decision-making, especially when it comes to forecasting your business's future.",
+    ctaURL: "",
+  },
+  {
+    _id: 2,
+    imgURL: "/ai-ml/Expertise_Supervised-Learning.jpg",
+    title: "Supervised Learning",
+    subTitle:
+      "We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
+    ctaURL: "",
+  },
+  {
+    _id: 3,
+    imgURL: "/ai-ml/Expertise_Unsupervised-Learning.jpg",
+    title: "Unsupervised Learning",
+    subTitle:
+      "Our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
+    ctaURL: "",
+  },
+  {
+    _id: 4,
+    imgURL: "/ai-ml/Expertise_Reinforcement-Learning.jpg",
+    title: "Reinforcement Learning",
+    subTitle:
+      "Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
+    ctaURL: "",
+  },
+];
 const page = () => {
   return (
     <>
@@ -245,41 +254,48 @@ const page = () => {
       <>
         <SectionNav
           arr={[
+            // AI Offerings
+            // ML Expertise
+            // Platforms
+            // Benefits
+            // Why Us
+
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "AI Offerings",
+              link: "#AIOfferings",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "ML Expertise",
+              link: "#MLExpertise",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Platforms",
+              link: "#Platforms",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+
+            {
+              _id: 5,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
       </>
 
       {/* Overview  */}
-      <Abstract
-        abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours. "
-        >
-
-        </Abstract>
-      
+      <Abstract abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours. "></Abstract>
 
       {/* Our Ai Offerings */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="AIOfferings" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -292,7 +308,9 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-               We are committed to bringing the power of Artificial Intelligence to your business operations, providing tailored solutions that drives business proficiency. 
+                  We are committed to bringing the power of Artificial
+                  Intelligence to your business operations, providing tailored
+                  solutions that drives business proficiency.
                 </p>
               </div>
             </div>
@@ -346,7 +364,7 @@ const page = () => {
 
       {/* ML Expertise */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="MLExpertise" className={` w-full bg-[#F2F4F7] py-24`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 sm:grid-cols-1 relative">
               <div className="">
@@ -356,7 +374,8 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] ">
-                  We specialize in developing algorithms to make your operations smarter, faster and more reliable.
+                  We specialize in developing algorithms to make your operations
+                  smarter, faster and more reliable.
                 </p>
               </div>
             </div>
@@ -400,23 +419,25 @@ const page = () => {
 
       {/* AI & ML Partners */}
       <>
-        <div className={`w-full bg-[#FFF] pt-20`}>
+        <div id="Platforms" className={`w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold">
-                Intelligent Technologies Platforms
+                  Intelligent Technologies Platforms
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%]">
-                Our proficiency with AI/ML platforms paves the way for progressive business results with the intersection of innovation and efficiency.
+                  Our proficiency with AI/ML platforms paves the way for
+                  progressive business results with the intersection of
+                  innovation and efficiency.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20 p-5 mb-5">
                 <div>
-                  <Image src={MSAzure} alt="Microsoft Azure"/>
+                  <Image src={MSAzure} alt="Microsoft Azure" />
                 </div>
                 <div>
                   <Image src={GoogleAI} alt="Google AI" />
@@ -431,13 +452,17 @@ const page = () => {
       </>
 
       {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits"
-        ribbonTxtWhite="true"
-        title=""
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
-        arr={BenefitsData}
-      ></Benefits>
+      <>
+        <div id="Benefits">
+          <Benefits
+            ribbon="Benefits"
+            ribbonTxtWhite="true"
+            title=""
+            desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
+            arr={BenefitsData}
+          ></Benefits>
+        </div>
+      </>
 
       {/* Industry Spotlight Slider */}
       {/* <>
@@ -452,7 +477,7 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] p-5 ">
-                We help in shaping technology prerequisites and deliver value to customers, catering to diverse industries across the spectrum. 
+                We help in shaping technology prerequisites and deliver value to customers, catering to diverse industries across the spectrum.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -496,37 +521,38 @@ const page = () => {
         </div>
       </> */}
 
-
-      <BlogSlider arr={blogData}/>
-      {/* Why choose gitl and ai and ml */}
-      <WhySection
-        ribbon="The Distinctive Edge"
-        title="Why Godrej Infotech?"
-        desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
-        arr={[
-          {
-            _id: 1,
-            desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "Agile approach that keeps projects on cutting edge.",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
+      <BlogSlider arr={blogData} />
+      {/* Why choose gitl and ai and ml  WhyUs*/}
+      <div id="WhyUs">
+        <WhySection
+          ribbon="The Distinctive Edge"
+          title="Why Godrej Infotech?"
+          desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
+          arr={[
+            {
+              _id: 1,
+              desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+              icon: "",
+            },
+            {
+              _id: 2,
+              desc: "Agile approach that keeps projects on cutting edge.",
+              icon: "",
+            },
+            {
+              _id: 3,
+              desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+              icon: "",
+            },
+            {
+              _id: 4,
+              desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+              icon: "",
+            },
+          ]}
+          renderInlineSpans={true}
+        ></WhySection>
+      </div>
 
       {/* Subscription */}
       <Subscription

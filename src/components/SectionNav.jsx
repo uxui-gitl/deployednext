@@ -49,7 +49,7 @@ const SectionNav = ({ arr }) => {
                 to={item.link.substring(1)}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={10}
                 duration={500}
                 className={`font-medium py-5 text-base ${
                   activeSection === item.link.substring(1)

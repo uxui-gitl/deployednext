@@ -340,26 +340,37 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Why RPA?
+          // Partners
+          // Services
+          // Use Cases
+          // Project Lifecycle
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Why RPA?",
+              link: "#whyrpa",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Partners",
+              link: "#Partners",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Use Cases",
+              link: "#UseCases",
+            },
+            {
+              _id: 5,
+              title: "Project Lifecycle",
+              link: "#ProjectLifecycle",
             },
           ]}
         />
