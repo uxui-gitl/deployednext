@@ -85,7 +85,6 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
                       //       : `/caseStudies/${cases.thumbnail}.png`
                       //     : `/project-placeholder.png`
                       // }
-                      alt={`${cases.tags}`}
                       className="w-[100%]"
                       width="315"
                       height="200"
