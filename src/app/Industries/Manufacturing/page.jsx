@@ -595,26 +595,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Capabilities
+          // Solutions
+          // Add-Ons
+          // Case Study
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Add-Ons",
+              link: "#AddOns",
+            },
+            {
+              _id: 5,
+              title: "Case Study",
+              link: "#CaseStudy",
             },
           ]}
         />
@@ -636,7 +647,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -932,7 +943,7 @@ const page = () => {
 
       {/* Our Capabilities */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="Capabilities" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -1069,7 +1080,7 @@ const page = () => {
       <>
         <div
           className={`bg-ms-practise w-full  bg-[#9199A6]   py-32  `}
-          id="productivity"
+          id="Solutions"
         >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -1174,7 +1185,7 @@ const page = () => {
 
       {/* Our Solutions growth */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="AddOns" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

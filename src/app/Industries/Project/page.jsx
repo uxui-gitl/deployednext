@@ -308,26 +308,37 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Challenges
+          // Solutions
+          // Capabilities
+          // Services
+          // Partners
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Services",
+              link: "#Services",
+            },
+            {
+              _id: 5,
+              title: "Partners",
+              link: "#Partners",
             },
           ]}
         />
@@ -364,7 +375,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -413,7 +424,7 @@ const page = () => {
 
       {/* Our Ai Offerings */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="Solutions" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -591,11 +602,13 @@ const page = () => {
       </>
 
       {/* Our Capabilities */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities "
-        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
-      />
+      <div id="Capabilities">
+        <Capabilities
+          ribbon=" "
+          title="Our Capabilities "
+          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+        />
+      </div>
 
       {/* Expertise */}
       <Expertise
@@ -623,7 +636,7 @@ const page = () => {
       <>
         <div
           className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32  `}
-          id="productivity"
+          id="Services"
         >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -827,7 +840,7 @@ const page = () => {
       />
       {/* Our Partners */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

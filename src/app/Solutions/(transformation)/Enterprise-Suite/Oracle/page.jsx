@@ -207,26 +207,31 @@ const page = () => {
       {/* section nav */}
       <>
         <SectionNav
+          //  Solutions
+          //  Services
+          //  Benefits
+          //  Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -240,15 +245,17 @@ const page = () => {
 
       {/* Offerings Card */}
       <>
-        <AbstractCard
-          ribbon="Oracle Solutions Offerings "
-          desc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
-          bgImgClass="bg-people"
-          bgColor="#F2F4F7"
-          title="Oracle Fusion Cloud"
-          cta="Explore Service"
-          link="/"
-        ></AbstractCard>
+        <div id="Solutions">
+          <AbstractCard
+            ribbon="Oracle Solutions Offerings "
+            desc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
+            bgImgClass="bg-people"
+            bgColor="#F2F4F7"
+            title="Oracle Fusion Cloud"
+            cta="Explore Service"
+            link="/"
+          ></AbstractCard>
+        </div>
       </>
 
       {/* Stack Offering Sliders / Oracle services */}
@@ -544,7 +551,7 @@ const page = () => {
       </>
 
       {/* Key capabilites */}
-      <div className={`bg-white w-full    py-32  `} id="productivity">
+      <div className={`bg-white w-full    py-32  `} id="Services">
         <div className={` w-full`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}

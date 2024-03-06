@@ -537,26 +537,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Services
+          // Consulting Approach
+          // Our Expertise
+          // Why GITL
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Consulting Approach",
+              link: "#ConsultingApproach",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Our Expertise",
+              link: "#OurExpertise",
+            },
+            {
+              _id: 5,
+              title: "Why GITL",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -589,7 +600,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -640,7 +651,10 @@ const page = () => {
 
       <>
         <div className={` w-full bg-[#fff] py-32`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+          <div
+            id="Services"
+            className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] "
+          >
             <div className=" mt-[5em] mb-[2em]">
               <div className="hidden">
                 <h4
@@ -827,7 +841,10 @@ const page = () => {
             </div>
           </div>
           {/* 4 cards */}
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-2 sm:grid-cols-4">
+          <div
+            id="ConsultingApproach"
+            className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-2 sm:grid-cols-4"
+          >
             {[
               {
                 _id: 1,

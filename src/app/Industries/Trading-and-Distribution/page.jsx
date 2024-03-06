@@ -371,26 +371,37 @@ const page = () => {
       {/* section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Capabilities
+          // Services
+          // Industry Verticals
+          // Partners
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Industry Verticals",
+              link: "#IndustryVerticals",
+            },
+            {
+              _id: 5,
+              title: "Partners",
+              link: "#Partners",
             },
           ]}
         />
@@ -427,7 +438,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -476,7 +487,7 @@ const page = () => {
 
       {/* services */}
       <>
-        <div className={` w-full bg-[#FFF] pt-16`}>
+        <div id="Capabilities" className={` w-full bg-[#FFF] pt-16`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -607,7 +618,7 @@ const page = () => {
 
       {/*  Cards */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="Services" className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
@@ -674,7 +685,7 @@ const page = () => {
 
       {/* Our Partners */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -708,7 +719,7 @@ const page = () => {
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="IndustryVerticals" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

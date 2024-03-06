@@ -518,26 +518,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Offerings
+          // Services
+          // Implementation Process
+          // Benefits
+          // Testimonials
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Offerings",
+              link: "#Offerings",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Implementation Process",
+              link: "#ImplementationProcess",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+            {
+              _id: 5,
+              title: "Testimonials",
+              link: "#Testimonial",
             },
           ]}
         />
@@ -548,299 +559,301 @@ const page = () => {
 
       {/* Stack Offering Sliders */}
       <>
-        <OfferingsSlider
-          arr={[
-            /*One*/
-            {
-              _id: 1,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            /*End One*/
-            {
-              _id: 2,
-              title: "Technology Solutions - Implementation & Management",
-              desc: "",
-              inline: true,
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Perimeter Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Zero Trust Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure access service edge (SASE)",
-                      url: "/",
-                    },
-                    {
-                      title: "Next Generation Firewall (NGFW)",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure Remote Access (VPN)",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi Factor Authentication (MFA)",
-                      url: "/",
-                    },
-                    {
-                      title: "Distributed Denial of Service (DDoS)",
-                      url: "/",
-                    },
-                    {
-                      title: "Web Security Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Network Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Next Generation Firewalls",
-                      url: "/",
-                    },
-                    {
-                      title: "Unified Threat Management",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Defined WAN",
-                      url: "/",
-                    },
-                    {
-                      title: "Network Access Control (NAC)",
-                      url: "/",
-                    },
-                    {
-                      title: "Deception Technology",
-                      url: "/",
-                    },
-                    {
-                      title: "Advanced Persistent Threat (APT)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "End Point Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Endpoint Protection Suite",
-                      url: "/",
-                    },
-                    {
-                      title: "Endpoint Detection Response (EDR)",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Asset Management (SAM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Patch Management Solutions",
-                      url: "/",
-                    },
-                    {
-                      title:
-                        "Mobile Device or Application Management (MDM / MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 4,
-                  icon: "gear",
-                  title: "Application Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Web Application Security (WAF)",
-                      url: "/",
-                    },
-                    {
-                      title: "API Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 5,
-                  icon: "gear",
-                  title: "e. Users",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "O365",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile Device / Application",
-                      url: "/",
-                    },
-                    {
-                      title: "Management (MDM/ MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 6,
-                  icon: "gear",
-                  title: "Data",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Data Loss Prevention (DLP)",
-                      url: "/",
-                    },
-                    {
-                      title: "Privilege Identity Management (PIM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Cloud Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Disaster Recovery",
-                      url: "/",
-                    },
-                  ],
-                },
-                // Add more items as needed
-              ],
-              cta: "Explore Service",
-              image: "rpa/Cyber-security_Technology-Solutions.jpg",
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Transcription Services",
-                  url: "/",
-                },
-                {
-                  title: "Speech recognition",
-                  url: "/",
-                },
-                {
-                  title: "Language translation",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 3,
-              title: "Application Security testing",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Application-Security-Testing.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Web application Security testing",
-                  url: "/",
-                },
-                {
-                  title: "Mobile App Security testing",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Vulnerability Assessment and Penetration Testing (VAPT)",
-                  url: "/",
-                },
-              ],
-            },
+        <div id="Offerings">
+          <OfferingsSlider
+            arr={[
+              /*One*/
+              {
+                _id: 1,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+              /*End One*/
+              {
+                _id: 2,
+                title: "Technology Solutions - Implementation & Management",
+                desc: "",
+                inline: true,
+                subArr: true,
+                subArrLinks: [
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Perimeter Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Zero Trust Security",
+                        url: "/",
+                      },
+                      {
+                        title: "Secure access service edge (SASE)",
+                        url: "/",
+                      },
+                      {
+                        title: "Next Generation Firewall (NGFW)",
+                        url: "/",
+                      },
+                      {
+                        title: "Secure Remote Access (VPN)",
+                        url: "/",
+                      },
+                      {
+                        title: "Multi Factor Authentication (MFA)",
+                        url: "/",
+                      },
+                      {
+                        title: "Distributed Denial of Service (DDoS)",
+                        url: "/",
+                      },
+                      {
+                        title: "Web Security Gateways",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Network Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Next Generation Firewalls",
+                        url: "/",
+                      },
+                      {
+                        title: "Unified Threat Management",
+                        url: "/",
+                      },
+                      {
+                        title: "Software Defined WAN",
+                        url: "/",
+                      },
+                      {
+                        title: "Network Access Control (NAC)",
+                        url: "/",
+                      },
+                      {
+                        title: "Deception Technology",
+                        url: "/",
+                      },
+                      {
+                        title: "Advanced Persistent Threat (APT)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "End Point Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Endpoint Protection Suite",
+                        url: "/",
+                      },
+                      {
+                        title: "Endpoint Detection Response (EDR)",
+                        url: "/",
+                      },
+                      {
+                        title: "Software Asset Management (SAM)",
+                        url: "/",
+                      },
+                      {
+                        title: "Patch Management Solutions",
+                        url: "/",
+                      },
+                      {
+                        title:
+                          "Mobile Device or Application Management (MDM / MAM)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 4,
+                    icon: "gear",
+                    title: "Application Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Web Application Security (WAF)",
+                        url: "/",
+                      },
+                      {
+                        title: "API Gateways",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 5,
+                    icon: "gear",
+                    title: "e. Users",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "O365",
+                        url: "/",
+                      },
+                      {
+                        title: "Mobile Device / Application",
+                        url: "/",
+                      },
+                      {
+                        title: "Management (MDM/ MAM)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 6,
+                    icon: "gear",
+                    title: "Data",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Data Loss Prevention (DLP)",
+                        url: "/",
+                      },
+                      {
+                        title: "Privilege Identity Management (PIM)",
+                        url: "/",
+                      },
+                      {
+                        title: "Cloud Security",
+                        url: "/",
+                      },
+                      {
+                        title: "Disaster Recovery",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  // Add more items as needed
+                ],
+                cta: "Explore Service",
+                image: "rpa/Cyber-security_Technology-Solutions.jpg",
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Transcription Services",
+                    url: "/",
+                  },
+                  {
+                    title: "Speech recognition",
+                    url: "/",
+                  },
+                  {
+                    title: "Language translation",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 3,
+                title: "Application Security testing",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Application-Security-Testing.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Web application Security testing",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile App Security testing",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Vulnerability Assessment and Penetration Testing (VAPT)",
+                    url: "/",
+                  },
+                ],
+              },
 
-            {
-              _id: 4,
-              title: "vCISO Services",
-              desc: "",
-              cta: "Explore Service",
-              inline: true,
-              image: "rpa/Cyber-security_vCISO.jpg",
-              subArrLinks: [],
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Strategy",
-                  url: "/",
-                },
-                {
-                  title: "Risk Management",
-                  url: "/",
-                },
-                {
-                  title: "Regulatory & Standards compliance",
-                  url: "/",
-                },
-                {
-                  title: "Policy & procedures",
-                  url: "/",
-                },
-                {
-                  title: "Security Program",
-                  url: "/",
-                },
-                {
-                  title: "End user Training",
-                  url: "/",
-                },
-              ],
-            },
-          ]}
-        />
+              {
+                _id: 4,
+                title: "vCISO Services",
+                desc: "",
+                cta: "Explore Service",
+                inline: true,
+                image: "rpa/Cyber-security_vCISO.jpg",
+                subArrLinks: [],
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Strategy",
+                    url: "/",
+                  },
+                  {
+                    title: "Risk Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Regulatory & Standards compliance",
+                    url: "/",
+                  },
+                  {
+                    title: "Policy & procedures",
+                    url: "/",
+                  },
+                  {
+                    title: "Security Program",
+                    url: "/",
+                  },
+                  {
+                    title: "End user Training",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+          />
+        </div>
       </>
 
       {/* Ms slider */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div className={`bg-ms-practise w-full    py-32  `} id="Services">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
@@ -943,7 +956,10 @@ const page = () => {
       </>
       {/*  Cards */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div
+          className={` w-full bg-[#F2F4F7] py-32`}
+          id="ImplementationProcess"
+        >
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
@@ -992,43 +1008,46 @@ const page = () => {
       </>
 
       {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
-        ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
-        arr={[
-          {
-            _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
-          },
-          {
-            _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
-          },
-          {
-            _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
-          },
-          {
-            _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
-          },
-        ]}
-      ></Benefits>
+      <div id="Benefits">
+        <Benefits
+          ribbon="Benefits "
+          ribbonTxtWhite="true"
+          title="AI&ML "
+          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+          arr={[
+            {
+              _id: 1,
+              icon: "benefits-ai-ml/process-analyse",
+              cardDesc:
+                "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+            },
+            {
+              _id: 2,
+              icon: "benefits-ai-ml/anticipate-future",
+              cardDesc:
+                "Anticipate future outcomes based on historical data, making informed decisions",
+            },
+            {
+              _id: 3,
+              icon: "benefits-ai-ml/effortless-communicate",
+              cardDesc:
+                "Effortless communication and efficient information retrieval through Natural Language Processing",
+            },
+            {
+              _id: 4,
+              icon: "benefits-ai-ml/optimise-supply-chain",
+              cardDesc:
+                "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+            },
+            {
+              _id: 5,
+              icon: "benefits-ai-ml/healthcare",
+              cardDesc:
+                "Revolutionising Healthcare with medical image analysis",
+            },
+          ]}
+        ></Benefits>
+      </div>
 
       {/* Why Section */}
       <WhySection
