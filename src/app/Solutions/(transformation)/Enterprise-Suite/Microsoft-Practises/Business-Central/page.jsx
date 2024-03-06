@@ -95,8 +95,8 @@ const ChoiceSlider = [
     imgUrl: "ProfessionalServices",
     url: "/",
   },
-    {
-    _id:7,
+  {
+    _id: 7,
     title: "Professional Services",
     desc: "",
     imgUrl: "ProfessionalServices",
@@ -255,177 +255,203 @@ const page = () => {
       {/* section Nav */}
       <>
         <SectionNav
+          // Capabilities
+          // Industry Spotlight
+          // Benefits
+          // Why Us
+          // Testimonials
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Industry Spotlight",
+              link: "#IndustrySpotlight",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Why Us",
+              link: "#WhyUs",
+            },
+            {
+              _id: 5,
+              title: "Testimonials",
+              link: "#Testimonial",
             },
           ]}
         />
       </>
 
- 
-  {/* Overview  */}
-      <Abstract abstractdesc="Microsoft D365 Business Central is an innovative cloud-based solution that seamlessly integrates ERP, CRM and Office 365 into a unified platform, bringing sales, service, finance and operations teams together for enhanced adaptability and faster results. This all-in-one affordable management tool paves the way for growth for small, medium and upper mid-sized organizations. Businesses have a choice between on-premises or cloud implementation providing ultimate control over operations.  
- With team of adept developers specializing in Microsoft Dynamics 365 Business Central, our team is well-equipped to meet your business needs, offering tailored solutions to address the requirements of your enterprise. 
-"></Abstract>
-
-
+      {/* Overview  */}
+      <Abstract
+        abstractdesc="Microsoft D365 Business Central is an innovative cloud-based solution that seamlessly integrates ERP, CRM and Office 365 into a unified platform, bringing sales, service, finance and operations teams together for enhanced adaptability and faster results. This all-in-one affordable management tool paves the way for growth for small, medium and upper mid-sized organizations. Businesses have a choice between on-premises or cloud implementation providing ultimate control over operations.
+ With team of adept developers specializing in Microsoft Dynamics 365 Business Central, our team is well-equipped to meet your business needs, offering tailored solutions to address the requirements of your enterprise.
+"
+      ></Abstract>
 
       {/* Capabilites */}
-      <Capabilities
-        ribbon=" "
-        title="Key Capabilities"
-        desc="Embrace a modern, efficient and cost-effective approach to managing your business right at your fingertips."
-        arr={[
-          {
-            _id: 1,
-            icon: "gear",
-            title: "Future of Projects",
-            desc: "",
-            cta: "Know More",
-            ctaUrl: "/",
-            list: [
-              {
-                title: "Financial Data Consolidation : Seamlessly consolidate data from accounting, sales, purchasing, inventory to achieve a unified financial perspective.",
-                url: "/",
-              },
-              {
-                title: "Built-in Power BI Dashboards: Visualize real-time financial performance data to identify patterns and trends with precision.",
-                url: "/",
-              },
-              {
-                title: "Process Streamlining: Streamline essential accounting processes, such as accounts receivable and payable, Fixed Assets, Cash & Bank Management, Taxation ensuring automatic reconciliation.",
-                url: "/",
-              },
-              {
-                title: "Data Modeling and Analysis: Conduct multi-dimensional data analysis and improve forecasting accuracy.",
-                url: "/",
-              },
-              {
-                title: "Customized Reporting: Easily customize and share reports, featuring seamless Excel integration.",
-                url: "/",
-              },
-              
-            ],
-          },
-          {
-            _id: 2,
-            icon: "gear",
-            title: "Supply Chain",
-            desc: "",
-            cta: "Know More",
-            ctaUrl: "/",
-            list: [
-              {
-                title: "Automated Stock Management: Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times, and reorder points.",
-                url: "/",
-              },
-              {
-                title: "Approval Workflow: Prevent unnecessary purchases and avoid vendor overdue penalties with a structured approval workflow.",
-                url: "/",
-              },
-              {
-                title: "Built-in Intelligence: Make informed inventory replenishment decisions using sales forecasts and anticipated stock-outs.",
-                url: "/",
-              },
-              
-            ],
-          },
-          {
-            _id: 3,
-            icon: "gear",
-            title: "Sales and Marketing",
-            desc: "",
-            cta: "Know More",
-            ctaUrl: "/",
-            list: [
-              {
-                title: "Client Interaction Tracking: Gain automated guidance on optimal upsell, cross-sell and renewal opportunities by tracking historical client data.",
-                url: "/",
-              },
-              {
-                title: "Efficient Sales Process: Streamline the quote-to-cash sales process and manage service requests directly through Outlook integration.",
-                url: "/",
-              },
-              
-            ],
-          },
-          {
-            _id: 4,
-            icon: "gear",
-            title: "Project Management",
-            desc: "",
-            cta: "Know More",
-            ctaUrl: "/",
-            list: [
-              {
-                title: "Timesheets: Manage client projects with advanced job costing and reporting capabilities, while tracking timesheets.",
-                url: "/",
-              },
-              {
-                title: "Invoice Tracking: Keep tabs on client invoicing in relation to planned costs on orders and quotes.",
-                url: "/",
-              },
-              {
-                title: "Real-Time Insights: Monitor real-time project status, profitability and resource usage metrics.",
-                url: "/",
-              },
-              
-            ],
-          },
-          {
-            _id: 5,
-            icon: "gear",
-            title: "Service Management",
-            desc: "",
-            cta: "Know More",
-            ctaUrl: "/",
-            list: [
-              {
-                title: "Planning and dispatching : Assign and log work order details, manage dispatch with personnel, skills and stock filters for efficiency.",
-                url: "/",
-              },
-              {
-                title: "Service contract management: Agree on service levels, track contract history, renewal and warranties. Manage details, measure profitability and generate quotes.",
-                url: "/",
-              },
-              {
-                title: "Service Item Management: Manage service items comprehensively, recording contracts, components, BOM, and warranty data, analysing key performance indicators efficiently.",
-                url: "/",
-              },
-              {
-                title: "Service Order Management: Handle post-sales issues, service requests, and equipment loans; let customers initiate or auto-create requests based on agreements.",
-                url: "/",
-              },
-              {
-                title: "Service Price Management: Establish, track, and adjust prices with automated assignment based on criteria for profitability insights.",
-                url: "/",
-              },
-            ],
-          },
-        ]}
-      />
+      <div id="Capabilities">
+        <Capabilities
+          ribbon=" "
+          title="Key Capabilities"
+          desc="Embrace a modern, efficient and cost-effective approach to managing your business right at your fingertips."
+          arr={[
+            {
+              _id: 1,
+              icon: "gear",
+              title: "Future of Projects",
+              desc: "",
+              cta: "Know More",
+              ctaUrl: "/",
+              list: [
+                {
+                  title:
+                    "Financial Data Consolidation : Seamlessly consolidate data from accounting, sales, purchasing, inventory to achieve a unified financial perspective.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Built-in Power BI Dashboards: Visualize real-time financial performance data to identify patterns and trends with precision.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Process Streamlining: Streamline essential accounting processes, such as accounts receivable and payable, Fixed Assets, Cash & Bank Management, Taxation ensuring automatic reconciliation.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Data Modeling and Analysis: Conduct multi-dimensional data analysis and improve forecasting accuracy.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Customized Reporting: Easily customize and share reports, featuring seamless Excel integration.",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 2,
+              icon: "gear",
+              title: "Supply Chain",
+              desc: "",
+              cta: "Know More",
+              ctaUrl: "/",
+              list: [
+                {
+                  title:
+                    "Automated Stock Management: Receive automated suggestions for inventory replenishment, based on calculations of stock levels, lead times, and reorder points.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Approval Workflow: Prevent unnecessary purchases and avoid vendor overdue penalties with a structured approval workflow.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Built-in Intelligence: Make informed inventory replenishment decisions using sales forecasts and anticipated stock-outs.",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 3,
+              icon: "gear",
+              title: "Sales and Marketing",
+              desc: "",
+              cta: "Know More",
+              ctaUrl: "/",
+              list: [
+                {
+                  title:
+                    "Client Interaction Tracking: Gain automated guidance on optimal upsell, cross-sell and renewal opportunities by tracking historical client data.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Efficient Sales Process: Streamline the quote-to-cash sales process and manage service requests directly through Outlook integration.",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 4,
+              icon: "gear",
+              title: "Project Management",
+              desc: "",
+              cta: "Know More",
+              ctaUrl: "/",
+              list: [
+                {
+                  title:
+                    "Timesheets: Manage client projects with advanced job costing and reporting capabilities, while tracking timesheets.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Invoice Tracking: Keep tabs on client invoicing in relation to planned costs on orders and quotes.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Real-Time Insights: Monitor real-time project status, profitability and resource usage metrics.",
+                  url: "/",
+                },
+              ],
+            },
+            {
+              _id: 5,
+              icon: "gear",
+              title: "Service Management",
+              desc: "",
+              cta: "Know More",
+              ctaUrl: "/",
+              list: [
+                {
+                  title:
+                    "Planning and dispatching : Assign and log work order details, manage dispatch with personnel, skills and stock filters for efficiency.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Service contract management: Agree on service levels, track contract history, renewal and warranties. Manage details, measure profitability and generate quotes.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Service Item Management: Manage service items comprehensively, recording contracts, components, BOM, and warranty data, analysing key performance indicators efficiently.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Service Order Management: Handle post-sales issues, service requests, and equipment loans; let customers initiate or auto-create requests based on agreements.",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Service Price Management: Establish, track, and adjust prices with automated assignment based on criteria for profitability insights.",
+                  url: "/",
+                },
+              ],
+            },
+          ]}
+        />
+      </div>
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="IndustrySpotlight" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -436,7 +462,8 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred Microsoft partner, we deliver brilliant value driven D365 Business Central Solution to your sector.
+                  Being preferred Microsoft partner, we deliver brilliant value
+                  driven D365 Business Central Solution to your sector.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -490,26 +517,22 @@ const page = () => {
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Enhanced Productivity and Efficiency ",
+            cardDesc: "Enhanced Productivity and Efficiency ",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Real-time Insights and Collaborative Capabilities ",
+            cardDesc: "Real-time Insights and Collaborative Capabilities ",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Customisable and Scalable System",
+            cardDesc: "Customisable and Scalable System",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Any time and Any place System Accessibility with Cloud",
+            cardDesc: "Any time and Any place System Accessibility with Cloud",
           },
           {
             _id: 5,
@@ -574,7 +597,8 @@ const page = () => {
           {
             id: 2,
             clientName: "",
-            clientDesignation: "Finance Manager, India based Worldwide Fast-Food chain",
+            clientDesignation:
+              "Finance Manager, India based Worldwide Fast-Food chain",
             thumbnail: "1",
             description:
               "GITL upgraded our NAV 2016 system to Business Central on-SaaS, including seamless data migration. We were highly impressed by the proficiency of GITL team.  This upgradation has helped us save on subscription costs but also facilitated quicker transactional updates.",
@@ -584,7 +608,8 @@ const page = () => {
           {
             id: 3,
             clientName: "",
-            clientDesignation: "IT Head, Middle East base Popular Fast-food Chain",
+            clientDesignation:
+              "IT Head, Middle East base Popular Fast-food Chain",
             thumbnail: "1",
             description:
               "We appreciate Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes.",
@@ -643,7 +668,8 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
+            title:
+              "Microsoft Dynamics 365 Finance and Operations or Business Central? Which ERP investment will help you to take off your business?",
             desc: "Which business would not like to experience outstanding growth within a short span of time? But is that even feasible in this fast-paced world? We all understand that the needs of any organization are constantly evolving due to the dynamic nature of the market. And that is why a robust and agile platform is much needed for a business that can support these requirements.",
             cta: "Know More",
             link: "/",

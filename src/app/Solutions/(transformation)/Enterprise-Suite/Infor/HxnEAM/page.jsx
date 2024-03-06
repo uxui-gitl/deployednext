@@ -65,7 +65,6 @@ const blogData = [
     link: "/",
     imgUrl: "hxgn_blog",
   },
-
 ];
 const smartTools = [
   {
@@ -337,7 +336,6 @@ const page = () => {
           title: "Inspection point scheduling and classification",
           url: "/",
         },
-        
       ],
     },
     {
@@ -355,7 +353,6 @@ const page = () => {
           title: "Issues segmentation based on preset nonconformity index.",
           url: "/",
         },
-        
       ],
     },
     {
@@ -373,7 +370,6 @@ const page = () => {
           title: "HSE compliance regulations.",
           url: "/",
         },
-        
       ],
     },
     {
@@ -391,7 +387,6 @@ const page = () => {
           title: "Automatic cost inclusion through invoices",
           url: "/",
         },
-        
       ],
     },
     {
@@ -409,11 +404,10 @@ const page = () => {
           title: "Preventative management version control",
           url: "/",
         },
-         {
+        {
           title: "Track attribute changes for every table in HxGN EAM",
           url: "/",
         },
-        
       ],
     },
     {
@@ -424,18 +418,19 @@ const page = () => {
       icon: "dummy",
       links: [
         {
-          title: "Track calibration data for equipment categories, assets, systems and positions",
+          title:
+            "Track calibration data for equipment categories, assets, systems and positions",
           url: "/",
         },
         {
           title: "Define test point data",
           url: "/",
         },
-         {
-          title: "Associate test-point sets with work orders and preventive maintenance work orders",
+        {
+          title:
+            "Associate test-point sets with work orders and preventive maintenance work orders",
           url: "/",
         },
-        
       ],
     },
   ];
@@ -452,26 +447,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Capabilities
+          // Industries
+          // Benefits
+          // Insights
+          // Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Industries",
+              link: "#Industries",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Insights",
+              link: "#Insights",
+            },
+            {
+              _id: 5,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -479,12 +485,11 @@ const page = () => {
 
       {/* Overview */}
       {/* Overview  */}
-        <Abstract abstractdesc="HxGN EAM, formerly known as Infor EAM, offers holistic solutions to address the pressing challenges of asset performance in both the present and the future. This robust and adaptable solution helps in attaining enhanced insights into your assets, elevating their reliability and performance while efficiently reducing the total cost of ownership. Godrej Infotech has successfully implemented HxGN EAM for a diverse range of clients, each experiencing tangible improvements in their asset management processes. Our expertise extends to deploying predictive maintenance strategies, leveraging real-time data to anticipate asset issues, reduce downtime and optimize maintenance costs."></Abstract>
-
+      <Abstract abstractdesc="HxGN EAM, formerly known as Infor EAM, offers holistic solutions to address the pressing challenges of asset performance in both the present and the future. This robust and adaptable solution helps in attaining enhanced insights into your assets, elevating their reliability and performance while efficiently reducing the total cost of ownership. Godrej Infotech has successfully implemented HxGN EAM for a diverse range of clients, each experiencing tangible improvements in their asset management processes. Our expertise extends to deploying predictive maintenance strategies, leveraging real-time data to anticipate asset issues, reduce downtime and optimize maintenance costs."></Abstract>
 
       {/* Core Capabilities */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="Capabilities" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5  ">
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="grid grid-cols-1 sm:grid-cols-2">
@@ -493,7 +498,9 @@ const page = () => {
                 </h3>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Beyond static approaches, HxGN EAM dynamically adapts to the lifecycle stages ensuring assets remain at their peak throughout. 
+                    Beyond static approaches, HxGN EAM dynamically adapts to the
+                    lifecycle stages ensuring assets remain at their peak
+                    throughout.
                   </p>
                 </div>
               </div>
@@ -574,7 +581,7 @@ const page = () => {
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-center max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-center flex-col justify-center  relative">
@@ -585,7 +592,9 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] mb-3 md:w-[90%] ">
-                  Understanding unique demands of industry vertical and capitalizing Infor CloudSuite capabilities, we equip businesses to thrive in competitive market.
+                  Understanding unique demands of industry vertical and
+                  capitalizing Infor CloudSuite capabilities, we equip
+                  businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -699,7 +708,8 @@ const page = () => {
           {
             _id: 1,
             icon: "Benefits-upgradeCloud/MinimizeOperationalExpenses",
-            title: "Up to a 50% Reduction in maintenance overtime, labor and contractor costs",
+            title:
+              "Up to a 50% Reduction in maintenance overtime, labor and contractor costs",
           },
           {
             _id: 2,
@@ -709,14 +719,12 @@ const page = () => {
           {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
-            title:
-              "50% Increase in warranty cost recovery",
+            title: "50% Increase in warranty cost recovery",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
-            title:
-              "30% Reduction in inventory levels",
+            title: "30% Reduction in inventory levels",
           },
           {
             _id: 5,
@@ -726,8 +734,7 @@ const page = () => {
           {
             _id: 6,
             icon: "Benefits-upgradeCloud/IntegrateBigDataAnalytics",
-            title:
-              "10% Reduction in materials costs",
+            title: "10% Reduction in materials costs",
           },
           {
             _id: 7,
@@ -737,8 +744,7 @@ const page = () => {
           {
             _id: 8,
             icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-            title:
-              "20% Improvement in labor productivity",
+            title: "20% Improvement in labor productivity",
           },
         ]}
       ></Benefits>
@@ -771,7 +777,6 @@ const page = () => {
             cta: "Know More",
             link: "/",
           },
-          
         ]}
       />
 

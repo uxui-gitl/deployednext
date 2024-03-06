@@ -40,7 +40,6 @@ import EnhanceSystemPerformance from "../../../../../public/icon/Benefits-upgrad
 import { useState } from "react";
 import { NewTestimonial } from "@/components";
 
-
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -380,26 +379,38 @@ export default function Home() {
         {/* Section Nav */}
         <>
           <SectionNav
+            // On-Prem Challenges
+            // Solutions
+            // Services
+            // Benefits
+            // Why Us
+
             arr={[
               {
                 _id: 1,
-                title: "Enterprise suite",
-                link: "#about",
+                title: "On-Prem Challenges",
+                link: "#OnPremChallenges",
               },
               {
                 _id: 2,
-                title: "Act Cards",
-                link: "#actCards",
+                title: "Solutions",
+                link: "#Solutions",
               },
               {
                 _id: 3,
-                title: "Employee Experience",
-                link: "#empExp",
+                title: "Services",
+                link: "#Services",
               },
               {
                 _id: 4,
-                title: "Spotlight",
-                link: "#spotlight",
+                title: "Benefits",
+                link: "#Benefits",
+              },
+
+              {
+                _id: 5,
+                title: "Why Us",
+                link: "#WhyUs",
               },
             ]}
           />
@@ -439,7 +450,7 @@ export default function Home() {
 
         {/* On premises Challenges*/}
         <>
-          <div className={` w-full bg-[#f2f4f7] py-24`}>
+          <div id="OnPremChallenges" className={` w-full bg-[#f2f4f7] py-24`}>
             <>
               <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
                 <div className="  ">
@@ -485,7 +496,7 @@ export default function Home() {
         {/* Upgrade Now */}
         <>
           <>
-            <div className={` w-full bg-white py-24`}>
+            <div id="Solutions" className={` w-full bg-white py-24`}>
               <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
                 <div className="bg-white flex items-start flex-col justify-start">
                   <div>
@@ -656,7 +667,7 @@ export default function Home() {
         </>
 
         {/* Spotlight test - Streamline Cloud Upgrade Service with Our Process Map */}
-        <div id="spotlight">
+        <div id="Services">
           <>
             <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
@@ -796,14 +807,15 @@ export default function Home() {
               <div className="mx-auto text-center bg-white flex items-center  flex-col justify-center">
                 <div className="mx-auto text-center">
                   <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                   We are Trained and Accredited in Cloud Services
+                    We are Trained and Accredited in Cloud Services
                   </h3>
                   <p className="font-normal leading-[22px] md:w-[80%] mx-auto">
-                    We undergo demanding assessment and authorisation to guarantee that our expertise and practices fulfil highest standards of excellence.  
+                    We undergo demanding assessment and authorisation to
+                    guarantee that our expertise and practices fulfil highest
+                    standards of excellence.
                   </p>
                 </div>
                 <div className="flex justify-center flex-col sm:flex-row items-center mx-auto gap-5">
-                  
                   <div className="mt-16">
                     <Image src={microsoftpartner} alt="microsoft" />
                   </div>
@@ -923,36 +935,36 @@ export default function Home() {
           ></WhySection>
         </>
 
-<NewTestimonial
-        ribbon="CLIENT TESTIMONIALS"
-        ribbonVisible={false}
-        title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain",
-            thumbnail: "1",
-            description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency.",
-            category: "static",
-            link: "/",
-          },
-          {
-            id: 2,
-            clientName: "",
-            clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider",
-            thumbnail: "2",
-            description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
+        <NewTestimonial
+          ribbon="CLIENT TESTIMONIALS"
+          ribbonVisible={false}
+          title="Delighted customers share their success experience "
+          desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+          arr={[
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation:
+                "ERP and Business Intelligence Head, Fast food service chain",
+              thumbnail: "1",
+              description:
+                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation:
+                "Manager IT, India's leading Energy Management System and Solutions provider",
+              thumbnail: "2",
+              description:
+                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              category: "static",
+              link: "/",
+            },
+          ]}
+        />
 
         {/* <Testimonials
           ribbon="CLIENT TESTIMONIALS"

@@ -75,13 +75,13 @@ const Announcement = ({ content }) => {
     let url = "";
     switch (code) {
       case "BE":
-        url = "https://www.godrejinfotech.com/en-be/";
+        url = "/LVD";
         break;
       case "SG":
-        url = "https://www.godrejinfotech.com/en-sg/";
+        url = "/";
         break;
       case "US":
-        url = "https://www.godrejinfotech.com/en-usa/";
+        url = "/GIA";
         break;
       case "IN":
         url = "/";
@@ -89,7 +89,8 @@ const Announcement = ({ content }) => {
       default:
         url = "/";
     }
-    window.open(url, "_blank");
+    // window.open(url, "_blank");
+    window.open(url, "_self");
   };
 
   useEffect(() => {

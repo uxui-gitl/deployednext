@@ -223,10 +223,10 @@ const page = () => {
                                   target="_blank"
                                   className="block pb-1 hover:underline w-fit"
                                   href={
-                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/ECommerce"
+                                    "/Solutions/Enterprise-Suite/Microsoft-Practises/D365-Commerce"
                                   }
                                 >
-                                  ☑️ eCommerce
+                                  ☑️ D365 Commerce
                                 </Link>
                               </li>
                             </ul>

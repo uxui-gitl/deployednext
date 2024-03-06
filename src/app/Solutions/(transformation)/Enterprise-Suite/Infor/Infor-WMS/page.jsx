@@ -199,26 +199,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Solution Highlights
+          // Industry Solutions
+          // Benefits
+          // Testimonial
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Solution Highlights",
+              link: "#SolutionHighlights",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Industry Solutions",
+              link: "#IndustrySolutions",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+            {
+              _id: 5,
+              title: "Testimonial",
+              link: "#Testimonial",
             },
           ]}
         />
@@ -229,7 +240,7 @@ const page = () => {
 
       {/* Challengers Encountered */}
       <>
-        <div className={`w-full bg-white pb-20`}>
+        <div id="Challenges" className={`w-full bg-white pb-16`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -278,7 +289,7 @@ const page = () => {
       </>
       {/* Infor WMS Industry solutions */}
       <>
-        <div className={`w-full bg-[#FFF] py-10`}>
+        <div id="SolutionHighlights" className={`w-full bg-[#FFF] pt-10`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -430,7 +441,7 @@ const page = () => {
 
       {/* Infor WMS Key Highlights */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div id="IndustrySolutions" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

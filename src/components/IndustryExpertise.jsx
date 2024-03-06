@@ -6,7 +6,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 const IndustryExpertise = ({ heading, desc, list }) => {
-  console.log(list);
+  // console.log(list);
   return (
     <>
       <div className={` w-full bg-[#FFF] pt-32`}>

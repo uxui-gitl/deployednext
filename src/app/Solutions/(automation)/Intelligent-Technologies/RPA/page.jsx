@@ -340,26 +340,37 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Why RPA?
+          // Partners
+          // Services
+          // Use Cases
+          // Project Lifecycle
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Why RPA?",
+              link: "#whyrpa",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Partners",
+              link: "#Partners",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Use Cases",
+              link: "#UseCases",
+            },
+            {
+              _id: 5,
+              title: "Project Lifecycle",
+              link: "#ProjectLifecycle",
             },
           ]}
         />
@@ -581,7 +592,7 @@ const page = () => {
 
       {/* Old */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="whyrpa" className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
@@ -631,7 +642,7 @@ const page = () => {
 
       {/* RPA Platform Expertise Logos */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -668,7 +679,7 @@ const page = () => {
 
       {/* RPA Service Offerings */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="Services" className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
@@ -777,7 +788,7 @@ const page = () => {
 
       {/* RPA UseCases */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div id="UseCases" className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -851,7 +862,7 @@ const page = () => {
 
       {/* GITL RPA Cards */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div id="ProjectLifecycle" className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

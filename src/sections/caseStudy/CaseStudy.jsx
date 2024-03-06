@@ -24,6 +24,7 @@ const fadeInAnimationVariant = {
 const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
   return (
     <div
+      id="CaseStudy"
       className={clsx({
         "max-w-screen-lg mx-auto px-[2rem] bg-[#fff]": isHomepage,
         "text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]": !isHomepage,
@@ -46,6 +47,7 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
       <motion.div className="container grid grid-cols-1 md:grid-cols-3 gap-[30px]">
         {arr &&
           arr.map((cases, index) => (
+            // console.log(cases.thumbnail),
             <motion.div
               key={index}
               variants={fadeInAnimationVariant}
@@ -66,14 +68,22 @@ const CaseStudy = ({ ribbon, title, desc, isHomepage, subDesc, arr }) => {
               >
                 <Image
                   // src={`/project-${cases.thumbnail}.png`}
+
                   src={
                     cases.thumbnail
                       ? cases.thumbnail == "1" || "2" || "3"
-                        ? `/project-placeholder.png`
+                        ? `/caseStudies/${cases.thumbnail}.png`
                         : `/caseStudies/${cases.thumbnail}.png`
                       : `/project-placeholder.png`
                   }
-                  alt={`${cases.tags}`}
+                  alt={cases.thumbnail}
+                  // src={
+                  //   cases.thumbnail
+                  //     ? cases.thumbnail == "1" || "2" || "3"
+                  //       ? `/project-placeholder.png`
+                  //       : `/caseStudies/${cases.thumbnail}.png`
+                  //     : `/project-placeholder.png`
+                  // }
                   className="w-[100%]"
                   width="315"
                   height="200"

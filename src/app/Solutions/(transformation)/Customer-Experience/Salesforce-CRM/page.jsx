@@ -478,26 +478,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Modules
+          // Key Capabilities
+          // Industries
+          // Benefits
+          // Testimonials
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Modules",
+              link: "#Modules",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Key Capabilities",
+              link: "#KeyCapabilities",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Industries",
+              link: "#Industries",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+            {
+              _id: 5,
+              title: "Testimonials",
+              link: "#Testimonials",
             },
           ]}
         />
@@ -508,256 +519,261 @@ const page = () => {
 
       {/* Stack Offering Sliders */}
       <>
-        <OfferingsSlider
-          title="Modules"
-          alignment="left"
-          expandedDesc={true}
-          arr={[
-            /*One*/
-            {
-              _id: 1,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Sales Execution CRM",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            /*End One*/
-            {
-              _id: 2,
-              title: "Technology Solutions - Implementation & Management",
-              desc: "",
-              inline: true,
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
-              cta: "Explore Service",
-              image: "rpa/Cyber-security_Technology-Solutions.jpg",
-              ctaUrl: "/",
-              links: [
-                [
+        <div id="Modules">
+          <OfferingsSlider
+            title="Modules"
+            alignment="left"
+            expandedDesc={true}
+            arr={[
+              /*One*/
+              {
+                _id: 1,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArr: true,
+                subArrLinks: [
                   {
-                    title: "Transcription Services",
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                ],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Sales Execution CRM",
                     url: "/",
                   },
                   {
-                    title: "Speech recognition",
-                    url: "/",
-                  },
-                  {
-                    title: "Language translation",
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
                     url: "/",
                   },
                 ],
-              ],
-            },
-            {
-              _id: 3,
-              title: "Application Security testing",
-              desc: "",
-              cta: "Explore Service",
-              image: "rpa/Application-Security-Testing.jpg",
-              inline: true,
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Web application Security testing",
-                  url: "/",
-                },
-                {
-                  title: "Mobile App Security testing",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Vulnerability Assessment and Penetration Testing (VAPT)",
-                  url: "/",
-                },
-              ],
-            },
+              },
+              /*End One*/
+              {
+                _id: 2,
+                title: "Technology Solutions - Implementation & Management",
+                desc: "",
+                inline: true,
+                subArr: true,
+                subArrLinks: [
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                ],
+                cta: "Explore Service",
+                image: "rpa/Cyber-security_Technology-Solutions.jpg",
+                ctaUrl: "/",
+                links: [
+                  [
+                    {
+                      title: "Transcription Services",
+                      url: "/",
+                    },
+                    {
+                      title: "Speech recognition",
+                      url: "/",
+                    },
+                    {
+                      title: "Language translation",
+                      url: "/",
+                    },
+                  ],
+                ],
+              },
+              {
+                _id: 3,
+                title: "Application Security testing",
+                desc: "",
+                cta: "Explore Service",
+                image: "rpa/Application-Security-Testing.jpg",
+                inline: true,
+                subArr: true,
+                subArrLinks: [
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                ],
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Web application Security testing",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile App Security testing",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Vulnerability Assessment and Penetration Testing (VAPT)",
+                    url: "/",
+                  },
+                ],
+              },
 
-            {
-              _id: 4,
-              title: "vCISO Services",
-              desc: "",
-              cta: "Explore Service",
-              inline: true,
-              image: "rpa/Cyber-security_vCISO.jpg",
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Sales Execution CRM",
-                  desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Sales Cloud",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "Salesforce CPQ (Configure, Price, Quote)",
-                  desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [],
-                },
-              ],
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Strategy",
-                  url: "/",
-                },
-                {
-                  title: "Risk Management",
-                  url: "/",
-                },
-                {
-                  title: "Regulatory & Standards compliance",
-                  url: "/",
-                },
-                {
-                  title: "Policy & procedures",
-                  url: "/",
-                },
-                {
-                  title: "Security Program",
-                  url: "/",
-                },
-                {
-                  title: "End user Training",
-                  url: "/",
-                },
-              ],
-            },
-          ]}
-        />
+              {
+                _id: 4,
+                title: "vCISO Services",
+                desc: "",
+                cta: "Explore Service",
+                inline: true,
+                image: "rpa/Cyber-security_vCISO.jpg",
+                subArr: true,
+                subArrLinks: [
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                ],
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Strategy",
+                    url: "/",
+                  },
+                  {
+                    title: "Risk Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Regulatory & Standards compliance",
+                    url: "/",
+                  },
+                  {
+                    title: "Policy & procedures",
+                    url: "/",
+                  },
+                  {
+                    title: "Security Program",
+                    url: "/",
+                  },
+                  {
+                    title: "End user Training",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+          />
+        </div>
       </>
 
       {/* Ms slider */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div
+          className={`bg-ms-practise w-full    py-32  `}
+          id="KeyCapabilities"
+        >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px] text-[#fff]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium text-[#fff] leading-[22px] md:w-[90%] ">
+                  <p className="font-medium  leading-[22px] md:w-[90%] ">
                     We deliver high-performing services for a comprehensive
                     suite Microsoft ecosystem, devised to elevate growth and
                     productivity and build stronger stakeholder connections
@@ -850,7 +866,7 @@ const page = () => {
 
       {/* Industry Spotlight Slider */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">

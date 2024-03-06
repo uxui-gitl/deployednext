@@ -9,6 +9,7 @@ import SplashScreen from "@/components/SplashScreen";
 import { usePathname } from "next/navigation";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import NextTopLoader from "nextjs-toploader";
 const works = Work_Sans({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
           <>
+            <NextTopLoader />
             {children}
             <Footer />
             <Copyright />

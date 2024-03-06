@@ -487,26 +487,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Industries
+          // Solutions
+          // Capabilities
+          // Services
+          // Case Study
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Industries",
+              link: "#Industries",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Services",
+              link: "#Services",
+            },
+            {
+              _id: 5,
+              title: "Case Study",
+              link: "#CaseStudy",
             },
           ]}
         />
@@ -529,7 +540,7 @@ const page = () => {
       {/* Retail segment slider */}
       <>
         <>
-          <div className={` w-full bg-[#FFF] pt-24`}>
+          <div id="Industries" className={` w-full bg-[#FFF] pt-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
@@ -690,395 +701,399 @@ const page = () => {
       {/* Solutions we offer slider */}
 
       <>
-        <OfferingsSlider
+        <div id="Solutions">
+          <OfferingsSlider
+            arr={[
+              /*One*/
+              {
+                _id: 1,
+                title: "Business Consulting",
+                descOnly: true,
+                desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+              /*End One*/
+              {
+                _id: 2,
+                title: "Implementation & Management",
+                desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
+                descOnly: true,
+
+                inline: true,
+                subArr: true,
+                subArrLinks: [
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Perimeter Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Zero Trust Security",
+                        url: "/",
+                      },
+                      {
+                        title: "Secure access service edge (SASE)",
+                        url: "/",
+                      },
+                      {
+                        title: "Next Generation Firewall (NGFW)",
+                        url: "/",
+                      },
+                      {
+                        title: "Secure Remote Access (VPN)",
+                        url: "/",
+                      },
+                      {
+                        title: "Multi Factor Authentication (MFA)",
+                        url: "/",
+                      },
+                      {
+                        title: "Distributed Denial of Service (DDoS)",
+                        url: "/",
+                      },
+                      {
+                        title: "Web Security Gateways",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Network Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Next Generation Firewalls",
+                        url: "/",
+                      },
+                      {
+                        title: "Unified Threat Management",
+                        url: "/",
+                      },
+                      {
+                        title: "Software Defined WAN",
+                        url: "/",
+                      },
+                      {
+                        title: "Network Access Control (NAC)",
+                        url: "/",
+                      },
+                      {
+                        title: "Deception Technology",
+                        url: "/",
+                      },
+                      {
+                        title: "Advanced Persistent Threat (APT)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "End Point Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Endpoint Protection Suite",
+                        url: "/",
+                      },
+                      {
+                        title: "Endpoint Detection Response (EDR)",
+                        url: "/",
+                      },
+                      {
+                        title: "Software Asset Management (SAM)",
+                        url: "/",
+                      },
+                      {
+                        title: "Patch Management Solutions",
+                        url: "/",
+                      },
+                      {
+                        title:
+                          "Mobile Device or Application Management (MDM / MAM)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 4,
+                    icon: "gear",
+                    title: "Application Security",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Web Application Security (WAF)",
+                        url: "/",
+                      },
+                      {
+                        title: "API Gateways",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 5,
+                    icon: "gear",
+                    title: "Users",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "O365",
+                        url: "/",
+                      },
+                      {
+                        title: "Mobile Device / Application",
+                        url: "/",
+                      },
+                      {
+                        title: "Management (MDM/ MAM)",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  {
+                    _id: 6,
+                    icon: "gear",
+                    title: "Data",
+                    desc: "",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [
+                      {
+                        title: "Data Loss Prevention (DLP)",
+                        url: "/",
+                      },
+                      {
+                        title: "Privilege Identity Management (PIM)",
+                        url: "/",
+                      },
+                      {
+                        title: "Cloud Security",
+                        url: "/",
+                      },
+                      {
+                        title: "Disaster Recovery",
+                        url: "/",
+                      },
+                    ],
+                  },
+                  // Add more items as needed
+                ],
+                cta: "Explore Service",
+                image: "rpa/Cyber-security_Technology-Solutions.jpg",
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Transcription Services",
+                    url: "/",
+                  },
+                  {
+                    title: "Speech recognition",
+                    url: "/",
+                  },
+                  {
+                    title: "Language translation",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 3,
+                title: "Application Security Testing",
+                descOnly: true,
+                desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
+
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Application-Security-Testing.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Web application Security testing",
+                    url: "/",
+                  },
+                  {
+                    title: "Mobile App Security testing",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Vulnerability Assessment and Penetration Testing (VAPT)",
+                    url: "/",
+                  },
+                ],
+              },
+
+              {
+                _id: 4,
+                title: "vCISO Services",
+                descOnly: true,
+                desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
+
+                cta: "Explore Service",
+                inline: true,
+                image: "rpa/Cyber-security_vCISO.jpg",
+                subArrLinks: [],
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Strategy",
+                    url: "/",
+                  },
+                  {
+                    title: "Risk Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Regulatory & Standards compliance",
+                    url: "/",
+                  },
+                  {
+                    title: "Policy & procedures",
+                    url: "/",
+                  },
+                  {
+                    title: "Security Program",
+                    url: "/",
+                  },
+                  {
+                    title: "End user Training",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+            title="Solutions we Offer"
+            desc="As consumers expect a truly omni-channel experience, we respond to this challenge by helping brands to provide consistent and personalized service - before, during and after a purchase"
+            alignHorizontal={true}
+            cardOnly={true}
+            imageDisabled={true}
+          />
+        </div>
+      </>
+
+      {/* Our capabilites faq */}
+      <div id="Capabilities">
+        <Capabilities
+          ribbon=" "
+          title="Our Capabilities"
+          desc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental aspects – our domain experience, technical excellence and business environment."
           arr={[
-            /*One*/
             {
               _id: 1,
-              title: "Business Consulting",
-              descOnly: true,
-              desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
+              icon: "gear",
+              title: "Data Platform Modernization",
+              desc: "",
+              cta: "",
+              ctaUrl: "",
+              list: [
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
+                    "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
                   url: "/",
                 },
               ],
             },
-            /*End One*/
             {
               _id: 2,
-              title: "Implementation & Management",
-              desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
-              descOnly: true,
-
-              inline: true,
-              subArr: true,
-              subArrLinks: [
+              icon: "gear",
+              title: "Advance Analytics",
+              desc: "",
+              cta: "",
+              ctaUrl: "",
+              list: [
                 {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Perimeter Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Zero Trust Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure access service edge (SASE)",
-                      url: "/",
-                    },
-                    {
-                      title: "Next Generation Firewall (NGFW)",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure Remote Access (VPN)",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi Factor Authentication (MFA)",
-                      url: "/",
-                    },
-                    {
-                      title: "Distributed Denial of Service (DDoS)",
-                      url: "/",
-                    },
-                    {
-                      title: "Web Security Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Network Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Next Generation Firewalls",
-                      url: "/",
-                    },
-                    {
-                      title: "Unified Threat Management",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Defined WAN",
-                      url: "/",
-                    },
-                    {
-                      title: "Network Access Control (NAC)",
-                      url: "/",
-                    },
-                    {
-                      title: "Deception Technology",
-                      url: "/",
-                    },
-                    {
-                      title: "Advanced Persistent Threat (APT)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "End Point Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Endpoint Protection Suite",
-                      url: "/",
-                    },
-                    {
-                      title: "Endpoint Detection Response (EDR)",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Asset Management (SAM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Patch Management Solutions",
-                      url: "/",
-                    },
-                    {
-                      title:
-                        "Mobile Device or Application Management (MDM / MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 4,
-                  icon: "gear",
-                  title: "Application Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Web Application Security (WAF)",
-                      url: "/",
-                    },
-                    {
-                      title: "API Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 5,
-                  icon: "gear",
-                  title: "Users",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "O365",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile Device / Application",
-                      url: "/",
-                    },
-                    {
-                      title: "Management (MDM/ MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 6,
-                  icon: "gear",
-                  title: "Data",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Data Loss Prevention (DLP)",
-                      url: "/",
-                    },
-                    {
-                      title: "Privilege Identity Management (PIM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Cloud Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Disaster Recovery",
-                      url: "/",
-                    },
-                  ],
-                },
-                // Add more items as needed
-              ],
-              cta: "Explore Service",
-              image: "rpa/Cyber-security_Technology-Solutions.jpg",
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Transcription Services",
-                  url: "/",
-                },
-                {
-                  title: "Speech recognition",
-                  url: "/",
-                },
-                {
-                  title: "Language translation",
+                  title:
+                    "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
                   url: "/",
                 },
               ],
             },
             {
               _id: 3,
-              title: "Application Security Testing",
-              descOnly: true,
-              desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
-
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Application-Security-Testing.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Web application Security testing",
-                  url: "/",
-                },
-                {
-                  title: "Mobile App Security testing",
-                  url: "/",
-                },
+              icon: "gear",
+              title: "Business Intelligence",
+              desc: "",
+              cta: "",
+              ctaUrl: "",
+              list: [
                 {
                   title:
-                    "Vulnerability Assessment and Penetration Testing (VAPT)",
+                    "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
                   url: "/",
                 },
               ],
             },
-
             {
               _id: 4,
-              title: "vCISO Services",
-              descOnly: true,
-              desc: "We bring a wealth of industry knowledge and expertise to the table and follow the collaborative journey that ",
-
-              cta: "Explore Service",
-              inline: true,
-              image: "rpa/Cyber-security_vCISO.jpg",
-              subArrLinks: [],
-              subArr: false,
-              ctaUrl: "/",
-              links: [
+              icon: "gear",
+              title: "Data Warehouse and Integration",
+              desc: "",
+              cta: "",
+              ctaUrl: "",
+              list: [
                 {
-                  title: "Strategy",
+                  title:
+                    "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
                   url: "/",
                 },
+              ],
+            },
+            {
+              _id: 5,
+              icon: "gear",
+              title: "Data Governance",
+              desc: "",
+              cta: "",
+              ctaUrl: "",
+              list: [
                 {
-                  title: "Risk Management",
-                  url: "/",
-                },
-                {
-                  title: "Regulatory & Standards compliance",
-                  url: "/",
-                },
-                {
-                  title: "Policy & procedures",
-                  url: "/",
-                },
-                {
-                  title: "Security Program",
-                  url: "/",
-                },
-                {
-                  title: "End user Training",
+                  title:
+                    "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
                   url: "/",
                 },
               ],
             },
           ]}
-          title="Solutions we Offer"
-          desc="As consumers expect a truly omni-channel experience, we respond to this challenge by helping brands to provide consistent and personalized service - before, during and after a purchase"
-          alignHorizontal={true}
-          cardOnly={true}
-          imageDisabled={true}
         />
-      </>
-
-      {/* Our capabilites faq */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities"
-        desc="Data is catalyst to the transformation and our commitment to delivering cutting-edge data solutions is rooted in three fundamental aspects – our domain experience, technical excellence and business environment."
-        arr={[
-          {
-            _id: 1,
-            icon: "gear",
-            title: "Data Platform Modernization",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Collaborating with industry-leading partners such as AWS, Microsoft, and Salesforce, we modernize your data infrastructure on any cloud platform steering optimal acceptance and performance.  ",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 2,
-            icon: "gear",
-            title: "Advance Analytics",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "From planning and investigating data to developing, employing, managing and examining models, we leverage your enterprise with the modern progresses in AI, machine learning and automation. ",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 3,
-            icon: "gear",
-            title: "Business Intelligence",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Experience visuals of valuable insights from your crucial data sets from supply chain, finance and talent domains or more.",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 4,
-            icon: "gear",
-            title: "Data Warehouse and Integration",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "We build scalable data warehouse architectures custom-made to your business requirements and our end-to-end data integration processes a unified view of your organization's information assets.",
-                url: "/",
-              },
-            ],
-          },
-          {
-            _id: 5,
-            icon: "gear",
-            title: "Data Governance",
-            desc: "",
-            cta: "",
-            ctaUrl: "",
-            list: [
-              {
-                title:
-                  "Ensuring advanced metadata controls, precise access governance, and compliance mechanisms while adhering to stringent regulatory standards, we provide granular visibility and control over your data landscape.",
-                url: "/",
-              },
-            ],
-          },
-        ]}
-      />
+      </div>
 
       {/* Our Services */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div className={`bg-ms-practise w-full    py-32  `} id="Services">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}

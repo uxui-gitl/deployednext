@@ -178,26 +178,37 @@ export default function Home() {
         />
         <>
           <SectionNav
+            // Technology
+            // Benefits
+            // Services
+            // Why Us
+            // Partnerships
+
             arr={[
               {
                 _id: 1,
-                title: "Enterprise suite",
-                link: "#about",
+                title: "Technology",
+                link: "#Technology",
               },
               {
                 _id: 2,
-                title: "Act Cards",
-                link: "#actCards",
+                title: "Benefits",
+                link: "#Benefits",
               },
               {
                 _id: 3,
-                title: "Employee Experience",
-                link: "#empExp",
+                title: "Services",
+                link: "#Services",
               },
               {
                 _id: 4,
-                title: "Spotlight",
-                link: "#spotlight",
+                title: "Why Us",
+                link: "#WhyUs",
+              },
+              {
+                _id: 5,
+                title: "Partnerships",
+                link: "#Partnerships",
               },
             ]}
           />
@@ -208,7 +219,7 @@ export default function Home() {
 
         {/* Solutions Robot */}
         <>
-          <div className={` w-full bg-white py-16`}>
+          <div id="Technology" className={` w-full bg-white py-16`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid sm:grid-cols-2 grid-cols-1">
               <div className="bg-white flex items-start flex-col justify-center">
                 <div>
@@ -243,7 +254,7 @@ export default function Home() {
         </>
         {/* Maximize business output / Vertical Slider */}
 
-        <div id="spotlightGrid">
+        <div id="Benefits">
           <>
             <div className={`w-full text-left bg-[#fff] pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
@@ -476,7 +487,7 @@ export default function Home() {
 
         {/* Leading Forefront with Our Cloud Capabilities to Fuel Your Growth / Spotlight */}
 
-        <div id="spotlight">
+        <div id="Services">
           <>
             <div className={`w-full text-center bg-[#f2f4f7] pt-32`}>
               <div className="text-center max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
@@ -638,7 +649,7 @@ export default function Home() {
 
         {/* client logos */}
         <>
-          <div className={` w-full bg-white py-32`}>
+          <div id="Partnerships" className={` w-full bg-white py-20`}>
             <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
               <div className="bg-white flex items-start flex-col justify-start">
                 <div>
@@ -715,45 +726,46 @@ export default function Home() {
 
         {/* Testimonial */}
 
-<NewTestimonial
-        ribbon="CLIENT TESTIMONIALS"
-        ribbonVisible={false}
-        title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation:
-              "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
-            thumbnail: "1",
-            description:
-              "Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.",
-            category: "static",
-            link: "/",
-          },
-          {
-            id: 2,
-            clientName: "",
-            clientDesignation: "IT Head,  Middle East based Fast Food Chain",
-            thumbnail: "1",
-            description:
-              "Appreciation to Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency and productivity. We look forward to continuing this partnership with Godrej Infotech for future technological needs.",
-            category: "static",
-            link: "/",
-          },
-          {
-            id: 3,
-            clientName: "",
-            clientDesignation: "IT Manager, India’s Premier hi-tech Engineering Solutions Provider",
-            thumbnail: "1",
-            description:
-              "Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.",
-            category: "static",
-            link: "/",
-          },
-        ]}
-      />
+        <NewTestimonial
+          ribbon="CLIENT TESTIMONIALS"
+          ribbonVisible={false}
+          title="Delighted customers share their success experience "
+          desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+          arr={[
+            {
+              id: 1,
+              clientName: "",
+              clientDesignation:
+                "Head EDP, India's Premier Hi-Tech Engineering Solutions Provider",
+              thumbnail: "1",
+              description:
+                "Thanks to Godrej Infotech team for their support. It was tough for us to complete the project within the given timeframe without your handholding and support of Godrej Infotech’s team. It was nice working with you on this migration project.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 2,
+              clientName: "",
+              clientDesignation: "IT Head,  Middle East based Fast Food Chain",
+              thumbnail: "1",
+              description:
+                "Appreciation to Godrej Infotech team for successfully completing two critical projects - upgrading the old ERP system to the latest SaaS solution Dynamics Business Central and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We’re experiencing significant improvements in operational efficiency and productivity. We look forward to continuing this partnership with Godrej Infotech for future technological needs.",
+              category: "static",
+              link: "/",
+            },
+            {
+              id: 3,
+              clientName: "",
+              clientDesignation:
+                "IT Manager, India's Premier hi-tech Engineering Solutions Provider",
+              thumbnail: "1",
+              description:
+                "Thank you to Godrej Infotech for the excellent work for cloud-enabling our Infor environment. The services provided were of high quality and we would not hesitate to recommend Godrej Infotech as a professional cloud services provider.",
+              category: "static",
+              link: "/",
+            },
+          ]}
+        />
 
         {/* <Testimonial
           ribbon="Testimonials"
@@ -795,7 +807,15 @@ export default function Home() {
           ]}
         /> */}
         {/* Join the Team */}
-        <JoinExpTeam />
+        {/* Career Leap CTA */}
+        <JoinExpTeam
+          title="The work culture in Godrej supports learning at every stage of your
+        work life."
+          desc=""
+          cta="Take the Cloud Career Leap"
+          link=""
+          img=""
+        />
         <Subscription
           title="Free 30-Minute Strategy Session with our Cloud Expert?"
           //blue="AI and ML?"

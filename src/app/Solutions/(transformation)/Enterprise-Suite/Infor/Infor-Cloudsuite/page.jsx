@@ -87,7 +87,6 @@ const UseCases = [
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  
 ];
 const smartTools = [
   {
@@ -318,7 +317,6 @@ const blogData = [
     link: "/",
     imgUrl: "RoleInforOSBlog",
   },
-  
 ];
 
 const fadeInAnimationVariant = {
@@ -422,206 +420,215 @@ const page = () => {
       {/* section nav */}
       <>
         <SectionNav
+          // Offerings
+          // Services
+          // Benefits
+          // Insights
+          // Testimonials
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Offerings",
+              link: "#Offerings",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Insights",
+              link: "#Insights",
+            },
+
+            {
+              _id: 5,
+              title: "Testimonials",
+              link: "#Testimonial",
             },
           ]}
         />
       </>
 
-       {/* Overview  */}
+      {/* Overview  */}
       <Abstract abstractdesc="Infor Cloud Suite ERP products have been recognized as Leaders in the 2022 Gartner Magic Quadrant for Cloud ERP, with a specific focus on serving product-centric enterprises. This acknowledgment underscores their exceptional capabilities, solidifying their status as an industry-leading solution. At Godrej Infotech, we understand daunting complexities of businesses and have reliable experience in implementing Infor Cloud Suite solutions along with continuous support and optimization. As your trusted Infor partner we collaborate with you at every step of your transformation journey."></Abstract>
-
 
       {/* slider */}
       {/*  Card Slider Offerings */}
+      <div id="Offerings">
+        <>
+          <OfferingsSlider
+            // arr={OfferingsSliderData}
+            // header={OfferingsSliderDataHeader}
+            title={"Proposed GITL Offerings"}
+            alignment={"center"}
+            // alignment="left"
+            expandedDesc={true}
+            arr={[
+              /*One*/
+              {
+                _id: 1,
+                title: "Infor CloudSuite Industrial Enterprise",
+                desc: "",
+                cta: "Explore Service",
+                subArr: false,
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Financials",
+                    url: "/",
+                  },
+                  {
+                    title: "Supply Chain Management ",
+                    url: "/",
+                  },
+                  {
+                    title: "Manufacturing",
+                    url: "/",
+                  },
+                  {
+                    title: "Human Capital Management (HCM) ",
+                    url: "/",
+                  },
+                  {
+                    title: "Customer Relationship Management (CRM) ",
+                    url: "/",
+                  },
+                  {
+                    title: "Enterprise Asset Management (EAM)",
+                    url: "/",
+                  },
+                  {
+                    title: "Quality Management",
+                    url: "/",
+                  },
+                ],
+              },
+              /*End One*/
+              {
+                _id: 2,
+                title: "Infor CloudSuite Automotive (Infor LN)",
+                desc: "",
+                cta: "Explore Service",
+                subArr: false,
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Quality and production",
+                    url: "/",
+                  },
+                  {
+                    title: "Supply chain visibility",
+                    url: "/",
+                  },
+                  {
+                    title: "Planning and inventory",
+                    url: "/",
+                  },
+                  {
+                    title: "Customer relationship management",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 3,
+                title: "Infor CloudSuite Aerospace & Defense (Infor LN) ",
+                desc: "",
+                cta: "Explore Service",
+                subArr: false,
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Planning and production",
+                    url: "/",
+                  },
+                  {
+                    title: "Contract Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Regulations & Compliance",
+                    url: "/",
+                  },
+                  {
+                    title: "Supply chain visibility ",
+                    url: "/",
+                  },
+                ],
+              },
 
-      <>
-        <OfferingsSlider
-          // arr={OfferingsSliderData}
-          // header={OfferingsSliderDataHeader}
-          title={"Proposed GITL Offerings"}
-          alignment={"center"}
-          // alignment="left"
-          expandedDesc={true}
-          arr={[
-            /*One*/
-            {
-              _id: 1,
-              title: "Infor CloudSuite Industrial Enterprise",
-              desc: "",
-              cta: "Explore Service",
-              subArr: false,
-              subArrLinks: [
-                
-              ],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Financials",
-                  url: "/",
-                },{
-                  title: "Supply Chain Management ",
-                  url: "/",
-                },{
-                  title: "Manufacturing",
-                  url: "/",
-                },{
-                  title: "Human Capital Management (HCM) ",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Customer Relationship Management (CRM) ",
-                  url: "/",
-                },
-                 {
-                  title:
-                    "Enterprise Asset Management (EAM)",
-                  url: "/",
-                },
-                 {
-                  title:
-                    "Quality Management",
-                  url: "/",
-                },
-              ],
-            },
-            /*End One*/
-             {
-              _id: 2,
-              title: "Infor CloudSuite Automotive (Infor LN)",
-              desc: "",
-              cta: "Explore Service",
-              subArr: false,
-              subArrLinks: [
-                
-              ],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Quality and production",
-                  url: "/",
-                },{
-                  title: "Supply chain visibility",
-                  url: "/",
-                },{
-                  title: "Planning and inventory",
-                  url: "/",
-                },{
-                  title: "Customer relationship management",
-                  url: "/",
-                },
-                
-              ],
-            },
-             {
-              _id: 3,
-              title: "Infor CloudSuite Aerospace & Defense (Infor LN) ",
-              desc: "",
-              cta: "Explore Service",
-              subArr: false,
-              subArrLinks: [
-                
-              ],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Planning and production",
-                  url: "/",
-                },{
-                  title: "Contract Management",
-                  url: "/",
-                },{
-                  title: "Regulations & Compliance",
-                  url: "/",
-                },{
-                  title: "Supply chain visibility ",
-                  url: "/",
-                },
-                
-              ],
-            },
-
-         {
-              _id: 4,
-              title: "Infor CS Engineering and Construction",
-              desc: "",
-              cta: "Explore Service",
-              subArr: false,
-              subArrLinks: [
-                
-              ],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Project Management",
-                  url: "/",
-                },{
-                  title: "Document Management",
-                  url: "/",
-                },{
-                  title: "Financial Management",
-                  url: "/",
-                },
-                {
-                  title: "Procurement and Supply Chain ",
-                  url: "/",
-                },
-                {
-                  title: "Contract Management",
-                  url: "/",
-                },
-                {
-                  title: "Estimating and Bidding",
-                  url: "/",
-                },
-                {
-                  title: "Quality and Safety Management",
-                  url: "/",
-                },
-                {
-                  title: "Equipment Management",
-                  url: "/",
-                },
-              ],
-            },
-
-          ]}
-        />
-      </>
+              {
+                _id: 4,
+                title: "Infor CS Engineering and Construction",
+                desc: "",
+                cta: "Explore Service",
+                subArr: false,
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Project Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Document Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Financial Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Procurement and Supply Chain ",
+                    url: "/",
+                  },
+                  {
+                    title: "Contract Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Estimating and Bidding",
+                    url: "/",
+                  },
+                  {
+                    title: "Quality and Safety Management",
+                    url: "/",
+                  },
+                  {
+                    title: "Equipment Management",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+          />
+        </>
+      </div>
 
       {/* Microsoft Services */}
       <>
         <div
           className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32  `}
-          id="productivity"
+          id="Services"
         >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -629,12 +636,14 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                    Infor CloudSuite Services 
+                    Infor CloudSuite Services
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our services offer strategic business insights, refined through years of experience in understanding business processes, along with Infor Cloud Suite technical expertise.
+                    Our services offer strategic business insights, refined
+                    through years of experience in understanding business
+                    processes, along with Infor Cloud Suite technical expertise.
                   </p>
                 </div>
               </div>
@@ -725,6 +734,7 @@ const page = () => {
           </div>
         </div>
       </>
+
       {/* Benefits */}
       <Benefits
         ribbon="Infor CloudSuite Benefits"
@@ -757,7 +767,8 @@ const page = () => {
           {
             _id: 5,
             icon: "Benefits-upgradeCloud/AptitudeToRespond",
-            title: "Tailored solutions for various industries, addressing specific needs and challenges.",
+            title:
+              "Tailored solutions for various industries, addressing specific needs and challenges.",
           },
           {
             _id: 6,
@@ -765,7 +776,6 @@ const page = () => {
             title:
               "Accessibility from anywhere with an internet connection, making it convenient for remote work and global collaboration.",
           },
-          
         ]}
       ></Benefits>
 
@@ -792,15 +802,13 @@ const page = () => {
           {
             id: 2,
             clientName: "",
-            clientDesignation:
-              "Manager Sales and Support",
+            clientDesignation: "Manager Sales and Support",
             thumbnail: "1",
             description:
               "We highly appreciate the service and support provided by your team for our Infor ERP LN Annual Maintenance. Over the last 2 years we have had a very good working relation with your team and have received timely inputs and guidance across the modules that have been implemented on the system. We look forward to a mutually beneficial relationship in the future as well. ",
             category: "static",
             link: "/",
           },
-          
         ]}
       />
 

@@ -43,17 +43,15 @@ export default function Home() {
               {projects.map((project, i) => {
                 const targetScale = 1 - (projects.length - i) * 0.05;
                 return (
-                  console.log(targetScale),
-                  (
-                    <ACTCard
-                      key={`p_${i}`}
-                      i={i}
-                      {...project}
-                      progress={scrollYProgress}
-                      range={[i * 0.25, 1]}
-                      targetScale={targetScale}
-                    />
-                  )
+                  // console.log(targetScale),
+                  <ACTCard
+                    key={`p_${i}`}
+                    i={i}
+                    {...project}
+                    progress={scrollYProgress}
+                    range={[i * 0.25, 1]}
+                    targetScale={targetScale}
+                  />
                 );
               })}
             </main>
