@@ -107,7 +107,7 @@ const blogData = [
     desc: "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations.",
     cta: "Know More",
     link: "/",
-    imgUrl: "",
+    imgUrl: "leverageDatabaseBlog",
   },
 ];
 const expandedCardSlider = [
