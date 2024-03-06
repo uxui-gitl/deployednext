@@ -550,25 +550,24 @@ const page = () => {
               link: "#Challenges",
             },
             {
+              _id: 5,
+              title: "Methodology",
+              link: "#Methodology",
+            },
+            {
               _id: 2,
               title: "Offerings",
               link: "#Offerings",
             },
             {
+              _id: 4,
+              title: "Expertise",
+              link: "#OurExpertise",
+            },
+            {
               _id: 3,
               title: "Why Us",
               link: "#WhyUs",
-            },
-            {
-              _id: 4,
-              title: "Expertise",
-              link: "#Expertise",
-            },
-
-            {
-              _id: 5,
-              title: "Methodology",
-              link: "#Methodology",
             },
           ]}
         />
@@ -670,8 +669,8 @@ const page = () => {
 
       {/* Construction guy */}
       <>
-        <div className={` w-full  pt-32`}></div>
         <div
+          id="Methodology"
           className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
         >
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -707,7 +706,7 @@ const page = () => {
 
       {/* Managed services card slider */}
       <>
-        <div className={` w-full    py-12  `} id="productivity">
+        <div className={` w-full    py-12  `} id="Offerings">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
