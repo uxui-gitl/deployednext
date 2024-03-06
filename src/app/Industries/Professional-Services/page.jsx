@@ -302,26 +302,31 @@ const page = () => {
       />
       <>
         <SectionNav
+          // Challenges
+          // Solutions
+          // Capabilities
+          // Offerings
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Capabilities",
+              link: "#Capabilities",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Offerings",
+              link: "#Offerings",
             },
           ]}
         />
@@ -358,7 +363,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -407,7 +412,7 @@ const page = () => {
 
       {/* Our Ai Offerings - our solutions */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="Solutions" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -484,111 +489,115 @@ const page = () => {
       </>
 
       {/* Our Capabilities */}
-      <Capabilities
-        ribbon=" "
-        title="Our Capabilities "
-        desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
-      />
+      <div id="Capabilities">
+        <Capabilities
+          ribbon=" "
+          title="Our Capabilities "
+          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+        />
+      </div>
 
       {/* 3 column - Segment we serve */}
       <>
-        <OfferingsSlider
-          title="The healthcare segment we serve"
-          alignHorizontal="left"
-          cardColor="#FFF"
-          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
-          arr={[
-            /*One*/
-            {
-              _id: 1,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 2,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 3,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 4,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-          ]}
-        />
+        <div id="Offerings">
+          <OfferingsSlider
+            title="The healthcare segment we serve"
+            alignHorizontal="left"
+            cardColor="#FFF"
+            desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+            arr={[
+              /*One*/
+              {
+                _id: 1,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 2,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 3,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+              {
+                _id: 4,
+                title: "Business Consulting",
+                desc: "",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Cybersecurity roadmap development",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Assessment services against cyber security frameworks & standards",
+                    url: "/",
+                  },
+                ],
+              },
+            ]}
+          />
+        </div>
       </>
 
       {/* Benefits */}

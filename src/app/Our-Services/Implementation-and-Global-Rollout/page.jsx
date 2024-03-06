@@ -507,26 +507,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Our Expertise
+          // Services
+          // Testimonial
+          // Methodology
+          // Why GITL
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Our Expertise",
+              link: "#OurExpertise",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Testimonial",
+              link: "#Testimonial",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Methodology",
+              link: "#Methodology",
+            },
+            {
+              _id: 5,
+              title: "Why GITL",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -534,7 +545,7 @@ const page = () => {
 
       {/* two people expetise / Our Services */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div className={`bg-ms-practise w-full    py-32  `} id="OurExpertise">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
@@ -642,6 +653,7 @@ const page = () => {
       {/* cards */}
       <>
         <div
+          id="Services"
           className={`  text-[white] bg-[rgb(91,_98,_138)] bg-[linear-gradient(90deg,_rgba(49,_9,_74,_1)_0%,_rgba(29,_8,_69,_1)_15%,_rgba(14,_0,_42,_1)_100%)]`}
           style={{}}
         >
@@ -729,7 +741,7 @@ const page = () => {
       />
 
       {/* Spotlight test - Streamline Cloud Upgrade Service with Our Process Map */}
-      <div id="spotlight">
+      <div id="Methodology">
         <>
           <div className={`w-full text-left bg-[#f2f4f7] pt-32`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">

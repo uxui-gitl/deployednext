@@ -104,7 +104,7 @@ const expandedCardSlider = [
     title: "Trading & Distribution",
     desc: "",
     url: "/",
-     list: [
+    list: [
       "Comprehensive process coverage for trading & distribution",
       "Material requirement planning",
       "Machine learning-driven demand forecasting",
@@ -116,7 +116,7 @@ const expandedCardSlider = [
     desc: "",
     imgUrl: "Godrej-Solution-Metal-Solutions",
     url: "/",
-     list: [
+    list: [
       "Financial precision for budgeting, invoicing and expense management",
       "Project-centric approach for professional services firms",
     ],
@@ -160,7 +160,7 @@ const ConsiderRPA = [
     ctaUrl: "/",
     image: "/rpa/EnsureCompliance.png",
   },
- 
+
   {
     _id: 5,
     title: "Budgeting",
@@ -193,7 +193,7 @@ const ConsiderRPA = [
     ctaUrl: "/",
     image: "/rpa/ReduceAHT.png",
   },
-    {
+  {
     _id: 9,
     title: "Manufacturing",
     desc: "Optimize your manufacturing processes, streamlining production and upholding product quality to meet or exceed market standards.",
@@ -201,7 +201,7 @@ const ConsiderRPA = [
     ctaUrl: "/",
     image: "/rpa/ReduceAHT.png",
   },
-    {
+  {
     _id: 10,
     title: "Project Management",
     desc: "Efficiently manage and coordinate projects, ensuring they are executed promptly and within budget constraints, delivering successful project outcomes.",
@@ -209,7 +209,7 @@ const ConsiderRPA = [
     ctaUrl: "/",
     image: "/rpa/ReduceAHT.png",
   },
-    {
+  {
     _id: 11,
     title: "Accounting",
     desc: "Maintain immaculate financial records, safeguarding business's financial health and ensuring compliance with accounting standards.",
@@ -414,26 +414,38 @@ const Page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Highlights
+          // Add Ons
+          // Industry Solutions
+          // Benefits
+          // Case Study
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Highlights",
+              link: "#Highlights",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Add Ons",
+              link: "#AddOns",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Industry Solutions",
+              link: "#IndustrySolutions",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+
+            {
+              _id: 5,
+              title: "Case Study",
+              link: "#CaseStudy",
             },
           ]}
         />
@@ -445,14 +457,18 @@ const Page = () => {
       {/* key highlights */}
 
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="Highlights" className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                   Key Highlights of Dynamics 365 F&O
                 </h3>
-                <p>Microsoft D365 Finance and Operations powers up your business with insights and comprehensive financial tools to streamline operations and adapt to changing business environments.</p>
+                <p>
+                  Microsoft D365 Finance and Operations powers up your business
+                  with insights and comprehensive financial tools to streamline
+                  operations and adapt to changing business environments.
+                </p>
               </div>
             </div>
           </div>
@@ -496,10 +512,7 @@ const Page = () => {
 
       {/* Ms slider */}
       <>
-        <div
-          className={`bg-ms-practise bg-white w-full py-32 hidden `}
-          id="productivity"
-        >
+        <div className={`bg-ms-practise bg-white w-full py-32 hidden `} id="">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
@@ -856,7 +869,7 @@ const Page = () => {
 
       {/* Industry Served Slider */}
       <>
-        <div className={`w-full bg-[#FFF] pt-20`}>
+        <div id="IndustrySolutions" className={`w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -867,7 +880,9 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Understanding unique demands of each industry vertical and capitalizing Infor capabilities, we equip businesses to thrive in competitive market.
+                  Understanding unique demands of each industry vertical and
+                  capitalizing Infor capabilities, we equip businesses to thrive
+                  in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -914,7 +929,7 @@ const Page = () => {
       {/* Industry solutions */}
       <>
         <>
-          <div className={` w-full bg-[#FFF] pt-24`}>
+          <div id="AddOns" className={` w-full bg-[#FFF] pt-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">
@@ -926,7 +941,11 @@ const Page = () => {
               <div>
                 <div>
                   <p className="font-normal leading-[22px] md:w-[90%] ">
-                    With our tailored D365 F&O solutions built using Power Apps, we ensure seamless integration and efficient processes for Quality and Production Orders. Our goal is to make your journey towards enhanced operational efficiency as smooth as possible. 
+                    With our tailored D365 F&O solutions built using Power Apps,
+                    we ensure seamless integration and efficient processes for
+                    Quality and Production Orders. Our goal is to make your
+                    journey towards enhanced operational efficiency as smooth as
+                    possible.
                   </p>
                 </div>
               </div>
@@ -1043,7 +1062,9 @@ const Page = () => {
                           Godrej Infotech Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          The high scalability of the Dynamics 365 F&O solution makes it a valuable choice for medium size businesses to large enterprises. 
+                          The high scalability of the Dynamics 365 F&O solution
+                          makes it a valuable choice for medium size businesses
+                          to large enterprises.
                         </p>
                       </div>
                     </div>
@@ -1149,9 +1170,10 @@ const Page = () => {
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Achieve on-time, on-budget project delivery with integrated teams",
+            cardDesc:
+              "Achieve on-time, on-budget project delivery with integrated teams",
           },
-           {
+          {
             _id: 6,
             icon: "benefits-ai-ml/healthcare",
             cardDesc: "International functionality for global uniformity",
@@ -1184,7 +1206,7 @@ const Page = () => {
             desc: "We hold a prestigious Gold Partnership with Microsoft and operate global delivery model.",
             icon: "",
           },
-            {
+          {
             _id: 5,
             desc: "Our toolkit includes tested, proven and reusable tools and frameworks.",
             icon: "",
@@ -1199,7 +1221,8 @@ const Page = () => {
           {
             _id: 1,
             ribbon: "Blog",
-            title: "The Future of Financial Agility: D365 Finance and Operations Insights",
+            title:
+              "The Future of Financial Agility: D365 Finance and Operations Insights",
             desc: "This innovative platform, coupled with the expertise of a Microsoft Dynamics Partner Company, promises agility and operational effectiveness. Dynamics 365 Finance stands at the forefront of revolutionizing financial management, offering a comprehensive suite of tools to navigate the evolving financial terrain.",
             cta: "Know More",
             link: "/",
@@ -1237,7 +1260,6 @@ const Page = () => {
             category: "static",
             link: "/",
           },
-          
         ]}
       />
 

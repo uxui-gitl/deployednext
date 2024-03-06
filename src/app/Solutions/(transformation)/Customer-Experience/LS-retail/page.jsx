@@ -1114,26 +1114,37 @@ const Page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Our Offerings
+          // LS Retail Features
+          // Solutions
+          // Benefits
+          // Why GITL
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Our Offerings",
+              link: "#OurOfferings",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "LS Retail Features",
+              link: "#LSRetailFeatures",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Benefits",
+              link: "#Benefits",
+            },
+            {
+              _id: 5,
+              title: "Why GITL",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -1143,8 +1154,8 @@ const Page = () => {
       <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
       {/* our offerings left right para only */}
-
       <div
+        id="OurOfferings"
         className={`text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]`}
       >
         <div className=" mt-[5em] mb-[2em]">
@@ -1267,7 +1278,7 @@ const Page = () => {
 
       {/* Retail excellence grid - Features */}
       <>
-        <div className={`w-full bg-white py-32`}>
+        <div id="LSRetailFeatures" className={`w-full bg-white py-32`}>
           <div className=" max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] text-center flex">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
@@ -1410,7 +1421,7 @@ const Page = () => {
 
       {/* targeted solutions - Core Capabilities */}
       <>
-        <div className={` w-full bg-[#FFF] py-20`}>
+        <div id="Solutions" className={` w-full bg-[#FFF] py-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5  ">
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="grid grid-cols-1 sm:grid-cols-2">

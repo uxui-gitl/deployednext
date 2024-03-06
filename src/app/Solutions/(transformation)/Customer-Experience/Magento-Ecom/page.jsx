@@ -188,26 +188,37 @@ const Page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Industries
+          // Solutions
+          // Services
+          // Capabilities
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Industries",
+              link: "#Industries",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Services",
+              link: "#Services",
+            },
+            {
+              _id: 5,
+              title: "Capabilities",
+              link: "#Capabilities",
             },
           ]}
         />
@@ -215,7 +226,7 @@ const Page = () => {
 
       {/* On premises Challenges*/}
       <>
-        <div className={` w-full bg-[#f2f4f7] py-24`}>
+        <div id="Challenges" className={` w-full bg-[#f2f4f7] py-24`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
               <div className="  ">
@@ -260,7 +271,7 @@ const Page = () => {
 
       {/* Capabilites grid */}
       <>
-        <div className={` w-full bg-[#FFF] pt-32`}>
+        <div id="Industries" className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -402,7 +413,7 @@ const Page = () => {
       {/* 3 columsn */}
       <>
         <>
-          <div className={` w-full bg-[#FFF] pt-24`}>
+          <div id="Solutions" className={` w-full bg-[#FFF] pt-24`}>
             <div className="   pb-0   grid grid-cols-1 gap-5 sm:grid-cols-2 text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]">
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
                 <div className="">

@@ -107,7 +107,7 @@ const blogData = [
     desc: "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations.",
     cta: "Know More",
     link: "/",
-    imgUrl: "",
+    imgUrl: "leverageDatabaseBlog",
   },
 ];
 const expandedCardSlider = [
@@ -192,26 +192,31 @@ const page = () => {
       {/* section nav */}
       <>
         <SectionNav
+          //  Solutions
+          //  Services
+          //  Benefits
+          //  Why Us
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Solutions",
+              link: "#Solutions",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -225,19 +230,21 @@ const page = () => {
 
       {/* Offerings Card */}
       <>
-        <AbstractCard
-          ribbon="Oracle Solutions Offerings "
-          desc="This solution leverages advanced technologies such as machine learning and artificial intelligence to optimize operations and transform organizations into information-driven enterprises."
-          bgImgClass="bg-people"
-          bgColor="#F2F4F7"
-          title="Oracle Fusion Cloud"
-          cta="Explore Service"
-          link="/"
-        ></AbstractCard>
+        <div id="Solutions">
+          <AbstractCard
+            ribbon="Oracle Solutions Offerings "
+            desc="This solution leverages advanced technologies such as machine learning and artificial intelligence to optimize operations and transform organizations into information-driven enterprises."
+            bgImgClass="bg-people"
+            bgColor="#F2F4F7"
+            title="Oracle Fusion Cloud"
+            cta="Explore Service"
+            link="/"
+          ></AbstractCard>
+        </div>
       </>
 
       {/* Key capabilites */}
-      <div className={`bg-white w-full    py-32  `} id="productivity">
+      <div className={`bg-white w-full    py-32  `} id="Services">
         <div className={` w-full`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
@@ -298,19 +305,19 @@ const page = () => {
                           {item.desc}
                         </p>
                         {item.list && (
-                              <>
-                                <ul className=" list-disc pl-4">
-                                  {item.list.map((i, index) => (
-                                    <li
-                                      className="text-white leading-[20px]"
-                                      key={index}
-                                    >
-                                      {i}
-                                    </li>
-                                  ))}
-                                </ul>
-                              </>
-                            )}
+                          <>
+                            <ul className=" list-disc pl-4">
+                              {item.list.map((i, index) => (
+                                <li
+                                  className="text-white leading-[20px]"
+                                  key={index}
+                                >
+                                  {i}
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
                       </div>
                     </div>
                     <div className=" w-full bg-[#0745D3] p-5 hidden">
@@ -469,25 +476,22 @@ const page = () => {
                   url: "/",
                 },
                 {
-                  title:
-                    "Solution Design",
+                  title: "Solution Design",
                   url: "/",
                 },
                 {
-                  title:
-                    "Implementation",
+                  title: "Implementation",
                   url: "/",
                 },
                 {
-                  title:
-                    "Training and Change Management",
+                  title: "Training and Change Management",
                   url: "/",
                 },
               ],
             },
             /*End One*/
-          /*Two*/
-          {
+            /*Two*/
+            {
               _id: 2,
               title: "Oracle Cloud Integration Services",
               desc: "",
@@ -503,19 +507,16 @@ const page = () => {
                   url: "/",
                 },
                 {
-                  title:
-                    "Electronic Data Interchange Implementation",
+                  title: "Electronic Data Interchange Implementation",
                   url: "/",
                 },
                 {
-                  title:
-                    "API-led Integration",
+                  title: "API-led Integration",
                   url: "/",
                 },
-                
               ],
             },
-          /*End Two*/
+            /*End Two*/
 
             {
               _id: 3,
@@ -537,13 +538,11 @@ const page = () => {
                   url: "/",
                 },
                 {
-                  title:
-                    "Maintenance",
+                  title: "Maintenance",
                   url: "/",
                 },
                 {
-                  title:
-                    "Upgrades and Migrations",
+                  title: "Upgrades and Migrations",
                   url: "/",
                 },
               ],
@@ -572,7 +571,6 @@ const page = () => {
                   title: "Test Data Management",
                   url: "/",
                 },
-                
               ],
             },
 
@@ -607,14 +605,11 @@ const page = () => {
                   title: "Database Services",
                   url: "/",
                 },
-                
               ],
             },
           ]}
         />
       </>
-
-      
 
       {/* Industries */}
       <>
@@ -629,7 +624,9 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Understanding unique demands of each industry vertical and capitalizing Oracle capabilities, we equip businesses to thrive in competitive market.
+                  Understanding unique demands of each industry vertical and
+                  capitalizing Oracle capabilities, we equip businesses to
+                  thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -815,17 +812,20 @@ const page = () => {
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Improved decision-making and productivity with machine learning enablement",
+            cardDesc:
+              "Improved decision-making and productivity with machine learning enablement",
           },
           {
             _id: 6,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Unified financial management and streamlined procurement",
+            cardDesc:
+              "Unified financial management and streamlined procurement",
           },
           {
             _id: 7,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Efficient project management and enhanced human capital management",
+            cardDesc:
+              "Efficient project management and enhanced human capital management",
           },
         ]}
       ></Benefits>

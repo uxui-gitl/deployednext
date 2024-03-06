@@ -433,26 +433,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Modules
+          // Benefits
+          // Blog
+          // Why Us
+          // Case Study
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Modules",
+              link: "#Modules",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Blog",
+              link: "#Insights",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Why Us",
+              link: "#WhyUs",
+            },
+            {
+              _id: 4,
+              title: "Case Study",
+              link: "#CaseStudy",
             },
           ]}
         />
@@ -463,7 +474,7 @@ const page = () => {
 
       {/* Infor CRM Modules */}
       <>
-        <div className={` w-full bg-[#FFF] pt-20`}>
+        <div id="Modules" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
             <div className="  flex items-start flex-col justify-between  relative">
@@ -607,7 +618,7 @@ const page = () => {
 
       {/* Key Feature and Benefits of Infor CRM  */}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div id="Benefits" className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">

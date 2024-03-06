@@ -256,8 +256,8 @@ const SolutionsNav = () => {
                           href: "/Solutions/Enterprise-Suite/Microsoft-Practises/FnO",
                         },
                         {
-                          label: "Commerce",
-                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/ECommerce",
+                          label: "D365 Commerce",
+                          href: "/Solutions/Enterprise-Suite/Microsoft-Practises/D365-Commerce",
                         },
                       ],
                     },
