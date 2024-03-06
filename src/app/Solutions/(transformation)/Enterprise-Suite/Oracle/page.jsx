@@ -79,34 +79,20 @@ const ChoiceSlider = [
   },
   {
     _id: 2,
-    imgUrl: "Industry-Spotlight-Retail",
-    title: "Retail",
-    desc: "",
-    url: "/",
-  },
-  {
-    _id: 3,
-    title: "Trading and Distribution",
-    desc: "",
-    imgUrl: "Industry-Spotlight-rading-and-Distribution",
-    url: "/",
-  },
-  {
-    _id: 4,
     title: "Healthcare ",
     desc: "",
     imgUrl: "Industry-served-Healthcare",
     url: "/",
   },
   {
-    _id: 5,
+    _id: 3,
     title: "Project ",
     desc: "",
     imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
-    _id: 6,
+    _id: 4,
     title: "Professional services",
     desc: "",
     imgUrl: "ProfessionalServices",
@@ -117,8 +103,8 @@ const blogData = [
   {
     _id: 1,
     ribbon: "blog",
-    title: "Migrate your IT Infrastructure to the Cloud",
-    desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+    title: "Leverage Database Potential with Oracle Cloud",
+    desc: "Oracle Cloud has become an indispensable asset for modern enterprises seeking transformative capabilities. It provides a powerful platform that integrates database functionalities with cloud services, offering a host of benefits for businesses striving towards digital evolution and cloud transformation services. This article explores the essence of Oracle Cloud Integration and how it facilitates database optimization and cloud-driven innovations.",
     cta: "Know More",
     link: "/",
     imgUrl: "",
@@ -196,9 +182,8 @@ const page = () => {
     <>
       {/* Intro */}
       <EntIntro
-        title="Maximize Asset Value and Productivity
-        with HxGN EAM Godrej Infotech Expertise "
-        desc="HxGN EAM, formerly known as Infor EAM, presents holistic solutions to address the pressing challenges of asset performance in both the present and the future"
+        title="Elevating Future-Ready Global Enterprises with Oracle"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -239,8 +224,8 @@ const page = () => {
 
       {/* Abstract */}
       <Abstract
-        ribbon="Oracle"
-        abstractdesc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
+        ribbon=""
+        abstractdesc="With our extensive understanding of business operations across major industry verticals along with Oracle solution expertise, we position ourselves as an ideal partner for Oracle collaboration. Oracle offers a comprehensive and seamlessly integrated suite of both cloud and on-premises applications and platform services, which enhance cooperation and transparency throughout your organization. Allow us to assist you in fully harnessing the power of Oracle."
       ></Abstract>
 
       {/* Offerings Card */}
@@ -248,7 +233,7 @@ const page = () => {
         <div id="Solutions">
           <AbstractCard
             ribbon="Oracle Solutions Offerings "
-            desc="Our primary goal is to realize positive business outcomes by harnessing our business-grade intelligent capabilities while concurrently optimizing overall business performance. We prioritize achieving positive results through the application of advanced competencies, ensuring strategic alignment with our clients' business objectives. Intelligent Technologies drive transformative innovations, utilizing AI, ML, and IoT to optimize processes, enhance decision-making, and propel businesses into a future of efficiency and agility."
+            desc="This solution leverages advanced technologies such as machine learning and artificial intelligence to optimize operations and transform organizations into information-driven enterprises."
             bgImgClass="bg-people"
             bgColor="#F2F4F7"
             title="Oracle Fusion Cloud"
@@ -256,298 +241,6 @@ const page = () => {
             link="/"
           ></AbstractCard>
         </div>
-      </>
-
-      {/* Stack Offering Sliders / Oracle services */}
-      <>
-        <OfferingsSlider
-          arr={[
-            /*One*/
-            {
-              _id: 1,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            /*End One*/
-            {
-              _id: 2,
-              title: "Technology Solutions - Implementation & Management",
-              desc: "",
-              inline: true,
-              subArr: true,
-              subArrLinks: [
-                {
-                  _id: 1,
-                  icon: "gear",
-                  title: "Perimeter Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Zero Trust Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure access service edge (SASE)",
-                      url: "/",
-                    },
-                    {
-                      title: "Next Generation Firewall (NGFW)",
-                      url: "/",
-                    },
-                    {
-                      title: "Secure Remote Access (VPN)",
-                      url: "/",
-                    },
-                    {
-                      title: "Multi Factor Authentication (MFA)",
-                      url: "/",
-                    },
-                    {
-                      title: "Distributed Denial of Service (DDoS)",
-                      url: "/",
-                    },
-                    {
-                      title: "Web Security Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 2,
-                  icon: "gear",
-                  title: "Network Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Next Generation Firewalls",
-                      url: "/",
-                    },
-                    {
-                      title: "Unified Threat Management",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Defined WAN",
-                      url: "/",
-                    },
-                    {
-                      title: "Network Access Control (NAC)",
-                      url: "/",
-                    },
-                    {
-                      title: "Deception Technology",
-                      url: "/",
-                    },
-                    {
-                      title: "Advanced Persistent Threat (APT)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 3,
-                  icon: "gear",
-                  title: "End Point Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Endpoint Protection Suite",
-                      url: "/",
-                    },
-                    {
-                      title: "Endpoint Detection Response (EDR)",
-                      url: "/",
-                    },
-                    {
-                      title: "Software Asset Management (SAM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Patch Management Solutions",
-                      url: "/",
-                    },
-                    {
-                      title:
-                        "Mobile Device or Application Management (MDM / MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 4,
-                  icon: "gear",
-                  title: "Application Security",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Web Application Security (WAF)",
-                      url: "/",
-                    },
-                    {
-                      title: "API Gateways",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 5,
-                  icon: "gear",
-                  title: "e. Users",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "O365",
-                      url: "/",
-                    },
-                    {
-                      title: "Mobile Device / Application",
-                      url: "/",
-                    },
-                    {
-                      title: "Management (MDM/ MAM)",
-                      url: "/",
-                    },
-                  ],
-                },
-                {
-                  _id: 6,
-                  icon: "gear",
-                  title: "Data",
-                  desc: "",
-                  cta: "Know More",
-                  ctaUrl: "/",
-                  list: [
-                    {
-                      title: "Data Loss Prevention (DLP)",
-                      url: "/",
-                    },
-                    {
-                      title: "Privilege Identity Management (PIM)",
-                      url: "/",
-                    },
-                    {
-                      title: "Cloud Security",
-                      url: "/",
-                    },
-                    {
-                      title: "Disaster Recovery",
-                      url: "/",
-                    },
-                  ],
-                },
-                // Add more items as needed
-              ],
-              cta: "Explore Service",
-              image: "rpa/Cyber-security_Technology-Solutions.jpg",
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Transcription Services",
-                  url: "/",
-                },
-                {
-                  title: "Speech recognition",
-                  url: "/",
-                },
-                {
-                  title: "Language translation",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 3,
-              title: "Application Security testing",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Application-Security-Testing.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Web application Security testing",
-                  url: "/",
-                },
-                {
-                  title: "Mobile App Security testing",
-                  url: "/",
-                },
-                {
-                  title:
-                    "Vulnerability Assessment and Penetration Testing (VAPT)",
-                  url: "/",
-                },
-              ],
-            },
-
-            {
-              _id: 4,
-              title: "vCISO Services",
-              desc: "",
-              cta: "Explore Service",
-              inline: true,
-              image: "rpa/Cyber-security_vCISO.jpg",
-              subArrLinks: [],
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Strategy",
-                  url: "/",
-                },
-                {
-                  title: "Risk Management",
-                  url: "/",
-                },
-                {
-                  title: "Regulatory & Standards compliance",
-                  url: "/",
-                },
-                {
-                  title: "Policy & procedures",
-                  url: "/",
-                },
-                {
-                  title: "Security Program",
-                  url: "/",
-                },
-                {
-                  title: "End user Training",
-                  url: "/",
-                },
-              ],
-            },
-          ]}
-        />
       </>
 
       {/* Key capabilites */}
@@ -579,8 +272,8 @@ const page = () => {
               {[
                 {
                   _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  title: "Financial Management",
+                  desc: "Manage and track income, expenditures and assets while fulfilling tax obligations and ensuring compliance - This solution also helps to equip the finance team to enhance forecasting precision, reduce reporting timelines and streamline decision-making.",
                   cta: "Know More",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
@@ -591,7 +284,7 @@ const page = () => {
                     key={item._id}
                     className="mx-2 w-fit md:w-1/2 bg-white flex flex-col justify-between "
                   >
-                    <div className="p-5 w-fit ">
+                    <div className="p-5 w-fit">
                       <div className="mb-4">
                         {item.icon !== "" ? (
                           <Image
@@ -611,9 +304,23 @@ const page = () => {
                         <p className="text-[14px] leading-[22px] mb-4 text-[#101828]">
                           {item.desc}
                         </p>
+                        {item.list && (
+                          <>
+                            <ul className=" list-disc pl-4">
+                              {item.list.map((i, index) => (
+                                <li
+                                  className="text-white leading-[20px]"
+                                  key={index}
+                                >
+                                  {i}
+                                </li>
+                              ))}
+                            </ul>
+                          </>
+                        )}
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className=" w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -636,8 +343,8 @@ const page = () => {
               {[
                 {
                   _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  title: "Supply chain Management",
+                  desc: "Effortlessly oversee and monitor assets, information and services, spanning from the procurement of raw materials to the delivery of the final product - The solution enables organizations to swiftly adapt to evolving demand, supply dynamics and market fluctuations.",
                   cta: "Know More",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
@@ -670,7 +377,7 @@ const page = () => {
                         </p>
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className=" w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -693,8 +400,8 @@ const page = () => {
               {[
                 {
                   _id: 1,
-                  title: "CRM services",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                  title: "Human Capital Management",
+                  desc: "Experience new era cloud solution that assists in building a cohesive community with a unified user experience, a harmonized data model and effortlessly integrated processes, all underpinned by an AI-infused infrastructure.",
                   cta: "Know More",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
@@ -727,7 +434,7 @@ const page = () => {
                         </p>
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className="w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -748,6 +455,162 @@ const page = () => {
         </div>
       </div>
 
+      {/* Stack Offering Sliders / Oracle services */}
+      <>
+        <OfferingsSlider
+          arr={[
+            /*One*/
+            {
+              _id: 1,
+              title: "Business Consulting & Oracle implementation",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Strategic Assessment",
+                  url: "/",
+                },
+                {
+                  title: "Solution Design",
+                  url: "/",
+                },
+                {
+                  title: "Implementation",
+                  url: "/",
+                },
+                {
+                  title: "Training and Change Management",
+                  url: "/",
+                },
+              ],
+            },
+            /*End One*/
+            /*Two*/
+            {
+              _id: 2,
+              title: "Oracle Cloud Integration Services",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Middleware Implementation",
+                  url: "/",
+                },
+                {
+                  title: "Electronic Data Interchange Implementation",
+                  url: "/",
+                },
+                {
+                  title: "API-led Integration",
+                  url: "/",
+                },
+              ],
+            },
+            /*End Two*/
+
+            {
+              _id: 3,
+              title: "Oracle Database Management",
+              desc: "",
+              cta: "Explore Service",
+              subArrLinks: [],
+              image: "rpa/Application-Security-Testing.jpg",
+              inline: true,
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Design & Development of Database Model",
+                  url: "/",
+                },
+                {
+                  title: "Disaster Recovery Services",
+                  url: "/",
+                },
+                {
+                  title: "Maintenance",
+                  url: "/",
+                },
+                {
+                  title: "Upgrades and Migrations",
+                  url: "/",
+                },
+              ],
+            },
+
+            {
+              _id: 4,
+              title: "Quality Assurance Service",
+              desc: "",
+              cta: "Explore Service",
+              inline: true,
+              image: "rpa/Cyber-security_vCISO.jpg",
+              subArrLinks: [],
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Security Testing",
+                  url: "/",
+                },
+                {
+                  title: "Performance Testing",
+                  url: "/",
+                },
+                {
+                  title: "Test Data Management",
+                  url: "/",
+                },
+              ],
+            },
+
+            {
+              _id: 5,
+              title: "Managed Services",
+              desc: "",
+              cta: "Explore Service",
+              inline: true,
+              image: "rpa/Cyber-security_vCISO.jpg",
+              subArrLinks: [],
+              subArr: false,
+              ctaUrl: "/",
+              links: [
+                {
+                  title: "Enterprise Application Management",
+                  url: "/",
+                },
+                {
+                  title: "Cloud Migration Services",
+                  url: "/",
+                },
+                {
+                  title: "Agile Product Lifecycle Management Services",
+                  url: "/",
+                },
+                {
+                  title: "Application Outsourcing",
+                  url: "/",
+                },
+                {
+                  title: "Database Services",
+                  url: "/",
+                },
+              ],
+            },
+          ]}
+        />
+      </>
+
       {/* Industries */}
       <>
         <div className={` w-full bg-[#FFF] pt-20`}>
@@ -761,9 +624,9 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
+                  Understanding unique demands of each industry vertical and
+                  capitalizing Oracle capabilities, we equip businesses to
+                  thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -809,28 +672,28 @@ const page = () => {
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
+        desc="As your trusted Oracle partner, we ensure Oracle environment remains efficient, secure and aligned with changing business needs."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Extensive expertise in multidimensional modeling to deliver valuable insights into complex financial and operational data",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Providing cross-functional analysis for a holistic view of organization's operations.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Maximize the potential of business efficiency and productivity.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Smooth and risk-free transition to Oracle implementation, guaranteeing a hassle-free process.",
             icon: "",
           },
         ]}
@@ -919,37 +782,50 @@ const page = () => {
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title="Oracle"
+        desc=""
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "Centralized data for insightful multidimensional reporting.",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Accelerated business operation with regulatory compliance.",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Pre-built blockchain applications for cost-effective, transparent operations.",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Enable IoT applications for enhanced customer experiences and HR.",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc:
+              "Improved decision-making and productivity with machine learning enablement",
+          },
+          {
+            _id: 6,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc:
+              "Unified financial management and streamlined procurement",
+          },
+          {
+            _id: 7,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc:
+              "Efficient project management and enhanced human capital management",
           },
         ]}
       ></Benefits>
@@ -1039,11 +915,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
-        blue=" "
+        title="Are you ready to charge"
+        blue="your business efficiency?"
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Fill out the form now and take your business forward with transformation!"
       />
       <InfotechWeeklyAlt />
     </>
