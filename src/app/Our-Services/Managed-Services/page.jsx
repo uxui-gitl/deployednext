@@ -537,26 +537,37 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Offerings
+          // Why Us
+          // Expertise
+          // Methodology
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
+            },
+            {
+              _id: 5,
+              title: "Methodology",
+              link: "#Methodology",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
-            },
-            {
-              _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Offerings",
+              link: "#Offerings",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Expertise",
+              link: "#OurExpertise",
+            },
+            {
+              _id: 3,
+              title: "Why Us",
+              link: "#WhyUs",
             },
           ]}
         />
@@ -594,7 +605,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -658,8 +669,8 @@ const page = () => {
 
       {/* Construction guy */}
       <>
-        <div className={` w-full  pt-32`}></div>
         <div
+          id="Methodology"
           className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
         >
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -695,7 +706,7 @@ const page = () => {
 
       {/* Managed services card slider */}
       <>
-        <div className={` w-full    py-12  `} id="productivity">
+        <div className={` w-full    py-12  `} id="Offerings">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}

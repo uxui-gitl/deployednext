@@ -466,13 +466,13 @@ const page = () => {
             },
             {
               _id: 3,
-              title: "Benefits",
-              link: "#Benefits",
+              title: "Insights",
+              link: "#Insights",
             },
             {
               _id: 4,
-              title: "Insights",
-              link: "#Insights",
+              title: "Benefits",
+              link: "#Benefits",
             },
             {
               _id: 5,

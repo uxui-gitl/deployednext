@@ -394,14 +394,14 @@ const page = () => {
               link: "#Services",
             },
             {
-              _id: 4,
-              title: "Industry Verticals",
-              link: "#IndustryVerticals",
-            },
-            {
               _id: 5,
               title: "Partners",
               link: "#Partners",
+            },
+            {
+              _id: 4,
+              title: "Industry Verticals",
+              link: "#IndustryVerticals",
             },
           ]}
         />
@@ -438,22 +438,20 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div id="Challenges" className={` w-full bg-white pb-20`}>
-          <>
-            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
-              <div className=" mt-[5em] mb-[2rem]">
-                <div className="flex flex-col md:flex-row gap-x-10">
-                  <h3 className="text-4xl leading-[42px] font-bold">
-                    Challenges Encountered by Businesses
-                  </h3>
-                  <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
-                  </p>
-                </div>
+        <div id="Challenges" className={`mt-[4em]  w-full bg-white`}>
+          <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+            <div className=" mb-[2rem]">
+              <div className="flex flex-col md:flex-row gap-x-10">
+                <h3 className="text-4xl leading-[42px] font-bold">
+                  Challenges Encountered by Businesses
+                </h3>
+                <p>
+                  We offer strategic insights, specialized knowledge and
+                  experience in helping businesses adapt, grow and thrive.
+                </p>
               </div>
             </div>
-          </>
+          </div>
           <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="mx-auto">

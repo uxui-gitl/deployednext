@@ -20,6 +20,7 @@ import Subscription from "@/components/Subscription";
 import handShake from "../../../../../public/handShake.png";
 import styles from "./page.module.css";
 import BlogSlider from "@/components/BlogSlider";
+import { SectionNav } from "@/components";
 const ChoiceSlider = [
   {
     _id: 1,
@@ -120,6 +121,43 @@ export default function Home() {
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
         />
 
+        <>
+          <SectionNav
+            // Solutions
+            // Our Approach
+            // Services
+            // Add-Ons
+            // Industries
+            arr={[
+              {
+                _id: 1,
+                title: "Solutions",
+                link: "#Solutions",
+              },
+              {
+                _id: 2,
+                title: "Our Approach",
+                link: "#OurApproach",
+              },
+              {
+                _id: 3,
+                title: "Services",
+                link: "#Services",
+              },
+              {
+                _id: 4,
+                title: "Add-Ons",
+                link: "#AddOns",
+              },
+              {
+                _id: 5,
+                title: "Industries",
+                link: "#Industries",
+              },
+            ]}
+          />
+        </>
+
         {/* transformation */}
         <>
           <div className="max-w-screen-xl mx-auto px-[2rem] bg-transparent z-30 relative">
@@ -148,7 +186,7 @@ export default function Home() {
           </div>
         </>
 
-        <div id="spotlightGrid">
+        <div id="Solutions">
           <div className={`w-full bg-[#fff] text-left `}>
             <div className=" max-w-screen md:max-w-screen mx-auto pt-5 ">
               <SpotlightLogoGrid
@@ -247,7 +285,10 @@ export default function Home() {
 
         {/* Infographics */}
         <>
-          <div className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white">
+          <div
+            id="OurApproach"
+            className="max-w-screen-xl mx-auto px-[2rem] pb-20 bg-white"
+          >
             <div className=" mt-[5em] mb-[2em]">
               <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
                 <h3 className="text-4xl leading-[42px] font-bold">
@@ -267,7 +308,7 @@ export default function Home() {
         </>
 
         {/* Accomplishing Your Goals */}
-        <div id="spotlight">
+        <div id="Services">
           <>
             <div className={`w-full bg-[#F2F4F7] text-left pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
@@ -365,7 +406,7 @@ export default function Home() {
 
         {/* Industry Solutions Slider */}
         <>
-          <div className={` w-full bg-[#F2F4F7] pt-20`}>
+          <div id="AddOns" className={` w-full bg-[#F2F4F7] pt-20`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0   grid grid-cols-1 ">
               <div className="bg-[#F2F4F7] flex items-start flex-col justify-between  relative">
                 <>
@@ -446,7 +487,7 @@ export default function Home() {
 
         {/* Industry Spotlight Slider */}
         <>
-          <div className={` w-full bg-[#FFF] pt-20`}>
+          <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
               {/* left */}
               <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
