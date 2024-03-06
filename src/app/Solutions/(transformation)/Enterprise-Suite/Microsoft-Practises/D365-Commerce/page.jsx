@@ -74,6 +74,7 @@ const Page = () => {
       id: 4,
       text: "Precise information and reporting for tracking sales, customer acquisition costs and inventory turnover metrics.",
     },
+    
   ];
   const handleColumnClick = (columnId) => {
     setSelectedColumn(columnId);
@@ -82,45 +83,25 @@ const Page = () => {
     {
       _id: 1,
       imgUrl: "Industry-Spotlight-Manufacturing",
-      title: "Manufacturing",
+      title: "Retail",
       desc: "",
       url: "/",
     },
     {
       _id: 2,
       imgUrl: "Industry-Spotlight-Retail",
-      title: "Retail",
+      title: "Duty-Free and Travel Retail",
       desc: "",
       url: "/",
     },
     {
       _id: 3,
-      title: "Trading and Distribution",
+      title: "Food and Beverage ",
       desc: "",
       imgUrl: "Industry-Spotlight-rading-and-Distribution",
       url: "/",
     },
-    {
-      _id: 4,
-      title: "Healthcare ",
-      desc: "",
-      imgUrl: "Industry-served-Healthcare",
-      url: "/",
-    },
-    {
-      _id: 5,
-      title: "Project ",
-      desc: "",
-      imgUrl: "Industry-Spotlight-Projects",
-      url: "/",
-    },
-    {
-      _id: 6,
-      title: "Professional services",
-      desc: "",
-      imgUrl: "ProfessionalServices",
-      url: "/",
-    },
+    
   ];
   const eComCapabilities = [
     {
@@ -216,7 +197,7 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Scale Up Your Omnichannel Business with personalised Experience – Microsoft D365 Commerce"
+        title="Scale Up Your Omnichannel Business with Personalised Experience - Microsoft D365 Commerce"
         desc=""
         cta="Let's Connect"
         width="75%%"
@@ -226,37 +207,26 @@ const Page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
-          // Challenges
-          // Expertise
-          // Benefits
-          // Why Us
-          // Industries
-
           arr={[
             {
               _id: 1,
-              title: "Challenges",
-              link: "#Challenges",
+              title: "Enterprise suite",
+              link: "#about",
             },
             {
               _id: 2,
-              title: "Expertise",
-              link: "#Expertise",
+              title: "Act Cards",
+              link: "#actCards",
             },
             {
               _id: 3,
-              title: "Benefits",
-              link: "#Benefits",
+              title: "Employee Experience",
+              link: "#empExp",
             },
             {
               _id: 4,
-              title: "Why Us",
-              link: "#WhyUs",
-            },
-            {
-              _id: 5,
-              title: "Industries",
-              link: "#Industries",
+              title: "Spotlight",
+              link: "#spotlight",
             },
           ]}
         />
@@ -278,26 +248,18 @@ const Page = () => {
 
       {/* On premises Challenges*/}
       <>
-        <div id="Challenges" className={` w-full bg-[#f2f4f7] py-24`}>
+        <div className={` w-full bg-[#f2f4f7] py-24`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-[#f2f4f7]">
               <div className="  ">
                 <div className="md:flex-row flex-col flex text-left gap-x-10">
-                  <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                    Business Challenges of Retail Businesses
-                  </h3>
-                  <p className="font-medium leading-[22px] md:w-[80%] mx-auto mb-10">
-                    Customers now seek personalized experiences, seamless
-                    interactions, and a sense of connection with the brands they
-                    choose. Businesses face the challenge of understanding this
-                    shift and creating strategies that resonate with each
-                    customer&#39;s individuality. The rapid pace of
-                    technological evolution poses a risk for retailers; failing
-                    to adapt may disconnect them from their tech-savvy customer
-                    base. Adaptability is crucial for businesses to stay
-                    connected and relevant in this evolving landscape.
-                  </p>
-                </div>
+                <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                   Challenges of Retail and Ecommerce Management
+                </h3>
+                <p className="font-medium leading-[22px] md:w-[80%] mx-auto mb-10">
+                 Customers now seek personalized experiences, seamless interactions, and a sense of connection with the brands they choose. Businesses face the challenge of understanding this shift and creating strategies that resonate with each customer&#39;s individuality. The rapid pace of technological evolution poses a risk for retailers; failing to adapt may disconnect them from their tech-savvy customer base. Adaptability is crucial for businesses to stay connected and relevant in this evolving landscape. 
+                </p>
+              </div>
               </div>
             </div>
           </>
@@ -334,17 +296,16 @@ const Page = () => {
 
       {/* Capabilites grid */}
       <>
-        <div id="Expertise" className={` w-full bg-[#FFF] pt-32`}>
+        <div className={` w-full bg-[#FFF] pt-32`}>
           <div className="text-center max-w-screen-xl sm:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem]  flex justify-center flex-row">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Key capabilities
+                  Key Capabilities
                 </h3>
                 <p>
-                  Dive deep into the fundamental strengths of D365 Commerce,
-                  equipping your business with powerful tools for growth.
+                  Dive deep into the fundamental strengths of D365 Commerce, equipping your business with powerful tools for growth.
                 </p>
               </div>
             </div>
@@ -482,8 +443,7 @@ const Page = () => {
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc:
-              "Engaging digital storefronts with user-friendly web authoring and development tools.",
+            cardDesc: "Engaging digital storefronts with user-friendly web authoring and development tools.",
           },
         ]}
       ></Benefits>
@@ -609,67 +569,50 @@ const Page = () => {
         arr={[
           {
             _id: 1,
-            desc: "Experienced team that guarantees D365 Commerce's full potential for growth and innovation.",
+            desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "Descriptive approach and tailored Dynamics 365 Commerce solutions delivery that adapt to your unique business needs and changing scenarios.",
+            desc: "Proficiency in Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Extensive experience in comprehending the intricacies of business processes.",
+            desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
+            desc: "Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
             icon: "",
           },
 
+
           {
             _id: 5,
-            desc: "Proficiency in utilizing Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
-            icon: "",
-          },
-          {
-            _id: 6,
-            desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel. ",
-            icon: "",
-          },
-          {
-            _id: 7,
-            desc: "Assistance in adopting newer technologies to drive business growth. ",
-            icon: "",
-          },
-          {
-            _id: 8,
-            desc: "Prestigious Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
-            icon: "",
-          },
-          {
-            _id: 9,
             desc: "Troubleshoot, evaluates and optimizes D365 Commerce solution with expertise.",
             icon: "",
           },
           {
-            _id: 10,
+            _id: 6,
             desc: "Global delivery model and pool of certified D365 experts.",
             icon: "",
           },
           {
-            _id: 11,
+            _id: 7,
             desc: "Microsoft cloud partner and proven history of working with small, medium and large size enterprises.",
             icon: "",
           },
+          
+          
         ]}
         renderInlineSpans={true}
       ></WhySection>
 
       {/* Industry Served Slider */}
       <>
-        <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
+        <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
@@ -806,8 +749,7 @@ const Page = () => {
           {
             _id: 1,
             ribbon: "Blog",
-            title:
-              "The Significance of Dynamics 365 Commerce in B2B Sales Evolution",
+            title: "The Significance of Dynamics 365 Commerce in B2B Sales Evolution",
             desc: "In the realm of B2B digital sales, Dynamics 365 Commerce stands as a beacon of innovation. This platform plays a pivotal role in reshaping B2B sales strategies, enabling businesses to navigate the digital landscape effectively. Dynamics 365 Commerce integrates cutting-edge technology and streamlined processes to elevate B2B digital sales practices. Understanding the essence of this platform is crucial in harnessing its potential to revolutionize B2B sales, marking a significant evolution in this arena.",
             cta: "Know More",
             link: "/",
@@ -818,55 +760,54 @@ const Page = () => {
 
       {/* Testimonials */}
       <div className="hidden">
-        <NewTestimonial
-          ribbon="CLIENT TESTIMONIALS"
-          ribbonVisible={false}
-          title="Delighted customers share their success experience "
-          desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
-          arr={[
-            {
-              id: 1,
-              clientName: "",
-              clientDesignation:
-                "ERP and Business Intelligence Head, Fast food service chain  ",
-              thumbnail: "",
-              description:
-                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
-              category: "static",
-              link: "/",
-            },
-            {
-              id: 2,
-              clientName: "",
-              clientDesignation:
-                "Manager IT, India's leading Energy Management System and Solutions provider ",
-              thumbnail: "",
-              description:
-                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-              category: "static",
-              link: "/",
-            },
-            {
-              id: 3,
-              clientName: "",
-              clientDesignation:
-                "Manager IT, India's leading Energy Management System and Solutions provider ",
-              thumbnail: "",
-              description:
-                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-              category: "static",
-              link: "/",
-            },
-          ]}
-        />
-      </div>
+      <NewTestimonial
+        ribbon="CLIENT TESTIMONIALS"
+        ribbonVisible={false}
+        title="Delighted customers share their success experience "
+        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        arr={[
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "ERP and Business Intelligence Head, Fast food service chain  ",
+            thumbnail: "",
+            description:
+              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider ",
+            thumbnail: "",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
+        ]}
+      />
+</div>
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
-        blue=" "
+        title="Ready to strengthen your "
+        blue="commerce experience?"
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Share your details to leverage the competency of D365 Commerce for your business."
       />
       <InfotechWeeklyAlt />
     </>
