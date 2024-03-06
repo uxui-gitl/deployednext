@@ -420,12 +420,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="The Ultimate CRM Solution for
-        Enterprise-level Sales and Marketing
-        Performance "
-        desc="The Ultimate CRM Solution for
-        Enterprise-level Sales and Marketing
-        Performance "
+        title="Infor CRM - The Ultimate CRM Solution for Enterprise-level Sales and Marketing Performance"
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -470,7 +466,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+      <Abstract abstractdesc="We are dedicated to a technically refined and impactful implementation aimed at optimizing your sales operations. Our guarantee ensures a smooth and impactful deployment, intending to optimize your sales operations. Capitalizing the expertise of our seasoned Infor CRM professionals, we assist in maximizing the benefits of this popular solution for quantifiable outcomes. Infor CRM proudly serves a global clientele of over 2,500 organizations, with user counts ranging from 5 to 3,000 across various industries."></Abstract>
 
       {/* Infor CRM Modules */}
       <>
@@ -480,7 +476,7 @@ const page = () => {
             <div className="  flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
-                  Infor CRM Modules
+                  Infor CRM Offerings  
                 </h3>
               </div>
             </div>
@@ -488,9 +484,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We deliver high-performing services for a comprehensive suite
-                  Microsoft ecosystem, devised to elevate growth and
-                  productivity and build stronger stakeholder connections
+                  Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations.
                 </p>
               </div>
             </div>
@@ -499,7 +493,7 @@ const page = () => {
             {[
               {
                 _id: 1,
-                title: "Consulting ",
+                title: "Sales Automation",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
