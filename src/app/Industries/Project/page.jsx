@@ -661,7 +661,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-screen-xl md:max-w-screen-xl flex flex-col sm:flex-row gap-y-5 justify-center text-left  mb-5 mx-auto  p-5">
+          <div className="max-w-screen-xl md:max-w-screen-xl flex flex-col sm:flex-row gap-y-5 justify-center text-left  mb-5 mx-auto  p-5 overflow-hidden">
             <Swiper
               slidesPerView={"auto"}
               pagination={{
@@ -685,14 +685,14 @@ const page = () => {
                 },
               }}
               modules={[Pagination]}
-              className=" flex-grow"
+              className=" sm:flex-grow"
             >
               {UseCases.map((item, index) => {
                 return (
                   <SwiperSlide
                     style={{ height: "auto" }}
                     key={item._id}
-                    className="sm:w-full md:w-1/4 bg-white flex flex-col justify-between  mr-4  relative group"
+                    className="sm:w-full max-w-full md:w-1/4 bg-white flex flex-col justify-between  mr-4  relative group"
                   >
                     <div
                       key={item._id}

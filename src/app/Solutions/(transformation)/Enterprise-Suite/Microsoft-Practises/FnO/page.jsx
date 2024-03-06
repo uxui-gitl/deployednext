@@ -426,15 +426,16 @@ const Page = () => {
               title: "Highlights",
               link: "#Highlights",
             },
+
             {
               _id: 2,
-              title: "Add Ons",
-              link: "#AddOns",
+              title: "Industry Solutions",
+              link: "#IndustrySolutions",
             },
             {
               _id: 3,
-              title: "Industry Solutions",
-              link: "#IndustrySolutions",
+              title: "Add Ons",
+              link: "#AddOns",
             },
             {
               _id: 4,

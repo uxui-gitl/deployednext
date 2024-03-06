@@ -482,7 +482,7 @@ const page = () => {
           // Key Capabilities
           // Industries
           // Benefits
-          // Testimonials
+          // Testimonials - Temp Removed since no data
 
           arr={[
             {
@@ -504,11 +504,6 @@ const page = () => {
               _id: 4,
               title: "Benefits",
               link: "#Benefits",
-            },
-            {
-              _id: 5,
-              title: "Testimonials",
-              link: "#Testimonials",
             },
           ]}
         />

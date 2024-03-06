@@ -209,14 +209,14 @@ const page = () => {
               link: "#Services",
             },
             {
-              _id: 3,
-              title: "Benefits",
-              link: "#Benefits",
-            },
-            {
               _id: 4,
               title: "Why Us",
               link: "#WhyUs",
+            },
+            {
+              _id: 3,
+              title: "Benefits",
+              link: "#Benefits",
             },
           ]}
         />

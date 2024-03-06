@@ -83,7 +83,7 @@ export default function Home() {
             </main>
           </div>
         </>
-        {/* <Expertise /> */}
+        <Expertise />
 
         {/* <CobeGlobe /> */}
         {/* Maximize business output / Vertical Slider */}

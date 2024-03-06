@@ -237,7 +237,29 @@ const page = () => {
 
       {/* Section Nav */}
       <>
-        <SectionNav arr={navLinks} />
+        <SectionNav
+          // Solutions
+          // Benefits
+          // Why Us
+
+          arr={[
+            {
+              _id: 1,
+              title: "Solutions",
+              link: "#Solutions",
+            },
+            {
+              _id: 2,
+              title: "Benefits",
+              link: "#Benefits",
+            },
+            {
+              _id: 3,
+              title: "Why Us",
+              link: "#WhyUs",
+            },
+          ]}
+        />
       </>
 
       {/* Overview  */}
@@ -271,7 +293,7 @@ const page = () => {
         <>
           <div
             className={` ${styles["bg-img"]} w-full pt-32 pb-12 mt-32`}
-            id="productivity"
+            id="Solutions"
           >
             <div className="text-left text-white max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
               <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">

@@ -537,26 +537,38 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
+          // Challenges
+          // Offerings
+          // Why Us
+          // Expertise
+          // Methodology
+
           arr={[
             {
               _id: 1,
-              title: "Enterprise suite",
-              link: "#about",
+              title: "Challenges",
+              link: "#Challenges",
             },
             {
               _id: 2,
-              title: "Act Cards",
-              link: "#actCards",
+              title: "Offerings",
+              link: "#Offerings",
             },
             {
               _id: 3,
-              title: "Employee Experience",
-              link: "#empExp",
+              title: "Why Us",
+              link: "#WhyUs",
             },
             {
               _id: 4,
-              title: "Spotlight",
-              link: "#spotlight",
+              title: "Expertise",
+              link: "#Expertise",
+            },
+
+            {
+              _id: 5,
+              title: "Methodology",
+              link: "#Methodology",
             },
           ]}
         />
@@ -594,7 +606,7 @@ const page = () => {
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div id="Challenges" className={` w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
