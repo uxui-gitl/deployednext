@@ -36,6 +36,7 @@
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.6.0",
     "react-flags-select": "^2.2.3",
+    "react-medium-image-zoom": "^5.1.10",
     "react-modal": "^3.16.1",
     "react-scroll": "^1.9.0",
     "react-select": "^5.7.7",
