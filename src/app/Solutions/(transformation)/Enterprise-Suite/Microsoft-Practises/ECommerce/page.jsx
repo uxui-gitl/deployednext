@@ -83,45 +83,25 @@ const Page = () => {
     {
       _id: 1,
       imgUrl: "Industry-Spotlight-Manufacturing",
-      title: "Manufacturing",
+      title: "Retail",
       desc: "",
       url: "/",
     },
     {
       _id: 2,
       imgUrl: "Industry-Spotlight-Retail",
-      title: "Retail",
+      title: "Duty-Free and Travel Retail",
       desc: "",
       url: "/",
     },
     {
       _id: 3,
-      title: "Trading and Distribution",
+      title: "Food and Beverage ",
       desc: "",
       imgUrl: "Industry-Spotlight-rading-and-Distribution",
       url: "/",
     },
-    {
-      _id: 4,
-      title: "Healthcare ",
-      desc: "",
-      imgUrl: "Industry-served-Healthcare",
-      url: "/",
-    },
-    {
-      _id: 5,
-      title: "Project ",
-      desc: "",
-      imgUrl: "Industry-Spotlight-Projects",
-      url: "/",
-    },
-    {
-      _id: 6,
-      title: "Professional services",
-      desc: "",
-      imgUrl: "ProfessionalServices",
-      url: "/",
-    },
+    
   ];
   const eComCapabilities = [
     {
@@ -217,7 +197,7 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Scale Up Your Omnichannel Business with personalised Experience – Microsoft D365 Commerce"
+        title="Scale Up Your Omnichannel Business with Personalised Experience - Microsoft D365 Commerce"
         desc=""
         cta="Let's Connect"
         width="75%%"
@@ -274,7 +254,7 @@ const Page = () => {
               <div className="  ">
                 <div className="md:flex-row flex-col flex text-left gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Business Challenges of Retail Businesses
+                   Challenges of Retail and Ecommerce Management
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto mb-10">
                  Customers now seek personalized experiences, seamless interactions, and a sense of connection with the brands they choose. Businesses face the challenge of understanding this shift and creating strategies that resonate with each customer&#39;s individuality. The rapid pace of technological evolution poses a risk for retailers; failing to adapt may disconnect them from their tech-savvy customer base. Adaptability is crucial for businesses to stay connected and relevant in this evolving landscape. 
@@ -322,7 +302,7 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Key capabilities
+                  Key Capabilities
                 </h3>
                 <p>
                   Dive deep into the fundamental strengths of D365 Commerce, equipping your business with powerful tools for growth.
@@ -589,61 +569,42 @@ const Page = () => {
         arr={[
           {
             _id: 1,
-            desc: "Experienced team that guarantees D365 Commerce's full potential for growth and innovation.",
+            desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "Descriptive approach and tailored Dynamics 365 Commerce solutions delivery that adapt to your unique business needs and changing scenarios.",
+            desc: "Proficiency in Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Extensive experience in comprehending the intricacies of business processes.",
+            desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "Strong track record in Customer and Channel Commerce (C-Commerce) domain.",
+            desc: "Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
             icon: "",
           },
 
 
           {
             _id: 5,
-            desc: "Proficiency in utilizing Magento CE & Enterprise for a seamless end-to-end customer experience journey.",
-            icon: "",
-          },
-          {
-            _id: 6,
-            desc: "Expertise in developing native iOS and Android apps for end-users, dealers, and sales personnel. ",
-            icon: "",
-          },
-          {
-            _id: 7,
-            desc: "Assistance in adopting newer technologies to drive business growth. ",
-            icon: "",
-          },
-          {
-            _id: 8,
-            desc: "Prestigious Gold Partnership with Microsoft and specialized expertise in retail vertical, SMEs, and Channel Commerce.",
-            icon: "",
-          },
-          {
-            _id: 9,
             desc: "Troubleshoot, evaluates and optimizes D365 Commerce solution with expertise.",
             icon: "",
           },
           {
-            _id: 10,
+            _id: 6,
             desc: "Global delivery model and pool of certified D365 experts.",
             icon: "",
           },
           {
-            _id: 11,
+            _id: 7,
             desc: "Microsoft cloud partner and proven history of working with small, medium and large size enterprises.",
             icon: "",
           },
+          
           
         ]}
         renderInlineSpans={true}
@@ -843,11 +804,10 @@ const Page = () => {
 </div>
       {/* Subscription */}
       <Subscription
-        title="Ready to Streamline Your
-        Business Operations? "
-        blue=" "
+        title="Ready to strengthen your "
+        blue="commerce experience?"
         title2=""
-        desc="Talk To Our Experts to discuss your requirements "
+        desc="Share your details to leverage the competency of D365 Commerce for your business."
       />
       <InfotechWeeklyAlt />
     </>
