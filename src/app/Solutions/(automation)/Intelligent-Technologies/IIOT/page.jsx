@@ -181,25 +181,37 @@ const BenefitsData = [
     _id: 1,
     icon: "benefits-ai-ml/process-analyse",
     cardDesc:
-      "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+      "Improvement of OEE (Overall Equipment Efficiency) leading to optimised throughput and enhanced quality.",
   },
   {
     _id: 2,
     icon: "benefits-ai-ml/anticipate-future",
     cardDesc:
-      "Anticipate future outcomes based on historical data, making informed decisions",
+      "Effective use of Equipment Service Cost and Improved Safety Compliance",
   },
   {
     _id: 3,
     icon: "benefits-ai-ml/effortless-communicate",
     cardDesc:
-      "Effortless communication and efficient information retrieval through Natural Language Processing ",
+      "Optimised Maintenance TAT in terms of MTBF (Measures the time between failures for devices) and MTTR (Measures the time that it takes to repair those failed devices)",
   },
   {
     _id: 4,
     icon: "benefits-ai-ml/optimise-supply-chain",
     cardDesc:
-      "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity ",
+      "Promotes the concept of Connected Factory with actionable insights for Operations, Tactical and Strategic Levels of Management – Shopfloor to Top floor",
+  },
+    {
+    _id: 5,
+    icon: "benefits-ai-ml/optimise-supply-chain",
+    cardDesc:
+      "Optimised Energy Consumption leading to Optimised Carbon Footprint",
+  },
+    {
+    _id: 6,
+    icon: "benefits-ai-ml/optimise-supply-chain",
+    cardDesc:
+      "Defect Tracking using image analytics leading to improved quality",
   },
 ];
 
@@ -263,9 +275,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Discover Real-Time Data Brilliance
-        with Godrej Infotech IoT Expertise "
-        desc="Our IoT services enable you to make informed decisions, proactively address issues, and implement data-driven strategies. From smart manufacturing to intelligent supply chain management, "
+        title="Discover Real-Time Data Brilliance with Godrej Infotech IIoT Expertise"
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -310,7 +321,9 @@ const Page = () => {
         />
       </>
       {/* Overview  */}
-      <Abstract abstractdesc="By employing a pragmatic approach and tapping into the capabilities of AI and ML, we meticulously fine-tune business parameters, ensuring a notable enhancement in your overall business proficiency. Join with us to fully immerse in the transformative power of AI and ML, setting off on a collaborative journey toward enriching innovation and achieving exceptional success for your business endeavours. "></Abstract>
+      <Abstract abstractdesc="We focus on refining businesses through IIoT services across diverse sectors, spanning Manufacturing, Supply Chain, Construction, Transportation, Power Generation and Smart Cities. Our IIoT (Industrial Internet of Things) and Industry 4.0 solutions are meticulously developed to strengthen manufacturing supply chain resilience, thereby influencing crucial performance metrics like OEE (Overall Equipment Efficiency), Cycle Time, Machine Throughput, Line Efficiency, and TPM (Total Productive Maintenance) Losses. 
+
+Our expert team extends support to clients by enabling them to monitor production order-wise part movement, implement consumption-based costing, and closely monitor quality parameters."></Abstract>
 
       {/* GITL IOT solutions */}
       <>
@@ -323,17 +336,17 @@ const Page = () => {
               <h4
                 className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
               >
-                GITL IoT Solutions
+                Our IIoT Solutions
               </h4>
             </div>
             <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
               <h3 className="text-4xl leading-[42px] font-bold">
-                GITL IoT Solutions
+               Our IIoT Solutions
               </h3>
 
               <p className="font-normal leading-[22px]">
                 We specialize in delivering cutting-edge Internet of Things
-                (IoT) solutions that are tailored to meet your unique needs.
+                (IIOT) solutions that are tailored to meet your unique needs.
               </p>
             </div>
           </div>
@@ -342,7 +355,7 @@ const Page = () => {
               {
                 _id: 1,
                 title:
-                  "Low Code, No Code Configurable Portals on Azure IoT or AWS IoT",
+                  "Low Code, No Code Configurable Portals on Azure IIOT or AWS IIOT",
                 desc: "We bring a wealth of industry knowledge and expertise to the table and follow the",
                 cta: "Explore Solutions",
                 isNested: true,
@@ -352,7 +365,7 @@ const Page = () => {
                   {
                     _tabId: 1,
                     title:
-                      "Remote Asset Tracking with Connected Field  Service & Predictive Analytics",
+                      "Remote Asset Tracking with Connected Field Service & Predictive Analytics",
                     isBullet: true,
                     list: [
                       {
@@ -360,11 +373,12 @@ const Page = () => {
                         title: "Solution Feature",
                         li: [
                           "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                          "Real Time Asset/Machine/Equipment Tracking",
+                          "Multivariate Azure ML Driven Predictive Failure Analytics leading to Predictive Maintenance",
+                          "Service Performance Monitoring",
+                          "Expense Management, Notifications",
+                          "Reporting and Analytics, Service Contracts (AMC)",
+                          "Chat Collaboration Integration with SAP using file-based data transfer mechanism Customer Portal",
                         ],
                       },
                     ],
@@ -372,19 +386,29 @@ const Page = () => {
                   {
                     _tabId: 2,
                     title:
-                      "Industry 4.0 Accelerator (IoT for shopfloor)   for implementation of IoT in shopfloor – Both for Discrete & Process Manufacturing",
+                      "Industry 4.0 Accelerator (IIOT for shopfloor) for implementation of IIOT in shopfloor – Both for Discrete & Process Manufacturing",
                     isBullet: true,
                     list: [
                       {
                         _listId: 1,
                         title: "Solution Feature",
                         li: [
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
-                          "Alerts, Machine Parameter wise Graphical Real Time Report, Work Order Management, Workforce, Management, Warranty Tracking",
+                          "Real Time Production Monitoring",
+                          "Usage Based Costing",
+                          "16 Total Productive Maintenance Loss Reports",
+                          "Realtime Machine wise/ Batchwise/Partwise Production Analysis",
+                          "Analysis of Rejection, Cycle time Report & Shot Count Report",
+                          "Realtime Partwise Material Consumption Analysis, Quality Reports - SPC Reports",
+                          "Analysis of Defect, Root Cause and Machine Downtime",
+                          "Production Order & Item Wise & MHU(Material Handling Unit) wise Tracking",
+                          "OEE Optimization and Line Efficiency calculation",
+                          "Energy & Utility Monitoring",
+                          "Predictive Maintenance",
+                          "Trace and Tracking of MHU Equipment",
+                          "Trace and Track of Parts across Shopfloor",
+                          "Energy &Utility Monitoring",
+                          "MTBF(Measures the time between failures for devices) and MTTR (Measures the time that it takes to repair those failed devices) Reports",
+                          "Energy Consumption Report in KwH and Safety Compliance Reports",
                         ],
                       },
                     ],
@@ -393,8 +417,8 @@ const Page = () => {
               },
               {
                 _id: 2,
-                title: "Bespoke IoT Solutions",
-                desc: "We bring a wealth of industry knowledge and expertise to the table and follow the",
+                title: "Bespoke IIOT Solutions",
+                desc: "Require Development from Scratch. Customisation of manufacturing reports",
                 cta: "Explore Solutions",
                 ctaHide: true,
                 isNested: true,
@@ -423,7 +447,7 @@ const Page = () => {
                   {
                     _tabId: 2,
                     title:
-                      "Industry 4.0 Accelerator (IoT for shopfloor)   for implementation of IoT in shopfloor – Both for Discrete & Process Manufacturing",
+                      "Industry 4.0 Accelerator (IIOT for shopfloor)   for implementation of IIOT in shopfloor – Both for Discrete & Process Manufacturing",
                     isBullet: true,
                     list: [
                       {
@@ -574,56 +598,46 @@ const Page = () => {
         )}
       </>
 
-      {/* case study CaseStudy */}
-      <>
-        <div id="CaseStudy">
-          <CaseStudy
-            ribbon="CASE STUDY "
-            title="Data Insights in Action / Case study"
-            desc=""
-            isHomepage={false}
-            arr={[
-              {
-                id: 1,
-                title:
-                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-                thumbnail: "",
-                description: "",
-                tags: [""],
-                cta: "Know More",
-                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-              },
-              {
-                id: 2,
-                title:
-                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-                thumbnail: "",
-                description: "",
-                tags: [""],
-                cta: "Know More",
-                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-              },
-              {
-                id: 3,
-                title:
-                  "Leading Indian Refiner of Precious Metals Gains Strategic Decision-Making Capability with Power BI Solution",
-                thumbnail: "",
-                description: "",
-                tags: [""],
-                cta: "Know More",
-                link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Precious-Metals-Refiner.pdf ",
-              },
-            ]}
-          />
-        </div>
-      </>
+      {/* case study */}
+       <div id="CaseStudy">
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Data Insights in Action / Case study"
+        desc=""
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "India's Largest Lift Truck Manufacturer & Exporter Implements IIOT Solution for Enterprise Asset Integration",
+            thumbnail: "",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/India%E2%80%99s_Largest_Lift_Truck_Manufacturer_Exporter_IoT_Solution_Enterprise_Asset_Integration.pdf",
+          },
+          {
+            id: 2,
+            title:
+              "India's Leading Construction Organization Implements IIOT & ML Solution for Real Time Cement Inventory Calibration",
+            thumbnail: "",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Indias_Leading_Construction_Organization_IoT_ML_Real_Time_Cement_Inventory.pdf",
+          },
+          
+        ]}
+      />
+       </div>
+
 
       {/* Benefits Vertical Slider */}
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
         title=""
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes, offering multiple benefits that redefine the way you do business."
+        desc="IIoT offers a multitude of benefits that enable businesses to gain competitive edge through innovation and succeed in digital era."
         arr={BenefitsData}
       ></Benefits>
 
@@ -632,49 +646,46 @@ const Page = () => {
         arr={[
           {
             _id: 1,
-            ribbon: "Insights",
-            title: "Unveiling Hyper-automation for Supply Chain Efficiency",
-            desc: "Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. ",
+            ribbon: "Blog",
+            title: "The Powerful Duo: AI and the Internet of Things (IIOT) Reshaping Our World",
+            desc: "Imagine a world where machines talk to each other, predicting problems before they happen and adjusting on the fly. This isn't magic; it's the incredible team of artificial intelligence (AI) and the Internet of things (IIOT) in Industry 4.0, the latest wave of technological revolution.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
           },
-          {
-            _id: 2,
-            ribbon: "Insights",
-            title: "Unveiling Hyper-automation for Supply Chain Efficiency",
-            desc: "Hyper-automation, specifically in the context of supply chain management, marks a significant milestone in the evolution of industry practices. It represents the convergence of cutting-edge technologies, reshaping how businesses manage their supply chains. In 2024, the prominence of hyper-automation has soared, transforming supply chain dynamics. This article aims to explore the essence of hyper-automation, its benefits in supply chain management, and various examples illustrating its application. ",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
+          
         ]}
       />
 
       {/* Why choose gitl and ai and ml */}
       <WhySection
         ribbon="The Distinctive Edge"
-        title="Why Godrej Infotech?"
-        desc="Prioritising your success, we help you thrive in a digital landscape with seamless deployment."
+        title="Why Godrej Infotech"
+        desc="Incorporating our IIOT expertise into business can transform the way business operates and paving the way for long-term success."
         arr={[
           {
             _id: 1,
-            desc: "Deep understanding of specific business domains for developing AI and ML solutions that truly meet your needs.",
+            desc: "Actively shaping the future of manufacturing for our clients through Industry 4.0 and IIOT.",
             icon: "",
           },
           {
             _id: 2,
-            desc: "Agile approach that keeps projects on cutting edge.",
+            desc: "Innovative IIOT and Industry 4.0 solutions deployed in various manufacturing scenarios.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to protect your sensitive information.",
+            desc: "Ensure replicable success stories for your business.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "Exceed customer expectations and deliver AI and ML solutions in most effective way.",
+            desc: "Expertise in Predictive and Prescriptive analytics using IIOT and AI/ML (Machine Learning) to foresee potential device failures.",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Efficiently ingests machine telemetry data across diverse PLC (Programmable Logic Controller), CNC (Computer Numerical Control) controllers, and OT (Operational Technology) network data points.",
             icon: "",
           },
         ]}
