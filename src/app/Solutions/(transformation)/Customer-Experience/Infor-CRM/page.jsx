@@ -420,12 +420,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="The Ultimate CRM Solution for
-        Enterprise-level Sales and Marketing
-        Performance "
-        desc="The Ultimate CRM Solution for
-        Enterprise-level Sales and Marketing
-        Performance "
+        title="Infor CRM - The Ultimate CRM Solution for Enterprise-level Sales and Marketing Performance"
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -470,7 +466,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+      <Abstract abstractdesc="We are dedicated to a technically refined and impactful implementation aimed at optimizing your sales operations. Our guarantee ensures a smooth and impactful deployment, intending to optimize your sales operations. Capitalizing the expertise of our seasoned Infor CRM professionals, we assist in maximizing the benefits of this popular solution for quantifiable outcomes. Infor CRM proudly serves a global clientele of over 2,500 organizations, with user counts ranging from 5 to 3,000 across various industries."></Abstract>
 
       {/* Infor CRM Modules */}
       <>
@@ -480,7 +476,7 @@ const page = () => {
             <div className="  flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
-                  Infor CRM Modules
+                  Infor CRM Offerings  
                 </h3>
               </div>
             </div>
@@ -488,9 +484,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We deliver high-performing services for a comprehensive suite
-                  Microsoft ecosystem, devised to elevate growth and
-                  productivity and build stronger stakeholder connections
+                  Count on us for an impactful deployment that finely tunes Infor CRM to elevate your sales operations.
                 </p>
               </div>
             </div>
@@ -499,74 +493,75 @@ const page = () => {
             {[
               {
                 _id: 1,
-                title: "Consulting ",
+                title: "Sales and Marketing Automation",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
                 _id: 2,
-                title: "Employee Access Creation ",
+                title: "Customer Service and Support",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
                 _id: 3,
-                title: "Account Payable and Receivable Process",
+                title: "Mobile CRM",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
                 _id: 4,
-                title: "Vendor Onboarding Process",
+                title: "Analytics and Reporting",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
                 _id: 5,
-                title: "Customer Onboarding Process",
+                title: "Integration with Microsoft Outlook (Infor CRM Xbar)",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
-                _id: 5,
-                title: "Customer Onboarding Process",
+                _id: 6,
+                title: "Social Media Integration",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
-                _id: 5,
-                title: "Customer Onboarding Process",
+                _id: 7,
+                title: "Workflow Automation",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
-                _id: 5,
-                title: "Customer Onboarding Process",
+                _id: 8,
+                title: "Document Management",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
-                _id: 5,
-                title: "Customer Onboarding Process",
+                _id: 9,
+                title: "Team and Territory Management",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
               {
-                _id: 5,
-                title: "Customer Onboarding Process",
+                _id: 10,
+                title: "Integrations with Back-office Systems",
                 cta: "Know More",
                 link: "/",
                 icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
               },
+              
             ].map((item, index) => {
               return (
                 <div
@@ -628,20 +623,84 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-2 gap-10 sm:grid-cols-2">
             {[
               {
                 _id: 1,
-                title: "Increased Productivity",
-                desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+                title: "Extensive Customization ",
+                desc: "Comprehensive customization options that are tailored to explicit demands, workflows and processes, delivering a more competent and personalized CRM experience.",
                 cta: "Know More",
                 ctaUrl: "/",
                 image: "/rpa/IncreasedProductivity.png",
               },
               {
                 _id: 2,
-                title: "Gain Accurate Outcomes",
+                title: "Effortless Integration",
                 desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 3,
+                title: "Mobile-Centric",
+                desc: "Dedicated mobile accessibility guarantees real-time customer engagement and responsiveness ensuing enhanced customer service and boosted sales opportunities.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 4,
+                title: "Mobile Customer Intelligence",
+                desc: "Advance cutting-edge mobile customer intelligence capabilities such as integrating contextual KPIs, comprehensive charts, and user-friendly menus which help to optimize workflows with precision. ",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 5,
+                title: "New Multi-Attendee Support for Activities",
+                desc: "Seamless support for multiple contacts, leads, and users are included in activities and historical records that fosters smoother communication among stakeholders.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 6,
+                title: "Licensing Options",
+                desc: "Multiple license types that cater to diverse businesses sizes, providing flexibility to select cost-efficient ownership models that line up with operational preferences.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 7,
+                title: "Marketing and Sales Automation",
+                desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 8,
+                title: "Reliable Customer Support",
+                desc: "Assist businesses in leveraging maximum CRM investment with prompt issue resolution.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+                 {
+                _id: 9,
+                title: "Scalability",
+                desc: "Infor CRM is devised to scale with business expansion and adapt to ever -changing market scenarios.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+                 {
+                _id: 10,
+                title: "Reporting and Analytics",
+                desc: "Suite with 70 + readily available business and sales reports and analytics & reporting capabilities that provide valuable insights to drive insightful customer interactions.",
                 cta: "Know More",
                 ctaUrl: "/",
                 image: "/rpa/GainAccurateOutcomes.png",
@@ -689,8 +748,17 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            title: "Infor CRM vs. Competitors",
+            desc: " A Comprehensive Comparison for Making the Right Choice",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+          {
+            _id: 2,
+            ribbon: "blog",
+            title: "Infor CRM Implementation Best Practices",
+            desc: "Hacks for a Successful Deployment",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -700,30 +768,26 @@ const page = () => {
 
       {/* Why Infotech */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
         desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "We aim to optimize Infor CRM potential and ensure winning results by capitalizing on our extensive expertise in Infor and diverse industry experience. ",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Our solutions and services are devised to elevate your customer experience, enabling you to nourish compelling relationships and scale your business effortlessly.",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "We are committed to providing dedicated customer support, assisting businesses at every implementation and beyond. ",
             icon: "",
           },
-          {
-            _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
+          
         ]}
         renderInlineSpans={true}
       ></WhySection>
@@ -738,72 +802,21 @@ const page = () => {
           {
             id: 1,
             title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              "Indian Offices of Leading Metal Plate Cutting Machine Manufacturer Gains 360 degree of Customer and transactional data   with Infor CRM Solution ",
             thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Metal-Plate-Machine-Manufacturer.pdf",
           },
-          {
-            id: 2,
-            title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
-          },
-          {
-            id: 3,
-            title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
-          },
+         
         ]}
       />
 
       {/*  */}
       {/* Supply System */}
-      <>
-        <div className={` w-full  pt-32`}></div>
-        <div
-          className={`w-full pt-48 pb-12 bg-[url('/SupplySystem.png')] bg-center bg-cover sm:bg-contain `}
-        >
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Infor proudly presents the most extensive suite of global
-                  supply chain solutions, including the world&apos;s largest
-                  single-instance, multi-enterprise business network and
-                  comprehensive CloudSuite capabilities. These capabilities
-                  optimize supply chains from end to end, covering planning,
-                  procurement, orchestration and fulfillment. Infor WMS is a
-                  cloud-based Tier-1 solution, reshaping warehouse operations
-                  through advanced functionalities ensuring efficient
-                  fulfillment in a dynamic business landscape. With Infor WMS,
-                  enterprises gain a competitive edge, ready to tackle the
-                  ever-evolving demands of the modern market.
-                </p>
-              </div>
-            </div>
-            {/* right */}
-          </div>
-        </div>
-      </>
+      
       <>
         <div
           className={`w-full pt-48 pb-12 bg-[url('/SupplySystem1.png')] bg-center bg-cover sm:bg-contain `}
@@ -843,7 +856,7 @@ const page = () => {
         title="Are you Ready for Infor-driven growth?"
         blue="Let's get started!?"
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Share your details to Maximize customer satisfaction with Infor CRM Capabilities."
       />
 
       {/* Infotech weekly */}
