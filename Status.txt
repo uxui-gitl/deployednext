@@ -5,14 +5,14 @@ Magento Ecom - Recreate
 
 Optimizations
 
-- Seo Meta Data dynamic
+- Seo Meta Data dynamic - done
 - Blog Template
 - Verify main pages
     - Home
     - Aboutus
     - contact
     - careers
-- back to top
+
 - Robot Animations
 - Cobe globe Animations
 - Route url case in sensitive
