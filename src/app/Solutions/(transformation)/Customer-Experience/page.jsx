@@ -126,10 +126,8 @@ export default function Home() {
       <main>
         {/* <Intro /> */}
         <EntIntro
-          title="Transforming your customer
-          lifecycle with purpose
-          driven technology "
-          desc="We assist your organization to respond to the most important stakeholder's expectations with agility and accuracy. Encompassing all business units, we collaborate with you to drive transformation throughout the entire customer journey.  We deliver solutions that are globally deployed in an industrialized manner, to ensure optimal outcomes"
+          title="Transforming your customer lifecycle with purpose driven technology"
+          desc=""
           cta="Let's Connect"
           width="90%"
           video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -175,78 +173,66 @@ export default function Home() {
         </>
 
         {/* Overview  */}
-        <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+        <Abstract abstractdesc="We help businesses to respond to the most important stakeholder’s expectations with agility and accuracy. Our team collaborates closely with clients to drive transformation throughout their entire customer journey. With Customer Relationship Management (CRM) and Ecommerce solutions, we guarantee optimal outcomes at every stage of the customer interaction process."></Abstract>
 
         {/* Grid Solutions */}
         <>
           <div id="Solutions">
             <ServiceOfferingGrid
-              title="Advance Solutions for
-            Transforming Customer
-            Experience"
+              title="Advance Solutions for Transforming Customer Experience"
               ctaVisible={false}
               cta="Let's Connect"
-              desc="We are dedicated to helping businesses like yours to optimize sales processes and drive greater sales results. We collaborate closely with you to gain a deep understanding of your sales operations to fine-tune Infor CRM and align perfectly with your business objectives"
+              desc="We understand that partnering with an expert is paramount to deliver remarkable customer experiences. Thus, we partner with market-leading technologies to help businesses like yours to optimize sales processes and drive greater sales results."
               ctaDesc="Let's Connect for a Walkthrough"
               arr={[
                 {
                   _id: 1,
                   type: "box",
-                  title: "Power BI",
+                  title: "Infor CRM",
                   theme: "light",
                   bg: "transparent",
-                  desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+                  desc: "Delivering streamlined customer interactions while ensuring tailored experiences at every touchpoint.",
                   icon: "Power-BI-Logo.png",
                   cta: "Know More",
                 },
                 {
                   _id: 2,
                   type: "box",
-                  title: "Tableau",
+                  title: "Microsoft CRM",
                   theme: "dark",
                   bg: "#4C6FFF",
-                  desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+                  desc: "Seamless integration with Microsoft ecosystem, offering an integrated platform for enriched efficiency and collaboration.",
                   icon: "Power-App.png",
                   cta: "Know More",
                 },
                 {
                   _id: 3,
                   type: "box",
-                  title: "Birst ",
+                  title: "Salesforce",
                   theme: "dark",
                   bg: "#07001F",
-                  desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
+                  desc: "Helping organizations with intuitive tools for developing deep customer relationships through personalized interactions.",
                   icon: "Birst-logo.png",
                   cta: "Know More",
                 },
                 {
                   _id: 1,
                   type: "box",
-                  title: "Power BI",
+                  title: "LS Retail",
                   theme: "light",
                   bg: "transparent",
-                  desc: "Backed by seasoned professionals, we have developed a distinct proficiency in harnessing the capabilities of Power BI. Our focus is to distill intricate data into actionable insights that catalyze a culture of business excellence.",
+                  desc: "Provides a holistic retail management solution, enabling seamless operations and enhanced customer experiences across all channels.",
                   icon: "Power-BI-Logo.png",
                   cta: "Know More",
                 },
-                {
+              {
                   _id: 2,
                   type: "box",
-                  title: "Tableau",
+                  title: "Magento",
                   theme: "dark",
                   bg: "#4C6FFF",
-                  desc: "Seamlessly integrate Tableau into your operations, enabling to visualize data in captivating ways, discover hidden trends and insights, and make informed decisions.",
+                  desc: "Facilitate seamless sales transactions with in-store delight and ease, and build responsive eCommerce experiences",
                   icon: "Power-App.png",
-                  cta: "Know More",
-                },
-                {
-                  _id: 3,
-                  type: "box",
-                  title: "Birst ",
-                  theme: "dark",
-                  bg: "#07001F",
-                  desc: "The aim is to facilitate faster decision-making with flexibility and keep your business agile and forward-thinking. Birst seamlessly connect and consolidates data from various sources, regardless of their structure or location (on-premises or in the cloud).",
-                  icon: "Birst-logo.png",
                   cta: "Know More",
                 },
               ]}
@@ -270,10 +256,7 @@ export default function Home() {
                   <div>
                     <div>
                       <p className="font-normal leading-[22px] md:w-[90%] ">
-                        Starting precisely where you stand in your digital
-                        transformation journey, we seamlessly integrate our
-                        teams into your culture, fostering a collaborative
-                        environment for success
+                        Featuring your customers at the forefront of every interaction, our services help to shape the future of customer engagements.
                       </p>
                     </div>
                   </div>
@@ -289,16 +272,16 @@ export default function Home() {
                   {[
                     {
                       _id: 1,
-                      title: "CRM services",
-                      desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                      title: "CRM",
+                      desc: "Understanding and anticipating needs of your customer touchpoints, we meticulously select and implement the most suitable CRM tailored to business vision that helps in developing meaningful connections.",
                       cta: "Know More",
                       icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                       link: "/",
                     },
                     {
                       _id: 2,
-                      title: "Ecommerce   ",
-                      desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
+                      title: "Ecommerce",
+                      desc: "We're committed to delivering unified and optimized online shopping experiences to maximize your customer satisfaction.",
                       icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                       cta: "Know More",
                       link: "/",
@@ -331,7 +314,7 @@ export default function Home() {
                             </p>
                           </div>
                         </div>
-                        <div className=" w-full bg-[#0745D3] p-5">
+                        <div className="w-full bg-[#0745D3] p-5">
                           <Link
                             href={item.link}
                             className="text-white  flex transition-all hover:opacity-75  "
@@ -362,16 +345,17 @@ export default function Home() {
             <div className=" mt-[5em] mb-[2em]">
               <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
                 <h3 className="text-4xl leading-[42px] font-bold">
-                  With our Holistic Approach
+                  Doctrine of Customer Experience / Customer Experience Modus Operandi
                 </h3>
                 <p className="font-normal leading-[22px] w-[80%] mx-auto">
-                  We redefine success standards globally with robust enterprise
-                  solutions to enhance stakeholder experiences, strengthen
-                  business resilience and modernize IT environment.
+                  It is our human -centric paradigm approach that enables streamlined user journeys to enhance customer satisfaction and loyalty. 
                 </p>
+                   <div className="mx-auto text-center w-[75%]">
+            <Infographics src="/infographics/CustomerExperience.svg" />
+          </div>
               </div>
             </div>
-            <div className="mx-auto text-center w-max">
+            <div className="mx-auto text-center w-max hidden">
               <Infographics src="/customerExperience/Doctorine.png" />
             </div>
           </div>
@@ -379,70 +363,72 @@ export default function Home() {
 
         {/* Benefits Vertical Slider */}
         <Benefits
-          ribbon="Benefits "
+          ribbon="Benefits"
           ribbonTxtWhite="true"
-          title="AI&ML "
-          desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+          title="Customer Experience Transformation"
+          desc="Maximizing Business Opportunities &Building Resilient Brand"
           arr={[
             {
               _id: 1,
               icon: "benefits-ai-ml/process-analyse",
               cardDesc:
-                "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+                "Drop in manual tasks of sales, marketing and customer service operations ",
             },
             {
               _id: 2,
               icon: "benefits-ai-ml/anticipate-future",
               cardDesc:
-                "Anticipate future outcomes based on historical data, making informed decisions",
+                "Rise in sales efficiency and performance",
             },
             {
               _id: 3,
               icon: "benefits-ai-ml/effortless-communicate",
               cardDesc:
-                "Effortless communication and efficient information retrieval through Natural Language Processing",
+                "Decline in customer service tickets",
             },
             {
               _id: 4,
               icon: "benefits-ai-ml/optimise-supply-chain",
               cardDesc:
-                "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+                "Growth in lead pool",
             },
             {
               _id: 5,
               icon: "benefits-ai-ml/healthcare",
               cardDesc:
-                "Revolutionising Healthcare with medical image analysis",
+                "Increase in lead conversion rate",
+            },
+            {
+              _id: 6,
+              icon: "benefits-ai-ml/healthcare",
+              cardDesc:
+                "Improvement in customer retention",
             },
           ]}
         ></Benefits>
 
         {/* Why Infotech */}
         <WhySection
-          ribbon="Let's Collaborate and Make it Happen"
-          title="Why Choose GITL for AI and ML?"
-          desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+          ribbon="The Distinctive Edge"
+          title="Why Godrej Infotech"
+          desc="We deliver tailored technology solutions keeping your customers' requirements in mind, encouraging genuine connections and driving continuous growth."
           arr={[
             {
               _id: 1,
-              desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+              desc: "We offer full fledge spectrum including strategic planning, design, development and support operations.",
               icon: "",
             },
             {
               _id: 2,
-              desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+              desc: "Employing our insight-led methodology, we upheld proficiency in technology implementation and have vast experience in customer relationship management (CRM).",
               icon: "",
             },
             {
               _id: 3,
-              desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+              desc: "We tap the transformative potential of data and artificial intelligence to provide context-driven customer experience capabilities, ensuring customer delight. ",
               icon: "",
             },
-            {
-              _id: 4,
-              desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-              icon: "",
-            },
+       
           ]}
           renderInlineSpans={true}
         ></WhySection>
@@ -452,32 +438,25 @@ export default function Home() {
           ribbon="Acing Your Business Objectives"
           ribbonTxtWhite="true"
           title="The Hub of Expertise"
-          desc="We are here to build competitive edge with technology brilliance for businesses across the world."
+          desc="We are here to build a competitive edge with technology brilliance for businesses across the world."
           arr={[
             {
-              title: "25+",
-              desc: "Years of Experience",
+              title: "50+",
+              desc: "Countries Spanning our Happy Customers",
             },
             {
-              title: "500+",
-              desc: "Customers Worldwide",
+              title: "600+",
+              desc: "Employees Worldwide ",
             },
             {
-              title: "500+",
-              desc: "Employees Worldwide",
+              title: "700+",
+              desc: "Implementations ",
             },
             {
-              title: "1000+",
-              desc: "Implementation Sites",
+              title: "2",
+              desc: "Decades of Experience",
             },
-            {
-              title: "15000+",
-              desc: "Man Years of Experience",
-            },
-            {
-              title: "24*7",
-              desc: "Support",
-            },
+            
           ]}
         ></Expertise>
 
@@ -497,10 +476,10 @@ export default function Home() {
               id: 1,
               clientName: "",
               clientDesignation:
-                "ERP and Business Intelligence Head, Fast food service chain  ",
+                "Saudi Arabia's Hypermarket Retail Chain",
               thumbnail: "1",
               description:
-                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+                "We have gained tremendous benefits from working with Godrej Infotech Limited as an IT Solutions Partner. LS Retail Solution implemented by Godrej Infotech has streamlined our store and backend processes, aligning with our shared values of simplicity, cost-effectiveness and high quality.",
               category: "static",
               link: "/",
             },
@@ -508,42 +487,21 @@ export default function Home() {
               id: 2,
               clientName: "",
               clientDesignation:
-                "Manager IT, India's leading Energy Management System and Solutions provider ",
+                "Leading Manufacturer of Optical Fibers in USA",
               thumbnail: "1",
               description:
-                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+                "Thank you for the seamless migration of our CRM 2016 to D365 for Sales. We appreciate the timely completion and outstanding quality of the project. The 100% offshore execution is commendable, and the CRM & Outlook integration has significantly boosted our sales team's productivity, up to 90%.",
               category: "static",
               link: "/",
             },
-            {
-              id: 1,
-              clientName: "",
-              clientDesignation:
-                "ERP and Business Intelligence Head, Fast food service chain  ",
-              thumbnail: "1",
-              description:
-                "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
-              category: "static",
-              link: "/",
-            },
-            {
-              id: 2,
-              clientName: "",
-              clientDesignation:
-                "Manager IT, India's leading Energy Management System and Solutions provider ",
-              thumbnail: "1",
-              description:
-                "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-              category: "static",
-              link: "/",
-            },
+            
           ]}
         />
 
         {/* Subscription */}
         <Subscription
-          title="Free 30 minutes IT strategy session with our consultant?"
-          desc="Let's discuss how Godrej Infotech can help your business with efficiency and business continuity. Your Tomorrow Starts Here!"
+          title="Ready to Transform Your Customer Relationship Approach?"
+          desc="Share your details to digitize your customer experience and enhance benefits for your valued customers."
         />
 
         {/* infotech weekly */}
