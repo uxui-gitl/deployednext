@@ -15,7 +15,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Timeline from "@/components/Timeline";
 import EmployeeExp from "@/components/EmployeeExp";
 
-const AboutUs = () => {
+const Page = () => {
   return (
     <>
       <div className={`relative z-[500]`}>
@@ -143,4 +143,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Page;
