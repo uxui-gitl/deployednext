@@ -6,11 +6,11 @@ import Announcement from "@/sections/announcement/Announcement";
 const page = () => {
   return (
     <>
-      <div className={`relative z-[500]`}>
+      {/* <div className={`relative z-[500]`}>
         <div className={`absolute w-full  `}>
           <Navbar theme="dark" />
         </div>
-      </div>
+      </div> */}
       <div className="max-w-[1440px] w-screen xl:p-20 md:px-8 sm:px-7 px-7 mx-auto">
         <div>
           <p className="font-bold text-2xl"># Solutions</p>

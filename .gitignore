@@ -1,3 +1,5 @@
+# git config core.ignorecase false
+# ^ file name renamed from Our-Service -> our-service change will be detected add the code in vscode terminal itself
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
