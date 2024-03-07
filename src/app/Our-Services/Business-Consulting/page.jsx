@@ -267,31 +267,31 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "Inadequate understanding of business and customer perspectives",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Existing or upcoming market conditions ambiguity",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Discord between business vision and strategy",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Innovation challenges and new capabilities deployment",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
+    text: "Absence of enterprise-wide adaptability",
   },
   {
     id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "Ineffectual strategy implementation",
   },
   {
     id: 7,
-    text: "High Management Costs of IT Infrastructure",
+    text: "Change management dissatisfaction",
   },
 ];
 const supplylists = [
@@ -523,12 +523,43 @@ const ConsiderRPA = [
   },
 ];
 
+const businessConsultingData = [
+  {
+    _id: 1,
+    title: "Business Consulting Offerings",
+    desc: "",
+    cta: "",
+    ctaUrl: "/",
+    image: "/rpa/IncreasedProductivity.png",
+    listItem: [
+      "Digital Model Strategy",
+      "Operation Transformation",
+      "Value Chain",
+      "Workplace",
+    ],
+  },
+  {
+    _id: 2,
+    title: "Consulting Process",
+    desc: "",
+    cta: "",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+    listItem: [
+      "Business Audit",
+      "Prioritize Issues and Analysis Plan",
+      "Conduct Analysis",
+      "Solution selection",
+      "Roadmap designing",
+    ],
+  },
+];
+
 const page = () => {
   return (
     <>
       <EntIntro
-        title=" Effective and Smooth Implementation to
-        Elevate your Business Results "
+        title=" Building Strategic Opportunities and Business Success Stories with Our Consulting Services"
         desc="Elevate your Business Results "
         cta="Let's Connect"
         width="80%"
@@ -584,12 +615,17 @@ const page = () => {
                     Overview
                   </h3>
                   <p>
-                    Our commitment is to make your transformation journey as
-                    smooth as possible, guaranteeing that you attain your
-                    ambitious results. That&apos;s why we build a holistic
-                    viewpoint on your implementation and rollout project and
-                    assure that your project is on time, exceeding your
-                    expectations
+                    Achieving transformation requires strategic action plan,
+                    technological advancements and a comprehensive understanding
+                    of evolving stakeholder needs. A purpose centric business
+                    strategy plays a key role. Our strategic consultant team
+                    specializes in designing digital programs that enables
+                    enterprises to prepare for the future. With a proven history
+                    of executing over 1000 large-scale digital ecosystem
+                    projects, we are committed to maximizing your business
+                    potential. Our trusted consulting practice emphasizes
+                    collaborative efforts to drive intelligent optimization and
+                    manage change management effectively.
                   </p>
                 </div>
               </div>
@@ -609,8 +645,9 @@ const page = () => {
                     Knocking Business Challenges
                   </h3>
                   <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
+                    We help executive leadership in navigating critical
+                    challenges, process complexity and developing future-ready
+                    organization.
                   </p>
                 </div>
               </div>
@@ -660,19 +697,20 @@ const page = () => {
                 <h4
                   className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
                 >
-                  Paramount Business Consulting Services
+                  Business Consulting Services
                 </h4>
               </div>
               <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
                 <h3 className="text-4xl leading-[42px] font-bold">
-                  Paramount Business Consulting Services
+                  Business Consulting
+                  <br />
+                  Services
                 </h3>
 
                 <p className="font-normal leading-[22px]">
-                  We bring a wealth of industry knowledge and expertise to the
-                  table and follow the collaborative journey that effectively
-                  addresses your unique challenges, with the sole aim of your
-                  success
+                  With deep digital experience and broad global reach we help
+                  enterprises to embrace the digital future that enhances
+                  decision making across the organisation.
                 </p>
               </div>
             </div>
@@ -769,24 +807,7 @@ const page = () => {
               ))}
             </div>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto   pb-0 grid grid-cols-1 sm:grid-cols-2">
-              {[
-                {
-                  _id: 1,
-                  title: "Increase Productivity",
-                  desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-                  cta: "Contact Us",
-                  ctaUrl: "/",
-                  image: "/rpa/IncreasedProductivity.png",
-                },
-                {
-                  _id: 2,
-                  title: "Gain Accurate Outcomes",
-                  desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-                  cta: "Contact Us",
-                  ctaUrl: "/",
-                  image: "/rpa/GainAccurateOutcomes.png",
-                },
-              ].map((item, index) => (
+              {businessConsultingData.map((item, index) => (
                 <div
                   className={`flex flex-col sm:flex-row py-24 ${
                     index == 1 ? "bg-cardBg text-white" : ""
@@ -813,12 +834,12 @@ const page = () => {
                         index == 1 ? "text-white" : ""
                       }`}
                     >
-                      {[0, 1, 2, 3].map((i, index) => (
+                      {item.listItem.map((list, index) => (
                         <li
                           className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                           key={index}
                         >
-                          Lorem, ipsum.
+                          {list}
                         </li>
                       ))}
                     </ul>
@@ -848,35 +869,84 @@ const page = () => {
             {[
               {
                 _id: 1,
-                title: "Increase Productivity",
-                desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
-                cta: "Explore Service",
+                title: "Automation and Data Consulting",
+                desc: "",
+                cta: "",
                 ctaUrl: "/",
                 image: "/rpa/IncreasedProductivity.png",
+                offerings: [
+                  "AI and RPA",
+                  "Data Infrastructure Consulting",
+                  "Data and decision intelligence",
+                ],
+                process: [
+                  "Discovery",
+                  "Requirement Analysis",
+                  "Strategic Plan Map",
+                  "Solution Design and Customization",
+                  "Proof of Concept Development",
+                  "Cloud Consulting",
+                ],
               },
               {
                 _id: 2,
-                title: "Gain Accurate Outcomes",
-                desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services.",
-                cta: "Explore Service",
+                title: "Cloud Consulting Services",
+                desc: "",
+                cta: "",
                 ctaUrl: "/",
                 image: "/rpa/GainAccurateOutcomes.png",
+                offerings: [
+                  "Cloud Architecture",
+                  "Containerization",
+                  "Cloud Optimization",
+                ],
+                process: [
+                  "Cloud adoption strategy and roadmap",
+                  "Cloud architecture evaluation",
+                  "Cloud capacity plan",
+                ],
               },
               {
                 _id: 3,
-                title: "Ensure Compliance and Consistency",
-                desc: "Manage contract workflows, form updates, and compliance notifications, adhering to regulations with precision, consistency, reducing the risk of noncompliance and the hassle of audits.",
-                cta: "Explore Service",
+                title: "Transformation Consulting",
+                desc: "",
+                cta: "",
                 ctaUrl: "/",
                 image: "/rpa/EnsureCompliance.png",
+                offerings: [
+                  "Enterprise Architecture",
+                  "Business Process",
+                  "Customer Experience",
+                  "Application Modernization",
+                  "E commerce Strategy"
+                ],
+                process: [
+                  "Initial assessment and Strategy development",
+                  "Skill gap evaluation and Change management plan",
+                  "Operation model transformation design",
+                  "Technology and Data asset transformation design",
+               
+                ],
               },
               {
                 _id: 4,
-                title: "Optimize FTE Cost",
-                desc: "Cut down the requirement for additional full-time equivalent employees (FTEs), leading to major cost savings in salaries, benefits and allied overheads.",
-                cta: "Explore Service",
+                title: "Cybersecurity consulting",
+                desc: "",
+                cta: "",
                 ctaUrl: "/",
                 image: "/rpa/OptimizeFTEcost.png",
+                offerings: [
+                  "Enterprise security architecture design and re-design",
+                  "Information Security Strategy and Design",
+                  "Policy and Plan Development",
+                ],
+                process: [
+                  "Initial Risk Management",
+                  "Gap Analysis and Security strategy development",
+                  "Security Policy and Procedure Development",
+            
+               
+                ],
               },
             ].map((item, index) => (
               <div
@@ -891,13 +961,37 @@ const page = () => {
                       className="text-[#0745D3] mb-4"
                     />
                   </div>
-                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                  <p className="text-[#101828] font-bold text-[24px] leading-[28px]">
                     {item.title}
                   </p>
                   <p className="text-[#475467] text-[14px] font-normal my-2 leading-[22px]">
-                    {item.desc}
+                    <ul>
+                    <h2 className="font-bold">Offerings</h2>
+                
+                    {item.offerings.map((list, index) => (
+                      <li
+                        className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                        key={index}
+                      >
+                        {list}
+                      </li>
+                    ))}
+                    </ul>
+                    <br/>
+                    <ul>
+                    <h2 className="font-bold">Process</h2>
+                
+                    {item.process.map((list, index) => (
+                      <li
+                        className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                        key={index}
+                      >
+                        {list}
+                      </li>
+                    ))}
+                    </ul>
                   </p>
-                  <Link
+                  {/* <Link
                     href={item.ctaUrl}
                     className="text-[#0745D3]  text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
@@ -907,29 +1001,10 @@ const page = () => {
                       style={{ marginLeft: "0.5em" }}
                       size={1}
                     />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </>
-
-      {/* Infographics */}
-      <>
-        <div
-          id="ConsultingApproach"
-          className="max-w-screen-xl mx-auto px-[2rem] bg-white"
-        >
-          <div className=" mt-[5em] mb-[2em]">
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
-              <h3 className="text-4xl leading-[42px] font-bold">
-                Consulting Approach
-              </h3>
-            </div>
-          </div>
-          <div className="mx-auto text-center w-[75%]">
-            <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
           </div>
         </div>
       </>
@@ -942,62 +1017,53 @@ const page = () => {
         desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
         arr={[
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "500 +",
+            desc: "Consultants around the world",
           },
           {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "Zero",
+            desc: "Surprise cost overruns",
           },
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
-          },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "200 +",
+            desc: "Consultants engage in specialized training courses quarterly",
           },
         ]}
       ></Expertise>
 
-      {/* Why Section */}
-      <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
-        arr={[
-          {
-            _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
-            icon: "",
-          },
-          {
-            _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
-            icon: "",
-          },
-          {
-            _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
-            icon: "",
-          },
-          {
-            _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
-            icon: "",
-          },
-        ]}
-        renderInlineSpans={true}
-      ></WhySection>
+      {/* Infographics */}
+      <>
+        <div
+          id="ConsultingApproach"
+          className="max-w-screen-xl mx-auto px-[2rem] bg-white"
+        >
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                Consulting Service Approach
+              </h3>
+              <p>
+                Our consulting service embeds Automation, Cloud and
+                Transformation into the blueprint of organisation, translating
+                ambitions into milestones, enabling them to thrive in a dynamic
+                competitive landscape with vision, and insights.
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto text-center w-[75%]">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
+          </div>
+        </div>
+      </>
 
       {/* Blog */}
       <BlogSlider
         arr={[
           {
             _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            ribbon: "Blog",
+            title: "Optimizing Operations",
+            desc: "A Holistic Approach to Process Improvement One of the most effective ways to achieve this is through process improvement strategies. By refining workflows, eliminating bottlenecks, and streamlining operations, businesses can enhance productivity, reduce costs and drive growth. In this blog, we'll explore the importance of process improvement and discuss key strategies for implementing it effectively.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -1005,12 +1071,52 @@ const page = () => {
         ]}
       />
 
+      {/* Why Section */}
+      <WhySection
+        ribbon="Why Godrej Infotech"
+        title="The Distinctive Edge"
+        desc="We act as strategic IT partner to ambitious enterprises on their journey towards business progression."
+        arr={[
+          {
+            _id: 1,
+            desc: "Strong legacy of our parent group – Godrej & Boyce which has succeeded for <span style='color: #4C6FFF;'>more than 125 years</span> .",
+            icon: "",
+          },
+          {
+            _id: 2,
+            desc: "Shared DNA of engineering expertise from our parent group – Godrej &Boyce featuring <span style='color: #4C6FFF;'>$4.1 Bn revenue.</span> .",
+            icon: "",
+          },
+          {
+            _id: 3,
+            desc: "Long-term global relationships built on <span style='color: #4C6FFF;'> trust, reliability and collaboration.</span>",
+            icon: "",
+          },
+          {
+            _id: 4,
+            desc: "<span style='color: #4C6FFF;'> Industry-focused teams</span>  of brilliant brains executing time-tested practices of excellence.",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Holistic ecosystem including scalable deployment, support services and diverse portfolio of <span style='color: #4C6FFF;'> ERPs and digital solutions.</span>",
+            icon: "",
+          },
+          {
+            _id: 6,
+            desc: "Responsive approach and defined processes that set <span style='color: #4C6FFF;'> high standards.</span>",
+            icon: "",
+          },
+        ]}
+        renderInlineSpans={true}
+      ></WhySection>
+
       {/* Subscription */}
       <Subscription
-        title="Are you Ready for Infor-driven growth?"
-        blue="Let's get started!?"
+        title="Ready to Discuss with our"
+        blue=" Expert Consultant?"
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Share your details to discover how we can help you achieve better results."
       />
 
       {/* Infotech weekly */}
