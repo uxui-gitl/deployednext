@@ -650,7 +650,7 @@ const page = () => {
       {/* 3 column compone */}
 
       <>
-        <div className={` w-full bg-[#fff] py-32`}>
+        <div className={` w-full bg-[#fff] py-20`}>
           <div
             id="Services"
             className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] "
@@ -842,7 +842,7 @@ const page = () => {
           </div>
           {/* 4 cards */}
           <div
-            id="ConsultingApproach"
+            id=""
             className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-2 sm:grid-cols-4"
           >
             {[
@@ -911,6 +911,25 @@ const page = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </>
+
+      {/* Infographics */}
+      <>
+        <div
+          id="ConsultingApproach"
+          className="max-w-screen-xl mx-auto px-[2rem] bg-white"
+        >
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                Consulting Approach
+              </h3>
+            </div>
+          </div>
+          <div className="mx-auto text-center w-[75%]">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
           </div>
         </div>
       </>

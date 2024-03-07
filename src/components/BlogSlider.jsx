@@ -17,7 +17,7 @@ const BlogSlider = ({ arr }) => {
 
   return (
     <>
-      <div id="Insights" className={` w-full bg-white py-32`}>
+      <div id="Insights" className={` w-full bg-white py-20`}>
         <div className="  text-left max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]   flex justify-center">
           <Swiper
             slidesPerView={1}
