@@ -918,14 +918,13 @@ const page = () => {
                   "Business Process",
                   "Customer Experience",
                   "Application Modernization",
-                  "E commerce Strategy"
+                  "E commerce Strategy",
                 ],
                 process: [
                   "Initial assessment and Strategy development",
                   "Skill gap evaluation and Change management plan",
                   "Operation model transformation design",
                   "Technology and Data asset transformation design",
-               
                 ],
               },
               {
@@ -944,8 +943,6 @@ const page = () => {
                   "Initial Risk Management",
                   "Gap Analysis and Security strategy development",
                   "Security Policy and Procedure Development",
-            
-               
                 ],
               },
             ].map((item, index) => (
@@ -964,33 +961,33 @@ const page = () => {
                   <p className="text-[#101828] font-bold text-[24px] leading-[28px]">
                     {item.title}
                   </p>
-                  <p className="text-[#475467] text-[14px] font-normal my-2 leading-[22px]">
+                  <div className="text-[#475467] text-[14px] font-normal my-2 leading-[22px]">
                     <ul>
-                    <h2 className="font-bold">Offerings</h2>
-                
-                    {item.offerings.map((list, index) => (
-                      <li
-                        className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                        key={index}
-                      >
-                        {list}
-                      </li>
-                    ))}
+                      <h2 className="font-bold">Offerings</h2>
+
+                      {item.offerings.map((list, index) => (
+                        <li
+                          className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                          key={index}
+                        >
+                          {list}
+                        </li>
+                      ))}
                     </ul>
-                    <br/>
+                    <br />
                     <ul>
-                    <h2 className="font-bold">Process</h2>
-                
-                    {item.process.map((list, index) => (
-                      <li
-                        className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                        key={index}
-                      >
-                        {list}
-                      </li>
-                    ))}
+                      <h2 className="font-bold">Process</h2>
+
+                      {item.process.map((list, index) => (
+                        <li
+                          key={index}
+                          className=" text-[14px] font-medium border-b-[1px] border-[#DBDBDB] py-1 leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                        >
+                          {list}
+                        </li>
+                      ))}
                     </ul>
-                  </p>
+                  </div>
                   {/* <Link
                     href={item.ctaUrl}
                     className="text-[#0745D3]  text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
