@@ -889,50 +889,33 @@ const page = () => {
               _id: 2,
               icon: "benefits-ai-ml/anticipate-future",
               cardDesc:
-                "Omni-channel capabilities for superior customer engagement",
+                "Advanced decision-making potential through Artificial Intelligence",
             },
             {
               _id: 3,
               icon: "benefits-ai-ml/effortless-communicate",
               cardDesc:
-                "Advanced decision-making potential through Artificial Intelligence",
+                "Scope to plan Data-driven strategies with real time insights",
             },
             {
               _id: 4,
               icon: "benefits-ai-ml/optimise-supply-chain",
               cardDesc:
-                "Scope to formulate Data-driven strategies with real time insights",
+                "Comprehensive repository of contacts, leads and client information",
             },
             {
               _id: 5,
               icon: "benefits-ai-ml/healthcare",
               cardDesc:
-                "Comprehensive repository of contacts, leads and client information",
+                "Cloud-based infrastructure enabling connectivity with clients from any device and location",
             },
             {
               _id: 6,
               icon: "benefits-ai-ml/healthcare",
               cardDesc:
-                "Empowers data analytics to prioritize leads and identify opportunities",
-            },
-            {
-              _id: 7,
-              icon: "benefits-ai-ml/healthcare",
-              cardDesc:
-                "Cloud-based infrastructure enabling connectivity with clients from any device and location",
-            },
-            {
-              _id: 8,
-              icon: "benefits-ai-ml/healthcare",
-              cardDesc:
-                "Consistent and seamless purchase experience for clients",
-            },
-            {
-              _id: 9,
-              icon: "benefits-ai-ml/healthcare",
-              cardDesc:
                 "Seamless integration with other Microsoft products such as Microsoft 365 and Power BI",
             },
+            
           ]}
         ></Benefits>
       </div>
@@ -1141,7 +1124,7 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "Manager IT, India's leading Energy Management System and Solutions provider",
             thumbnail: "1",
             description:
               "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
