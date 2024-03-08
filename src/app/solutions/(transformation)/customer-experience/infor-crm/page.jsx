@@ -473,9 +473,9 @@ const page = () => {
         <div id="Modules" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
-            <div className="  flex items-start flex-col justify-between  relative">
+            <div className="flex items-start flex-col justify-between  relative">
               <div className="">
-                <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
+                <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
                   Infor CRM Offerings  
                 </h3>
               </div>

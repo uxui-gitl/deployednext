@@ -50,7 +50,7 @@ import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
-import { Benefits, OfferingsSlider, NewTestimonial } from "@/components";
+import { Benefits, OfferingsSlider } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -469,8 +469,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Accelerating Sales with Salesforce for High-Velocity Enterprises"
-        desc=""
+        title="Salesforce CRM: Accelerating Sales for High-Velocity Enterprises "
+        desc="High-Velocity Enterprises"
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -510,7 +510,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Salesforce stands as a leading cloud-based CRM, catering to service, marketing, and sales needs, and making it accessible to users without technical expertise. The platform revolutionizes customer-business interactions, encouraging more sincere relationships. With its capacity to provide a comprehensive view of every customer interaction, the Salesforce CRM application delivers an intuitive user experience. Distinguished from other CRM applications, Salesforce offers the ultimate solution for businesses, encompassing all the essential elements needed for running operations on an automated platform infused with intelligent capabilities."></Abstract>
+      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
 
       {/* Stack Offering Sliders */}
       <>
@@ -523,16 +523,16 @@ const page = () => {
               /*One*/
               {
                 _id: 1,
-                title: "Sales CRM",
-                desc: "Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives.",
+                title: "Business Consulting",
+                desc: "",
                 cta: "Explore Service",
                 subArr: true,
                 subArrLinks: [
                   {
                     _id: 1,
                     icon: "gear",
-                    title: "Sales Cloud",
-                    desc: "Enables you to manage Lead to order contacts from any device and location.",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
                     cta: "Know More",
                     ctaUrl: "/",
                     list: [],
@@ -540,13 +540,21 @@ const page = () => {
                   {
                     _id: 2,
                     icon: "gear",
-                    title: "Salesforce CPQ (Configure, Price, Quote)",
-                    desc: "Allows executives to understand customer requirements, configure quotes, accordingly, apply discounts and generate accurate billing, streamlining revenue recognition.",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
                     cta: "Know More",
                     ctaUrl: "/",
                     list: [],
                   },
-                 
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
                 ],
                 image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
                 inline: true,
@@ -566,16 +574,16 @@ const page = () => {
               /*End One*/
               {
                 _id: 2,
-                title: "Marketing Automation",
-                desc: "Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.",
+                title: "Technology Solutions - Implementation & Management",
+                desc: "",
                 inline: true,
                 subArr: true,
                 subArrLinks: [
                   {
                     _id: 1,
                     icon: "gear",
-                    title: "Marketing Cloud",
-                    desc: "Automate various email campaign activities, enhancing product/ service marketing for your organization. The tool also builds attractive landing pages for solutions and service information delivery.",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
                     cta: "Know More",
                     ctaUrl: "/",
                     list: [],
@@ -583,13 +591,21 @@ const page = () => {
                   {
                     _id: 2,
                     icon: "gear",
-                    title: "Pardot",
-                    desc: "B2B marketing tool equipped with automation capabilities that drives increased sales and more efficient marketing planning.",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
                     cta: "Know More",
                     ctaUrl: "/",
                     list: [],
                   },
-                  
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
                 ],
                 cta: "Explore Service",
                 image: "rpa/Cyber-security_Technology-Solutions.jpg",
@@ -613,14 +629,40 @@ const page = () => {
               },
               {
                 _id: 3,
-                title: "Customer Portal",
-                desc: "Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.",
+                title: "Application Security testing",
+                desc: "",
                 cta: "Explore Service",
                 image: "rpa/Application-Security-Testing.jpg",
                 inline: true,
                 subArr: true,
                 subArrLinks: [
-                  
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
                 ],
                 ctaUrl: "/",
                 links: [
@@ -642,14 +684,40 @@ const page = () => {
 
               {
                 _id: 4,
-                title: "Mobile CRM",
-                desc: "Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.",
+                title: "vCISO Services",
+                desc: "",
                 cta: "Explore Service",
                 inline: true,
                 image: "rpa/Cyber-security_vCISO.jpg",
                 subArr: true,
                 subArrLinks: [
-                  
+                  {
+                    _id: 1,
+                    icon: "gear",
+                    title: "Sales Execution CRM",
+                    desc: "Lead your sales team to the next best action. Automate lead qualification, prioritization, and distribution. Identify sales opportunities and automatically assign them to the most suitable representatives",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 2,
+                    icon: "gear",
+                    title: "Sales Cloud",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
+                  {
+                    _id: 3,
+                    icon: "gear",
+                    title: "Salesforce CPQ (Configure, Price, Quote)",
+                    desc: "A cloud-based solution that empowers organizations to manage Lead to order contacts from any device and location. Recognized as the top CRM system for businesses",
+                    cta: "Know More",
+                    ctaUrl: "/",
+                    list: [],
+                  },
                 ],
                 ctaUrl: "/",
                 links: [
@@ -679,53 +747,6 @@ const page = () => {
                   },
                 ],
               },
-              {
-                _id: 5,
-                title: "Service Cloud",
-                desc: "Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.",
-                inline: true,
-                subArr: true,
-                subArrLinks: [
-                  {
-                    _id: 1,
-                    icon: "gear",
-                    title: "Service",
-                    desc: "360-degree view of customers, ensuring personalized and efficient service interactions.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  {
-                    _id: 2,
-                    icon: "gear",
-                    title: "Field Service",
-                    desc: "Seamlessly schedule and dispatch resources using intelligent algorithms. Equip your field service teams with real-time information with a mobile-friendly interface.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  
-                ],
-                cta: "Explore Service",
-                image: "rpa/Cyber-security_Technology-Solutions.jpg",
-                ctaUrl: "/",
-                links: [
-                  [
-                    {
-                      title: "Transcription Services",
-                      url: "/",
-                    },
-                    {
-                      title: "Speech recognition",
-                      url: "/",
-                    },
-                    {
-                      title: "Language translation",
-                      url: "/",
-                    },
-                  ],
-                ],
-              },
             ]}
           />
         </div>
@@ -733,7 +754,9 @@ const page = () => {
 
       {/* Ms slider */}
       <>
-        <div className={`bg-ms-practise w-full py-32 hidden`} id="KeyCapabilities"
+        <div
+          className={`bg-ms-practise w-full    py-32  `}
+          id="KeyCapabilities"
         >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -837,43 +860,99 @@ const page = () => {
       </>
 
       {/* Industry Spotlight Slider */}
-      
+      <>
+        <div id="Industries" className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Industry Spotlight
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                  Being preferred partner of leading industries, we help in
+                  shaping specific technology prerequisites and deliver
+                  brilliant value driven solutions tailored to your sector.
+                </p>
+              </div>
+              <div className="flex justify-center items-center max-w-screen-xl w-full">
+                <div>
+                  <Swiper
+                    slidesPerView={"auto"}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                  >
+                    {ChoiceSlider.map((item) => (
+                      <>
+                        <SwiperSlide
+                          key={item._id}
+                          className="w-[283px] max-w-[283px] mr-4  relative group"
+                        >
+                          <div className="relative overflow-hidden">
+                            <Image
+                              src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                              height={350}
+                              width={283}
+                              alt="icon"
+                              className=" transition-transform transform group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                {item.title}
+                              </h3>
+                            </div>
+                          </div>
+                        </SwiperSlide>
+                      </>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
 
       {/* Benefits Vertical Slider */}
       <Benefits
-        ribbon="Benefits"
+        ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="Salesforce CRM"
-        desc="Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers."
+        title="AI&ML "
+        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution.",
+              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Enhance lead nurturing, consistency in interactions and lead scoring.",
+              "Anticipate future outcomes based on historical data, making informed decisions",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Design effective campaigns and personalize buying experiences.",
+              "Effortless communication and efficient information retrieval through Natural Language Processing",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Centralized record of customer interactions, making it accessible to all team members.",
+              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Improve teamwork, allowing simultaneous work on documents and faster customer responses.",
+            cardDesc: "Revolutionising Healthcare with medical image analysis",
           },
         ]}
       ></Benefits>
@@ -884,8 +963,8 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Elevating Customer Service with Salesforce Service Cloud",
-            desc: "Salesforce's Service Cloud is transforming customer service paradigms through its cutting-edge capabilities. With social media CRM and Salesforce Managed Services at its core, Salesforce Service Cloud stands as a beacon in enhancing customer service experiences. This article delves into how Salesforce, particularly its Service Cloud, redefines customer service dynamics, leveraging social media integrations and comprehensive managed services. ",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -896,14 +975,14 @@ const page = () => {
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY"
-        title="Elevating Customer Experience with Salesforce CRM"
+        title="Elevating Our Customer Experience with Infor"
         desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "India's Top Forklift Truck Manufacturer Increases Opportunity-to-Order Conversions by 10% and Elevates Customer Experience with Salesforce Integration",
+              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
             thumbnail: "1",
 
             description: "",
@@ -914,51 +993,28 @@ const page = () => {
           {
             id: 2,
             title:
-              "India's premium furniture brand in both home and institutional segments achieves 360-degree customer visibility by integrating Salesforce with its ERP.",
+              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
             thumbnail: "2",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
           },
           {
             id: 3,
             title:
-              "Top notch Indian security solutions company implements Salesforce CRM",
+              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
             thumbnail: "3",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
           },
         ]}
       />
 
-
-{/* Testimonaisl */}
-      <NewTestimonial
-        ribbon="CLIENT TESTIMONIALS"
-        ribbonVisible={false}
-        title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
-        arr={[
-          {
-            id: 1,
-            clientName: "",
-            clientDesignation:
-              "",
-            thumbnail: "1",
-            description:
-              "With Salesforce Sales Cloud smooth implementation, Godrej Infotech’s team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.",
-            category: "static",
-            link: "/",
-          },
-          
-         
-        ]}
-      />
       {/* Subscription */}
       <Subscription
         title="Are you Ready for Infor-driven growth?"
