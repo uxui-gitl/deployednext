@@ -52,129 +52,89 @@ import { Benefits, NewTestimonial } from "@/components";
 const CoreCapabilitySlider = [
   {
     _id: 1,
-    title: "Asset Management",
+    title: "Retail ( Hypermarket, supermarket, Electronics, Fashion, Health & Beauty, Specialty stores)",
     cta: "Know more",
     ctaUrl: "/",
     icon: "dummy",
     links: [
       {
-        title: "Record",
+        title: "Point of Sale",
         url: "/",
       },
       {
-        title: "Maintain",
+        title: "Loyalty Management",
         url: "/",
       },
       {
-        title: "Structure",
+        title: "Replenishment",
         url: "/",
       },
       {
-        title: "Standardize asset information",
+        title: "eCommerce Integration",
+        url: "/",
+      },
+      {
+        title: "Store Operations",
+        url: "/",
+      },
+      {
+        title: "Offers & Promotion",
         url: "/",
       },
     ],
   },
   {
     _id: 2,
-    title: "Asset Management",
+    title: "Duty-Free and Travel Retail ",
     cta: "Know more",
     ctaUrl: "/",
     icon: "dummy",
     links: [
       {
-        title: "Record",
+        title: "Multi-currency cash back",
         url: "/",
       },
       {
-        title: "Maintain",
+        title: "Transit Bank guarantee management",
         url: "/",
       },
       {
-        title: "Structure",
+        title: "Customer quota-based offers",
         url: "/",
       },
-      {
-        title: "Standardize asset information",
-        url: "/",
-      },
+      
     ],
   },
   {
     _id: 3,
-    title: "Asset Management",
+    title: "Hospitality",
     cta: "Know more",
     ctaUrl: "/",
     icon: "dummy",
     links: [
       {
-        title: "Record",
+        title: "Restaurant POS ( Fine dining, Take away, QSR and more.)",
         url: "/",
       },
       {
-        title: "Maintain",
+        title: "Kitchen Display System (KDS)",
         url: "/",
       },
       {
-        title: "Structure",
+        title: "Guest Loyalty",
         url: "/",
       },
       {
-        title: "Standardize asset information",
+        title: "Recipe Management",
+        url: "/",
+      },
+      {
+        title: "Split Bill & Table Transfer",
         url: "/",
       },
     ],
   },
-  {
-    _id: 4,
-    title: "Asset Management",
-    cta: "Know more",
-    ctaUrl: "/",
-    icon: "dummy",
-    links: [
-      {
-        title: "Record",
-        url: "/",
-      },
-      {
-        title: "Maintain",
-        url: "/",
-      },
-      {
-        title: "Structure",
-        url: "/",
-      },
-      {
-        title: "Standardize asset information",
-        url: "/",
-      },
-    ],
-  },
-  {
-    _id: 4,
-    title: "Asset Management",
-    cta: "Know more",
-    ctaUrl: "/",
-    icon: "dummy",
-    links: [
-      {
-        title: "Record",
-        url: "/",
-      },
-      {
-        title: "Maintain",
-        url: "/",
-      },
-      {
-        title: "Structure",
-        url: "/",
-      },
-      {
-        title: "Standardize asset information",
-        url: "/",
-      },
-    ],
-  },
+  
 ];
 
 const smartTools = [
@@ -518,594 +478,96 @@ const Page = () => {
   const upgradeCloud = [
     {
       _id: 1,
-      title: "Migrate to the Cloud ",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations.",
-      cta: "Know More",
+      title: "Point of Sale (POS) System",
+      desc: "Intuitive interfaces, supporting various payment methods and streamlined operations for a hassle-free checkout experience.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
       _id: 2,
-      title: "Migrate From a different ERP Platform to Infor LN",
-      desc: "Experience seamless and transformative migration with data integrity for your business.",
-      cta: "Know more",
+      title: "Inventory Management",
+      desc: "Capabilities include real-time tracking of stock levels, replenishment management and inventory optimization across multiple locations.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
       _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value.",
-      cta: "Know more",
+      title: "Omnichannel Retailing",
+      desc: "Integrating online and offline channels seamlessly ensuring a consistent experience for shoppers across all touchpoints.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
       _id: 4,
-      title: "End-to-End Implementation",
-      desc: "Streamlining every phase of the implementation, we provide the capability of successful and on-time delivery of Infor solution.",
-      cta: "Know more",
+      title: "Customer Relationship Management (CRM)",
+      desc: "Build and maintain customer relationships through personalized experiences and manage customer profiles, preferences, targeted marketing campaigns and loyalty programs to drive engagement.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
       _id: 5,
-      title: "Managed Services ",
-      desc: "Managing every complex, time-consuming and resource-rigorous process and on demand maintenance of Infor application.",
-      cta: "Know more",
+      title: "Retail Analytics",
+      desc: "Powerful analytics tools for sales trends, monitoring KPIs and identifying growth opportunities to optimize performance.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
     },
     {
       _id: 6,
-      title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes.",
-      cta: "Know more",
+      title: "Back Office Management",
+      desc: "Features include financial management, purchasing, and vendor management. Streamlining processes and ensuring compliance enables retailers to work hassle free.",
+      cta: "",
       isNested: false,
       ctaUrl: "/",
       bgImg: "/gradient-1.png",
       tabData: [
-        {
-          _tabId: 1,
-          title: "AX Upgrade",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics AX?",
-              li: [
-                "Mainstream support ended for Dynamics AX versions like 2009, 2012 and 2012 R2 in October 2018, while AX 2012 R3 mainstream support ended in October 2021. ",
-                "Dependency on ISV and partner channels ",
-                "Non-compliance risk for any regulatory updates for  AX 2012 customers. ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of AX Upgrade to Cloud",
-              li: [
-                "Adaptive Scalability  ",
-                "Cost Effective Platform  ",
-                "Advance Security & Modern Functionalities ",
-                "Live Business Performance Monitoring ",
-                "Multiple Integration Ability ",
-                "Browser based ERP  ",
-                "Auto update cloud environments ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 2,
-          title: "Nav Upgrade ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
-              li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
-                "Lag for basic tasks as well ",
-                "No remote accessibility and support ",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Upgrading Nav to Cloud",
-              li: [
-                "Built-in AI and machine learning capabilities",
-                "Better reporting and analytics",
-                "Seamless integration with Microsoft products and third-party applications  ",
-                "Mobile and web access, anywhere, anytime ",
-                "Higher security features ",
-                "Optimised operation ",
-                "Effective User management cost  ",
-              ],
-            },
-          ],
-        },
-        {
-          _tabId: 3,
-          title: "Upgrade to Infor Cloud ",
-          isBullet: true,
-          list: [
-            {
-              _listId: 1,
-              title: "Infor On- premises Challenges ",
-              li: [
-                "Keeping up with the latest security and version updates ",
-                "Manual efforts to configure dynamic workloads",
-                "Lack of applications elasticity and not-so - efficient performance ",
-                "Manual Operational activities",
-              ],
-            },
-            {
-              _listId: 2,
-              title: "Competitive Benefits of Infor Cloud",
-              li: [
-                "Infor Data Lake enables predictive data insights.",
-                "Prepackaged industry analytics",
-                "Clear production visualization",
-                "Finance functionalities like IFRS 15 compliance, XML support, currency variation based on payment schedule",
-                "Field and depot service process with extended warranty contracts and Project Control integration.  ",
-              ],
-            },
-          ],
-        },
+        
       ],
+      
+    },
+    {
+      _id: 7,
+      title: "Flexible Customization",
+      desc: "From adding features to modifying workflows and integrating with third-party systems, retailers can adapt to changing requirements and stay competitive.",
+      cta: "",
+      isNested: false,
+      ctaUrl: "/",
+      bgImg: "/gradient-1.png",
+      tabData: [
+        
+      ],
+      
     },
   ];
 
   return (
     <>
       <EntIntro
-        title="Empowering Global Retailers to Achieve
-        Ambitious Goals with Front-to-Back
-        Unified Retail Management Application"
+        title="Simplifying and Streamlining Retail Management with Front & Backend Unified Solution"
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -1151,7 +613,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "></Abstract>
+      <Abstract abstractdesc="Facilitating efficient management for omnichannel operations, LS Retail is a distinguished and state-of-the-art business application with remarkable functionalities and extensive configurability options. specifically tailored for the retail and hospitality sectors of all sizes."></Abstract>
 
       {/* our offerings left right para only */}
       <div
@@ -1164,7 +626,7 @@ const Page = () => {
               Our Offerings
             </h3>
 
-            <p className="hidden font-normal leading-[22px]">desc</p>
+            <p className="font-normal leading-[22px]">Delivering experience of unified commerce with advanced retail management applications and ensuring personalized journey for every shopper.</p>
           </div>
         </div>
         <motion.div className="container grid grid-cols-1 md:grid-cols-2 gap-[30px]">
@@ -1174,9 +636,9 @@ const Page = () => {
               title: "LS Central for Retail",
               thumbnail: "1",
               description:
-                "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+                "Seamlessly integrated cloud-based platform designed to optimize the management of retail enterprise and enhance the performance of individual store locations.",
               tags: [""],
-              cta: "Know More",
+              cta: "",
               link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
             },
             {
@@ -1184,9 +646,9 @@ const Page = () => {
               title: "LS Central for Restaurants",
               thumbnail: "1",
               description:
-                "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+                "Comprehensive platform for restaurants, pubs, cafes, food halls and other food service businesses to manage everything from tableside ordering to inventory, kitchen operations and more.",
               tags: [""],
-              cta: "Know More",
+              cta: "",
               link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
             },
           ].map((cases, index) => (
@@ -1283,7 +745,7 @@ const Page = () => {
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  LS Retail Robust Features for Efficient Retail Excellence
+                  LS Retail Features and Functionalities
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto"></p>
               </div>
@@ -1620,10 +1082,10 @@ const Page = () => {
             _id: 1,
             ribbon: "blog",
             title:
-              "Azure Data Lake - Data Storage Solution for Big Data Analytics",
-            desc: "Data Science today has become essential for organizations that are looking to bring about predictability in their business functions. It removes the guesswork and provides companies with accurate insights related to product features, target audiences and user behaviour. ",
+              "Secure & Scalable E-Commerce Solution from Adobe",
+            desc: "With the digital culture finding its way into the lives of today’s urban & even rural population, many organizations that were previously reluctant to move to e-commerce due to their thriving brick and mortar business model have started to enhance their online ecosystems, leading to a greater demand for e-Commerce solutions. Some interesting statistics on this topic as per IBEF (India Brand Equity Foundation) are:",
             cta: "Know More",
-            link: "/",
+            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=17",
             imgUrl: "",
           },
         ]}
@@ -1639,35 +1101,35 @@ const Page = () => {
           {
             id: 1,
             title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              "Global Travel Retailer Gains Cost Efficiency and Lowers Total Cost of Ownership with the All-in-One NAV LS Retail Pack",
             thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/GlobalTravelRetailer_NAVLS_IndiaUAE.pdf",
           },
           {
             id: 2,
             title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
+              "Saudi Arabia's Hypermarket Chain Accelerate the Business Process by 40% and Boost its Scalability with LS Retail - Microsoft Dynamics Platform",
             thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/HypermarketChain_NAVLS_KSA.pdf",
           },
           {
             id: 3,
             title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
+              "Large Retailer in Mauritius Capitalizes Discount Matrix based on Operational Hierarchy with MS Dynamics & LS Retail",
             thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LargeRetailerinMauritiusSuccessfullyImplementsMSNAV2017andLSRetail.pdf",
           },
         ]}
       />
@@ -1682,10 +1144,10 @@ const Page = () => {
             id: 1,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "",
             thumbnail: "",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "Leading Retail Coffee Chain in KSA Controls Consumption with LS Retail NAV Having the LS NAV system in place makes it extremely easy for our organization to make real-time decisions. We get a holistic and accurate view of what's going on in each location. We are now assured of standardized processes being followed across all our outlets. The in-depth experience of the consultants at Godrej Infotech Limited greatly simplified the complex processes right from requirements to rollout.",
             category: "static",
             link: "/",
           },
@@ -1693,10 +1155,10 @@ const Page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "",
             thumbnail: "",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "Leading Fitness service provider in Saudi Arabia Implements LS Retail On behalf of our entire organization, I would like to thank the Godrej Infotech team that implemented Dynamics NAV 2017. As a result of this implementation, our organization is moving in the paperless direction. We have completely removed manual activities in revenue booking, subscription payments, and syncing of created master between NAV and CRM.GITL add-on for KSA Attendance and Payroll has helped us streamline our HR processes considerably. With the integrated ERP & CRM, we have witnessed a significant increase in the productivity of our operations. We have almost completely done away with manual processing and can now see the difference that an automated system brings to the table.",
             category: "static",
             link: "/",
           },
@@ -1704,33 +1166,23 @@ const Page = () => {
             id: 3,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "",
             thumbnail: "",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "Godrej Infotech Ltd successfully rolls out LS Central Hospitality in the World's first super-premium ice cream Franchise based out of KSA We congratulate the team from Godrej Infotech for completing the rollout of LS Central Hospitality. This solution has been deployed at our ice cream retail stores and has features to manage dining, takeaway, delivery, and cart sales for events. With this solution, the manual process for HR and Payroll activities is automated. The point-of-sale is 100% operational and has resulted in a 70% reduction in time taken for material procurement and movement and we have also seen a 60% increase in the productivity of the finance process. Expiry date-based stock tracking and replenishment has helped increase sales through offers and promotions, resulting in reduced expiry loss and maintenance of adequate material stock levels. Dynamics Business Central also has helped in sharing the real-time reports with our Franchisers.",
             category: "static",
             link: "/",
           },
-          {
-            id: 4,
-            clientName: "",
-            clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
-            thumbnail: "",
-            description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
-            category: "static",
-            link: "/",
-          },
+          
         ]}
       />
 
       {/* Subscription */}
       <Subscription
-        title="Are you Ready for Infor-driven growth?"
-        blue="Let's get started!?"
+        title="Achieve Swift and Tangible Returns with LS Retail Journey and Godrej Infotech"
+        blue="Let Us Transform Your Vision into Reality."
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Complete the Form to Begin. "
       />
 
       {/* Infotech weekly */}
