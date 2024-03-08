@@ -50,7 +50,7 @@ import Infographics from "@/components/Infographics";
 import clsx from "clsx";
 import Subscription from "@/components/Subscription";
 import Abstract from "@/components/Abstract";
-import { Benefits, OfferingsSlider, NewTestimonial } from "@/components";
+import { Benefits, NewTestimonial, OfferingsSlider } from "@/components";
 const smartTools = [
   {
     _id: 1,
@@ -150,39 +150,33 @@ const ChoiceSlider = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Consultation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Implementation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Account Payable and Receivable Process",
+    title: "Managed Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Vendor Onboarding Process",
+    title: "Customization and Integration",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 5,
-    title: "Customer Onboarding Process",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const InforGrid = [
   {
@@ -466,10 +460,46 @@ const page = () => {
     },
   ];
 
+  const ConsiderRPA = [
+    {
+      _id: 1,
+      title: "Understanding Organization's Unique Needs",
+      desc: "We thoroughly assess current processes for successfully integrating Dynamics 365 CRM without disrupting existing workflows.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/IncreasedProductivity.png",
+    },
+    {
+      _id: 2,
+      title: "Strategize Your Implementation",
+      desc: "We define clear roles and responsibilities for implementation team, outline processes for data migration and integration and establish comprehensive training and support strategies.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/GainAccurateOutcomes.png",
+    },
+    {
+      _id: 3,
+      title: "Training",
+      desc: "We provide thorough training to encourage user adoption, enhances usability and instills confidence in leveraging its capabilities across sales, marketing and customer service departments.",
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/EnsureCompliance.png",
+    },
+    {
+      _id: 4,
+      title: "Secure Ongoing Support",
+      desc: "Maintaining and managing CRM requires ongoing support beyond what an internal help desk can provide.  We make sure system runs smoothly and team is productive.",
+
+      cta: "Know More",
+      ctaUrl: "/",
+      image: "/rpa/OptimizeFTEcost.png",
+    },
+  ];
+
   return (
     <>
       <EntIntro
-        title="Accelerating Sales with Salesforce for High-Velocity Enterprises"
+        title="A Cohesive Suite of CRM Application with Integrated Sales and Customer Service Excellence"
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -478,163 +508,145 @@ const page = () => {
       {/* Section Nav */}
       <>
         <SectionNav
-          // Modules
-          // Key Capabilities
-          // Industries
+          // Offerings
+          // Services
+          // Implementation Process
           // Benefits
-          // Testimonials - Temp Removed since no data
+          // Testimonials
 
           arr={[
             {
               _id: 1,
-              title: "Modules",
-              link: "#Modules",
+              title: "Offerings",
+              link: "#Offerings",
             },
             {
               _id: 2,
-              title: "Key Capabilities",
-              link: "#KeyCapabilities",
+              title: "Services",
+              link: "#Services",
             },
             {
               _id: 3,
-              title: "Industries",
-              link: "#Industries",
+              title: "Implementation Process",
+              link: "#ImplementationProcess",
             },
             {
               _id: 4,
               title: "Benefits",
               link: "#Benefits",
             },
+            {
+              _id: 5,
+              title: "Testimonials",
+              link: "#Testimonial",
+            },
           ]}
         />
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Salesforce stands as a leading cloud-based CRM, catering to service, marketing, and sales needs, and making it accessible to users without technical expertise. The platform revolutionizes customer-business interactions, encouraging more sincere relationships. With its capacity to provide a comprehensive view of every customer interaction, the Salesforce CRM application delivers an intuitive user experience. Distinguished from other CRM applications, Salesforce offers the ultimate solution for businesses, encompassing all the essential elements needed for running operations on an automated platform infused with intelligent capabilities."></Abstract>
+      <Abstract abstractdesc="With our proficiency in Microsoft CRM technology consulting, implementation and support, we have the capability to revolutionize your sales operations and boost client engagement. Backed by a team of certified D365 Customer experience experts, we deliver an all-inclusive solution that offers accessibility and visibility, thereby enabling businesses to deliver best in class experience consistently. We make sure you gain an edge from the latest advancements and best industry practices."></Abstract>
 
       {/* Stack Offering Sliders */}
       <>
-        <div id="Modules">
+        <div id="Offerings">
           <OfferingsSlider
-            title="Modules"
-            alignment="left"
-            expandedDesc={true}
             arr={[
               /*One*/
               {
                 _id: 1,
-                title: "Sales CRM",
-                desc: "Automate lead qualification, prioritization and distribution for the identification of sales opportunities and their automatic assignment to the most suitable representatives.",
+                title: "Marketing",
+                desc: "Understand customer preferences, behavior, and interactions to create targeted and personalized campaigns.",
                 cta: "Explore Service",
-                subArr: true,
-                subArrLinks: [
-                  {
-                    _id: 1,
-                    icon: "gear",
-                    title: "Sales Cloud",
-                    desc: "Enables you to manage Lead to order contacts from any device and location.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  {
-                    _id: 2,
-                    icon: "gear",
-                    title: "Salesforce CPQ (Configure, Price, Quote)",
-                    desc: "Allows executives to understand customer requirements, configure quotes, accordingly, apply discounts and generate accurate billing, streamlining revenue recognition.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                 
-                ],
+                subArrLinks: [],
                 image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
                 inline: true,
+                subArr: false,
                 ctaUrl: "/",
                 links: [
                   {
-                    title: "Sales Execution CRM",
+                    title: "Integrated Sales and Marketing solution",
                     url: "/",
                   },
                   {
                     title:
-                      "Assessment services against cyber security frameworks & standards",
+                      "AI-powered and Tailor- made Customer Interaction",
+                    url: "/",
+                  },
+                  {
+                    title: "Holistic Strategy for Enhancing Customer Experiences",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Real-time Monitoring for Personalized Journeys",
                     url: "/",
                   },
                 ],
               },
               /*End One*/
-              {
+
+              /*Two*/
+               {
                 _id: 2,
-                title: "Marketing Automation",
-                desc: "Visualize the complete 360-degree customer journey and create personalized, no-code engagement workflows for your customers across multiple channels.",
-                inline: true,
-                subArr: true,
-                subArrLinks: [
-                  {
-                    _id: 1,
-                    icon: "gear",
-                    title: "Marketing Cloud",
-                    desc: "Automate various email campaign activities, enhancing product/ service marketing for your organization. The tool also builds attractive landing pages for solutions and service information delivery.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  {
-                    _id: 2,
-                    icon: "gear",
-                    title: "Pardot",
-                    desc: "B2B marketing tool equipped with automation capabilities that drives increased sales and more efficient marketing planning.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  
-                ],
+                title: "Sales",
+                desc: "Prioritize, track and close deals with ease so that your sales team focuses on high-value opportunities for maximum impact.",
                 cta: "Explore Service",
-                image: "rpa/Cyber-security_Technology-Solutions.jpg",
-                ctaUrl: "/",
-                links: [
-                  [
-                    {
-                      title: "Transcription Services",
-                      url: "/",
-                    },
-                    {
-                      title: "Speech recognition",
-                      url: "/",
-                    },
-                    {
-                      title: "Language translation",
-                      url: "/",
-                    },
-                  ],
-                ],
-              },
-              {
-                _id: 3,
-                title: "Customer Portal",
-                desc: "Self-service applications and referral portals for your prospects, customers and partners. Enjoy live application tracking, mobile-responsive form and seamless payment integrations to provide a hassle-free customer experience.",
-                cta: "Explore Service",
-                image: "rpa/Application-Security-Testing.jpg",
+                subArrLinks: [],
+                image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
                 inline: true,
-                subArr: true,
-                subArrLinks: [
-                  
-                ],
+                subArr: false,
                 ctaUrl: "/",
                 links: [
                   {
-                    title: "Web application Security testing",
-                    url: "/",
-                  },
-                  {
-                    title: "Mobile App Security testing",
+                    title: "Monitor Customer Activity and Order Status",
                     url: "/",
                   },
                   {
                     title:
-                      "Vulnerability Assessment and Penetration Testing (VAPT)",
+                      "Manage Quotations, Orders and Invoices",
+                    url: "/",
+                  },
+                  {
+                    title: "Templates for Sales Forecasting and Reporting",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Access Information on Mobile Devices",
+                    url: "/",
+                  },
+                ],
+              },
+              /*End Two*/
+
+              {
+                _id: 3,
+                title: "Customer Service",
+                desc: "Effortlessly manage customer inquiries, requests and feedback for a seamless and efficient support experience.",
+                cta: "Explore Service",
+                subArrLinks: [],
+                image: "rpa/Application-Security-Testing.jpg",
+                inline: true,
+                subArr: false,
+                ctaUrl: "/",
+                links: [
+                  {
+                    title: "Customer Service across Multiple channels along with Ticket Tracking",
+                    url: "/",
+                  },
+                  {
+                    title: "Reduced Call Time and higher first call resolution charges",
+                    url: "/",
+                  },
+                  {
+                    title:
+                      "Efficient Customer Support with Telephony Integration",
+                    url: "/",
+                  },
+                    {
+                    title:
+                      "Quick Access to Information with Guided navigation",
                     url: "/",
                   },
                 ],
@@ -642,88 +654,62 @@ const page = () => {
 
               {
                 _id: 4,
-                title: "Mobile CRM",
-                desc: "Automate, plan, track and monitor your agents' daily sales routines and ensure your representatives never miss a single customer inquiry and keep them engaged, even while on the go.",
+                title: "Field Service",
+                desc: "Create, assign and track work orders ensuring that your field service team operates with precision and efficiency.",
                 cta: "Explore Service",
                 inline: true,
                 image: "rpa/Cyber-security_vCISO.jpg",
-                subArr: true,
-                subArrLinks: [
-                  
-                ],
+                subArrLinks: [],
+                subArr: false,
                 ctaUrl: "/",
                 links: [
                   {
-                    title: "Strategy",
+                    title: "Cut Down Maintenance Expenses using Predictive Maintenance",
                     url: "/",
                   },
                   {
-                    title: "Risk Management",
+                    title: "Maintenance Operations with Automated Field Agent Dispatch",
                     url: "/",
                   },
                   {
-                    title: "Regulatory & Standards compliance",
+                    title: "Insights Access to Engineers for Maintenance Planning",
                     url: "/",
                   },
                   {
-                    title: "Policy & procedures",
+                    title: "Assess Production Capacity, Order Completion, and Maintenance Expenditures",
                     url: "/",
                   },
-                  {
-                    title: "Security Program",
-                    url: "/",
-                  },
-                  {
-                    title: "End user Training",
-                    url: "/",
-                  },
+                  
                 ],
               },
               {
                 _id: 5,
-                title: "Service Cloud",
-                desc: "Leverage the power of case management to streamline issue resolution. Automate complex workflows to enhance agent productivity.",
-                inline: true,
-                subArr: true,
-                subArrLinks: [
-                  {
-                    _id: 1,
-                    icon: "gear",
-                    title: "Service",
-                    desc: "360-degree view of customers, ensuring personalized and efficient service interactions.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  {
-                    _id: 2,
-                    icon: "gear",
-                    title: "Field Service",
-                    desc: "Seamlessly schedule and dispatch resources using intelligent algorithms. Equip your field service teams with real-time information with a mobile-friendly interface.",
-                    cta: "Know More",
-                    ctaUrl: "/",
-                    list: [],
-                  },
-                  
-                ],
+                title: "Project Operations",
+                desc: "Optimize efficiency and encourage collaboration with this advanced project management tool, affirming smooth project success.",
                 cta: "Explore Service",
-                image: "rpa/Cyber-security_Technology-Solutions.jpg",
+                inline: true,
+                image: "rpa/Cyber-security_vCISO.jpg",
+                subArrLinks: [],
+                subArr: false,
                 ctaUrl: "/",
                 links: [
-                  [
-                    {
-                      title: "Transcription Services",
-                      url: "/",
-                    },
-                    {
-                      title: "Speech recognition",
-                      url: "/",
-                    },
-                    {
-                      title: "Language translation",
-                      url: "/",
-                    },
-                  ],
+                  {
+                    title: "Integrated & flexible solution to build customer confidence",
+                    url: "/",
+                  },
+                  {
+                    title: "Customised customer experience with AI",
+                    url: "/",
+                  },
+                  {
+                    title: "End to end customer experience delivery",
+                    url: "/",
+                  },
+                  {
+                    title: "Real-time customer engagement for personalized journeys.",
+                    url: "/",
+                  },
+                  
                 ],
               },
             ]}
@@ -733,22 +719,19 @@ const page = () => {
 
       {/* Ms slider */}
       <>
-        <div className={`bg-ms-practise w-full py-32 hidden`} id="KeyCapabilities"
-        >
-          <div className={` w-full`}>
+        <div className={`bg-ms-practise w-full py-32`} id="Services">
+          <div className={`w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
+              <div className="flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
                 <div>
-                  <p className="font-medium  leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    Maximizing value from Microsoft Dynamics 365 CRM and leveraging 20 years of partnership with Microsoft, our suite of CRM services effectively digitizes vision of customer relationship management and drives remarkable sales productivity.
                   </p>
                 </div>
               </div>
@@ -835,48 +818,198 @@ const page = () => {
           </div>
         </div>
       </>
-
-      {/* Industry Spotlight Slider */}
-      
+      {/*  Cards */}
+      <>
+        <div
+          className={` w-full bg-[#F2F4F7] py-32`}
+          id="ImplementationProcess"
+        >
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
+            <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  D365 CRM Implementation Process
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
+            {ConsiderRPA.map((item, index) => (
+              <div
+                className="flex flex-col sm:flex-row  bg-white"
+                key={item._id}
+              >
+                <Image
+                  src={item.image}
+                  height={120}
+                  width={120}
+                  className="w-[100%] sm:w-fit object-cover"
+                  alt={item.title}
+                />
+                <div className="p-4 sm:justify-start sm:flex sm:flex-col w-full">
+                  <p className="text-[#101828] font-bold text-[26px] leading-[32px]">
+                    {item.title}
+                  </p>
+                  <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
+                    {item.desc}
+                  </p>
+                  <Link
+                    href={item.ctaUrl}
+                    className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                  >
+                    {item.cta}{" "}
+                    <Icon
+                      path={mdiArrowRight}
+                      style={{ marginLeft: "0.5em" }}
+                      size={1}
+                    />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
 
       {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits"
-        ribbonTxtWhite="true"
-        title="Salesforce CRM"
-        desc="Salesforce CRM is a thrust of innovation and efficiency designed to transform the way you do business with prospects and customers."
+      <div id="Benefits">
+        <Benefits
+          ribbon="Advantages"
+          ribbonTxtWhite="true"
+          title="Microsoft D365 CRM"
+          desc="Microsoft Dynamics 365 CRM emerges as a game-changer for customer facing teams, offering a spectrum of benefits along with customization capabilities."
+          arr={[
+            {
+              _id: 1,
+              icon: "benefits-ai-ml/process-analyse",
+              cardDesc:
+                "Scalability to adapt distinct business requirements",
+            },
+            {
+              _id: 2,
+              icon: "benefits-ai-ml/anticipate-future",
+              cardDesc:
+                "Advanced decision-making potential through Artificial Intelligence",
+            },
+            {
+              _id: 3,
+              icon: "benefits-ai-ml/effortless-communicate",
+              cardDesc:
+                "Scope to plan Data-driven strategies with real time insights",
+            },
+            {
+              _id: 4,
+              icon: "benefits-ai-ml/optimise-supply-chain",
+              cardDesc:
+                "Comprehensive repository of contacts, leads and client information",
+            },
+            {
+              _id: 5,
+              icon: "benefits-ai-ml/healthcare",
+              cardDesc:
+                "Cloud-based infrastructure enabling connectivity with clients from any device and location",
+            },
+            {
+              _id: 6,
+              icon: "benefits-ai-ml/healthcare",
+              cardDesc:
+                "Seamless integration with other Microsoft products such as Microsoft 365 and Power BI",
+            },
+            
+          ]}
+        ></Benefits>
+      </div>
+
+      {/* Why Section */}
+      <WhySection
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech?"
+        desc="Prioritizing your growth journey, we help you excel in customer experience landscape with our CRM expertise."
         arr={[
           {
             _id: 1,
-            icon: "benefits-ai-ml/process-analyse",
-            cardDesc:
-              "Access to relevant information saves time, boosts customer satisfaction and streamlines issue resolution.",
+            desc: "Microsoft Gold Partnership with a demonstrated history of thriving multi-site, global deployments and upgrades.",
+            icon: "",
           },
           {
             _id: 2,
-            icon: "benefits-ai-ml/anticipate-future",
-            cardDesc:
-              "Enhance lead nurturing, consistency in interactions and lead scoring.",
+            desc: "Talented pool of Microsoft Certified Professionals.",
+            icon: "",
           },
           {
             _id: 3,
-            icon: "benefits-ai-ml/effortless-communicate",
-            cardDesc:
-              "Design effective campaigns and personalize buying experiences.",
+            desc: "Support Dynamics CRM clients decreasing complexity and delivering encouraging results.",
+            icon: "",
           },
           {
             _id: 4,
-            icon: "benefits-ai-ml/optimise-supply-chain",
-            cardDesc:
-              "Centralized record of customer interactions, making it accessible to all team members.",
-          },
-          {
-            _id: 5,
-            icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Improve teamwork, allowing simultaneous work on documents and faster customer responses.",
+            desc: "Comprehensive user training that ensures smooth onboarding experience.",
+            icon: "",
           },
         ]}
-      ></Benefits>
+        renderInlineSpans={true}
+      ></WhySection>
+
+      {/* Industry Spotlight Slider */}
+      <div className="hidden">
+        <>
+          <div className={` w-full bg-[#FFF] pt-20`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+              {/* left */}
+              <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                    Industry Spotlight
+                  </h3>
+                </div>
+                <div>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-5">
+                    Being preferred partner of leading industries, we help in
+                    shaping specific technology prerequisites and deliver
+                    brilliant value driven solutions tailored to your sector.
+                  </p>
+                </div>
+                <div className="flex justify-center items-center max-w-screen-xl w-full">
+                  <div>
+                    <Swiper
+                      slidesPerView={"auto"}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      modules={[Pagination]}
+                      className="mySwiper"
+                    >
+                      {ChoiceSlider.map((item) => (
+                        <>
+                          <SwiperSlide
+                            key={item._id}
+                            className="w-[283px] max-w-[283px] mr-4  relative group"
+                          >
+                            <div className="relative overflow-hidden">
+                              <Image
+                                src={`/industrySpotlight/${item.imgUrl}.jpg`}
+                                height={350}
+                                width={283}
+                                alt="icon"
+                                className=" transition-transform transform group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
+                                <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+                                  {item.title}
+                                </h3>
+                              </div>
+                            </div>
+                          </SwiperSlide>
+                        </>
+                      ))}
+                    </Swiper>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      </div>
 
       {/* Blog */}
       <BlogSlider
@@ -884,8 +1017,8 @@ const page = () => {
           {
             _id: 1,
             ribbon: "blog",
-            title: "Elevating Customer Service with Salesforce Service Cloud",
-            desc: "Salesforce's Service Cloud is transforming customer service paradigms through its cutting-edge capabilities. With social media CRM and Salesforce Managed Services at its core, Salesforce Service Cloud stands as a beacon in enhancing customer service experiences. This article delves into how Salesforce, particularly its Service Cloud, redefines customer service dynamics, leveraging social media integrations and comprehensive managed services. ",
+            title: "Future Trends in Microsoft CRM: What to Expect in the Next 5 Years",
+            desc: "AI in CRM and AI-powered CRM tools, particularly within Dynamics 365, are revolutionizing how businesses function. These advancements mark the trajectory of Microsoft CRM market while ensuring a more intuitive and personalized user experience.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -896,48 +1029,58 @@ const page = () => {
       {/* Case Study */}
       <CaseStudy
         ribbon="CASE STUDY"
-        title="Elevating Customer Experience with Salesforce CRM"
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions globally."
+        title="Microsoft CRM in Action"
+        desc="World’s top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "India's Top Forklift Truck Manufacturer Increases Opportunity-to-Order Conversions by 10% and Elevates Customer Experience with Salesforce Integration",
+              "India's leading integrated Vending Service provider leverages predictable sales operations and gains consolidated information visibility with Microsoft CRM",
             thumbnail: "1",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Manufacturer-Electrical-components-Automobile.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/LeadingTableTopBeverageVendingMachinesManufacturer.pdf",
           },
           {
             id: 2,
             title:
-              "India's premium furniture brand in both home and institutional segments achieves 360-degree customer visibility by integrating Salesforce with its ERP.",
+              "Microsoft CRM Accelerates Response Time and Complaint Closure for Leading Indian Construction Company",
             thumbnail: "2",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/IndiasLeadingConstructionOrganization_MSDCRM.pdf",
           },
           {
             id: 3,
             title:
-              "Top notch Indian security solutions company implements Salesforce CRM",
+              "Integration of MS CRM 2011 with ERP for India's World Class Provider of High Quality Information Technology Solutions",
             thumbnail: "3",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/A_WorldClassProvide.pdf",
+          },
+          {
+            id: 4,
+            title:
+              "Integration of MS CRM for Flexible Printing and Packaging Company in KSA:",
+            thumbnail: "3",
+
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/PrintingPackagingIntegrationMSCRM.pdf",
           },
         ]}
       />
 
-
-{/* Testimonaisl */}
+      {/* Testimonaisl */}
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
@@ -948,17 +1091,49 @@ const page = () => {
             id: 1,
             clientName: "",
             clientDesignation:
-              "",
+              "Manufacturer of Optical Fibers in USA",
             thumbnail: "1",
             description:
-              "With Salesforce Sales Cloud smooth implementation, Godrej Infotech’s team allied our lead-to-order cycle. With deep Infor LN integration and fine-tuned project management, the team met aggressive go-live targets, providing us with streamlined data. Thank you GITL team for contributing to our visionary goal of a singular CRM system.",
+              "Thank you to Godrej Infotech for seamlessly migrating our CRM 2016 to D365 for Sales. Completed on time and with top-notch quality, the entire execution from offshore showcases commendable achievement. The CRM & Outlook integration significantly boosts sales efficiency, leading to a remarkable 90% increase in workforce productivity. ",
             category: "static",
             link: "/",
           },
-          
-         
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Business Head, Leading Indian Business Group",
+            thumbnail: "1",
+            description:
+              "Appreciation to the Godrej Infotech for Microsoft Dynamics CRM consulting services. It has been a pleasure working with their team and we highly recommend Godrej Infotech’s services to other organizations. ",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 1,
+            clientName: "",
+            clientDesignation:
+              "Vice President, Indian Offshore Training Provide",
+            thumbnail: "1",
+            description:
+              "Choosing Microsoft Dynamics CRM, we automated sales and marketing, gaining a 360-degree customer view. Godrej Infotech's project management team ensured transparency, kept us informed on project status and risks, and collaboratively devised mitigation plans. The result: on-time, on-budget project completion. We highly recommend Godrej Infotech for Microsoft Dynamics CRM services.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 2,
+            clientName: "",
+            clientDesignation:
+              "Manager IT, India's leading Energy Management System and Solutions provider",
+            thumbnail: "1",
+            description:
+              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+            category: "static",
+            link: "/",
+          },
         ]}
       />
+
       {/* Subscription */}
       <Subscription
         title="Are you Ready for Infor-driven growth?"
