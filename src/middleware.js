@@ -6,16 +6,23 @@ const Middleware = (request) => {
   const url = request.nextUrl.clone();
   const pathname = url.pathname.toLowerCase();
 
-  // Skip middleware for API routes and static files
+  // Skip rewrite for image optimization routes
   if (
-    url.pathname.startsWith("/api/") ||
-    url.pathname.startsWith("/_next/static/") ||
-    url.pathname.startsWith("/_next/image?") ||
-    url.pathname.startsWith("/_next/image") ||
-    url.pathname.startsWith("/_next/assest")
+    url.pathname.startsWith("/_next/image") || // Check for image path prefix
+    url.searchParams.get("url") // Check for "url" query parameter
   ) {
     return NextResponse.next();
   }
+  // // Skip middleware for API routes and static files
+  // if (
+  //   url.pathname.startsWith("/api/") ||
+  //   url.pathname.startsWith("/_next/static/") ||
+  //   url.pathname.startsWith("/_next/image?") ||
+  //   url.pathname.startsWith("/_next/image") ||
+  //   url.pathname.startsWith("/_next/assest")
+  // ) {
+  //   return NextResponse.next();
+  // }
 
   if (url.pathname !== pathname) {
     url.pathname = pathname;
