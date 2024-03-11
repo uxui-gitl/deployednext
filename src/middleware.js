@@ -10,7 +10,9 @@ const Middleware = (request) => {
   if (
     url.pathname.startsWith("/api/") ||
     url.pathname.startsWith("/_next/static/") ||
-    url.pathname.startsWith("/_next/")
+    url.pathname.startsWith("/_next/image?") ||
+    url.pathname.startsWith("/_next/image") ||
+    url.pathname.startsWith("/_next/assest")
   ) {
     return NextResponse.next();
   }
