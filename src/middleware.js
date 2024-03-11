@@ -1,5 +1,3 @@
-// makes all url smallcase
-
 import { NextResponse } from "next/server";
 
 const Middleware = (req) => {
@@ -7,7 +5,7 @@ const Middleware = (req) => {
     return NextResponse.next();
 
   return NextResponse.redirect(
-    `${req.nextUrl.origin + req.nextUrl.pathname.toLowerCase()}`
+    new URL(req.nextUrl.origin + req.nextUrl.pathname.toLowerCase())
   );
 };
 
