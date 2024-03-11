@@ -8,8 +8,9 @@ const Middleware = (request) => {
 
   // Skip rewrite for image optimization routes
   if (
-    url.pathname.startsWith("/_next/image") || // Check for image path prefix
-    url.searchParams.get("url") // Check for "url" query parameter
+    url.pathname.startsWith("/api") || //  exclude all API routes
+    url.pathname.startsWith("/static") || // exclude static files
+    url.pathname.includes(".") // exclude all files in the public folder
   ) {
     return NextResponse.next();
   }
