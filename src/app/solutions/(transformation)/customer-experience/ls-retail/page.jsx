@@ -1005,37 +1005,57 @@ const Page = () => {
       <Benefits
         ribbon="Benefits "
         ribbonTxtWhite="true"
-        title="AI&ML "
-        desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
+        title="LS Central"
+        desc="LS Central is the ultimate all-in-one solution for modern retailers. Join thousands of retailers worldwide who trust LS Central to power their success."
         arr={[
           {
             _id: 1,
             icon: "benefits-ai-ml/process-analyse",
             cardDesc:
-              "Process and analyse vast volumes of data and round-the-clock assistance to customers",
+              "On-demand Business Performance Insights at Convenience",
           },
           {
             _id: 2,
             icon: "benefits-ai-ml/anticipate-future",
             cardDesc:
-              "Anticipate future outcomes based on historical data, making informed decisions",
+              "Improve Customer Experience with Integrated Loyalty Programs and Personalized Marketing Campaigns",
           },
           {
             _id: 3,
             icon: "benefits-ai-ml/effortless-communicate",
             cardDesc:
-              "Effortless communication and efficient information retrieval through Natural Language Processing",
+              "Access Financial Data, Point of Sale Systems, Supply Chain Management and more—all in one place",
           },
           {
             _id: 4,
             icon: "benefits-ai-ml/optimise-supply-chain",
             cardDesc:
-              "Optimize supply chain management, predict maintenance need, and elevate quality control, resulting in higher productivity",
+              "Notifications and Reports at all Channels on Fingertips",
           },
           {
             _id: 5,
             icon: "benefits-ai-ml/healthcare",
-            cardDesc: "Revolutionising Healthcare with medical image analysis",
+            cardDesc: "No More Additional Integration Cost",
+          },
+             {
+            _id: 6,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Ensure Uniformity in Financial Information",
+          },
+             {
+            _id: 7,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Complete Control over Pricing, Inventory, Promotions and beyond",
+          },
+             {
+            _id: 8,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Flexible System Architecture and Modular Design to Scale Business",
+          },
+             {
+            _id: 9,
+            icon: "benefits-ai-ml/healthcare",
+            cardDesc: "Flexible System Architecture and Modular Design to Scale Business",
           },
         ]}
       ></Benefits>
