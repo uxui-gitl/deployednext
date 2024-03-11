@@ -152,31 +152,31 @@ const ChoiceSlider = [
   {
     _id: 1,
     title: "Healthcare",
-    imgUrl: "/ai-ml/Industry-served_Healthcare.jpg",
+    imgURL: "/assest/ai-ml/Industry-served_Healthcare.jpg",
     url: "/",
   },
   {
     _id: 2,
     title: "Automotive",
-    imgUrl: "/ai-ml/Industry-served_Automotive.jpg",
+    imgURL: "/assest/ai-ml/Industry-served_Automotive.jpg",
     url: "/",
   },
   {
     _id: 3,
     title: "Logistic",
-    imgUrl: "/ai-ml/Industry-served_Logistic.jpg",
+    imgURL: "/assest/ai-ml/Industry-served_Logistic.jpg",
     url: "/",
   },
   {
     _id: 4,
     title: "Retail",
-    imgUrl: "/ai-ml/Industry-served_Retail.jpg",
+    imgURL: "/assest/ai-ml/Industry-served_Retail.jpg",
     url: "/",
   },
   {
     _id: 5,
     title: "Manufacturing",
-    imgUrl: "/ai-ml/Industry-served_Manufacturing.jpg",
+    imgURL: "/assest/ai-ml/Industry-served_Manufacturing.jpg",
     url: "/",
   },
 ];
@@ -210,7 +210,7 @@ const BenefitsData = [
 const MLData = [
   {
     _id: 1,
-    imgURL: "/ai-ml/Expertise_Deep-Learning.jpg",
+    imgURL: "/assest/ai-ml/Expertise_Deep-Learning.jpg",
     title: "Deep Learning",
     subTitle:
       "Our deep learning expertise builds solutions that automate complex tasks helping in data-driven decision-making, especially when it comes to forecasting your business's future.",
@@ -218,7 +218,7 @@ const MLData = [
   },
   {
     _id: 2,
-    imgURL: "/ai-ml/Expertise_Supervised-Learning.jpg",
+    imgURL: "/assest/ai-ml/Expertise_Supervised-Learning.jpg",
     title: "Supervised Learning",
     subTitle:
       "We deliver customer sentiment analysis, image recognition and predictive maintenance services that help you make informed decisions and create happier customers.",
@@ -226,7 +226,7 @@ const MLData = [
   },
   {
     _id: 3,
-    imgURL: "/ai-ml/Expertise_Unsupervised-Learning.jpg",
+    imgURL: "/assest/ai-ml/Expertise_Unsupervised-Learning.jpg",
     title: "Unsupervised Learning",
     subTitle:
       "Our unsupervised learning services reveal hidden patterns for business sustainability through data exploration without constraints, helping in customer segmentation, anomaly detection and more.",
@@ -234,7 +234,7 @@ const MLData = [
   },
   {
     _id: 4,
-    imgURL: "/ai-ml/Expertise_Reinforcement-Learning.jpg",
+    imgURL: "/assest/ai-ml/Expertise_Reinforcement-Learning.jpg",
     title: "Reinforcement Learning",
     subTitle:
       "Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
