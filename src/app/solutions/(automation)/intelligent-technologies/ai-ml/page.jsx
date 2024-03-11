@@ -234,7 +234,7 @@ const MLData = [
   },
   {
     _id: 4,
-    imgURL: "/assest/ai-ml/Expertise_Reinforcement-Learning.jpg",
+    imgURL: "assest/ai-ml/Expertise_Reinforcement-Learning.jpg",
     title: "Reinforcement Learning",
     subTitle:
       "Our reinforcement learning expertise is like a guiding hand for applications such as autonomous systems and resource optimisation.",
