@@ -160,35 +160,49 @@ const ChoiceSlider = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Implementation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Upgrade & Migration",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Account Payable and Receivable Process",
+    title: "Support & Maintenance",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Vendor Onboarding Process",
+    title: "Consulting",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Customer Onboarding Process",
+    title: "Customization",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 6,
+    title: "Application/System Audit",
+    cta: "Know More",
+    link: "/",
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 7,
+    title: "Reporting",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -263,31 +277,31 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "Real-time access to role-specific information and tools to perform tasks in the office, shop floor, from any location around the world.",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Struggle to coordinate with suppliers and optimize inventory levels and logistics operations.",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Hassle with equipment maintenance due to a lack of tracking and schedules.",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Difficulty in optimizing production sequences, balancing workloads, and handling disruptions effectively.",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
+    text: "Lack of real-time data analysis affecting your manufacturing performance.",
   },
   {
     id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "Poor quality control and tracking defects.",
   },
   {
     id: 7,
-    text: "High Management Costs of IT Infrastructure",
+    text: "Regulatory compliance and potential legal issues.",
   },
 ];
 
@@ -372,6 +386,216 @@ const aglity = [
     title: "Cloud Monitoring and Reporting ",
   },
 ];
+const CustomSolutions = [
+  {
+    _id: 1,
+    title: "PS2.0 - Prosoft 2.0",
+    desc: "We specialize in custom video and image analysis tool leveraging advanced technologies like OpenCV to optimize or create computer vision algorithms.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Subcontracting material process after sales delivery",
+        url: "/",
+      },
+      {
+        title: "Customer centric operations with back-to-back vendor document ",
+        url: "/",
+      },
+      
+    ],
+  },
+  {
+    _id: 2,
+    title: "Industry 4.0 - Interface with MES",
+    desc: "Precise production order scheduling per machine, real-time progress reporting, inventory tracking.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Integration of Infor LN Product Orders with MES via BOD_XML-based interface",
+        url: "/",
+      },
+      {
+        title: "Transfer of operation completion data from MES to Infor LN",
+        url: "/",
+      },
+      {
+        title: "Recording of hours accounting within MES",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 3,
+    title: "Industry 4.0 - IoT",
+    desc: "Accurately capture machine operations, including on-off times, Overall Equipment Efficiency (OEE), 16-TPM losses and utilization rates. Plus, monitoring electric motor conditions like temperature, vibration and oil levels is crucial for optimal performance.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Sensors installed on machines/motors",
+        url: "/",
+      },
+      {
+        title: "Convert sensor data into CSV format",
+        url: "/",
+      },
+      {
+        title: "Import CSV file into software for breakdown analysis, utilization tracking and alerts.",
+        url: "/",
+      },
+    ],
+  },
+
+  {
+    _id: 4,
+    title: "Industry 4.0 - RPA - Robotic Process Automation",
+    desc: "Streamline the repetitive and labor-intensive task of item code and BOM creation. This involves reducing manual workload and increasing the accuracy of master data to ensure efficient operations and product quality.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Partnered with Automation Anywhere",
+        url: "/",
+      },
+      {
+        title: "Developed BOT to read data from Excel templates",
+        url: "/",
+      },
+      {
+        title: "BOT inputs data into ERP Infor LN sessions",
+        url: "/",
+      },
+      {
+        title: "BOT operates 24/7, creating items & BOMs quickly upon file detection on server",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 5,
+    title: "QCAT - Quality control traceability",
+    desc: "Online inspection of product and special process parameters to ensure quality standards. This involves conducting sample checks or 100% checks on product and process parameters for quality assurance. Additionally, maintaining project and product-wise feature checklists and insights for product performance.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Interface between Infor LN & QCAT system",
+        url: "/",
+      },
+      {
+        title: "Production order data imported into QCAT",
+        url: "/",
+      },
+      {
+        title: "Attach test conditions, checklists and parameters to each item",
+        url: "/",
+      },
+      {
+        title: "Maintain test data and generate reports",
+        url: "/",
+      },
+      {
+        title: "Link child items to parent items using serial & lot functionality",
+        url: "/",
+      },
+      {
+        title: "Traceability from child to parent and vice versa",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 6,
+    title: "Mobile App - Industrial Safety & Field Quality",
+    desc: "Need for thorough online quality assurance and safety checks at site locations to ensure adherence to standards.  Further documentation of quality defects and hazards for immediate action and improvement. ",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Mobile app and web-based system",
+        url: "/",
+      },
+      {
+        title: "Ensuring all web-based sessions accessible on mobile app",
+        url: "/",
+      },
+      {
+        title: "Manage NC raising, approval and closure processes",
+        url: "/",
+      },
+      {
+        title: "Fishbone analysis for issue resolution",
+        url: "/",
+      },
+      {
+        title: "Capture images for documentation purposes",
+        url: "/",
+      },
+      {
+        title: "Alerts/notifications for NCs and non-closures",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 7,
+    title: "Quality App",
+    desc: "Manage and monitor all open quality orders effectively. Manufactures require immediate visibility into the quality status and ensure product quality standard.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Centralized platform for managing open quality orders",
+        url: "/",
+      },
+      {
+        title: "Scanning feature that expedites order updates",
+        url: "/",
+      },
+      {
+        title: "Real-time quality result updates enable timely decisions",
+        url: "/",
+      },
+      {
+        title: "Integrated with Dynamics 365 for synchronized quality management",
+        url: "/",
+      },
+      
+    ],
+  },
+  {
+    _id: 8,
+    title: "Production App",
+    desc: "Comprehensive production order visibility and management, along with insights into production processes.  Goal is to develop smooth production operations and informed decision-making.",
+    cta: "Explore Service",
+    ctaUrl: "",
+    links: [
+      {
+        title: "Centralized view for managing open production orders",
+        url: "/",
+      },
+      {
+        title: "Track route card journals for production monitoring",
+        url: "/",
+      },
+      {
+        title: "Update runtime and output quantity for accurate records",
+        url: "/",
+      },
+      {
+        title: "Scan feature for quick, accurate output updates",
+        url: "/",
+      },
+      {
+        title: "Integrate with Dynamics 365 for synchronized production data",
+        url: "/",
+      },
+      
+    ],
+  },
+];
 const AIOfferings = [
   {
     _id: 1,
@@ -383,24 +607,28 @@ const AIOfferings = [
     btnTheme: "#4F9D73",
     links: [
       {
-        title: "Project Monitoring Tools ",
+        title: "Smart Manufacturing ERP",
         url: "/",
       },
       {
-        title: "Augmented Intelligence ",
+        title: "Customer Experience - CRM",
         url: "/",
       },
       {
-        title: "Budgeting and Forecasting ",
+        title: "Supply Chain Management",
         url: "/",
       },
       {
-        title: "Data Driven Analytics ",
+        title: "Process Optimization",
         url: "/",
       },
 
       {
-        title: "Quality Control Analysis  ",
+        title: "Quality Control Analysis",
+        url: "/",
+      },
+      {
+        title: "Process Automation",
         url: "/",
       },
     ],
@@ -435,6 +663,10 @@ const AIOfferings = [
         url: "/",
       },
       {
+        title: "MES In Cloud",
+        url: "/",
+      },
+      {
         title: "DevOps",
         url: "/",
       },
@@ -454,29 +686,26 @@ const AIOfferings = [
     btnTheme: "#D4A73B",
     links: [
       {
-        title: "Architecture Designing  ",
+        title: "IOT Based Digital Transformation",
         url: "/",
       },
       {
-        title: "Hierarchy Management ",
+        title: "Data Driven Analytics- Data lake",
         url: "/",
       },
       {
-        title: "Process Optimization ",
+        title: "Predictive & Preventive Maintenance",
         url: "/",
       },
       {
-        title: "Stakeholder work/ role assignment ",
+        title: "Augmented Intelligence",
         url: "/",
       },
       {
-        title: "Multiple invoicing modes",
+        title: "Robotics and Automation",
         url: "/",
       },
-      {
-        title: "Customer Experience - CRM and Ecommerce ",
-        url: "/",
-      },
+     
     ],
   },
 ];
@@ -586,8 +815,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Elevate Your Retail Business  with Our Top-notch Services "
-        desc="with Our Top-notch Services "
+        title="Transformative solutions and services helping manufacturers to achieve new level of agility with velocity"
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -633,7 +862,7 @@ const page = () => {
 
       {/* OVerview with list */}
       <Abstract
-        abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech's persistent partnership of over two decades and a track record of successfully delivering APAC's largest Infor implementation, we enable businesses to set growth-driven business operations across the organization. "
+        abstractdesc="The manufacturing industry is one of the most volatile industries that is known for its fluctuating pace and increasing competitiveness. The dynamic and ever-changing nature of these businesses requires fast tracking and complete monitoring of each operation, the absence of which can lead to downtime in production, resource wastage and major losses."
         list={false}
         ribbon=""
         listArr={[
@@ -653,12 +882,9 @@ const page = () => {
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                    Manufacturing Companies Challenges
+                    Challenges Faced by Manufacturing Businesses
                   </h3>
-                  <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -695,7 +921,7 @@ const page = () => {
       </>
 
       {/* Segment we serve */}
-      <div className={`bg-white w-full    py-32  `} id="productivity">
+      <div className={`bg-white w-full py-32`} id="productivity">
         <div className={` w-full`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
             {/* left */}
@@ -711,10 +937,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                  Fulfilling your unique business needs with our micro-vertical
-                  expertise enables you to offer superior customer experiences
-                  and drive efficient operations across the value chain using
-                  our proprietary solutions
+                  Our micro-vertical expertise enables you to drive efficient operations across the value chain.
                 </p>
               </div>
             </div>
@@ -725,18 +948,20 @@ const page = () => {
                 {
                   _id: 1,
                   title: "Automotive/Discrete/Industrial",
-                  desc: "We aim to optimize revenue, enhance profitability, and cultivate customer satisfaction and loyalty. Through our comprehensive approach, we meticulously select and implement the most suitable CRM tailored to your unique vision, fostering desired business outcomes",
-                  cta: "Know More",
+                  desc: "",
+                  cta: "",
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                  link: "/",
+                  link: "",
                   list: [
-                    "Automotive OEM /Suppliers",
+                    "Automotive OEM / Suppliers",
                     "Industrial Manufacturing",
                     "High-Tech & Electronics",
                     "Machinery & Equipment",
                     "Automotive Components",
                     "Electricals & Electronics",
-                    "Valve, Cables & Optical glass",
+                    "Valve",
+                    "Cables",
+                    "Optical Glass",
                   ],
                 },
               ].map((item, index) => {
@@ -774,7 +999,7 @@ const page = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className=" w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -803,14 +1028,11 @@ const page = () => {
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
                   list: [
-                    "Automotive OEM /Suppliers",
-                    "Industrial Manufacturing",
-                    "High-Tech & Electronics",
-                    "Machinery & Equipment",
-                    "Automotive Components",
-                    "Electricals & Electronics",
-                    "Valve, Cables & Optical glass",
-                  ],
+                    "Refinery, Petrochemical & Process Equipment",
+                    "Aerospace & Defense Equipment",
+                    "Infrastructure / EPC with Turnkey & BOOT BOLT",
+                    "Ship Design, Building & Repairs",
+                 ],
                 },
               ].map((item, index) => {
                 return (
@@ -847,7 +1069,7 @@ const page = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className=" w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -876,13 +1098,15 @@ const page = () => {
                   icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                   link: "/",
                   list: [
-                    "Automotive OEM /Suppliers",
-                    "Industrial Manufacturing",
-                    "High-Tech & Electronics",
-                    "Machinery & Equipment",
-                    "Automotive Components",
-                    "Electricals & Electronics",
-                    "Valve, Cables & Optical glass",
+                    "Chemicals",
+                    "Paints",
+                    "Pharmaceutical",
+                    "Lubricants",
+                    "Fragrance",
+                    "Polymers",
+                    "Glass",
+                    "Cement",
+                    "Bottling Plant",
                   ],
                 },
               ].map((item, index) => {
@@ -920,7 +1144,7 @@ const page = () => {
                         </ul>
                       </div>
                     </div>
-                    <div className=" w-full bg-[#0745D3] p-5">
+                    <div className=" w-full bg-[#0745D3] p-5 hidden">
                       <Link
                         href={item.link}
                         className="text-white  flex transition-all hover:opacity-75  "
@@ -951,7 +1175,7 @@ const page = () => {
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                   Our Capabilities
                 </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                <p className="font-medium leading-[22px] md:w-[90%] hidden ">
                   Holistic and future- ready solutions to re-engineer your
                   business with our proven implementation methodologies for
                   maximum Return on Investment (RoI)
@@ -963,72 +1187,72 @@ const page = () => {
             {[
               {
                 _id: 1,
-                title: "Master Complexity",
+                title: "Future of Factories",
                 desc: "",
-                cta: "Know More",
+                cta: "",
                 icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
-                link: "/",
+                link: "",
                 list: [
-                  "Better decision taking ability",
-                  "Promote Manufacturing excellence",
-                  "Exceptional customer experience fulfillment",
-                  "Efficiently manage people, technology, activities, information and resources",
+                  "Industry 4.0",
+                  "Factory Track",
+                  "Intelligent Operations using AI and ML",
+                  "Industry 4.0 RPA - Robotic Process Automation",
+                  "Industry 4.0 - Interface with MES",
+                  "Industry 4.0 IoT Solution",
                 ],
               },
               {
                 _id: 2,
-                title: "Master Complexity",
+                title: "IoT Enabled Products",
                 desc: "",
                 cta: "Know More",
                 icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                 link: "/",
                 list: [
-                  "Better decision taking ability",
-                  "Promote Manufacturing excellence",
-                  "Exceptional customer experience fulfillment",
-                  "Efficiently manage people, technology, activities, information and resources",
+                  "Industrial IOT",
+                  "Plant Efficiency with IOT",
+                  "Asset Predictive Maintenance",
+                  "",
                 ],
               },
               {
                 _id: 3,
-                title: "Master Complexity",
+                title: "Supply Chain Management",
                 desc: "",
                 cta: "Know More",
                 icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                 link: "/",
                 list: [
-                  "Better decision taking ability",
-                  "Promote Manufacturing excellence",
-                  "Exceptional customer experience fulfillment",
-                  "Efficiently manage people, technology, activities, information and resources",
+                  "Inventory Management",
+                  "Fleet Management with Iot and AR",
+                  "Loft ware",
+                  "Production Planning",
                 ],
               },
               {
                 _id: 4,
-                title: "Master Complexity",
+                title: "Performance Management",
                 desc: "",
                 cta: "Know More",
                 icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                 link: "/",
                 list: [
-                  "Better decision taking ability",
-                  "Promote Manufacturing excellence",
-                  "Exceptional customer experience fulfillment",
-                  "Efficiently manage people, technology, activities, information and resources",
+                  "Product Lifecycle Management",
+                  "Asset Management",
+                  
                 ],
               },
               {
                 _id: 5,
-                title: "Master Complexity",
+                title: "Advanced Manufacturing",
                 desc: "",
                 cta: "Know More",
                 icon: "icon/RPA-projectLifestyle/InfrastructureSetup",
                 link: "/",
                 list: [
-                  "Better decision taking ability",
-                  "Promote Manufacturing excellence",
-                  "Exceptional customer experience fulfillment",
-                  "Efficiently manage people, technology, activities, information and resources",
+                  "Barcode and RFID",
+                  "Stock Buffer Management",
+                  "CCPM Critical Chain Path",
                 ],
               },
             ].map((item, index) => (
@@ -1183,6 +1407,73 @@ const page = () => {
         </div>
       </>
 
+      {/* Custom Solutions */}
+      <>
+        <div id="CustomSolutions" className={` w-full bg-[#FFF] py-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Godrej Infotech Custom Solutions
+                </h3>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Our commitment to helping you succeed is backed by years of experience and a dedicated team of experts who will work closely with you to ensure our solutions align perfectly with your objectives. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-4">
+            {CustomSolutions.map((item, index) => (
+              <div className="bg-[#EDF1FF] p-5" key={item._id}>
+                <div className="p-4 h-full flex flex-col justify-between">
+                  <div>
+                    <p className="text-[#101828] font-bold text-[30px] leading-[36px]">
+                      {item.title}
+                    </p>
+                    <p className="text-[#101828] text-[12px] font-normal my-4 leading-[18px]">
+                      {item.desc}
+                    </p>
+                  </div>
+                  <div>
+                    <ul className="my-8">
+                      {item.links.map((list, index) => (
+                        <li
+                          key={index}
+                          className=" border-b-2 border-[#DBDBDB] py-2 "
+                        >
+                          <Link
+                            href={list.url}
+                            className="text-[#101828] text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                          >
+                            {list.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={item.ctaUrl}
+                      className="text-[#0745D3] hidden text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
+                    >
+                      {item.cta}{" "}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+
       {/* Our Solutions growth */}
       <>
         <div id="AddOns" className={` w-full bg-[#FFF] py-20`}>
@@ -1191,16 +1482,16 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  GITL Project Solutions Portfolio
+                  Solution Offerings
                 </h4>
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Our Offerings
+                  Holistic and future ready
                 </h3>
               </div>
             </div>
             <div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                <p className="font-medium leading-[22px] md:w-[90%] hidden">
                   Holistic and future- ready solutions to re-engineer your
                   business with our proven implementation methodologies for
                   maximum Return on Investment (RoI)
@@ -1273,7 +1564,7 @@ const page = () => {
           {
             id: 1,
             title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              "Leading manufacturer of Electrical components for the Automobile sector modernize its business application with successful implementation of Infor LN",
             thumbnail: "",
 
             description: "",
@@ -1284,25 +1575,15 @@ const page = () => {
           {
             id: 2,
             title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
+              "India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN",
             thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Global-Oncology-Pharmaceuticals-Company.pdf",
+            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Case-Study-Salesforce-Implementation.pdf",
           },
-          {
-            id: 3,
-            title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "",
-
-            description: "",
-            tags: [""],
-            cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
-          },
+          
         ]}
       />
 
@@ -1316,9 +1597,7 @@ const page = () => {
                   Partnerships
                 </h3>
                 <p className=" text-left font-medium leading-[22px]   mx-auto">
-                  Our expansive worldwide network of market innovators enables
-                  us to embrace breakthrough technologies and confront business
-                  roadblocks effectively.
+                 Our experience with esteemed technology partners helps you to drive growth in this digital age.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row my-5 justify-center items-center mx-auto gap-10 sm:gap-16">
@@ -1335,6 +1614,19 @@ const page = () => {
                 <div>
                   <Image src={azure} alt="azure" />
                 </div>
+                <div>
+                  <Image src={uiPath} alt="uiPath" width={200} />
+                </div>
+                <div>
+                  <Image src={powerAutomate} alt="powerAutomate" width={320} />
+                </div>
+                <div>
+                  <Image
+                    src={automationAnywhere}
+                    alt="automationAnywhere"
+                    width={200}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1345,17 +1637,17 @@ const page = () => {
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
-        title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        title="Delighted Customers share their Experiences"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
             clientName: "",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "Indian Automotive Manufacturer & Supplier",
             thumbnail: "",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "We're pleased with Godrej Infotech Ltd.'s support during the service contract. Over a year since Infor ERP Ln 6.1 implementation, our strong business relationship is set to strengthen.",
             category: "static",
             link: "/",
           },
@@ -1363,10 +1655,21 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "Global Leader in Ice-Cold Merchandiser & Glass Bottle Manufacturer",
             thumbnail: "",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "Appreciation to Godrej Infotech Limited's effective solutions and support, we acknowledge their expertise for optimizing ERP LN FP2 since April 2009.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "",
+            clientDesignation:
+              "IT Manager, Indian Petrochemical Manufacturer of Resins & Plastics ",
+            thumbnail: "",
+            description:
+              "Thank you Godrej Infotech team for cloud-enabling our Navision system, enhancing system availability, offering cost-effective OPEX pricing, and providing  anytime, anywhere accessibility.",
             category: "static",
             link: "/",
           },
@@ -1374,13 +1677,41 @@ const page = () => {
       />
 
       {/* Expertise */}
+      <Expertise
+        ribbon="Our Expertise"
+        ribbonTxtWhite="true"
+        title="Hub of Expertise"
+        desc="We're here to build an edge."
+        arr={[
+          {
+            title: "30 +",
+            desc: "Years of Domain Experience",
+          },
+          {
+            title: "200 +",
+            desc: "Implementation Experience and Project Deliveries",
+          },
+          {
+            title: "300 +",
+            desc: "Happy customers",
+          },
+          {
+            title: "100 +",
+            desc: "Subject Matter experts",
+          },
+          {
+            title: "24/7",
+            desc: "Support Desk",
+          },
+        ]}
+      ></Expertise>
 
       {/* Subscriptions ============*/}
       <Subscription
-        title="Are you Ready for Infor-driven growth?"
-        blue="Let's get started!?"
+        title="Ready to optimize your"
+        blue="manufacturing performance?"
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Share your details to discover how our  ACT solutions can help you with leading edge growth."
       />
     </>
   );
