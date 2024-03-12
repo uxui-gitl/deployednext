@@ -156,41 +156,50 @@ const ChoiceSlider = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "End to End Implementation",
     cta: "Know More",
     link: "/",
-    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+    desc: "Employing our best practices to enhance processes, we provide effective solution deployment, risk mitigation and complete adoption of the solution.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Global Rollouts",
     cta: "Know More",
     link: "/",
-    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+    desc: "We initiate with executing a pilot implementation at selected locations predetermined by the client. Upon approval of the solution by the client, it is then deployed to all other stores, branches, and offices of the organization according to agreed-upon schedules.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Account Payable and Receivable Process",
+    title: "Godrej Infotech Standard Solutions",
     cta: "Know More",
     link: "/",
-    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+    desc: "Supporting primary business application with our specialized solution, we provide a distinct advantage for managing essential business functions including Finance, Master Planning, Sales and Marketing, Inventory and Warehouse, Procurement, Sourcing, Service Management and more, all within reasonable implementation budgets.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Vendor Onboarding Process",
+    title: "Customization and Integration",
     cta: "Know More",
     link: "/",
-    desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
+    desc: "We consistently go above and beyond to deliver valuable end-user experience, while managing an complex combination of new processes, business models, technologies, systems and devices.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Customer Onboarding Process",
+    title: "Data Migration",
     cta: "Know More",
     link: "/",
+    desc:'With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns.',
+    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
+  },
+  {
+    _id: 6,
+    title: "Reimplementation",
+    cta: "Know More",
+    link: "/",
+    desc:'Taking into account the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.',
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
 ];
@@ -477,17 +486,41 @@ const ul = [
 const ConsiderRPA = [
   {
     _id: 1,
-    title: "Azure SQL Data Ware Housing",
-    desc: "Leverage seamless analysis of your business data and trust in our expertise to scale your insights.",
-    cta: "Know More",
+    title: "People Centricity",
+    desc: "Bridging the crucial gap, we bring together functional and implementation teams and create bottom-up planning, leveraging the right symphony of expertise and insights for your business.",
+    cta: "",
     ctaUrl: "/",
     image: "/rpa/IncreasedProductivity.png",
   },
   {
     _id: 2,
-    title: "AWS Redshift",
-    desc: "Optimize your data storage and queries while we provide the experience to enhance your data efficiency.",
-    cta: "Know More",
+    title: "Process Quality",
+    desc: "While continuously improving every phase, we identify areas where enhancements are required and execute them methodically that lead to greater effectiveness.",
+    cta: "",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+  },
+  {
+    _id: 3,
+    title: "Technology Proficiency",
+    desc: "Our expert team is well-versed with the innovative technology trends and proficiently implements the right-fit solution to navigate your business challenges.",
+    cta: "",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+  },
+  {
+    _id: 4,
+    title: "Effective Change Management",
+    desc: "Understanding the obvious resistance for the change, we exercise strong change management practices for sustainability ensuring efficient acceptance.",
+    cta: "",
+    ctaUrl: "/",
+    image: "/rpa/GainAccurateOutcomes.png",
+  },
+  {
+    _id: 5,
+    title: "Adaptive Business Environment",
+    desc: "We constantly screen the business environment, examining market dynamics and industry trends to ensure successful implementation, especially at the time of ambiguity.",
+    cta: "",
     ctaUrl: "/",
     image: "/rpa/GainAccurateOutcomes.png",
   },
@@ -497,9 +530,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title=" Effective and Smooth Implementation to
-        Elevate your Business Results "
-        desc="Elevate your Business Results "
+        title=" Effective and Smooth Implementation Services to Elevate your Business Results "
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -543,6 +575,27 @@ const page = () => {
         />
       </>
 
+       {/* Overview */}
+       <>
+        <div className={` w-full bg-white py-10`}>
+          <>
+            <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
+              <div className=" mt-[5em] mb-[2rem]">
+                <div className="flex flex-col gap-x-10">
+                  <h3 className="text-4xl mb-4 leading-[42px] font-bold">
+                    Overview
+                  </h3>
+                  <p>
+                  As a trustworthy transformation partner, your ambitious goals become our shared mission. Embracing a holistic strategy for your implementation and rollout project and assuring timely delivery, we exceed your expectations and nurture a genuine partnership that drives us toward goal realization together. With over 25 years of experience in implementing End to End IT solutions, we have the expertise to deliver avant-garde solutions that meets the needs of our global clients'. Our services include fast and secure rollouts tailored to diverse locations, divisions and subsidiaries. Each project is meticulously managed by seasoned subject matter experts and technology specialists, ensuring precise execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+        </div>
+      </>
+
+
       {/* two people expetise / Our Services */}
       <>
         <div className={`bg-ms-practise w-full    py-32  `} id="OurExpertise">
@@ -552,14 +605,12 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
+                  Our Services
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
+                  We offer implementation services focused on delivering specific outcomes from inception to project completion with our commitment to quality.
                   </p>
                 </div>
               </div>
@@ -660,13 +711,13 @@ const page = () => {
           <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
             <div className="mt-[3em] mb-[12em]">
               <h3 className=" text-7xl font-bold leading-[90px]">
-                The Guiding Principles We Live By
+              Our Implementation Service Virtues
               </h3>
-              <p className="text-base font-regular">
+              {/* <p className="text-base font-regular">
                 Every day, we endeavour to create a meaningful impact, driven by
                 our core principles and essence, reaching beyond our industry to
                 positively touch every association we encounter.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -679,29 +730,27 @@ const page = () => {
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Result Focused Services</h4>
               <p className="text-base font-medium">
-                Create Sustainable Value for our Stakeholders by connecting
-                People and Technology.
+              We measure our success, based on the tangible results we deliver for our customers.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Agile Approach</h4>
               <p className="text-base font-medium">
-                Be a world class provider of high-quality Information &
-                Technology solutions.
+              Repository of ready solutions enable us to proactively respond to customers evolving needs.
               </p>
             </div>
             <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Values</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Quality Practice</h4>
               <p className="text-base font-medium">
-                Integrity <br /> Responsiveness <br /> Commitment & Teamwork
+              We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.
               </p>
             </div>
           </div>
@@ -712,28 +761,39 @@ const page = () => {
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
-        title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        title="Delighted Customers Share their Success Experiences"
+        desc="Discover how we have helped our customers to realize better results aligned with their business goals."
         arr={[
           {
             id: 1,
-            clientName: "",
+            clientName: "Managing Director",
             clientDesignation:
-              "ERP and Business Intelligence Head, Fast food service chain  ",
+              "Saudi Arabia’s Manufacturer & Supplier of Piping Products & Fitting",
             thumbnail: "1",
             description:
-              "Appreciation to Godrej Infotech's team for successfully completing two critical projects - upgrading the old ERP system to Dynamics Business Central on SAAS and implementing a cloud-based ETL process on Azure for restaurant sales and COGS processes. We're experiencing significant improvements in operational efficiency.",
+              "I would like to thank the dedicated team at Godrej Infotech for a successful Dynamics 365 for Sales Professional implementation. We can now generate customized reports and track sales personnel in the field. This achievement adds significant value to our business.",
             category: "static",
             link: "/",
           },
           {
             id: 2,
-            clientName: "",
+            clientName: "Head Procurement & Project Manager",
             clientDesignation:
-              "Manager IT, India's leading Energy Management System and Solutions provider ",
+              "Leading Global Supplier of Process Equipments",
             thumbnail: "1",
             description:
-              "Godrej Infotech has proficiently upgraded our software from NAV 2016 to Business Central on SaaS, including seamless data migration. This helped us save on subscription costs & facilitated quicker transactional updates.",
+              "We appreciate Godrej Infotech team for their exceptional work during Infor LN ERP implementation. Project was executed smoothly and efficiently. Your understanding of our needs and your positive contributions were highly valued. We applause your leadership, dedication and the collaborative effort of your team. Gratitude to all the project members.",
+            category: "static",
+            link: "/",
+          },
+          {
+            id: 3,
+            clientName: "Finance/Project Manager",
+            clientDesignation:
+              "KSA based World's first super-premium ice cream Franchise",
+            thumbnail: "1",
+            description:
+              "Congratulations to the Godrej Infotech team for successfully rolling out LS Central Hospitality. This solution has revolutionized our ice-cream retail stores, streamlining operations and automating HR and Payroll tasks. Our POS is now 100% operational, leading to a 70% reduction in procurement time and a 60% boost in finance process productivity. We thank the entire Godrej Infotech team for their outstanding 100% offshore delivery.",
             category: "static",
             link: "/",
           },
@@ -747,13 +807,13 @@ const page = () => {
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
               <div className="bg-[#f2f4f7] text-left">
                 <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                  Services for successful results
+                Key Implementation Phases
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                    Streamline Cloud Upgrade Service with Our Process Map
+                  Our Implementation approach is categorized into 6 phases, each with goal.
                   </h3>
-                  <p className="font-medium leading-[22px] md:w-[90%] my-4 "></p>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-4 ">Constant optimization is important during every stage, as we fine-tune the solution to maximize its value.</p>
                 </div>
               </div>
             </div>
@@ -766,50 +826,50 @@ const page = () => {
                 {
                   label: "01",
                   expandedLabel: "Step 01",
-                  title: "Current Infrastructure and Data Evaluation",
-                  expandedTitle: "Current Infrastructure and Data Evaluation",
-                  desc: "Identifying migration ready systems and then understanding potential risk associated. This lays the groundwork for our plan of action.",
+                  title: "Site Analysis and Project Planning",
+                  expandedTitle: "Site Analysis and Project Planning",
+                  desc: "Understanding your precise needs and building the foundation for an effective project execution.",
                   image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                 },
                 {
                   label: "02",
                   expandedLabel: "Step 02",
-                  title: "Strategy Designing",
-                  expandedTitle: "Strategy Designing",
-                  desc: "Aligning business needs and goals, we set KPIs and devise strategy which is documented & communicated for smooth cloud adoption.",
+                  title: "Design Solution Architecture and Mapping",
+                  expandedTitle: "Design Solution Architecture and Mapping",
+                  desc: "Crafting a tailor-made solution framework aligning with your business goals.",
                   image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                 },
                 {
                   label: "03",
                   expandedLabel: "Step 03",
-                  title: "Milestone Blueprint Development",
-                  expandedTitle: "Milestone Blueprint Development",
-                  desc: "Define and prioritize tasks, align assets, establish iterations and timelines for a journey blueprint.",
+                  title: "Customization and Configuration",
+                  expandedTitle: "Customization and Configuration",
+                  desc: "Structuring functional requirements such as customization, specific configuration, and integration either with the primary application or third-party solutions.",
                   image:
                     "/upgradeCloud/Services-Milestone-Blueprint-Development.jpg",
                 },
                 {
                   label: "04",
                   expandedLabel: "Step 04",
-                  title: "Establishing Readiness",
-                  expandedTitle: "Establishing Readiness",
-                  desc: "Expanding the landing zone blueprint and adequately preparing well-designed cloud environment.",
+                  title: "Efficient Knowledge Transfer",
+                  expandedTitle: "Efficient Knowledge Transfer",
+                  desc: "Offering user acceptance testing to ensure proficiency with the new application.",
                   image: "/upgradeCloud/Services-Establishing-Readiness.jpg",
                 },
                 {
                   label: "05",
                   expandedLabel: "Step 05",
-                  title: "Upgradation and Execution",
-                  expandedTitle: "Upgradation and Execution",
-                  desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                  title: "Go-Live Readiness Evaluation",
+                  expandedTitle: "Go-Live Readiness Evaluation",
+                  desc: "Thoroughly assessing system readiness for the big launch, guaranteeing minimum hiccups",
                   image: "/upgradeCloud/Services-Upgradation-and-Execution.jpg",
                 },
                 {
                   label: "06",
                   expandedLabel: "Step 06",
-                  title: "Management and Contro",
-                  expandedTitle: "Management and Controon",
-                  desc: "This phase involves assessing readiness, refactoring IT architecture, rehosting and making anticipated changes that deliver desired outcomes.",
+                  title: "Finalization and Go-Live",
+                  expandedTitle: "Finalization and Go-Live",
+                  desc: "Ensuring the execution of every final change, making sure the system is all set as per your anticipation.",
                   image: "/upgradeCloud/Services-Management-and-Control.jpg",
                 },
               ]}
@@ -827,21 +887,18 @@ const page = () => {
         desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
         arr={[
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "25 years",
+            desc: "of Experience",
           },
           {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "500 +",
+            desc: "Customers",
           },
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "300 +",
+            desc: "Successful Deployments check",
           },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
+       
         ]}
       ></Expertise>
 
@@ -852,11 +909,10 @@ const page = () => {
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  DATA Management
+                360 Degree Implementation Practice – What do we do?
                 </h3>
                 <p>
-                  We blend technology capabilities with a human touch to elevate
-                  your data management to new heights.
+                Every successful implementation needs more than technology expertise. Our all-inclusive approach commits to deliver winning implementation services for our customers .
                 </p>
               </div>
             </div>
@@ -881,7 +937,7 @@ const page = () => {
                   <p className="text-[#475467] text-[14px] font-normal mt-2 leading-[22px]">
                     {item.desc}
                   </p>
-                  <Link
+                  {/* <Link
                     href={item.ctaUrl}
                     className="text-[#0745D3]  text-[14px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
                   >
@@ -891,7 +947,7 @@ const page = () => {
                       style={{ marginLeft: "0.5em" }}
                       size={1}
                     />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}
@@ -904,9 +960,9 @@ const page = () => {
         arr={[
           {
             _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
+            ribbon: "Blogs",
+            title: "Mastering Data Migration: Key Strategies for Seamless Implementation",
+            desc: "As organizations transition to new systems or upgrade existing ones, ensuring smooth data migration becomes imperative to maintain continuity, accuracy, and efficiency in operations. In this blog, we'll delve into the critical aspects of data migration and outline key strategies to ensure a seamless implementation process.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -917,27 +973,57 @@ const page = () => {
       {/* WHy Section */}
       <WhySection
         ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        title="Why Godrej Infotech?"
+        desc="With track record of consistently delivering projects within schedule, budget and with high value-added outcomes, we are recognized as the preferred trusted partner for solution implementations, migrations and rollouts worldwide."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Enhanced customer and employee <span style='color: #4C6FFF;'>satisfaction</span>  .",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "<span style='color: #4C6FFF;'>Smooth user adoption </span>and dedicated support service",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Accelerated project timelines for <span style='color: #4C6FFF;'>quicker results</span>.",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "<span style='color: #4C6FFF;'>Minimum business disruption</span> through proven methodology.",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "<span style='color: #4C6FFF;'>Accountability</span> at every phase of the implementation process.",
+            icon: "",
+          },
+          {
+            _id: 6,
+            desc: "<span style='color: #4C6FFF;'>End-to-end proficiency</span> in implementing comprehensive solutions.",
+            icon: "",
+          },
+          {
+            _id: 7,
+            desc: "Committed to punctual and <span style='color: #4C6FFF;'>on-budget implementations</span> .",
+            icon: "",
+          },
+          {
+            _id: 8,
+            desc: "Streamlined full implementation cycles for <span style='color: #4C6FFF;'>efficiency</span>.",
+            icon: "",
+          },
+          {
+            _id: 9,
+            desc: "<span style='color: #4C6FFF;'>Rigorous unit testing</span> for every configuration and customization.",
+            icon: "",
+          },
+          {
+            _id: 10,
+            desc: "<span style='color: #4C6FFF;'>Simplified data management</span> for better decision making",
             icon: "",
           },
         ]}
@@ -946,10 +1032,10 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Are you Ready for Infor-driven growth?"
-        blue="Let's get started!?"
+        title="Start your implementation journey with us for"
+        blue=" seamless experience"
         title2=""
-        desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
+        desc="Need expert guidance? Share your details in the form and let's make it happen!"
       />
 
       {/* Infotech weekly */}

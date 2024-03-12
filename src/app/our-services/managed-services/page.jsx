@@ -160,7 +160,7 @@ const ChoiceSlider = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Cost effectiveness and Business Continuity",
     cta: "Know More",
     link: "/",
     desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
@@ -168,7 +168,7 @@ const UseCases = [
   },
   {
     _id: 2,
-    title: "Employee Access Creation ",
+    title: "Optimized Resources and Proactive Contingency management",
     cta: "Know More",
     link: "/",
     desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
@@ -176,7 +176,7 @@ const UseCases = [
   },
   {
     _id: 3,
-    title: "Account Payable and Receivable Process",
+    title: "Business Process Aligned Service Delivery Model",
     cta: "Know More",
     link: "/",
     desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
@@ -184,7 +184,7 @@ const UseCases = [
   },
   {
     _id: 4,
-    title: "Vendor Onboarding Process",
+    title: "Standardized processes and practices",
     cta: "Know More",
     link: "/",
     desc: "Our ability in constructing, training, and deploying ML models assures an effective implementation process.",
@@ -192,7 +192,7 @@ const UseCases = [
   },
   {
     _id: 5,
-    title: "Customer Onboarding Process",
+    title: "Predictive approach and cohesive process",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -527,7 +527,9 @@ const page = () => {
   return (
     <>
       <EntIntro
+
         title="Elevate your IT Support with our Comprehensive Managed Services for Enhanced Value and Seamless Digital Continuity"
+
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -583,21 +585,16 @@ const page = () => {
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col gap-x-10">
-                  <h4
+                  {/* <h4
                     className={` font-medium w-fit text-[#0745D3] uppercase ribbon`}
                   >
                     Infor CRM
-                  </h4>
+                  </h4> */}
                   <h3 className="text-4xl leading-[42px] font-bold">
                     Overview
                   </h3>
                   <p>
-                    Our commitment is to make your transformation journey as
-                    smooth as possible, guaranteeing that you attain your
-                    ambitious results. That&apos;s why we build a holistic
-                    viewpoint on your implementation and rollout project and
-                    assure that your project is on time, exceeding your
-                    expectations
+                  Our Managed Services are driven by round-the-clock live helpdesk support so that you retrieve your spotlight on essential operations. To cater the diverse needs of businesses, we offer an extensive range of services including both strategic and operational support, instilling IT confidence within your organization. For more than 5 years, we have been offering support with multi-time zone Infor expertise in LN, OS, XM and ION to our customer - a global leader in dredging and maritime operations with 120 + entities involved within their organization structure.
                   </p>
                 </div>
               </div>
@@ -614,10 +611,11 @@ const page = () => {
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                    Challenges Encountered by Businesses
+                    Challenges
                   </h3>
                   <p>
-                    From navigating business process transformations to addressing transactional support and operational inefficiencies, absence of managed services hinders business growth with numerous obstacles.
+                  From navigating business process transformations to addressing transactional support and operational inefficiencies, absence of managed services hinders business growth with numerous obstacles.
+
                   </p>
                 </div>
               </div>
@@ -654,6 +652,7 @@ const page = () => {
         </div>
       </>
 
+
       {/* Blog */}
       <BlogSlider
         arr={[
@@ -662,6 +661,353 @@ const page = () => {
             ribbon: "Blog",
             title: "Managed Services: The Promised Land?",
             desc: "Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+        ]}
+      />
+
+      {/* Construction guy */}
+      <>
+        <div
+          id="ConsultingApproach"
+          className="max-w-screen-xl mx-auto px-[2rem] bg-white"
+        >
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+              How Can We Assist You?
+              </h3>
+              <p>
+              Our team employs proactive monitoring to identify and address potential issues before they impact your operations, ensuring a seamless and uninterrupted roadmap.
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto text-center w-[75%]">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
+          </div>
+        </div>
+      </>     
+
+      {/* Technology cover logo */}
+      <>
+        <div className={` w-full bg-white py-32`}>
+          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
+            <div className="bg-white flex items-start flex-col justify-start">
+              <div className="text-left ml-0 mb-4">
+                <h3 className="text-4xl leading-[42px] font-bold mb-5">
+                Technology Spectrum
+                </h3>
+                <p className="font-medium leading-[22px]  mx-auto">
+                We offer Managed Services across multiple technologies to navigate the complexities of technological landscape and ensure continual efficiency.
+                </p>
+              </div>
+              {/* set 1 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Infor
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              {/* set 2 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Microsoft Dynamics
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              {/* set 3 */}
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                LS Retail
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              {/* set 4 */}
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Oracle
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                AWS
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Azure
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                HxN EAM
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Java
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Dot Net
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                Sharepoint
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
+
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+            </div>      
+          </div>
+        </div>
+      </>
+ {/* Managed services card slider */}
+ <>
+        <div className={` w-full    py-12  `} id="Offerings">
+          <div className={` w-full`}>
+            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {/* left */}
+              <div className="  flex items-start flex-col justify-between  relative">
+                <div className="">
+                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
+                  Our Cornerstones of Managed Services
+                  </h3>
+                </div>
+                <div className="hidden">
+                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
+                    We deliver high-performing services for a comprehensive
+                    suite Microsoft ecosystem, devised to elevate growth and
+                    productivity and build stronger stakeholder connections
+                  </p>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-[#F2F4F7] sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
+            {UseCases.map((item, index) => {
+              return (
+                <div
+                  key={item._id}
+                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
+                >
+                  <div className="p-5 w-fit ">
+                    <div className="mb-4">
+                      {item.icon !== "" ? (
+                        <Image
+                          src={`/icon/${item.icon}.svg`}
+                          width="48"
+                          height="48"
+                          alt={item.icon}
+                        />
+                      ) : (
+                        <Icon path={mdiDomain} size={3} />
+                      )}
+                    </div>
+                    <h4 className="text-[20px] font-bold mb-2 leading-[34px] text-[#101828]">
+                      {item.title}
+                    </h4>
+                  </div>
+                  <div
+                    className={clsx("w-full bg-[#0745D3] p-5", {
+                      hidden: item.link === "/" || item.link === "",
+                    })}
+                  >
+                    <Link
+                      href={item.link}
+                      className={
+                        "text-white flex transition-all hover:opacity-75"
+                      }
+                    >
+                      {item.cta}
+                      <Icon
+                        path={mdiArrowRight}
+                        style={{ marginLeft: "0.5em" }}
+                        size={1}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </>
+
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "ingsights",
+            title: "Migrate your IT Infrastructure to the Cloud",
+            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
             cta: "Know More",
             link: "/",
             imgUrl: "",
@@ -706,188 +1052,8 @@ const page = () => {
         </div>
       </>
 
-      {/* Managed services card slider */}
-      <>
-        <div className={` w-full    py-12  `} id="Offerings">
-          <div className={` w-full`}>
-            <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-              {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
-                <div className="">
-                  <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
-                  </h3>
-                </div>
-                <div className="hidden">
-                  <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
-                    suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
-                  </p>
-                </div>
-              </div>
-              {/* right */}
-              <div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col bg-[#F2F4F7] sm:flex-row gap-y-5 justify-center text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto  p-5">
-            {UseCases.map((item, index) => {
-              return (
-                <div
-                  key={item._id}
-                  className=" mx-2 bg-white sm:w-[320px] w-fit flex flex-col justify-between"
-                >
-                  <div className="p-5 w-fit ">
-                    <div className="mb-4">
-                      {item.icon !== "" ? (
-                        <Image
-                          src={`/icon/${item.icon}.svg`}
-                          width="48"
-                          height="48"
-                          alt={item.icon}
-                        />
-                      ) : (
-                        <Icon path={mdiDomain} size={3} />
-                      )}
-                    </div>
-                    <h4 className="text-[26px] font-bold mb-2 leading-[34px] text-[#101828]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div
-                    className={clsx("w-full bg-[#0745D3] p-5", {
-                      hidden: item.link === "/" || item.link === "",
-                    })}
-                  >
-                    <Link
-                      href={item.link}
-                      className={
-                        "text-white flex transition-all hover:opacity-75"
-                      }
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </>
-
-      {/* Technology cover logo */}
-      <>
-        <div className={` w-full bg-white py-32`}>
-          <div className=" max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] text-center flex justify-center">
-            <div className="bg-white flex items-start flex-col justify-start">
-              <div className="text-left ml-0 mb-4">
-                <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Technology Coverage
-                </h3>
-                <p className="font-medium leading-[22px]  mx-auto">
-                  Our expansive worldwide network of market innovators enables
-                  us to embrace breakthrough technologies and confront business
-                  roadblocks effectively.
-                </p>
-              </div>
-              {/* set 1 */}
-              <div className="my-4 border-b-2">
-                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                  Infor
-                </h5>
-                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
-                  <div>
-                    <Image src={infor} alt="infor" />
-                  </div>
-                  <div>
-                    <Image src={OracleDB} alt="oracle" />
-                  </div>
-
-                  <div>
-                    <Image src={Dynamic} alt="dynamic365" />
-                  </div>
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                </div>
-              </div>
-              {/* set 2 */}
-              <div className="my-4 border-b-2">
-                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                  Microsoft
-                </h5>
-                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
-                  <div>
-                    <Image src={infor} alt="infor" />
-                  </div>
-                  <div>
-                    <Image src={OracleDB} alt="oracle" />
-                  </div>
-
-                  <div>
-                    <Image src={Dynamic} alt="dynamic365" />
-                  </div>
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                </div>
-              </div>
-              {/* set 3 */}
-              <div className="my-4 border-b-2">
-                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                  Digital
-                </h5>
-                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
-                  <div>
-                    <Image src={infor} alt="infor" />
-                  </div>
-                  <div>
-                    <Image src={OracleDB} alt="oracle" />
-                  </div>
-
-                  <div>
-                    <Image src={Dynamic} alt="dynamic365" />
-                  </div>
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                </div>
-              </div>
-
-              {/* set 4 */}
-
-              <div className="my-4 border-b-2">
-                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                  Infrastructure
-                </h5>
-                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
-                  <div>
-                    <Image src={infor} alt="infor" />
-                  </div>
-                  <div>
-                    <Image src={OracleDB} alt="oracle" />
-                  </div>
-
-                  <div>
-                    <Image src={Dynamic} alt="dynamic365" />
-                  </div>
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-
+     
+      
       {/* Left right bg cart column card */}
       <>
         <div className={` w-full bg-[#FFF] py-10`}>
