@@ -191,7 +191,7 @@ const UseCases = [
     title: "Data Migration",
     cta: "Know More",
     link: "/",
-    desc:'With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns.',
+    desc: "With the responsibility of extracting data from source systems, cleansing it, loading the combined data into the target system, and executing Master Data Governance, we facilitate a smooth transition while reducing testing requirement, downtime and cost overruns.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -199,7 +199,7 @@ const UseCases = [
     title: "Reimplementation",
     cta: "Know More",
     link: "/",
-    desc:'Taking into account the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.',
+    desc: "Taking into account the current project scenario, organizational bottlenecks, and perspectives from relevant stakeholders, we eliminate erroneous transactions, re-architect and progress through the project in a simple and structured manner. This ensures that our clients can reclaim the original investments made in ERP systems.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
 ];
@@ -575,8 +575,8 @@ const page = () => {
         />
       </>
 
-       {/* Overview */}
-       <>
+      {/* Overview */}
+      <>
         <div className={` w-full bg-white py-10`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -586,7 +586,19 @@ const page = () => {
                     Overview
                   </h3>
                   <p>
-                  As a trustworthy transformation partner, your ambitious goals become our shared mission. Embracing a holistic strategy for your implementation and rollout project and assuring timely delivery, we exceed your expectations and nurture a genuine partnership that drives us toward goal realization together. With over 25 years of experience in implementing End to End IT solutions, we have the expertise to deliver avant-garde solutions that meets the needs of our global clients'. Our services include fast and secure rollouts tailored to diverse locations, divisions and subsidiaries. Each project is meticulously managed by seasoned subject matter experts and technology specialists, ensuring precise execution.
+                    As a trustworthy transformation partner, your ambitious
+                    goals become our shared mission. Embracing a holistic
+                    strategy for your implementation and rollout project and
+                    assuring timely delivery, we exceed your expectations and
+                    nurture a genuine partnership that drives us toward goal
+                    realization together. With over 25 years of experience in
+                    implementing End to End IT solutions, we have the expertise
+                    to deliver avant-garde solutions that meets the needs of our
+                    global clients&apos;. Our services include fast and secure
+                    rollouts tailored to diverse locations, divisions and
+                    subsidiaries. Each project is meticulously managed by
+                    seasoned subject matter experts and technology specialists,
+                    ensuring precise execution.
                   </p>
                 </div>
               </div>
@@ -594,7 +606,6 @@ const page = () => {
           </>
         </div>
       </>
-
 
       {/* two people expetise / Our Services */}
       <>
@@ -605,12 +616,14 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                  Our Services
+                    Our Services
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                  We offer implementation services focused on delivering specific outcomes from inception to project completion with our commitment to quality.
+                    We offer implementation services focused on delivering
+                    specific outcomes from inception to project completion with
+                    our commitment to quality.
                   </p>
                 </div>
               </div>
@@ -711,7 +724,7 @@ const page = () => {
           <div className="max-w-screen-lg mx-auto px-[2rem] py-[5em]  ">
             <div className="mt-[3em] mb-[12em]">
               <h3 className=" text-7xl font-bold leading-[90px]">
-              Our Implementation Service Virtues
+                Our Implementation Service Virtues
               </h3>
               {/* <p className="text-base font-regular">
                 Every day, we endeavour to create a meaningful impact, driven by
@@ -730,27 +743,36 @@ const page = () => {
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Result Focused Services</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">
+                Result Focused Services
+              </h4>
               <p className="text-base font-medium">
-              We measure our success, based on the tangible results we deliver for our customers.
+                We measure our success, based on the tangible results we deliver
+                for our customers.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Agile Approach</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">
+                Agile Approach
+              </h4>
               <p className="text-base font-medium">
-              Repository of ready solutions enable us to proactively respond to customers evolving needs.
+                Repository of ready solutions enable us to proactively respond
+                to customers evolving needs.
               </p>
             </div>
             <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Quality Practice</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">
+                Quality Practice
+              </h4>
               <p className="text-base font-medium">
-              We are dedicated to maintaining the highest quality standard which is non-negotiable and is embedded in our work culture.
+                We are dedicated to maintaining the highest quality standard
+                which is non-negotiable and is embedded in our work culture.
               </p>
             </div>
           </div>
@@ -778,8 +800,7 @@ const page = () => {
           {
             id: 2,
             clientName: "Head Procurement & Project Manager",
-            clientDesignation:
-              "Leading Global Supplier of Process Equipments",
+            clientDesignation: "Leading Global Supplier of Process Equipments",
             thumbnail: "1",
             description:
               "We appreciate Godrej Infotech team for their exceptional work during Infor LN ERP implementation. Project was executed smoothly and efficiently. Your understanding of our needs and your positive contributions were highly valued. We applause your leadership, dedication and the collaborative effort of your team. Gratitude to all the project members.",
@@ -807,13 +828,17 @@ const page = () => {
             <div className="text-left max-w-screen-xl md:max-w-screen-xl  mx-auto p-5 px-[2rem] ">
               <div className="bg-[#f2f4f7] text-left">
                 <h4 className={`font-medium text-[#0745D3] uppercase ribbon`}>
-                Key Implementation Phases
+                  Key Implementation Phases
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
                   <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                  Our Implementation approach is categorized into 6 phases, each with goal.
+                    Our Implementation approach is categorized into 6 phases,
+                    each with goal.
                   </h3>
-                  <p className="font-medium leading-[22px] md:w-[90%] my-4 ">Constant optimization is important during every stage, as we fine-tune the solution to maximize its value.</p>
+                  <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
+                    Constant optimization is important during every stage, as we
+                    fine-tune the solution to maximize its value.
+                  </p>
                 </div>
               </div>
             </div>
@@ -898,7 +923,6 @@ const page = () => {
             title: "300 +",
             desc: "Successful Deployments check",
           },
-       
         ]}
       ></Expertise>
 
@@ -909,10 +933,12 @@ const page = () => {
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                360 Degree Implementation Practice – What do we do?
+                  360 Degree Implementation Practice – What do we do?
                 </h3>
                 <p>
-                Every successful implementation needs more than technology expertise. Our all-inclusive approach commits to deliver winning implementation services for our customers .
+                  Every successful implementation needs more than technology
+                  expertise. Our all-inclusive approach commits to deliver
+                  winning implementation services for our customers .
                 </p>
               </div>
             </div>
@@ -961,7 +987,8 @@ const page = () => {
           {
             _id: 1,
             ribbon: "Blogs",
-            title: "Mastering Data Migration: Key Strategies for Seamless Implementation",
+            title:
+              "Mastering Data Migration: Key Strategies for Seamless Implementation",
             desc: "As organizations transition to new systems or upgrade existing ones, ensuring smooth data migration becomes imperative to maintain continuity, accuracy, and efficiency in operations. In this blog, we'll delve into the critical aspects of data migration and outline key strategies to ensure a seamless implementation process.",
             cta: "Know More",
             link: "/",
