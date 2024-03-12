@@ -70,6 +70,10 @@ export default function RootLayout({ children, route }) {
             <SpeedInsights /> */}
           </>
         )}
+        <script
+          src="//rum-static.pingdom.net/pa-65f01a5e68cac40012000883.js"
+          async
+        ></script>
       </body>
     </html>
   );
