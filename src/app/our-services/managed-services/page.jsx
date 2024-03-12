@@ -527,9 +527,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-
         title="Elevate your IT Support with our Comprehensive Managed Services for Enhanced Value and Seamless Digital Continuity"
-
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -577,10 +575,9 @@ const page = () => {
       {/* Abstract  */}
       <Abstract abstractdesc="Our Managed Services are driven by round-the-clock live helpdesk support so that you retrieve your spotlight on essential operations. To cater the diverse needs of businesses, we offer an extensive range of services including both strategic and operational support, instilling IT confidence within your organization. For more than 5 years, we have been offering support with multi-time zone Infor expertise in LN, OS, XM and ION to our customer - a global leader in dredging and maritime operations with 120 + entities involved within  their organization structure."></Abstract>
 
-
       {/* Overview */}
-      {/* <>
-        <div className={` w-full bg-white py-10`}>
+      <>
+        <div className={`hidden w-full bg-white py-10`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
@@ -594,14 +591,23 @@ const page = () => {
                     Overview
                   </h3>
                   <p>
-                  Our Managed Services are driven by round-the-clock live helpdesk support so that you retrieve your spotlight on essential operations. To cater the diverse needs of businesses, we offer an extensive range of services including both strategic and operational support, instilling IT confidence within your organization. For more than 5 years, we have been offering support with multi-time zone Infor expertise in LN, OS, XM and ION to our customer - a global leader in dredging and maritime operations with 120 + entities involved within their organization structure.
+                    Our Managed Services are driven by round-the-clock live
+                    helpdesk support so that you retrieve your spotlight on
+                    essential operations. To cater the diverse needs of
+                    businesses, we offer an extensive range of services
+                    including both strategic and operational support, instilling
+                    IT confidence within your organization. For more than 5
+                    years, we have been offering support with multi-time zone
+                    Infor expertise in LN, OS, XM and ION to our customer - a
+                    global leader in dredging and maritime operations with 120 +
+                    entities involved within their organization structure.
                   </p>
                 </div>
               </div>
             </div>
           </>
         </div>
-      </> */}
+      </>
 
       {/* Challengers Para */}
       <>
@@ -614,14 +620,16 @@ const page = () => {
                     Challenges
                   </h3>
                   <p>
-                  From navigating business process transformations to addressing transactional support and operational inefficiencies, absence of managed services hinders business growth with numerous obstacles.
-
+                    From navigating business process transformations to
+                    addressing transactional support and operational
+                    inefficiencies, absence of managed services hinders business
+                    growth with numerous obstacles.
                   </p>
                 </div>
               </div>
             </div>
           </>
-          <div className="text-left max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-10">
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="mx-auto">
                 <Image src={puzzle} alt="puzzle" />
@@ -652,7 +660,6 @@ const page = () => {
         </div>
       </>
 
-
       {/* Blog */}
       <BlogSlider
         arr={[
@@ -677,10 +684,12 @@ const page = () => {
           <div className=" mt-[5em] mb-[2em]">
             <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
               <h3 className="text-4xl leading-[42px] font-bold">
-              How Can We Assist You?
+                How Can We Assist You?
               </h3>
               <p>
-              Our team employs proactive monitoring to identify and address potential issues before they impact your operations, ensuring a seamless and uninterrupted roadmap.
+                Our team employs proactive monitoring to identify and address
+                potential issues before they impact your operations, ensuring a
+                seamless and uninterrupted roadmap.
               </p>
             </div>
           </div>
@@ -688,7 +697,7 @@ const page = () => {
             <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
           </div>
         </div>
-      </>     
+      </>
 
       {/* Technology cover logo */}
       <>
@@ -697,10 +706,12 @@ const page = () => {
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="text-left ml-0 mb-4">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                Technology Spectrum
+                  Technology Spectrum
                 </h3>
                 <p className="font-medium leading-[22px]  mx-auto">
-                We offer Managed Services across multiple technologies to navigate the complexities of technological landscape and ensure continual efficiency.
+                  We offer Managed Services across multiple technologies to
+                  navigate the complexities of technological landscape and
+                  ensure continual efficiency.
                 </p>
               </div>
               {/* set 1 */}
@@ -727,7 +738,7 @@ const page = () => {
               {/* set 2 */}
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Microsoft Dynamics
+                  Microsoft Dynamics
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -748,7 +759,7 @@ const page = () => {
               {/* set 3 */}
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                LS Retail
+                  LS Retail
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -771,28 +782,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Oracle
-                </h5>
-                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
-                  <div>
-                    <Image src={infor} alt="infor" />
-                  </div>
-                  <div>
-                    <Image src={OracleDB} alt="oracle" />
-                  </div>
-
-                  <div>
-                    <Image src={Dynamic} alt="dynamic365" />
-                  </div>
-                  <div>
-                    <Image src={azure} alt="azure" />
-                  </div>
-                </div>
-              </div>
-              
-              <div className="my-4 border-b-2">
-                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                AWS
+                  Oracle
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -813,7 +803,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Azure
+                  AWS
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -834,7 +824,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                HxN EAM
+                  Azure
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -855,7 +845,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Java
+                  HxN EAM
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -876,7 +866,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Dot Net
+                  Java
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -897,7 +887,7 @@ const page = () => {
 
               <div className="my-4 border-b-2">
                 <h5 className=" font-bold text-[22px] leading-[28px] text-left">
-                Sharepoint
+                  Dot Net
                 </h5>
                 <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
                   <div>
@@ -915,16 +905,33 @@ const page = () => {
                   </div>
                 </div>
               </div>
-              
 
+              <div className="my-4 border-b-2">
+                <h5 className=" font-bold text-[22px] leading-[28px] text-left">
+                  Sharepoint
+                </h5>
+                <div className="flex flex-col sm:flex-row mb-5 justify-center items-center mx-auto gap-x-10 sm:gap-x-16">
+                  <div>
+                    <Image src={infor} alt="infor" />
+                  </div>
+                  <div>
+                    <Image src={OracleDB} alt="oracle" />
+                  </div>
 
-
-            </div>      
+                  <div>
+                    <Image src={Dynamic} alt="dynamic365" />
+                  </div>
+                  <div>
+                    <Image src={azure} alt="azure" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </>
- {/* Managed services card slider */}
- <>
+      {/* Managed services card slider */}
+      <>
         <div className={` w-full    py-12  `} id="Offerings">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -932,7 +939,7 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] text-[#101828]  leading-[54px] mb-3 font-bold ">
-                  Our Cornerstones of Managed Services
+                    Our Cornerstones of Managed Services
                   </h3>
                 </div>
                 <div className="hidden">
@@ -999,7 +1006,6 @@ const page = () => {
         </div>
       </>
 
-
       {/* Blog */}
       <BlogSlider
         arr={[
@@ -1052,8 +1058,6 @@ const page = () => {
         </div>
       </>
 
-     
-      
       {/* Left right bg cart column card */}
       <>
         <div className={` w-full bg-[#FFF] py-10`}>
@@ -1205,7 +1209,6 @@ const page = () => {
             cta: "Know More",
             link: "https://godrejinfotech.com/assets/pdf/case-studies/EuropeLeadingMarineService_InforLN.pdf",
           },
-          
         ]}
       />
 
@@ -1228,7 +1231,6 @@ const page = () => {
             title: "15000 +",
             desc: "Man Years of Expertise",
           },
-          
         ]}
       ></Expertise>
 
