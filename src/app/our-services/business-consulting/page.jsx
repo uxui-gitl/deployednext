@@ -526,7 +526,7 @@ const ConsiderRPA = [
 const businessConsultingData = [
   {
     _id: 1,
-    title: "Business Consulting Offerings",
+    title: "Consulting Offerings",
     desc: "",
     cta: "",
     ctaUrl: "/",
@@ -560,7 +560,7 @@ const page = () => {
     <>
       <EntIntro
         title=" Building Strategic Opportunities and Business Success Stories with Our Consulting Services"
-        desc="Elevate your Business Results "
+        desc=""
         cta="Let's Connect"
         width="80%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -700,7 +700,7 @@ const page = () => {
                   Business Consulting Services
                 </h4>
               </div>
-              <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
+              {/* <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
                 <h3 className="text-4xl leading-[42px] font-bold">
                   Business Consulting
                   <br />
@@ -712,7 +712,7 @@ const page = () => {
                   enterprises to embrace the digital future that enhances
                   decision making across the organisation.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* 3 Cards */}
@@ -722,9 +722,9 @@ const page = () => {
                 {
                   _id: 1,
                   title:
-                    "Low Code, No Code Configurable Portals on Azure IoT or AWS IoT",
-                  desc: "We bring a wealth of industry knowledge and expertise to the table and follow the",
-                  cta: "Explore Solutions",
+                    "Business Consulting Services",
+                  desc: "With deep digital experience and broad global reach we help enterprises to embrace the digital future that enhances decision making across the organisation.",
+                  cta: "",
                   isNested: true,
                   ctaLink: "/",
                   tabData: [
@@ -775,7 +775,7 @@ const page = () => {
                   <div className="flex flex-col justify-center h-full">
                     <div className="">
                       {item.title ? (
-                        <h3 className="text-[23px]  leading-[28px] mb-3 font-bold ">
+                        <h3 className="text-4xl  leading-[42px] mb-3 font-bold ">
                           {" "}
                           {item.title}
                         </h3>
@@ -789,7 +789,7 @@ const page = () => {
                         </p>
                       ) : null}
                     </div>
-                    <div className="max-w-max flex justify-start items-center mt-5">
+                    {/* <div className="max-w-max flex justify-start items-center mt-5">
                       <button
                         onClick={() => openPopup(item.title, item.tabData)}
                         className="min-w-max text-[12px] leading-[15px] flex  py-2 items-center px-10  font-medium text-base bg-[#101828] text-[#f5f5f5] rounded-sm transition-all mb-3 hover:opacity-95 hover:scale-105"
@@ -801,7 +801,7 @@ const page = () => {
                           size={1}
                         />
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
@@ -843,7 +843,7 @@ const page = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link
+                    {/* <Link
                       href={item.ctaUrl}
                       className={`${
                         index == 1 ? "hidden" : ""
@@ -855,7 +855,7 @@ const page = () => {
                         style={{ marginLeft: "0.5em" }}
                         size={1}
                       />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               ))}
