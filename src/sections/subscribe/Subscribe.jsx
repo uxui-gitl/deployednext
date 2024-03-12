@@ -3,6 +3,7 @@ import styles from "./subscribe.module.css";
 
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";
+import Balancer from "react-wrap-balancer";
 const Subscribe = ({ title, desc, cta, ctaArrow, link, form }) => {
   return (
     <div className={`${styles["container"]} bg-white`}>
@@ -10,8 +11,10 @@ const Subscribe = ({ title, desc, cta, ctaArrow, link, form }) => {
         className={` max-w-screen-lg flex justify-center flex-col text-center mx-auto `}
       >
         <div className="mx-4 mt-[5em] mb-[2em] flex justify-center flex-col sm:flex-col">
-          <h3 className="mb-2">
-            {(title && title) || "Subscribe NOW for Updates!"}
+          <h3 className="mb-2 sm:w-2/3 mx-auto sm:mb-5">
+            <Balancer>
+              {(title && title) || "Subscribe NOW for Updates!"}
+            </Balancer>
           </h3>
           <p className="text-base w-1/2 text-center mx-auto leading-[22px] font-medium mb-4">
             {desc && desc}

@@ -15,15 +15,6 @@ const Middleware = (request) => {
     return NextResponse.next();
   }
   // // Skip middleware for API routes and static files
-  // if (
-  //   url.pathname.startsWith("/api/") ||
-  //   url.pathname.startsWith("/_next/static/") ||
-  //   url.pathname.startsWith("/_next/image?") ||
-  //   url.pathname.startsWith("/_next/image") ||
-  //   url.pathname.startsWith("/_next/assest")
-  // ) {
-  //   return NextResponse.next();
-  // }
 
   if (url.pathname !== pathname) {
     url.pathname = pathname;
