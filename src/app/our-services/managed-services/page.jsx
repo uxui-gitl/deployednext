@@ -527,7 +527,9 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title=" Elevate your IT Support with our Comprehensive Managed Services for Enhanced Value and Seamless Digital Continuity"
+
+        title="Elevate your IT Support with our Comprehensive Managed Services for Enhanced Value and Seamless Digital Continuity"
+
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -572,8 +574,12 @@ const page = () => {
         />
       </>
 
+      {/* Abstract  */}
+      <Abstract abstractdesc="Our Managed Services are driven by round-the-clock live helpdesk support so that you retrieve your spotlight on essential operations. To cater the diverse needs of businesses, we offer an extensive range of services including both strategic and operational support, instilling IT confidence within your organization. For more than 5 years, we have been offering support with multi-time zone Infor expertise in LN, OS, XM and ION to our customer - a global leader in dredging and maritime operations with 120 + entities involved within  their organization structure."></Abstract>
+
+
       {/* Overview */}
-      <>
+      {/* <>
         <div className={` w-full bg-white py-10`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -595,7 +601,7 @@ const page = () => {
             </div>
           </>
         </div>
-      </>
+      </> */}
 
       {/* Challengers Para */}
       <>
@@ -609,6 +615,7 @@ const page = () => {
                   </h3>
                   <p>
                   From navigating business process transformations to addressing transactional support and operational inefficiencies, absence of managed services hinders business growth with numerous obstacles.
+
                   </p>
                 </div>
               </div>
@@ -645,7 +652,23 @@ const page = () => {
         </div>
       </>
 
-      {/* Infographics */}
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "Blog",
+            title: "Managed Services: The Promised Land?",
+            desc: "Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.",
+            cta: "Know More",
+            link: "/",
+            imgUrl: "",
+          },
+        ]}
+      />
+
+      {/* Construction guy */}
       <>
         <div
           id="ConsultingApproach"
@@ -1166,7 +1189,7 @@ const page = () => {
 
       {/* Case Study */}
       <CaseStudy
-        ribbon="CASE STUDY "
+        ribbon="CASE STUDY"
         title="Elevating Customer Experience with Cloud  "
         desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
         isHomepage={false}
@@ -1174,36 +1197,15 @@ const page = () => {
           {
             id: 1,
             title:
-              "99% uptime in saving man-days performance and 22% of capex saving after migrating on-premises ERP servers to the Azure cloud environment",
+              "Europe's Leading Marine Services Provider Selects LVDGI for Infor LN Managed & Rollout Services from Offshore",
             thumbnail: "1",
 
-            description: "Non-government Association of Indian Industries ",
+            description: "Managed Services Projects Highlights",
             tags: [""],
             cta: "Know More",
-            link: "/",
+            link: "https://godrejinfotech.com/assets/pdf/case-studies/EuropeLeadingMarineService_InforLN.pdf",
           },
-          {
-            id: 2,
-            title:
-              "Cut down environment development cost by 60% and business performance boost of 5 sister companies with On-Cloud D365 F&O implementation ",
-            thumbnail: "2",
-
-            description: " Middle East-based Electrical Products Manufacturer ",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
-          {
-            id: 3,
-            title:
-              "Decreasing downtime and optimising system cost along with 100% data transparency through Single Cloud System",
-            thumbnail: "3",
-
-            description: "Coffee Brand Distributor in Egypt and Middle East",
-            tags: [""],
-            cta: "Know More",
-            link: "/",
-          },
+          
         ]}
       />
 
@@ -1212,51 +1214,63 @@ const page = () => {
         ribbon="Acing your Business Objectives"
         ribbonTxtWhite="true"
         title="The Hub of Expertise"
-        desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
+        desc="We're here to build an edge and bring technology brilliance with the finest in the industry."
         arr={[
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "25 +",
+            desc: "Years of Excellence",
           },
           {
-            title: "50 +",
-            desc: "Cloud Deployments",
+            title: "500 +",
+            desc: "Global Reach with 500+ Satisfied Customers",
           },
           {
-            title: "15 +",
-            desc: "Cloud Certified Professionals",
+            title: "15000 +",
+            desc: "Man Years of Expertise",
           },
-          {
-            title: "50 +",
-            desc: "Cloud Deployments",
-          },
+          
         ]}
       ></Expertise>
 
       {/* WHy Section */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
-        title="Why Choose GITL for AI and ML?"
-        desc="It is our Hexagon EAM expertise , experience and commitment to excellence that sets us apart in a competitive landscape."
+        ribbon="The Distinctive Edge"
+        title="Why Godrej Infotech"
+        desc="We focus on managing all aspects of infrastructure and business applications, minimizing the need for in-house expertise and ensuring security and optimal system performance."
         arr={[
           {
             _id: 1,
-            desc: "<span style='color: #4C6FFF;'> Deep understanding of your specific business domain </span> is crucial for creating AI and ML solutions that truly meet your needs",
+            desc: "Trusted legacy of 25 years with experience of supporting 40+ Godrej & Boyce applications",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'> Agile approach  </span> that keeps projects on cutting edge .",
+            desc: "Prioritize incident resolution beyond SLAs and conduct thorough problem analysis using data and facts",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Fully signed Non-Disclosure Agreement (NDA) to <span style='color: #4C6FFF;'> protect your sensitive information.</span>",
+            desc: "Ensure your IT adapts, scales and evolves with business dynamics",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'> Exceed customer expectations</span> and deliver AI and ML solutions in most effective way.",
+            desc: "Global and Ticket-based support with weekly reviews",
+            icon: "",
+          },
+          {
+            _id: 5,
+            desc: "Resilient incident management and timely IT support",
+            icon: "",
+          },
+          {
+            _id: 6,
+            desc: "Reduce direct employment while maintaining effective operations",
+            icon: "",
+          },
+          {
+            _id: 7,
+            desc: "Access to specialized IT expertise and proactive solutions",
             icon: "",
           },
         ]}

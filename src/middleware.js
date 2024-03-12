@@ -1,14 +1,36 @@
-// makes all url smallcase
-
 import { NextResponse } from "next/server";
 
-const Middleware = (req) => {
-  if (req.nextUrl.pathname === req.nextUrl.pathname.toLowerCase())
-    return NextResponse.next();
+const Middleware = (request) => {
+  console.log("Middleware executed. Original URL:", request.nextUrl.pathname);
 
-  return NextResponse.redirect(
-    `${req.nextUrl.origin + req.nextUrl.pathname.toLowerCase()}`
-  );
+  const url = request.nextUrl.clone();
+  const pathname = url.pathname.toLowerCase();
+
+  // Skip rewrite for image optimization routes
+  if (
+    url.pathname.startsWith("/api") || //  exclude all API routes
+    url.pathname.startsWith("/static") || // exclude static files
+    url.pathname.includes(".") // exclude all files in the public folder
+  ) {
+    return NextResponse.next();
+  }
+  // // Skip middleware for API routes and static files
+  // if (
+  //   url.pathname.startsWith("/api/") ||
+  //   url.pathname.startsWith("/_next/static/") ||
+  //   url.pathname.startsWith("/_next/image?") ||
+  //   url.pathname.startsWith("/_next/image") ||
+  //   url.pathname.startsWith("/_next/assest")
+  // ) {
+  //   return NextResponse.next();
+  // }
+
+  if (url.pathname !== pathname) {
+    url.pathname = pathname;
+    return NextResponse.redirect(url);
+  }
+
+  return NextResponse.next();
 };
 
 export default Middleware;
