@@ -38,7 +38,8 @@ const Expertise = () => {
                       />
                     </h4>
                     <p className="">
-                      <span className="text-[#b2c8f8]">Years</span> of Excellence
+                      <span className="text-[#b2c8f8]">Years</span> of
+                      Excellence
                     </p>
                   </div>
                   <div className="  mb-5 md:mb-0">
@@ -52,7 +53,9 @@ const Expertise = () => {
                     </h4>
                     <p className="">
                       Global Reach with{" "}
-                      <span className="text-[#b2c8f8]">Satisfied Customers</span>
+                      <span className="text-[#b2c8f8]">
+                        Satisfied Customers
+                      </span>
                     </p>
                   </div>
                   <div className="mb-5 md:mb-0">
@@ -65,7 +68,8 @@ const Expertise = () => {
                       />
                     </h4>
                     <p className="pr-2">
-                      <span className="text-[#b2c8f8]">Man</span> Years of Expertise
+                      <span className="text-[#b2c8f8]">Man</span> Years of
+                      Expertise
                     </p>
                   </div>
                 </div>
@@ -84,7 +88,7 @@ const Expertise = () => {
 export function Cobe() {
   const canvasRef = useRef();
   useEffect(() => {
-    let phi = 0;
+    // let phi = 0;
     let width = 0;
     const onResize = () =>
       canvasRef.current && (width = canvasRef.current.offsetWidth);
@@ -105,7 +109,7 @@ export function Cobe() {
       markerColor: [251 / 255, 200 / 255, 21 / 255],
       glowColor: [1, 1, 2],
       markers: [
-        { location: [37.78, -122.412], size: 0.1 },
+        // { location: [37.78, -122.412], size: 0.1 },
         { location: [52.52, 13.405], size: 0.1 },
         { location: [35.676, 139.65], size: 0.1 },
         { location: [-34.6, -58.38], size: 0.1 },
@@ -114,8 +118,8 @@ export function Cobe() {
       scale: 3,
       offset: [0, width * 2 * 0.4 * 0.6],
       onRender: (state) => {
-        state.phi = phi;
-        phi += 0.003;
+        // state.phi = phi;
+        // phi += 0.003;
         state.width = width * 2;
         state.height = width * 2 * 0.4;
       },

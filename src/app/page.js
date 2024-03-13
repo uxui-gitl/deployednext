@@ -61,6 +61,7 @@ export default function Home() {
         <ClientLogos />
         <ACT />
         <Robot />
+        {/* act cards */}
         <>
           <div
             id="actCards"
