@@ -87,6 +87,17 @@ const Expertise = () => {
 
 export function Cobe() {
   const canvasRef = useRef();
+  const pointerInteracting = useRef(null);
+  const pointerInteractionMovement = useRef(0);
+  const [{ r }, api] = useSpring(() => ({
+    r: 0,
+    config: {
+      mass: 1,
+      tension: 280,
+      friction: 40,
+      precision: 0.001,
+    },
+  }));
   useEffect(() => {
     // let phi = 0;
     let width = 0;
@@ -120,12 +131,15 @@ export function Cobe() {
       onRender: (state) => {
         // state.phi = phi;
         // phi += 0.003;
+
+        state.phi = r.get();
         state.width = width * 2;
         state.height = width * 2 * 0.4;
       },
     });
     setTimeout(() => (canvasRef.current.style.opacity = "1"));
     return () => globe.destroy();
+    window.removeEventListener("resize", onResize);
   }, []);
   return (
     <div
@@ -137,6 +151,37 @@ export function Cobe() {
       }}
     >
       <canvas
+        onPointerDown={(e) => {
+          pointerInteracting.current =
+            e.clientX - pointerInteractionMovement.current;
+          canvasRef.current.style.cursor = "grabbing";
+        }}
+        onPointerUp={() => {
+          pointerInteracting.current = null;
+          canvasRef.current.style.cursor = "grab";
+        }}
+        onPointerOut={() => {
+          pointerInteracting.current = null;
+          canvasRef.current.style.cursor = "grab";
+        }}
+        onMouseMove={(e) => {
+          if (pointerInteracting.current !== null) {
+            const delta = e.clientX - pointerInteracting.current;
+            pointerInteractionMovement.current = delta;
+            api.start({
+              r: delta / 200,
+            });
+          }
+        }}
+        onTouchMove={(e) => {
+          if (pointerInteracting.current !== null && e.touches[0]) {
+            const delta = e.touches[0].clientX - pointerInteracting.current;
+            pointerInteractionMovement.current = delta;
+            api.start({
+              r: delta / 100,
+            });
+          }
+        }}
         ref={canvasRef}
         style={{
           width: "100%",

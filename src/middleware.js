@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const Middleware = (request) => {
-  console.log("Middleware executed. Original URL:", request.nextUrl.pathname);
+  // console.log("Middleware executed. Original URL:", request.nextUrl.pathname);
 
   const url = request.nextUrl.clone();
   const pathname = url.pathname.toLowerCase();
