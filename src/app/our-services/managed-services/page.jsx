@@ -297,27 +297,23 @@ const lists = [
 const supplylists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "Improved end user satisfaction and experience with responsive IT environment and minimum interruptions.",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Optimized business time and cost, helps in gaining precious time to focus on strategic actions.",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Swift resolutions of IT challenges, reducing response time.",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Impeccable performance, reliability & flexibility",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
-  },
-  {
-    id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "‘Cater to the needs’ philosophy for providing best-fit solutions based on organization size.",
   },
 ];
 
@@ -660,22 +656,7 @@ const page = () => {
         </div>
       </>
 
-      {/* Blog */}
-      <BlogSlider
-        arr={[
-          {
-            _id: 1,
-            ribbon: "Blog",
-            title: "Managed Services: The Promised Land?",
-            desc: "Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
-        ]}
-      />
-
-      {/* Construction guy */}
+      {/* Infographics*/}
       <>
         <div
           id="ConsultingApproach"
@@ -1006,21 +987,6 @@ const page = () => {
         </div>
       </>
 
-      {/* Blog */}
-      <BlogSlider
-        arr={[
-          {
-            _id: 1,
-            ribbon: "ingsights",
-            title: "Migrate your IT Infrastructure to the Cloud",
-            desc: "In the current situation of cashflow challenges and low budgets to invest in IT CAPEX, companies can move to a better IT Infrastructure, which is OPEX based, scalable, secure, cost effective and above all accessible anytime from anywhere on any device. Whether you want to entirely migrate to the cloud or want to have a hybrid cloud infrastructure, Microsoft Azure is the best cloud computing service you can decide to choose.",
-            cta: "Know More",
-            link: "/",
-            imgUrl: "",
-          },
-        ]}
-      />
-
       {/* Construction guy */}
       <>
         <div
@@ -1032,7 +998,7 @@ const page = () => {
             <div className="text-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor Intelligent Supply System
+                  Why Managed Services/ Benefits of Managed Services
                 </h3>
                 <ul>
                   {supplylists.map((list) => (
@@ -1058,181 +1024,24 @@ const page = () => {
         </div>
       </>
 
-      {/* Left right bg cart column card */}
+      {/* Infographics*/}
       <>
-        <div className={` w-full bg-[#FFF] py-10`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {/* left */}
-            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
-              <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor WMS Industry Solutions
-                </h3>
-              </div>
-            </div>
-            {/* right */}
-            <div>
-              <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We endeavor to build actual business impact of Robotic Process
-                  Automation (RPA) reforming industries, improving output and
-                  leading digital transformation
-                </p>
-              </div>
+        <div
+          id="ConsultingApproach"
+          className="max-w-screen-xl mx-auto px-[2rem] bg-white"
+        >
+          <div className=" mt-[5em] mb-[2em]">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 text-center">
+              <h3 className="text-4xl leading-[42px] font-bold">
+                How do We Make it Happen?
+              </h3>
             </div>
           </div>
-        </div>
-        <div
-          className={`w-full pt-48 pb-12 relative bg-cover`}
-          style={{ backgroundImage: `url('/bgEcomScreen.png')` }}
-        >
-          {/* Overlay for background image */}
-          <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="max-w-screen-xl md:max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-y-10 justify-center">
-            {[
-              {
-                _id: 1,
-                title: "Retail",
-                list: [
-                  {
-                    _id: 1,
-                    title: "Digital stores & connected associates",
-                    url: "/",
-                  },
-                  {
-                    _id: 2,
-                    title: "Point-of-Sale (POS) modernization",
-                    url: "/",
-                  },
-                  {
-                    _id: 3,
-                    title: "Client Eling, Assisted sales",
-                    url: "/",
-                  },
-                  {
-                    _id: 4,
-                    title:
-                      "Customer experience (CX) transformation & measurement",
-                    url: "/",
-                  },
-                ],
-                cta: "Let's Connect",
-                ctaUrl: "#contact",
-              },
-              {
-                _id: 2,
-                title: "3 PL Logistics",
-                list: [
-                  {
-                    _id: 1,
-                    title: "Digital stores & connected associates",
-                    url: "/",
-                  },
-                  {
-                    _id: 2,
-                    title: "Point-of-Sale (POS) modernization",
-                    url: "/",
-                  },
-                  {
-                    _id: 3,
-                    title: "Client Eling, Assisted sales",
-                    url: "/",
-                  },
-                  {
-                    _id: 4,
-                    title:
-                      "Customer experience (CX) transformation & measurement",
-                    url: "/",
-                  },
-                ],
-                cta: "Know More",
-                ctaUrl: "#contact",
-              },
-            ].map((item, index) => {
-              return (
-                <div key={item._id} className="mx-5 text-white relative">
-                  <div className=" w-fit relative z-10">
-                    <h4 className="text-[22px] font-bold  leading-[28px] text-[#fff]">
-                      {item.title}
-                    </h4>
-                  </div>
-                  <div>
-                    <ul className="my-4">
-                      {item.list.map((listItem) => (
-                        <li
-                          key={listItem._id}
-                          className="border-b-2 w-fit border-[#DBDBDB] py-2"
-                        >
-                          <Link
-                            href={listItem.url}
-                            className="text-[#fff] text-[14px] font-medium leading-[16px] w-fit flex transition-all hover:opacity-75"
-                          >
-                            {listItem.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                    <Link
-                      href={item.ctaUrl}
-                      className="text-[#101828] bg-[#F5F5F5] py-4 px-8 mt-4 text-[16px] font-medium leading-[22px] w-fit  flex transition-all hover:opacity-75  "
-                    >
-                      {item.cta}
-                      <Icon
-                        path={mdiArrowTopRight}
-                        style={{ marginLeft: "0.5em" }}
-                        size={1}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="mx-auto text-center w-[75%]">
+            <Infographics src="/infographics/Infographic_ServicesDynamic.svg" />
           </div>
         </div>
       </>
-
-      {/* Case Study */}
-      <CaseStudy
-        ribbon="CASE STUDY"
-        title="Elevating Customer Experience with Cloud  "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
-        isHomepage={false}
-        arr={[
-          {
-            id: 1,
-            title:
-              "Europe's Leading Marine Services Provider Selects LVDGI for Infor LN Managed & Rollout Services from Offshore",
-            thumbnail: "1",
-
-            description: "Managed Services Projects Highlights",
-            tags: [""],
-            cta: "Know More",
-            link: "https://godrejinfotech.com/assets/pdf/case-studies/EuropeLeadingMarineService_InforLN.pdf",
-          },
-        ]}
-      />
-
-      {/* Expertise */}
-      <Expertise
-        ribbon="Acing your Business Objectives"
-        ribbonTxtWhite="true"
-        title="The Hub of Expertise"
-        desc="We're here to build an edge and bring technology brilliance with the finest in the industry."
-        arr={[
-          {
-            title: "25 +",
-            desc: "Years of Excellence",
-          },
-          {
-            title: "500 +",
-            desc: "Global Reach with 500+ Satisfied Customers",
-          },
-          {
-            title: "15000 +",
-            desc: "Man Years of Expertise",
-          },
-        ]}
-      ></Expertise>
 
       {/* WHy Section */}
       <WhySection
@@ -1279,13 +1088,70 @@ const page = () => {
         renderInlineSpans={true}
       ></WhySection>
 
+      {/* Expertise */}
+      <Expertise
+        ribbon="Acing your Business Objectives"
+        ribbonTxtWhite="true"
+        title="The Hub of Expertise"
+        desc="We're here to build an edge and bring technology brilliance with the finest in the industry."
+        arr={[
+          {
+            title: "25 +",
+            desc: "Years of Excellence",
+          },
+          {
+            title: "500 +",
+            desc: "Global Reach with 500+ Satisfied Customers",
+          },
+          {
+            title: "15000 +",
+            desc: "Man Years of Expertise",
+          },
+        ]}
+      ></Expertise>
+
+      {/* Case Study */}
+      <CaseStudy
+        ribbon="CASE STUDY"
+        title="Managed Services Projects Highlights"
+        desc=""
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "Europe's Leading Marine Services Provider Selects LVDGI for Infor LN Managed & Rollout Services from Offshore",
+            thumbnail: "1",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "https://godrejinfotech.com/assets/pdf/case-studies/EuropeLeadingMarineService_InforLN.pdf",
+          },
+        ]}
+      />
+
+      {/* Blog */}
+      <BlogSlider
+        arr={[
+          {
+            _id: 1,
+            ribbon: "Blog",
+            title: "Managed Services: The Promised Land?",
+            desc: "Reaching the Promised land is no mean feat. Not all can endure the journey but those who do, are surely the chosen ones. With this biblical analogy let’s try to decode Managed Services.",
+            cta: "Know More",
+            link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=10",
+            imgUrl: "",
+          },
+        ]}
+      />
+
       {/* Subscription */}
-      <Subscription
+      {/* <Subscription
         title="Are you Ready for Infor-driven growth?"
         blue="Let's get started!?"
         title2=""
         desc="Share your details now to optimize your business operations or implement industry-specific enhancements."
-      />
+      /> */}
 
       {/* Infotech weekly */}
       <>
