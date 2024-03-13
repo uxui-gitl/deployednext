@@ -1,19 +1,14 @@
 import Image from "next/image";
 import React from "react";
-
-async function getData() {
-  const res = await fetch("/assets/blog_data.json");
-
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
+import { promises as fs } from "fs";
 
 const page = async () => {
-  const data = await getData();
+  const file = await fs.readFile(
+    process.cwd() + "/json/blog_data.json",
+    "utf8"
+  );
+  const data = JSON.parse(file);
+
   return (
     console.log(data),
     (
@@ -61,6 +56,10 @@ const page = async () => {
                 <p className="font-normal leading-[22px]">post</p>
               </div>
             </div>
+          </div>
+          <div>
+            <h1>{data.title}</h1>
+            <p>{data.userId}</p>
           </div>
         </>
       </>
