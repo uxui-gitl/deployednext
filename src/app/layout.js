@@ -64,7 +64,7 @@ export default function RootLayout({ children, route }) {
           <>
             <NextTopLoader />
             {children}
-            {/* <Footer /> */}
+            <Footer />
             <Copyright />
             {/* <Analytics />
             <SpeedInsights /> */}
