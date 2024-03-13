@@ -60,8 +60,8 @@ const ACTCard = ({
   ];
 
   const Card = ({ title, sublinks }) => (
-    <div className="bg-[#fff] border-[rgb(112 112 112 / 15%)] border">
-      <div className="font-semibold text-base pb-2 px-4 pt-2 bg-[#f2f4f7]">
+    <div className="bg-[#fff] border-[rgb(112 112 112 / 15%)] border-0">
+      <div className="font-semibold text-base pb-2 px-4 pt-2 bg-[#b2c0fa]">
         {title}
       </div>
       <div className="bg-[#fff] p-4">
@@ -69,7 +69,7 @@ const ACTCard = ({
           {sublinks.map((link, index) => (
             <li
               key={index}
-              className=" border-b-[1px] last:border-b-[0px] inline"
+              className=" border-b-[0px] last:border-b-[0px] inline"
             >
               <span
                 className="text-[#101828] text-[14px]  leading-[30px] inline "
@@ -115,11 +115,11 @@ const ACTCard = ({
         <>
           <div>
             <h4
-              className={` mb-6 font-bold text-[#0A002F] text-2xl sm:text-4xl leading-[42px]  `}
+              className={` mb-6 font-bold text-[#fff] text-2xl sm:text-4xl leading-[42px]  `}
             >
               {ribbon}
             </h4>
-            <p className="font-normal text-base leading-[22px]">
+            <p className="font-normal text-base text-[#fff] leading-[22px]">
               {description}
             </p>
             <div className="mx-auto pt-[26px] ">

@@ -33,7 +33,7 @@ export const projects = [
         ],
       },
     ],
-    color: "#e9e6e7",
+    color: "#002f6d",
   },
   {
     ribbon: "Experience New Business Dimensions with Cloud ",
@@ -62,7 +62,7 @@ export const projects = [
         ],
       },
     ],
-    color: "#ffe4d0",
+    color: "#0745d3",
   },
   {
     ribbon: "Leverage Key Driver of Growth with Transformation ",
@@ -101,6 +101,6 @@ export const projects = [
         ],
       },
     ],
-    color: "#edecec",
+    color: "#5d7cfa",
   },
 ];
