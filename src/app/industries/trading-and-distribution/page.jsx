@@ -15,7 +15,7 @@ import {
 import SectionNav from "@/components/SectionNav";
 import Testimonial from "@/sections/testimonial/Testimonial";
 
-import inforCloudSuite from "../../../../public/inforCloudSuite.png";
+import infor from "../../../../public/infor/infor.png";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import puzzle from "../../../../public/upgradeCloud/puzzle.png";
 
@@ -38,6 +38,8 @@ import Capabilities from "@/components/Capabilities";
 import Expertise from "@/components/Expertise";
 import clsx from "clsx";
 import { NewTestimonial, OfferingsSlider } from "@/components";
+import Abstract from "@/components/Abstract";
+
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -73,41 +75,41 @@ const ChoiceSlider = [
   {
     _id: 1,
     imgUrl: "Industry-Spotlight-Manufacturing",
-    title: "Manufacturing",
+    title: "Transportation & Logistics",
     desc: "",
     url: "/",
   },
   {
     _id: 2,
     imgUrl: "Industry-Spotlight-Retail",
-    title: "Retail",
+    title: "3PL Logistics",
     desc: "",
     url: "/",
   },
   {
     _id: 3,
-    title: "Trading and Distribution",
+    title: "Warehouse",
     desc: "",
     imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
   },
   {
     _id: 4,
-    title: "Healthcare ",
+    title: "Wholesale & Distribution",
     desc: "",
     imgUrl: "Industry-served-Healthcare",
     url: "/",
   },
   {
     _id: 5,
-    title: "Project ",
+    title: "Trade & Services",
     desc: "",
     imgUrl: "Industry-Spotlight-Projects",
     url: "/",
   },
   {
     _id: 6,
-    title: "Professional services",
+    title: "Manufacturing Industry",
     desc: "",
     imgUrl: "ProfessionalServices",
     url: "/",
@@ -116,31 +118,31 @@ const ChoiceSlider = [
 const lists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "Supply chain visibility and management bottlenecks",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Complexities in inventory control",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Issues with sales order and invoice tracking",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Difficulties in stock management and transfer",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
+    text: "Managing distinct product lines",
   },
   {
     id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "Maintaining channel partner loyalty and continuing business growth",
   },
   {
     id: 7,
-    text: "High Management Costs of IT Infrastructure",
+    text: "Maximizing sales team productivity",
   },
 ];
 const UseCases = [
@@ -361,9 +363,8 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Revolutionizing Megaprojects with Advanced IT Services"
-        desc="Leading Your Success Way with Intelligent and Futuristic
-        Business Solutions"
+        title="Modern Tech Solutions for Trading and Distribution Businesses Ensuring Streamlined Order Management and Delivery Insights"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -406,35 +407,9 @@ const page = () => {
           ]}
         />
       </>
-      {/* Overview  */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-            {/* left */}
-            <div className=" flex items-start flex-col justify-start mt-10  relative">
-              <div className="">
-                <h4
-                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
-                >
-                  Projects
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Overview
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  By harnessing the power of data analytics, machine learning,
-                  and artificial intelligence, our advanced IT services empower
-                  project stakeholders with valuable insights. These insights
-                  facilitate informed decision-making, enabling teams to
-                  proactively address risks and capitalize on opportunities. The
-                  result is a catalytic boost in efficiency, significantly
-                  reducing project timelines and costs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+      {/* OVerview with list */}
+      <Abstract
+        abstractdesc="Trading and distribution businesses need effective corporate governance and management structures along with warehouses equipped with top-notch technologies. Godrej Infotech offers diverse solutions to increase supply chain visibility, helping decision-making, planning and execution. With two plus decades of experience, serving more than 50 large and medium-sized customers in sectors like food and beverages, luxury, packaged goods, consumer durables and electronics segments, we promise to maximize perfect order fulfilment, lower cost and optimize the distribution process for customers."></Abstract>
 
       {/* Challengers Para */}
       <>
@@ -443,11 +418,10 @@ const page = () => {
             <div className=" mb-[2rem]">
               <div className="flex flex-col md:flex-row gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold">
-                  Challenges Encountered by Businesses
+                  Challenges
                 </h3>
                 <p>
-                  We offer strategic insights, specialized knowledge and
-                  experience in helping businesses adapt, grow and thrive.
+                  Trading and Distribution businesses face constant challenges like managing tight delivery deadlines, implementing global sourcing strategies and ensuring supplier compliance demands.
                 </p>
               </div>
             </div>
@@ -491,7 +465,7 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Infor WMS Key Highlights
+                 Services
                 </h3>
               </div>
             </div>
@@ -499,8 +473,7 @@ const page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Extending the capabilities of Infor with tailored functional
-                  enhancements for enhancement of business productivity
+                  We specialize in end to end delivery of adept Enterprise Resource Planning (ERP), Customer Relationship Management (CRM), Analytics, and Cloud solutions. Our primary objective is to ensure prompt responsiveness of trading and distribution businesses.
                 </p>
               </div>
             </div>
@@ -513,32 +486,43 @@ const page = () => {
             {[
               {
                 _id: 0,
-                title: "3D Visualization",
-                desc: "Experience streamlined operations with Infor WMS's 3D visual warehouse, providing real-time insights into bottlenecks and asset utilization.",
+                title: "Business Consulting",
+                desc: "We meticulously analyse current business operations, IT framework and accordingly develop tailored strategy for optimal business growth.",
                 cta: "",
                 link: "",
               },
               {
                 _id: 1,
-                title: "Advanced Warehousing Processes",
-                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
-                cta: "",
-                title: "Advanced Warehousing Processes",
-                desc: "Enhance efficiency with RF receiving, voice-enabled pick/pack operations, and dynamic put-away options.",
+                title: "Implementation & Global Rollout",
+                desc: "We ensure seamless solution execution and worldwide deployment with our long-standing experience and expertise.",
                 cta: "",
                 link: "",
               },
               {
                 _id: 2,
-                title: "3PL Billing",
-                desc: "Infor WMS integrates advanced activity-based features, enabling precise customer-level costing, billing, and invoicing. It supports multi-warehouse and multi-owner operations with tailored workflows and full traceability.",
+                title: "Managed Services",
+                desc: "Helping organisations to unburden their IT operations with our expert-managed services, ensuring efficiency in business.",
                 cta: "",
                 link: "",
               },
               {
                 _id: 3,
-                title: "Labor Management & Configurability",
-                desc: "The user experience is tailored for productivity, enabling you to measure, assess, and optimize DC activities, identify bottlenecks, and maintain resource balance with engineered labor standards and performance metrics.",
+                title: "Migration & Transformation",
+                desc: "Enabling effortless upgrade to advance solution and data migration for the dynamic trading and distribution landscape.",
+                cta: "",
+                link: "",
+              },
+              {
+                _id: 4,
+                title: "Legacy Modernization",
+                desc: "Future-proof business by modernizing legacy systems and optimizing overall performance.",
+                cta: "",
+                link: "",
+              },
+              {
+                _id: 5,
+                title: "Infrastructure as a Service",
+                desc: "Stay agile and scalable with infrastructure as a service, without the obligation of managing infrastructure and hardware maintenance.",
                 cta: "",
                 link: "",
               },
@@ -574,8 +558,8 @@ const page = () => {
       </>
 
       {/* Benefits Vertical Slider */}
-      <Benefits
-        ribbon="Benefits "
+      {/* <Benefits
+        ribbon="Benefits"
         ribbonTxtWhite="true"
         title="AI&ML "
         desc="Artificial Intelligence (AI) and Machine Learning (ML) are driving transformative changes offering a multitude of benefits that redefine the way we do business."
@@ -610,7 +594,7 @@ const page = () => {
             cardDesc: "Revolutionising Healthcare with medical image analysis",
           },
         ]}
-      ></Benefits>
+      ></Benefits> */}
 
       {/* Offerings */}
 
@@ -621,25 +605,89 @@ const page = () => {
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Key Feature and Benefits of Infor CRM
+                  Our Capabilities
                 </h3>
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-2">
             {[
               {
                 _id: 1,
-                title: "Increased Productivity",
-                desc: "Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI. Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+                title: "Supply Chain Visibility",
+                desc: "Attain accountability and get insights into inventory, warehousing and profitability for informed decision-making.",
                 cta: "Know More",
                 ctaUrl: "/",
                 image: "/rpa/IncreasedProductivity.png",
               },
               {
                 _id: 2,
-                title: "Gain Accurate Outcomes",
-                desc: "Automate the time-consuming and error-prone manual tasks and get consistent, error-free results while strengthening trust in your services. Speed up operations with smart work of RPA, delivering proficient service to your customers and increasing your ROI.",
+                title: "Inventory Optimization",
+                desc: "Maintain optimal stock levels, decrease excess inventory and optimize cash flow with ease.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 3,
+                title: "Streamlined Supply Chain",
+                desc: "Improve coordination and automate processes for effective supply chain management and improved visibility.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 4,
+                title: "Increased Operational Efficiency",
+                desc: "Streamline processes to improve accuracy, cut down costs for effective business growth.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 5,
+                title: "Strategic Planning Support",
+                desc: "Leverage predictive analytics and insights for effective planning and inventory management.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 6,
+                title: "Workforce Productivity",
+                desc: "Provide employees business intelligence and real-time responses to support strategic goals.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 7,
+                title: "Warehouse Automation",
+                desc: "Implement automation solutions to improve warehouse operations and overall productivity.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 8,
+                title: "Financial Reporting",
+                desc: "Centralized financial control and inventory management with detailed reporting for improved profitability.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/GainAccurateOutcomes.png",
+              },
+              {
+                _id: 9,
+                title: "International Compliance",
+                desc: "Record management that adheres to GDPR standards for global compliance.",
+                cta: "Know More",
+                ctaUrl: "/",
+                image: "/rpa/IncreasedProductivity.png",
+              },
+              {
+                _id: 10,
+                title: "Vendor & Customer Management",
+                desc: "Improve supplier performance and customer service with real time insights through mobile technologies, enhancing operational efficiency.",
                 cta: "Know More",
                 ctaUrl: "/",
                 image: "/rpa/GainAccurateOutcomes.png",
@@ -701,11 +749,11 @@ const page = () => {
               </div>
               <div className="flex justify-center items-center gap-20">
                 <div>
-                  <Image src={inforCloudSuite} alt="Infor" />
+                  <Image src={infor} alt="Infor" />
                 </div>
-                <div>
+                {/* <div>
                   <Image src={Oracle} alt="Infor" />
-                </div>
+                </div> */}
                 <div>
                   <Image src={Dynamic365} alt="Infor" />
                 </div>
@@ -723,14 +771,12 @@ const page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Industry Spotlight
+                 Verticals Served
                 </h3>
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] my-5">
-                  Being preferred partner of leading industries, we help in
-                  shaping specific technology prerequisites and deliver
-                  brilliant value driven solutions tailored to your sector.
+                  Understanding unique demands of each vertical and capitalizing technology capabilities, we equip businesses to thrive in competitive market.
                 </p>
               </div>
               <div className="flex justify-center items-center max-w-screen-xl w-full">
@@ -778,36 +824,36 @@ const page = () => {
       <CaseStudy
         ribbon="CASE STUDY "
         title="Delivering Results that Matters "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        desc="Gain valuable insights on digital transformation journeys of trading and distribution businesses."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+              "Leading Distributor of Fruits & Vegetables in the Philippines Goes Live with D365 F&O Cloud Solution",
             thumbnail: "1",
             description: "",
-            tags: ["Automation"],
+            tags: [""],
             cta: "Read article",
             link: "/",
           },
           {
             id: 2,
             title:
-              "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+              "Leading Commercial Vehicle Distributor in Singapore Implements Microsoft Dynamics AX",
             thumbnail: "2",
             description: "",
-            tags: ["Cloud"],
+            tags: [""],
             cta: "Read article",
             link: "/",
           },
           {
             id: 3,
             title:
-              "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+              "Wholesale Distribution Made Easy with Infor LN for Saudi Arabia's Largest Trading Organization.",
             thumbnail: "3",
             description: "",
-            tags: ["Transformation"],
+            tags: [""],
             cta: "Read article",
             link: "/",
           },
@@ -817,17 +863,16 @@ const page = () => {
       <NewTestimonial
         ribbon="Testimonials"
         ribbonVisible={false}
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-        the readable content of a page when looking at its layout."
+        title="Delighted Customers share their Experiences"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation: "Procurement Manager, Global Supplier of Process Equipment",
             thumbnail: "1",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "Grateful for Godrej Infotech's exceptional work in implementing LN ERP. Despite its complexity, the process was smooth and efficient. Godrej quickly grasped our business needs, making a valuable and quality contribution to the successful implementation.",
             category: "static",
             link: "/",
           },
@@ -835,30 +880,20 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Director of Finance, Wildlife Conservation International NGO based in India",
+              "Project Manager, Saudi Arabia based Superstore",
             thumbnail: "1",
             description:
-              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+              "Thank you, Godrej Infotech, for outstanding service and genuine support in implementing/supporting Microsoft Dynamics NAV, LS Retail, and Payroll add-on. Our Management and Project team applauds GITL's meticulous conduct, dedication, professionalism, and profound retail domain knowledge.",
             category: "static",
             link: "/",
           },
-          {
-            id: 3,
-            clientName: "",
-            clientDesignation:
-              "Project Manager, Investment Holding Company in Riyadh & Dubai",
-            thumbnail: "1",
-            description:
-              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
-            category: "static",
-            link: "/",
-          },
+          
         ]}
       />
 
       {/* Expertise */}
-      <Expertise
-        ribbon="Our Expertise "
+      {/* <Expertise
+        ribbon="Our Expertise"
         ribbonTxtWhite="true"
         title="Future Outlook with Intelligent Technologies  "
         desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
@@ -876,12 +911,12 @@ const page = () => {
             desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
           },
         ]}
-      ></Expertise>
+      ></Expertise> */}
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Take the Vital Step towards"
+        blue="accelerated digital future"
         title2=""
         desc="Let's embark on your journey together aligned with your business goals."
       />
