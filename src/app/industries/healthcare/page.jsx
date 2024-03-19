@@ -19,8 +19,11 @@ import inforCloudSuite from "../../../../public/inforCloudSuite.png";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import puzzle from "../../../../public/upgradeCloud/puzzle.png";
 
-import Dynamic365 from "../../../../public/Dynamic365.png";
+import microsoft from "../../../../public/SpotlightLogoGrid/Microsoft-Office.png";
+import infor from "../../../../public/SpotlightLogoGrid/infor.png";
 import Oracle from "../../../../public/Oracle.png";
+import uiPath from "../../../../public/logos/rpa/uiPath.svg";
+import automationAnywhere from "../../../../public/logos/rpa/automation-anywhere.svg";
 import checkout from "../../../../public/checkout.png";
 import MLExpertise from "../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
@@ -38,6 +41,7 @@ import Capabilities from "@/components/Capabilities";
 import Expertise from "@/components/Expertise";
 import clsx from "clsx";
 import { NewTestimonial, OfferingsSlider } from "@/components";
+import Abstract from "@/components/Abstract";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -54,194 +58,138 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "No Remote Access",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Siloes in the Healthcare World",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Issues with Medicare and Medicaid Reimbursement",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Absence of Supply Management System",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
+    text: "Managing the Massive Volumes of Patient-Related Data",
   },
   {
     id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "Inefficiencies and Errors in Data Sharing",
   },
   {
     id: 7,
-    text: "High Management Costs of IT Infrastructure",
+    text: "Lack of Online Pharmaceutical Stores",
+  },
+    {
+    id: 8,
+    text: "No Early Warning Healthcare Devices",
+  },
+    {
+    id: 9,
+    text: "Slow Pace with Modern Solutions",
   },
 ];
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Consulting Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Implementation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Upgrade & Migration",
+    title: "Upgrade & Migration Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Development & Customization",
+    title: "Support & Maintenance Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Training Workshop",
+    title: "Customization Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 6,
-    title: "Managed Services",
+    title: "Integration Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 7,
-    title: "Legacy Modernization",
+    title: "Audit Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 8,
-    title: "Bespoke Applications",
+    title: "Reporting Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const UseCasesSlider = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Pharma Manufacturer",
     cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    desc: "Enhance your pharmaceutical business with our tailored IT services to streamline equipment management, driving success in the highly competitive industry.",
     link: "/",
     image: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Health Facility Centre",
     cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    desc: "Elevate financial performance by providing comprehensive Revenue Cycle Management (RCM) services, optimizing revenue capture and financial operations.",
     link: "/",
     image: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Upgrade & Migration",
+    title: "Medical Equipment & Supplies",
     cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    desc: "Elevate your medical equipment and supplies operations to the next level with our IT services, from product configuration, asset Management.",
     link: "/",
     image: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Development & Customization",
+    title: "Pharma Distributors",
     cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
+    desc: "Empower your medicines and injectables business with our advanced IT services, optimizing inventory control and distribution efficiency.",
     link: "/",
     image: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 5,
-    title: "Training Workshop",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    image: "",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 6,
-    title: "Managed Services",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    image: "",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 7,
-    title: "Legacy Modernization",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    image: "",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 8,
-    title: "Bespoke Applications",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    image: "",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const AIOfferings = [
   {
@@ -254,26 +202,18 @@ const AIOfferings = [
     btnTheme: "#4F9D73",
     links: [
       {
-        title: "Project Monitoring Tools ",
+        title: "Data Driven Analytics",
         url: "/",
       },
       {
-        title: "Augmented Intelligence ",
+        title: "Predictive Maintenance for Asset",
         url: "/",
       },
       {
-        title: "Budgeting and Forecasting ",
+        title: "Robotics and Automation",
         url: "/",
       },
-      {
-        title: "Data Driven Analytics ",
-        url: "/",
-      },
-
-      {
-        title: "Quality Control Analysis  ",
-        url: "/",
-      },
+      
     ],
   },
   {
@@ -285,10 +225,6 @@ const AIOfferings = [
     theme: "#EDF1FF",
     btnTheme: "#0745D3",
     links: [
-      {
-        title: "M365 ",
-        url: "/",
-      },
       {
         title: "Cloud Consulting",
         url: "/",
@@ -302,7 +238,7 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "Iot Data management in Cloud",
+        title: "Data Management",
         url: "/",
       },
       {
@@ -310,9 +246,10 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "Cloud Security Solutions for Mfg.",
+        title: "Cloud Security Solutions",
         url: "/",
       },
+      
     ],
   },
   {
@@ -325,29 +262,26 @@ const AIOfferings = [
     btnTheme: "#D4A73B",
     links: [
       {
-        title: "Architecture Designing  ",
+        title: "ERP Implementation",
         url: "/",
       },
       {
-        title: "Hierarchy Management ",
+        title: "Supply Chain Management",
         url: "/",
       },
       {
-        title: "Process Optimization ",
+        title: "Finance Management",
         url: "/",
       },
       {
-        title: "Stakeholder work/ role assignment ",
+        title: "Process Optimization",
         url: "/",
       },
       {
-        title: "Multiple invoicing modes",
+        title: "Customer Experience - CRM",
         url: "/",
       },
-      {
-        title: "Customer Experience - CRM and Ecommerce ",
-        url: "/",
-      },
+     
     ],
   },
 ];
@@ -389,9 +323,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Transforming Healthcare with
-        All-Inclusive Cutting-Edge IT
-        Solutions and Services"
+        title="Digitizing Healthcare with All-Inclusive Avant-Garde IT Solutions and Services"
         desc=""
         cta="Let's Connect"
         width="70%"
@@ -423,49 +355,22 @@ const page = () => {
           ]}
         />
       </>
-      {/* Overview  */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-            {/* left */}
-            <div className=" flex items-start flex-col justify-start mt-10  relative">
-              <div className="">
-                <h4
-                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
-                >
-                  Projects
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Overview
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  By harnessing the power of data analytics, machine learning,
-                  and artificial intelligence, our advanced IT services empower
-                  project stakeholders with valuable insights. These insights
-                  facilitate informed decision-making, enabling teams to
-                  proactively address risks and capitalize on opportunities. The
-                  result is a catalytic boost in efficiency, significantly
-                  reducing project timelines and costs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+      {/* Abstract  */}
+      <Abstract abstractdesc="Acknowledging the intricate challenges faced by the healthcare sector, we prioritize the streamlining of operations to achieve optimal efficiency and minimize bottlenecks. Our suite of solutions and services helps you in developing a cohesive ecosystem, fostering collaboration and ensuring data accuracy."></Abstract>
+
 
       {/* Challengers Para */}
       <>
-        <div className={` w-full bg-white pb-20`}>
+        <div className={`w-full bg-white pb-20`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                    Healthcare Companies Challenges & Pain Areas
+                    Challenges Confronting Healthcare Organisations
                   </h3>
                   <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
+                   Streamlining healthcare operations and interoperability is a complex task. Our customised IT solutions streamline operational intricacies and processes for seamless functionality.
                   </p>
                 </div>
               </div>
@@ -504,16 +409,15 @@ const page = () => {
 
       {/*  Cards  Sliders*/}
       <>
-        <div className={` w-full bg-[#F2F4F7] py-32`}>
+        <div className={`w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
               <h3 className="text-4xl leading-[42px] font-bold">
-                The Healthcare Segments We Serve
+                Segments We Serve
               </h3>
 
               <p className="font-normal leading-[22px]">
-                Extending the capabilities of Infor with tailored functional
-                enhancements for enhancement of business productivity
+                
               </p>
             </div>
           </div>
@@ -607,9 +511,9 @@ const page = () => {
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
+                {/* <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
                   Reinventing Growth Opportunities
-                </h4>
+                </h4> */}
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
                   Our Solutions
                 </h3>
@@ -617,11 +521,11 @@ const page = () => {
             </div>
             <div>
               <div>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
+                {/* <p className="font-medium leading-[22px] md:w-[90%] ">
                   Holistic and future- ready solutions to re-engineer your
                   business with our proven implementation methodologies for
                   maximum Return on Investment (RoI)
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -687,14 +591,14 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
+                    Our Services
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium  leading-[22px] md:w-[90%] ">
-                    We deliver high-performing services for a comprehensive
+                    {/* We deliver high-performing services for a comprehensive
                     suite Microsoft ecosystem, devised to elevate growth and
-                    productivity and build stronger stakeholder connections
+                    productivity and build stronger stakeholder connections */}
                   </p>
                 </div>
               </div>
@@ -783,29 +687,29 @@ const page = () => {
       </>
 
       {/* Expertise */}
-      <Expertise
+      {/* <Expertise
         ribbon="Our Expertise "
         ribbonTxtWhite="true"
-        title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        title="Hub of Expertise"
+        desc=""
         arr={[
           {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            title: "200+",
+            desc: "Implementation Experience and Project Deliveries",
           },
           {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
+            title: "300+",
+            desc: "Happy customers across 140+ Countries.",
           },
           {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+            title: "24/7",
+            desc: "Support Desk",
           },
         ]}
-      ></Expertise>
+      ></Expertise> */}
 
       {/*  Cards */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#F2F4F7] py-32`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
@@ -890,45 +794,36 @@ const page = () => {
             ))}
           </div>
         </div>
-      </>
+      </> */}
 
       {/* Casestudy */}
       <CaseStudy
-        ribbon="CASE STUDY "
-        title="Delivering Results that Matters "
+        ribbon="CASE STUDY"
+        title="Delivering Results that Matters"
         desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+              "Global Healthcare Solutions Organization Successfully Migrates IT Environment from .NET 2.0 to .NET 4.5.",
             thumbnail: "",
             description: "",
-            tags: ["Automation"],
+            tags: [""],
             cta: "Read article",
-            link: "/",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
           {
             id: 2,
             title:
-              "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+              "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6 ",
             thumbnail: "",
             description: "",
-            tags: ["Cloud"],
+            tags: [""],
             cta: "Read article",
-            link: "/",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
-          {
-            id: 3,
-            title:
-              "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
-            thumbnail: "",
-            description: "",
-            tags: ["Transformation"],
-            cta: "Read article",
-            link: "/",
-          },
+          
         ]}
       />
 
@@ -952,14 +847,24 @@ const page = () => {
               </div>
               <div className="flex justify-center items-center gap-20">
                 <div>
-                  <Image src={inforCloudSuite} alt="Infor" />
+                  <Image src={microsoft} alt="microsoft" />
                 </div>
                 <div>
-                  <Image src={Oracle} alt="Infor" />
+                  <Image src={infor} alt="Infor" />
                 </div>
                 <div>
-                  <Image src={Dynamic365} alt="Infor" />
+                  <Image src={Oracle} alt="oracle" />
                 </div>
+                {/* <div>
+                  <Image src={lsCentral} alt="LsCentral" />
+                </div> */}
+                <div>
+                  <Image src={uiPath} alt="UIpath" />
+                </div>
+                <div>
+                  <Image src={automationAnywhere} alt="Automation" />
+                </div>
+                
               </div>
             </div>
           </div>
@@ -968,8 +873,8 @@ const page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Request a Personalized Demo"
+        blue=""
         title2=""
         desc="Let's embark on your journey together aligned with your business goals."
       />
