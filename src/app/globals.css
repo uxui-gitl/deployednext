@@ -520,3 +520,17 @@ h4.ribbon:before {
 .react-tabs__tab-list {
   border-bottom: 0px;
 }
+
+.blog_post_desc p {
+  margin-bottom: 0.5em;
+}
+.blog_post_desc p:first-child::first-letter {
+  color: #475467;
+  padding: 0 0.3rem;
+  margin: 0 0.3rem 0 0;
+  font-weight: bold;
+
+  font-size: 4rem;
+  float: left;
+  line-height: 1;
+}
