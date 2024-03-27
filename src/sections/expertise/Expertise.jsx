@@ -140,7 +140,7 @@ export function Cobe() {
     setTimeout(() => (canvasRef.current.style.opacity = "1"));
     return () => globe.destroy();
     window.removeEventListener("resize", onResize);
-  }, []);
+  }, [r]);
   return (
     <div
       style={{

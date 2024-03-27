@@ -29,7 +29,7 @@ export default function SinglePost({ params }) {
 
   useEffect(() => {
     fetchPost(params.id);
-  }, []);
+  }, [params.id]);
 
   return (
     <>
