@@ -12,7 +12,7 @@ export default function PostsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/blogpost");
+        const res = await fetch("/api/blogpost");
         const { data } = await res.json();
         setPosts(data);
       } catch (error) {

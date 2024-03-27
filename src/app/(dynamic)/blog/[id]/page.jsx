@@ -16,7 +16,7 @@ export default function SinglePost({ params }) {
 
   const fetchPost = async (id) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/blogpost/${id}`);
+      const res = await fetch(`/api/blogpost/${id}`);
       if (!res.ok) {
         throw new Error("Failed to fetch post");
       }
