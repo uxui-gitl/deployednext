@@ -7,6 +7,7 @@ import Image from "next/image";
 import Icon, { Stack } from "@mdi/react";
 import { mdiCircle, mdiFacebook, mdiInstagram, mdiLinkedin } from "@mdi/js";
 import Avatar from "@/components/Avatar";
+import { SVGSkeleton, Skeleton } from "@/components/Skeleton";
 
 export default function SinglePost({ params }) {
   const calculateReadingTime = (text, averageSpeed = 200) =>
@@ -195,7 +196,49 @@ export default function SinglePost({ params }) {
           </div>
         </>
       ) : (
-        <p className="mx-auto py-8 text-center">Loading...</p>
+        <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid gap-x-5 grid-cols-1">
+          <div className="border shadow-sm w-full">
+            <div className="flex flex-col space-y-1.5 p-6">
+              <div className="border-b">
+                <h3 className="flex">
+                  <div className="flex flex-1 items-center justify-between py-4">
+                    <SVGSkeleton className="shrink-0 w-full h-[150px]" />
+                  </div>
+                </h3>
+                <h3 className="leading-none mb-2 tracking-tight">
+                  <Skeleton className="w-[104px] max-w-full" />
+                </h3>
+              </div>
+
+              <div>
+                <Skeleton className="w-[216px] max-w-full" />
+              </div>
+              <div>
+                <Skeleton className="w-full max-w-full" />
+                <Skeleton className="w-full max-w-full" />
+                <Skeleton className="w-full max-w-[85%]" />
+              </div>
+              <div className="flex flex-row gap-x-4">
+                <SVGSkeleton className="rounded-[9999px] w-[24px] h-[24px]" />
+                <SVGSkeleton className="rounded-[9999px] w-[24px] h-[24px]" />
+                <SVGSkeleton className="rounded-[9999px] w-[24px] h-[24px]" />
+              </div>
+              <div className="border-b">
+                <div className="flex flex-row gap-x-8">
+                  <div className="flex flex-0 flex-col items-center justify-between  py-4">
+                    <SVGSkeleton className="rounded-[9999px] mb-4 w-[150px] h-[150px]" />
+                  </div>{" "}
+                  <div className="flex flex-1 flex-col items-start justify-start py-4">
+                    <Skeleton className="w-full max-w-full" />
+                    <Skeleton className="w-full max-w-full" />
+                    <Skeleton className="w-full max-w-full" />
+                    <Skeleton className="w-full max-w-[85%]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </>
   );
