@@ -19,17 +19,22 @@ import inforCloudSuite from "../../../../public/inforCloudSuite.png";
 import Testimonials from "@/sections/testimonial/Testimonial";
 import puzzle from "../../../../public/upgradeCloud/puzzle.png";
 
-import Dynamic365 from "../../../../public/Dynamic365.png";
+
+import microsoft from "../../../../public/SpotlightLogoGrid/Microsoft-Office.png";
+import infor from "../../../../public/SpotlightLogoGrid/infor.png";
 import Oracle from "../../../../public/Oracle.png";
+import automationAnywhere from "../../../../public/logos/rpa/automation-anywhere.svg";
 import checkout from "../../../../public/checkout.png";
 import MLExpertise from "../../../../public/MLExpertise.png";
 import styles from "./page.module.css";
 import WhySection from "@/components/WhySection";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
+import Abstract from "@/components/Abstract";
 import { AnimatePresence, motion } from "framer-motion";
 import { Pagination } from "swiper/modules";
 import SpotlightLogoGrid from "@/components/SpotlightLogoGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
+import BlogSlider from "@/components/BlogSlider";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -54,31 +59,43 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "Inadequate Scalability and Availability",
+    text: "Resource procurement planning and hierarchy management within the project structure",
   },
   {
     id: 2,
-    text: "Unreliable Backup Storage",
+    text: "Implementing post-delivery service and maintenance process",
   },
   {
     id: 3,
-    text: "Weak Disaster Recovery and Redundancy",
+    text: "Accurate evaluation of manpower, machine and material procurement",
   },
   {
     id: 4,
-    text: "Inadequate Data Integrity and Automation Capabilities",
+    text: "Streamlining distribution and delivery process for project execution",
   },
   {
     id: 5,
-    text: "Subpar IT Performance",
+    text: "Recognizing revenue, both directly and indirectly associated with the project",
   },
   {
     id: 6,
-    text: "Limited IT Universality and Centralized Monitoring",
+    text: "Progress tracking at both work and real-time project levels",
   },
   {
     id: 7,
-    text: "High Management Costs of IT Infrastructure",
+    text: "Addressing the clumsy coordination process between sales and service teams",
+  },
+   {
+    id: 8,
+    text: "Ensuring active and meaningful engagement with stakeholders throughout the project",
+  },
+   {
+    id: 9,
+    text: "Effective management of budgets, compressed schedules and complex contractual requirements.",
+  },
+   {
+    id: 10,
+    text: "Handling large volume of data and multiple stakeholders, which often lead to inefficiencies, errors and delays.",
   },
 ];
 const UseCases = [
@@ -91,7 +108,7 @@ const UseCases = [
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Implementation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -105,53 +122,33 @@ const UseCases = [
   },
   {
     _id: 4,
-    title: "Development & Customization",
+    title: "Support and Maintenance",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Training Workshop",
+    title: "Customization",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 6,
-    title: "Managed Services",
+    title: "Integration",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 7,
-    title: "Legacy Modernization",
+    title: "Audit and Reporting Services",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 8,
-    title: "Bespoke Applications",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const AIOfferings = [
   {
@@ -220,7 +217,7 @@ const AIOfferings = [
         url: "/",
       },
       {
-        title: "Cloud Security Solutions for Mfg.",
+        title: "Cloud Security Solutions",
         url: "/",
       },
     ],
@@ -235,23 +232,23 @@ const AIOfferings = [
     btnTheme: "#D4A73B",
     links: [
       {
-        title: "Architecture Designing  ",
+        title: "Architecture Designing",
         url: "/",
       },
       {
-        title: "Hierarchy Management ",
+        title: "Hierarchy Management",
         url: "/",
       },
       {
-        title: "Process Optimization ",
+        title: "Process Optimization",
         url: "/",
       },
       {
-        title: "Stakeholder work/ role assignment ",
+        title: "Stakeholder work/ role assignment",
         url: "/",
       },
       {
-        title: "Multiple invoicing modes",
+        title: "Multiple invoicing modes, flexible procurement and outsourcing coordination",
         url: "/",
       },
       {
@@ -295,13 +292,25 @@ const BenefitsData = [
   },
 ];
 
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "blog",
+    title: "Digital Transformation in Megaprojects",
+    desc: "Megaprojects stand as the epitome of complex endeavors that demand meticulous planning, precise execution, and seamless coordination. At the heart of these megaprojects lies the imperative need for digital transformation to propel success in an increasingly competitive environment. Digital transformation in megaprojects entails a comprehensive overhaul of traditional processes, leveraging advanced technologies to optimize efficiency, enhance collaboration, and drive innovation. From the integration of cloud computing and data analytics to the adoption of artificial intelligence and machine learning, the possibilities are vast and transformative.",
+    cta: "Know More",
+    link: "",
+    imgUrl: "",
+  },
+  
+];
+
 const page = () => {
   return (
     <>
       <EntIntro
         title="Revolutionizing Megaprojects with Advanced IT Services"
-        desc="Leading Your Success Way with Intelligent and Futuristic
-        Business Solutions"
+        desc=""
         cta="Let's Connect"
         width="60%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -343,35 +352,9 @@ const page = () => {
           ]}
         />
       </>
-      {/* Overview  */}
-      <>
-        <div className={` w-full bg-[#F2F4F7] text-[#101828]`}>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl   mx-auto p-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-1">
-            {/* left */}
-            <div className=" flex items-start flex-col justify-start mt-10  relative">
-              <div className="">
-                <h4
-                  className={` text-[16px] font-medium text-[#0745D3] uppercase ribbon mb-4`}
-                >
-                  Projects
-                </h4>
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold w-[90%]">
-                  Overview
-                </h3>
-                <p className="font-medium leading-[22px] md:w-[90%] ">
-                  By harnessing the power of data analytics, machine learning,
-                  and artificial intelligence, our advanced IT services empower
-                  project stakeholders with valuable insights. These insights
-                  facilitate informed decision-making, enabling teams to
-                  proactively address risks and capitalize on opportunities. The
-                  result is a catalytic boost in efficiency, significantly
-                  reducing project timelines and costs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
+      {/* Abstract  */}
+      <Abstract abstractdesc="It's crucial to prioritize key essentials like market share through adoption of modern technologies, enhancing ROI with modern operational and maintenance practise, and enabling swift decision-making in a global environment through collaborative efforts. Leveraging scalable technologies, we help project stakeholders to track and fasten operations, ensuring successful project results. We support clients in their digital transformation journey with improved effectiveness and reduced cost aligning with business requirements and encouraging competitiveness."></Abstract>
+
 
       {/* Challengers Para */}
       <>
@@ -381,11 +364,10 @@ const page = () => {
               <div className=" mt-[5em] mb-[2rem]">
                 <div className="flex flex-col md:flex-row gap-x-10">
                   <h3 className="text-4xl leading-[42px] font-bold">
-                    Challenges Encountered by Businesses
+                    Challenges
                   </h3>
                   <p>
-                    We offer strategic insights, specialized knowledge and
-                    experience in helping businesses adapt, grow and thrive.
+                    Organizations face different levels of efficiency difficulties while managing projects with interdependent activities particularly with procurement routes.
                   </p>
                 </div>
               </div>
@@ -429,22 +411,19 @@ const page = () => {
             {/* left */}
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
-                <h4 className={` font-medium text-[#0745D3] uppercase ribbon`}>
-                  GITL Project Solutions Portfolio
-                </h4>
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Our Offerings
+                  Project Solution Offerings
                 </h3>
               </div>
             </div>
             <div>
-              <div>
+              {/* <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
                   Holistic and future- ready solutions to re-engineer your
                   business with our proven implementation methodologies for
                   maximum Return on Investment (RoI)
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="text-left w-full bg-amber-100 mb-5 mx-auto   grid grid-cols-1 md:grid-cols-3">
@@ -503,15 +482,15 @@ const page = () => {
       {/* 3 column */}
       <>
         <OfferingsSlider
-          title="The healthcare segment we serve"
+          title="Industry Segments We Serve"
           alignHorizontal="left"
           cardColor="#FFF"
-          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+          desc="From meticulous project estimation, planning and execution to seamless revenue recognition, we tailor our solutions to address the unique challenges of each segment."
           arr={[
             /*One*/
             {
               _id: 1,
-              title: "Business Consulting",
+              title: "Small Scale Projects",
               desc: "",
               cta: "Explore Service",
               subArrLinks: [],
@@ -521,19 +500,19 @@ const page = () => {
               ctaUrl: "/",
               links: [
                 {
-                  title: "Cybersecurity roadmap development",
+                  title: "Machine Building",
                   url: "/",
                 },
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
+                    "Power Energy",
                   url: "/",
                 },
               ],
             },
             {
               _id: 2,
-              title: "Business Consulting",
+              title: "Turnkey Projects",
               desc: "",
               cta: "Explore Service",
               subArrLinks: [],
@@ -543,19 +522,34 @@ const page = () => {
               ctaUrl: "/",
               links: [
                 {
-                  title: "Cybersecurity roadmap development",
+                  title: "Infrastructure",
                   url: "/",
                 },
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
+                    "Ship building",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Mining",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Oil & Gas",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Drilling",
                   url: "/",
                 },
               ],
             },
             {
               _id: 3,
-              title: "Business Consulting",
+              title: "Real estate",
               desc: "",
               cta: "Explore Service",
               subArrLinks: [],
@@ -565,38 +559,27 @@ const page = () => {
               ctaUrl: "/",
               links: [
                 {
-                  title: "Cybersecurity roadmap development",
+                  title: "Industrial Set Up",
                   url: "/",
                 },
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
-                  url: "/",
-                },
-              ],
-            },
-            {
-              _id: 4,
-              title: "Business Consulting",
-              desc: "",
-              cta: "Explore Service",
-              subArrLinks: [],
-              image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
-              inline: true,
-              subArr: false,
-              ctaUrl: "/",
-              links: [
-                {
-                  title: "Cybersecurity roadmap development",
+                    "Residential Complex",
                   url: "/",
                 },
                 {
                   title:
-                    "Assessment services against cyber security frameworks & standards",
+                    "Mall",
+                  url: "/",
+                },
+                {
+                  title:
+                    "Showroom",
                   url: "/",
                 },
               ],
             },
+           
           ]}
         />
       </>
@@ -605,29 +588,158 @@ const page = () => {
       <div id="Capabilities">
         <Capabilities
           ribbon=" "
-          title="Our Capabilities "
-          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities empower the success of mega projects"
+          arr={[
+            {
+    _id: 1,
+    icon: "gear",
+    title: "Future of Projects",
+    desc: "",
+    cta: "Know More",
+    ctaUrl: "/",
+    list: [
+      {
+        title: "External integration with project monitoring tools  ",
+        url: "/",
+      },
+      {
+        title: "Mobile applications for task assignment",
+        url: "/",
+      },
+      {
+        title: "After sales service",
+        url: "/",
+      },
+      {
+        title: "Data Security & Digital Documentation ",
+        url: "/",
+      },
+      {
+        title: "Multi site management  ",
+        url: "/",
+      },
+      {
+        title: "Project Task Assignment & Management  ",
+        url: "/",
+      },
+      {
+        title: "Remote Work and Cost Accuracy   ",
+        url: "/",
+      },
+    ],
+  },
+  {
+    _id: 2,
+    icon: "gear",
+    title: "IoT Enabled Products",
+    desc: "",
+    cta: "Know More",
+    ctaUrl: "/",
+    list: [
+      {
+        title: "Industrial IoT",
+        url: "/",
+      },
+      {
+        title: "Plant efficiency with IoT",
+        url: "/",
+      },
+      {
+        title: "Asset Predictive Maintenance",
+        url: "/",
+      },
+      {
+        title: "Architecture Designing through IoT",
+        url: "/",
+      },
+      
+    ],
+  },
+  {
+    _id: 3,
+    icon: "gear",
+    title: "Supply Chain Management  ",
+    desc: "",
+    cta: "Know More",
+    ctaUrl: "/",
+    list: [
+      {
+        title: "Inventory management",
+        url: "/",
+      },
+      {
+        title: "Fleet management with IoT and AR",
+        url: "/",
+      },
+      {
+        title: "System logistics",
+        url: "/",
+      },
+      {
+        title: "Equipment rental",
+        url: "/",
+      },
+      {
+        title: "Supplier Communication and Inventory Management",
+        url: "/",
+      },
+      
+    ],
+  },
+  {
+    _id: 4,
+    icon: "gear",
+    title: "Performance Management ",
+    desc: "",
+    cta: "Know More",
+    ctaUrl: "/",
+    list: [
+      {
+        title: "Product lifecycle management",
+        url: "/",
+      },
+      {
+        title: "Asset management",
+        url: "/",
+      },
+      {
+        title: "Hierarchy workflow management",
+        url: "/",
+      },
+      
+    ],
+  },
+          ]}
+          title="Our Capabilities"
+          desc="With expertise in project execution, technology implementation and risk mitigation, our capabilities help in success of mega projects."
         />
       </div>
 
       {/* Expertise */}
       <Expertise
-        ribbon="Our Expertise "
+        ribbon="The Hub of Expertise"
         ribbonTxtWhite="true"
         title="Future Outlook with Intelligent Technologies  "
-        desc="We are here to build edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        desc="We are here to build an edge and bring technology brilliance with the finest in the industry."
         arr={[
           {
-            title: "85%",
-            desc: "IDC states that 85% of enterprises to merge human expertise with AI, ML& NLP by 2026 ",
+            title: "50+",
+            desc: "Countries Spanning our Happy Customers",
           },
           {
-            title: "$200B",
-            desc: "Forbes forecasts size for AI market by 2026 ",
+            title: "10.31 Billion",
+            desc: "Total Revenue",
           },
           {
-            title: "$6.6T",
-            desc: "PwC Research claims that $6.6T productivity growth is projected by 2030  ",
+            title: "500+",
+            desc: "Employees Worldwide",
+          },
+          {
+            title: "700+",
+            desc: "Implementations",
+          },
+          {
+            title: "2 Decades",
+            desc: "of Experience  ",
           },
         ]}
       ></Expertise>
@@ -644,14 +756,12 @@ const page = () => {
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
-                    Microsoft Services
+                    Service Offerings
                   </h3>
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our comprehensive Microsoft services includes everything
-                    that business requires to effectively digitize business
-                    operations and customer relationship management.
+                    We are a leading provider of a full suite of IT services to address the diverse needs of our clients across all projects.
                   </p>
                 </div>
               </div>
@@ -803,36 +913,36 @@ const page = () => {
       <CaseStudy
         ribbon="CASE STUDY "
         title="Delivering Results that Matters "
-        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high-performing multidisciplinary solutions across the spectrum of industries. "
+        desc="World's top-notch businesses choose us for our excellent technical acumen and proven standards as we deliver high performing multidisciplinary solutions across the spectrum of industries."
         isHomepage={false}
         arr={[
           {
             id: 1,
             title:
-              "India's leading TV audience measurement firm employs calibrated RPA bots, reducing manual tasks of channel metrics, efficiently sharing results with stakeholders and saving consultant hours.",
+              "Leading Global Hydraulic Systems Manufacturer Successfully Rolls Out Infor LN with India Localization Features",
             thumbnail: "",
             description: "",
-            tags: ["Automation"],
+            tags: [""],
             cta: "Read article",
-            link: "/",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
           {
             id: 2,
             title:
-              "Prominent American watch and lifestyle distribution organization achieves heightened uptime, seamless management, positive ROI and enhanced data durability and reliability by transitioning to Azure through a Lift and Shift approach.",
+              "India's Largest Manufacturer of Forklift Trucks Successfully Implements Salesforce Service Cloud Solution Integrated with Infor LN ",
             thumbnail: "",
             description: "",
-            tags: ["Cloud"],
+            tags: [""],
             cta: "Read article",
-            link: "/",
+            link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
           {
             id: 3,
             title:
-              "Germany based Automotive Company navigates system complexities and optimizes efficiency with Infor CloudSuite automotive support services from Godrej Infotech",
+              "Global Leader in Industrial Packaging and Services implements Infor LN",
             thumbnail: "",
             description: "",
-            tags: ["Transformation"],
+            tags: [""],
             cta: "Read article",
             link: "/",
           },
@@ -851,21 +961,25 @@ const page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  We are your trusted RPA partner, and our experience extends to
-                  industry-leading RPA platforms and expertise to customize
-                  solutions that fulfil your exclusive business needs
+                  Our proficiency with tech platforms paves the way for progressive business results, blending innovation and efficiency seamlessly.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
                 <div>
-                  <Image src={inforCloudSuite} alt="Infor" />
+                  <Image src={microsoft} alt="microsoft" />
                 </div>
                 <div>
-                  <Image src={Oracle} alt="Infor" />
+                  <Image src={infor} alt="Infor" />
                 </div>
                 <div>
-                  <Image src={Dynamic365} alt="Infor" />
+                  <Image src={automationAnywhere} alt="Automation" />
                 </div>
+                <div>
+                  <Image src={Oracle} alt="oracle" />
+                </div>
+                {/* <div>
+                  <Image src={lsCentral} alt="LsCentral" />
+                </div> */}
               </div>
             </div>
           </div>
@@ -873,21 +987,23 @@ const page = () => {
       </>
       {/* Industry Spotlight Slider */}
 
+      {/* Insights */}
+      <BlogSlider arr={blogData} />
+
       {/* Testimonials */}
       <NewTestimonial
         ribbon="Testimonials"
         ribbonVisible={false}
-        title="What Experts Think About Us "
-        desc="It is a long established fact that a reader will be distracted by
-        the readable content of a page when looking at its layout."
+        title="Delighted Customers Share their Success Experiences"
+        desc="Discover how we have helped our customers to realize better results aligned with their business goals."
         arr={[
           {
             id: 1,
             clientName: "",
-            clientDesignation: "IT Manager",
+            clientDesignation: "India's Leading Manufacturer of Switchgears & Control gears",
             thumbnail: "",
             description:
-              "We would like to express our sincere appreciation for the Godrej Infotech team for delivering our Power BI solution on time and with great quality. We really like the data visualizations & dashboards provided and it makes it easier for us to get a good grip on our business performance indicators.",
+              "Appreciation for all the hard work and diligent effort that GITL’s team has put into solving the issue of our Web Enquiry page. It was your persistent hard work and research that has given us results eventually. We are pleased to have you as our Azure support partner.",
             category: "static",
             link: "/",
           },
@@ -895,32 +1011,22 @@ const page = () => {
             id: 2,
             clientName: "",
             clientDesignation:
-              "Director of Finance, Wildlife Conservation International NGO based in India",
+              "Leading Seafood Restaurant in Saudi Arabia",
             thumbnail: "",
             description:
-              "We're delighted with the successful D365 implementation executed by talented GITL team. Their collaboration with our team was seamless, ensuring timely delivery. They have dedicated significant effort to grasp our distinctive needs, reinforcing our satisfaction.",
+              "Thanks to the GITL team for their exceptional work on the VAT Transition project! From database analysis to report modification, all tasks were completed precisely and on time. Despite the remote setup the efficient management from the Godrej Infotech team ensured seamless success.",
             category: "static",
             link: "/",
           },
-          {
-            id: 3,
-            clientName: "",
-            clientDesignation:
-              "Project Manager, Investment Holding Company in Riyadh & Dubai",
-            thumbnail: "",
-            description:
-              "Congratulations to GITL team for successful go-live of Microsoft Business Central SAAS and KSA GITL Add-on HR & Payroll Solution. The key achievement was the seamless integration between Business Central and bio-time attendance machine. Our material requisition efficiency has improved by 66%, purchase order processing time is cut down by 79% and boosted invoicing productivity by 60%.",
-            category: "static",
-            link: "/",
-          },
+          
         ]}
       />
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Free 30 Minutes "
+        blue="Strategy for IT Services!"
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Share your details to discover how we can assist your business with speedy growth."
       />
     </>
   );
