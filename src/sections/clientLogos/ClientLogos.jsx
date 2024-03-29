@@ -9,11 +9,11 @@ const ClientLogos = () => {
       title: "Emma",
       url: "/client/emma.png",
     },
-    {
-      id: 2,
-      title: "Pocl",
-      url: "/client/pocl.png",
-    },
+    // {
+    //   id: 2,
+    //   title: "Pocl",
+    //   url: "/client/pocl.png",
+    // },
     {
       id: 3,
       title: "Boskalis",
