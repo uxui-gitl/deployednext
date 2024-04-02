@@ -4,6 +4,7 @@ import ClientLogos from "@/sections/clientLogos/ClientLogos";
 import TeamProfile from "@/sections/teamProfile/TeamProfile";
 import styles from "./page.module.css";
 import React from "react";
+import Image from "next/image";
 
 import Icon from "@mdi/react";
 import { mdiEyeOutline } from "@mdi/js";
@@ -14,6 +15,10 @@ import Balancer from "react-wrap-balancer";
 import Navbar from "@/components/Navbar/Navbar";
 import Timeline from "@/components/Timeline";
 import EmployeeExp from "@/components/EmployeeExp";
+// import microsoft from "../../../public/SpotlightLogoGrid/Microsoft-Office.png";
+// import infor from "../../../public/SpotlightLogoGrid/infor.png";
+// import Oracle from "../../../public/Oracle.png";
+// import automationAnywhere from "../../../public/logos/rpa/automationAnywhere.svg";
 
 const Page = () => {
   return (
@@ -36,9 +41,7 @@ const Page = () => {
                 The Guiding Principles We Live By
               </h3>
               <p className="text-base font-regular">
-                Every day, we endeavour to create a meaningful impact, driven by
-                our core principles and essence, reaching beyond our industry to
-                positively touch every association we encounter.
+                Every day, we endeavour to create a meaningful impact, driven by our core principles and essence, reaching beyond our industry to positively touch every association we encounter.
               </p>
             </div>
           </div>
@@ -54,8 +57,7 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
               <p className="text-base font-medium">
-                Create Sustainable Value for our Stakeholders by connecting
-                People and Technology.
+                Create Sustainable Value for our Stakeholders by connecting People and Technology.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
@@ -64,8 +66,7 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
               <p className="text-base font-medium">
-                Be a world class provider of high-quality Information &
-                Technology solutions.
+               Be a world class provider of high-quality Information & Technology solutions.
               </p>
             </div>
             <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
@@ -80,6 +81,45 @@ const Page = () => {
           </div>
         </div>
       </>
+
+{/* Our Partners */}
+      <>
+        <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
+            {/* left */}
+            <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
+              <div className="">
+                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
+                  Our Partners
+                </h3>
+              </div>
+              <div>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                  Our proficiency with tech platforms paves the way for progressive business results, blending innovation and efficiency seamlessly.
+                </p>
+              </div>
+              <div className="flex justify-center items-center gap-20">
+                {/* <div>
+                  <Image src={microsoft} alt="microsoft" />
+                </div>
+                <div>
+                  <Image src={infor} alt="Infor" />
+                </div>
+                <div>
+                  <Image src={automationAnywhere} alt="Automation" />
+                </div>
+                <div>
+                  <Image src={Oracle} alt="oracle" />
+                </div> */}
+                {/* <div>
+                  <Image src={lsCentral} alt="LsCentral" />
+                </div> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
       <Awards />
       <TeamProfile />
       <>

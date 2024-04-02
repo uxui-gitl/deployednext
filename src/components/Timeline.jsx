@@ -15,83 +15,72 @@ const Timeline = () => {
     {
       _id: 1,
       title: "Sustaining Holistic Excellence",
-      year: "2021 - Present",
+      year: "2020 - Present",
       list: [
-        "Great Place to Work Certified ",
-        "Partnership with UiPath India.",
-        " Partnership with Automation, Anywhere, Inc, 2021. ",
-        "Partnership with SFDC in 2022.",
-        "ET Future-ready Organization 2023. ",
-        " Microsoft Solution Partner for Business Applications 2023. ",
+        "2023: Microsoft Solution Partner for Business Applications, Great Place to Work Certified",
+        "2022: ET Future-ready Organization, Great Place to Work Certified, Partnership with Hexagon",
+        "2021: Partnership with Salesforce",
+        "2020: Partnership with UiPath India and Automation Anywhere",
       ],
     },
     {
       _id: 2,
       title: "Multi-faceted Accomplishments",
-      year: "2016 - 2020",
+      year: "2014 - 2019",
       list: [
-        "LS Retail Diamond Partner.",
-        "Gold Competency for MS Cloud.",
-        "Oracle Gold Partner.",
-        "Co-Development Engagement with Infor.",
-        "Influential Partner of the year by Infor, 2020.",
+        "2018: Formation of Godrej Infotech Americas, Partnership with Oracle",
+        "2017: Co-development Partnership with Infor, Gold Competency for Microsoft Cloud",
+        "2016: LS Retail Diamond Partner",
+        "2015: LS Retail Platinum Partner",
+        "2014: Formation of Godrej Infotech Singapore, Changed Belgium JV to Subsidiary",
       ],
     },
     {
       _id: 3,
-      title: "A Triumphant Year ",
-      year: "2011 - 2015",
+      title: "A Triumphant Year",
+      year: "2009 - 2013",
       list: [
-        "Dynamic Partner of the year by Microsoft",
-        "Best Partner for LS Retail",
-        "Microsoft dynamics Reseller of the year 2011, India",
-        "Best partner for Discrete Manufacturing by Microsoft.",
-        "Award for Microsoft President Club Member",
-        "Microsoft dynamics Reseller of the year 2012 India, Inclusion of New Product.",
-        "Business Operations started in KSA.",
-        "Dynamic partner of the year, West 2013.",
-        "Infor-Winner of Golden Deal of the Year.",
-        "Formation of GISPL (Singapore)",
-        "Formation of GIA (Godrej Infotech Americas)",
-        "LS Retail Platinum Partner.",
+        "2013: Business operations started in KSA, Infor-Winner of the Golden Deal of the year Award.",
+        "2012: Microsoft Dynamics Reseller of the Year ",
+        "2011: Retail Best Partner Award, Dynamics Partner of year",
+        "2010: LS Retail Partnership, Microsoft Discrete Manufacturing Award",
+        "2009: Microsoft inner Circle Member Award, Formation of LVD Godrej Infotech Belgium. ",
+        
       ],
     },
     {
       _id: 4,
       title: "Prominent Honors",
-      year: "2005 - 2010 ",
+      year: "2005 - 2008",
       list: [
-        "Great Place to Work Certified ",
-        "Partnership with UiPath India.",
-        " Partnership with Automation, Anywhere, Inc, 2021. ",
-        "Partnership with SFDC in 2022.",
-        "ET Future-ready Organization 2023. ",
-        " Microsoft Solution Partner for Business Applications 2023. ",
+        "2008: Opened Branch Office in Sharjah",
+        "2007: Infor Best Partner Award in Asia Pacific",
+        "2006: Microsoft President Club Member Award",
       ],
     },
     {
       _id: 5,
       title:
-        "Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering ",
+        "Inception of a Technology Powerhouse, Strategic Partnership and Award Garnering",
       year: "1999 - 2004",
       list: [
-        "Godrej Infotech Establishment.",
-        "Partnership with Infor",
-        "Best Partner Award for Infor",
+        "2004: Partnership with Microsoft",
+        "2003: Infor Best Partner Award 2003",
+        "1999: Started BaaN (Infor) Practice , IT Backbone for Godrej & Boyce Since",
+        "1971: Godrej infotech Established",
       ],
     },
   ];
 
   return (
     <>
-      <div className={`  w-full bg-[#f2f4f7] `} style={containerStyle}>
+      <div className={`w-full bg-[#f2f4f7]`} style={containerStyle}>
         <div className="  text-left md:text-center max-w-screen-xl md:max-w-screen-2xl mb-5 mx-auto px-[2rem]">
           <div className="max-w-screen-lg mx-auto px-[2rem] py-[2em]  ">
             <div className=" flex justify-center mx-auto text-center">
               <h3 className=" text-[36px] font-bold leading-[42px]">
                 <Balancer>
-                  From humble beginnings to tech titans, the inspiring journey
-                  of Godrej Infotech
+                  From Humble Beginnings To Growing Tech Hub: The Inspiring Journey Of Godrej Infotech
                 </Balancer>
               </h3>
             </div>
@@ -113,16 +102,16 @@ const Timeline = () => {
                   hideControls
                   items={[
                     {
-                      title: "2021 - Present ",
+                      title: "2020 - Present",
                     },
                     {
-                      title: "2016 - 2020",
+                      title: "2014 - 2019",
                     },
                     {
-                      title: "2011 - 2015",
+                      title: "2009 - 2013",
                     },
                     {
-                      title: "2005 - 2010 ",
+                      title: "2005 - 2008",
                     },
                     {
                       title: "1999 - 2004",

@@ -20,8 +20,7 @@ const AboutIntro = () => {
       <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] grid grid-cols-2 gap-16">
         <div className="flex flex-col justify-center items-start ">
           <h3 className="leading-[52px] text-[42px] mb-3 font-bold">
-            Building Robust Tomorrow For Global Businesses With The Legacy Of
-            Innovation
+            BUILDING ROBUST TOMORROW FOR GLOBAL BUSINESSES WITH PROVEN TECHNOLOGY EXPERTISE
           </h3>
           <div>
             <a

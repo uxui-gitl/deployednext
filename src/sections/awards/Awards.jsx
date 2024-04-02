@@ -20,11 +20,7 @@ const Awards = () => {
               Awards and Recognition
             </h3>
             <p className="font-medium leading-[22px] md:w-[90%] ">
-              Our proficiency in the technology ecosystem and collaborative work
-              culture have earned us appreciation from the partners, business
-              sector, and the industry. It is the Kaizen attitude that we infuse
-              at every level which consistently strengthens our organisation
-              performance.
+              Our proficiency in the technology ecosystem and collaborative work culture have earned us appreciation from the partners, business sector, and the industry. It is the Kaizen attitude that we infuse at every level which consistently strengthens our organisation performance.
             </p>
           </div>
           <div className=" ">
