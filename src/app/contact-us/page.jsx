@@ -287,7 +287,7 @@ const ContactUs = () => {
                     </p>
                   </label>
 
-                  <button type="submit" className="flex bg-blue-300">
+                  <button type="submit" className="flex  ">
                     Send Message{" "}
                     <Icon
                       path={mdiArrowRight}

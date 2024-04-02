@@ -16,7 +16,7 @@ const Avatar = ({ src, alt, fullName }) => {
         alt={alt}
         height={155}
         width={155}
-        className="rounded-[9999px] "
+        className="rounded-[9999px] h-[155px] w-[155px] max-h-[155px] max-w-[155px] min-h-[155px] min-w-[155px] object-cover"
       />
     );
   } else {

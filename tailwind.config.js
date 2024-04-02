@@ -8,10 +8,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        primary: "#FFF",
+        secondary: "#F2F4F7",
+      },
+      textColor: {
+        primary: "#101828",
+        secondary: "#475467",
+        blue: "#0745D3",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      // screens: {
+      //   '3xl': '1600px',
+      // },
+      colors: {
+        brand: "#add4ed", // Add brand color
       },
     },
   },
