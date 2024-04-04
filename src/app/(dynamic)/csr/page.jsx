@@ -6,9 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 import LoadingSkeleton from "@/components/LoadingSkeleton";
-import { SVGSkeleton, Skeleton } from "@/components/Skeleton";
 
-import { getServerSideProps } from "next";
 import Balancer from "react-wrap-balancer";
 import Icon from "@mdi/react";
 import { mdiArrowRight } from "@mdi/js";

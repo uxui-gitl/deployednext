@@ -15,6 +15,7 @@ import Balancer from "react-wrap-balancer";
 import Navbar from "@/components/Navbar/Navbar";
 import Timeline from "@/components/Timeline";
 import EmployeeExp from "@/components/EmployeeExp";
+import Csr from "@/components/Csr";
 // import microsoft from "../../../public/SpotlightLogoGrid/Microsoft-Office.png";
 // import infor from "../../../public/SpotlightLogoGrid/infor.png";
 // import Oracle from "../../../public/Oracle.png";
@@ -41,7 +42,9 @@ const Page = () => {
                 The Guiding Principles We Live By
               </h3>
               <p className="text-base font-regular">
-                Every day, we endeavour to create a meaningful impact, driven by our core principles and essence, reaching beyond our industry to positively touch every association we encounter.
+                Every day, we endeavour to create a meaningful impact, driven by
+                our core principles and essence, reaching beyond our industry to
+                positively touch every association we encounter.
               </p>
             </div>
           </div>
@@ -57,7 +60,8 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
               <p className="text-base font-medium">
-                Create Sustainable Value for our Stakeholders by connecting People and Technology.
+                Create Sustainable Value for our Stakeholders by connecting
+                People and Technology.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
@@ -66,7 +70,8 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
               <p className="text-base font-medium">
-               Be a world class provider of high-quality Information & Technology solutions.
+                Be a world class provider of high-quality Information &
+                Technology solutions.
               </p>
             </div>
             <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
@@ -82,7 +87,7 @@ const Page = () => {
         </div>
       </>
 
-{/* Our Partners */}
+      {/* Our Partners */}
       <>
         <div id="Partners" className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
@@ -95,7 +100,9 @@ const Page = () => {
               </div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our proficiency with tech platforms paves the way for progressive business results, blending innovation and efficiency seamlessly.
+                  Our proficiency with tech platforms paves the way for
+                  progressive business results, blending innovation and
+                  efficiency seamlessly.
                 </p>
               </div>
               <div className="flex justify-center items-center gap-20">
@@ -178,6 +185,126 @@ const Page = () => {
           ]}
         />
       </>
+      <Csr
+        arr={[
+          {
+            _id: 1,
+            title: "Statutory Report",
+            tabData: [
+              {
+                id: 1,
+                title: "FY 2020 - 2021",
+              },
+              {
+                id: 2,
+                title: "FY 2021 - 2022",
+              },
+              {
+                id: 3,
+                title: "FY 2022 - 2023",
+              },
+              {
+                id: 4,
+                title: "FY 2023 - 2024",
+              },
+              {
+                id: 5,
+                title: "FY 2024 - 2025",
+              },
+              {
+                id: 6,
+                title: "FY 2025 - 2026",
+              },
+            ],
+          },
+          {
+            _id: 2,
+            title: "Corporate Commitee",
+            tabData: [
+              {
+                id: 1,
+                name: "Mrs. Nyrika Holkar, Chairperson",
+                image: "",
+              },
+              {
+                id: 2,
+                name: "Mrs. Nyrika Holkar, Chairperson",
+                image: "",
+              },
+              {
+                id: 3,
+                name: "Mrs. Nyrika Holkar, Chairperson",
+                image: "",
+              },
+              {
+                id: 4,
+                name: "Mrs. Nyrika Holkar, Chairperson",
+                image: "",
+              },
+            ],
+          },
+          {
+            _id: 3,
+            title: "CSR Updates",
+            tabData: [
+              {
+                id: 1,
+                title: "FY 2020 - 2021",
+              },
+              {
+                id: 2,
+                title: "FY 2021 - 2022",
+              },
+              {
+                id: 3,
+                title: "FY 2022 - 2023",
+              },
+              {
+                id: 4,
+                title: "FY 2023 - 2024",
+              },
+              {
+                id: 5,
+                title: "FY 2024 - 2025",
+              },
+              {
+                id: 6,
+                title: "FY 2025 - 2026",
+              },
+            ],
+          },
+          {
+            _id: 4,
+            title: "Statutory Updates",
+            tabData: [
+              {
+                id: 1,
+                title: "FY 2020 - 2021",
+              },
+              {
+                id: 2,
+                title: "FY 2021 - 2022",
+              },
+              {
+                id: 3,
+                title: "FY 2022 - 2023",
+              },
+              {
+                id: 4,
+                title: "FY 2023 - 2024",
+              },
+              {
+                id: 5,
+                title: "FY 2024 - 2025",
+              },
+              {
+                id: 6,
+                title: "FY 2025 - 2026",
+              },
+            ],
+          },
+        ]}
+      />
       <InfotechWeeklyAlt />
     </>
   );

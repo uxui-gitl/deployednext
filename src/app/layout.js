@@ -13,6 +13,7 @@ import NextTopLoader from "nextjs-toploader";
 const works = Work_Sans({ subsets: ["latin"] });
 
 import Head from "next/head";
+import { NextUIProvider } from "@nextui-org/react";
 
 const defaultMetadata = {
   title:
@@ -62,10 +63,12 @@ export default function RootLayout({ children, route }) {
           <SplashScreen finishLoading={() => setIsLoading(false)} />
         ) : (
           <>
-            <NextTopLoader />
-            {children}
-            <Footer />
-            <Copyright />
+            <NextUIProvider>
+              <NextTopLoader />
+              {children}
+              <Footer />
+              <Copyright />
+            </NextUIProvider>
             {/* <Analytics />
             <SpeedInsights /> */}
           </>
