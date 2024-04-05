@@ -136,7 +136,7 @@ const ChoiceSlider = [
 const InforGrid = [
   {
     _id: 1,
-    title: "Infor LN (On Prem & On Cloud - MT)",
+    title: "Infor LN",
     icon: "dummy",
   },
   {
@@ -164,24 +164,20 @@ const InforGrid = [
     title: "Infor WMS",
     icon: "dummy",
   },
+  
   {
     _id: 7,
-    title: "HxGN EAM",
-    icon: "dummy",
-  },
-  {
-    _id: 8,
-    title: "Infor XM",
+    title: "Expense Management",
     icon: "dummy",
   },
 
   {
-    _id: 9,
+    _id: 8,
     title: "Infor CRM",
     icon: "dummy",
   },
   {
-    _id: 10,
+    _id: 9,
     title: "Infor Birst",
     icon: "dummy",
   },
@@ -256,8 +252,8 @@ const Page = () => {
   const upgradeCloud = [
     {
       _id: 1,
-      title: "Migrate to the Cloud ",
-      desc: "Ensuring a smooth and efficient migration process while minimizing disruptions to your business operations.",
+      title: "End-to-End Implementation",
+      desc: "Streamlining every phase of the implementation with the capability of successful and on-time delivery of Infor solution.",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -353,8 +349,8 @@ const Page = () => {
     },
     {
       _id: 2,
-      title: "Migrate From a different ERP Platform to Infor LN",
-      desc: "Experience seamless and transformative migration with data integrity for your business.",
+      title: "Managed Services",
+      desc: "Managing every complex, time-consuming and resource-rigorous process and on -demand maintenance of Infor application.",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -450,8 +446,8 @@ const Page = () => {
     },
     {
       _id: 3,
-      title: "Upgrade with Infor",
-      desc: "Get access to enhanced innovation, business preferences and value.",
+      title: "Migrate to the Cloud",
+      desc: "Ensuring a smooth and efficient migration process with minimum business disruptions",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -547,8 +543,8 @@ const Page = () => {
     },
     {
       _id: 4,
-      title: "End-to-End Implementation",
-      desc: "Streamlining every phase of the implementation, we provide the capability of successful and on-time delivery of Infor solution.",
+      title: "Migrate From a different ERP Platform to Infor LN ",
+      desc: "Experience seamless and transformative migration with data integrity.",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -644,8 +640,8 @@ const Page = () => {
     },
     {
       _id: 5,
-      title: "Managed Services",
-      desc: "Managing every complex, time-consuming and resource-rigorous process and on demand maintenance of Infor application.",
+      title: "Upgrade with Infor",
+      desc: "Get access to the latest Infor platforms, ensuring improved overall performance.",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -682,14 +678,14 @@ const Page = () => {
         },
         {
           _tabId: 2,
-          title: "Nav Upgrade ",
+          title: "Nav Upgrade",
           isBullet: true,
           list: [
             {
               _listId: 1,
-              title: "Why Upgrade Dynamics Nav? ",
+              title: "Why Upgrade Dynamics Nav?",
               li: [
-                "Microsoft discontinued updates and customizations for Dynamics NAV versions ",
+                "Microsoft discontinued updates and customizations for Dynamics NAV versions",
                 "Lag for basic tasks as well ",
                 "No remote accessibility and support ",
               ],
@@ -742,7 +738,7 @@ const Page = () => {
     {
       _id: 6,
       title: "Custom Development & Integrations",
-      desc: "Value-adding Infor application customizations and integrations to drive innovation that delivers great business outcomes.",
+      desc: "Value-adding customizations and integrations that deliver better business outcomes.",
       cta: "",
       isNested: false,
       ctaUrl: "",
@@ -974,7 +970,7 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Embrace the Digital Future of Business Efficiency with Infor"
+        title="Embrace the Digital Future of Business Efficiency with Industry Specialized Infor Application"
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -1021,7 +1017,7 @@ const Page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Infor stands as a globally recognized provider of industry-specific business cloud solutions. With a persistent partnership of two decades, our expertise lies in delivering bespoke cloud solutions that strengthen business growth through the application of data science and seamless integration. Further we have successfully implemented and are currently managing Infor solutions for our parent company, the globally renowned Godrej conglomerate, valued at $4.1 billion. W enabling businesses to embark on a transformative journey to the cloud and harness advanced capabilities."></Abstract>
+      <Abstract abstractdesc="Globally recognized Infor is a robust ERP solution that delivers improved business strength and operational responsiveness. Committed to offering core industry application processes, we minimize implementation risk for our customers. With Godrej Infotech’s persistent partnership of over two decades and a track record of successfully delivering APAC’s largest Infor implementation, we enable businesses to set growth-driven business operations across the organization."></Abstract>
 
       {/* Infor Grid */}
       <>
@@ -1031,7 +1027,7 @@ const Page = () => {
             <div className="bg-[#FFF] flex items-start flex-col justify-between relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  Globally Trusted Core Infor expertise
+                  Globally Trusted Core Infor Expertise
                 </h3>
                 <p>
                   No matter the intricacy of your business requirements, our
@@ -1125,13 +1121,10 @@ const Page = () => {
             <div className="bg-white flex items-start flex-col justify-start">
               <div className="md:flex-row flex-col flex text-left gap-x-10">
                 <h3 className="text-4xl leading-[42px] font-bold mb-5">
-                  Infor Services with Expert Consulting and Success Delivery
+                  Infor Service Offerings
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project&#39;s success drives our
-                  ownership and determination to go above and beyond. This
-                  steadfast dedication has positioned us as a trusted long-term
-                  collaborator in our industry.
+                  Our commitment to your project's success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business. 
                 </p>
               </div>
             </div>
@@ -1282,10 +1275,7 @@ const Page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily
-                  integrating specialized solutions intend to add value to
-                  business with handy support, streamlined processes and intense
-                  industry expertise.
+                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support.
                 </p>
               </div>
             </div>
@@ -1297,7 +1287,7 @@ const Page = () => {
               {
                 _id: 1,
                 title: "InsightEdge+",
-                desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS and India localization requirements.",
+                desc: "Industry-specific pre-built business reporting readily available on Power BI tailored to meet the needs of MIS.",
                 cta: "",
                 icon: mdiArrowRight,
                 ctaUrl: "",
@@ -1305,7 +1295,7 @@ const Page = () => {
               {
                 _id: 2,
                 title: "DataSwiftPro",
-                desc: "Godrej Infotech Data Conversion Utility Tool offers data migration utilities facilitating faster & structured data upload and managing source & target systems, table structures, field mapping and data download/upload scripts.",
+                desc: "Godrej Infotech Data Conversion Utility (GIDCU) Tool offers data migration utilities facilitating faster & structured data upload and managing source & target systems, table structures, field mapping and data download/upload scripts.",
                 cta: "",
                 icon: mdiArrowRight,
                 ctaUrl: "",
@@ -1329,7 +1319,7 @@ const Page = () => {
               {
                 _id: 5,
                 title: "Prosoft 2.0",
-                desc: "Robust project management solution and inventory controls are designed to streamline operations in on-site project management. PS2.0 is integrated with the Infor platform, ensuring an efficient project management experience.",
+                desc: "Customized on Infor LN, this project management solution and inventory controls are designed to streamline operations in on-site project management. PS2.0 is integrated with the Infor platform, ensuring an efficient project management experience.",
                 cta: "",
                 icon: mdiArrowRight,
                 ctaUrl: "",
@@ -1443,10 +1433,7 @@ const Page = () => {
             title: "10,000+",
             desc: "Infor Users",
           },
-          {
-            title: "10+",
-            desc: "Countries Opted Infor Applications",
-          },
+          
         ]}
       ></Expertise>
 
@@ -1460,7 +1447,7 @@ const Page = () => {
           {
             id: 1,
             title:
-              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN",
+              "Auto Sector's Leading Electrical Component Manufacturer Cuts Manual Effort by 30% with Infor LN ",
             thumbnail: "AutoSectorLeadingElectrical",
 
             description: "",
@@ -1471,8 +1458,8 @@ const Page = () => {
           {
             id: 2,
             title:
-              "Global Oncology Pharmaceuticals Company leverages Preventive Maintenance Scheduling and asset lifecycle management with HxGN EAM",
-            thumbnail: "GlobalOncology",
+              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
+            thumbnail: "GlobalHydraulicSystems",
 
             description: "",
             tags: [""],
@@ -1482,13 +1469,13 @@ const Page = () => {
           {
             id: 3,
             title:
-              "Global Hydraulic Systems Manufacturer Achieves Enhanced User Experience and Workforce Enablement with Infor LN",
-            thumbnail: "GlobalHydraulicSystems",
+              "European sheet metal manufacturer cuts costs by 40% and boosts after-sales speed by 20% with Infor LN.",
+            thumbnail: "",
 
             description: "",
             tags: [""],
             cta: "Know More",
-            link: "https://www.godrejinfotech.com/assets/pdf/case-studies/Infor-LN-India-Localization.pdf",
+            link: "/",
           },
         ]}
       />
@@ -1621,13 +1608,14 @@ const Page = () => {
         title="Are you Ready for Infor-driven growth?"
         blue="Let's get started!?"
         title2=""
-        desc="Please fill in the form below to implement robust industry-specific solutions and enhance the agility of your operations. "
+        desc="Please share your details to implement robust industry-specific solution and enhance the agility of your operations."
       />
 
       {/* Infotech weekly */}
       <>
         <div className="hidden">
           <InfotechWeeklyAlt />
+          
         </div>
       </>
     </>
