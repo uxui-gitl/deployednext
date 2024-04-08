@@ -275,7 +275,7 @@ const capabilities = [
   {
     _id: 1,
     icon: "MasterComplexity",
-    title: "Master Complexity",
+    title: "Master complexity",
     list: [
       "Better decision taking ability",
       "Promote Manufacturing excellence",
@@ -290,7 +290,7 @@ const capabilities = [
     list: [
       "Segment the supply base",
       "Measure and improve supplier performance",
-      "Minimize supply chain risk.",
+      "Minimize supply chain risk",
       "Multimodal manufacturing capabilities",
       "Mass-customization capabilities",
       "Direct management of subcontracted production",
@@ -357,7 +357,7 @@ const capabilities = [
   {
     _id: 8,
     icon: "ProductLifecycleManagement",
-    title: "Product Lifecycle Management",
+    title: "Product lifecycle management",
     list: [
       "Integrated product lifecycle management (PLM)",
       "Seamless workflows between engineering and manufacturing",
@@ -371,7 +371,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Infor LN - A Global ERP Cloud and On-Premises Solution for complex and large businesses"
+        title="Infor LN - A Global ERP Cloud Solution for complex and large businesses "
         desc=""
         cta="Let's Connect"
         width="60%"
@@ -416,7 +416,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Our expertise is refined and matured over years of close engagement with multiple enterprises, thus ensuring that our customers derive maximum value from their Infor LN ERP. We offer end-to-end services across the application lifecycle (Plan-Build-Run) that enable us to design and deliver the right solutions to our customers on time and at the right cost. Our global Infor LN workforce is proactive to empower our customers with the right solutions to drive business value. "></Abstract>
+      <Abstract abstractdesc="Our expertise is refined and matured over years of close engagement with multiple enterprises, thus ensuring that our customers derive maximum value from their Infor LN ERP. We offer end-to-end services across the application lifecycle (Plan-Build-Run) that enable us to design and deliver the right solutions on time and at the right cost."></Abstract>
 
       {/* Key Capabilites */}
       <>
@@ -610,12 +610,10 @@ const page = () => {
                       </h4> */}
                       <div className="flex flex-col md:flex-row gap-8 ">
                         <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                          Add On Infor LN Solutions
+                          Add On Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Our Infor LN Solutions have been meticulously
-                          developed, taking into account the insights of
-                          industry expertise.
+                          Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support,
                         </p>
                       </div>
                     </div>
@@ -695,12 +693,12 @@ const page = () => {
         arr={[
           {
             _id: 1,
-            desc: "Serving one of the Asia's largest Infor LN user bases",
+            desc: "Serving one of the Asia's largest Infor LN user base",
             icon: "",
           },
           {
             _id: 2,
-            desc: "Our Project managers take complete responsibility for delivering quality on time.",
+            desc: "Project managers take complete responsibility for delivering quality on time.",
             icon: "",
           },
           {
@@ -727,7 +725,7 @@ const page = () => {
         title="Ready to Accelerate"
         blue="Your Business Progression?"
         title2=""
-        desc="Share your details and let our Infor LN experts accelerates your path to business growth!"
+        desc="Share your details and let our Infor LN experts accelerate your path to business growth."
       />
       <InfotechWeeklyAlt />
     </>
