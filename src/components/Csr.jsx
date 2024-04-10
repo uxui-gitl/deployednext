@@ -49,7 +49,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -59,8 +59,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -79,7 +82,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -89,8 +92,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -109,7 +115,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -119,8 +125,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -139,7 +148,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -149,8 +158,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -169,7 +181,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -179,8 +191,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -199,7 +214,7 @@ const Csr = ({ arr }) => {
                 <Link
                   isExternal
                   className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="https://github.com/nextui-org/nextui"
+                  href="/"
                 >
                   <CardFooter
                     radius="none"
@@ -209,8 +224,11 @@ const Csr = ({ arr }) => {
                     Know More.{" "}
                     <Icon
                       path={mdiArrowRight}
-                      style={{ marginLeft: "0.5em" }}
-                      size={1}
+                      style={{
+                        marginLeft: "0.5em",
+                        height: "1em",
+                        width: "1em",
+                      }}
                     />
                   </CardFooter>
                 </Link>
@@ -280,7 +298,6 @@ const Csr = ({ arr }) => {
             </CardBody>
           </Card>
         </Tab>
-
         <Tab key="Statutory" className="w-full " title="Statutory">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
