@@ -567,15 +567,13 @@ export default function Home() {
 
         {/* Section Nav Test */}
 
-        <>
-          <SectionNav arr={navLinks} />
-        </>
+        <>{/* <SectionNav arr={navLinks} /> */}</>
 
         {/* ACT cards vertical slider */}
         <>
           <div
             id="actCards"
-            className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+            className="hidden max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
           >
             <main ref={container} className={`relative mt-[20vh]`}>
               {projects.map((project, i) => {
@@ -657,7 +655,7 @@ export default function Home() {
         </>
 
         {/* Spotlight test */}
-        <div id="spotlight">
+        <div className="hidden" id="spotlight">
           <>
             <div className={`w-full text-left pt-32`}>
               <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
