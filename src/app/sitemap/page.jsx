@@ -470,6 +470,16 @@ const page = () => {
                 ☑️ Contact Us
               </Link>
             </li>
+
+            <li style={{ listStyleType: "circle" }}>
+              <Link
+                className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
+                target="_blank"
+                href={"/globe"}
+              >
+                ☑️ globe
+              </Link>
+            </li>
             <li style={{ listStyleType: "circle" }}>
               <Link
                 className="font-medium text-lg ml-4 hover:underline w-fit w-fit-offset-2 mb-2"
