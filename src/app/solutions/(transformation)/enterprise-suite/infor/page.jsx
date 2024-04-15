@@ -1025,10 +1025,7 @@ const Page = () => {
                   Globally Trusted Core Infor Expertise
                 </h3>
                 <p>
-                  No matter the intricacy of your business requirements, our
-                  highly skilled team excels at understanding your
-                  organization&#39;s pain points and providing effective
-                  solutions.
+                 Regardless of whether you're starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level. 
                 </p>
               </div>
             </div>
@@ -1557,7 +1554,7 @@ const Page = () => {
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
         title="Delighted customers share their success experience "
-        desc="Discover how we have helped our clients to realize tangible outcomes aligned with their business goals."
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
