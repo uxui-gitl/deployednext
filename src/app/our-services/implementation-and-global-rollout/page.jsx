@@ -167,12 +167,12 @@ const UseCases = [
     title: "Global Rollouts",
     cta: "Know More",
     link: "/",
-    desc: "We initiate with executing a pilot implementation at selected locations predetermined by the client. Upon approval of the solution by the client, it is then deployed to all other stores, branches, and offices of the organization according to agreed-upon schedules.",
+    desc: "We initiate by executing a pilot implementation at selected locations predetermined by the client. Upon approval of the solution by the client, it is then deployed to all other stores, branches, and offices of the organization according to agreed-upon schedules.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Godrej Infotech Standard Solutions",
+    title: "Godrej Infotech Solutions",
     cta: "Know More",
     link: "/",
     desc: "Supporting primary business application with our specialized solution, we provide a distinct advantage for managing essential business functions including Finance, Master Planning, Sales and Marketing, Inventory and Warehouse, Procurement, Sourcing, Service Management and more, all within reasonable implementation budgets.",
@@ -183,7 +183,7 @@ const UseCases = [
     title: "Customization and Integration",
     cta: "Know More",
     link: "/",
-    desc: "We consistently go above and beyond to deliver valuable end-user experience, while managing an complex combination of new processes, business models, technologies, systems and devices.",
+    desc: "We consistently go above and beyond to deliver valuable end-user experience, while managing a complex combination of new processes, business models, technologies, systems and devices.",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
@@ -511,7 +511,7 @@ const ConsiderRPA = [
   {
     _id: 4,
     title: "Effective Change Management",
-    desc: "Understanding the obvious resistance for the change, we exercise strong change management practices for sustainability ensuring efficient acceptance.",
+    desc: "Understanding the obvious resistance to the change, we exercise strong change management practices, ensuring efficient acceptance.",
     cta: "",
     ctaUrl: "/",
     image: "/rpa/GainAccurateOutcomes.png",
@@ -519,7 +519,7 @@ const ConsiderRPA = [
   {
     _id: 5,
     title: "Adaptive Business Environment",
-    desc: "We constantly screen the business environment, examining market dynamics and industry trends to ensure successful implementation, especially at the time of ambiguity.",
+    desc: "We constantly scan the business environment, examining market dynamics and industry trends to ensure successful implementation, especially at the time of ambiguity.",
     cta: "",
     ctaUrl: "/",
     image: "/rpa/GainAccurateOutcomes.png",
@@ -530,7 +530,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title=" Effective and Smooth Implementation Services to Elevate your Business Results "
+        title="Effective and Smooth Implementation Services to Elevate your Business Results"
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -575,8 +575,12 @@ const page = () => {
         />
       </>
 
+       {/* Abstract  */}
+      <Abstract abstractdesc="As a trustworthy transformation partner, your ambitious goals become our shared mission. Embracing a holistic strategy for your implementation and rollout project and assuring timely delivery, we exceed your expectations and nurture a genuine partnership that drives us toward goal realization together. With over 25 years of experience in implementing End to End IT solutions, we have the expertise to deliver avant-garde solutions that meets the needs of our global clients'. Our services include fast and secure rollouts tailored to diverse locations, divisions and subsidiaries. Each project is meticulously managed by seasoned subject matter experts and technology specialists, ensuring precise execution."></Abstract>
+
+
       {/* Overview */}
-      <>
+      {/* <>
         <div className={` w-full bg-white py-10`}>
           <>
             <div className="max-w-screen-xl mx-auto px-[2rem] bg-white">
@@ -605,7 +609,7 @@ const page = () => {
             </div>
           </>
         </div>
-      </>
+      </> */}
 
       {/* two people expetise / Our Services */}
       <>
@@ -621,9 +625,7 @@ const page = () => {
                 </div>
                 <div>
                   <p className="font-medium text-[#475467] leading-[22px] md:w-[90%] ">
-                    We offer implementation services focused on delivering
-                    specific outcomes from inception to project completion with
-                    our commitment to quality.
+                    We offer implementation services focused on delivering specific outcomes from inception to project completion with our commitment to quality.
                   </p>
                 </div>
               </div>
@@ -745,10 +747,9 @@ const page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">
                 Result Focused Services
-              </h4>
+              </h4> 
               <p className="text-base font-medium">
-                We measure our success, based on the tangible results we deliver
-                for our customers.
+               We measure our success, based on the tangible results we deliver for our customers.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
@@ -783,7 +784,7 @@ const page = () => {
       <NewTestimonial
         ribbon="CLIENT TESTIMONIALS"
         ribbonVisible={false}
-        title="Delighted Customers Share their Success Experiences"
+        title="Delighted Customers Share their Successful Experiences"
         desc="Discover how we have helped our customers to realize better results aligned with their business goals."
         arr={[
           {
@@ -831,10 +832,7 @@ const page = () => {
                   Key Implementation Phases
                 </h4>
                 <div className="flex flex-col md:flex-row gap-8 ">
-                  <h3 className="text-4xl leading-[42px] my-4 font-bold">
-                    Our Implementation approach is categorized into 6 phases,
-                    each with goal.
-                  </h3>
+                  
                   <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
                     Constant optimization is important during every stage, as we
                     fine-tune the solution to maximize its value.
@@ -850,53 +848,46 @@ const page = () => {
               arr={[
                 {
                   label: "01",
-                  expandedLabel: "Step 01",
+                  expandedLabel: "01",
                   title: "Site Analysis and Project Planning",
                   expandedTitle: "Site Analysis and Project Planning",
-                  desc: "Understanding your precise needs and building the foundation for an effective project execution.",
+                  desc: "Understand your precise needs and build the foundation for an effective project execution.",
                   image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                 },
                 {
                   label: "02",
-                  expandedLabel: "Step 02",
-                  title: "Design Solution Architecture and Mapping",
-                  expandedTitle: "Design Solution Architecture and Mapping",
-                  desc: "Crafting a tailor-made solution framework aligning with your business goals.",
+                  expandedLabel: "02",
+                  title: "Design Solution Architecture and Mapping: Development",
+                  expandedTitle: "Design Solution Architecture and Mapping: Development",
+                  desc: "Employ the latest tools and methodologies to build robust and scalable solutions tailored to your specific requirements.",
                   image: "/upgradeCloud/Services-Strategy-Designing.jpg",
                 },
                 {
                   label: "03",
-                  expandedLabel: "Step 03",
-                  title: "Customization and Configuration",
-                  expandedTitle: "Customization and Configuration",
-                  desc: "Structuring functional requirements such as customization, specific configuration, and integration either with the primary application or third-party solutions.",
+                  expandedLabel: "03",
+                  title: "Efficient Knowledge Transfer",
+                  expandedTitle: "Efficient Knowledge Transfer",
+                  desc: "Offer user acceptance testing to ensure proficiency with the new application.",
                   image:
                     "/upgradeCloud/Services-Milestone-Blueprint-Development.jpg",
                 },
                 {
                   label: "04",
                   expandedLabel: "Step 04",
-                  title: "Efficient Knowledge Transfer",
-                  expandedTitle: "Efficient Knowledge Transfer",
-                  desc: "Offering user acceptance testing to ensure proficiency with the new application.",
+                  title: "Data Migration & Go-Live Readiness",
+                  expandedTitle: "Data Migration & Go-Live Readiness",
+                  desc: "Thoroughly assess, cleanse, transform, and migrate data from legacy systems to the new solution, ensuring system readiness for a smooth launch with minimal hiccups and if all is set as per your anticipation.",
                   image: "/upgradeCloud/Services-Establishing-Readiness.jpg",
                 },
                 {
                   label: "05",
                   expandedLabel: "Step 05",
-                  title: "Go-Live Readiness Evaluation",
-                  expandedTitle: "Go-Live Readiness Evaluation",
-                  desc: "Thoroughly assessing system readiness for the big launch, guaranteeing minimum hiccups",
+                  title: "Go-Live and Post Go Live Support",
+                  expandedTitle: "Go-Live and Post Go Live Support",
+                  desc: "Launch chosen solution and provide ongoing monitoring, troubleshooting and performance tuning to ensure peak efficiency of solution.",
                   image: "/upgradeCloud/Services-Upgradation-and-Execution.jpg",
                 },
-                {
-                  label: "06",
-                  expandedLabel: "Step 06",
-                  title: "Finalization and Go-Live",
-                  expandedTitle: "Finalization and Go-Live",
-                  desc: "Ensuring the execution of every final change, making sure the system is all set as per your anticipation.",
-                  image: "/upgradeCloud/Services-Management-and-Control.jpg",
-                },
+                
               ]}
             />
           </div>
@@ -906,7 +897,7 @@ const page = () => {
       {/* Our Expertise */}
       {/* Expertise */}
       <Expertise
-        ribbon="Acing your Business Objectives"
+        ribbon=""
         ribbonTxtWhite="true"
         title="The Hub of Expertise"
         desc="We are here to build edge and bring technology brilliance with the finest in industry. Driving the innovation path, we develop better results for business across the globe."
@@ -932,18 +923,16 @@ const page = () => {
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] ">
             <div className="bg-[#F2F4F7] grid grid-cols-1 gap-5 relative">
               <div className="">
-                <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
-                  360 Degree Implementation Practice – What do we do?
+                <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
+                  360 Degree Implementation Practice
                 </h3>
                 <p>
-                  Every successful implementation needs more than technology
-                  expertise. Our all-inclusive approach commits to deliver
-                  winning implementation services for our customers .
+                  Every successful implementation needs more than technology expertise. Our all-inclusive approach delivers winning implementation services for our customers.
                 </p>
               </div>
             </div>
           </div>
-          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-10 sm:grid-cols-1">
+          <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-2 gap-10 sm:grid-cols-2">
             {ConsiderRPA.map((item, index) => (
               <div
                 className="flex flex-col sm:flex-row  bg-white"
@@ -999,58 +988,58 @@ const page = () => {
 
       {/* WHy Section */}
       <WhySection
-        ribbon="Let's Collaborate and Make it Happen"
+        ribbon="The Distinctive Edge"
         title="Why Godrej Infotech?"
-        desc="With track record of consistently delivering projects within schedule, budget and with high value-added outcomes, we are recognized as the preferred trusted partner for solution implementations, migrations and rollouts worldwide."
+        desc="With our track record of consistently delivering projects on schedule, budget and with high value-added outcomes, we are recognized as the trusted partner for solution implementation, migration and rollouts worldwide."
         arr={[
           {
             _id: 1,
-            desc: "Enhanced customer and employee <span style='color: #4C6FFF;'>satisfaction</span>  .",
+            desc: "Accountability at every phase of the implementation process",
             icon: "",
           },
           {
             _id: 2,
-            desc: "<span style='color: #4C6FFF;'>Smooth user adoption </span>and dedicated support service",
+            desc: "Rigorous unit testing for every configuration and customization",
             icon: "",
           },
           {
             _id: 3,
-            desc: "Accelerated project timelines for <span style='color: #4C6FFF;'>quicker results</span>.",
+            desc: "End-to-end proficiency in implementing comprehensive solutions",
             icon: "",
           },
           {
             _id: 4,
-            desc: "<span style='color: #4C6FFF;'>Minimum business disruption</span> through proven methodology.",
+            desc: "Simplified data management for better decision making",
             icon: "",
           },
           {
             _id: 5,
-            desc: "<span style='color: #4C6FFF;'>Accountability</span> at every phase of the implementation process.",
+            desc: "Smooth user adoption and dedicated support service",
             icon: "",
           },
           {
             _id: 6,
-            desc: "<span style='color: #4C6FFF;'>End-to-end proficiency</span> in implementing comprehensive solutions.",
+            desc: "Enhanced customer and employee satisfaction",
             icon: "",
           },
           {
             _id: 7,
-            desc: "Committed to punctual and <span style='color: #4C6FFF;'>on-budget implementations</span> .",
+            desc: "Committed to punctual and on-budget implementations",
             icon: "",
           },
           {
             _id: 8,
-            desc: "Streamlined full implementation cycles for <span style='color: #4C6FFF;'>efficiency</span>.",
+            desc: "Streamlined full implementation cycles for efficiency",
             icon: "",
           },
           {
             _id: 9,
-            desc: "<span style='color: #4C6FFF;'>Rigorous unit testing</span> for every configuration and customization.",
+            desc: "Accelerated project timelines for quicker results",
             icon: "",
           },
           {
             _id: 10,
-            desc: "<span style='color: #4C6FFF;'>Simplified data management</span> for better decision making",
+            desc: "Minimum business disruption through proven methodology",
             icon: "",
           },
         ]}
