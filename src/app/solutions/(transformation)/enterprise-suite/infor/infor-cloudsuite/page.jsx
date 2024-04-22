@@ -311,8 +311,8 @@ const blogData = [
   {
     _id: 1,
     ribbon: "Blog",
-    title: "Role of Infor OS in Powering Infor Cloud Suite User Experiences ",
-    desc: "This article talks about the pivotal role of Infor OS in optimizing user experiences within Infor CloudSuite, exploring its significance and diverse applications.",
+    title: "Role of Infor OS in Powering Infor CloudSuite User Experiences",
+    desc: "This blog discusses the crucial role of Infor OS in enhancing user experiences within Infor CloudSuite. It also explores the significance of Infor OS and its various applications.",
     cta: "Know More",
     link: "/",
     imgUrl: "RoleInforOSBlog",
@@ -411,7 +411,7 @@ const page = () => {
   return (
     <>
       <EntIntro
-        title="Make your business smart with seamless Infor Cloud Suite implementation - Pre-configured for Your Success"
+        title="Make your business smart with seamless Infor CloudSuite implementation - pre-configured for your success"
         desc=""
         cta="Let's Connect"
         width="80%"
@@ -458,7 +458,7 @@ const page = () => {
       </>
 
       {/* Overview  */}
-      <Abstract abstractdesc="Infor Cloud Suite ERP products have been recognized as Leaders in the 2022 Gartner Magic Quadrant for Cloud ERP, with a specific focus on serving product-centric enterprises. This acknowledgment underscores their exceptional capabilities, solidifying their status as an industry-leading solution. At Godrej Infotech, we understand daunting complexities of businesses and have reliable experience in implementing Infor Cloud Suite solutions along with continuous support and optimization. As your trusted Infor partner we collaborate with you at every step of your transformation journey."></Abstract>
+      <Abstract abstractdesc="Infor CloudSuite ERP products have been recognized as “Leaders in the 2022 Gartner Magic Quadrant for Cloud ERP”, with a specific focus on serving product-centric enterprises. This acknowledgment underscores their exceptional capabilities, solidifying their status as an industry-leading solution. At Godrej Infotech, we understand daunting complexities of businesses and have reliable experience in implementing Infor CloudSuite solutions along with continuous support and optimization. As your trusted Infor partner, we collaborate with you at every step of your transformation journey."></Abstract>
 
       {/* slider */}
       {/*  Card Slider Offerings */}
@@ -467,7 +467,7 @@ const page = () => {
           <OfferingsSlider
             // arr={OfferingsSliderData}
             // header={OfferingsSliderDataHeader}
-            title={"Proposed GITL Offerings"}
+            title={"Our Infor CloudSuite Offerings"}
             alignment={"center"}
             // alignment="left"
             expandedDesc={true}
@@ -476,7 +476,7 @@ const page = () => {
               {
                 _id: 1,
                 title: "Infor CloudSuite Industrial Enterprise",
-                desc: "",
+                desc: "A comprehensive cloud-based solution designed to enable manufacturing and distribution businesses with modern, scalable and agile ERP functionalities. This suite is designed to meet the specific needs of industries involved in complex manufacturing processes.",
                 cta: "Explore Service",
                 subArr: false,
                 subArrLinks: [],
@@ -518,7 +518,7 @@ const page = () => {
               {
                 _id: 2,
                 title: "Infor CloudSuite Automotive (Infor LN)",
-                desc: "",
+                desc: "Infor CloudSuite Automotive, powered by Infor LN, offers comprehensive features for automotive manufacturers, supporting everything from supply chain management to production control.",
                 cta: "Explore Service",
                 subArr: false,
                 subArrLinks: [],
@@ -546,8 +546,8 @@ const page = () => {
               },
               {
                 _id: 3,
-                title: "Infor CloudSuite Aerospace & Defense (Infor LN) ",
-                desc: "",
+                title: "Infor CloudSuite Aerospace & Defense",
+                desc: "Infor CloudSuite Aerospace & Defense offers specialized cloud-based solutions tailored to the unique demands of highly regulated aerospace and defense industry.",
                 cta: "Explore Service",
                 subArr: false,
                 subArrLinks: [],
@@ -577,7 +577,7 @@ const page = () => {
               {
                 _id: 4,
                 title: "Infor CS Engineering and Construction",
-                desc: "",
+                desc: "Infor CloudSuite Engineering and Construction is a complete solution designed to fulfil the exclusive needs of the engineering and construction industry.",
                 cta: "Explore Service",
                 subArr: false,
                 subArrLinks: [],
@@ -599,6 +599,10 @@ const page = () => {
                   },
                   {
                     title: "Procurement and Supply Chain ",
+                    url: "/",
+                  },
+                   {
+                    title: "Human Capital Management (HCM)",
                     url: "/",
                   },
                   {
@@ -627,13 +631,13 @@ const page = () => {
       {/* Microsoft Services */}
       <>
         <div
-          className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32  `}
+          className={`bg-ms-practise w-full  bg-[#F2F4F7]  py-32`}
           id="Services"
         >
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
-              <div className="  flex items-start flex-col justify-between  relative">
+              <div className="flex items-start flex-col justify-between  relative">
                 <div className="">
                   <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
                     Infor CloudSuite Services
@@ -641,9 +645,7 @@ const page = () => {
                 </div>
                 <div>
                   <p className="font-medium leading-[22px] md:w-[90%] ">
-                    Our services offer strategic business insights, refined
-                    through years of experience in understanding business
-                    processes, along with Infor Cloud Suite technical expertise.
+                    Leveraging our understanding of business processes refined through years of experience, we deliver end to end services along with strategic business insights powered by Infor Cloud Suite expertise.
                   </p>
                 </div>
               </div>
@@ -677,7 +679,7 @@ const page = () => {
                 },
               }}
               modules={[Pagination]}
-              className=" flex-grow"
+              className="flex-grow"
             >
               {UseCases.map((item, index) => {
                 return (
@@ -739,7 +741,7 @@ const page = () => {
       <Benefits
         ribbon="Infor CloudSuite Benefits"
         ribbonTxtWhite="true"
-        title="Extensible and integrable Cloud Suites through Infor OS."
+        title="With deep industry-specific functionalities, Infor CloudSuite applications offer responsive business environment, driving competitive differentiation."
         desc=""
         arr={[
           {
@@ -756,13 +758,13 @@ const page = () => {
             _id: 3,
             icon: "Benefits-upgradeCloud/EnhancedCollaboration",
             title:
-              "Industry-tailored features with a well-coordinated cloud environment.",
+              "Industry-tailored features with cloud environment.",
           },
           {
             _id: 4,
             icon: "Benefits-upgradeCloud/AdvancedDataManagement",
             title:
-              "Cloud-based applications less susceptible to downtime, ensuring business continuity.",
+              "Cloud-based applications less susceptible to downtime, ensuring business continuity. ",
           },
           {
             _id: 5,
@@ -787,7 +789,7 @@ const page = () => {
         ribbon="Testimonials"
         ribbonVisible={false}
         title="Delighted Customers share their Experiences"
-        desc="We're your trusted Infor CloudSuite partner and increasing the growth of your business efficiency is our utmost priority"
+        desc="Discover how we have helped our customers to realize tangible outcomes aligned with their business goals."
         arr={[
           {
             id: 1,
@@ -805,7 +807,7 @@ const page = () => {
             clientDesignation: "Manager Sales and Support",
             thumbnail: "1",
             description:
-              "We highly appreciate the service and support provided by your team for our Infor ERP LN Annual Maintenance. Over the last 2 years we have had a very good working relation with your team and have received timely inputs and guidance across the modules that have been implemented on the system. We look forward to a mutually beneficial relationship in the future as well. ",
+              "We highly appreciate the service and support provided by your team for our Infor ERP LN Annual Maintenance. Over the last 2 years we have had a very good working relation with your team and have received timely inputs and guidance across the modules that have been implemented on the system. We look forward to a mutually beneficial relationship in the future as well.",
             category: "static",
             link: "/",
           },
