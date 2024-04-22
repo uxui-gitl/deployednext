@@ -613,7 +613,7 @@ const page = () => {
                           Add On Solutions
                         </h3>
                         <p className="font-medium leading-[22px] md:w-[90%] my-4 ">
-                          Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support,
+                          Enhancing the functionalities of business applications, our specialized solutions intend to add value to business with handy support.
                         </p>
                       </div>
                     </div>
