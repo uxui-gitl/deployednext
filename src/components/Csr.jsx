@@ -267,7 +267,7 @@ const Csr = ({ arr }) => {
                 </CardBody>
                 <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
                   <h4 className="font-bold text-large">
-                    Mrs. Nyrika Holkar, Chairperson
+                    Mr. P. E. Fouzdar, Member
                   </h4>
                 </CardFooter>
               </Card>
@@ -283,7 +283,7 @@ const Csr = ({ arr }) => {
                 </CardBody>
                 <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
                   <h4 className="font-bold text-large">
-                    Mrs. Nyrika Holkar, Chairperson
+                    Mr. V. R. Mehta, Member
                   </h4>
                 </CardFooter>
               </Card>
@@ -293,8 +293,19 @@ const Csr = ({ arr }) => {
         <Tab key="CSR" className="w-full" title="CSR">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              <ul>                                   
+                                    <li class="updateTab"> <a href="assets/pdf/corporatePolicies/CSR.pdf" target="_blank">CSR policy</a></li>
+
+                                    <li class="updateTab"> <a href="assets/pdf/corporatePolicies/CSR22-23.pdf" target="_blank">CSR Action Plan FY 2022-23 </a></li>
+
+                                    <li class="updateTab"> <a href="assets/pdf/corporatePolicies/CSR21-22.pdf" target="_blank">CSR Action Plan FY 2021-22 </a></li>
+                                    
+                                    <li class="updateTab"> <a href="assets/pdf/corporatePolicies/CSR20-21.pdf" target="_blank">CSR Action Plan FY 2020-21 </a></li>
+
+                                    
+
+                                                                     
+                                </ul>
             </CardBody>
           </Card>
         </Tab>
