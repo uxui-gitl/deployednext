@@ -95,35 +95,35 @@ const lists = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Business Consulting",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Implementations & Global Rollout",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Upgrade & Migration",
+    title: "Migrations & Transformation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Development & Customization",
+    title: "Legacy Modernisation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Training Workshop",
+    title: "Infrastructure as a service",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -135,34 +135,7 @@ const UseCases = [
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 7,
-    title: "Legacy Modernization",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 8,
-    title: "Bespoke Applications",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const UseCasesSlider = [
   {
@@ -290,7 +263,7 @@ const locations = [
   },
   {
     id: 4,
-    loc: "Mumbai",
+    loc: "Bengaluru",
     loc2: "India",
     desc: "Godrej Infotech Ltd. Workenstein Collaborative Spaces Pvt Ltd, Workafella, 150, 1, Infantry Rd, Opp. Commissioner Office, Shivaji Nagar, Bengaluru, Karnataka 560001",
     phone: "",
@@ -467,31 +440,37 @@ const AIOfferings = [
 const ChoiceSlider = [
   {
     _id: 1,
-    title: "Healthcare",
+    title: "Manufacturing ",
     imgUrl: "1",
     url: "/",
   },
   {
     _id: 2,
-    title: "Automotive",
+    title: "Retail",
     imgUrl: "2",
     url: "/",
   },
   {
     _id: 3,
-    title: "Logistic",
+    title: "Project",
     imgUrl: "3",
     url: "/",
   },
   {
     _id: 4,
-    title: "Retail",
+    title: "Trading & Distribution",
     imgUrl: "4",
     url: "/",
   },
   {
     _id: 5,
-    title: "Manufacturing",
+    title: "Professional Service",
+    imgUrl: "5",
+    url: "/",
+  },
+    {
+    _id: 6,
+    title: "Healthcare",
     imgUrl: "5",
     url: "/",
   },
@@ -557,22 +536,18 @@ const Page = () => {
         </div>
       </div>
       <EntIntro
-        alignment="center"
-        title="Delivering Business value
-        with Automation"
-        desc="Transforming Healthcare with
-        All-Inclusive Cutting-Edge IT
-        Solutions and Services"
+        title="DELIVERING BUSINESS VALUE WITH AUTOMATION / CLOUD / TRANSFORMATION"
+        desc=""
         cta="Let's Connect"
-        width="100%"
+        width="70%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
       />
 
       {/* Partner logos */}
-      <>
+      {/* <>
         <div className={` w-full bg-[#FFF] pt-20`}>
           <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 ">
-            {/* left */}
+            
             <div className="bg-[#FFF] flex items-start flex-col justify-between  relative">
               <div className="">
                 <h3 className="text-[42px]  leading-[54px] mb-3 font-bold ">
@@ -600,7 +575,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </>
+      </> */}
 
       {/* about us */}
       <>
@@ -613,40 +588,16 @@ const Page = () => {
                   About Us
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  Headquartered in Belgium (Wevelgem-Gullegem), LVD Godrej
-                  Infotech (LVDGI), is a fully owned subsidiary of Godrej
-                  Infotech Limited (GITL) which is based in Mumbai, India. A
-                  leading IT service provider specializing in end-to-end IT
-                  solutions, GITL is part of the USD 4.1 Billion Godrej group of
-                  companies. The Godrej Group is one of India&apos;s leading
-                  corporate houses dealing in High Tech Engineering, Consumer
-                  Products, Aerospace, Chemicals, Construction, Material
-                  Handling, Storage & Security Solutions.
+                  Headquartered in Belgium (Wevelgem-Gullegem), LVD Godrej Infotech (LVDGI), is a fully owned subsidiary of Godrej Infotech Limited (GITL) which is based in Mumbai, India. A leading IT service provider specializing in end-to-end IT solutions, GITL is part of the USD 4.1 Billion Godrej group of companies. The Godrej Group is one of India's leading corporate houses dealing in High Tech Engineering, Consumer Products, Aerospace, Chemicals, Construction, Material Handling, Storage & Security Solutions. 
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  LVDGI&apos;s service offerings include Business Consulting,
-                  ERP Implementation & Support, Application Development,
-                  Integration, Digital Transformation, Analytical Services,
-                  Mobile Application Development, Infrastructure Management, and
-                  e-Commerce. We have domain and technology expertise in the
-                  Manufacturing, Retail, Trading, Distribution, Logistics,
-                  Hospitality, Project, and Service industries. A technology
-                  focused organization, LVDGI has emerged as a pioneer in the
-                  Digital Solutions space. Driven by the values of Integrity,
-                  Responsiveness, Commitment and Teamwork, we have been
-                  providing Microsoft, Infor, LS Retail, and Oracle services and
-                  solutions for leading organizations in the Europe region.
+                  LVDGI's service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries. 
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our team of knowledge experts provide ready-to-deploy and
-                  customizable IT-solutions for individual business functions
-                  like Enterprise Resource Planning (ERP), Customer Relationship
-                  Management, Product Life Cycle Management, Asset Management
-                  and Business Intelligence (BI). We also have a Remote
-                  Infrastructure Management team that works as an extended IT
-                  arm for their clients and provides skilled IT proactive
-                  services of Azure Cloud, Database, Network, System and
-                  Security Administration.
+                 A technology focused organization, LVDGI has emerged as a pioneer in the Digital Solutions space. Driven by the values of Integrity, Responsiveness, Commitment and Teamwork, we have been providing Microsoft, Infor, LS Retail, and Oracle services and solutions for leading organizations in the Europe region. 
+                </p>
+                <p className="font-medium leading-[22px] md:w-[90%] ">
+                 Our team of knowledge experts provide ready-to-deploy and customizable IT-solutions for individual business functions like Enterprise Resource Planning (ERP), Customer Relationship Management, Product Life Cycle Management, Asset Management and Business Intelligence (BI). We also have a Remote Infrastructure Management team that works as an extended IT arm for their clients and provides skilled IT proactive services of Azure Cloud, Database, Network, System and Security Administration. 
                 </p>
               </div>
             </div>
@@ -661,7 +612,7 @@ const Page = () => {
       <>
         <div
           id="actCards"
-          className=" max-w-screen-xl  mb-5 mx-auto p-5   px-[2rem]"
+          className=" max-w-screen-xl  mb-5 mx-auto p-5 px-[2rem]"
         >
           <main ref={container} className={`relative mt-[20vh]`}>
             {projects.map((project, i) => {
@@ -684,6 +635,56 @@ const Page = () => {
       {/* Robot Cards */}
 
       {/* Case Study */}
+
+      {/* Casestudy */}
+      <CaseStudy
+        ribbon="CASE STUDY "
+        title="Data Insights in Action / Case study"
+        desc=""
+        isHomepage={false}
+        arr={[
+          {
+            id: 1,
+            title:
+              "Belgium based Global Manufacturer of Sheet Metal Forming Machines Selects LVDGI for Infor LN Implementation, Rollout & Support",
+            thumbnail: "1",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "",
+          },
+          {
+            id: 2,
+            title:
+              "Europe's Leading Marine Services Provider headquartered in Netherlands Selects LVDGI for Infor LN Managed Support Services",
+            thumbnail: "2",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "",
+          },
+          {
+            id: 3,
+            title:
+              "Europe's Leading Machine Manufacturer Automates Operations with Integrated Infor LN 10.4 Solutions",
+            thumbnail: "2",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "",
+          },
+          {
+            id: 4,
+            title:
+              "Global Leader in Industrial Packaging Products and Services company signs contract with LVDGI for Infor LN rollout & support activities.",
+            thumbnail: "2",
+            description: "",
+            tags: [""],
+            cta: "Know More",
+            link: "",
+          },
+        ]}
+      />
 
       {/* MS Services Slider */}
       <>
@@ -892,18 +893,16 @@ const Page = () => {
               </div>
               <h4 className="text-[22px] font-bold mt-3 mb-2">Vision</h4>
               <p className="text-base font-medium">
-                Create Sustainable Value for our Stakeholders by connecting
-                People and Technology.
+                Be a world class provider of high-quality Information's & Technology solutions.
               </p>
             </div>
             <div className="offsetCard border-dashed hover:bg-[#f2f4f7] border-2 border-[#DBDBDB] border-y-0 bg-white px-10 py-[4em] ">
               <div className="w-max">
                 <Icon path={mdiEyeOutline} size={2} className="inline" />
               </div>
-              <h4 className="text-[22px] font-bold mt-3 mb-2">Purpose</h4>
+              <h4 className="text-[22px] font-bold mt-3 mb-2">Mission</h4>
               <p className="text-base font-medium">
-                Be a world class provider of high-quality Information &
-                Technology solutions.
+                Beyond Business through integrated IT solutions.
               </p>
             </div>
             <div className="offsetCard bg-white hover:bg-[#f2f4f7] px-10 py-[4em] ">
@@ -921,8 +920,8 @@ const Page = () => {
 
       {/* Career Leap CTA */}
       <JoinExpTeam
-        title="The work culture in Godrej supports learning at every stage of your
-        work life."
+        title="The work culture in Godrej supports learning at every stage of your work life. Opportunities in learning are available in the technical, functional, behavioural, general management and leadership areas through options like EDPs (Executive Development Programmes), MDPs (Management Development Programmes), E-learning and On the Job exposure to International Practices. 
+For more info write to us at: gitlhrd@godrej.com"
         desc=""
         cta="Take the Cloud Career Leap"
         link=""
@@ -931,8 +930,8 @@ const Page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Let's discuss how we can help you to"
+        blue="enhance your business's growth potential."
         title2=""
         desc="Let's embark on your journey together aligned with your business goals."
       />
