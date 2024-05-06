@@ -94,35 +94,35 @@ const lists = [
 const UseCases = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Business Consulting",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
-    title: "Implementation & Rollout",
+    title: "Implementations & Global Rollout",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
-    title: "Upgrade & Migration",
+    title: "Migrations & Transformation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
-    title: "Development & Customization",
+    title: "Legacy Modernisation",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
-    title: "Training Workshop",
+    title: "Infrastructure as a service",
     cta: "Know More",
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
@@ -134,39 +134,12 @@ const UseCases = [
     link: "/",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 7,
-    title: "Legacy Modernization",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 8,
-    title: "Bespoke Applications",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 9,
-    title: "License sales and services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 10,
-    title: "Data Insights",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
 ];
 const UseCasesSlider = [
   {
     _id: 1,
-    title: "Consulting ",
+    title: "Consulting",
     cta: "Know More",
     desc: "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum ",
     link: "/",
@@ -289,7 +262,7 @@ const locations = [
   },
   {
     id: 4,
-    loc: "Mumbai",
+    loc: "Bengaluru",
     loc2: "India",
     desc: "Godrej Infotech Ltd. Workenstein Collaborative Spaces Pvt Ltd, Workafella, 150, 1, Infantry Rd, Opp. Commissioner Office, Shivaji Nagar, Bengaluru, Karnataka 560001",
     phone: "",
@@ -466,31 +439,37 @@ const AIOfferings = [
 const ChoiceSlider = [
   {
     _id: 1,
-    title: "Healthcare",
+    title: "Manufacturing",
     imgUrl: "1",
     url: "/",
   },
   {
     _id: 2,
-    title: "Automotive",
+    title: "Retail",
     imgUrl: "2",
     url: "/",
   },
   {
     _id: 3,
-    title: "Logistic",
+    title: "Project",
     imgUrl: "3",
     url: "/",
   },
   {
     _id: 4,
-    title: "Retail",
+    title: "Trading & Distribution",
     imgUrl: "4",
     url: "/",
   },
   {
     _id: 5,
-    title: "Manufacturing",
+    title: "Professional Service",
+    imgUrl: "5",
+    url: "/",
+  },
+   {
+    _id: 5,
+    title: "Healthcare",
     imgUrl: "5",
     url: "/",
   },
@@ -557,11 +536,8 @@ const Page = () => {
       </div>
       <EntIntro
         alignment="center"
-        title="Delivering Business value
-        with Automation"
-        desc="Transforming Healthcare with
-        All-Inclusive Cutting-Edge IT
-        Solutions and Services"
+        title="DELIVERING BUSINESS VALUE WITH AUTOMATION / CLOUD / TRANSFORMATION"
+        desc="Revolutionize your business operations, save time and boost productivity with our cutting-edge offerings."
         cta="Let's Connect"
         width="100%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -612,40 +588,13 @@ const Page = () => {
                   About Us
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  Headquartered in Belgium (Wevelgem-Gullegem), LVD Godrej
-                  Infotech (LVDGI), is a fully owned subsidiary of Godrej
-                  Infotech Limited (GITL) which is based in Mumbai, India. A
-                  leading IT service provider specializing in end-to-end IT
-                  solutions, GITL is part of the USD 4.1 Billion Godrej group of
-                  companies. The Godrej Group is one of India&apos;s leading
-                  corporate houses dealing in High Tech Engineering, Consumer
-                  Products, Aerospace, Chemicals, Construction, Material
-                  Handling, Storage & Security Solutions.
+                 Godrej Infotech Americas (GIA) is the subsidiary of Godrej Infotech Ltd (GITL) which is one of the holding companies within the USD 4.1 billion Godrej Group. This group started its journey in 1897 and through the years have diversified from High Tech Engineering to Consumer Products. 
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] mb-8">
-                  LVDGI&apos;s service offerings include Business Consulting,
-                  ERP Implementation & Support, Application Development,
-                  Integration, Digital Transformation, Analytical Services,
-                  Mobile Application Development, Infrastructure Management, and
-                  e-Commerce. We have domain and technology expertise in the
-                  Manufacturing, Retail, Trading, Distribution, Logistics,
-                  Hospitality, Project, and Service industries. A technology
-                  focused organization, LVDGI has emerged as a pioneer in the
-                  Digital Solutions space. Driven by the values of Integrity,
-                  Responsiveness, Commitment and Teamwork, we have been
-                  providing Microsoft, Infor, LS Retail, and Oracle services and
-                  solutions for leading organizations in the Europe region.
+                  Based out of Texas, USA, GIA is one of the leading IT service providers specializing in End-to-End IT solutions. Our service offerings include Business Consulting, ERP Implementation & Support, Application Development, Integration, Digital Transformation, Analytical Services, Mobile Application Development, Infrastructure Management, and e-Commerce. We have domain and technology expertise in the Manufacturing, Retail, Trading, Distribution, Logistics, Hospitality, Project, and Service industries. 
                 </p>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Our team of knowledge experts provide ready-to-deploy and
-                  customizable IT-solutions for individual business functions
-                  like Enterprise Resource Planning (ERP), Customer Relationship
-                  Management, Product Life Cycle Management, Asset Management
-                  and Business Intelligence (BI). We also have a Remote
-                  Infrastructure Management team that works as an extended IT
-                  arm for their clients and provides skilled IT proactive
-                  services of Azure Cloud, Database, Network, System and
-                  Security Administration.
+                  GITL's Strategic partnership with industry leaders like Microsoft, Infor, LS Retail, and Oracle have played an instrumental role in making the organization a mature IT partner that understands the value of business process automation. An ISO 9001:2015 certified company, GITL's service offerings follow proprietary methodologies derived from product best practices and experience in similar implementations. Headquartered in Mumbai, India, GITL has presence in Middle East, APAC, Europe, and US with customer footprints extending across multiple geographies.                                       
                 </p>
               </div>
             </div>
@@ -686,13 +635,13 @@ const Page = () => {
 
       {/* MS Services Slider */}
       <>
-        <div className={`bg-ms-practise w-full    py-32  `} id="productivity">
+        <div className={`bg-ms-practise w-full py-32`} id="productivity">
           <div className={` w-full`}>
             <div className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 pb-0 px-[2rem] grid grid-cols-1 gap-5 sm:grid-cols-2">
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
                     Microsoft Services
                   </h3>
                 </div>
@@ -920,8 +869,7 @@ const Page = () => {
 
       {/* Career Leap CTA */}
       <JoinExpTeam
-        title="The work culture in Godrej supports learning at every stage of your
-        work life."
+        title="The work culture in Godrej supports learning at every stage of your work life. Opportunities in learning are available in the technical, functional, behavioural, general management and leadership areas through options like EDPs (Executive Development Programmes), MDPs (Management Development Programmes), E-learning and On the Job exposure to International Practices."
         desc=""
         cta="Take the Cloud Career Leap"
         link=""
@@ -930,8 +878,8 @@ const Page = () => {
 
       {/* Subscription */}
       <Subscription
-        title="Ready for Transformation with"
-        blue="AI and ML?"
+        title="Let's discuss how we can help you to enhance your "
+        blue="business's growth potential."
         title2=""
         desc="Let's embark on your journey together aligned with your business goals."
       />
