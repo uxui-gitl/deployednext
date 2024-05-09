@@ -50,6 +50,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import WhySection from "@/components/WhySection";
+import Abstract from "@/components/Abstract";
 
 import InsightSlider from "@/components/InsightSlider";
 
@@ -177,9 +178,8 @@ const Page = () => {
   return (
     <>
       <EntIntro
-        title="Elevate Your Retail Game with
-        seamless shopping experience "
-        desc="D365 F&O is reliable robust solution for medium to large-sized businesses which enables streamlining and automating global operations, giving real-time insights that become the foundation of well-informed decisions. Our expert D365 F&O team simplifies the adoption of solution, delivering streamlined financial processes and paving the way for business transformation."
+        title="Get Scalable and Mobile friendly E-Commerce Platform to Build and Elevate Your Online Business for Growth"
+        desc=""
         cta="Let's Connect"
         width="75%%"
         video="https://gitl-usa.s3.us-west-1.amazonaws.com/banner1.mp4"
@@ -223,6 +223,10 @@ const Page = () => {
           ]}
         />
       </>
+
+       {/* Overview  */}
+        <Abstract abstractdesc="Well-designed and developed e-commerce website is crucial for retail success. It's not just about having an appealing appearance; it's about generating real sales and profits. A robust e-commerce portal streamlines the ordering process for your customers and contributes to building a solid brand image. With the expertise of Godrej Infotech, we ensure that your e-commerce platform is not only visually appealing but also technically optimized to drive business growth and enhance customer experience. Let us help propel your business to new heights in the digital landscape."></Abstract>
+
 
       {/* On premises Challenges*/}
       <>
