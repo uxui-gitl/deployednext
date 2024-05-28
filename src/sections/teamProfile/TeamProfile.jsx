@@ -52,12 +52,7 @@ const TeamProfile = () => {
               Chief Executive Officer
             </h5>
             <p className="text-sm font-medium text-[#475467] leading-[22px]">
-              Mr. Ajay Pimparkar is the IT veteran and strategic visionary of
-              our company, who has transformed Godrej Group&apos;s technology
-              landscape for over 30 Years. His role has reinforced our IT
-              infrastructure and enabled us to perform at the forefront of
-              digital innovation, driving operational efficiency and enriching
-              customer experience.
+              Mr. Ajay Pimparkar's association with the Godrej Group started way back in the 1980's. He has been responsible for preparing and implementing the complete Information Technology roadmap for the various businesses in tune with the Strategic Business Plan of the organization.
             </p>
             <Link
               href="/"
@@ -82,16 +77,9 @@ const TeamProfile = () => {
               Vice President - IT, Godrej & Boyce
             </h5>
             <p className="text-sm font-medium text-[#475467] leading-[22px]">
-              Mr. Ashwin Mistry brings forth more than 30 years of valuable
-              experience in the IT industry to our team. With two decades
-              dedicated to ERP implementation, his proficiency blazes in the
-              Discrete and Project manufacturing sectors.
+              Mr. Ashwin Mistry brings forth more than 30 years of valuable experience in the IT industry to our team. With two decades dedicated to ERP implementation, his proficiency blazes in the Discrete and Project manufacturing sectors. 
             </p>
-            <p className="text-sm mt-3 font-medium text-[#475467] leading-[22px]">
-              In his extensive professional journey, Mr. Mistry has successfully
-              managed ERP projects, both within the domestic and international
-              market space, for Infor and SAP.
-            </p>
+            
             <Link
               href="/"
               className={`${styles["btn-transparent-video"]} text-[#101828] bg-transparent font-medium sm:font-medium capitalize max-w-max pt-[8px] px-[2rem] sm:px-5 sm:py-2 border-[#fff] border-b-1 flex border-b-1 ml-0 pl-0 pr-0 mr-4 my-4`}

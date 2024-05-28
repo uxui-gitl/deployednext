@@ -61,8 +61,8 @@ const blogData = [
   {
     _id: 1,
     ribbon: "blog",
-    title: "Strengthen Your Business Armor with Cyber–Resilience Strategy",
-    desc: "Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large. Today, we delve into the critical facets of cyber resilience, emphasizing the importance of a disaster recovery plan, robust cybersecurity measures, and a comprehensive understanding of cyber-attacks and cybersecurity threats. Let's explore how concepts is key to fortifying your business against the evolving challenges of the digital realm. ",
+    title: "Strengthen Your Business Armor with Cyber-Resilience Strategy",
+    desc: "Businesses are continuously navigating the complex web of technology, where the ever-present threats of cyber-attacks and cybersecurity vulnerabilities loom large. Today, we delve into the critical facets of cyber resilience, emphasizing the importance of a disaster recovery plan, robust cybersecurity measures, and a comprehensive understanding of cyber-attacks and cybersecurity threats. Let's explore how concepts is key to fortifying your business against the evolving challenges of the digital realm.",
     cta: "Read More",
     link: "https://www.godrejinfotech.com/blogDetails.aspx?blog=18",
     imgUrl: "",
@@ -829,13 +829,10 @@ const page = () => {
                     ctaUrl: "/",
                     list: [
                       {
-                        title: "O365",
+                        title: "Mobile Security",
                         url: "/",
                       },
-                      {
-                        title: "Mobile Device / Application",
-                        url: "/",
-                      },
+                      
                       {
                         title: "Management (MDM/ MAM)",
                         url: "/",
@@ -845,7 +842,7 @@ const page = () => {
                   {
                     _id: 6,
                     icon: "gear",
-                    title: "Data",
+                    title: "Data Security",
                     desc: "",
                     cta: "Know More",
                     ctaUrl: "/",
@@ -1079,10 +1076,10 @@ const page = () => {
 
       {/* Expertise */}
       <Expertise
-        ribbon="Our Expertise"
+        ribbon=""
         ribbonTxtWhite="true"
         title="Hub of Expertise"
-        desc="We're here to build an edge and bring technology brilliance with the finest in the industry. Driving the innovation path, we develop better results for businesses across the globe."
+        desc="We're here to build an edge and bring technology brilliance with the finest in the industry."
         arr={[
           {
             title: "20 +",
