@@ -2,7 +2,7 @@
 import ClientLogos from "@/sections/clientLogos/ClientLogos";
 
 import TeamProfile from "@/sections/teamProfile/TeamProfile";
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 import React, { useState } from "react";
 import Icon, { Stack } from "@mdi/react";
 import { mdiLinkedin, mdiCircle } from "@mdi/js";
@@ -19,8 +19,8 @@ import Subscribe from "@/sections/subscribe/Subscribe";
 import CaseStudy from "@/sections/caseStudy/CaseStudy";
 import Image from "next/image";
 import clsx from "clsx";
-import ProfileVideo from "../../../public/ProfileVideo.png";
-import ProfilePotrait from "../../../public/ProfilePotrait.png";
+import ProfileVideo from "../../../../../public/ProfileVideo.png";
+import ProfilePotrait from "../../../../../public/ProfilePotrait.png";
 import VideoModal from "@/components/VideoModal";
 import Link from "next/link";
 // import { Modal } from "modal-nextjs";
@@ -95,7 +95,7 @@ const Profile = () => {
               </h4>
               <div className={`flex flex-col md:flex-row gap-8 justify-start`}>
                 <div className="">
-                  <h3 className="text-[72px] leading-[80px] font-bold w-1/2 my-6">
+                  <h3 className="text-[72px] leading-[80px] font-bold my-6">
                     <Balancer>Ajay Pimparkar</Balancer>
                   </h3>
                   <p className="font-normal leading-[22px] w-3/4 mb-4">
@@ -133,7 +133,7 @@ const Profile = () => {
             "text-left max-w-screen-xl py-12  mb-5 mx-auto p-5   px-[2rem]"
           }
         >
-          <ZigZagLine />
+          {/* <ZigZagLine /> */}
           <div className=" w-full h-full">
             <Image
               src={ProfileVideo}

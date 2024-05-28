@@ -398,8 +398,8 @@ export default function Page() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-[100dvh] dark:bg-black bg-white relative w-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[80rem] px-4">
         <motion.div
           initial={{
             opacity: 0,

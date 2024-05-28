@@ -193,7 +193,7 @@ const Page = () => {
             tabData: [
               {
                 id: 1,
-                title: "FY 2020 - 2021",
+                title: "FY 2022 - 2023",
               },
               {
                 id: 2,
@@ -201,25 +201,25 @@ const Page = () => {
               },
               {
                 id: 3,
-                title: "FY 2022 - 2023",
+                title: "FY 2020 - 2021",
               },
               {
                 id: 4,
-                title: "FY 2023 - 2024",
+                title: "FY 2019 - 2020",
               },
               {
                 id: 5,
-                title: "FY 2024 - 2025",
+                title: "FY 2018 - 2019",
               },
               {
                 id: 6,
-                title: "FY 2025 - 2026",
+                title: "FY 2017 - 2018",
               },
             ],
           },
           {
             _id: 2,
-            title: "Corporate Commitee",
+            title: "Corporate Policies",
             tabData: [
               {
                 id: 1,

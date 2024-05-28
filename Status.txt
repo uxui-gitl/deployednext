@@ -11,7 +11,7 @@ Optimizations
 - Blog Template -
 - Verify main pages -
 - Robot Animations -
-- Cobe globe Animations -
+- Cobe globe Animations - Done
 - SSR vs CSR rendering -
 
 
@@ -24,3 +24,11 @@ Animations fix
 - Globe Animations
 - Blog Template
 - JWT token for POST
+
+
+==========
+# May 10
+
+- Navigation in mobile
+- Stacked card spacing vertical in desktop and sizing in mobile
+- Robot Animations

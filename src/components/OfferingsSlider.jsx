@@ -210,9 +210,6 @@ const OfferingsSlider = ({
                                 icons={false}
                                 items={item.subArrLinks}
                                 expandedDesc={expandedDesc}
-                                // items={[
-                                //   { _id: item._id, list: item.subArrLinks },
-                                // ]}
                               />
                             ) : (
                               <ul className="my-4">

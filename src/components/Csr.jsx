@@ -12,9 +12,34 @@ import {
   CardHeader,
 } from "@nextui-org/react";
 import Icon from "@mdi/react";
-import { mdiArrowRight } from "@mdi/js";
+import { mdiArrowRight, mdiChevronDown } from "@mdi/js";
+import Accordion from "./Accordion";
 
 const Csr = ({ arr }) => {
+  const data = [
+    {
+      _id: 1,
+      title: "Business Consulting",
+      desc: "",
+      cta: "Explore Service",
+      subArrLinks: [],
+      image: "rpa/Cyber-security-offerings_Business-Consulting.jpg",
+      inline: true,
+      subArr: false,
+      ctaUrl: "/",
+      links: [
+        {
+          title: "Cybersecurity roadmap development",
+          url: "/",
+        },
+        {
+          title:
+            "Assessment services against cyber security frameworks & standards",
+          url: "/",
+        },
+      ],
+    },
+  ];
   return (
     <div className="flex w-full flex-col">
       <Tabs
@@ -32,7 +57,7 @@ const Csr = ({ arr }) => {
           panel: "outline-none border-none shadow-none font-semibold",
         }}
       >
-        <Tab key="Report" className="w-full border-n" title="Report">
+        <Tab key="Report" className="w-full border-n" title="Statutory Report">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl  grid grid-rows-1 sm:grid-rows-2 sm:grid-cols-3 gap-8  md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
               <Card
@@ -40,33 +65,71 @@ const Csr = ({ arr }) => {
                 shadow="none"
                 className=" rounded-none  col-span-1 max-w-[400px]"
               >
-                <CardBody>
+                <CardBody className="flex justify-between items-center flex-row">
                   <p className="text-[26px] font-bold leading-[34px]">
-                    FY 2022-2023
+                    FY 2022-2023{" "}
                   </p>
-                </CardBody>
-                <Divider />
-                <Link
-                  isExternal
-                  className="text-[#fff]  bg-[#0745D3] w-full"
-                  href="/"
-                >
-                  <CardFooter
-                    radius="none"
-                    shadow="none"
-                    className="rounded-none  w-full text-[#fff]"
-                  >
-                    Know More.{" "}
+                  <div>
                     <Icon
-                      path={mdiArrowRight}
+                      path={mdiChevronDown}
                       style={{
                         marginLeft: "0.5em",
-                        height: "1em",
-                        width: "1em",
+                        height: "2em",
+                        width: "2em",
                       }}
                     />
-                  </CardFooter>
-                </Link>
+                  </div>
+                </CardBody>
+                <Divider />
+                <CardFooter
+                  radius="none"
+                  shadow="none"
+                  className="rounded-none  w-full text-[#fff]"
+                >
+                  <Accordion
+                    items={[
+                      {
+                        _id: 1,
+                        icon: "gear",
+                        title: "FY 2022-2023 ",
+                        desc: "",
+                        cta: "Know More",
+                        ctaUrl: "/",
+                        list: [
+                          {
+                            title:
+                              "External integration with project monitoring tools  ",
+                            url: "/",
+                          },
+                          {
+                            title: "Mobile applications for task assignment",
+                            url: "/",
+                          },
+                          {
+                            title: "After sales service",
+                            url: "/",
+                          },
+                          {
+                            title: "Data Security & Digital Documentation ",
+                            url: "/",
+                          },
+                          {
+                            title: "Multi site management  ",
+                            url: "/",
+                          },
+                          {
+                            title: "Project Task Assignment & Management  ",
+                            url: "/",
+                          },
+                          {
+                            title: "Remote Work and Cost Accuracy   ",
+                            url: "/",
+                          },
+                        ],
+                      },
+                    ]}
+                  />
+                </CardFooter>
               </Card>
               <Card
                 radius="none"
@@ -236,7 +299,7 @@ const Csr = ({ arr }) => {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="Commitee" className="w-full" title="Commitee">
+        <Tab key="Commitee" className="w-full" title="Corporate Policies">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl  grid grid-rows-1 sm:grid-rows-2 sm:grid-cols-3 gap-8  md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
               <Card className="py-4" radius="none" shadow="none">
@@ -290,7 +353,7 @@ const Csr = ({ arr }) => {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="CSR" className="w-full" title="CSR">
+        <Tab key="CSR" className="w-full" title="CSR Updates">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
@@ -298,7 +361,7 @@ const Csr = ({ arr }) => {
             </CardBody>
           </Card>
         </Tab>
-        <Tab key="Statutory" className="w-full " title="Statutory">
+        <Tab key="Statutory" className="w-full " title="Statutory Updates">
           <Card radius="none" shadow="none">
             <CardBody className="text-left max-w-screen-xl md:max-w-screen-xl mb-5 mx-auto p-5 px-[2rem] ">
               Statutory Updates Excepteur sint occaecat cupidatat non proident,

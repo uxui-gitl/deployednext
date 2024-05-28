@@ -12,6 +12,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "reverse-slower": "spin-reverse 6s linear infinite",
+        "spin-slow": "spin 4s linear infinite",
+      },
       backgroundColor: {
         primary: "#FFF",
         secondary: "#F2F4F7",
