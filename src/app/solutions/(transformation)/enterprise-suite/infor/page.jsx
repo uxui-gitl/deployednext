@@ -106,26 +106,45 @@ const ChoiceSlider = [
     title: "Manufacturing",
     imgUrl: "Industry-Spotlight-Manufacturing",
     url: "/",
+    list: [
+      "Industrial Manufacturing ",
+      "Automotive OEM/ Suppliers ",
+      "High-Tech Electronics ",
+      "Refinery, Petro-Chemical and Process Equipment ",
+      "Aerospace & Defense Equipment ",
+      "Ship Design, Building and Repairs ",
+      "Infrastructure / EPC with Turnkey and BOOT BOLT ",
+      "Industrial Manufacturing ",
+      "Automotive OEM/ Suppliers ",
+      "High-Tech Electronics ",
+    ],
   },
   {
     _id: 2,
     title: "Automotive",
     imgUrl: "Industry-Spotlight-Retail",
     url: "/",
+    list: [
+      "OEM",
+      "Tire Suppliers",
+      "After Market Spare part & Services",
+      "Trading",
+    ],
   },
   {
     _id: 3,
     title: "Project & Contracting",
     imgUrl: "Industry-Spotlight-rading-and-Distribution",
     url: "/",
+    list: ["EPC", "Turnkey Project"],
   },
   {
     _id: 4,
     title: "Warehouse Management",
     imgUrl: "Industry-Spotlight-Projects",
     url: "/",
+    list: ["3PL", "Logistics Services"],
   },
-  
 ];
 
 const InforGrid = [
@@ -159,7 +178,7 @@ const InforGrid = [
     title: "Infor WMS",
     icon: "dummy",
   },
-  
+
   {
     _id: 7,
     title: "Expense Management",
@@ -1025,7 +1044,9 @@ const Page = () => {
                   Globally Trusted Core Infor Expertise
                 </h3>
                 <p>
-                 Regardless of whether you're starting your transformation journey or aiming to gain cloud capabilities, our Infor expertise helps you progress to a higher level. 
+                  Regardless of whether you're starting your transformation
+                  journey or aiming to gain cloud capabilities, our Infor
+                  expertise helps you progress to a higher level.
                 </p>
               </div>
             </div>
@@ -1116,7 +1137,10 @@ const Page = () => {
                   Infor Service Offerings
                 </h3>
                 <p className="font-medium leading-[22px] md:w-[80%] mx-auto">
-                  Our commitment to your project's success drives our ownership and determination to go above and beyond. With rich experience of technical expertise, we offer services to meet the sole requirements of your business. 
+                  Our commitment to your project's success drives our ownership
+                  and determination to go above and beyond. With rich experience
+                  of technical expertise, we offer services to meet the sole
+                  requirements of your business.
                 </p>
               </div>
             </div>
@@ -1267,7 +1291,9 @@ const Page = () => {
             <div>
               <div>
                 <p className="font-medium leading-[22px] md:w-[90%] ">
-                  Enhancing the features of business applications, our easily integrating specialized solutions intend to add value to business with handy support.
+                  Enhancing the features of business applications, our easily
+                  integrating specialized solutions intend to add value to
+                  business with handy support.
                 </p>
               </div>
             </div>
@@ -1389,10 +1415,35 @@ const Page = () => {
                               alt="icon"
                               className=" transition-transform transform group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  ">
-                              <h3 className="text-[22px] text-white absolute bottom-4 left-4 w-fit leading-[30px] font-bold mb-5">
+
+                            {/* Default overlay */}
+                            <div className="absolute inset-0 bg-black bg-opacity-50 transition-opacity  flex flex-col justify-end p-4">
+                              <h3 className="text-[22px] text-white font-bold mb-1">
                                 {item.title}
                               </h3>
+                            </div>
+                            {/* Hover overlay */}
+                            <div className="absolute inset-0 bg-[#4c6fff] transition-opacity opacity-0 group-hover:opacity-100 text-left flex flex-col justify-end p-4">
+                              <h3 className="text-[22px] text-white font-bold mb-1">
+                                {item.title}
+                              </h3>
+                              <p className="text-white leading-[20px] mb-5">
+                                {item.desc}
+                              </p>
+                              {item.list && (
+                                <>
+                                  <ul className=" list-disc pl-4">
+                                    {item.list.map((i, index) => (
+                                      <li
+                                        className="text-white mb-1 leading-[20px]"
+                                        key={index}
+                                      >
+                                        {i}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </>
+                              )}
                             </div>
                           </div>
                         </SwiperSlide>
@@ -1425,7 +1476,6 @@ const Page = () => {
             title: "10,000+",
             desc: "Infor Users",
           },
-          
         ]}
       ></Expertise>
 
