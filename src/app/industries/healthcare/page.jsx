@@ -42,6 +42,7 @@ import Expertise from "@/components/Expertise";
 import clsx from "clsx";
 import { NewTestimonial, OfferingsSlider } from "@/components";
 import Abstract from "@/components/Abstract";
+import BlogSlider from "@/components/BlogSlider";
 const fadeInAnimationVariant = {
   initial: {
     opacity: 0,
@@ -58,98 +59,63 @@ const fadeInAnimationVariant = {
 const lists = [
   {
     id: 1,
-    text: "No Remote Access",
+    text: "Fragmented data and communication hinder care coordination, leading to suboptimal outcomes and resource allocation.",
   },
   {
     id: 2,
-    text: "Siloes in the Healthcare World",
+    text: "Complex billing processes result in delays, financial strains, and lower provider participation.",
   },
   {
     id: 3,
-    text: "Issues with Medicare and Medicaid Reimbursement",
+    text: "Inefficient resource management system increases costs and disrupts healthcare.",
   },
   {
     id: 4,
-    text: "Absence of Supply Management System",
+    text: "Handling vast datasets without proper tools affects decision-making and research potential.",
   },
   {
     id: 5,
-    text: "Managing the Massive Volumes of Patient-Related Data",
+    text: "Lagging adoption of cutting-edge technologies may compromise healthcare quality and innovation. ",
   },
-  {
-    id: 6,
-    text: "Inefficiencies and Errors in Data Sharing",
-  },
-  {
-    id: 7,
-    text: "Lack of Online Pharmaceutical Stores",
-  },
-    {
-    id: 8,
-    text: "No Early Warning Healthcare Devices",
-  },
-    {
-    id: 9,
-    text: "Slow Pace with Modern Solutions",
-  },
+  
 ];
 const UseCases = [
   {
     _id: 1,
     title: "Consulting Services",
-    cta: "Know More",
-    link: "/",
+    cta: "",
+    link: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 2,
     title: "Implementation",
-    cta: "Know More",
-    link: "/",
+    cta: "",
+    link: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 3,
     title: "Upgrade & Migration Services",
-    cta: "Know More",
-    link: "/",
+    cta: "",
+    link: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 4,
     title: "Support & Maintenance Services",
-    cta: "Know More",
-    link: "/",
+    cta: "",
+    link: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
   {
     _id: 5,
     title: "Customization Services",
-    cta: "Know More",
-    link: "/",
+    cta: "",
+    link: "",
     icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
   },
-  {
-    _id: 6,
-    title: "Integration Services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 7,
-    title: "Audit Services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
-  {
-    _id: 8,
-    title: "Reporting Services",
-    cta: "Know More",
-    link: "/",
-    icon: "Benefits-upgradeCloud/EnhanceSystemPerformance",
-  },
+  
   
 ];
 const UseCasesSlider = [
@@ -319,6 +285,18 @@ const BenefitsData = [
   },
 ];
 
+const blogData = [
+  {
+    _id: 1,
+    ribbon: "Insights",
+    title: "How Healthcare Organizations Ensure Effective Asset Maintenance and Monitoring",
+    desc: "Healthcare asset maintenance encompasses the strategies and practices implemented to manage and preserve medical equipment and facilities. This process is vital in ensuring the smooth functioning of healthcare services, optimizing resource utilization, and delivering quality patient care.",
+    cta: "Know More",
+    link: "/",
+    imgUrl: "",
+  },
+];
+
 const page = () => {
   return (
     <>
@@ -370,7 +348,7 @@ const page = () => {
                     Challenges Confronting Healthcare Organisations
                   </h3>
                   <p>
-                   Streamlining healthcare operations and interoperability is a complex task. Our customised IT solutions streamline operational intricacies and processes for seamless functionality.
+                   Healthcare organizations today face a multitude of challenges that impact their ability to deliver quality care and maintain operational efficiency. Key issues include:
                   </p>
                 </div>
               </div>
@@ -477,7 +455,7 @@ const page = () => {
                         <p>{item.desc}</p>
                       </div>
                       <div
-                        className={clsx("w-full bg-[#0745D3] p-5", {
+                        className={clsx("w-full bg-[#0745D3] p-5 hidden", {
                           hidden: item.link === "",
                         })}
                       >
@@ -563,7 +541,7 @@ const page = () => {
                     </ul>
                     <Link href={item.ctaUrl}>
                       <div
-                        className={`text-[#fff] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75`}
+                        className={`text-[#fff] text-[14px] font-medium leading-[22px] w-fit py-2 px-8 flex transition-all hover:opacity-75 hidden`}
                         style={{ backgroundColor: item.btnTheme }}
                       >
                         {item.cta}{" "}
@@ -590,7 +568,7 @@ const page = () => {
               {/* left */}
               <div className="  flex items-start flex-col justify-between  relative">
                 <div className="">
-                  <h3 className="text-[42px]   leading-[54px] mb-3 font-bold ">
+                  <h3 className="text-[42px] leading-[54px] mb-3 font-bold ">
                     Our Services
                   </h3>
                 </div>
@@ -640,8 +618,8 @@ const page = () => {
                     key={item._id}
                     className="sm:w-full h-full flex flex-col justify-between  mr-4  relative group"
                   >
-                    <div className="sm:w-full h-full bg-white  flex flex-col justify-between">
-                      <div className="p-5  mx-2">
+                    <div className="sm:w-full h-full bg-white flex flex-col justify-between">
+                      <div className="p-5 mx-2 bg-[#F2F4F7]">
                         <div className="mb-4">
                           {item.icon !== "" ? (
                             <Image
@@ -659,7 +637,7 @@ const page = () => {
                         </h4>
                       </div>
                       <div
-                        className={clsx("w-full bg-[#0745D3] p-5", {
+                        className={clsx("w-full bg-[#0745D3] p-5 ", {
                           hidden: item.link === "",
                         })}
                       >
@@ -816,7 +794,7 @@ const page = () => {
           {
             id: 2,
             title:
-              "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6 ",
+              "Indian Prominent Healthcare Organization Offering Emergency Medical Response Services Upgrades to Hexagon EAM 11.6",
             thumbnail: "",
             description: "",
             tags: [""],
@@ -871,12 +849,14 @@ const page = () => {
         </div>
       </>
 
+      <BlogSlider arr={blogData} />
+
       {/* Subscription */}
       <Subscription
-        title="Request a Personalized Demo"
-        blue=""
+        title="Ensure Efficiency in "
+        blue="Healthcare Sector!"
         title2=""
-        desc="Let's embark on your journey together aligned with your business goals."
+        desc="Our Experts Can Help!"
       />
     </>
   );
