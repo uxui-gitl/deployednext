@@ -788,7 +788,7 @@ const page = () => {
             thumbnail: "",
             description: "",
             tags: [""],
-            cta: "Read article",
+            cta: "Learn More",
             link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
           {
@@ -798,7 +798,7 @@ const page = () => {
             thumbnail: "",
             description: "",
             tags: [""],
-            cta: "Read article",
+            cta: "Learn More",
             link: "https://www.godrejinfotech.com/knowledge-center/case-studies.aspx",
           },
           
